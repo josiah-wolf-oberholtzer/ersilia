@@ -5,6 +5,6 @@ import collections
 metadata = collections.OrderedDict([
     ('composer', 'Oberholtzer'),
     ('forces_tagline', 'for Dal Niente'),
-    ('title', 'Invisible Cities 3: Ersilia'),
+    ('title', 'Invisible Cities (iii): Ersilia'),
     ('year', 2014),
     ])

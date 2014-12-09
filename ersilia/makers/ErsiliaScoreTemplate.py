@@ -1,9 +1,8 @@
 # -*- encoding: utf-8 -*-
 from abjad import *
-from consort import makers
 
 
-class ErsiliaScoreTemplate(makers.ConsortObject):
+class ErsiliaScoreTemplate(abctools.AbjadValueObject):
     r'''Ersilia score template.
 
     ::
@@ -141,10 +140,6 @@ class ErsiliaScoreTemplate(makers.ConsortObject):
             name='Flute',
             )
 
-        oboe_staff_group = self._make_wind_performer_staff_group(
-            name='Oboe',
-            )
-
         clarinet_staff_group = self._make_wind_performer_staff_group(
             name='Clarinet',
             )
@@ -153,15 +148,25 @@ class ErsiliaScoreTemplate(makers.ConsortObject):
             name='Saxophone',
             )
 
+        oboe_staff_group = self._make_wind_performer_staff_group(
+            name='Oboe',
+            )
+
         winds_staff_group = scoretools.StaffGroup(
             [
                 flute_staff_group,
-                oboe_staff_group,
                 clarinet_staff_group,
                 saxophone_staff_group,
+                oboe_staff_group,
                 ],
             name='Winds Staff Group',
             )
+
+        harp_staff_group = self._make_harp_staff_group()
+
+        piano_staff_group = self._make_piano_staff_group()
+
+        percussion_two_staff_group = self._make_percussion_two_staff_group()
 
         guitar_voice = scoretools.Voice(
             name='Guitar Voice',
@@ -173,27 +178,6 @@ class ErsiliaScoreTemplate(makers.ConsortObject):
                 ],
             context_name='GuitarStaff',
             name='Guitar Staff',
-            )
-
-        harp_staff_group = self._make_harp_staff_group()
-
-        piano_staff_group = self._make_piano_staff_group()
-
-        percussion_one_staff_group = self._make_percussion_one_staff_group()
-
-        percussion_two_staff_group = self._make_percussion_two_staff_group()
-
-        electronics_voice = scoretools.Voice(
-            context_name='ElectronicsVoice',
-            name='Electronics Voice',
-            )
-
-        electronics_staff = scoretools.Staff(
-            [
-                electronics_voice,
-                ],
-            context_name='ElectronicsStaff',
-            name='Electronics Staff',
             )
 
         violin_staff_group = self._make_string_performer_staff_group('Violin')
