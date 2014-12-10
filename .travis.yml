@@ -18,7 +18,7 @@ before_install:
 install:
 
     - pip install --allow-external abjad --allow-unverified abjad -e git://github.com/Abjad/abjad.git#egg=abjad
-    - pip install --allow-external scoremanager --allow-unverified scoremanager -e git://github.com/Abjad/scoremanager.git#egg=scoremanager
+    - pip install --allow-external abjadide --allow-unverified abjadide -e git://github.com/Abjad/abjadide.git#egg=abjadide
     - pip install --allow-external supriya --allow-unverified supriya -e git://github.com/Pulgama/supriya.git#egg=supriya
     - pip install --allow-external consort --allow-unverified consort -e git://github.com/josiah-wolf-oberholtzer/consort.git#egg=consort
     - pip install -e .
