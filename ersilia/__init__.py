@@ -1,2 +1,3 @@
 # -*- encoding: utf-8 -*-
-import makers
+from ersilia import makers
+from ersilia import materials
