@@ -21,12 +21,6 @@ class ErsiliaScoreTemplate(abctools.AbjadValueObject):
                         }
                     }
                 >>
-                \context WindPerformerStaffGroup = "Oboe Staff Group" <<
-                    \context Staff = "Oboe Staff" {
-                        \context Voice = "Oboe Voice" {
-                        }
-                    }
-                >>
                 \context WindPerformerStaffGroup = "Clarinet Staff Group" <<
                     \context Staff = "Clarinet Staff" {
                         \context Voice = "Clarinet Voice" {
@@ -39,15 +33,15 @@ class ErsiliaScoreTemplate(abctools.AbjadValueObject):
                         }
                     }
                 >>
+                \context WindPerformerStaffGroup = "Oboe Staff Group" <<
+                    \context Staff = "Oboe Staff" {
+                        \context Voice = "Oboe Voice" {
+                        }
+                    }
+                >>
             >>
-            \context StaffGroup = "Percussion One Staff Group" <<
+            \context StaffGroup = "Percussion Staff Group" <<
             >>
-            \context StaffGroup = "Percussion Two Staff Group" <<
-            >>
-            \context ElectronicsStaff = "Electronics Staff" {
-                \context ElectronicsVoice = "Electronics Voice" {
-                }
-            }
             \context GuitarStaff = "Guitar Staff" {
                 \context Voice = "Guitar Voice" {
                 }
@@ -166,7 +160,7 @@ class ErsiliaScoreTemplate(abctools.AbjadValueObject):
 
         piano_staff_group = self._make_piano_staff_group()
 
-        percussion_two_staff_group = self._make_percussion_two_staff_group()
+        percussion_staff_group = self._make_percussion_staff_group()
 
         guitar_voice = scoretools.Voice(
             name='Guitar Voice',
@@ -207,9 +201,7 @@ class ErsiliaScoreTemplate(abctools.AbjadValueObject):
             [
                 time_signature_context,
                 winds_staff_group,
-                percussion_one_staff_group,
-                percussion_two_staff_group,
-                electronics_staff,
+                percussion_staff_group,
                 guitar_staff,
                 harp_staff_group,
                 piano_staff_group,
@@ -222,18 +214,10 @@ class ErsiliaScoreTemplate(abctools.AbjadValueObject):
 
     ### PRIVATE METHODS ###
 
-    def _make_percussion_one_staff_group(self):
+    def _make_percussion_staff_group(self):
 
         staff_group = scoretools.StaffGroup(
-            name='Percussion One Staff Group',
-            )
-
-        return staff_group
-
-    def _make_percussion_two_staff_group(self):
-
-        staff_group = scoretools.StaffGroup(
-            name='Percussion Two Staff Group',
+            name='Percussion Staff Group',
             )
 
         return staff_group
