@@ -12,8 +12,8 @@ before_install:
 #    - sudo apt-get install -y texlive-fonts-recommended
 #    - sudo apt-get install -y texlive-latex-extra 
 #    - sudo apt-get install -y texlive-latex-recommended 
-#    - wget -q http://download.linuxaudio.org/lilypond/binaries/linux-64/lilypond-2.19.15-1.linux-64.sh
-#    - sudo sh lilypond-2.19.15-1.linux-64.sh --batch
+    - wget -q http://download.linuxaudio.org/lilypond/binaries/linux-64/lilypond-2.19.15-1.linux-64.sh
+    - sudo sh lilypond-2.19.15-1.linux-64.sh --batch
 
 install:
 
@@ -24,8 +24,8 @@ install:
     - pip install -e .
 
 script:
-    - ajv doctest ./ersilia
-    - py.test -rf ./ersilia
+    - ajv doctest ./ersilia -x
+    - py.test -rf ./ersilia -x
 
 notifications:
     email: false
