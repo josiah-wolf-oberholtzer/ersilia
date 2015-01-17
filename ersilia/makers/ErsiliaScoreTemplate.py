@@ -106,7 +106,7 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
             >>
             \context EnsembleGroup = "String Staff Group" <<
                 \tag #'violin
-                \context PerformerGroup = "Violin Performer Group" \with {
+                \context StringPerformerGroup = "Violin Performer Group" \with {
                     instrumentName = \markup { Violin }
                     shortInstrumentName = \markup { Vn. }
                 } <<
@@ -122,7 +122,7 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                     }
                 >>
                 \tag #'viola
-                \context PerformerGroup = "Viola Performer Group" \with {
+                \context StringPerformerGroup = "Viola Performer Group" \with {
                     instrumentName = \markup { Viola }
                     shortInstrumentName = \markup { Va. }
                 } <<
@@ -138,7 +138,7 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                     }
                 >>
                 \tag #'cello
-                \context PerformerGroup = "Cello Performer Group" \with {
+                \context StringPerformerGroup = "Cello Performer Group" \with {
                     instrumentName = \markup { Cello }
                     shortInstrumentName = \markup { Vc. }
                 } <<
@@ -154,7 +154,7 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                     }
                 >>
                 \tag #'contrabass
-                \context PerformerGroup = "Contrabass Performer Group" \with {
+                \context StringPerformerGroup = "Contrabass Performer Group" \with {
                     instrumentName = \markup { Contrabass }
                     shortInstrumentName = \markup { Vb. }
                 } <<
@@ -173,6 +173,10 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
         >>
 
     '''
+
+    ### CLASS VARIABLES ###
+
+    __slots__ = ()
 
     ### SPECIAL METHODS ###
 
@@ -290,4 +294,3 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
             )
 
         return score
-
