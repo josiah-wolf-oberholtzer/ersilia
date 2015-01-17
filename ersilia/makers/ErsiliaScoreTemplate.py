@@ -172,6 +172,44 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
             >>
         >>
 
+    ::
+
+        >>> for item in template.context_name_abbreviations.items():
+        ...     item
+        ...
+        ('flute', 'Flute Voice')
+        ('oboe', 'Oboe Voice')
+        ('clarinet_in_b-flat', 'Clarinet In B-Flat Voice')
+        ('baritone_saxophone', 'Baritone Saxophone Voice')
+        ('piano_rh', 'Piano Upper Voice')
+        ('piano_dynamics', 'Piano Dynamics')
+        ('piano_lh', 'Piano Lower Voice')
+        ('piano_pedals', 'Piano Pedals')
+        ('percussion', 'Percussion Voice')
+        ('guitar', 'Guitar Voice')
+        ('violin', 'Violin Performer Group')
+        ('violin_rh', 'Violin Bowing Voice')
+        ('violin_lh', 'Violin Fingering Voice')
+        ('viola', 'Viola Performer Group')
+        ('viola_rh', 'Viola Bowing Voice')
+        ('viola_lh', 'Viola Fingering Voice')
+        ('cello', 'Cello Performer Group')
+        ('cello_rh', 'Cello Bowing Voice')
+        ('cello_lh', 'Cello Fingering Voice')
+        ('contrabass', 'Contrabass Performer Group')
+        ('contrabass_rh', 'Contrabass Bowing Voice')
+        ('contrabass_lh', 'Contrabass Fingering Voice')
+
+    ::
+
+        >>> for item in template.composite_context_pairs.items():
+        ...     item
+        ...
+        ('violin', ('violin_rh', 'violin_lh'))
+        ('viola', ('viola_rh', 'viola_lh'))
+        ('cello', ('cello_rh', 'cello_lh'))
+        ('contrabass', ('contrabass_rh', 'contrabass_lh'))
+
     '''
 
     ### CLASS VARIABLES ###
