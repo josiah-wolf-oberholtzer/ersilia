@@ -1,5 +1,6 @@
 # -*- encoding: utf-8 -*-
-from abjad.tools import indicatortools
+import abjad
+import consort
 import ersilia
 
 
@@ -19,6 +20,12 @@ segment_maker = ersilia.ErsiliaSegmentMaker(
         (7, 8),
         ),
     rehearsal_mark='A',
-    repeat=True,
-    tempo=indicatortools.Tempo((1, 4), 72),
+    repeat=False,
+    tempo=abjad.Tempo((1, 4), 96),
+    )
+
+segment_maker.add_setting(
+    timespan_identifier=consort.RatioPartsExpression([0, 2], [1, 1, 1]),
+    timespan_maker=ersilia.materials.sustained_timespan_maker,
+    piano_rh=ersilia.materials.piano_tremoli_music_specifier,
     )
