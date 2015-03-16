@@ -151,9 +151,11 @@ class ErsiliaSegmentMaker(consort.SegmentMaker):
             ]
         staff.is_simultaneous = True
 
-    def configure_score(self, score):
-        self.attach_tempo(score)
-        self.attach_rehearsal_mark(score)
+    def configure_score(self):
+        self.add_time_signature_context()
+        self.attach_tempo()
+        self.attach_rehearsal_mark()
+        score = self.score
         self.postprocess_grace_containers(score)
         self.postprocess_right_hand_staff(score['Violin Bowing Staff'])
         self.postprocess_right_hand_staff(score['Viola Bowing Staff'])
