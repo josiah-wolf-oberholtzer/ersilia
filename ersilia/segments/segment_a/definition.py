@@ -29,3 +29,6 @@ segment_maker.add_setting(
     timespan_maker=ersilia.materials.sustained_timespan_maker,
     piano_rh=ersilia.materials.piano_tremoli_music_specifier,
     )
+
+if __name__ == '__main__':
+    illustration = segment_maker()
