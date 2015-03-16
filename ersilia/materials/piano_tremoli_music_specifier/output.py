@@ -10,30 +10,6 @@ import consort
 
 piano_tremoli_music_specifier = consort.tools.MusicSpecifier(
     attachment_handler=consort.tools.AttachmentHandler(
-        dynamics=consort.tools.AttachmentExpression(
-            attachments=datastructuretools.TypedList(
-                [
-                    consort.tools.DynamicExpression(
-                        dynamic_tokens=datastructuretools.CyclicTuple(
-                            [
-                                'p',
-                                'ppp',
-                                'p',
-                                'ppp',
-                                'p',
-                                'ppp',
-                                'f',
-                                'mf',
-                                'f',
-                                ]
-                            ),
-                        transitions=datastructuretools.CyclicTuple(
-                            [None]
-                            ),
-                        ),
-                    ]
-                ),
-            ),
         stem_tremolo_spanner=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [

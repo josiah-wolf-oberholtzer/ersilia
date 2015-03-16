@@ -1,10 +1,11 @@
 # -*- encoding: utf-8 -*-
-import consort
+from abjad.tools import datastructuretools
 from abjad.tools import durationtools
 from abjad.tools import rhythmmakertools
+import consort
 
 
-sustained_timespan_maker = consort.TaleaTimespanMaker(
+sustained_timespan_maker = consort.tools.TaleaTimespanMaker(
     initial_silence_talea=rhythmmakertools.Talea(
         counts=(0, 2, 1),
         denominator=8,
@@ -22,7 +23,7 @@ sustained_timespan_maker = consort.TaleaTimespanMaker(
     step_anchor=Right,
     synchronize_groupings=False,
     synchronize_step=False,
-    timespan_specifier=consort.TimespanSpecifier(
+    timespan_specifier=consort.tools.TimespanSpecifier(
         minimum_duration=durationtools.Duration(1, 8),
         ),
     )

@@ -6,9 +6,6 @@ from abjad.tools import spannertools
 
 piano_tremoli_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
-        dynamics=consort.DynamicExpression(
-            dynamic_tokens='p ppp p ppp p ppp f mf f',
-            ),
         stem_tremolo_spanner=consort.AttachmentExpression(
             attachments=spannertools.StemTremoloSpanner(),
             selector=selectortools.selects_pitched_runs(),
