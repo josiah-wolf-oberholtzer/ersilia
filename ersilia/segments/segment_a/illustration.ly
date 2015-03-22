@@ -49,15 +49,34 @@
                 s1 * 3/4
             }
             {
+                \time 5/4
+                s1 * 5/4
+            }
+            {
                 \time 2/4
                 s1 * 1/2
             }
             {
-                \time 6/8
+                \time 3/8
+                s1 * 3/8
+            }
+            {
+                \time 5/4
+                s1 * 5/4
+            }
+            {
+                \time 2/4
+                s1 * 1/2
+            }
+            {
+                \time 3/4
                 s1 * 3/4
             }
             {
                 \time 2/4
+                s1 * 1/2
+            }
+            {
                 s1 * 1/2
             }
             {
@@ -65,58 +84,11 @@
                 s1 * 5/4
             }
             {
-                \time 3/8
-                s1 * 3/8
-            }
-            {
-                \time 6/8
-                s1 * 3/4
-            }
-            {
-                \time 2/4
-                s1 * 1/2
-            }
-            {
-                \time 5/8
-                s1 * 5/8
-            }
-            {
-                \time 3/8
-                s1 * 3/8
-            }
-            {
                 \time 2/4
                 s1 * 1/2
             }
             {
                 \time 3/8
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
                 s1 * 3/8
             }
             {
@@ -166,24 +138,31 @@
                 s1 * 1
             }
             {
+                \time 5/4
+                s1 * 5/4
+            }
+            {
+                \time 3/8
+                s1 * 3/8
+            }
+            {
+                \time 4/4
+                s1 * 1
+            }
+            {
                 \time 2/4
                 s1 * 1/2
             }
             {
-                \time 5/8
-                s1 * 5/8
-            }
-            {
-                \time 2/4
                 s1 * 1/2
             }
             {
-                \time 5/8
-                s1 * 5/8
+                \time 3/8
+                s1 * 3/8
             }
             {
-                \time 7/8
-                s1 * 7/8
+                \time 5/4
+                s1 * 5/4
             }
             {
                 \time 6/8
@@ -292,6 +271,38 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -301,6 +312,14 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 3/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -324,119 +343,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -572,6 +479,30 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -580,14 +511,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -596,7 +519,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/8
+                                R1 * 3/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -604,7 +527,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 7/8
+                                R1 * 5/4
                                 \stopStaff
                                 \startStaff
                             }
@@ -761,6 +684,38 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -770,6 +725,14 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 3/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -793,119 +756,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -1041,6 +892,30 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -1049,14 +924,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -1065,7 +932,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/8
+                                R1 * 3/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -1073,7 +940,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 7/8
+                                R1 * 5/4
                                 \stopStaff
                                 \startStaff
                             }
@@ -1230,6 +1097,38 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -1239,6 +1138,14 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 3/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -1262,119 +1169,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -1510,6 +1305,30 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -1518,14 +1337,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -1534,7 +1345,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/8
+                                R1 * 3/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -1542,7 +1353,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 7/8
+                                R1 * 5/4
                                 \stopStaff
                                 \startStaff
                             }
@@ -1699,6 +1510,38 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -1708,6 +1551,14 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 3/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -1731,119 +1582,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -1979,6 +1718,30 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -1987,14 +1750,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -2003,7 +1758,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/8
+                                R1 * 3/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -2011,7 +1766,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 7/8
+                                R1 * 5/4
                                 \stopStaff
                                 \startStaff
                             }
@@ -2158,8 +1913,8 @@
                     }
                     {
                         {
-                            <g b d' g' af' d''>4 :32 ~
-                            <g b d' g' af' d''>4. :32 ~
+                            <g b d' g' af' d''>8 :64 ~
+                            <g b d' g' af' d''>2 :32 ~
                         }
                         {
                             <g b d' g' af' d''>2 :32
@@ -2172,19 +1927,79 @@
                     }
                     {
                         {
-                            <g b d' ef' g' d''>4 :32 ~
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            <g b d' ef' g' d''>8 :64 ~ [
+                            <g b d' ef' g' d''>8 :64
                         }
+                    }
+                    {
                         {
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            <g b d' ef' g' d''>8 :64 ~ ]
-                            <g b d' ef' g' d''>2 :32 ~
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            <a' c'' e''>16 [ (
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <c' e' g'>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <f' a' c''>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            <d' f' a' c''>16 ] )
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
                         }
+                    }
+                    {
                         {
-                            <g b d' ef' g' d''>4 :32
+                            <g b d' g' af' d''>2. :32 ~
+                            \set stemLeftBeamCount = 1
+                            <g b d' g' af' d''>8 :64
                         }
                     }
                     {
@@ -2194,25 +2009,306 @@
                     }
                     {
                         {
-                            <g b d' g' af' d''>2. :32 ~
+                            <g b d' ef' g' d''>4 :32
+                        }
+                    }
+                    {
+                        \times 2/3 {
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            <b d' f' a'>8 [ (
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            <e' g' b'>8
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            <g' b' d'' f''>8
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
+                        }
+                        {
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            <c' e' g'>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            <f' a' c''>16 ] )
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                        }
+                    }
+                    {
+                        {
+                            <g b d' g' af' d''>8 :64 ~
                         }
                         {
                             <g b d' g' af' d''>2 :32 ~
                         }
                         {
-                            <g b d' g' af' d''>2 :32 ~
                             \set stemLeftBeamCount = 1
                             <g b d' g' af' d''>8 :64
                         }
                     }
                     {
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            <e' g' b'>16 [ (
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <c' e' g'>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <d' f' a' c''>16
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <a c' e'>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <e' g' b' d''>16
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
+                            <b' d'' f''>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                        }
+                        {
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            <b d' f' a'>8
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
+                        }
+                        {
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            <f' a' c''>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <e' g' b'>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <b d' f'>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <g b d' f'>16
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            <c'' e'' g''>16 ] )
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                        }
+                    }
+                    {
+                        {
+                            r16
                         }
                     }
                     {
@@ -2222,84 +2318,112 @@
                     }
                     {
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
+                            r2.
                         }
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
+                            r4
+                            r16
+                        }
+                    }
+                    {
+                        {
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            <a' c'' e''>16 [ (
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <c' e' g'>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <e' g' b' d''>16
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
                         }
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <e' g' b'>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <a' c'' e''>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            <b' d'' f'' a''>16 ] )
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
                         }
+                    }
+                    {
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
+                            r16
+                            r8
                         }
                         {
                             \stopStaff
@@ -2421,19 +2545,396 @@
                             \stopStaff
                             \startStaff
                         }
+                        {
+                            r8
+                        }
+                    }
+                    {
+                        \times 4/5 {
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            <e' g' b'>16 [ (
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <b' d'' f''>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <g b d' f'>16
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <c' e' g'>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            <f' a' c''>16 ] )
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                        }
+                    }
+                    {
+                        {
+                            r8
+                            r2.
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                    }
+                    {
+                        {
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            <b' d'' f''>8 [ (
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            <e' g' b'>8
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 1
+                            <c'' e'' g''>8 ] )
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                        }
+                    }
+                    {
+                        {
+                            r8
+                        }
                     }
                     {
                         {
                             <g b d' g' af' d''>2 :32 ~
                         }
                         {
-                            <g b d' g' af' d''>2 :32 ~
                             \set stemLeftBeamCount = 1
+                            <g b d' g' af' d''>8 :64
+                        }
+                    }
+                    {
+                        {
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            <f' a' c''>16 [ (
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <a' c'' e'' g''>16
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <a c' e'>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <f' a' c''>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <d' f' a' c''>16
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 1
-                            <g b d' g' af' d''>8 :64 ~
+                            <a c' e'>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
                         }
                         {
-                            <g b d' g' af' d''>2 :32
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            <c'' e'' g''>8
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                        }
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 5/6 {
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            <e' g' b' d''>16
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <e' g' b'>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <b d' f'>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <a' c'' e''>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <b d' f' a'>16
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            <f' a' c''>16 ] )
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                        }
+                    }
+                    {
+                        {
+                            r16
+                        }
+                    }
+                    {
+                        {
+                            <g b d' ef' g' d''>8 :64
                         }
                     }
                     {
@@ -2443,15 +2944,127 @@
                     }
                     {
                         {
-                            <g b d' ef' g' d''>4. :32 ~
+                            <g b d' g' af' d''>4 :32 ~
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            <g b d' g' af' d''>8 :64 ~ [
                         }
                         {
-                            <g b d' ef' g' d''>4. :32 ~
-                            <g b d' ef' g' d''>4 :32 ~
-                            <g b d' ef' g' d''>4 :32 ~
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            <g b d' g' af' d''>8 :64 ~ ]
+                            <g b d' g' af' d''>2 :32 ~
+                            \set stemLeftBeamCount = 1
+                            <g b d' g' af' d''>8. :64
                         }
+                    }
+                    {
                         {
-                            <g b d' ef' g' d''>2. :32 ~
+                            r16
+                        }
+                    }
+                    {
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 5/6 {
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            <c'' e'' g''>16 [ (
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <f' a' c''>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <d' f' a' c''>16
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <a c' e'>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <e' g' b' d''>16
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            <b' d'' f''>16 ] )
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                        }
+                    }
+                    {
+                        {
+                            <g b d' ef' g' d''>16 :128 ~
+                            <g b d' ef' g' d''>4. :32 ~
                         }
                         {
                             <g b d' ef' g' d''>2 :32
@@ -2549,10 +3162,25 @@
                         R1 * 3/4
                     }
                     {
+                        R1 * 5/4
+                    }
+                    {
+                        R1 * 1/2
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 5/4
+                    }
+                    {
                         R1 * 1/2
                     }
                     {
                         R1 * 3/4
+                    }
+                    {
+                        R1 * 1/2
                     }
                     {
                         R1 * 1/2
@@ -2561,49 +3189,7 @@
                         R1 * 5/4
                     }
                     {
-                        R1 * 3/8
-                    }
-                    {
-                        R1 * 3/4
-                    }
-                    {
                         R1 * 1/2
-                    }
-                    {
-                        R1 * 5/8
-                    }
-                    {
-                        R1 * 3/8
-                    }
-                    {
-                        R1 * 1/2
-                    }
-                    {
-                        R1 * 3/8
-                    }
-                    {
-                        R1 * 3/8
-                    }
-                    {
-                        R1 * 3/8
-                    }
-                    {
-                        R1 * 3/8
-                    }
-                    {
-                        R1 * 3/8
-                    }
-                    {
-                        R1 * 3/8
-                    }
-                    {
-                        R1 * 3/8
-                    }
-                    {
-                        R1 * 3/8
-                    }
-                    {
-                        R1 * 3/8
                     }
                     {
                         R1 * 3/8
@@ -2654,19 +3240,25 @@
                         R1 * 1
                     }
                     {
+                        R1 * 5/4
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 1
+                    }
+                    {
                         R1 * 1/2
                     }
                     {
-                        R1 * 5/8
-                    }
-                    {
                         R1 * 1/2
                     }
                     {
-                        R1 * 5/8
+                        R1 * 3/8
                     }
                     {
-                        R1 * 7/8
+                        R1 * 5/4
                     }
                     {
                         R1 * 3/4
@@ -2759,30 +3351,6 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             R1 * 5/4
                             \stopStaff
                             \startStaff
@@ -2791,10 +3359,179 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             R1 * 3/8
                             \stopStaff
                             \startStaff
                         }
+                        {
+                            r4
+                        }
+                    }
+                    {
+                        {
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            <b' d'' f''>8 [ (
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            <a' c'' e''>8
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 1
+                            <c'' e'' g''>8 ] )
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                        }
+                    }
+                    {
+                        {
+                            r8
+                            r2
+                        }
+                    }
+                    {
+                        {
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            <e' g' b' d''>16 [ (
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <e' g' b'>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <b' d'' f''>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
+                            <a c' e'>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                        }
+                        {
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            <f' a' c''>8
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 1
+                            <b d' f'>8 ] )
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                        }
+                    }
+                    {
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
@@ -2804,6 +3541,123 @@
                             \startStaff
                         }
                         {
+                            r8
+                        }
+                    }
+                    {
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 6/7 {
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            <a c' e' g'>16 [ (
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <a' c'' e''>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <f' a' c''>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <b d' f'>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <c'' e'' g''>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <e' g' b'>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            <a' c'' e''>16 ] )
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                        }
+                    }
+                    {
+                        {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
@@ -2811,21 +3665,139 @@
                             \stopStaff
                             \startStaff
                         }
+                    }
+                    {
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            <f' a' c''>16 [ (
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <e' g' b'>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <a c' e' g'>16
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <a' c'' e''>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <c' e' g'>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <f' a' c''>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <d' f' a' c''>16
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            <b' d'' f''>16 ] )
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
                         }
+                    }
+                    {
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
+                            r2.
                         }
                         {
                             \stopStaff
@@ -2835,85 +3807,48 @@
                             \stopStaff
                             \startStaff
                         }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
+                    }
+                    {
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 5/4 {
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            <b d' f'>8 [ (
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 1
+                            <f' a' c''>8 ] )
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
                         }
+                    }
+                    {
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
+                            r16
                         }
                         {
                             \stopStaff
@@ -3036,6 +3971,332 @@
                             \startStaff
                         }
                         {
+                            r4
+                            r8
+                        }
+                    }
+                    {
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 6/7 {
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            <e' g' b'>16 [ (
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <a' c'' e'' g''>16
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <a' c'' e''>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <c' e' g'>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <f' a' c''>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <d' f' a' c''>16
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            <b' d'' f''>16 ] )
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                        }
+                    }
+                    {
+                        {
+                            r2
+                        }
+                        {
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            <a c' e'>16 [ (
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <c' e' g'>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <e' g' b' d''>16
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <e' g' b'>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                        }
+                        \times 4/5 {
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <a' c'' e''>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <b d' f' a'>16
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <f' a' c''>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <b d' f'>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            <g b d' f'>16 ] )
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
+                        }
+                    }
+                    {
+                        {
+                            r2.
+                        }
+                        {
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            <e' g' b'>8 [ (
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            <c' e' g'>8
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 1
+                            <b' d'' f''>8 ] )
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                        }
+                    }
+                    {
+                        {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
@@ -3043,45 +4304,231 @@
                             \stopStaff
                             \startStaff
                         }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
+                    }
+                    {
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 6/7 {
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            <e' g' b'>16 [ (
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <b' d'' f''>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <g b d' f'>16
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <c'' e'' g''>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <f' a' c''>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <e' g' b'>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
+                            <a c' e' g'>16
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
                         }
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 1
+                            <a' c'' e''>8 ] )
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                        }
+                    }
+                    {
+                        {
+                            r8
+                            r1
                         }
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
+                            r8
                         }
+                    }
+                    {
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            <b' d'' f''>16 [ (
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <c' e' g'>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <e' g' b'>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <a c' e'>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            <b' d'' f'' a''>16 ] )
+                                ^ \markup {
+                                    \center-align
+                                        \flat
+                                    }
                         }
+                    }
+                    {
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/4
-                            \stopStaff
-                            \startStaff
+                            r16
+                            r4
                         }
                         {
                             \stopStaff
@@ -3187,10 +4634,25 @@
                         R1 * 3/4
                     }
                     {
+                        R1 * 5/4
+                    }
+                    {
+                        R1 * 1/2
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 5/4
+                    }
+                    {
                         R1 * 1/2
                     }
                     {
                         R1 * 3/4
+                    }
+                    {
+                        R1 * 1/2
                     }
                     {
                         R1 * 1/2
@@ -3199,49 +4661,7 @@
                         R1 * 5/4
                     }
                     {
-                        R1 * 3/8
-                    }
-                    {
-                        R1 * 3/4
-                    }
-                    {
                         R1 * 1/2
-                    }
-                    {
-                        R1 * 5/8
-                    }
-                    {
-                        R1 * 3/8
-                    }
-                    {
-                        R1 * 1/2
-                    }
-                    {
-                        R1 * 3/8
-                    }
-                    {
-                        R1 * 3/8
-                    }
-                    {
-                        R1 * 3/8
-                    }
-                    {
-                        R1 * 3/8
-                    }
-                    {
-                        R1 * 3/8
-                    }
-                    {
-                        R1 * 3/8
-                    }
-                    {
-                        R1 * 3/8
-                    }
-                    {
-                        R1 * 3/8
-                    }
-                    {
-                        R1 * 3/8
                     }
                     {
                         R1 * 3/8
@@ -3292,19 +4712,25 @@
                         R1 * 1
                     }
                     {
+                        R1 * 5/4
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 1
+                    }
+                    {
                         R1 * 1/2
                     }
                     {
-                        R1 * 5/8
-                    }
-                    {
                         R1 * 1/2
                     }
                     {
-                        R1 * 5/8
+                        R1 * 3/8
                     }
                     {
-                        R1 * 7/8
+                        R1 * 5/4
                     }
                     {
                         R1 * 3/4
@@ -3402,6 +4828,38 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
+                            R1 * 5/4
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 5/4
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             R1 * 1/2
                             \stopStaff
                             \startStaff
@@ -3411,6 +4869,14 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             R1 * 3/4
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -3434,119 +4900,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
                             \stopStaff
                             \startStaff
                         }
@@ -3682,6 +5036,30 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
+                            R1 * 5/4
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 1
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             R1 * 1/2
                             \stopStaff
                             \startStaff
@@ -3690,14 +5068,6 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             R1 * 1/2
                             \stopStaff
                             \startStaff
@@ -3706,7 +5076,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 5/8
+                            R1 * 3/8
                             \stopStaff
                             \startStaff
                         }
@@ -3714,7 +5084,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 7/8
+                            R1 * 5/4
                             \stopStaff
                             \startStaff
                         }
@@ -3870,6 +5240,38 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
+                            R1 * 5/4
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 5/4
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             R1 * 1/2
                             \stopStaff
                             \startStaff
@@ -3879,6 +5281,14 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             R1 * 3/4
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -3902,119 +5312,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
                             \stopStaff
                             \startStaff
                         }
@@ -4150,6 +5448,30 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
+                            R1 * 5/4
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 1
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             R1 * 1/2
                             \stopStaff
                             \startStaff
@@ -4158,14 +5480,6 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             R1 * 1/2
                             \stopStaff
                             \startStaff
@@ -4174,7 +5488,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 5/8
+                            R1 * 3/8
                             \stopStaff
                             \startStaff
                         }
@@ -4182,7 +5496,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 7/8
+                            R1 * 5/4
                             \stopStaff
                             \startStaff
                         }
@@ -4307,10 +5621,25 @@
                                 R1 * 3/4
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 1/2
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 5/4
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
                                 R1 * 3/4
+                            }
+                            {
+                                R1 * 1/2
                             }
                             {
                                 R1 * 1/2
@@ -4319,49 +5648,7 @@
                                 R1 * 5/4
                             }
                             {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/4
-                            }
-                            {
                                 R1 * 1/2
-                            }
-                            {
-                                R1 * 5/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 1/2
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
                             }
                             {
                                 R1 * 3/8
@@ -4412,19 +5699,25 @@
                                 R1 * 1
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 1
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
-                            }
-                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
+                                R1 * 3/8
                             }
                             {
-                                R1 * 7/8
+                                R1 * 5/4
                             }
                             {
                                 R1 * 3/4
@@ -4482,10 +5775,25 @@
                                 R1 * 3/4
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 1/2
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 5/4
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
                                 R1 * 3/4
+                            }
+                            {
+                                R1 * 1/2
                             }
                             {
                                 R1 * 1/2
@@ -4494,49 +5802,7 @@
                                 R1 * 5/4
                             }
                             {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/4
-                            }
-                            {
                                 R1 * 1/2
-                            }
-                            {
-                                R1 * 5/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 1/2
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
                             }
                             {
                                 R1 * 3/8
@@ -4587,19 +5853,25 @@
                                 R1 * 1
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 1
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
-                            }
-                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
+                                R1 * 3/8
                             }
                             {
-                                R1 * 7/8
+                                R1 * 5/4
                             }
                             {
                                 R1 * 3/4
@@ -4657,10 +5929,25 @@
                                 R1 * 3/4
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 1/2
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 5/4
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
                                 R1 * 3/4
+                            }
+                            {
+                                R1 * 1/2
                             }
                             {
                                 R1 * 1/2
@@ -4669,49 +5956,7 @@
                                 R1 * 5/4
                             }
                             {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/4
-                            }
-                            {
                                 R1 * 1/2
-                            }
-                            {
-                                R1 * 5/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 1/2
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
                             }
                             {
                                 R1 * 3/8
@@ -4762,19 +6007,25 @@
                                 R1 * 1
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 1
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
-                            }
-                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
+                                R1 * 3/8
                             }
                             {
-                                R1 * 7/8
+                                R1 * 5/4
                             }
                             {
                                 R1 * 3/4
@@ -4832,10 +6083,25 @@
                                 R1 * 3/4
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 1/2
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 5/4
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
                                 R1 * 3/4
+                            }
+                            {
+                                R1 * 1/2
                             }
                             {
                                 R1 * 1/2
@@ -4844,49 +6110,7 @@
                                 R1 * 5/4
                             }
                             {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/4
-                            }
-                            {
                                 R1 * 1/2
-                            }
-                            {
-                                R1 * 5/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 1/2
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
                             }
                             {
                                 R1 * 3/8
@@ -4937,19 +6161,25 @@
                                 R1 * 1
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 1
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
-                            }
-                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
+                                R1 * 3/8
                             }
                             {
-                                R1 * 7/8
+                                R1 * 5/4
                             }
                             {
                                 R1 * 3/4
@@ -5043,6 +6273,38 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -5052,6 +6314,14 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 3/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -5075,119 +6345,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -5323,6 +6481,30 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -5331,14 +6513,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -5347,7 +6521,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/8
+                                R1 * 3/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -5355,7 +6529,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 7/8
+                                R1 * 5/4
                                 \stopStaff
                                 \startStaff
                             }
@@ -5470,10 +6644,25 @@
                                 R1 * 3/4
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 1/2
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 5/4
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
                                 R1 * 3/4
+                            }
+                            {
+                                R1 * 1/2
                             }
                             {
                                 R1 * 1/2
@@ -5482,49 +6671,7 @@
                                 R1 * 5/4
                             }
                             {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/4
-                            }
-                            {
                                 R1 * 1/2
-                            }
-                            {
-                                R1 * 5/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 1/2
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
                             }
                             {
                                 R1 * 3/8
@@ -5575,19 +6722,25 @@
                                 R1 * 1
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 1
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
-                            }
-                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
+                                R1 * 3/8
                             }
                             {
-                                R1 * 7/8
+                                R1 * 5/4
                             }
                             {
                                 R1 * 3/4
@@ -5654,10 +6807,25 @@
                                 R1 * 3/4
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 1/2
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 5/4
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
                                 R1 * 3/4
+                            }
+                            {
+                                R1 * 1/2
                             }
                             {
                                 R1 * 1/2
@@ -5666,49 +6834,7 @@
                                 R1 * 5/4
                             }
                             {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/4
-                            }
-                            {
                                 R1 * 1/2
-                            }
-                            {
-                                R1 * 5/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 1/2
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
                             }
                             {
                                 R1 * 3/8
@@ -5759,19 +6885,25 @@
                                 R1 * 1
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 1
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
-                            }
-                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
+                                R1 * 3/8
                             }
                             {
-                                R1 * 7/8
+                                R1 * 5/4
                             }
                             {
                                 R1 * 3/4
@@ -5829,10 +6961,25 @@
                                 R1 * 3/4
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 1/2
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 5/4
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
                                 R1 * 3/4
+                            }
+                            {
+                                R1 * 1/2
                             }
                             {
                                 R1 * 1/2
@@ -5841,49 +6988,7 @@
                                 R1 * 5/4
                             }
                             {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/4
-                            }
-                            {
                                 R1 * 1/2
-                            }
-                            {
-                                R1 * 5/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 1/2
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
                             }
                             {
                                 R1 * 3/8
@@ -5934,19 +7039,25 @@
                                 R1 * 1
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 1
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
-                            }
-                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
+                                R1 * 3/8
                             }
                             {
-                                R1 * 7/8
+                                R1 * 5/4
                             }
                             {
                                 R1 * 3/4
@@ -6004,10 +7115,25 @@
                                 R1 * 3/4
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 1/2
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 5/4
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
                                 R1 * 3/4
+                            }
+                            {
+                                R1 * 1/2
                             }
                             {
                                 R1 * 1/2
@@ -6016,49 +7142,7 @@
                                 R1 * 5/4
                             }
                             {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/4
-                            }
-                            {
                                 R1 * 1/2
-                            }
-                            {
-                                R1 * 5/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 1/2
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
                             }
                             {
                                 R1 * 3/8
@@ -6109,19 +7193,25 @@
                                 R1 * 1
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 1
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
-                            }
-                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
+                                R1 * 3/8
                             }
                             {
-                                R1 * 7/8
+                                R1 * 5/4
                             }
                             {
                                 R1 * 3/4
@@ -6179,10 +7269,25 @@
                                 R1 * 3/4
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 1/2
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 5/4
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
                                 R1 * 3/4
+                            }
+                            {
+                                R1 * 1/2
                             }
                             {
                                 R1 * 1/2
@@ -6191,49 +7296,7 @@
                                 R1 * 5/4
                             }
                             {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/4
-                            }
-                            {
                                 R1 * 1/2
-                            }
-                            {
-                                R1 * 5/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 1/2
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
                             }
                             {
                                 R1 * 3/8
@@ -6284,19 +7347,25 @@
                                 R1 * 1
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 1
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
-                            }
-                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
+                                R1 * 3/8
                             }
                             {
-                                R1 * 7/8
+                                R1 * 5/4
                             }
                             {
                                 R1 * 3/4
@@ -6390,6 +7459,38 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -6399,6 +7500,14 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 3/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -6422,119 +7531,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -6670,6 +7667,30 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -6678,14 +7699,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -6694,7 +7707,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/8
+                                R1 * 3/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -6702,7 +7715,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 7/8
+                                R1 * 5/4
                                 \stopStaff
                                 \startStaff
                             }
@@ -6817,10 +7830,25 @@
                                 R1 * 3/4
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 1/2
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 5/4
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
                                 R1 * 3/4
+                            }
+                            {
+                                R1 * 1/2
                             }
                             {
                                 R1 * 1/2
@@ -6829,49 +7857,7 @@
                                 R1 * 5/4
                             }
                             {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/4
-                            }
-                            {
                                 R1 * 1/2
-                            }
-                            {
-                                R1 * 5/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 1/2
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
                             }
                             {
                                 R1 * 3/8
@@ -6922,19 +7908,25 @@
                                 R1 * 1
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 1
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
-                            }
-                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
+                                R1 * 3/8
                             }
                             {
-                                R1 * 7/8
+                                R1 * 5/4
                             }
                             {
                                 R1 * 3/4
@@ -7001,10 +7993,25 @@
                                 R1 * 3/4
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 1/2
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 5/4
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
                                 R1 * 3/4
+                            }
+                            {
+                                R1 * 1/2
                             }
                             {
                                 R1 * 1/2
@@ -7013,49 +8020,7 @@
                                 R1 * 5/4
                             }
                             {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/4
-                            }
-                            {
                                 R1 * 1/2
-                            }
-                            {
-                                R1 * 5/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 1/2
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
                             }
                             {
                                 R1 * 3/8
@@ -7106,19 +8071,25 @@
                                 R1 * 1
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 1
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
-                            }
-                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
+                                R1 * 3/8
                             }
                             {
-                                R1 * 7/8
+                                R1 * 5/4
                             }
                             {
                                 R1 * 3/4
@@ -7176,10 +8147,25 @@
                                 R1 * 3/4
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 1/2
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 5/4
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
                                 R1 * 3/4
+                            }
+                            {
+                                R1 * 1/2
                             }
                             {
                                 R1 * 1/2
@@ -7188,49 +8174,7 @@
                                 R1 * 5/4
                             }
                             {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/4
-                            }
-                            {
                                 R1 * 1/2
-                            }
-                            {
-                                R1 * 5/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 1/2
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
                             }
                             {
                                 R1 * 3/8
@@ -7281,19 +8225,25 @@
                                 R1 * 1
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 1
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
-                            }
-                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
+                                R1 * 3/8
                             }
                             {
-                                R1 * 7/8
+                                R1 * 5/4
                             }
                             {
                                 R1 * 3/4
@@ -7351,10 +8301,25 @@
                                 R1 * 3/4
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 1/2
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 5/4
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
                                 R1 * 3/4
+                            }
+                            {
+                                R1 * 1/2
                             }
                             {
                                 R1 * 1/2
@@ -7363,49 +8328,7 @@
                                 R1 * 5/4
                             }
                             {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/4
-                            }
-                            {
                                 R1 * 1/2
-                            }
-                            {
-                                R1 * 5/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 1/2
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
                             }
                             {
                                 R1 * 3/8
@@ -7456,19 +8379,25 @@
                                 R1 * 1
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 1
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
-                            }
-                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
+                                R1 * 3/8
                             }
                             {
-                                R1 * 7/8
+                                R1 * 5/4
                             }
                             {
                                 R1 * 3/4
@@ -7526,10 +8455,25 @@
                                 R1 * 3/4
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 1/2
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 5/4
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
                                 R1 * 3/4
+                            }
+                            {
+                                R1 * 1/2
                             }
                             {
                                 R1 * 1/2
@@ -7538,49 +8482,7 @@
                                 R1 * 5/4
                             }
                             {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/4
-                            }
-                            {
                                 R1 * 1/2
-                            }
-                            {
-                                R1 * 5/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 1/2
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
                             }
                             {
                                 R1 * 3/8
@@ -7631,19 +8533,25 @@
                                 R1 * 1
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 1
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
-                            }
-                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
+                                R1 * 3/8
                             }
                             {
-                                R1 * 7/8
+                                R1 * 5/4
                             }
                             {
                                 R1 * 3/4
@@ -7737,6 +8645,38 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -7746,6 +8686,14 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 3/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -7769,119 +8717,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -8017,6 +8853,30 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -8025,14 +8885,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -8041,7 +8893,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/8
+                                R1 * 3/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -8049,7 +8901,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 7/8
+                                R1 * 5/4
                                 \stopStaff
                                 \startStaff
                             }
@@ -8164,10 +9016,25 @@
                                 R1 * 3/4
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 1/2
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 5/4
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
                                 R1 * 3/4
+                            }
+                            {
+                                R1 * 1/2
                             }
                             {
                                 R1 * 1/2
@@ -8176,49 +9043,7 @@
                                 R1 * 5/4
                             }
                             {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/4
-                            }
-                            {
                                 R1 * 1/2
-                            }
-                            {
-                                R1 * 5/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 1/2
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
                             }
                             {
                                 R1 * 3/8
@@ -8269,19 +9094,25 @@
                                 R1 * 1
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 1
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
-                            }
-                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
+                                R1 * 3/8
                             }
                             {
-                                R1 * 7/8
+                                R1 * 5/4
                             }
                             {
                                 R1 * 3/4
@@ -8348,10 +9179,25 @@
                                 R1 * 3/4
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 1/2
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 5/4
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
                                 R1 * 3/4
+                            }
+                            {
+                                R1 * 1/2
                             }
                             {
                                 R1 * 1/2
@@ -8360,49 +9206,7 @@
                                 R1 * 5/4
                             }
                             {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/4
-                            }
-                            {
                                 R1 * 1/2
-                            }
-                            {
-                                R1 * 5/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 1/2
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
                             }
                             {
                                 R1 * 3/8
@@ -8453,19 +9257,25 @@
                                 R1 * 1
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 1
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
-                            }
-                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
+                                R1 * 3/8
                             }
                             {
-                                R1 * 7/8
+                                R1 * 5/4
                             }
                             {
                                 R1 * 3/4
@@ -8523,10 +9333,25 @@
                                 R1 * 3/4
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 1/2
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 5/4
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
                                 R1 * 3/4
+                            }
+                            {
+                                R1 * 1/2
                             }
                             {
                                 R1 * 1/2
@@ -8535,49 +9360,7 @@
                                 R1 * 5/4
                             }
                             {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/4
-                            }
-                            {
                                 R1 * 1/2
-                            }
-                            {
-                                R1 * 5/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 1/2
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
                             }
                             {
                                 R1 * 3/8
@@ -8628,19 +9411,25 @@
                                 R1 * 1
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 1
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
-                            }
-                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
+                                R1 * 3/8
                             }
                             {
-                                R1 * 7/8
+                                R1 * 5/4
                             }
                             {
                                 R1 * 3/4
@@ -8698,10 +9487,25 @@
                                 R1 * 3/4
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 1/2
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 5/4
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
                                 R1 * 3/4
+                            }
+                            {
+                                R1 * 1/2
                             }
                             {
                                 R1 * 1/2
@@ -8710,49 +9514,7 @@
                                 R1 * 5/4
                             }
                             {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/4
-                            }
-                            {
                                 R1 * 1/2
-                            }
-                            {
-                                R1 * 5/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 1/2
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
                             }
                             {
                                 R1 * 3/8
@@ -8803,19 +9565,25 @@
                                 R1 * 1
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 1
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
-                            }
-                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
+                                R1 * 3/8
                             }
                             {
-                                R1 * 7/8
+                                R1 * 5/4
                             }
                             {
                                 R1 * 3/4
@@ -8873,10 +9641,25 @@
                                 R1 * 3/4
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 1/2
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 5/4
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
                                 R1 * 3/4
+                            }
+                            {
+                                R1 * 1/2
                             }
                             {
                                 R1 * 1/2
@@ -8885,49 +9668,7 @@
                                 R1 * 5/4
                             }
                             {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/4
-                            }
-                            {
                                 R1 * 1/2
-                            }
-                            {
-                                R1 * 5/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 1/2
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
                             }
                             {
                                 R1 * 3/8
@@ -8978,19 +9719,25 @@
                                 R1 * 1
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 1
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
-                            }
-                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
+                                R1 * 3/8
                             }
                             {
-                                R1 * 7/8
+                                R1 * 5/4
                             }
                             {
                                 R1 * 3/4
@@ -9084,6 +9831,38 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -9093,6 +9872,14 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 3/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -9116,119 +9903,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -9364,6 +10039,30 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -9372,14 +10071,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
@@ -9388,7 +10079,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/8
+                                R1 * 3/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -9396,7 +10087,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 7/8
+                                R1 * 5/4
                                 \stopStaff
                                 \startStaff
                             }
@@ -9511,10 +10202,25 @@
                                 R1 * 3/4
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 1/2
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 5/4
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
                                 R1 * 3/4
+                            }
+                            {
+                                R1 * 1/2
                             }
                             {
                                 R1 * 1/2
@@ -9523,49 +10229,7 @@
                                 R1 * 5/4
                             }
                             {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/4
-                            }
-                            {
                                 R1 * 1/2
-                            }
-                            {
-                                R1 * 5/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 1/2
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
                             }
                             {
                                 R1 * 3/8
@@ -9616,19 +10280,25 @@
                                 R1 * 1
                             }
                             {
+                                R1 * 5/4
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 1
+                            }
+                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
-                            }
-                            {
                                 R1 * 1/2
                             }
                             {
-                                R1 * 5/8
+                                R1 * 3/8
                             }
                             {
-                                R1 * 7/8
+                                R1 * 5/4
                             }
                             {
                                 R1 * 3/4
