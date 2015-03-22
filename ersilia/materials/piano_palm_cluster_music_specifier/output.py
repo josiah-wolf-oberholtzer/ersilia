@@ -3,6 +3,8 @@ from abjad.tools import datastructuretools
 from abjad.tools import mathtools
 from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
+from abjad.tools import scoretools
+from abjad.tools import selectortools
 from abjad.tools import spannertools
 import consort
 
@@ -14,6 +16,19 @@ piano_palm_cluster_music_specifier = consort.tools.MusicSpecifier(
                 [
                     spannertools.Slur(),
                     ]
+                ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.PrototypeSelectorCallback(
+                        prototype=scoretools.Leaf,
+                        ),
+                    selectortools.RunSelectorCallback(
+                        prototype=(
+                            scoretools.Note,
+                            scoretools.Chord,
+                            ),
+                        ),
+                    ),
                 ),
             ),
         ),
@@ -62,5 +77,15 @@ piano_palm_cluster_music_specifier = consort.tools.MusicSpecifier(
     rhythm_maker=rhythmmakertools.EvenDivisionRhythmMaker(
         denominators=(16, 16, 8, 16, 16, 16, 8),
         extra_counts_per_division=(0, 0, 1),
+        burnish_specifier=rhythmmakertools.BurnishSpecifier(
+            left_classes=(
+                scoretools.Rest,
+                ),
+            right_classes=(
+                scoretools.Rest,
+                ),
+            left_counts=(1, 1, 0),
+            right_counts=(1, 0),
+            ),
         ),
     )
