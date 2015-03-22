@@ -404,6 +404,7 @@ afterGraceFraction = #(cons 1023 1024)
             (right-edge extra-space . 0.0)
             )
         \override Beam.beam-thickness = 0.75
+        \override Beam.direction = #down
         \override Beam.breakable = ##t
         \override Beam.length-fraction = 1.5
         \override Glissando.after-line-breaking = ##t
@@ -418,6 +419,7 @@ afterGraceFraction = #(cons 1023 1024)
         \override StaffSymbol.color = #(x11-color 'grey50)
         \override Stem.details.beamed-lengths = #'(6)
         \override Stem.details.lengths = #'(6)
+        \override Stem.direction = #down
         \override Stem.stemlet-length = 1.5
         \override SustainPedal.self-alignment-X = #CENTER
         \override SustainPedalLineSpanner.padding = 2
