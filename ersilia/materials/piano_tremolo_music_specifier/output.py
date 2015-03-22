@@ -8,7 +8,7 @@ from abjad.tools import spannertools
 import consort
 
 
-piano_tremoli_music_specifier = consort.tools.MusicSpecifier(
+piano_tremolo_music_specifier = consort.tools.MusicSpecifier(
     attachment_handler=consort.tools.AttachmentHandler(
         stem_tremolo_spanner=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
