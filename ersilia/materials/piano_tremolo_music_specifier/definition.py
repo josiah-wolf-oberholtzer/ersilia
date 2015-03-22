@@ -8,7 +8,7 @@ piano_tremolo_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
         stem_tremolo_spanner=consort.AttachmentExpression(
             attachments=spannertools.StemTremoloSpanner(),
-            selector=selectortools.selects_pitched_runs(),
+            selector=selectortools.select_pitched_runs(),
             ),
         ),
     labels='pedaled',
