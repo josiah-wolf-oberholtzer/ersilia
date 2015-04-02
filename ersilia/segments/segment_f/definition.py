@@ -26,6 +26,14 @@ segment_maker = ersilia.ErsiliaSegmentMaker(
 
 segment_maker.add_setting(
     timespan_identifier=consort.RatioPartsExpression([0, 2], [1, 1, 1]),
-    timespan_maker=ersilia.materials.sustained_timespan_maker,
-    piano_rh=ersilia.materials.piano_tremolo_music_specifier,
+    timespan_maker=ersilia.sustained_timespan_maker,
+    piano_rh=ersilia.piano_tremolo_music_specifier,
+    )
+
+segment_maker.add_setting(
+    timespan_maker=ersilia.sparse_timespan_maker,
+    piano_pitch_pipe=ersilia.pitch_pipe_music_specifier,
+    guitar_pitch_pipe=ersilia.pitch_pipe_music_specifier,
+    percussion_pitch_pipe=ersilia.pitch_pipe_music_specifier,
+    contrabass_pitch_pipe=ersilia.pitch_pipe_music_specifier,
     )
