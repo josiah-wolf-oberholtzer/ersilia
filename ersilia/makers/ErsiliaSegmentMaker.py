@@ -157,14 +157,14 @@ class ErsiliaSegmentMaker(consort.SegmentMaker):
         self.attach_rehearsal_mark()
         score = self.score
         self.postprocess_grace_containers(score)
-        self.postprocess_right_hand_staff(score['Violin Bowing Staff'])
-        self.postprocess_right_hand_staff(score['Viola Bowing Staff'])
-        self.postprocess_right_hand_staff(score['Cello Bowing Staff'])
-        self.postprocess_right_hand_staff(score['Contrabass Bowing Staff'])
-        self.postprocess_left_hand_staff(score['Violin Fingering Staff'])
-        self.postprocess_left_hand_staff(score['Viola Fingering Staff'])
-        self.postprocess_left_hand_staff(score['Cello Fingering Staff'])
-        self.postprocess_left_hand_staff(score['Contrabass Fingering Staff'])
+#        self.postprocess_right_hand_staff(score['Violin Bowing Staff'])
+#        self.postprocess_right_hand_staff(score['Viola Bowing Staff'])
+#        self.postprocess_right_hand_staff(score['Cello Bowing Staff'])
+#        self.postprocess_right_hand_staff(score['Contrabass Bowing Staff'])
+#        self.postprocess_left_hand_staff(score['Violin Fingering Staff'])
+#        self.postprocess_left_hand_staff(score['Viola Fingering Staff'])
+#        self.postprocess_left_hand_staff(score['Cello Fingering Staff'])
+#        self.postprocess_left_hand_staff(score['Contrabass Fingering Staff'])
         if self.repeat:
             repeat = indicatortools.Repeat()
             for staff in iterate(score).by_class(scoretools.Staff):
