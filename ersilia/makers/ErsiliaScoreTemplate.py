@@ -69,8 +69,8 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                 instrumentName = \markup { Piano }
                 shortInstrumentName = \markup { Pf. }
             } <<
-                \context PitchPipeStaffStaff = "piano Pitch Pipe Staff" {
-                    \context Voice = "piano Pitch Pipe Voice" {
+                \context PitchPipeStaff = "Piano Pitch Pipe Staff" {
+                    \context Voice = "Piano Pitch Pipe Voice" {
                     }
                 }
                 \context PianoUpperStaff = "Piano Upper Staff" {
@@ -92,7 +92,7 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                 instrumentName = \markup { Percussion }
                 shortInstrumentName = \markup { Prc. }
             } <<
-                \context PitchPipeStaffStaff = "Percussion Pitch Pipe Staff" {
+                \context PitchPipeStaff = "Percussion Pitch Pipe Staff" {
                     \context Voice = "Percussion Pitch Pipe Voice" {
                     }
                 }
@@ -106,7 +106,7 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                 instrumentName = \markup { Guitar }
                 shortInstrumentName = \markup { Gtr. }
             } <<
-                \context PitchPipeStaffStaff = "Guitar Pitch Pipe Staff" {
+                \context PitchPipeStaff = "Guitar Pitch Pipe Staff" {
                     \context Voice = "Guitar Pitch Pipe Voice" {
                     }
                 }
@@ -155,8 +155,8 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                     instrumentName = \markup { Contrabass }
                     shortInstrumentName = \markup { Cb. }
                 } <<
-                    \context PitchPipeStaffStaff = "contrabass Pitch Pipe Staff" {
-                        \context Voice = "contrabass Pitch Pipe Voice" {
+                    \context PitchPipeStaff = "Contrabass Pitch Pipe Staff" {
+                        \context Voice = "Contrabass Pitch Pipe Voice" {
                         }
                     }
                     \context StringStaff = "Contrabass Staff" {
@@ -181,7 +181,7 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
         ('piano_dynamics', 'Piano Dynamics')
         ('piano_lh', 'Piano Lower Voice')
         ('piano_pedals', 'Piano Pedals')
-        ('piano_pitch_pipe', 'piano Pitch Pipe Voice')
+        ('piano_pitch_pipe', 'Piano Pitch Pipe Voice')
         ('percussion', 'Percussion Voice')
         ('percussion_pitch_pipe', 'Percussion Pitch Pipe Voice')
         ('guitar', 'Guitar Voice')
@@ -190,7 +190,7 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
         ('viola', 'Viola Voice')
         ('cello', 'Cello Voice')
         ('contrabass', 'Contrabass Voice')
-        ('contrabass_pitch_pipe', 'contrabass Pitch Pipe Voice')
+        ('contrabass_pitch_pipe', 'Contrabass Pitch Pipe Voice')
 
     ::
 
