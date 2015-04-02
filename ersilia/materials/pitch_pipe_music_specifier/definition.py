@@ -22,7 +22,7 @@ pitch_pipe_music_specifier = consort.MusicSpecifier(
                 ),
             ],
         tie_specifier=rhythmmakertools.TieSpecifier(
-            tie_divisions_together=True,
+            tie_across_divisions=True,
             ),
         ),
     )
