@@ -9,6 +9,7 @@ pitch_pipe_music_specifier = consort.MusicSpecifier(
         clef_spanner=consort.ClefSpanner('percussion'),
         staff_lines_spanner=spannertools.StaffLinesSpanner(1),
         ),
+    labels=('pitch pipes',),
     rhythm_maker=rhythmmakertools.EvenDivisionRhythmMaker(
         denominators=[8],
         output_masks=[
@@ -20,5 +21,8 @@ pitch_pipe_music_specifier = consort.MusicSpecifier(
                 indices=(0, -1),
                 ),
             ],
+        tie_specifier=rhythmmakertools.TieSpecifier(
+            tie_divisions_together=True,
+            ),
         ),
     )
