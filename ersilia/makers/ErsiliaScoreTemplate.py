@@ -69,6 +69,10 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                 instrumentName = \markup { Piano }
                 shortInstrumentName = \markup { Pf. }
             } <<
+                \context PitchPipeStaffStaff = "piano Pitch Pipe Staff" {
+                    \context Voice = "piano Pitch Pipe Voice" {
+                    }
+                }
                 \context PianoUpperStaff = "Piano Upper Staff" {
                     \context Voice = "Piano Upper Voice" {
                         \clef "treble"
@@ -88,6 +92,10 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                 instrumentName = \markup { Percussion }
                 shortInstrumentName = \markup { Prc. }
             } <<
+                \context PitchPipeStaffStaff = "Percussion Pitch Pipe Staff" {
+                    \context Voice = "Percussion Pitch Pipe Voice" {
+                    }
+                }
                 \context PercussionStaff = "Percussion Staff" {
                     \context Voice = "Percussion Voice" {
                         \clef "percussion"
@@ -98,6 +106,10 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                 instrumentName = \markup { Guitar }
                 shortInstrumentName = \markup { Gtr. }
             } <<
+                \context PitchPipeStaffStaff = "Guitar Pitch Pipe Staff" {
+                    \context Voice = "Guitar Pitch Pipe Voice" {
+                    }
+                }
                 \context GuitarStaff = "Guitar Staff" {
                     \context Voice = "Guitar Voice" {
                         \clef "treble_8"
@@ -110,14 +122,9 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                     instrumentName = \markup { Violin }
                     shortInstrumentName = \markup { Vn. }
                 } <<
-                    \context BowingStaff = "Violin Bowing Staff" {
-                        \clef "percussion"
-                        \context Voice = "Violin Bowing Voice" {
-                        }
-                    }
-                    \context FingeringStaff = "Violin Fingering Staff" {
-                        \clef "treble"
-                        \context Voice = "Violin Fingering Voice" {
+                    \context StringStaff = "Violin Staff" {
+                        \context Voice = "Violin Voice" {
+                            \clef "treble"
                         }
                     }
                 >>
@@ -126,14 +133,9 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                     instrumentName = \markup { Viola }
                     shortInstrumentName = \markup { Va. }
                 } <<
-                    \context BowingStaff = "Viola Bowing Staff" {
-                        \clef "percussion"
-                        \context Voice = "Viola Bowing Voice" {
-                        }
-                    }
-                    \context FingeringStaff = "Viola Fingering Staff" {
-                        \clef "alto"
-                        \context Voice = "Viola Fingering Voice" {
+                    \context StringStaff = "Viola Staff" {
+                        \context Voice = "Viola Voice" {
+                            \clef "alto"
                         }
                     }
                 >>
@@ -142,30 +144,24 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                     instrumentName = \markup { Cello }
                     shortInstrumentName = \markup { Vc. }
                 } <<
-                    \context BowingStaff = "Cello Bowing Staff" {
-                        \clef "percussion"
-                        \context Voice = "Cello Bowing Voice" {
-                        }
-                    }
-                    \context FingeringStaff = "Cello Fingering Staff" {
-                        \clef "bass"
-                        \context Voice = "Cello Fingering Voice" {
+                    \context StringStaff = "Cello Staff" {
+                        \context Voice = "Cello Voice" {
+                            \clef "bass"
                         }
                     }
                 >>
                 \tag #'contrabass
                 \context StringPerformerGroup = "Contrabass Performer Group" \with {
                     instrumentName = \markup { Contrabass }
-                    shortInstrumentName = \markup { Vb. }
+                    shortInstrumentName = \markup { Cb. }
                 } <<
-                    \context BowingStaff = "Contrabass Bowing Staff" {
-                        \clef "percussion"
-                        \context Voice = "Contrabass Bowing Voice" {
+                    \context PitchPipeStaffStaff = "contrabass Pitch Pipe Staff" {
+                        \context Voice = "contrabass Pitch Pipe Voice" {
                         }
                     }
-                    \context FingeringStaff = "Contrabass Fingering Staff" {
-                        \clef "bass_8"
-                        \context Voice = "Contrabass Fingering Voice" {
+                    \context StringStaff = "Contrabass Staff" {
+                        \context Voice = "Contrabass Voice" {
+                            \clef "bass_8"
                         }
                     }
                 >>
@@ -179,36 +175,28 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
         ...
         ('flute', 'Flute Voice')
         ('oboe', 'Oboe Voice')
-        ('clarinet_in_b-flat', 'Clarinet In B-Flat Voice')
+        ('clarinet_in_b_flat', 'Clarinet In B-Flat Voice')
         ('baritone_saxophone', 'Baritone Saxophone Voice')
         ('piano_rh', 'Piano Upper Voice')
         ('piano_dynamics', 'Piano Dynamics')
         ('piano_lh', 'Piano Lower Voice')
         ('piano_pedals', 'Piano Pedals')
+        ('piano_pitch_pipe', 'piano Pitch Pipe Voice')
         ('percussion', 'Percussion Voice')
+        ('percussion_pitch_pipe', 'Percussion Pitch Pipe Voice')
         ('guitar', 'Guitar Voice')
-        ('violin', 'Violin Performer Group')
-        ('violin_rh', 'Violin Bowing Voice')
-        ('violin_lh', 'Violin Fingering Voice')
-        ('viola', 'Viola Performer Group')
-        ('viola_rh', 'Viola Bowing Voice')
-        ('viola_lh', 'Viola Fingering Voice')
-        ('cello', 'Cello Performer Group')
-        ('cello_rh', 'Cello Bowing Voice')
-        ('cello_lh', 'Cello Fingering Voice')
-        ('contrabass', 'Contrabass Performer Group')
-        ('contrabass_rh', 'Contrabass Bowing Voice')
-        ('contrabass_lh', 'Contrabass Fingering Voice')
+        ('guitar_pitch_pipe', 'Guitar Pitch Pipe Voice')
+        ('violin', 'Violin Voice')
+        ('viola', 'Viola Voice')
+        ('cello', 'Cello Voice')
+        ('contrabass', 'Contrabass Voice')
+        ('contrabass_pitch_pipe', 'contrabass Pitch Pipe Voice')
 
     ::
 
         >>> for item in template.composite_context_pairs.items():
         ...     item
         ...
-        ('violin', ('violin_rh', 'violin_lh'))
-        ('viola', ('viola_rh', 'viola_lh'))
-        ('cello', ('cello_rh', 'cello_lh'))
-        ('contrabass', ('contrabass_rh', 'contrabass_lh'))
 
     '''
 
@@ -223,6 +211,11 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
         manager = consort.ScoreTemplateManager
 
         time_signature_context = manager.make_time_signature_context()
+
+        pitch_pipe_instrument = instrumenttools.UntunedPercussion(
+            instrument_name='Pitch Pipe',
+            short_instrument_name='Pp.',
+            )
 
         flute = manager.make_single_wind_performer(
             clef=indicatortools.Clef('treble'),
@@ -258,56 +251,84 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                 ],
             )
 
+        piano_instrument = instrumenttools.Piano()
         piano = manager.make_single_piano_performer(
-            instrument=instrumenttools.Piano(),
+            instrument=piano_instrument,
             score_template=self,
             )
+        piano_pitch_pipes = manager.make_auxiliary_staff(
+            primary_instrument=piano_instrument,
+            score_template=self,
+            secondary_instrument=pitch_pipe_instrument,
+            )
+        piano.insert(0, piano_pitch_pipes)
 
+        percussion_instrument = instrumenttools.UntunedPercussion(
+            instrument_name='Percussion',
+            short_instrument_name='Prc.',
+            )
         percussion = manager.make_single_basic_performer(
             clef=indicatortools.Clef('percussion'),
-            instrument=instrumenttools.UntunedPercussion(
-                instrument_name='Percussion',
-                short_instrument_name='Prc.',
-                ),
+            instrument=percussion_instrument,
             score_template=self,
             )
+        percussion_pitch_pipes = manager.make_auxiliary_staff(
+            primary_instrument=percussion_instrument,
+            score_template=self,
+            secondary_instrument=pitch_pipe_instrument,
+            )
+        percussion.insert(0, percussion_pitch_pipes)
 
+        guitar_instrument = instrumenttools.Guitar(
+            instrument_name='Guitar',
+            short_instrument_name='Gtr.',
+            )
         guitar = manager.make_single_basic_performer(
             clef=indicatortools.Clef('treble_8'),
-            instrument=instrumenttools.Guitar(
-                instrument_name='Guitar',
-                short_instrument_name='Gtr.',
-                ),
+            instrument=guitar_instrument,
             score_template=self,
             )
+        guitar_pitch_pipes = manager.make_auxiliary_staff(
+            primary_instrument=guitar_instrument,
+            score_template=self,
+            secondary_instrument=pitch_pipe_instrument,
+            )
+        guitar.insert(0, guitar_pitch_pipes)
 
         violin = manager.make_single_string_performer(
             clef=indicatortools.Clef('treble'),
             instrument=instrumenttools.Violin(),
-            split=True,
+            split=False,
             score_template=self,
             )
 
         viola = manager.make_single_string_performer(
             clef=indicatortools.Clef('alto'),
             instrument=instrumenttools.Viola(),
-            split=True,
+            split=False,
             score_template=self,
             )
 
         cello = manager.make_single_string_performer(
             clef=indicatortools.Clef('bass'),
             instrument=instrumenttools.Cello(),
-            split=True,
+            split=False,
             score_template=self,
             )
 
+        bass_instrument = instrumenttools.Contrabass()
         bass = manager.make_single_string_performer(
             clef=indicatortools.Clef('bass_8'),
-            instrument=instrumenttools.Contrabass(),
-            split=True,
+            instrument=bass_instrument,
+            split=False,
             score_template=self,
             )
+        bass_pitch_pipes = manager.make_auxiliary_staff(
+            primary_instrument=bass_instrument,
+            score_template=self,
+            secondary_instrument=pitch_pipe_instrument,
+            )
+        bass.insert(0, bass_pitch_pipes)
 
         strings = manager.make_ensemble_group(
             name='String Staff Group',
