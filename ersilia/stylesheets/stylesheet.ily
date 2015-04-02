@@ -152,6 +152,16 @@ afterGraceFraction = #(cons 1023 1024)
             )
     }
 
+    %%% MISC %%%
+
+    \context {
+        \Staff
+        \name PitchPipeStaff
+        \type Engraver_group
+        \alias Staff
+        \override StaffSymbol.line-count = 1
+    }
+
     %%% WINDS %%%
 
     \context {
@@ -202,6 +212,7 @@ afterGraceFraction = #(cons 1023 1024)
         \PianoStaff
         \accepts PianoUpperStaff
         \accepts PianoLowerStaff
+        \accepts PitchPipeStaff
     }
 
     %%% PERCUSSION %%%
@@ -224,121 +235,12 @@ afterGraceFraction = #(cons 1023 1024)
 
     %%% STRINGS %%%
 
-        %%% BOWING %%%
-
-        \context {
-            \Voice
-            \name StringContactVoice
-            \type Engraver_group
-            \alias Voice
-            \override Beam.stencil = ##f
-            \override Dots.stencil = ##f
-            \override Flag.stencil = ##f
-            \override NoteHead.stencil = ##f
-            \override Rest.stencil = ##f
-            \override Stem.stencil = ##f
-            \override TextScript.staff-padding = 7
-            \override TextScript.self-alignment-X = #center
-            \override TextSpanner.staff-padding = 7
-            \override TextSpanner #'bound-details #'left #'attach-dir = 0
-            \override TextSpanner #'bound-details #'right #'attach-dir = 0
-            \override TupletBracket.stencil = ##f
-            \override TupletNumber.stencil = ##f
-        }
-
-        \context {
-            \Voice
-            \name BowContactVoice
-            \type Engraver_group
-            \alias Voice
-            \override Beam.stencil = ##f
-            \override Dots.stencil = ##f
-            \override Flag.stencil = ##f
-            \override NoteHead.extra-offset = #'(0.05 . 0)
-            \override Rest.stencil = ##f
-            \override Script.staff-padding = 2.5
-            \override Stem.stencil = ##f
-            \override TupletBracket.stencil = ##f
-            \override TupletNumber.stencil = ##f
-        }
-
-        \context {
-            \Voice
-            \name BowBeamingVoice
-            \type Engraver_group
-            \alias Voice
-            \override Beam.direction = #down
-            \override Beam.positions = #'(-11 . -11)
-            \override Dots.X-offset = -8
-            \override Dots.staff-position = -1
-            \override Flag.Y-offset = -10
-            \override NoteHead.Y-offset = -5
-            \override NoteHead.stencil = ##f
-            \override Stem.direction = #down
-            \override Stem.length = 9
-            \override Stem.stem-begin-position = -11
-            \override TupletBracket.positions = #'(-13 . -13)
-        }
-
-        \context {
-            \Staff
-            \name BowingStaff
-            \type Engraver_group
-            \alias Staff
-            \accepts BowBeamingVoice
-            \accepts BowContactVoice
-            \accepts StringContactVoice
-            \override Glissando.bound-details.left.padding = 0.75
-            \override Glissando.bound-details.right.padding = 0.75
-            \override Glissando.zigzag-length = 1.5
-            \override Glissando.zigzag-width = 0.75
-            \override ParenthesesItem.font-size = 1
-            \override ParenthesesItem.padding = 0.1
-            \override StaffSymbol.transparent = ##t
-        }
-
-        %%% FINGERING %%%
-
-        \context {
-            \Voice
-            \name FingeringPitchesVoice
-            \type Engraver_group
-            \alias Voice
-            \override Beam.direction = #down
-            \override Beam.positions = #'(-9 . -9)
-            \override Stem.direction = #down
-            \override Tie.stencil = ##f
-            \override Glissando.stencil = ##f
-            \override TupletBracket.positions = #'(-11 . -11)
-        }
-
-        \context {
-            \Voice
-            \name FingeringSpannerVoice
-            \type Engraver_group
-            \alias Voice
-            \override Beam.direction = #down
-            \override Beam.stencil = ##f
-            \override Dots.transparent = ##t
-            \override Flag.stencil = ##f
-            \override NoteHead.transparent = ##t
-            \override Stem.direction = #down
-            \override Stem.stencil = ##f
-            \override Tie.stencil = ##f
-            \override TupletBracket.stencil = ##f
-            \override TupletNumber.stencil = ##f
-        }
-
-        \context {
-            \Staff
-            \name FingeringStaff
-            \type Engraver_group
-            \alias Staff
-            \accepts FingeringPitchesVoice
-            \accepts FingeringSpannerVoice
-            \override Glissando.bound-details.left.padding = 1.5
-            \override Glissando.bound-details.right.padding = 1.5
-        }
+    \context {
+        \Staff
+        \name StringStaff
+        \type Engraver_group
+        \alias Staff
+    }
 
     %%% PERFORMER GROUP %%%%
 
@@ -349,6 +251,8 @@ afterGraceFraction = #(cons 1023 1024)
         \alias StaffGroup
         \accepts BowingStaff
         \accepts FingeringStaff
+        \accepts PitchPipeStaff
+        \accepts StringStaff
         systemStartDelimiter = #'SystemStartSquare
     }
 
@@ -363,6 +267,7 @@ afterGraceFraction = #(cons 1023 1024)
         \accepts BaritoneSaxophoneStaff
         \accepts GuitarStaff
         \accepts PercussionStaff
+        \accepts PitchPipeStaff
     }
 
     \context {
