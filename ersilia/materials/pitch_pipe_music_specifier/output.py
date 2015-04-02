@@ -29,6 +29,7 @@ pitch_pipe_music_specifier = consort.tools.MusicSpecifier(
                 ),
             ),
         ),
+    labels=('pitch pipes',),
     rhythm_maker=rhythmmakertools.EvenDivisionRhythmMaker(
         denominators=(8,),
         output_masks=rhythmmakertools.BooleanPatternInventory(
@@ -41,6 +42,9 @@ pitch_pipe_music_specifier = consort.tools.MusicSpecifier(
                     indices=(0, -1),
                     ),
                 )
+            ),
+        tie_specifier=rhythmmakertools.TieSpecifier(
+            tie_across_divisions=True,
             ),
         ),
     )
