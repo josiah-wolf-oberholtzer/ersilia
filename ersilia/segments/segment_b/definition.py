@@ -21,7 +21,7 @@ segment_maker = ersilia.ErsiliaSegmentMaker(
         ),
     rehearsal_mark='B',
     repeat=True,
-    tempo=abjad.Tempo((1, 4), 32),
+    tempo=abjad.Tempo((1, 4), 48),
     )
 
 segment_maker.add_setting(
