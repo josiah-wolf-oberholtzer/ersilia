@@ -8,6 +8,20 @@ import consort
 
 percussion_tom_fanfare_music_specifier = consort.tools.MusicSpecifier(
     pitch_handler=consort.tools.AbsolutePitchHandler(
+        pitch_specifier=consort.tools.PitchSpecifier(
+            pitch_segments=(
+                pitchtools.PitchSegment(
+                    (
+                        pitchtools.NamedPitch("f'"),
+                        pitchtools.NamedPitch("d'"),
+                        pitchtools.NamedPitch('b'),
+                        pitchtools.NamedPitch('g'),
+                        ),
+                    item_class=pitchtools.NamedPitch,
+                    ),
+                ),
+            ratio=mathtools.Ratio(1),
+            ),
         pitch_operation_specifier=consort.tools.PitchOperationSpecifier(
             pitch_operations=(
                 None,

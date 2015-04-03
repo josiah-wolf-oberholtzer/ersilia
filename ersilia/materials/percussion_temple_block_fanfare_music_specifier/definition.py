@@ -1,11 +1,19 @@
 # -*- encoding: utf-8 -*-
 import consort
+import ersilia
 from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
 
 
 percussion_temple_block_fanfare_music_specifier = consort.MusicSpecifier(
     pitch_handler=consort.AbsolutePitchHandler(
+        pitch_specifier=pitchtools.PitchSegment([
+            ersilia.Percussion.WOOD_BLOCK_5,
+            ersilia.Percussion.WOOD_BLOCK_4,
+            ersilia.Percussion.WOOD_BLOCK_3,
+            ersilia.Percussion.WOOD_BLOCK_2,
+            ersilia.Percussion.WOOD_BLOCK_1,
+            ]),
         pitch_operation_specifier=consort.PitchOperationSpecifier(
             pitch_operations=[
                 None,

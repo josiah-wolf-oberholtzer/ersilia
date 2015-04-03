@@ -8,6 +8,21 @@ import consort
 
 percussion_temple_block_fanfare_music_specifier = consort.tools.MusicSpecifier(
     pitch_handler=consort.tools.AbsolutePitchHandler(
+        pitch_specifier=consort.tools.PitchSpecifier(
+            pitch_segments=(
+                pitchtools.PitchSegment(
+                    (
+                        pitchtools.NamedPitch("g'"),
+                        pitchtools.NamedPitch("e'"),
+                        pitchtools.NamedPitch("c'"),
+                        pitchtools.NamedPitch('a'),
+                        pitchtools.NamedPitch('f'),
+                        ),
+                    item_class=pitchtools.NamedPitch,
+                    ),
+                ),
+            ratio=mathtools.Ratio(1),
+            ),
         pitch_operation_specifier=consort.tools.PitchOperationSpecifier(
             pitch_operations=(
                 None,
