@@ -10,15 +10,14 @@ segment_maker = ersilia.ErsiliaSegmentMaker(
     discard_final_silence=False,
     name=None,
     permitted_time_signatures=(
-        (2, 4),
-        (3, 4),
         (3, 8),
-        (4, 4),
         (4, 8),
-        (5, 4),
         (5, 8),
         (6, 8),
         (7, 8),
+        (2, 4),
+        (3, 4),
+        (4, 4),
         ),
     rehearsal_mark='A',
     repeat=False,
@@ -27,7 +26,10 @@ segment_maker = ersilia.ErsiliaSegmentMaker(
 
 segment_maker.add_setting(
     timespan_identifier=consort.RatioPartsExpression([0, 2], [1, 1, 1]),
-    timespan_maker=ersilia.sustained_timespan_maker,
+    timespan_maker=new(
+        ersilia.sustained_timespan_maker,
+        fuse_groups=True,
+        ),
     piano_rh=ersilia.piano_tremolo_music_specifier,
     )
 
