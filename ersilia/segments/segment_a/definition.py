@@ -62,5 +62,20 @@ segment_maker.add_setting(
         ),
     )
 
+segment_maker.add_setting(
+    timespan_identifier=consort.RatioPartsExpression([1, 3], [1, 1, 1, 1, 1]),
+    timespan_maker=ersilia.sparse_timespan_maker,
+    percussion=consort.MusicSpecifierSequence(
+        music_specifiers=[
+            ersilia.percussion_tom_fanfare_music_specifier,
+            ersilia.percussion_tom_fanfare_music_specifier,
+            ersilia.percussion_temple_block_fanfare_music_specifier,
+            ersilia.percussion_tom_fanfare_music_specifier,
+            ersilia.percussion_temple_block_fanfare_music_specifier,
+            ],
+        application_rate='division',
+        ),
+    )
+
 if __name__ == '__main__':
     illustration = segment_maker()

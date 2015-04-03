@@ -4735,12 +4735,72 @@
                             \startStaff
                         }
                         {
+                            r4.
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            f'16 [
+                            d'16 ]
+                            r16
+                            b16
+                        }
+                    }
+                    {
+                        {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 3/4
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
+                        }
+                        {
+                            r2.
+                        }
+                    }
+                    {
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 5/6 {
+                            g16
+                            r16
+                            f'16 [
+                            d'16 ]
+                            r16
+                            b16
+                        }
+                    }
+                    {
+                        {
+                            r8.
+                        }
+                        {
+                            r2
+                            r16
+                        }
+                    }
+                    {
+                        {
+                            g'16 [
+                            e'16 ]
+                            r16
+                            c'16
+                        }
+                    }
+                    {
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 3/5 {
+                            r16
+                            g16 [
+                            f'16 ]
+                            r16
+                            d'16
+                        }
+                    }
+                    {
+                        {
+                            r4
                         }
                         {
                             \stopStaff
@@ -4754,30 +4814,6 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             R1 * 3/8
                             \stopStaff
                             \startStaff
@@ -4791,13 +4827,18 @@
                             \startStaff
                         }
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
+                            r8
                         }
+                    }
+                    {
+                        {
+                            d'16 [
+                            f'16 ]
+                            r16
+                            g16
+                        }
+                    }
+                    {
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
@@ -4806,14 +4847,29 @@
                             \stopStaff
                             \startStaff
                         }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                    }
+                    {
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 5/6 {
+                            e'16
+                            r16
+                            g'16 [
+                            f16 ]
+                            r16
+                            a16
                         }
+                    }
+                    {
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            b16
+                            r16
+                            d'16 [
+                            \set stemLeftBeamCount = 2
+                            f'16 ]
+                        }
+                    }
+                    {
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
@@ -4894,22 +4950,69 @@
                             \stopStaff
                             \startStaff
                         }
+                    }
+                    {
+                        \times 2/3 {
+                            r16
+                            g16 [
+                            b16 ]
+                            r16
+                            r16
+                            d'16
+                        }
+                    }
+                    {
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
+                            r8
                         }
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
+                            r2.
+                            r4.
                         }
+                    }
+                    {
+                        {
+                            f'16 [
+                            g16 ]
+                        }
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            r8
+                            b16 [
+                            \set stemLeftBeamCount = 2
+                            d'16 ]
+                        }
+                    }
+                    {
+                        {
+                            r8.
+                            r2
+                        }
+                        {
+                            r16
+                        }
+                    }
+                    {
+                        \times 2/3 {
+                            r16
+                            c'16 [
+                            a16 ]
+                            r16
+                            f16 [
+                            \set stemLeftBeamCount = 2
+                            g'16 ]
+                        }
+                    }
+                    {
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            g16
+                            r16
+                            r16
+                            f'16
+                        }
+                    }
+                    {
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
@@ -4919,28 +5022,20 @@
                             \startStaff
                         }
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            r2.
                         }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
+                    }
+                    {
+                        \times 2/3 {
+                            r8
+                            d'16 [
+                            b16 ]
+                            r8
                         }
+                    }
+                    {
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
+                            r4
                         }
                         {
                             \stopStaff
@@ -4950,21 +5045,33 @@
                             \stopStaff
                             \startStaff
                         }
+                    }
+                    {
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
+                            e'16 [
+                            c'16 ]
+                            r16
+                            a16 [
+                            \set stemLeftBeamCount = 2
+                            f16 ]
                         }
+                    }
+                    {
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            r16
+                        }
+                    }
+                    {
+                        {
+                            g16 [
+                            \set stemLeftBeamCount = 2
+                            f'16 ]
+                        }
+                    }
+                    {
+                        {
+                            r8
+                            r4
                         }
                         {
                             \stopStaff
