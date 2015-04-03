@@ -1,18 +1,7 @@
-#(define-markup-command (vstrut layout props)
-  ()
-  #:category other
-  "
-@cindex creating vertical space in text
-
-Create a box of the same height as the current font."
-  (let ((ref-mrkp (interpret-markup layout props "fp")))
-    (ly:make-stencil (ly:stencil-expr empty-stencil)
-                     empty-interval
-                     (ly:stencil-extent ref-mrkp Y))))
-
-afterGraceFraction = #(cons 1023 1024)
 #(set-default-paper-size "17x11" 'landscape)
 #(set-global-staff-size 12)
+
+afterGraceFraction = #(cons 1023 1024)
 
 \paper {
     bottom-margin = 10\mm
@@ -74,60 +63,6 @@ afterGraceFraction = #(cons 1023 1024)
     ragged-right = ##t
     ragged-last = ##t
 
-    %%% TIME SIGNATURE CONTEXT %%%
-
-    \context {
-        \name TimeSignatureContext
-        \type Engraver_group
-        \consists Axis_group_engraver
-        \consists Bar_number_engraver
-        \consists Mark_engraver
-        \consists Metronome_mark_engraver
-        \consists Script_engraver
-        \consists Text_engraver
-        \consists Text_spanner_engraver
-        \consists Time_signature_engraver
-        \override BarNumber.extra-offset = #'(-6 . -4)
-        \override BarNumber.font-name = "Didot Italic"
-        \override BarNumber.font-size = 1
-        \override BarNumber.padding = 4
-        \override BarNumber.stencil = #(make-stencil-circler 0.1 0.7 ly:text-interface::print)
-        \override MetronomeMark.X-extent = #'(0 . 0)
-        \override MetronomeMark.Y-extent = #'(0 . 0)
-        \override MetronomeMark.break-align-symbols = #'(left-edge)
-        \override MetronomeMark.extra-offset = #'(0 . 4)
-        \override MetronomeMark.font-size = 3
-        \override RehearsalMark.X-extent = #'(0 . 0)
-        \override RehearsalMark.X-offset = 6
-        \override RehearsalMark.Y-offset = -2.25
-        \override RehearsalMark.break-align-symbols = #'(time-signature)
-        \override RehearsalMark.break-visibility = #end-of-line-invisible
-        \override RehearsalMark.font-name = "Didot"
-        \override RehearsalMark.font-size = 8
-        \override RehearsalMark.outside-staff-priority = 500
-        \override RehearsalMark.self-alignment-X = #center
-        \override Script.extra-offset = #'(4 . -9)
-        \override Script.font-size = 6
-        \override TextScript.font-size = 3
-        \override TextScript.outside-staff-priority = 600
-        \override TextScript.padding = 6
-        \override TextSpanner.bound-details.right.attach-dir = #left
-        \override TextSpanner.padding = 6.75
-        \override TimeSignature.X-extent = #'(0 . 0)
-        \override TimeSignature.break-align-symbol = #'left-edge
-        \override TimeSignature.break-visibility = #end-of-line-invisible
-        \override TimeSignature.font-size = 3
-        \override TimeSignature.space-alist.clef = #'(extra-space . 0.5)
-        \override TimeSignature.style = #'numbered
-        \override VerticalAxisGroup.default-staff-staff-spacing = #'(
-            (basic-distance . 0)
-            (minimum-distance . 14)
-            (padding . 0)
-            (stretchability . 0)
-        )
-        \override VerticalAxisGroup.minimum-Y-extent = #'(-20 . 20)
-    }
-
     %%% DEFAULTS %%%
 
     \context {
@@ -153,21 +88,79 @@ afterGraceFraction = #(cons 1023 1024)
             )
     }
 
-    %%% MISC %%%
+    %%% TIME SIGNATURE CONTEXT %%%
+
+    \context {
+        \name TimeSignatureContext
+        \type Engraver_group
+        \consists Axis_group_engraver
+        \consists Bar_number_engraver
+        \consists Mark_engraver
+        \consists Metronome_mark_engraver
+        \consists Script_engraver
+        \consists Text_engraver
+        \consists Text_spanner_engraver
+        \consists Time_signature_engraver
+        \override BarNumber.extra-offset = #'(-6 . -4)
+        \override BarNumber.font-name = "Didot Italic"
+        \override BarNumber.font-size = 1
+        \override BarNumber.padding = 4
+        \override MetronomeMark.X-extent = #'(0 . 0)
+        \override MetronomeMark.Y-extent = #'(0 . 0)
+        \override MetronomeMark.break-align-symbols = #'(left-edge)
+        \override MetronomeMark.extra-offset = #'(0 . 4)
+        \override MetronomeMark.font-size = 3
+        \override RehearsalMark.X-extent = #'(0 . 0)
+        \override RehearsalMark.X-offset = 6
+        \override RehearsalMark.Y-offset = -2.25
+        \override RehearsalMark.break-align-symbols = #'(time-signature)
+        \override RehearsalMark.break-visibility = #end-of-line-invisible
+        \override RehearsalMark.font-name = "Didot"
+        \override RehearsalMark.font-size = 10
+        \override RehearsalMark.outside-staff-priority = 500
+        \override RehearsalMark.self-alignment-X = #center
+        \override Script.extra-offset = #'(4 . -9)
+        \override Script.font-size = 6
+        \override TextScript.font-size = 3
+        \override TextScript.outside-staff-priority = 600
+        \override TextScript.padding = 6
+        \override TextSpanner.bound-details.right.attach-dir = #LEFT
+        \override TextSpanner.padding = 6.75
+        \override TimeSignature.X-extent = #'(0 . 0)
+        \override TimeSignature.break-align-symbol = #'left-edge
+        \override TimeSignature.break-visibility = #end-of-line-invisible
+        \override TimeSignature.font-size = 3
+        \override TimeSignature.space-alist.clef = #'(extra-space . 0.5)
+        \override TimeSignature.style = #'numbered
+        \override VerticalAxisGroup.default-staff-staff-spacing = #'(
+            (basic-distance . 0)
+            (minimum-distance . 14)
+            (padding . 0)
+            (stretchability . 0)
+        )
+        \override VerticalAxisGroup.minimum-Y-extent = #'(-20 . 20)
+    }
+
+    %%% PERFORMERS %%%
 
     \context {
         \Staff
-        \name PitchPipeStaff
+        \name PitchPipes
         \type Engraver_group
         \alias Staff
         \override StaffSymbol.line-count = 1
     }
 
-    %%% WINDS %%%
-
     \context {
         \Staff
         \name FluteStaff
+        \type Engraver_group
+        \alias Staff
+    }
+
+    \context {
+        \Staff
+        \name ClarinetStaff
         \type Engraver_group
         \alias Staff
     }
@@ -181,19 +174,39 @@ afterGraceFraction = #(cons 1023 1024)
 
     \context {
         \Staff
-        \name ClarinetInBFlatStaff
+        \name SaxophoneStaff
         \type Engraver_group
         \alias Staff
     }
 
     \context {
+        \StaffGroup
+        \name WindSectionStaffGroup
+        \type Engraver_group
+        \alias StaffGroup
+        \accepts FluteStaff
+        \accepts ClarinetStaff
+        \accepts OboeStaff
+        \accepts SaxophoneStaff
+        \override StaffGrouper.staff-staff-spacing.minimum-distance = 32
+        \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 44
+    }
+
+    \context {
         \Staff
-        \name BaritoneSaxophoneStaff
+        \name GuitarStaff
         \type Engraver_group
         \alias Staff
     }
 
-    %%% PIANO %%%
+    \context {
+        \StaffGroup
+        \name GuitarStaffGroup
+        \type Engraver_group
+        \alias Staff
+        \accepts GuitarStaff
+        \accepts PitchPipes
+    }
 
     \context {
         \Staff
@@ -211,12 +224,19 @@ afterGraceFraction = #(cons 1023 1024)
     
     \context{
         \PianoStaff
-        \accepts PianoUpperStaff
         \accepts PianoLowerStaff
-        \accepts PitchPipeStaff
+        \accepts PianoUpperStaff
+        \accepts PitchPipes
     }
 
-    %%% PERCUSSION %%%
+    \context {
+        \StaffGroup
+        \name PianoStaffGroup
+        \type Engraver_group
+        \alias StaffGroup
+        \accepts PianoStaff
+        \accepts PitchPipes
+    }
 
     \context {
         \Staff
@@ -226,69 +246,86 @@ afterGraceFraction = #(cons 1023 1024)
         \override StaffSymbol.line-positions = #'(-10 -8 -4 -2 0 2 4 8 10)
     }
 
-    %%% GUITAR %%%
-
-    \context {
-        \Staff
-        \name GuitarStaff
-        \type Engraver_group
-        \alias Staff
-    }
-
-    %%% STRINGS %%%
-
-    \context {
-        \Staff
-        \name StringStaff
-        \type Engraver_group
-        \alias Staff
-    }
-
-    %%% PERFORMER GROUP %%%%
-
     \context {
         \StaffGroup
-        \name StringPerformerGroup
+        \name PercussionStaffGroup
         \type Engraver_group
         \alias StaffGroup
-        \accepts BowingStaff
-        \accepts FingeringStaff
-        \accepts PitchPipeStaff
-        \accepts StringStaff
-        systemStartDelimiter = #'SystemStartSquare
-    }
-
-    \context {
-        \StaffGroup
-        \name PerformerGroup
-        \type Engraver_group
-        \alias StaffGroup
-        \accepts FluteStaff
-        \accepts OboeStaff
-        \accepts ClarinetInBFlatStaff
-        \accepts BaritoneSaxophoneStaff
-        \accepts GuitarStaff
         \accepts PercussionStaff
-        \accepts PitchPipeStaff
+        \accepts PitchPipes
     }
 
     \context {
         \StaffGroup
-        \name EnsembleGroup
+        \name PercussionSectionStaffGroup
         \type Engraver_group
         \alias StaffGroup
-        \accepts PerformerGroup
-        \accepts StringPerformerGroup
+        \accepts GuitarStaffGroup
+        \accepts PianoStaffGroup
+        \accepts PercussionStaffGroup
+        \override StaffGrouper.staff-staff-spacing.minimum-distance = 32
+        \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 44
+    }
+
+    \context {
+        \Staff
+        \name ViolinStaff
+        \type Engraver_group
+        \alias Staff
+    }
+
+    \context {
+        \Staff
+        \name ViolaStaff
+        \type Engraver_group
+        \alias Staff
+    }
+
+    \context {
+        \Staff
+        \name CelloStaff
+        \type Engraver_group
+        \alias Staff
+    }
+
+    \context {
+        \Staff
+        \name ContrabassStaff
+        \type Engraver_group
+        \alias Staff
+    }
+
+    \context {
+        \StaffGroup
+        \name ContrabassStaffGroup
+        \type Engraver_group
+        \alias StaffGroup
+        \accepts ContrabassStaff
+        \accepts PitchPipes
+    }
+
+    \context {
+        \StaffGroup
+        \name StringSectionStaffGroup
+        \type Engraver_group
+        \alias StaffGroup
+        \accepts ViolinStaff
+        \accepts ViolaStaff
+        \accepts CelloStaff
+        \accepts ContrabassStaffGroup
+        \override StaffGrouper.staff-staff-spacing.minimum-distance = 32
+        \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 44
     }
 
     %%% SCORE %%%
 
     \context {
         \Score
-        \accepts TimeSignatureContext
 
-        \accepts PerformerGroup
-        \accepts EnsembleGroup
+        \accepts PercussionSectionStaffGroup
+        \accepts StringSectionStaffGroup
+        \accepts TimeSignatureContext
+        \accepts WindSectionStaffGroup
 
         \remove Bar_number_engraver
         \remove Mark_engraver
