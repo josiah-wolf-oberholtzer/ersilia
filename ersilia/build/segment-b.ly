@@ -1,18 +1,10 @@
-\version "2.19.17"
-\language "english"
-
-#(ly:set-option 'relative-includes #t)
-
-\include "/Users/josiah/Documents/Scores/ersilia/ersilia/stylesheets/stylesheet.ily"
-
-\score {
     \context Score = "Ersilia Score" <<
         \tag #'time
         \repeat volta 2
         \context TimeSignatureContext = "TimeSignatureContext" {
             {
                 \time 2/4
-                \tempo 4=72
+                \tempo 4=48
                 \mark \markup {
                     \concat
                         {
@@ -20,7 +12,7 @@
                                 #'(box-padding . 0.5)
                                 \box
                                     \caps
-                                        F
+                                        B
                             " "
                             \fontsize
                                 #-3
@@ -46,22 +38,6 @@
                 s1 * 7/8
             }
             {
-                \time 5/4
-                s1 * 5/4
-            }
-            {
-                \time 2/4
-                s1 * 1/2
-            }
-            {
-                \time 3/4
-                s1 * 3/4
-            }
-            {
-                \time 5/8
-                s1 * 5/8
-            }
-            {
                 \time 6/8
                 s1 * 3/4
             }
@@ -70,57 +46,53 @@
                 s1 * 1/2
             }
             {
-                \time 5/4
-                s1 * 5/4
+                \time 3/8
+                s1 * 3/8
             }
             {
-                s1 * 5/4
+                s1 * 3/8
             }
             {
-                s1 * 5/4
+                s1 * 3/8
             }
             {
-                \time 5/8
-                s1 * 5/8
+                s1 * 3/8
             }
             {
-                \time 5/4
-                s1 * 5/4
+                s1 * 3/8
             }
             {
-                s1 * 5/4
+                s1 * 3/8
             }
             {
-                \time 5/8
-                s1 * 5/8
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
             }
             {
                 \time 4/4
                 s1 * 1
             }
             {
-                \time 3/8
-                s1 * 3/8
-            }
-            {
-                \time 2/4
-                s1 * 1/2
-            }
-            {
                 \time 5/4
                 s1 * 5/4
             }
             {
                 \time 2/4
                 s1 * 1/2
-            }
-            {
-                \time 3/4
-                s1 * 3/4
-            }
-            {
-                \time 5/4
-                s1 * 5/4
             }
             {
                 \time 5/8
@@ -131,16 +103,16 @@
                 s1 * 7/8
             }
             {
-                \time 3/8
-                s1 * 3/8
-            }
-            {
                 \time 6/8
                 s1 * 3/4
             }
             {
-                \time 3/8
-                s1 * 3/8
+                \time 2/4
+                s1 * 1/2
+            }
+            {
+                \time 5/8
+                s1 * 5/8
             }
         }
         \context EnsembleGroup = "Winds Staff Group" <<
@@ -198,38 +170,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 3/4
                                 \stopStaff
                                 \startStaff
@@ -239,70 +179,6 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -318,7 +194,95 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 1/2
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -335,22 +299,6 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
                                 \stopStaff
                                 \startStaff
                             }
@@ -374,14 +322,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 3/4
                                 \stopStaff
                                 \startStaff
@@ -390,7 +330,15 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 5/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -452,38 +400,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 3/4
                                 \stopStaff
                                 \startStaff
@@ -493,70 +409,6 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -572,7 +424,95 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 1/2
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -589,22 +529,6 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
                                 \stopStaff
                                 \startStaff
                             }
@@ -628,14 +552,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 3/4
                                 \stopStaff
                                 \startStaff
@@ -644,7 +560,15 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 5/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -706,38 +630,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 3/4
                                 \stopStaff
                                 \startStaff
@@ -747,70 +639,6 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -826,7 +654,95 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 1/2
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -843,22 +759,6 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
                                 \stopStaff
                                 \startStaff
                             }
@@ -882,14 +782,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 3/4
                                 \stopStaff
                                 \startStaff
@@ -898,7 +790,15 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 5/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -960,38 +860,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 3/4
                                 \stopStaff
                                 \startStaff
@@ -1001,70 +869,6 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -1080,7 +884,95 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 1/2
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -1097,22 +989,6 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
                                 \stopStaff
                                 \startStaff
                             }
@@ -1136,14 +1012,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 3/4
                                 \stopStaff
                                 \startStaff
@@ -1152,7 +1020,15 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 5/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -1171,23 +1047,13 @@
                 \context Voice = "Piano Pitch Pipe Voice" {
                     {
                         {
-                            \clef "percussion"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            c'2 ~
-                        }
-                        {
-                            c'4. ~
-                            c'4 ~
-                        }
-                        {
-                            c'2
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
-                    }
-                    {
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
@@ -1197,29 +1063,29 @@
                             \startStaff
                         }
                         {
-                            r8
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            c'4 ~
-                            c'2 ~
-                        }
-                        {
-                            c'2. ~
-                            c'2 ~
-                        }
-                        {
-                            c'2
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
-                    }
-                    {
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
@@ -1229,109 +1095,6 @@
                             \startStaff
                         }
                         {
-                            r4
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            c'8 ~
-                            c'4 ~
-                        }
-                        {
-                            c'2.
-                            \stopStaff
-                            \startStaff
-                        }
-                    }
-                    {
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            c'2. ~
-                            c'2
-                            \stopStaff
-                            \startStaff
-                        }
-                    }
-                    {
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            c'2. ~
-                            c'2 ~
-                        }
-                        {
-                            c'4. ~
-                            c'4
-                            \stopStaff
-                            \startStaff
-                        }
-                    }
-                    {
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            r4
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            c'2 ~
-                            c'2 ~
-                        }
-                        {
-                            c'4. ~
-                            c'4 ~
-                        }
-                        {
-                            c'1 ~
-                        }
-                        {
-                            c'4.
-                            \stopStaff
-                            \startStaff
-                        }
-                    }
-                    {
-                        {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
@@ -1343,6 +1106,110 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 1
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             R1 * 5/4
                             \stopStaff
                             \startStaff
@@ -1355,68 +1222,43 @@
                             \stopStaff
                             \startStaff
                         }
-                    }
-                    {
                         {
-                            \clef "percussion"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            c'2. ~
-                        }
-                        {
-                            c'2.
+                            R1 * 5/8
                             \stopStaff
                             \startStaff
                         }
-                    }
-                    {
                         {
-                            r2
-                        }
-                        {
-                            r4
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            c'8 ~
-                            c'4 ~
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
                         }
                         {
-                            c'4. ~
-                            c'4 ~
-                            c'4 ~
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/4
+                            \stopStaff
+                            \startStaff
                         }
                         {
-                            c'4. ~
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
                         }
                         {
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c'8 [
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c'8
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c'8
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c'8
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c'8
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c'8 ~ ]
-                        }
-                        {
-                            c'4.
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 5/8
                             \stopStaff
                             \startStaff
                         }
@@ -1463,150 +1305,121 @@
                     }
                     {
                         {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 1
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
                             r8
                         }
                     }
                     {
                         {
                             <g b d' g' af' d''>8 :64 ~
-                            <g b d' g' af' d''>4 :32 ~
-                        }
-                        {
-                            <g b d' g' af' d''>4 :32 ~
-                        }
-                        {
-                            <g b d' g' af' d''>2 :32
-                        }
-                    }
-                    {
-                        {
-                            r4
-                        }
-                    }
-                    {
-                        {
-                            <g b d' ef' g' d''>8 :64 ~
-                            <g b d' ef' g' d''>4 :32 ~
-                        }
-                        {
-                            <g b d' ef' g' d''>2. :32 ~
-                        }
-                        {
-                            \set stemLeftBeamCount = 1
-                            <g b d' ef' g' d''>8 :64
-                        }
-                    }
-                    {
-                        {
-                            r8
-                            r4
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
-                        }
-                    }
-                    {
-                        {
-                            <bf d' f' bf' b' f''>2 :32 ~
-                        }
-                        {
-                            <bf d' f' bf' b' f''>2 :32 ~
+                            <g b d' g' af' d''>4. :32 ~
                         }
                         {
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
-                            <bf d' f' bf' b' f''>8 :64 ~
-                        }
-                        {
-                            <bf d' f' bf' b' f''>4 :32 ~
-                        }
-                        {
-                            <bf d' f' bf' b' f''>4 :32
-                        }
-                    }
-                    {
-                        {
-                            r4
-                        }
-                    }
-                    {
-                        {
-                            <g b d' ef' g' d''>4. :32 ~
-                        }
-                        {
-                            <g b d' ef' g' d''>4. :32 ~
-                            <g b d' ef' g' d''>2 :32 ~
-                        }
-                        {
-                            <g b d' ef' g' d''>2 :32 ~
-                        }
-                        {
-                            <g b d' ef' g' d''>4 :32 ~
-                        }
-                        {
-                            <g b d' ef' g' d''>2 :32
-                        }
-                    }
-                    {
-                        {
-                            r8
-                        }
-                    }
-                    {
-                        {
                             <g b d' g' af' d''>8 :64 ~
                             <g b d' g' af' d''>2 :32 ~
                         }
@@ -1627,7 +1440,13 @@
                         {
                             <g b d' ef' g' d''>4. :32 ~
                             <g b d' ef' g' d''>4 :32 ~
-                            <g b d' ef' g' d''>4 :32
+                            <g b d' ef' g' d''>4 :32 ~
+                        }
+                        {
+                            <g b d' ef' g' d''>2. :32 ~
+                        }
+                        {
+                            <g b d' ef' g' d''>2 :32
                         }
                     }
                     {
@@ -1635,23 +1454,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/8
+                            R1 * 5/8
                             \stopStaff
                             \startStaff
                         }
@@ -1676,64 +1479,55 @@
                         R1 * 7/8
                     }
                     {
-                        R1 * 5/4
-                    }
-                    {
-                        R1 * 1/2
-                    }
-                    {
-                        R1 * 3/4
-                    }
-                    {
-                        R1 * 5/8
-                    }
-                    {
                         R1 * 3/4
                     }
                     {
                         R1 * 1/2
-                    }
-                    {
-                        R1 * 5/4
-                    }
-                    {
-                        R1 * 5/4
-                    }
-                    {
-                        R1 * 5/4
-                    }
-                    {
-                        R1 * 5/8
-                    }
-                    {
-                        R1 * 5/4
-                    }
-                    {
-                        R1 * 5/4
-                    }
-                    {
-                        R1 * 5/8
-                    }
-                    {
-                        R1 * 1
                     }
                     {
                         R1 * 3/8
                     }
                     {
-                        R1 * 1/2
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 1
                     }
                     {
                         R1 * 5/4
                     }
                     {
                         R1 * 1/2
-                    }
-                    {
-                        R1 * 3/4
-                    }
-                    {
-                        R1 * 5/4
                     }
                     {
                         R1 * 5/8
@@ -1742,13 +1536,13 @@
                         R1 * 7/8
                     }
                     {
-                        R1 * 3/8
-                    }
-                    {
                         R1 * 3/4
                     }
                     {
-                        R1 * 3/8
+                        R1 * 1/2
+                    }
+                    {
+                        R1 * 5/8
                     }
                 }
             }
@@ -1801,38 +1595,6 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             R1 * 3/4
                             \stopStaff
                             \startStaff
@@ -1842,70 +1604,6 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -1921,7 +1619,95 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 1/2
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -1938,22 +1724,6 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
                             \stopStaff
                             \startStaff
                         }
@@ -1977,14 +1747,6 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             R1 * 3/4
                             \stopStaff
                             \startStaff
@@ -1993,7 +1755,15 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 3/8
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 5/8
                             \stopStaff
                             \startStaff
                         }
@@ -2018,64 +1788,55 @@
                         R1 * 7/8
                     }
                     {
-                        R1 * 5/4
-                    }
-                    {
-                        R1 * 1/2
-                    }
-                    {
-                        R1 * 3/4
-                    }
-                    {
-                        R1 * 5/8
-                    }
-                    {
                         R1 * 3/4
                     }
                     {
                         R1 * 1/2
-                    }
-                    {
-                        R1 * 5/4
-                    }
-                    {
-                        R1 * 5/4
-                    }
-                    {
-                        R1 * 5/4
-                    }
-                    {
-                        R1 * 5/8
-                    }
-                    {
-                        R1 * 5/4
-                    }
-                    {
-                        R1 * 5/4
-                    }
-                    {
-                        R1 * 5/8
-                    }
-                    {
-                        R1 * 1
                     }
                     {
                         R1 * 3/8
                     }
                     {
-                        R1 * 1/2
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 3/8
+                    }
+                    {
+                        R1 * 1
                     }
                     {
                         R1 * 5/4
                     }
                     {
                         R1 * 1/2
-                    }
-                    {
-                        R1 * 3/4
-                    }
-                    {
-                        R1 * 5/4
                     }
                     {
                         R1 * 5/8
@@ -2084,13 +1845,13 @@
                         R1 * 7/8
                     }
                     {
-                        R1 * 3/8
-                    }
-                    {
                         R1 * 3/4
                     }
                     {
-                        R1 * 3/8
+                        R1 * 1/2
+                    }
+                    {
+                        R1 * 5/8
                     }
                 }
             }
@@ -2104,23 +1865,13 @@
                 \context Voice = "Percussion Pitch Pipe Voice" {
                     {
                         {
-                            \clef "percussion"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            c'2 ~
-                        }
-                        {
-                            c'4. ~
-                            c'4 ~
-                        }
-                        {
-                            c'2
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
-                    }
-                    {
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
@@ -2130,29 +1881,29 @@
                             \startStaff
                         }
                         {
-                            r8
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            c'4 ~
-                            c'2 ~
-                        }
-                        {
-                            c'2. ~
-                            c'2 ~
-                        }
-                        {
-                            c'2
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
-                    }
-                    {
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
@@ -2162,109 +1913,6 @@
                             \startStaff
                         }
                         {
-                            r4
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            c'8 ~
-                            c'4 ~
-                        }
-                        {
-                            c'2.
-                            \stopStaff
-                            \startStaff
-                        }
-                    }
-                    {
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            c'2. ~
-                            c'2
-                            \stopStaff
-                            \startStaff
-                        }
-                    }
-                    {
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            c'2. ~
-                            c'2 ~
-                        }
-                        {
-                            c'4. ~
-                            c'4
-                            \stopStaff
-                            \startStaff
-                        }
-                    }
-                    {
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            r4
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            c'2 ~
-                            c'2 ~
-                        }
-                        {
-                            c'4. ~
-                            c'4 ~
-                        }
-                        {
-                            c'1 ~
-                        }
-                        {
-                            c'4.
-                            \stopStaff
-                            \startStaff
-                        }
-                    }
-                    {
-                        {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
@@ -2276,6 +1924,110 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 1
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             R1 * 5/4
                             \stopStaff
                             \startStaff
@@ -2288,68 +2040,43 @@
                             \stopStaff
                             \startStaff
                         }
-                    }
-                    {
                         {
-                            \clef "percussion"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            c'2. ~
-                        }
-                        {
-                            c'2.
+                            R1 * 5/8
                             \stopStaff
                             \startStaff
                         }
-                    }
-                    {
                         {
-                            r2
-                        }
-                        {
-                            r4
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            c'8 ~
-                            c'4 ~
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
                         }
                         {
-                            c'4. ~
-                            c'4 ~
-                            c'4 ~
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/4
+                            \stopStaff
+                            \startStaff
                         }
                         {
-                            c'4. ~
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
                         }
                         {
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c'8 [
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c'8
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c'8
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c'8
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c'8
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c'8 ~ ]
-                        }
-                        {
-                            c'4.
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 5/8
                             \stopStaff
                             \startStaff
                         }
@@ -2405,38 +2132,6 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             R1 * 3/4
                             \stopStaff
                             \startStaff
@@ -2446,70 +2141,6 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -2525,7 +2156,95 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 1/2
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -2542,22 +2261,6 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
                             \stopStaff
                             \startStaff
                         }
@@ -2581,14 +2284,6 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             R1 * 3/4
                             \stopStaff
                             \startStaff
@@ -2597,7 +2292,15 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 3/8
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 5/8
                             \stopStaff
                             \startStaff
                         }
@@ -2614,23 +2317,13 @@
                 \context Voice = "Guitar Pitch Pipe Voice" {
                     {
                         {
-                            \clef "percussion"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            c'2 ~
-                        }
-                        {
-                            c'4. ~
-                            c'4 ~
-                        }
-                        {
-                            c'2
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
-                    }
-                    {
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
@@ -2640,29 +2333,29 @@
                             \startStaff
                         }
                         {
-                            r8
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            c'4 ~
-                            c'2 ~
-                        }
-                        {
-                            c'2. ~
-                            c'2 ~
-                        }
-                        {
-                            c'2
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
-                    }
-                    {
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
@@ -2672,109 +2365,6 @@
                             \startStaff
                         }
                         {
-                            r4
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            c'8 ~
-                            c'4 ~
-                        }
-                        {
-                            c'2.
-                            \stopStaff
-                            \startStaff
-                        }
-                    }
-                    {
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            c'2. ~
-                            c'2
-                            \stopStaff
-                            \startStaff
-                        }
-                    }
-                    {
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            c'2. ~
-                            c'2 ~
-                        }
-                        {
-                            c'4. ~
-                            c'4
-                            \stopStaff
-                            \startStaff
-                        }
-                    }
-                    {
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            r4
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            c'2 ~
-                            c'2 ~
-                        }
-                        {
-                            c'4. ~
-                            c'4 ~
-                        }
-                        {
-                            c'1 ~
-                        }
-                        {
-                            c'4.
-                            \stopStaff
-                            \startStaff
-                        }
-                    }
-                    {
-                        {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
@@ -2786,6 +2376,110 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 1
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
                             R1 * 5/4
                             \stopStaff
                             \startStaff
@@ -2798,68 +2492,43 @@
                             \stopStaff
                             \startStaff
                         }
-                    }
-                    {
                         {
-                            \clef "percussion"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            c'2. ~
-                        }
-                        {
-                            c'2.
+                            R1 * 5/8
                             \stopStaff
                             \startStaff
                         }
-                    }
-                    {
                         {
-                            r2
-                        }
-                        {
-                            r4
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            c'8 ~
-                            c'4 ~
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
                         }
                         {
-                            c'4. ~
-                            c'4 ~
-                            c'4 ~
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/4
+                            \stopStaff
+                            \startStaff
                         }
                         {
-                            c'4. ~
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
                         }
                         {
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c'8 [
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c'8
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c'8
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c'8
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c'8
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c'8 ~ ]
-                        }
-                        {
-                            c'4.
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 5/8
                             \stopStaff
                             \startStaff
                         }
@@ -2915,38 +2584,6 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             R1 * 3/4
                             \stopStaff
                             \startStaff
@@ -2956,70 +2593,6 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -3035,7 +2608,95 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 1/2
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -3052,22 +2713,6 @@
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
                             R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 3/4
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
-                            R1 * 5/4
                             \stopStaff
                             \startStaff
                         }
@@ -3091,14 +2736,6 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-count = 1
-                            \startStaff
                             R1 * 3/4
                             \stopStaff
                             \startStaff
@@ -3107,7 +2744,15 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-count = 1
                             \startStaff
-                            R1 * 3/8
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-count = 1
+                            \startStaff
+                            R1 * 5/8
                             \stopStaff
                             \startStaff
                         }
@@ -3170,38 +2815,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 3/4
                                 \stopStaff
                                 \startStaff
@@ -3211,70 +2824,6 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -3290,7 +2839,95 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 1/2
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -3307,22 +2944,6 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
                                 \stopStaff
                                 \startStaff
                             }
@@ -3346,14 +2967,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 3/4
                                 \stopStaff
                                 \startStaff
@@ -3362,7 +2975,15 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 5/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -3424,38 +3045,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 3/4
                                 \stopStaff
                                 \startStaff
@@ -3465,70 +3054,6 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -3544,7 +3069,95 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 1/2
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -3561,22 +3174,6 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
                                 \stopStaff
                                 \startStaff
                             }
@@ -3600,14 +3197,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 3/4
                                 \stopStaff
                                 \startStaff
@@ -3616,7 +3205,15 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 5/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -3678,38 +3275,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 3/4
                                 \stopStaff
                                 \startStaff
@@ -3719,70 +3284,6 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -3798,7 +3299,95 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 1/2
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -3815,22 +3404,6 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
                                 \stopStaff
                                 \startStaff
                             }
@@ -3854,14 +3427,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 3/4
                                 \stopStaff
                                 \startStaff
@@ -3870,7 +3435,15 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 5/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -3888,23 +3461,13 @@
                     \context Voice = "Contrabass Pitch Pipe Voice" {
                         {
                             {
-                                \clef "percussion"
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                c'2 ~
-                            }
-                            {
-                                c'4. ~
-                                c'4 ~
-                            }
-                            {
-                                c'2
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
-                        }
-                        {
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
@@ -3914,29 +3477,29 @@
                                 \startStaff
                             }
                             {
-                                r8
-                            }
-                        }
-                        {
-                            {
-                                \clef "percussion"
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                c'4 ~
-                                c'2 ~
-                            }
-                            {
-                                c'2. ~
-                                c'2 ~
-                            }
-                            {
-                                c'2
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
-                        }
-                        {
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
+                            }
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
@@ -3946,109 +3509,6 @@
                                 \startStaff
                             }
                             {
-                                r4
-                            }
-                        }
-                        {
-                            {
-                                \clef "percussion"
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                c'8 ~
-                                c'4 ~
-                            }
-                            {
-                                c'2.
-                                \stopStaff
-                                \startStaff
-                            }
-                        }
-                        {
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                        }
-                        {
-                            {
-                                \clef "percussion"
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                c'2. ~
-                                c'2
-                                \stopStaff
-                                \startStaff
-                            }
-                        }
-                        {
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                        }
-                        {
-                            {
-                                \clef "percussion"
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                c'2. ~
-                                c'2 ~
-                            }
-                            {
-                                c'4. ~
-                                c'4
-                                \stopStaff
-                                \startStaff
-                            }
-                        }
-                        {
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                r4
-                            }
-                        }
-                        {
-                            {
-                                \clef "percussion"
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                c'2 ~
-                                c'2 ~
-                            }
-                            {
-                                c'4. ~
-                                c'4 ~
-                            }
-                            {
-                                c'1 ~
-                            }
-                            {
-                                c'4.
-                                \stopStaff
-                                \startStaff
-                            }
-                        }
-                        {
-                            {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
@@ -4060,6 +3520,110 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
                                 R1 * 5/4
                                 \stopStaff
                                 \startStaff
@@ -4072,68 +3636,43 @@
                                 \stopStaff
                                 \startStaff
                             }
-                        }
-                        {
                             {
-                                \clef "percussion"
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                c'2. ~
-                            }
-                            {
-                                c'2.
+                                R1 * 5/8
                                 \stopStaff
                                 \startStaff
                             }
-                        }
-                        {
                             {
-                                r2
-                            }
-                            {
-                                r4
-                            }
-                        }
-                        {
-                            {
-                                \clef "percussion"
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                c'8 ~
-                                c'4 ~
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
                             }
                             {
-                                c'4. ~
-                                c'4 ~
-                                c'4 ~
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/4
+                                \stopStaff
+                                \startStaff
                             }
                             {
-                                c'4. ~
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
                             }
                             {
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                c'8 [
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                c'8
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                c'8
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                c'8
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                c'8
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                c'8 ~ ]
-                            }
-                            {
-                                c'4.
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 5/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -4189,38 +3728,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 3/4
                                 \stopStaff
                                 \startStaff
@@ -4230,70 +3737,6 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -4309,7 +3752,95 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 1/2
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -4326,22 +3857,6 @@
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
-                                R1 * 5/4
                                 \stopStaff
                                 \startStaff
                             }
@@ -4365,14 +3880,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 R1 * 3/4
                                 \stopStaff
                                 \startStaff
@@ -4381,7 +3888,15 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-count = 1
                                 \startStaff
-                                R1 * 3/8
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-count = 1
+                                \startStaff
+                                R1 * 5/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -4391,4 +3906,3 @@
             >>
         >>
     >>
-}

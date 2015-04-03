@@ -1,11 +1,3 @@
-\version "2.19.17"
-\language "english"
-
-#(ly:set-option 'relative-includes #t)
-
-\include "/Users/josiah/Documents/Scores/ersilia/ersilia/stylesheets/stylesheet.ily"
-
-\score {
     \context Score = "Ersilia Score" <<
         \tag #'time
         \context TimeSignatureContext = "TimeSignatureContext" {
@@ -7633,4 +7625,3 @@
             >>
         >>
     >>
-}
