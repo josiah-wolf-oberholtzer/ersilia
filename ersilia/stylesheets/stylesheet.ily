@@ -59,9 +59,10 @@ afterGraceFraction = #(cons 1023 1024)
 
 \layout {
     \accidentalStyle forget
+    indent = 5
     ragged-bottom = ##t
-    ragged-right = ##t
     ragged-last = ##t
+    ragged-right = ##t
 
     %%% DEFAULTS %%%
 
@@ -82,10 +83,6 @@ afterGraceFraction = #(cons 1023 1024)
         \override DynamicLineSpanner.staff-padding = 11.5
         \override DynamicText.self-alignment-X = -1
         \override Hairpin.bound-padding = 1.5
-        \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'(
-            (basic-distance . 5)
-            (padding . 2.5)
-            )
     }
 
     %%% TIME SIGNATURE CONTEXT %%%
@@ -149,6 +146,7 @@ afterGraceFraction = #(cons 1023 1024)
         \type Engraver_group
         \alias Staff
         \override StaffSymbol.line-count = 1
+        \override VerticalAxisGroup.staff-staff-spacing.minimum-distance = 12
     }
 
     \context {
@@ -188,8 +186,8 @@ afterGraceFraction = #(cons 1023 1024)
         \accepts ClarinetStaff
         \accepts OboeStaff
         \accepts SaxophoneStaff
-        \override StaffGrouper.staff-staff-spacing.minimum-distance = 32
-        \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 44
+        \override StaffGrouper.staff-staff-spacing.minimum-distance = 16
+        \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 32
     }
 
     \context {
@@ -206,6 +204,7 @@ afterGraceFraction = #(cons 1023 1024)
         \alias Staff
         \accepts GuitarStaff
         \accepts PitchPipes
+        systemStartDelimiter = #'SystemStartSquare
     }
 
     \context {
@@ -236,6 +235,7 @@ afterGraceFraction = #(cons 1023 1024)
         \alias StaffGroup
         \accepts PianoStaff
         \accepts PitchPipes
+        systemStartDelimiter = #'SystemStartSquare
     }
 
     \context {
@@ -253,6 +253,8 @@ afterGraceFraction = #(cons 1023 1024)
         \alias StaffGroup
         \accepts PercussionStaff
         \accepts PitchPipes
+        \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 32
+        systemStartDelimiter = #'SystemStartSquare
     }
 
     \context {
@@ -263,8 +265,8 @@ afterGraceFraction = #(cons 1023 1024)
         \accepts GuitarStaffGroup
         \accepts PianoStaffGroup
         \accepts PercussionStaffGroup
-        \override StaffGrouper.staff-staff-spacing.minimum-distance = 32
-        \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 44
+        \override StaffGrouper.staff-staff-spacing.minimum-distance = 16
+        %\override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 24
     }
 
     \context {
@@ -302,6 +304,7 @@ afterGraceFraction = #(cons 1023 1024)
         \alias StaffGroup
         \accepts ContrabassStaff
         \accepts PitchPipes
+        systemStartDelimiter = #'SystemStartSquare
     }
 
     \context {
@@ -313,29 +316,20 @@ afterGraceFraction = #(cons 1023 1024)
         \accepts ViolaStaff
         \accepts CelloStaff
         \accepts ContrabassStaffGroup
-        \override StaffGrouper.staff-staff-spacing.minimum-distance = 32
-        \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 44
+        \override StaffGrouper.staff-staff-spacing.minimum-distance = 16
     }
 
     %%% SCORE %%%
 
     \context {
         \Score
-
         \accepts PercussionSectionStaffGroup
         \accepts StringSectionStaffGroup
         \accepts TimeSignatureContext
         \accepts WindSectionStaffGroup
-
         \remove Bar_number_engraver
         \remove Mark_engraver
         \remove Metronome_mark_engraver
-
-        \override BarLine.layer = 1
-        \override SpanBar.layer = 1
-        \override StaffSymbol.layer = 0
-
-        \override BarLine.bar-extent = #'(-2.1 . 2.1)
         \override BarLine.hair-thickness = 0.5
         \override BarLine.space-alist = #'(
             (time-signature extra-space . 0.0)
@@ -351,8 +345,8 @@ afterGraceFraction = #(cons 1023 1024)
         \override Beam.direction = #down
         \override Beam.breakable = ##t
         \override Beam.length-fraction = 1.5
-        \override Glissando.after-line-breaking = ##t
         \override Glissando.breakable = ##t
+        \override Glissando.thickness = 3
         \override GraceSpacing.common-shortest-duration = #(ly:make-moment 1 8)
         \override NoteCollision.merge-differently-dotted = ##t
         \override NoteColumn.ignore-collision = ##t
@@ -365,19 +359,19 @@ afterGraceFraction = #(cons 1023 1024)
         \override Stem.details.lengths = #'(6)
         \override Stem.direction = #down
         \override Stem.stemlet-length = 1.5
+        \override StemTremolo.beam-width = 1.5
+        \override StemTremolo.flag-count = 4
+        \override StemTremolo.slope = 0.5
         \override SustainPedal.self-alignment-X = #CENTER
         \override SustainPedalLineSpanner.padding = 2
         \override SustainPedalLineSpanner.to-barline = ##t
         \override SystemStartSquare.thickness = 2
+        \override TupletBracket.breakable = ##t
         \override TupletBracket.direction = #down
-        \override TupletBracket.full-length-to-extent = ##t
+        \override TupletBracket.full-length-to-extent = ##f
+        \override TupletBracket.padding = 0.75
+        \override TupletNumber.font-size = 1
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
-        \override VerticalAxisGroup.staff-staff-spacing = #'(
-            (basic-distance . 8)
-            (minimum-distance . 14)
-            (padding . 4)
-            (stretchability . 0)
-            )
         autoBeaming = ##f
         doubleRepeatType = #":|.|:"
         proportionalNotationDuration = #(ly:make-moment 1 16)
