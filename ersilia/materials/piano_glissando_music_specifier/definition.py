@@ -3,11 +3,17 @@ import consort
 from abjad.tools import durationtools
 from abjad.tools import rhythmmakertools
 from abjad.tools import spannertools
+from ersilia.materials import abbreviations
 
 
 piano_glissando_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
         glissando=spannertools.Glissando(),
+        keys_spanner=(
+            abbreviations.chromatic_keys_spanner,
+            abbreviations.white_keys_spanner,
+            abbreviations.white_keys_spanner,
+            ),
         ),
     pitch_handler=consort.AbsolutePitchHandler(
         pitch_specifier="c' f' c'' f'' c''' c'' c' c'''",

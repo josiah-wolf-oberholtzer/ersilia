@@ -1,9 +1,11 @@
 # -*- encoding: utf-8 -*-
 from abjad.tools import datastructuretools
 from abjad.tools import durationtools
+from abjad.tools import markuptools
 from abjad.tools import mathtools
 from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
+from abjad.tools import schemetools
 from abjad.tools import spannertools
 import consort
 
@@ -17,6 +19,99 @@ piano_glissando_music_specifier = consort.tools.MusicSpecifier(
                         allow_repeated_pitches=False,
                         allow_ties=False,
                         parenthesize_repeated_pitches=False,
+                        ),
+                    ]
+                ),
+            ),
+        keys_spanner=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    spannertools.TextSpanner(
+                        overrides={
+                            'text_spanner__bound_details__left__text': markuptools.Markup(
+                                contents=(
+                                    markuptools.MarkupCommand(
+                                        'vcenter',
+                                        markuptools.MarkupCommand(
+                                            'concat',
+                                            [
+                                                markuptools.MarkupCommand(
+                                                    'natural'
+                                                    ),
+                                                markuptools.MarkupCommand(
+                                                    'hspace',
+                                                    0.1
+                                                    ),
+                                                markuptools.MarkupCommand(
+                                                    'flat'
+                                                    ),
+                                                ]
+                                            )
+                                        ),
+                                    ),
+                                ),
+                            'text_spanner__bound_details__right__text': markuptools.Markup(
+                                contents=(
+                                    markuptools.MarkupCommand(
+                                        'draw-line',
+                                        schemetools.SchemePair(0, -1)
+                                        ),
+                                    ),
+                                ),
+                            'text_spanner__bound_details__right_broken__text': False,
+                            'text_spanner__dash_fraction': 1,
+                            'text_spanner__direction': Up,
+                            },
+                        ),
+                    spannertools.TextSpanner(
+                        overrides={
+                            'text_spanner__bound_details__left__text': markuptools.Markup(
+                                contents=(
+                                    markuptools.MarkupCommand(
+                                        'vcenter',
+                                        markuptools.MarkupCommand(
+                                            'natural'
+                                            )
+                                        ),
+                                    ),
+                                ),
+                            'text_spanner__bound_details__right__text': markuptools.Markup(
+                                contents=(
+                                    markuptools.MarkupCommand(
+                                        'draw-line',
+                                        schemetools.SchemePair(0, -1)
+                                        ),
+                                    ),
+                                ),
+                            'text_spanner__bound_details__right_broken__text': False,
+                            'text_spanner__dash_fraction': 1,
+                            'text_spanner__direction': Up,
+                            },
+                        ),
+                    spannertools.TextSpanner(
+                        overrides={
+                            'text_spanner__bound_details__left__text': markuptools.Markup(
+                                contents=(
+                                    markuptools.MarkupCommand(
+                                        'vcenter',
+                                        markuptools.MarkupCommand(
+                                            'natural'
+                                            )
+                                        ),
+                                    ),
+                                ),
+                            'text_spanner__bound_details__right__text': markuptools.Markup(
+                                contents=(
+                                    markuptools.MarkupCommand(
+                                        'draw-line',
+                                        schemetools.SchemePair(0, -1)
+                                        ),
+                                    ),
+                                ),
+                            'text_spanner__bound_details__right_broken__text': False,
+                            'text_spanner__dash_fraction': 1,
+                            'text_spanner__direction': Up,
+                            },
                         ),
                     ]
                 ),
