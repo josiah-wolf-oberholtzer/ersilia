@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-from ersilia import makers
-from ersilia import materials
 from ersilia.makers import *
+from ersilia import makers
 from ersilia.materials import *
+from ersilia import materials

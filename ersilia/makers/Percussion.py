@@ -1,8 +1,9 @@
 # -*- encoding: utf-8 -*-
+from abjad.tools import abctools
 from abjad.tools import pitchtools
 
 
-class Percussion(object):
+class Percussion(abctools.AbjadObject):
 
     CASTANET = pitchtools.NamedPitch("g''")
     GUIRO = pitchtools.NamedPitch("e''")
