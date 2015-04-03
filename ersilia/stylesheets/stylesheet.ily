@@ -223,7 +223,7 @@ afterGraceFraction = #(cons 1023 1024)
         \name PercussionStaff
         \type Engraver_group
         \alias Staff
-    }
+        \override StaffSymbol.line-positions = #'(-10 -8 -4 -2 0 2 4 8 10)
 
     %%% GUITAR %%%
 
