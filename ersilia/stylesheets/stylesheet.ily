@@ -138,6 +138,7 @@ afterGraceFraction = #(cons 1023 1024)
     \context {
         \Staff
         \remove Time_signature_engraver
+        \RemoveEmptyStaves
     }
 
     \context {
