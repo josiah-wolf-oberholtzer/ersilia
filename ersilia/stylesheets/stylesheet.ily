@@ -1,3 +1,5 @@
+\include "default-instrument-names.ily"
+
 #(set-default-paper-size "17x11" 'landscape)
 #(set-global-staff-size 12)
 
@@ -146,7 +148,8 @@ afterGraceFraction = #(cons 1023 1024)
         \type Engraver_group
         \alias Staff
         \override StaffSymbol.line-count = 1
-        \override VerticalAxisGroup.staff-staff-spacing.minimum-distance = 12
+        instrumentName = \pitchPipesName
+        shortInstrumentName = \shortPitchPipesName
     }
 
     \context {
@@ -154,6 +157,8 @@ afterGraceFraction = #(cons 1023 1024)
         \name FluteStaff
         \type Engraver_group
         \alias Staff
+        instrumentName = \fluteName
+        shortInstrumentName = \shortFluteName
     }
 
     \context {
@@ -161,6 +166,8 @@ afterGraceFraction = #(cons 1023 1024)
         \name ClarinetStaff
         \type Engraver_group
         \alias Staff
+        instrumentName = \clarinetName
+        shortInstrumentName = \shortClarinetName
     }
 
     \context {
@@ -168,6 +175,8 @@ afterGraceFraction = #(cons 1023 1024)
         \name OboeStaff
         \type Engraver_group
         \alias Staff
+        instrumentName = \oboeName
+        shortInstrumentName = \shortOboeName
     }
 
     \context {
@@ -175,6 +184,8 @@ afterGraceFraction = #(cons 1023 1024)
         \name SaxophoneStaff
         \type Engraver_group
         \alias Staff
+        instrumentName = \saxophoneName
+        shortInstrumentName = \shortSaxophoneName
     }
 
     \context {
@@ -186,8 +197,6 @@ afterGraceFraction = #(cons 1023 1024)
         \accepts ClarinetStaff
         \accepts OboeStaff
         \accepts SaxophoneStaff
-        \override StaffGrouper.staff-staff-spacing.minimum-distance = 16
-        \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 32
     }
 
     \context {
@@ -195,6 +204,8 @@ afterGraceFraction = #(cons 1023 1024)
         \name GuitarStaff
         \type Engraver_group
         \alias Staff
+        instrumentName = \guitarName
+        shortInstrumentName = \shortGuitarName
     }
 
     \context {
@@ -226,6 +237,8 @@ afterGraceFraction = #(cons 1023 1024)
         \accepts PianoLowerStaff
         \accepts PianoUpperStaff
         \accepts PitchPipes
+        instrumentName = \pianoName
+        shortInstrumentName = \shortPianoName
     }
 
     \context {
@@ -244,6 +257,8 @@ afterGraceFraction = #(cons 1023 1024)
         \type Engraver_group
         \alias Staff
         \override StaffSymbol.line-positions = #'(-10 -8 -4 -2 0 2 4 8 10)
+        instrumentName = \percussionName
+        shortInstrumentName = \shortPercussionName
     }
 
     \context {
@@ -253,7 +268,6 @@ afterGraceFraction = #(cons 1023 1024)
         \alias StaffGroup
         \accepts PercussionStaff
         \accepts PitchPipes
-        \override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 32
         systemStartDelimiter = #'SystemStartSquare
     }
 
@@ -265,8 +279,6 @@ afterGraceFraction = #(cons 1023 1024)
         \accepts GuitarStaffGroup
         \accepts PianoStaffGroup
         \accepts PercussionStaffGroup
-        \override StaffGrouper.staff-staff-spacing.minimum-distance = 16
-        %\override StaffGrouper.staffgroup-staff-spacing.minimum-distance = 24
     }
 
     \context {
@@ -274,6 +286,8 @@ afterGraceFraction = #(cons 1023 1024)
         \name ViolinStaff
         \type Engraver_group
         \alias Staff
+        instrumentName = \violinName
+        shortInstrumentName = \shortViolinName
     }
 
     \context {
@@ -281,6 +295,8 @@ afterGraceFraction = #(cons 1023 1024)
         \name ViolaStaff
         \type Engraver_group
         \alias Staff
+        instrumentName = \violaName
+        shortInstrumentName = \shortViolaName
     }
 
     \context {
@@ -288,6 +304,8 @@ afterGraceFraction = #(cons 1023 1024)
         \name CelloStaff
         \type Engraver_group
         \alias Staff
+        instrumentName = \celloName
+        shortInstrumentName = \shortCelloName
     }
 
     \context {
@@ -295,6 +313,8 @@ afterGraceFraction = #(cons 1023 1024)
         \name ContrabassStaff
         \type Engraver_group
         \alias Staff
+        instrumentName = \contrabassName
+        shortInstrumentName = \shortContrabassName
     }
 
     \context {
@@ -316,7 +336,6 @@ afterGraceFraction = #(cons 1023 1024)
         \accepts ViolaStaff
         \accepts CelloStaff
         \accepts ContrabassStaffGroup
-        \override StaffGrouper.staff-staff-spacing.minimum-distance = 16
     }
 
     %%% SCORE %%%
@@ -372,6 +391,19 @@ afterGraceFraction = #(cons 1023 1024)
         \override TupletBracket.padding = 0.75
         \override TupletNumber.font-size = 1
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
+        \override StaffGrouper.staffgroup-staff-spacing = #'(
+            (basic-distance . 20)
+            (minimum-distance . 20)
+            (padding . 5)
+            (stretchability . 0)
+            )
+        \override StaffGrouper.staff-staff-spacing = #'(
+            (basic-distance . 20)
+            (minimum-distance . 20)
+            (padding . 5)
+            (stretchability . 0)
+            )
+
         autoBeaming = ##f
         doubleRepeatType = #":|.|:"
         proportionalNotationDuration = #(ly:make-moment 1 16)
