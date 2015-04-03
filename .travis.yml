@@ -11,14 +11,13 @@ before_install:
 #    - sudo apt-get install -y texlive-fonts-recommended
 #    - sudo apt-get install -y texlive-latex-extra 
 #    - sudo apt-get install -y texlive-latex-recommended 
-    - wget -q http://download.linuxaudio.org/lilypond/binaries/linux-64/lilypond-2.19.15-1.linux-64.sh
-    - sudo sh lilypond-2.19.15-1.linux-64.sh --batch
+    - wget -q http://download.linuxaudio.org/lilypond/binaries/linux-64/lilypond-2.19.17-1.linux-64.sh
+    - sudo sh lilypond-2.19.17-1.linux-64.sh --batch
 
 install:
 
     - pip install --allow-external abjad --allow-unverified abjad -e git://github.com/Abjad/abjad.git#egg=abjad
     - pip install --allow-external ide --allow-unverified ide -e git://github.com/Abjad/ide.git#egg=ide
-    - pip install --allow-external supriya --allow-unverified supriya -e git://github.com/Pulgama/supriya.git#egg=supriya
     - pip install --allow-external consort --allow-unverified consort -e git://github.com/josiah-wolf-oberholtzer/consort.git#egg=consort
     - pip install -e .
 
