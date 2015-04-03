@@ -76,7 +76,6 @@ afterGraceFraction = #(cons 1023 1024)
     \context {
         \Staff
         \remove Time_signature_engraver
-        \RemoveEmptyStaves
     }
 
     \context {
@@ -147,6 +146,7 @@ afterGraceFraction = #(cons 1023 1024)
         \name PitchPipes
         \type Engraver_group
         \alias Staff
+        \RemoveEmptyStaves
         \override StaffSymbol.line-count = 1
         instrumentName = \pitchPipesName
         shortInstrumentName = \shortPitchPipesName
@@ -274,6 +274,12 @@ afterGraceFraction = #(cons 1023 1024)
         \alias StaffGroup
         \accepts PercussionStaff
         \accepts PitchPipes
+        \override StaffGrouper.staffgroup-staff-spacing = #'(
+            (basic-distance . 32)
+            (minimum-distance . 32)
+            (padding . 5)
+            (stretchability . 0)
+            )
         systemStartDelimiter = #'SystemStartSquare
     }
 
