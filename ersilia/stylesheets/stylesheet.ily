@@ -197,6 +197,12 @@ afterGraceFraction = #(cons 1023 1024)
         \accepts ClarinetStaff
         \accepts OboeStaff
         \accepts SaxophoneStaff
+        \override StaffGrouper.staffgroup-staff-spacing = #'(
+            (basic-distance . 32)
+            (minimum-distance . 32)
+            (padding . 5)
+            (stretchability . 0)
+            )
     }
 
     \context {
