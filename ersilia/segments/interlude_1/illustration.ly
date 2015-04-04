@@ -37,7 +37,6 @@
                 s1 * 7/8
             }
         }
-        \tag #'wind-section
         \context WindSectionStaffGroup = "Wind Section Staff Group" <<
             \tag #'flute
             \repeat volta 2
@@ -140,7 +139,6 @@
                 }
             }
         >>
-        \tag #'percussion-section
         \context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
             \tag #'guitar
             \context GuitarStaffGroup = "Guitar Staff Group" <<
@@ -332,7 +330,6 @@
                 }
             >>
         >>
-        \tag #'string-section
         \context StringSectionStaffGroup = "String Section Staff Group" <<
             \tag #'violin
             \repeat volta 2
