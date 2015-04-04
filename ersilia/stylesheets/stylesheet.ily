@@ -150,6 +150,9 @@ afterGraceFraction = #(cons 1023 1024)
         \override StaffSymbol.line-count = 1
         instrumentName = \pitchPipesName
         shortInstrumentName = \shortPitchPipesName
+        \override Beam.positions = #'(-5 . -5)
+        \override DynamicLineSpanner.staff-padding = 8
+        \override TupletBracket.staff-padding = 4
     }
 
     \context {
@@ -159,6 +162,9 @@ afterGraceFraction = #(cons 1023 1024)
         \alias Staff
         instrumentName = \fluteName
         shortInstrumentName = \shortFluteName
+        \override Beam.positions = #'(-7 . -7)
+        \override DynamicLineSpanner.staff-padding = 10
+        \override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -168,6 +174,9 @@ afterGraceFraction = #(cons 1023 1024)
         \alias Staff
         instrumentName = \clarinetName
         shortInstrumentName = \shortClarinetName
+        \override Beam.positions = #'(-7 . -7)
+        \override DynamicLineSpanner.staff-padding = 10
+        \override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -177,6 +186,9 @@ afterGraceFraction = #(cons 1023 1024)
         \alias Staff
         instrumentName = \oboeName
         shortInstrumentName = \shortOboeName
+        \override Beam.positions = #'(-7 . -7)
+        \override DynamicLineSpanner.staff-padding = 10
+        \override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -186,6 +198,9 @@ afterGraceFraction = #(cons 1023 1024)
         \alias Staff
         instrumentName = \saxophoneName
         shortInstrumentName = \shortSaxophoneName
+        \override Beam.positions = #'(-7 . -7)
+        \override DynamicLineSpanner.staff-padding = 10
+        \override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -212,6 +227,9 @@ afterGraceFraction = #(cons 1023 1024)
         \alias Staff
         instrumentName = \guitarName
         shortInstrumentName = \shortGuitarName
+        \override Beam.positions = #'(-7 . -7)
+        \override DynamicLineSpanner.staff-padding = 10
+        \override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -229,6 +247,9 @@ afterGraceFraction = #(cons 1023 1024)
         \name PianoUpperStaff
         \type Engraver_group
         \alias Staff
+        \override Beam.positions = #'(-9 . -9)
+        \override DynamicLineSpanner.staff-padding = 10
+        \override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -236,6 +257,9 @@ afterGraceFraction = #(cons 1023 1024)
         \name PianoLowerStaff
         \type Engraver_group
         \alias Staff
+        \override Beam.positions = #'(-9 . -9)
+        \override DynamicLineSpanner.staff-padding = 10
+        \override TupletBracket.staff-padding = 6
     }
     
     \context{
@@ -265,6 +289,9 @@ afterGraceFraction = #(cons 1023 1024)
         \override StaffSymbol.line-positions = #'(-10 -8 -4 -2 0 2 4 8 10)
         instrumentName = \percussionName
         shortInstrumentName = \shortPercussionName
+        \override Beam.positions = #'(-11 . -11)
+        \override DynamicLineSpanner.staff-padding = 10
+        \override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -300,6 +327,9 @@ afterGraceFraction = #(cons 1023 1024)
         \alias Staff
         instrumentName = \violinName
         shortInstrumentName = \shortViolinName
+        \override Beam.positions = #'(-7 . -7)
+        \override DynamicLineSpanner.staff-padding = 10
+        \override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -309,6 +339,9 @@ afterGraceFraction = #(cons 1023 1024)
         \alias Staff
         instrumentName = \violaName
         shortInstrumentName = \shortViolaName
+        \override Beam.positions = #'(-7 . -7)
+        \override DynamicLineSpanner.staff-padding = 10
+        \override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -318,6 +351,9 @@ afterGraceFraction = #(cons 1023 1024)
         \alias Staff
         instrumentName = \celloName
         shortInstrumentName = \shortCelloName
+        \override Beam.positions = #'(-7 . -7)
+        \override DynamicLineSpanner.staff-padding = 10
+        \override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -327,6 +363,9 @@ afterGraceFraction = #(cons 1023 1024)
         \alias Staff
         instrumentName = \contrabassName
         shortInstrumentName = \shortContrabassName
+        \override Beam.positions = #'(-7 . -7)
+        \override DynamicLineSpanner.staff-padding = 10
+        \override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -400,7 +439,8 @@ afterGraceFraction = #(cons 1023 1024)
         \override TupletBracket.breakable = ##t
         \override TupletBracket.direction = #down
         \override TupletBracket.full-length-to-extent = ##f
-        \override TupletBracket.padding = 0.75
+        \override TupletBracket.padding = 1.5
+        \override TupletBracket.outside-staff-padding = 0.75
         \override TupletNumber.font-size = 1
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
         \override StaffGrouper.staffgroup-staff-spacing = #'(
