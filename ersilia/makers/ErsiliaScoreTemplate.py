@@ -226,6 +226,7 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
         piano_staff = scoretools.StaffGroup(
             [piano_rh_staff, piano_lh_staff, piano_pedals],
             context_name='PianoStaff',
+            name='Piano Staff',
             )
         piano_staff_group = scoretools.StaffGroup(
             [piano_aux_staff, piano_staff],
