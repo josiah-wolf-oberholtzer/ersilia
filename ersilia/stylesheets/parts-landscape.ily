@@ -1,4 +1,4 @@
-#(set-default-paper-size "17x11" 'landscape)
+#(set-default-paper-size "11x17" 'landscape)
 #(set-global-staff-size 14)
 
 \header {

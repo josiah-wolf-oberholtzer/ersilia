@@ -1,4 +1,4 @@
-#(set-default-paper-size "17x11" 'portrait)
+#(set-default-paper-size "11x17" 'portrait)
 #(set-global-staff-size 14)
 
 \header {
