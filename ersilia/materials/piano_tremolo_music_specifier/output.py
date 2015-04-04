@@ -2,6 +2,7 @@
 from abjad.tools import datastructuretools
 from abjad.tools import mathtools
 from abjad.tools import pitchtools
+from abjad.tools import rhythmmakertools
 from abjad.tools import scoretools
 from abjad.tools import selectortools
 from abjad.tools import spannertools
@@ -10,6 +11,20 @@ import consort
 
 piano_tremolo_music_specifier = consort.tools.MusicSpecifier(
     attachment_handler=consort.tools.AttachmentHandler(
+        dynamic_expressions=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    consort.tools.DynamicExpression(
+                        dynamic_tokens=datastructuretools.CyclicTuple(
+                            ['p', 'ppp', 'p', 'ppp', 'mf', 'p']
+                            ),
+                        transitions=datastructuretools.CyclicTuple(
+                            [None]
+                            ),
+                        ),
+                    ]
+                ),
+            ),
         stem_tremolo_spanner=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [
@@ -85,6 +100,12 @@ piano_tremolo_music_specifier = consort.tools.MusicSpecifier(
                     ),
                 ),
             ratio=mathtools.Ratio(1, 1, 1),
+            ),
+        ),
+    rhythm_maker=rhythmmakertools.NoteRhythmMaker(
+        tie_specifier=rhythmmakertools.TieSpecifier(
+            tie_across_divisions=True,
+            use_messiaen_style_ties=True,
             ),
         ),
     )
