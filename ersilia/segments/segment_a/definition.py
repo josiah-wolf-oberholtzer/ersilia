@@ -66,7 +66,10 @@ segment_maker.add_setting(
 
 segment_maker.add_setting(
     timespan_identifier=consort.RatioPartsExpression([1, 3], [1, 1, 1, 1, 1]),
-    timespan_maker=ersilia.sparse_timespan_maker,
+    timespan_maker=new(
+        ersilia.sparse_timespan_maker,
+        playing_groupings=(2, 3, 1),
+        ),
     percussion=consort.MusicSpecifierSequence(
         music_specifiers=[
             ersilia.percussion_tom_fanfare_music_specifier,

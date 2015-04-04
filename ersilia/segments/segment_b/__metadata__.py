@@ -4,6 +4,7 @@ from abjad import *
 
 metadata = datastructuretools.TypedOrderedDict(
     [
+        ('segment_count', 6),
         ('segment_number', 2),
         ]
     )

@@ -8,7 +8,7 @@
 \include "/Users/josiah/Documents/Scores/ersilia/ersilia/stylesheets/stylesheet.ily"
 
 \score {
-    \new Score <<
+    \context Score = "Ersilia Score" <<
         \tag #'time
         \context TimeSignatureContext = "TimeSignatureContext" {
             {
@@ -69,36 +69,16 @@
                 s1 * 1/2
             }
             {
-                \time 3/8
-                s1 * 3/8
-            }
-            {
-                \time 7/8
-                s1 * 7/8
-            }
-            {
                 \time 4/4
                 s1 * 1
             }
             {
-                \time 3/8
-                s1 * 3/8
+                \time 2/4
+                s1 * 1/2
             }
             {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                \time 5/8
-                s1 * 5/8
+                \time 4/4
+                s1 * 1
             }
             {
                 \time 2/4
@@ -112,6 +92,11 @@
                 s1 * 3/8
             }
             {
+                \time 7/8
+                s1 * 7/8
+            }
+            {
+                \time 3/8
                 s1 * 3/8
             }
             {
@@ -124,11 +109,19 @@
                 s1 * 3/8
             }
             {
-                \time 6/8
-                s1 * 3/4
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
             }
             {
                 \time 4/4
+                s1 * 1
+            }
+            {
                 s1 * 1
             }
             {
@@ -152,26 +145,32 @@
                 s1 * 1
             }
             {
-                s1 * 1
+                \time 7/8
+                s1 * 7/8
             }
             {
-                s1 * 1
+                \time 3/8
+                s1 * 3/8
             }
             {
-                \time 2/4
-                s1 * 1/2
+                \time 5/8
+                s1 * 5/8
+            }
+            {
+                \time 3/8
+                s1 * 3/8
+            }
+            {
+                \time 4/4
+                s1 * 1
             }
             {
                 \time 3/4
                 s1 * 3/4
             }
             {
-                \time 7/8
-                s1 * 7/8
-            }
-            {
-                \time 2/4
-                s1 * 1/2
+                \time 5/8
+                s1 * 5/8
             }
             {
                 \time 3/8
@@ -309,22 +308,6 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
                             R1 * 1
                             \stopStaff
                             \startStaff
@@ -333,7 +316,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/8
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -341,39 +324,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -405,6 +356,38 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
                             R1 * 3/8
                             \stopStaff
                             \startStaff
@@ -437,7 +420,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/4
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -493,7 +476,31 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
                             \stopStaff
                             \startStaff
                         }
@@ -502,14 +509,6 @@
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 1
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -525,15 +524,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
+                            R1 * 5/8
                             \stopStaff
                             \startStaff
                         }
@@ -709,22 +700,6 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
                             R1 * 1
                             \stopStaff
                             \startStaff
@@ -733,7 +708,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/8
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -741,39 +716,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -805,6 +748,38 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
                             R1 * 3/8
                             \stopStaff
                             \startStaff
@@ -837,7 +812,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/4
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -893,7 +868,31 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
                             \stopStaff
                             \startStaff
                         }
@@ -902,14 +901,6 @@
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 1
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -925,15 +916,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
+                            R1 * 5/8
                             \stopStaff
                             \startStaff
                         }
@@ -1109,22 +1092,6 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
                             R1 * 1
                             \stopStaff
                             \startStaff
@@ -1133,7 +1100,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/8
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -1141,39 +1108,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -1205,6 +1140,38 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
                             R1 * 3/8
                             \stopStaff
                             \startStaff
@@ -1237,7 +1204,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/4
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -1293,7 +1260,31 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
                             \stopStaff
                             \startStaff
                         }
@@ -1302,14 +1293,6 @@
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 1
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -1325,15 +1308,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
+                            R1 * 5/8
                             \stopStaff
                             \startStaff
                         }
@@ -1509,22 +1484,6 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
                             R1 * 1
                             \stopStaff
                             \startStaff
@@ -1533,7 +1492,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/8
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -1541,39 +1500,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -1605,6 +1532,38 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
                             R1 * 3/8
                             \stopStaff
                             \startStaff
@@ -1637,7 +1596,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/4
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -1693,7 +1652,31 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
                             \stopStaff
                             \startStaff
                         }
@@ -1702,14 +1685,6 @@
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 1
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -1725,15 +1700,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
+                            R1 * 5/8
                             \stopStaff
                             \startStaff
                         }
@@ -1913,22 +1880,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
                                 R1 * 1
                                 \stopStaff
                                 \startStaff
@@ -1937,7 +1888,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/8
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -1945,39 +1896,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 5/8
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -2009,6 +1928,38 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
                                 R1 * 3/8
                                 \stopStaff
                                 \startStaff
@@ -2041,7 +1992,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/4
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -2097,7 +2048,31 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -2106,14 +2081,6 @@
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
                                 R1 * 1
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -2129,15 +2096,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
+                                R1 * 5/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -2312,22 +2271,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
                                 R1 * 1
                                 \stopStaff
                                 \startStaff
@@ -2336,7 +2279,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/8
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -2344,39 +2287,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 5/8
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -2408,6 +2319,38 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
                                 R1 * 3/8
                                 \stopStaff
                                 \startStaff
@@ -2440,7 +2383,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/4
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -2496,7 +2439,31 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -2505,14 +2472,6 @@
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
                                 R1 * 1
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -2528,15 +2487,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
+                                R1 * 5/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -2714,22 +2665,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
                                 R1 * 1
                                 \stopStaff
                                 \startStaff
@@ -2738,7 +2673,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/8
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -2746,39 +2681,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 5/8
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -2810,6 +2713,38 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
                                 R1 * 3/8
                                 \stopStaff
                                 \startStaff
@@ -2842,7 +2777,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/4
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -2898,7 +2833,31 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -2907,14 +2866,6 @@
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
                                 R1 * 1
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -2930,15 +2881,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
+                                R1 * 5/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -3017,7 +2960,7 @@
                         }
                     }
                 }
-                \new PianoStaff <<
+                \context PianoStaff = "Piano Staff" <<
                     \context PianoUpperStaff = "Piano Upper Staff" {
                         \clef "treble"
                         \context Voice = "Piano Upper Voice" {
@@ -3173,7 +3116,9 @@
                             }
                             {
                                 {
-                                    <g b d' g' af' d''>4. :32
+                                    <g b d' g' af' d''>4 :32 ~
+                                    \set stemLeftBeamCount = 1
+                                    <g b d' g' af' d''>8 :64
                                 }
                             }
                             {
@@ -3209,8 +3154,7 @@
                                 }
                             }
                             {
-                                \tweak #'text #tuplet-number::calc-fraction-text
-                                \times 5/6 {
+                                \times 2/3 {
                                     r8
                                     \once \override Accidental.stencil = ##f
                                     \once \override AccidentalCautionary.stencil = ##f
@@ -3249,6 +3193,11 @@
                             }
                             {
                                 {
+                                    r16
+                                }
+                            }
+                            {
+                                {
                                     <g b d' g' af' d''>8. :64
                                 }
                             }
@@ -3265,9 +3214,9 @@
                                     \override TextSpanner #'bound-details #'right-broken #'text = ##f
                                     \override TextSpanner #'dash-fraction = #1
                                     \override TextSpanner #'direction = #up
-                                    c''4 \glissando \startTextSpan
+                                    c''8. [ \glissando \startTextSpan
                                     \set stemLeftBeamCount = 2
-                                    f''16 \stopTextSpan
+                                    f''16 ] \stopTextSpan
                                     \revert TextSpanner #'bound-details
                                     \revert TextSpanner #'dash-fraction
                                     \revert TextSpanner #'direction
@@ -3275,7 +3224,7 @@
                             }
                             {
                                 {
-                                    r8.
+                                    r4
                                     r8
                                 }
                             }
@@ -3288,10 +3237,14 @@
                                     \once \override NoteHead.text = \markup {
                                     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                                     }
-                                    <b d' f' a'>16 [ (
+                                    <b' d'' f''>16 [ (
                                         ^ \markup {
                                             \center-align
-                                                \flat
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
                                             }
                                     \once \override Accidental.stencil = ##f
                                     \once \override AccidentalCautionary.stencil = ##f
@@ -3301,14 +3254,10 @@
                                     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                                     }
                                     \set stemLeftBeamCount = 2
-                                    <f' a' c''>16 ] )
+                                    <a c' e'>16 ] )
                                         ^ \markup {
                                             \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
+                                                \natural
                                             }
                                 }
                             }
@@ -3324,7 +3273,10 @@
                             }
                             {
                                 {
-                                    r4
+                                    r8
+                                }
+                                {
+                                    r8
                                 }
                             }
                             {
@@ -3415,14 +3367,10 @@
                             }
                             {
                                 {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 5/8
-                                    \stopStaff
-                                    \startStaff
+                                    r2
                                 }
                                 {
+                                    r8
                                     r16
                                 }
                             }
@@ -3463,9 +3411,35 @@
                                     \once \override NoteHead.text = \markup {
                                     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                                     }
-                                    \set stemLeftBeamCount = 1
-                                    \set stemRightBeamCount = 2
-                                    <a' c'' e''>16
+                                    \set stemLeftBeamCount = 2
+                                    <a' c'' e''>16 ] )
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    r16
+                                }
+                            }
+                            {
+                                \tweak #'text #tuplet-number::calc-fraction-text
+                                \times 3/4 {
+                                    r16
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <c' e' g'>16 [ (
                                         ^ \markup {
                                             \center-align
                                                 \concat
@@ -3481,22 +3455,17 @@
                                     \once \override NoteHead.text = \markup {
                                     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                                     }
-                                    \set stemLeftBeamCount = 1
-                                    \set stemRightBeamCount = 2
-                                    <c' e' g'>16 ] )
+                                    <f' a' c''>16 ] )
                                         ^ \markup {
                                             \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
+                                                \natural
                                             }
+                                    r16
                                 }
                             }
                             {
                                 {
-                                    r8.
+                                    r8
                                 }
                                 {
                                     \stopStaff
@@ -3542,15 +3511,7 @@
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 3/8
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 3/4
+                                    R1 * 1
                                     \stopStaff
                                     \startStaff
                                 }
@@ -3622,9 +3583,7 @@
                                 }
                             }
                             {
-                                \tweak #'text #tuplet-number::calc-fraction-text
-                                \times 3/4 {
-                                    r16
+                                {
                                     \once \override Accidental.stencil = ##f
                                     \once \override AccidentalCautionary.stencil = ##f
                                     \once \override Arpeggio.X-offset = #-2
@@ -3632,24 +3591,20 @@
                                     \once \override NoteHead.text = \markup {
                                     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                                     }
-                                    <f' a' c''>16 [ (
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <d' f' a' c''>16 ] )
+                                    <d' f' a' c''>8 ~ [ (
                                         ^ \markup {
                                             \center-align
                                                 \flat
                                             }
-                                    r16
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 2
+                                    <d' f' a' c''>16 ] )
                                 }
                             }
                             {
@@ -3684,12 +3639,11 @@
                                     r2.
                                 }
                                 {
-                                    r8
+                                    r8.
                                 }
                             }
                             {
-                                \tweak #'text #tuplet-number::calc-fraction-text
-                                \times 5/4 {
+                                {
                                     \once \override Accidental.stencil = ##f
                                     \once \override AccidentalCautionary.stencil = ##f
                                     \once \override Arpeggio.X-offset = #-2
@@ -3697,7 +3651,101 @@
                                     \once \override NoteHead.text = \markup {
                                     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                                     }
-                                    <c'' e'' g''>8 [ (
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 1
+                                    <b d' f'>16 [ (
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 2
+                                    <a c' e'>16
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 2
+                                    <c'' e'' g''>16 ] )
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    r4
+                                }
+                            }
+                            {
+                                {
+                                    <g b d' ef' g' d''>4 :32 ~
+                                }
+                                {
+                                    <g b d' ef' g' d''>4 :32 ~
+                                    \set stemLeftBeamCount = 2
+                                    <g b d' ef' g' d''>16 :128
+                                }
+                            }
+                            {
+                                {
+                                    r16
+                                }
+                            }
+                            {
+                                \tweak #'text #tuplet-number::calc-fraction-text
+                                \times 3/4 {
+                                    r16
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <e' g' b'>16 [ (
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
+                                    <b d' f'>16
                                         ^ \markup {
                                             \center-align
                                                 \natural
@@ -3709,28 +3757,107 @@
                                     \once \override NoteHead.text = \markup {
                                     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                                     }
-                                    \set stemLeftBeamCount = 1
-                                    <e' g' b' d''>8 ] )
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
+                                    <g b d' f'>16
                                         ^ \markup {
                                             \center-align
                                                 \flat
+                                            }
+                                }
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
+                                    <c'' e'' g''>16
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 2
+                                    <f' a' c''>16 ] )
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
                                             }
                                 }
                             }
                             {
                                 {
                                     r16
+                                }
+                            }
+                            {
+                                {
+                                    <g b d' g' af' d''>4 :32 ~
+                                }
+                                {
+                                    <g b d' g' af' d''>4. :32
+                                }
+                            }
+                            {
+                                {
+                                    r4
+                                }
+                            }
+                            {
+                                {
+                                    <g b d' ef' g' d''>2. :32
+                                }
+                            }
+                            {
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <a' c'' e''>8
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                }
+                            }
+                            {
+                                {
                                     r8
                                 }
                             }
                             {
                                 {
-                                    <g b d' ef' g' d''>8 :64 ~
-                                    <g b d' ef' g' d''>4 :32 ~
+                                    <g b d' g' af' d''>2 :32 ~
                                 }
                                 {
                                     \set stemLeftBeamCount = 1
-                                    <g b d' ef' g' d''>8. :64
+                                    <g b d' g' af' d''>8 :64
                                 }
                             }
                             {
@@ -3749,7 +3876,7 @@
                                     }
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 1
-                                    <b d' f' a'>16 [ (
+                                    <d' f' a' c''>16 [ (
                                         ^ \markup {
                                             \center-align
                                                 \flat
@@ -3763,53 +3890,7 @@
                                     }
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
-                                    <f' a' c''>16 ] )
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                }
-                            }
-                            {
-                                {
-                                    r8
-                                    r8
-                                }
-                            }
-                            {
-                                {
-                                    <g b d' g' af' d''>8 :64 ~
-                                    <g b d' g' af' d''>4 :32 ~
-                                }
-                                {
-                                    <g b d' g' af' d''>4 :32
-                                }
-                            }
-                            {
-                                {
-                                    r4
-                                }
-                            }
-                            {
-                                {
-                                    <g b d' ef' g' d''>2. :32
-                                }
-                            }
-                            {
-                                \times 4/5 {
-                                    r16
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <f' a' c''>16 [ (
+                                    <b' d'' f''>16
                                         ^ \markup {
                                             \center-align
                                                 \concat
@@ -3827,117 +3908,33 @@
                                     }
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2
-                                    <e' g' b'>16
+                                    <a' c'' e''>16
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 2
+                                    <c' e' g'>16 ] )
                                         ^ \markup {
                                             \center-align
                                                 \natural
                                             }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <a c' e' g'>16
-                                        ^ \markup {
-                                            \center-align
-                                                \flat
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    <a' c'' e''>16 ] )
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
                                 }
                             }
                             {
                                 {
-                                    <g b d' g' af' d''>8 :64 ~
-                                    <g b d' g' af' d''>2 :32
-                                }
-                            }
-                            {
-                                \tweak #'text #tuplet-number::calc-fraction-text
-                                \times 5/4 {
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <b' d'' f''>8
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                    r8
-                                }
-                                \tweak #'text #tuplet-number::calc-fraction-text
-                                \times 3/4 {
-                                    r16
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <a' c'' e''>16 [ (
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' e' g'>16
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    <e' g' b' d''>16 ] )
-                                        ^ \markup {
-                                            \center-align
-                                                \flat
-                                            }
+                                    r8.
                                 }
                             }
                             {
@@ -4161,12 +4158,9 @@
                                 }
                             }
                             {
-                                {
+                                \tweak #'text #tuplet-number::calc-fraction-text
+                                \times 3/4 {
                                     r16
-                                }
-                            }
-                            {
-                                {
                                     \once \override Accidental.stencil = ##f
                                     \once \override AccidentalCautionary.stencil = ##f
                                     \once \override Arpeggio.X-offset = #-2
@@ -4174,8 +4168,6 @@
                                     \once \override NoteHead.text = \markup {
                                     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                                     }
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 1
                                     <f' a' c''>16 [ (
                                         ^ \markup {
                                             \center-align
@@ -4188,13 +4180,12 @@
                                     \once \override NoteHead.text = \markup {
                                     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                                     }
-                                    \set stemLeftBeamCount = 1
-                                    \set stemRightBeamCount = 2
                                     <d' f' a' c''>16 ] )
                                         ^ \markup {
                                             \center-align
                                                 \flat
                                             }
+                                    r16
                                 }
                             }
                             {
@@ -4202,18 +4193,13 @@
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 3/8
+                                    R1 * 1
                                     \stopStaff
                                     \startStaff
                                 }
-                                {
-                                    r4.
-                                    r8.
-                                }
                             }
                             {
-                                \times 4/5 {
-                                    r16
+                                {
                                     \once \override Accidental.stencil = ##f
                                     \once \override AccidentalCautionary.stencil = ##f
                                     \once \override Arpeggio.X-offset = #-2
@@ -4247,6 +4233,7 @@
                                     \once \override NoteHead.text = \markup {
                                     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                                     }
+                                    \set stemLeftBeamCount = 2
                                     <e' g' b'>16 ] )
                                         ^ \markup {
                                             \center-align
@@ -4256,15 +4243,12 @@
                                                         \flat
                                                     }
                                             }
-                                    r16
                                 }
                             }
                             {
                                 {
                                     r16
-                                }
-                                {
-                                    r8.
+                                    r4
                                 }
                             }
                             {
@@ -4280,9 +4264,9 @@
                                     \override TextSpanner #'bound-details #'right-broken #'text = ##f
                                     \override TextSpanner #'dash-fraction = #1
                                     \override TextSpanner #'direction = #up
-                                    c'4 \glissando \startTextSpan
+                                    c'8. [ \glissando \startTextSpan
                                     \set stemLeftBeamCount = 2
-                                    c16 \stopTextSpan
+                                    c16 ] \stopTextSpan
                                     \revert TextSpanner #'bound-details
                                     \revert TextSpanner #'dash-fraction
                                     \revert TextSpanner #'direction
@@ -4290,73 +4274,10 @@
                             }
                             {
                                 {
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <b' d'' f''>16 [ (
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    <a c' e'>16 ] )
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                }
-                            }
-                            {
-                                {
-                                    r8
-                                    r4
+                                    r2.
                                 }
                                 {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 3/8
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 3/8
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 3/8
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 3/8
-                                    \stopStaff
-                                    \startStaff
+                                    r16
                                 }
                             }
                             {
@@ -4388,12 +4309,15 @@
                             }
                             {
                                 {
+                                    r8.
+                                }
+                                {
                                     r8
                                 }
                             }
                             {
                                 \tweak #'text #tuplet-number::calc-fraction-text
-                                \times 5/6 {
+                                \times 3/4 {
                                     r16
                                     \once \override Accidental.stencil = ##f
                                     \once \override AccidentalCautionary.stencil = ##f
@@ -4402,7 +4326,21 @@
                                     \once \override NoteHead.text = \markup {
                                     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                                     }
-                                    <e' g' b'>16 [ (
+                                    <b d' f' a'>16 [ (
+                                        ^ \markup {
+                                            \center-align
+                                                \flat
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
+                                    <f' a' c''>16
                                         ^ \markup {
                                             \center-align
                                                 \concat
@@ -4419,8 +4357,68 @@
                                     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                                     }
                                     \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <b d' f'>16
+                                    <e' g' b'>16 ] )
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    r16
+                                }
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 3/8
+                                    \stopStaff
+                                    \startStaff
+                                }
+                            }
+                            {
+                                {
+                                    \override TextSpanner #'bound-details #'left #'text = \markup {
+                                        \vcenter
+                                            \natural
+                                        }
+                                    \override TextSpanner #'bound-details #'right #'text = \markup {
+                                        \draw-line
+                                            #'(0 . -1)
+                                        }
+                                    \override TextSpanner #'bound-details #'right-broken #'text = ##f
+                                    \override TextSpanner #'dash-fraction = #1
+                                    \override TextSpanner #'direction = #up
+                                    c,8. [ \glissando \startTextSpan
+                                    \set stemLeftBeamCount = 2
+                                    f,16 ] \stopTextSpan
+                                    \revert TextSpanner #'bound-details
+                                    \revert TextSpanner #'dash-fraction
+                                    \revert TextSpanner #'direction
+                                }
+                            }
+                            {
+                                {
+                                    r8
+                                }
+                            }
+                            {
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 1
+                                    <b d' f'>16 [ (
                                         ^ \markup {
                                             \center-align
                                                 \natural
@@ -4432,7 +4430,7 @@
                                     \once \override NoteHead.text = \markup {
                                     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                                     }
-                                    \set stemLeftBeamCount = 2
+                                    \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
                                     <g' b' d'' f''>16
                                         ^ \markup {
@@ -4478,21 +4476,12 @@
                             }
                             {
                                 {
-                                    r16
                                     r4
                                 }
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
                                     R1 * 3/8
                                     \stopStaff
                                     \startStaff
@@ -4541,7 +4530,15 @@
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 3/4
+                                    R1 * 3/8
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 1
                                     \stopStaff
                                     \startStaff
                                 }
@@ -4562,9 +4559,9 @@
                                     \override TextSpanner #'bound-details #'right-broken #'text = ##f
                                     \override TextSpanner #'dash-fraction = #1
                                     \override TextSpanner #'direction = #up
-                                    c,4 \glissando \startTextSpan
+                                    c4 \glissando \startTextSpan
                                     \set stemLeftBeamCount = 2
-                                    f,16 \stopTextSpan
+                                    f16 \stopTextSpan
                                     \revert TextSpanner #'bound-details
                                     \revert TextSpanner #'dash-fraction
                                     \revert TextSpanner #'direction
@@ -4613,7 +4610,13 @@
                                 {
                                     \override TextSpanner #'bound-details #'left #'text = \markup {
                                         \vcenter
-                                            \natural
+                                            \concat
+                                                {
+                                                    \natural
+                                                    \hspace
+                                                        #0.1
+                                                    \flat
+                                                }
                                         }
                                     \override TextSpanner #'bound-details #'right #'text = \markup {
                                         \draw-line
@@ -4622,9 +4625,9 @@
                                     \override TextSpanner #'bound-details #'right-broken #'text = ##f
                                     \override TextSpanner #'dash-fraction = #1
                                     \override TextSpanner #'direction = #up
-                                    c8. [ \glissando \startTextSpan
+                                    c'8. [ \glissando \startTextSpan
                                     \set stemLeftBeamCount = 2
-                                    f16 ] \stopTextSpan
+                                    c16 ] \stopTextSpan
                                     \revert TextSpanner #'bound-details
                                     \revert TextSpanner #'dash-fraction
                                     \revert TextSpanner #'direction
@@ -4644,13 +4647,7 @@
                                 {
                                     \override TextSpanner #'bound-details #'left #'text = \markup {
                                         \vcenter
-                                            \concat
-                                                {
-                                                    \natural
-                                                    \hspace
-                                                        #0.1
-                                                    \flat
-                                                }
+                                            \natural
                                         }
                                     \override TextSpanner #'bound-details #'right #'text = \markup {
                                         \draw-line
@@ -4659,9 +4656,9 @@
                                     \override TextSpanner #'bound-details #'right-broken #'text = ##f
                                     \override TextSpanner #'dash-fraction = #1
                                     \override TextSpanner #'direction = #up
-                                    c'4 \glissando \startTextSpan
+                                    c,4 \glissando \startTextSpan
                                     \set stemLeftBeamCount = 2
-                                    c16 \stopTextSpan
+                                    c'16 \stopTextSpan
                                     \revert TextSpanner #'bound-details
                                     \revert TextSpanner #'dash-fraction
                                     \revert TextSpanner #'direction
@@ -4681,7 +4678,147 @@
                                     \startStaff
                                 }
                                 {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 1
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                {
                                     r4
+                                    r16
+                                }
+                            }
+                            {
+                                \times 4/5 {
+                                    r16
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <e' g' b' d''>16 [ (
+                                        ^ \markup {
+                                            \center-align
+                                                \flat
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
+                                    <e' g' b'>16
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <b' d'' f''>16 ] )
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                    r16
+                                }
+                            }
+                            {
+                                {
+                                    r16
+                                    r4
+                                }
+                                {
+                                    r8
+                                    r16
+                                }
+                            }
+                            {
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <a' c'' e''>16 [ (
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
+                                    <b d' f' a'>16
+                                        ^ \markup {
+                                            \center-align
+                                                \flat
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 2
+                                    <f' a' c''>16 ] )
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 5/8
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 3/8
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                {
+                                    r4
+                                    r16
                                 }
                             }
                             {
@@ -4695,14 +4832,10 @@
                                     }
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 1
-                                    <b d' f'>16 [ (
+                                    <e' g' b'>16 [ (
                                         ^ \markup {
                                             \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
+                                                \natural
                                             }
                                     \once \override Accidental.stencil = ##f
                                     \once \override AccidentalCautionary.stencil = ##f
@@ -4713,238 +4846,66 @@
                                     }
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
-                                    <a c' e'>16 ] )
+                                    <a c' e' g'>16 ] )
                                         ^ \markup {
                                             \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
+                                                \flat
                                             }
                                 }
                             }
                             {
                                 {
-                                    r8
+                                    r16
                                     r2
                                 }
                                 {
                                     r4
-                                    r8.
-                                }
-                            }
-                            {
-                                {
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <e' g' b'>8
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                }
-                            }
-                            {
-                                {
-                                    r8.
-                                    r4
-                                }
-                                {
-                                    r16
                                 }
                             }
                             {
                                 \tweak #'text #tuplet-number::calc-fraction-text
-                                \times 3/4 {
-                                    r16
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <b' d'' f''>16 [ (
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <a' c'' e''>16 ] )
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                    r16
-                                }
-                            }
-                            {
-                                {
-                                    r2.
-                                }
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
-                                }
-                            }
-                            {
-                                {
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <e' g' b'>16 [ (
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <b d' f'>16
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <g b d' f'>16
-                                        ^ \markup {
-                                            \center-align
-                                                \flat
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    <c'' e'' g''>16 ] )
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                }
-                            }
-                            {
-                                {
-                                    r2
-                                }
-                                {
-                                    r4
-                                    r16
-                                }
-                            }
-                            {
-                                {
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 1
-                                    <c' e' g'>16 [ (
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 1
-                                    \set stemRightBeamCount = 2
-                                    <f' a' c''>16
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 1
-                                    \set stemRightBeamCount = 2
-                                    <d' f' a' c''>16 ] )
-                                        ^ \markup {
-                                            \center-align
-                                                \flat
-                                            }
-                                }
-                            }
-                            {
-                                {
+                                \times 5/6 {
                                     r8
-                                    r4
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <c' e' g'>8 [ (
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 1
+                                    <f' a' c''>8 ] )
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    r8.
                                 }
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 1/2
+                                    R1 * 5/8
                                     \stopStaff
                                     \startStaff
                                 }
@@ -5059,31 +5020,13 @@
                                 R1 * 1/2
                             }
                             {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 7/8
-                            }
-                            {
                                 R1 * 1
                             }
                             {
-                                R1 * 3/8
+                                R1 * 1/2
                             }
                             {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 3/8
-                            }
-                            {
-                                R1 * 5/8
+                                R1 * 1
                             }
                             {
                                 R1 * 1/2
@@ -5095,6 +5038,18 @@
                                 R1 * 3/8
                             }
                             {
+                                R1 * 7/8
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
                                 R1 * 3/8
                             }
                             {
@@ -5107,7 +5062,7 @@
                                 R1 * 3/8
                             }
                             {
-                                R1 * 3/4
+                                R1 * 1
                             }
                             {
                                 R1 * 1
@@ -5128,22 +5083,25 @@
                                 R1 * 1
                             }
                             {
-                                R1 * 1
+                                R1 * 7/8
+                            }
+                            {
+                                R1 * 3/8
+                            }
+                            {
+                                R1 * 5/8
+                            }
+                            {
+                                R1 * 3/8
                             }
                             {
                                 R1 * 1
-                            }
-                            {
-                                R1 * 1/2
                             }
                             {
                                 R1 * 3/4
                             }
                             {
-                                R1 * 7/8
-                            }
-                            {
-                                R1 * 1/2
+                                R1 * 5/8
                             }
                             {
                                 R1 * 3/8
@@ -5274,22 +5232,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
                                 R1 * 1
                                 \stopStaff
                                 \startStaff
@@ -5298,7 +5240,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/8
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -5306,39 +5248,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 5/8
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -5370,6 +5280,38 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
                                 R1 * 3/8
                                 \stopStaff
                                 \startStaff
@@ -5402,7 +5344,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/4
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -5458,7 +5400,31 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -5467,14 +5433,6 @@
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
                                 R1 * 1
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -5490,15 +5448,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
+                                R1 * 5/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -5660,18 +5610,74 @@
                         }
                         {
                             {
-                                f'16 [
-                                d'16 ]
-                                r16
-                                b16
+                                f'4
+                            }
+                            {
+                                d'4 ~
+                                \set stemLeftBeamCount = 2
+                                d'16
                             }
                         }
                         {
                             {
+                                r8.
+                            }
+                            {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1/2
+                                R1 * 1
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                r16
+                            }
+                        }
+                        {
+                            \times 4/5 {
+                                b16
+                                r16
+                                g16 [
+                                f'16 ]
+                                r16
+                            }
+                        }
+                        {
+                            {
+                                g'8.
+                            }
+                        }
+                        {
+                            {
+                                d'4
+                            }
+                        }
+                        {
+                            {
+                                r2.
+                            }
+                        }
+                        {
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 5/6 {
+                                e'16
+                                r16
+                                c'16 [
+                                a16 ]
+                                r16
+                                f16
+                            }
+                        }
+                        {
+                            {
+                                r8.
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -5685,123 +5691,34 @@
                             }
                             {
                                 r4.
-                            }
-                        }
-                        {
-                            \tweak #'text #tuplet-number::calc-fraction-text
-                            \times 5/6 {
-                                g16
-                                r16
-                                f'16 [
-                                d'16 ]
-                                r16
-                                b16
-                            }
-                        }
-                        {
-                            {
-                                r8.
-                            }
-                            {
-                                r2
+                                r4
                                 r16
                             }
                         }
                         {
                             {
-                                g'16 [
-                                e'16 ]
-                                r16
-                                c'16
-                            }
-                        }
-                        {
-                            \tweak #'text #tuplet-number::calc-fraction-text
-                            \times 3/5 {
-                                r16
-                                g16 [
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 1
+                                d'16 [
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 2
                                 f'16 ]
-                                r16
-                                d'16
                             }
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
+                                r16
                             }
+                        }
+                        {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
+                                f4
                             }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
+                        }
+                        {
                             {
                                 r8
                             }
-                        }
-                        {
-                            {
-                                d'16 [
-                                f'16 ]
-                                r16
-                                g16
-                            }
-                        }
-                        {
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                        }
-                        {
-                            \tweak #'text #tuplet-number::calc-fraction-text
-                            \times 5/6 {
-                                e'16
-                                r16
-                                g'16 [
-                                f16 ]
-                                r16
-                                a16
-                            }
-                        }
-                        {
-                            \tweak #'text #tuplet-number::calc-fraction-text
-                            \times 3/4 {
-                                b16
-                                r16
-                                d'16 [
-                                \set stemLeftBeamCount = 2
-                                f'16 ]
-                            }
-                        }
-                        {
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5854,7 +5771,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/4
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -5892,10 +5809,34 @@
                             }
                         }
                         {
+                            {
+                                g4
+                            }
+                            {
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
+                                b8 [
+                            }
+                            {
+                                \set stemLeftBeamCount = 1
+                                d'8. ]
+                            }
+                        }
+                        {
+                            {
+                                r16
+                                r2.
+                            }
+                            {
+                                r4.
+                                r16
+                            }
+                        }
+                        {
                             \times 2/3 {
                                 r16
-                                g16 [
-                                b16 ]
+                                f'16 [
+                                g16 ]
                                 r16
                                 r16
                                 d'16
@@ -5903,7 +5844,47 @@
                         }
                         {
                             {
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 1
+                                e'16 [
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 2
+                                c'16 ]
+                            }
+                        }
+                        {
+                            {
+                                r16
+                            }
+                        }
+                        {
+                            {
+                                b4
+                            }
+                        }
+                        {
+                            {
                                 r8
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                        }
+                        {
+                            {
+                                a4 ~
+                                \set stemLeftBeamCount = 2
+                                a16
+                            }
+                        }
+                        {
+                            {
+                                r16
                             }
                             {
                                 \stopStaff
@@ -5914,105 +5895,33 @@
                                 \startStaff
                             }
                             {
-                                r8
-                            }
-                        }
-                        {
-                            {
-                                f'16 [
-                                g16 ]
-                                r8
-                                b16
-                            }
-                        }
-                        {
-                            {
-                                r16
                                 r2
-                            }
-                            {
-                                r8.
-                            }
-                        }
-                        {
-                            \times 2/3 {
                                 r16
-                                c'16 [
-                                a16 ]
-                                r16
-                                f16 [
-                                \set stemLeftBeamCount = 2
-                                g'16 ]
                             }
                         }
                         {
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 3/4 {
-                                b16
-                                r16
-                                r16
                                 g16
+                                r16
+                                r16
+                                f'16
+                            }
+                        }
+                        {
+                            \times 2/3 {
+                                r16
+                                f16 [
+                                g'16 ]
+                                r16
+                                r16
+                                e'16
                             }
                         }
                         {
                             {
                                 r8
                                 r4
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/4
-                                \stopStaff
-                                \startStaff
-                            }
-                        }
-                        {
-                            \times 2/3 {
-                                r8
-                                f'16 [
-                                d'16 ]
-                                r8
-                            }
-                        }
-                        {
-                            {
-                                r8
-                                r2
-                            }
-                        }
-                        {
-                            {
-                                e'16 [
-                                c'16 ]
-                                r16
-                                a16 [
-                                \set stemLeftBeamCount = 2
-                                f16 ]
-                            }
-                        }
-                        {
-                            {
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 1
-                                b16 [
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 2
-                                g16 ]
-                            }
-                        }
-                        {
-                            {
-                                r16
                             }
                             {
                                 \stopStaff
@@ -6190,22 +6099,6 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
                             R1 * 1
                             \stopStaff
                             \startStaff
@@ -6214,7 +6107,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/8
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -6222,39 +6115,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -6286,6 +6147,38 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
                             R1 * 3/8
                             \stopStaff
                             \startStaff
@@ -6318,7 +6211,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/4
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -6374,7 +6267,31 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
                             \stopStaff
                             \startStaff
                         }
@@ -6383,14 +6300,6 @@
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 1
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -6406,15 +6315,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
+                            R1 * 5/8
                             \stopStaff
                             \startStaff
                         }
@@ -6590,22 +6491,6 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
                             R1 * 1
                             \stopStaff
                             \startStaff
@@ -6614,7 +6499,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/8
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -6622,39 +6507,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -6686,6 +6539,38 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
                             R1 * 3/8
                             \stopStaff
                             \startStaff
@@ -6718,7 +6603,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/4
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -6774,7 +6659,31 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
                             \stopStaff
                             \startStaff
                         }
@@ -6783,14 +6692,6 @@
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 1
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -6806,15 +6707,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
+                            R1 * 5/8
                             \stopStaff
                             \startStaff
                         }
@@ -6990,22 +6883,6 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
                             R1 * 1
                             \stopStaff
                             \startStaff
@@ -7014,7 +6891,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/8
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -7022,39 +6899,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -7086,6 +6931,38 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
                             R1 * 3/8
                             \stopStaff
                             \startStaff
@@ -7118,7 +6995,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/4
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -7174,7 +7051,31 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
                             \stopStaff
                             \startStaff
                         }
@@ -7183,14 +7084,6 @@
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 1
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -7206,15 +7099,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
+                            R1 * 5/8
                             \stopStaff
                             \startStaff
                         }
@@ -7391,22 +7276,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
                                 R1 * 1
                                 \stopStaff
                                 \startStaff
@@ -7415,7 +7284,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/8
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -7423,39 +7292,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 5/8
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -7487,6 +7324,38 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
                                 R1 * 3/8
                                 \stopStaff
                                 \startStaff
@@ -7519,7 +7388,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/4
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -7575,7 +7444,31 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -7584,14 +7477,6 @@
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
                                 R1 * 1
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -7607,15 +7492,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
+                                R1 * 5/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -7790,22 +7667,6 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
                                 R1 * 1
                                 \stopStaff
                                 \startStaff
@@ -7814,7 +7675,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/8
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -7822,39 +7683,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 5/8
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -7886,6 +7715,38 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
                                 R1 * 3/8
                                 \stopStaff
                                 \startStaff
@@ -7918,7 +7779,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/4
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -7974,7 +7835,31 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/8
                                 \stopStaff
                                 \startStaff
                             }
@@ -7983,14 +7868,6 @@
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
                                 R1 * 1
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -8006,15 +7883,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
+                                R1 * 5/8
                                 \stopStaff
                                 \startStaff
                             }

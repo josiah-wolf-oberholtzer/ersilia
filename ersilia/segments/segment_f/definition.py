@@ -32,8 +32,8 @@ segment_maker.add_setting(
 
 segment_maker.add_setting(
     timespan_maker=ersilia.tutti_timespan_maker,
-    piano_pitch_pipe=ersilia.pitch_pipe_music_specifier,
-    guitar_pitch_pipe=ersilia.pitch_pipe_music_specifier,
-    percussion_pitch_pipe=ersilia.pitch_pipe_music_specifier,
-    contrabass_pitch_pipe=ersilia.pitch_pipe_music_specifier,
+    piano_pp=ersilia.pitch_pipe_music_specifier,
+    guitar_pp=ersilia.pitch_pipe_music_specifier,
+    percussion_pp=ersilia.pitch_pipe_music_specifier,
+    bass_pp=ersilia.pitch_pipe_music_specifier,
     )
