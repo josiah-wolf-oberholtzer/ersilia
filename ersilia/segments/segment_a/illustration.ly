@@ -3,7 +3,7 @@
 
 #(ly:set-option 'relative-includes #t)
 
-\include "/Users/josiah/Documents/Scores/ersilia/ersilia/stylesheets/stylesheet.ily"
+\include "../../stylesheets/stylesheet.ily"
 
 \score {
     \context Score = "Ersilia Score" <<
@@ -12,20 +12,6 @@
             {
                 \time 4/4
                 \tempo 4=96
-                \mark \markup {
-                    \concat
-                        {
-                            \override
-                                #'(box-padding . 0.5)
-                                \box
-                                    \caps
-                                        A
-                            " "
-                            \fontsize
-                                #-3
-                                " "
-                        }
-                    }
                 s1 * 1
             }
             {

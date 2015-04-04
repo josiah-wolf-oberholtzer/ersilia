@@ -7,20 +7,7 @@ from abjad import new
 
 segment_maker = ersilia.ErsiliaSegmentMaker(
     desired_duration_in_seconds=75,
-    discard_final_silence=False,
-    name=None,
-    permitted_time_signatures=(
-        (3, 8),
-        (4, 8),
-        (5, 8),
-        (6, 8),
-        (7, 8),
-        (2, 4),
-        (3, 4),
-        (4, 4),
-        ),
-    rehearsal_mark='A',
-    repeat=False,
+    permitted_time_signatures=ersilia.permitted_time_signatures,
     tempo=abjad.Tempo((1, 4), 96),
     )
 

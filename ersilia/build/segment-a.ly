@@ -4,20 +4,6 @@
             {
                 \time 4/4
                 \tempo 4=96
-                \mark \markup {
-                    \concat
-                        {
-                            \override
-                                #'(box-padding . 0.5)
-                                \box
-                                    \caps
-                                        A
-                            " "
-                            \fontsize
-                                #-3
-                                " "
-                        }
-                    }
                 s1 * 1
             }
             {
@@ -5600,12 +5586,12 @@
                         }
                         {
                             {
-                                f'4
+                                f'4 :32 -\accent
                             }
                             {
-                                d'4 ~
+                                d'4 :32 -\accent ~
                                 \set stemLeftBeamCount = 2
-                                d'16
+                                d'16 :128
                             }
                         }
                         {
@@ -5626,21 +5612,21 @@
                         }
                         {
                             \times 4/5 {
-                                b16
+                                b16 -\staccato
                                 r16
-                                g16 [
-                                f'16 ]
+                                g16 -\staccato [
+                                f'16 -\staccato ]
                                 r16
                             }
                         }
                         {
                             {
-                                g'8.
+                                g'8. :64 -\accent
                             }
                         }
                         {
                             {
-                                d'4
+                                d'4 :32 -\accent
                             }
                         }
                         {
@@ -5651,12 +5637,12 @@
                         {
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 5/6 {
-                                e'16
+                                e'16 -\staccato
                                 r16
-                                c'16 [
-                                a16 ]
+                                c'16 -\staccato [
+                                a16 -\staccato ]
                                 r16
-                                f16
+                                f16 -\staccato
                             }
                         }
                         {
@@ -5689,10 +5675,10 @@
                             {
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 1
-                                d'16 [
+                                d'16 -\staccato [
                                 \set stemLeftBeamCount = 1
                                 \set stemRightBeamCount = 2
-                                f'16 ]
+                                f'16 -\staccato ]
                             }
                         }
                         {
@@ -5702,7 +5688,7 @@
                         }
                         {
                             {
-                                f4
+                                f4 :32 -\accent
                             }
                         }
                         {
@@ -5800,16 +5786,16 @@
                         }
                         {
                             {
-                                g4
+                                g4 :32 -\accent
                             }
                             {
                                 \set stemLeftBeamCount = 1
                                 \set stemRightBeamCount = 1
-                                b8 [
+                                b8 :64 -\accent [
                             }
                             {
                                 \set stemLeftBeamCount = 1
-                                d'8. ]
+                                d'8. :64 -\accent ]
                             }
                         }
                         {
@@ -5825,21 +5811,21 @@
                         {
                             \times 2/3 {
                                 r16
-                                f'16 [
-                                g16 ]
+                                f'16 -\staccato [
+                                g16 -\staccato ]
                                 r16
                                 r16
-                                d'16
+                                d'16 -\staccato
                             }
                         }
                         {
                             {
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 1
-                                e'16 [
+                                e'16 -\staccato [
                                 \set stemLeftBeamCount = 1
                                 \set stemRightBeamCount = 2
-                                c'16 ]
+                                c'16 -\staccato ]
                             }
                         }
                         {
@@ -5849,7 +5835,7 @@
                         }
                         {
                             {
-                                b4
+                                b4 :32 -\accent
                             }
                         }
                         {
@@ -5867,9 +5853,9 @@
                         }
                         {
                             {
-                                a4 ~
+                                a4 :32 -\accent ~
                                 \set stemLeftBeamCount = 2
-                                a16
+                                a16 :128
                             }
                         }
                         {
@@ -5892,20 +5878,20 @@
                         {
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 3/4 {
-                                g16
+                                g16 -\staccato
                                 r16
                                 r16
-                                f'16
+                                f'16 -\staccato
                             }
                         }
                         {
                             \times 2/3 {
                                 r16
-                                f16 [
-                                g'16 ]
+                                f16 -\staccato [
+                                g'16 -\staccato ]
                                 r16
                                 r16
-                                e'16
+                                e'16 -\staccato
                             }
                         }
                         {

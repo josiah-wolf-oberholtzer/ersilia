@@ -62,8 +62,8 @@ afterGraceFraction = #(cons 1023 1024)
 \layout {
     \accidentalStyle forget
     indent = 5
-    ragged-bottom = ##t
-    ragged-last = ##t
+    ragged-bottom = ##f
+    ragged-last = ##f
     ragged-right = ##t
 
     %%% DEFAULTS %%%
@@ -213,10 +213,10 @@ afterGraceFraction = #(cons 1023 1024)
         \accepts OboeStaff
         \accepts SaxophoneStaff
         \override StaffGrouper.staffgroup-staff-spacing = #'(
-            (basic-distance . 32)
+            (basic-distance . 0)
             (minimum-distance . 32)
             (padding . 5)
-            (stretchability . 0)
+            (stretchability . 20)
             )
     }
 
@@ -302,10 +302,10 @@ afterGraceFraction = #(cons 1023 1024)
         \accepts PercussionStaff
         \accepts PitchPipes
         \override StaffGrouper.staffgroup-staff-spacing = #'(
-            (basic-distance . 32)
+            (basic-distance . 0)
             (minimum-distance . 32)
             (padding . 5)
-            (stretchability . 0)
+            (stretchability . 20)
             )
         systemStartDelimiter = #'SystemStartSquare
     }
@@ -444,16 +444,16 @@ afterGraceFraction = #(cons 1023 1024)
         \override TupletNumber.font-size = 1
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
         \override StaffGrouper.staffgroup-staff-spacing = #'(
-            (basic-distance . 20)
-            (minimum-distance . 20)
+            (basic-distance . 10)
+            (minimum-distance . 10)
             (padding . 5)
-            (stretchability . 0)
+            (stretchability . 20)
             )
         \override StaffGrouper.staff-staff-spacing = #'(
-            (basic-distance . 20)
-            (minimum-distance . 20)
+            (basic-distance . 10)
+            (minimum-distance . 10)
             (padding . 5)
-            (stretchability . 0)
+            (stretchability . 20)
             )
 
         autoBeaming = ##f
