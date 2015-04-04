@@ -16,7 +16,6 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
             \tag #'time
             \context TimeSignatureContext = "TimeSignatureContext" {
             }
-            \tag #'wind-section
             \context WindSectionStaffGroup = "Wind Section Staff Group" <<
                 \tag #'flute
                 \context FluteStaff = "Flute Staff" {
@@ -43,7 +42,6 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                     }
                 }
             >>
-            \tag #'percussion-section
             \context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
                 \tag #'guitar
                 \context GuitarStaffGroup = "Guitar Staff Group" <<
@@ -94,7 +92,6 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                     }
                 >>
             >>
-            \tag #'string-section
             \context StringSectionStaffGroup = "String Section Staff Group" <<
                 \tag #'violin
                 \context ViolinStaff = "Violin Staff" {
@@ -191,7 +188,6 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
             context_name='WindSectionStaffGroup',
             name='Wind Section Staff Group',
             )
-        self._attach_tag('wind-section', wind_section_staff_group)
 
         guitar_staff = self._make_staff('Guitar', 'treble')
         guitar_aux_staff = self._make_staff(
@@ -257,7 +253,6 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
             context_name='PercussionSectionStaffGroup',
             name='Percussion Section Staff Group',
             )
-        self._attach_tag('percussion-section', percussion_section_staff_group)
 
         violin_staff = self._make_staff('Violin', 'treble', tag='violin')
         viola_staff = self._make_staff('Viola', 'alto', tag='viola')
@@ -289,7 +284,6 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
             context_name='StringSectionStaffGroup',
             name='String Section Staff Group',
             )
-        self._attach_tag('string-section', string_section_staff_group)
 
         score = scoretools.Score(
             [
