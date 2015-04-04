@@ -73,9 +73,8 @@ percussion_tom_fanfare_music_specifier = consort.tools.MusicSpecifier(
         output_masks=rhythmmakertools.BooleanPatternInventory(
             (
                 rhythmmakertools.SustainMask(
-                    indices=(1, 4),
-                    period=7,
-                    start=1,
+                    indices=(0, 1),
+                    period=2,
                     ),
                 )
             ),

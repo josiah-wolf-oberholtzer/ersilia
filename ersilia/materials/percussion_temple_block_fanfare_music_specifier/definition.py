@@ -39,9 +39,8 @@ percussion_temple_block_fanfare_music_specifier = consort.MusicSpecifier(
             ),
         output_masks=[
             rhythmmakertools.SustainMask(
-                indices=(1, 4),
-                period=7,
-                start=1,
+                indices=(0, 1),
+                period=2,
                 ),
             ],
         )
