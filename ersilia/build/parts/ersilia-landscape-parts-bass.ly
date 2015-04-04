@@ -5,6 +5,7 @@
 
 #(ly:set-option 'relative-includes #t)
 \include "../stylesheets/stylesheet.ily"
+\include "../stylesheets/parts-landscape.ily"
 
 \header {
     composer = \markup {
@@ -42,6 +43,7 @@
 \score {
     {
    \include "segment-1.ly"
+\include "../stylesheets/parts-landscape.ily"
    \include "interlude-1.ly"
    \include "segment-2.ly"
    \include "segment-3.ly"
