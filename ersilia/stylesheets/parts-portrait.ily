@@ -42,6 +42,7 @@
 }
 
 \paper {
+    max-systems-per-page = ##f
     system-system-spacing = #'(
         (basic-distance . 8)
         (minimum-distance . 12)
