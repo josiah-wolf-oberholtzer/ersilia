@@ -12,7 +12,7 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
         >>> template = ersilia.makers.ErsiliaScoreTemplate()
         >>> score = template()
         >>> print(format(score))
-        \new Score <<
+        \context Score = "Ersilia Score" <<
             \tag #'time
             \context TimeSignatureContext = "TimeSignatureContext" {
             }
@@ -297,6 +297,7 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                 percussion_section_staff_group,
                 string_section_staff_group,
                 ],
+            name='Ersilia Score',
             )
 
         return score
