@@ -8,7 +8,7 @@
 \include "../../stylesheets/parts-portrait.ily"
 
 \score {
-    \keepWithTag #'(time guitar piano pecussion)
+    \keepWithTag #'(time guitar piano percussion)
     {
         \include "../segment-1.ly"
         \include "../interlude-1.ly"

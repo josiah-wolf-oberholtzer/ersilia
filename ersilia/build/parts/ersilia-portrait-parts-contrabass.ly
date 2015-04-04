@@ -8,7 +8,7 @@
 \include "../../stylesheets/parts-portrait.ily"
 
 \score {
-    \keepWithTag #'(time bass)
+    \keepWithTag #'(time contrabass)
     {
         \include "../segment-1.ly"
         \include "../interlude-1.ly"
