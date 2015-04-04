@@ -2,6 +2,7 @@
 
 import consort
 from abjad.tools import markuptools
+from abjad.tools import pitchtools
 from abjad.tools import spannertools
 
 
@@ -28,4 +29,25 @@ percussion_staff = consort.AttachmentExpression(
             consort.ClefSpanner('percussion'),
             ],
         ],
+    )
+
+pitch_specifier_one = consort.PitchSpecifier(
+    pitch_segments=[
+        pitchtools.PitchClassSegment(),
+        pitchtools.PitchClassSegment(),
+        pitchtools.PitchClassSegment(),
+        pitchtools.PitchClassSegment(),
+        pitchtools.PitchClassSegment(),
+        ],
+    ratio=[1, 2, 1, 2, 1],
+    )
+
+pitch_specifier_two = consort.PitchSpecifier(
+    pitch_segments=[
+        pitchtools.PitchClassSegment(),
+        pitchtools.PitchClassSegment(),
+        pitchtools.PitchClassSegment(),
+        pitchtools.PitchClassSegment(),
+        ],
+    ratio=[1, 2, 1, 1],
     )
