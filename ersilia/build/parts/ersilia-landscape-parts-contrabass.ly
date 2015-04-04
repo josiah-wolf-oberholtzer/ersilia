@@ -5,10 +5,10 @@
 
 #(ly:set-option 'relative-includes #t)
 \include "../../stylesheets/stylesheet.ily"
-\include "../../stylesheets/parts-portrait.ily"
+\include "../../stylesheets/parts-landscape.ily"
 
 \score {
-    \keepWithTag #'(time saxophone)
+    \keepWithTag #'(time contrabass)
     {
         \include "../segment-1.ly"
         \include "../interlude-1.ly"

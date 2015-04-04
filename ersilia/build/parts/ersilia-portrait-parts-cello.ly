@@ -7,40 +7,8 @@
 \include "../../stylesheets/stylesheet.ily"
 \include "../../stylesheets/parts-portrait.ily"
 
-\header {
-    composer = \markup {
-        \column {
-            \override #'(font-name . "Didot")
-                \fontsize #3 "Josiah Wolf Oberholtzer (1984)"
-            " "
-        }
-    }
-    tagline = \markup { "" }
-    title = \markup {
-        \column {
-            \center-align {
-                \override #'(font-name . "Didot Italic")
-                    \fontsize #4 {
-                        \line { Invisible Cities (iii): }
-                    }
-                \vspace #0.5
-                \override #'(font-name . "Didot")
-                    \fontsize #18 {
-                        \line { ERSILIA }
-                    }
-                \vspace #1
-                \override #'(font-name . "Didot Italic")
-                    \fontsize #4 {
-                        \line { for Ensemble Dal Niente }
-                        \null
-                        \null
-                    }
-            }
-        }
-    }
-}
-
 \score {
+    \keepWithTag #'(time cello)
     {
         \include "../segment-1.ly"
         \include "../interlude-1.ly"
