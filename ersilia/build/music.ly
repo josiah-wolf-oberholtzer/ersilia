@@ -41,11 +41,14 @@
 
 \score {
     {
-   \include "segment-a.ly"
-   \include "segment-b.ly"
-   \include "segment-c.ly"
-   \include "segment-d.ly"
-   \include "segment-e.ly"
-   \include "segment-f.ly"
+   \include "segment-1.ly"
+   \include "interlude-1.ly"
+   \include "segment-2.ly"
+   \include "segment-3.ly"
+   \include "interlude-2.ly"
+   \include "segment-4.ly"
+   \include "segment-5.ly"
+   \include "interlude-3.ly"
+   \include "segment-6.ly"
     }
 }

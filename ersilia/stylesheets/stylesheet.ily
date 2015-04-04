@@ -420,6 +420,8 @@ afterGraceFraction = #(cons 1023 1024)
         \override GraceSpacing.common-shortest-duration = #(ly:make-moment 1 8)
         \override NoteCollision.merge-differently-dotted = ##t
         \override NoteColumn.ignore-collision = ##t
+        \shape #'((-1.5 . 0) (-1 . 0) (-0.5 . 0) (0 . 0)) RepeatTie                 
+        \override RepeatTie.X-extent = ##f
         \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1 64)
         \override SpacingSpanner.strict-grace-spacing = ##f
         \override SpacingSpanner.strict-note-spacing = ##f

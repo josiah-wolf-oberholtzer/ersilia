@@ -1,5 +1,6 @@
 # -*- encoding: utf-8 -*-
 import consort
+from abjad.tools import rhythmmakertools
 from abjad.tools import selectortools
 from abjad.tools import spannertools
 
@@ -28,6 +29,12 @@ piano_tremolo_music_specifier = consort.MusicSpecifier(
                 "d'",
                 ),
             ratio=(1, 1, 1),
+            ),
+        ),
+    rhythm_maker=rhythmmakertools.NoteRhythmMaker(
+        tie_specifier=rhythmmakertools.TieSpecifier(
+            tie_across_divisions=True,
+            use_messiaen_style_ties=True,
             ),
         ),
     )

@@ -1,0 +1,12 @@
+# -*- encoding: utf-8 -*-
+import abjad
+import ersilia
+
+
+segment_maker = ersilia.ErsiliaSegmentMaker(
+    desired_duration_in_seconds=5,
+    name='Repeat x5',
+    permitted_time_signatures=ersilia.permitted_time_signatures,
+    repeat=True,
+    tempo=abjad.Tempo((1, 4), 64),
+    )
