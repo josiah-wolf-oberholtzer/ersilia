@@ -1,12 +1,98 @@
 # -*- encoding: utf-8 -*-
+from abjad.tools import datastructuretools
 from abjad.tools import durationtools
+from abjad.tools import indicatortools
 from abjad.tools import mathtools
 from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
+from abjad.tools import selectortools
+from abjad.tools import spannertools
 import consort
 
 
 percussion_tom_fanfare_music_specifier = consort.tools.MusicSpecifier(
+    attachment_handler=consort.tools.AttachmentHandler(
+        accent=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    indicatortools.Articulation('accent'),
+                    ]
+                ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.LogicalTieSelectorCallback(
+                        flatten=True,
+                        pitched=True,
+                        trivial=True,
+                        only_with_head=False,
+                        only_with_tail=False,
+                        ),
+                    selectortools.DurationSelectorCallback(
+                        duration=selectortools.DurationInequality(
+                            operator_string='>',
+                            duration=durationtools.Duration(1, 16),
+                            ),
+                        ),
+                    selectortools.ItemSelectorCallback(
+                        item=0,
+                        apply_to_each=True,
+                        ),
+                    ),
+                ),
+            ),
+        staccato=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    indicatortools.Articulation('staccato'),
+                    ]
+                ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.LogicalTieSelectorCallback(
+                        flatten=True,
+                        pitched=True,
+                        trivial=True,
+                        only_with_head=False,
+                        only_with_tail=False,
+                        ),
+                    selectortools.DurationSelectorCallback(
+                        duration=selectortools.DurationInequality(
+                            operator_string='<=',
+                            duration=durationtools.Duration(1, 16),
+                            ),
+                        ),
+                    selectortools.ItemSelectorCallback(
+                        item=0,
+                        apply_to_each=True,
+                        ),
+                    ),
+                ),
+            ),
+        tremolo=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    spannertools.StemTremoloSpanner(),
+                    ]
+                ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.LogicalTieSelectorCallback(
+                        flatten=True,
+                        pitched=True,
+                        trivial=True,
+                        only_with_head=False,
+                        only_with_tail=False,
+                        ),
+                    selectortools.DurationSelectorCallback(
+                        duration=selectortools.DurationInequality(
+                            operator_string='>',
+                            duration=durationtools.Duration(1, 16),
+                            ),
+                        ),
+                    ),
+                ),
+            ),
+        ),
     pitch_handler=consort.tools.AbsolutePitchHandler(
         pitch_specifier=consort.tools.PitchSpecifier(
             pitch_segments=(
