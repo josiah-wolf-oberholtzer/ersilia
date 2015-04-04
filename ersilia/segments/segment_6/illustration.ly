@@ -2196,14 +2196,14 @@
                         \context Voice = "Piano Upper Voice" {
                             {
                                 {
-                                    <g b d' g' af' d''>2 :32
+                                    <g b d' g' af' d''>2 :32 \p \>
                                 }
                                 {
-                                    <g b d' g' af' d''>4. :32 \repeatTie
+                                    <g b d' g' af' d''>4. :32 \ppp \repeatTie \<
                                     <g b d' g' af' d''>4 :32 \repeatTie
                                 }
                                 {
-                                    <g b d' g' af' d''>2 :32 \repeatTie
+                                    <g b d' g' af' d''>2 :32 \p \repeatTie
                                 }
                             }
                             {
@@ -2213,17 +2213,17 @@
                             }
                             {
                                 {
-                                    <g b d' ef' g' d''>8 :64
+                                    <g b d' ef' g' d''>8 :64 \p
                                     <g b d' ef' g' d''>4 :32 \repeatTie
                                 }
                                 {
-                                    <g b d' ef' g' d''>2.. :32 \repeatTie
+                                    <g b d' ef' g' d''>2.. :32 \repeatTie \>
                                 }
                                 {
-                                    <g b d' ef' g' d''>2. :32 \repeatTie
+                                    <g b d' ef' g' d''>2. :32 \ppp \repeatTie \<
                                 }
                                 {
-                                    <g b d' ef' g' d''>2 :32 \repeatTie
+                                    <g b d' ef' g' d''>2 :32 \p \repeatTie
                                 }
                             }
                             {
@@ -2233,14 +2233,14 @@
                             }
                             {
                                 {
-                                    <g b d' g' af' d''>8 :64
+                                    <g b d' g' af' d''>8 :64 \mf \>
                                     <g b d' g' af' d''>4 :32 \repeatTie
                                 }
                                 {
-                                    <g b d' g' af' d''>4 :32 \repeatTie
+                                    <g b d' g' af' d''>4 :32 \p \repeatTie
                                 }
                                 {
-                                    <g b d' g' af' d''>2 :32 \repeatTie
+                                    <g b d' g' af' d''>2 :32 \repeatTie \!
                                 }
                             }
                             {
@@ -2250,15 +2250,15 @@
                             }
                             {
                                 {
-                                    <g b d' ef' g' d''>8 :64
+                                    <g b d' ef' g' d''>8 :64 \ppp \<
                                     <g b d' ef' g' d''>4 :32 \repeatTie
                                 }
                                 {
-                                    <g b d' ef' g' d''>2. :32 \repeatTie
+                                    <g b d' ef' g' d''>2. :32 \mf \repeatTie \>
                                 }
                                 {
                                     \set stemLeftBeamCount = 1
-                                    <g b d' ef' g' d''>8 :64 \repeatTie
+                                    <g b d' ef' g' d''>8 :64 \p \repeatTie
                                 }
                             }
                             {
@@ -2349,21 +2349,21 @@
                             }
                             {
                                 {
-                                    <bf d' f' bf' b' f''>2 :32
+                                    <bf d' f' bf' b' f''>2 :32 \p \>
                                 }
                                 {
-                                    <bf d' f' bf' b' f''>2 :32 \repeatTie
+                                    <bf d' f' bf' b' f''>2 :32 \ppp \repeatTie \<
                                 }
                                 {
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 1
-                                    <bf d' f' bf' b' f''>8 :64 \repeatTie
+                                    <bf d' f' bf' b' f''>8 :64 \mf \repeatTie \>
                                 }
                                 {
-                                    <bf d' f' bf' b' f''>4 :32 \repeatTie
+                                    <bf d' f' bf' b' f''>4 :32 \p \repeatTie
                                 }
                                 {
-                                    <bf d' f' bf' b' f''>4 :32 \repeatTie
+                                    <bf d' f' bf' b' f''>4 :32 \repeatTie \!
                                 }
                             }
                             {
@@ -2373,19 +2373,19 @@
                             }
                             {
                                 {
-                                    <g b d' ef' g' d''>4. :32
+                                    <g b d' ef' g' d''>4. :32 \ppp \<
                                 }
                                 {
-                                    <g b d' ef' g' d''>2.. :32 \repeatTie
+                                    <g b d' ef' g' d''>2.. :32 \p \repeatTie \>
                                 }
                                 {
-                                    <g b d' ef' g' d''>2 :32 \repeatTie
+                                    <g b d' ef' g' d''>2 :32 \ppp \repeatTie \<
                                 }
                                 {
-                                    <g b d' ef' g' d''>4 :32 \repeatTie
+                                    <g b d' ef' g' d''>4 :32 \mf \repeatTie \>
                                 }
                                 {
-                                    <g b d' ef' g' d''>2 :32 \repeatTie
+                                    <g b d' ef' g' d''>2 :32 \p \repeatTie
                                 }
                             }
                             {
@@ -2395,11 +2395,11 @@
                             }
                             {
                                 {
-                                    <g b d' g' af' d''>4 :32
+                                    <g b d' g' af' d''>4 :32 \p \>
                                     <g b d' g' af' d''>4. :32 \repeatTie
                                 }
                                 {
-                                    <g b d' g' af' d''>2 :32 \repeatTie
+                                    <g b d' g' af' d''>2 :32 \ppp \repeatTie
                                 }
                             }
                             {
@@ -2409,7 +2409,7 @@
                             }
                             {
                                 {
-                                    <g b d' ef' g' d''>8 :64
+                                    <g b d' ef' g' d''>8 :64 \p
                                     <g b d' ef' g' d''>4 :32 \repeatTie
                                 }
                                 {
