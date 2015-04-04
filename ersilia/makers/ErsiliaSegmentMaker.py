@@ -8,37 +8,35 @@ class ErsiliaSegmentMaker(consort.SegmentMaker):
 
     ### CLASS VARIABLES ###
 
-    __slots__ = (
-        '_repeat',
-        )
+    __slots__ = ()
 
     ### INITIALIZER ###
 
     def __init__(
         self,
-        discard_final_silence=None,
         desired_duration_in_seconds=None,
+        discard_final_silence=None,
         name=None,
+        permitted_time_signatures=None,
+        repeat=None,
         score_template=None,
         settings=None,
         tempo=None,
-        permitted_time_signatures=None,
-        repeat=None,
         ):
         import ersilia
         score_template = score_template or ersilia.ErsiliaScoreTemplate()
         consort.SegmentMaker.__init__(
             self,
-            discard_final_silence=discard_final_silence,
             desired_duration_in_seconds=desired_duration_in_seconds,
+            discard_final_silence=discard_final_silence,
             name=name,
+            permitted_time_signatures=permitted_time_signatures,
+            repeat=repeat,
             score_template=score_template,
             settings=settings,
             tempo=tempo,
             timespan_quantization=durationtools.Duration(1, 8),
-            permitted_time_signatures=permitted_time_signatures,
             )
-        self.repeat = repeat
 
     ### PUBLIC PROPERTIES ###
 
@@ -57,16 +55,6 @@ class ErsiliaSegmentMaker(consort.SegmentMaker):
         markup = markuptools.Markup.right_column(contents)
         markup = markup.italic()
         return markup
-
-    @property
-    def repeat(self):
-        return self._repeat
-
-    @repeat.setter
-    def repeat(self, repeat):
-        if repeat is not None:
-            repeat = bool(repeat)
-        self._repeat = repeat
 
     @property
     def score_package_name(self):
