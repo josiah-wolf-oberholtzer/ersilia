@@ -1,13 +1,12 @@
 # -*- encoding: utf-8 -*-
 import consort
 from abjad.tools import rhythmmakertools
-from abjad.tools import spannertools
+from ersilia.materials import abbreviations
 
 
 pitch_pipe_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
-        clef_spanner=consort.ClefSpanner('percussion'),
-        staff_lines_spanner=spannertools.StaffLinesSpanner(1),
+        percussion_staff=abbreviations.percussion_staff
         ),
     labels=('pitch pipes',),
     rhythm_maker=rhythmmakertools.EvenDivisionRhythmMaker(

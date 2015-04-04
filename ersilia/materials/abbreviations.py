@@ -1,5 +1,6 @@
 # -*- encoding: utf-8 -*-
 
+import consort
 from abjad.tools import markuptools
 from abjad.tools import spannertools
 
@@ -18,4 +19,13 @@ chromatic_keys_spanner = spannertools.make_solid_text_spanner_with_nib(
 
 white_keys_spanner = spannertools.make_solid_text_spanner_with_nib(
     markuptools.Markup.natural().vcenter(),
+    )
+
+percussion_staff = consort.AttachmentExpression(
+    attachments=[
+        [
+            spannertools.StaffLinesSpanner([0]),
+            consort.ClefSpanner('percussion'),
+            ],
+        ],
     )
