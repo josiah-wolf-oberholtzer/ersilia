@@ -155,7 +155,6 @@
                 s1 * 3/8
             }
         }
-        \tag #'wind-section
         \context WindSectionStaffGroup = "Wind Section Staff Group" <<
             \tag #'flute
             \context FluteStaff = "Flute Staff" {
@@ -1346,7 +1345,6 @@
                 }
             }
         >>
-        \tag #'percussion-section
         \context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
             \tag #'guitar
             \context GuitarStaffGroup = "Guitar Staff Group" <<
@@ -1355,9 +1353,6 @@
                     \context Voice = "Guitar Pitch Pipe Voice" {
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'2 ~
                             }
                             {
@@ -1366,8 +1361,6 @@
                             }
                             {
                                 c'2
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -1385,9 +1378,6 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'4 ~
                                 c'2 ~
                             }
@@ -1399,8 +1389,6 @@
                             }
                             {
                                 c'2
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -1418,16 +1406,11 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'8 ~
                                 c'4 ~
                             }
                             {
                                 c'2.
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -1442,15 +1425,10 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'2.. ~
                             }
                             {
                                 c'4.
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -1473,15 +1451,10 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'1 ~
                             }
                             {
                                 c'2..
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -1504,9 +1477,6 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'1 ~
                             }
                             {
@@ -1518,8 +1488,6 @@
                             }
                             {
                                 c'4.
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -1558,15 +1526,10 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'2. ~
                             }
                             {
                                 c'2.
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -1584,9 +1547,6 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'8 ~
                                 c'4 ~
                             }
@@ -1610,8 +1570,6 @@
                             {
                                 c'4.
                                 \bar "|."
-                                \stopStaff
-                                \startStaff
                             }
                         }
                     }
@@ -1920,9 +1878,6 @@
                     \context Voice = "Piano Pitch Pipe Voice" {
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'2 ~
                             }
                             {
@@ -1931,8 +1886,6 @@
                             }
                             {
                                 c'2
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -1950,9 +1903,6 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'4 ~
                                 c'2 ~
                             }
@@ -1964,8 +1914,6 @@
                             }
                             {
                                 c'2
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -1983,16 +1931,11 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'8 ~
                                 c'4 ~
                             }
                             {
                                 c'2.
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -2007,15 +1950,10 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'2.. ~
                             }
                             {
                                 c'4.
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -2038,15 +1976,10 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'1 ~
                             }
                             {
                                 c'2..
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -2069,9 +2002,6 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'1 ~
                             }
                             {
@@ -2083,8 +2013,6 @@
                             }
                             {
                                 c'4.
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -2123,15 +2051,10 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'2. ~
                             }
                             {
                                 c'2.
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -2149,9 +2072,6 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'8 ~
                                 c'4 ~
                             }
@@ -2175,8 +2095,6 @@
                             {
                                 c'4.
                                 \bar "|."
-                                \stopStaff
-                                \startStaff
                             }
                         }
                     }
@@ -2187,14 +2105,14 @@
                         \context Voice = "Piano Upper Voice" {
                             {
                                 {
-                                    <g b d' g' af' d''>2 :32
+                                    <g b d' g' af' d''>2 :32 \p \>
                                 }
                                 {
-                                    <g b d' g' af' d''>4. :32 \repeatTie
+                                    <g b d' g' af' d''>4. :32 \ppp \repeatTie \<
                                     <g b d' g' af' d''>4 :32 \repeatTie
                                 }
                                 {
-                                    <g b d' g' af' d''>2 :32 \repeatTie
+                                    <g b d' g' af' d''>2 :32 \p \repeatTie
                                 }
                             }
                             {
@@ -2204,17 +2122,17 @@
                             }
                             {
                                 {
-                                    <g b d' ef' g' d''>8 :64
+                                    <g b d' ef' g' d''>8 :64 \p
                                     <g b d' ef' g' d''>4 :32 \repeatTie
                                 }
                                 {
-                                    <g b d' ef' g' d''>2.. :32 \repeatTie
+                                    <g b d' ef' g' d''>2.. :32 \repeatTie \>
                                 }
                                 {
-                                    <g b d' ef' g' d''>2. :32 \repeatTie
+                                    <g b d' ef' g' d''>2. :32 \ppp \repeatTie \<
                                 }
                                 {
-                                    <g b d' ef' g' d''>2 :32 \repeatTie
+                                    <g b d' ef' g' d''>2 :32 \p \repeatTie
                                 }
                             }
                             {
@@ -2224,14 +2142,14 @@
                             }
                             {
                                 {
-                                    <g b d' g' af' d''>8 :64
+                                    <g b d' g' af' d''>8 :64 \mf \>
                                     <g b d' g' af' d''>4 :32 \repeatTie
                                 }
                                 {
-                                    <g b d' g' af' d''>4 :32 \repeatTie
+                                    <g b d' g' af' d''>4 :32 \p \repeatTie
                                 }
                                 {
-                                    <g b d' g' af' d''>2 :32 \repeatTie
+                                    <g b d' g' af' d''>2 :32 \repeatTie \!
                                 }
                             }
                             {
@@ -2241,15 +2159,15 @@
                             }
                             {
                                 {
-                                    <g b d' ef' g' d''>8 :64
+                                    <g b d' ef' g' d''>8 :64 \ppp \<
                                     <g b d' ef' g' d''>4 :32 \repeatTie
                                 }
                                 {
-                                    <g b d' ef' g' d''>2. :32 \repeatTie
+                                    <g b d' ef' g' d''>2. :32 \mf \repeatTie \>
                                 }
                                 {
                                     \set stemLeftBeamCount = 1
-                                    <g b d' ef' g' d''>8 :64 \repeatTie
+                                    <g b d' ef' g' d''>8 :64 \p \repeatTie
                                 }
                             }
                             {
@@ -2340,21 +2258,21 @@
                             }
                             {
                                 {
-                                    <bf d' f' bf' b' f''>2 :32
+                                    <bf d' f' bf' b' f''>2 :32 \p \>
                                 }
                                 {
-                                    <bf d' f' bf' b' f''>2 :32 \repeatTie
+                                    <bf d' f' bf' b' f''>2 :32 \ppp \repeatTie \<
                                 }
                                 {
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 1
-                                    <bf d' f' bf' b' f''>8 :64 \repeatTie
+                                    <bf d' f' bf' b' f''>8 :64 \mf \repeatTie \>
                                 }
                                 {
-                                    <bf d' f' bf' b' f''>4 :32 \repeatTie
+                                    <bf d' f' bf' b' f''>4 :32 \p \repeatTie
                                 }
                                 {
-                                    <bf d' f' bf' b' f''>4 :32 \repeatTie
+                                    <bf d' f' bf' b' f''>4 :32 \repeatTie \!
                                 }
                             }
                             {
@@ -2364,19 +2282,19 @@
                             }
                             {
                                 {
-                                    <g b d' ef' g' d''>4. :32
+                                    <g b d' ef' g' d''>4. :32 \ppp \<
                                 }
                                 {
-                                    <g b d' ef' g' d''>2.. :32 \repeatTie
+                                    <g b d' ef' g' d''>2.. :32 \p \repeatTie \>
                                 }
                                 {
-                                    <g b d' ef' g' d''>2 :32 \repeatTie
+                                    <g b d' ef' g' d''>2 :32 \ppp \repeatTie \<
                                 }
                                 {
-                                    <g b d' ef' g' d''>4 :32 \repeatTie
+                                    <g b d' ef' g' d''>4 :32 \mf \repeatTie \>
                                 }
                                 {
-                                    <g b d' ef' g' d''>2 :32 \repeatTie
+                                    <g b d' ef' g' d''>2 :32 \p \repeatTie
                                 }
                             }
                             {
@@ -2386,11 +2304,11 @@
                             }
                             {
                                 {
-                                    <g b d' g' af' d''>4 :32
+                                    <g b d' g' af' d''>4 :32 \p \>
                                     <g b d' g' af' d''>4. :32 \repeatTie
                                 }
                                 {
-                                    <g b d' g' af' d''>2 :32 \repeatTie
+                                    <g b d' g' af' d''>2 :32 \ppp \repeatTie
                                 }
                             }
                             {
@@ -2400,7 +2318,7 @@
                             }
                             {
                                 {
-                                    <g b d' ef' g' d''>8 :64
+                                    <g b d' ef' g' d''>8 :64 \p
                                     <g b d' ef' g' d''>4 :32 \repeatTie
                                 }
                                 {
@@ -2854,9 +2772,6 @@
                     \context Voice = "Percussion Pitch Pipe Voice" {
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'2 ~
                             }
                             {
@@ -2865,8 +2780,6 @@
                             }
                             {
                                 c'2
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -2884,9 +2797,6 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'4 ~
                                 c'2 ~
                             }
@@ -2898,8 +2808,6 @@
                             }
                             {
                                 c'2
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -2917,16 +2825,11 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'8 ~
                                 c'4 ~
                             }
                             {
                                 c'2.
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -2941,15 +2844,10 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'2.. ~
                             }
                             {
                                 c'4.
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -2972,15 +2870,10 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'1 ~
                             }
                             {
                                 c'2..
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -3003,9 +2896,6 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'1 ~
                             }
                             {
@@ -3017,8 +2907,6 @@
                             }
                             {
                                 c'4.
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -3057,15 +2945,10 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'2. ~
                             }
                             {
                                 c'2.
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -3083,9 +2966,6 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'8 ~
                                 c'4 ~
                             }
@@ -3109,8 +2989,6 @@
                             {
                                 c'4.
                                 \bar "|."
-                                \stopStaff
-                                \startStaff
                             }
                         }
                     }
@@ -3413,7 +3291,6 @@
                 }
             >>
         >>
-        \tag #'string-section
         \context StringSectionStaffGroup = "String Section Staff Group" <<
             \tag #'violin
             \context ViolinStaff = "Violin Staff" {
@@ -4313,9 +4190,6 @@
                     \context Voice = "Contrabass Pitch Pipe Voice" {
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'2 ~
                             }
                             {
@@ -4324,8 +4198,6 @@
                             }
                             {
                                 c'2
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -4343,9 +4215,6 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'4 ~
                                 c'2 ~
                             }
@@ -4357,8 +4226,6 @@
                             }
                             {
                                 c'2
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -4376,16 +4243,11 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'8 ~
                                 c'4 ~
                             }
                             {
                                 c'2.
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -4400,15 +4262,10 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'2.. ~
                             }
                             {
                                 c'4.
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -4431,15 +4288,10 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'1 ~
                             }
                             {
                                 c'2..
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -4462,9 +4314,6 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'1 ~
                             }
                             {
@@ -4476,8 +4325,6 @@
                             }
                             {
                                 c'4.
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -4516,15 +4363,10 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'2. ~
                             }
                             {
                                 c'2.
-                                \stopStaff
-                                \startStaff
                             }
                         }
                         {
@@ -4542,9 +4384,6 @@
                         }
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-count = 1
-                                \startStaff
                                 c'8 ~
                                 c'4 ~
                             }
@@ -4568,8 +4407,6 @@
                             {
                                 c'4.
                                 \bar "|."
-                                \stopStaff
-                                \startStaff
                             }
                         }
                     }

@@ -152,7 +152,6 @@
                 s1 * 3/8
             }
         }
-        \tag #'wind-section
         \context WindSectionStaffGroup = "Wind Section Staff Group" <<
             \tag #'flute
             \context FluteStaff = "Flute Staff" {
@@ -1435,7 +1434,6 @@
                 }
             }
         >>
-        \tag #'percussion-section
         \context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
             \tag #'guitar
             \context GuitarStaffGroup = "Guitar Staff Group" <<
@@ -2405,14 +2403,14 @@
                         \context Voice = "Piano Upper Voice" {
                             {
                                 {
-                                    <g b d' g' af' d''>2 :32
+                                    <g b d' g' af' d''>2 :32 \p \>
                                 }
                                 {
-                                    <g b d' g' af' d''>4. :32 \repeatTie
+                                    <g b d' g' af' d''>4. :32 \ppp \repeatTie \<
                                     <g b d' g' af' d''>4 :32 \repeatTie
                                 }
                                 {
-                                    <g b d' g' af' d''>2 :32 \repeatTie
+                                    <g b d' g' af' d''>2 :32 \p \repeatTie
                                 }
                             }
                             {
@@ -2422,17 +2420,17 @@
                             }
                             {
                                 {
-                                    <g b d' ef' g' d''>8 :64
+                                    <g b d' ef' g' d''>8 :64 \p
                                     <g b d' ef' g' d''>4 :32 \repeatTie
                                 }
                                 {
-                                    <g b d' ef' g' d''>2.. :32 \repeatTie
+                                    <g b d' ef' g' d''>2.. :32 \repeatTie \>
                                 }
                                 {
-                                    <g b d' ef' g' d''>2. :32 \repeatTie
+                                    <g b d' ef' g' d''>2. :32 \ppp \repeatTie \<
                                 }
                                 {
-                                    <g b d' ef' g' d''>2 :32 \repeatTie
+                                    <g b d' ef' g' d''>2 :32 \p \repeatTie
                                 }
                             }
                             {
@@ -2442,11 +2440,11 @@
                             }
                             {
                                 {
-                                    <g b d' g' af' d''>4 :32
+                                    <g b d' g' af' d''>4 :32 \mf \>
                                     <g b d' g' af' d''>4. :32 \repeatTie
                                 }
                                 {
-                                    <g b d' g' af' d''>2 :32 \repeatTie
+                                    <g b d' g' af' d''>2 :32 \p \repeatTie
                                 }
                             }
                             {
@@ -2456,8 +2454,8 @@
                             }
                             {
                                 {
-                                    <g b d' ef' g' d''>8 :64 ~
-                                    <g b d' ef' g' d''>4 :32
+                                    <g b d' ef' g' d''>8 :64 \ppp ~ \<
+                                    <g b d' ef' g' d''>4 :32 \mf
                                 }
                             }
                             {
@@ -2608,14 +2606,14 @@
                             }
                             {
                                 {
-                                    <g b d' g' af' d''>2 :32
+                                    <g b d' g' af' d''>2 :32 \p \>
                                 }
                                 {
-                                    <g b d' g' af' d''>4. :32 \repeatTie
+                                    <g b d' g' af' d''>4. :32 \ppp \repeatTie \<
                                     <g b d' g' af' d''>4 :32 \repeatTie
                                 }
                                 {
-                                    <g b d' g' af' d''>2 :32 \repeatTie
+                                    <g b d' g' af' d''>2 :32 \mf \repeatTie
                                 }
                             }
                             {
@@ -2625,17 +2623,17 @@
                             }
                             {
                                 {
-                                    <g b d' ef' g' d''>8 :64
+                                    <g b d' ef' g' d''>8 :64 \ppp \<
                                     <g b d' ef' g' d''>4 :32 \repeatTie
                                 }
                                 {
-                                    <g b d' ef' g' d''>2.. :32 \repeatTie
+                                    <g b d' ef' g' d''>2.. :32 \p \repeatTie \>
                                 }
                                 {
-                                    <g b d' ef' g' d''>2. :32 \repeatTie
+                                    <g b d' ef' g' d''>2. :32 \ppp \repeatTie \<
                                 }
                                 {
-                                    <g b d' ef' g' d''>2 :32 \repeatTie
+                                    <g b d' ef' g' d''>2 :32 \mf \repeatTie
                                 }
                             }
                             {
@@ -2645,11 +2643,11 @@
                             }
                             {
                                 {
-                                    <g b d' g' af' d''>4 :32
+                                    <g b d' g' af' d''>4 :32 \p \>
                                     <g b d' g' af' d''>4. :32 \repeatTie
                                 }
                                 {
-                                    <g b d' g' af' d''>2 :32 \repeatTie
+                                    <g b d' g' af' d''>2 :32 \ppp \repeatTie
                                 }
                             }
                             {
@@ -2659,7 +2657,7 @@
                             }
                             {
                                 {
-                                    <g b d' ef' g' d''>8 :64 ~
+                                    <g b d' ef' g' d''>8 :64 \p ~
                                     <g b d' ef' g' d''>4 :32
                                 }
                             }
@@ -3759,7 +3757,6 @@
                 }
             >>
         >>
-        \tag #'string-section
         \context StringSectionStaffGroup = "String Section Staff Group" <<
             \tag #'violin
             \context ViolinStaff = "Violin Staff" {
