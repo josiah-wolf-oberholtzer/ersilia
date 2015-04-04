@@ -4,8 +4,8 @@
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
-\include "../stylesheets/stylesheet.ily"
-\include "../stylesheets/parts-portrait.ily"
+\include "../../stylesheets/stylesheet.ily"
+\include "../../stylesheets/parts-portrait.ily"
 
 \header {
     composer = \markup {
