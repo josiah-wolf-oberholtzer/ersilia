@@ -30,6 +30,7 @@ afterGraceFraction = #(cons 1023 1024)
     oddHeaderMarkup = \markup \fill-line { " " }
     print-first-page-number = ##f
     print-page-number = ##t
+    max-systems-per-page = 1
     page-breaking = #ly:optimal-breaking
     ragged-bottom = ##f
     ragged-last-bottom = ##t
