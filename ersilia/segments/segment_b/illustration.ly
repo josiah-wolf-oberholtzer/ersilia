@@ -3,8 +3,6 @@
 
 #(ly:set-option 'relative-includes #t)
 
-\include "/Users/josiah/Documents/Scores/ersilia/ersilia/stylesheets/default-instrument-names.ily"
-\include "/Users/josiah/Documents/Scores/ersilia/ersilia/stylesheets/nonfirst-segment.ily"
 \include "/Users/josiah/Documents/Scores/ersilia/ersilia/stylesheets/stylesheet.ily"
 
 \score {
