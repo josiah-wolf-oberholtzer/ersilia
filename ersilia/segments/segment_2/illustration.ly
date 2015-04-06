@@ -8,10 +8,10 @@
 
 \score {
     \context Score = "Ersilia Score" \with {
-        currentBarNumber = #33
+        currentBarNumber = #34
     } <<
         \tag #'time
-        \context TimeSignatureContext = "TimeSignatureContext" {
+        \context TimeSignatureContext = "Time Signature Context" {
             {
                 \time 4/4
                 \tempo 4=48

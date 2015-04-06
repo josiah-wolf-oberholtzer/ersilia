@@ -4,8 +4,19 @@ from abjad import *
 
 metadata = datastructuretools.TypedOrderedDict(
     [
-        ('first_bar_number', 111),
-        ('measure_count', 23),
+        (
+            'end_tempo',
+            (
+                (1, 4),
+                64,
+                ),
+            ),
+        (
+            'end_time_signature',
+            (4, 4),
+            ),
+        ('first_bar_number', 115),
+        ('measure_count', 20),
         ('segment_count', 9),
         ('segment_number', 9),
         ]

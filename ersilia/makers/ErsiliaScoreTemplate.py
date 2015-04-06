@@ -14,7 +14,7 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
         >>> print(format(score))
         \context Score = "Ersilia Score" <<
             \tag #'time
-            \context TimeSignatureContext = "TimeSignatureContext" {
+            \context TimeSignatureContext = "Time Signature Context" {
             }
             \context WindSectionStaffGroup = "Wind Section Staff Group" <<
                 \tag #'flute

@@ -10,5 +10,4 @@ segment_maker = ersilia.ErsiliaSegmentMaker(
     name='Repeat x7',
     permitted_time_signatures=ersilia.permitted_time_signatures,
     repeat=True,
-    tempo=abjad.Tempo((1, 4), 64),
     )

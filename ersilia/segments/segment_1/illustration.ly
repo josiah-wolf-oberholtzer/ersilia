@@ -10,7 +10,7 @@
         currentBarNumber = #1
     } <<
         \tag #'time
-        \context TimeSignatureContext = "TimeSignatureContext" {
+        \context TimeSignatureContext = "Time Signature Context" {
             {
                 \time 4/4
                 \tempo 4=96
