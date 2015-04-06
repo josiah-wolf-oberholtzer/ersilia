@@ -1,6 +1,8 @@
 # -*- encoding: utf-8 -*-
 import abjad
+import consort
 import ersilia
+from abjad import new
 
 
 segment_maker = ersilia.ErsiliaSegmentMaker(
