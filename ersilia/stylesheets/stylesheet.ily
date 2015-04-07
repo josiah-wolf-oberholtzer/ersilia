@@ -249,7 +249,7 @@ afterGraceFraction = #(cons 1023 1024)
         \type Engraver_group
         \alias Staff
         \override Beam.positions = #'(-9 . -9)
-        \override DynamicLineSpanner.staff-padding = 10
+        \override DynamicLineSpanner.staff-padding = 11
         \override TupletBracket.staff-padding = 6
     }
 
@@ -259,7 +259,7 @@ afterGraceFraction = #(cons 1023 1024)
         \type Engraver_group
         \alias Staff
         \override Beam.positions = #'(-9 . -9)
-        \override DynamicLineSpanner.staff-padding = 10
+        \override DynamicLineSpanner.staff-padding = 11
         \override TupletBracket.staff-padding = 6
     }
     
@@ -419,6 +419,7 @@ afterGraceFraction = #(cons 1023 1024)
         \override Glissando.breakable = ##t
         \override Glissando.thickness = 3
         \override GraceSpacing.common-shortest-duration = #(ly:make-moment 1 8)
+        \override Hairpin.bound-padding = 1.5
         \override NoteCollision.merge-differently-dotted = ##t
         \override NoteColumn.ignore-collision = ##t
         \shape #'((-1.5 . 0) (-1 . 0) (-0.5 . 0) (0 . 0)) RepeatTie                 
@@ -437,6 +438,7 @@ afterGraceFraction = #(cons 1023 1024)
         \override StemTremolo.slope = 0.5
         \override SustainPedal.self-alignment-X = #CENTER
         \override SustainPedalLineSpanner.padding = 2
+        \override SustainPedalLineSpanner.outside-staff-padding = 2
         \override SustainPedalLineSpanner.to-barline = ##t
         \override SystemStartSquare.thickness = 2
         \override TupletBracket.breakable = ##t

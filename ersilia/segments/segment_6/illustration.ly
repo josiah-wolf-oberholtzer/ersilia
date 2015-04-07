@@ -100,6 +100,7 @@
                 \clef "treble"
                 \context Voice = "Flute Voice" {
                     {
+                        % Measure 161
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -108,6 +109,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 162
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -116,6 +118,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 163
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -124,6 +127,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 164
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -132,6 +136,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 165
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -140,6 +145,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 166
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -148,6 +154,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 167
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -156,6 +163,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 168
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -164,6 +172,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 169
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -172,6 +181,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 170
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -180,6 +190,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 171
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -188,6 +199,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 172
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -196,6 +208,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 173
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -204,6 +217,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 174
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -212,6 +226,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 175
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -220,6 +235,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 176
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -228,6 +244,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 177
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -245,6 +262,7 @@
                 \clef "treble"
                 \context Voice = "Oboe Voice" {
                     {
+                        % Measure 161
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -253,6 +271,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 162
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -261,6 +280,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 163
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -269,6 +289,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 164
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -277,6 +298,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 165
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -285,6 +307,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 166
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -293,6 +316,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 167
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -301,6 +325,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 168
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -309,6 +334,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 169
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -317,6 +343,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 170
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -325,6 +352,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 171
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -333,6 +361,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 172
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -341,6 +370,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 173
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -349,6 +379,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 174
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -357,6 +388,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 175
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -365,6 +397,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 176
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -373,6 +406,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 177
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -390,6 +424,7 @@
                 \clef "treble"
                 \context Voice = "Clarinet Voice" {
                     {
+                        % Measure 161
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -398,6 +433,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 162
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -406,6 +442,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 163
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -414,6 +451,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 164
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -422,6 +460,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 165
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -430,6 +469,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 166
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -438,6 +478,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 167
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -446,6 +487,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 168
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -454,6 +496,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 169
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -462,6 +505,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 170
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -470,6 +514,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 171
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -478,6 +523,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 172
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -486,6 +532,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 173
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -494,6 +541,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 174
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -502,6 +550,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 175
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -510,6 +559,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 176
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -518,6 +568,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 177
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -535,13 +586,14 @@
                 \clef "treble"
                 \context Voice = "Saxophone Voice" {
                     {
+                        % Measure 161
                         {
                             r4.
                         }
                     }
                     {
                         {
-                            c''16 -\stopped \f \> [
+                            c'16 -\stopped \f \> [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
@@ -553,6 +605,7 @@
                         }
                     }
                     {
+                        % Measure 162
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -561,6 +614,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 163
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -569,6 +623,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 164
                         {
                             r8.
                         }
@@ -577,7 +632,7 @@
                         {
                             <c' ef'>16 -\stopped [
                             \set stemLeftBeamCount = 2
-                            c''16 -\stopped \ff ]
+                            c'16 -\stopped \ff ]
                         }
                     }
                     {
@@ -585,6 +640,7 @@
                             r16
                             r4
                         }
+                        % Measure 165
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -593,6 +649,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 166
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -601,16 +658,17 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 167
                         {
                             r4.
                         }
                     }
                     {
                         \times 4/5 {
-                            <c'' ef''>16 -\stopped \mf \< [
+                            <c' ef'>16 -\stopped \mf \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c''16 -\stopped
+                            c'16 -\stopped
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
@@ -622,6 +680,7 @@
                         }
                     }
                     {
+                        % Measure 168
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -630,6 +689,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 169
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -638,6 +698,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 170
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -646,6 +707,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 171
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -654,13 +716,14 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 172
                         {
                             r8
                         }
                     }
                     {
                         \times 2/3 {
-                            <c'' ef''>16 -\stopped \f \> [
+                            <c' ef'>16 -\stopped \f \> [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
@@ -672,7 +735,7 @@
                             <c' ef'>16 -\stopped
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c''16 -\stopped
+                            c'16 -\stopped
                             \set stemLeftBeamCount = 2
                             r16 \mf ]
                         }
@@ -681,6 +744,7 @@
                         {
                             r4
                         }
+                        % Measure 173
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -689,6 +753,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 174
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -697,6 +762,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 175
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -705,6 +771,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 176
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -713,6 +780,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 177
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -733,6 +801,7 @@
                     \clef "percussion"
                     \context Voice = "Guitar Pitch Pipe Voice" {
                         {
+                            % Measure 161
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -741,6 +810,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 162
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -749,6 +819,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 163
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -757,6 +828,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 164
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -765,6 +837,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 165
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -773,6 +846,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 166
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -781,6 +855,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 167
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -789,6 +864,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 168
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -797,6 +873,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 169
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -805,6 +882,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 170
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -813,6 +891,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 171
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -821,6 +900,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 172
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -829,6 +909,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 173
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -837,6 +918,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 174
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -845,6 +927,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 175
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -853,6 +936,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 176
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -861,6 +945,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 177
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -877,6 +962,7 @@
                     \clef "treble"
                     \context Voice = "Guitar Voice" {
                         {
+                            % Measure 161
                             {
                                 r4
                                 r16
@@ -884,7 +970,7 @@
                         }
                         {
                             {
-                                c''16 -\staccato \f \> [
+                                c'16 -\staccato \f \> [
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
                                 <c' ef'>16 -\staccato
@@ -899,6 +985,7 @@
                             {
                                 r16
                             }
+                            % Measure 162
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -909,6 +996,7 @@
                             }
                         }
                         {
+                            % Measure 163
                             {
                                 <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
                                     ^ \markup {
@@ -927,18 +1015,13 @@
                             }
                         }
                         {
+                            % Measure 164
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 6/7 {
                                 r16 \ff \> [
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
-                                c''16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c'' ef''>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                c''16 -\staccato
+                                c'16 -\staccato
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
                                 <c' ef'>16 -\staccato
@@ -946,13 +1029,20 @@
                                 \set stemRightBeamCount = 2
                                 c'16 -\staccato
                                 \set stemLeftBeamCount = 2
-                                <c'' ef''>16 -\staccato \f ]
+                                \set stemRightBeamCount = 2
+                                <c' ef'>16 -\staccato
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                c'16 -\staccato
+                                \set stemLeftBeamCount = 2
+                                <c' ef'>16 -\staccato \f ]
                             }
                         }
                         {
                             {
                                 r4
                             }
+                            % Measure 165
                             {
                                 r8
                             }
@@ -977,6 +1067,7 @@
                             }
                         }
                         {
+                            % Measure 166
                             {
                                 <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \mf
                                     ^ \markup {
@@ -994,6 +1085,7 @@
                                 r4
                                 r2
                             }
+                            % Measure 167
                             {
                                 r8
                             }
@@ -1019,10 +1111,10 @@
                                 <c' ef'>16 -\staccato
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
-                                c''16 -\staccato
+                                c'16 -\staccato
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
-                                <c'' ef''>16 -\staccato
+                                <c' ef'>16 -\staccato
                                 \set stemLeftBeamCount = 2
                                 c'16 -\staccato \ff ]
                             }
@@ -1031,6 +1123,7 @@
                             {
                                 r16
                             }
+                            % Measure 168
                             {
                                 r8
                             }
@@ -1052,6 +1145,7 @@
                             {
                                 r2.
                             }
+                            % Measure 169
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1062,6 +1156,7 @@
                             }
                         }
                         {
+                            % Measure 170
                             {
                                 <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \ppp
                                     ^ \markup {
@@ -1081,6 +1176,7 @@
                             }
                         }
                         {
+                            % Measure 171
                             {
                                 <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
                                     ^ \markup {
@@ -1099,12 +1195,13 @@
                             }
                         }
                         {
+                            % Measure 172
                             \tweak #'text #tuplet-number::calc-fraction-text
                             \times 6/8 {
                                 r16 \f \> [
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
-                                <c'' ef''>16 -\staccato
+                                <c' ef'>16 -\staccato
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
                                 c'16 -\staccato
@@ -1113,13 +1210,13 @@
                                 <c' ef'>16 -\staccato
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
-                                c''16 -\staccato
+                                c'16 -\staccato
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
                                 <c' ef'>16 -\staccato
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
-                                c''16 -\staccato
+                                c'16 -\staccato
                                 \set stemLeftBeamCount = 2
                                 <c' ef'>16 -\staccato \mf ]
                             }
@@ -1128,6 +1225,7 @@
                             {
                                 r4
                             }
+                            % Measure 173
                             {
                                 r8
                             }
@@ -1152,6 +1250,7 @@
                             }
                         }
                         {
+                            % Measure 174
                             {
                                 <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \mf
                                     ^ \markup {
@@ -1170,6 +1269,7 @@
                             }
                         }
                         {
+                            % Measure 175
                             {
                                 <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \ppp
                                     ^ \markup {
@@ -1189,6 +1289,7 @@
                             }
                         }
                         {
+                            % Measure 176
                             {
                                 <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
                                     ^ \markup {
@@ -1206,6 +1307,7 @@
                                 r4
                                 r4
                             }
+                            % Measure 177
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1225,6 +1327,7 @@
                     \clef "percussion"
                     \context Voice = "Piano Pitch Pipe Voice" {
                         {
+                            % Measure 161
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1233,6 +1336,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 162
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1241,6 +1345,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 163
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1249,6 +1354,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 164
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1257,6 +1363,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 165
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1265,6 +1372,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 166
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1273,6 +1381,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 167
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1281,6 +1390,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 168
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1289,6 +1399,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 169
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1297,6 +1408,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 170
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1305,6 +1417,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 171
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1313,6 +1426,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 172
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1321,6 +1435,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 173
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1329,6 +1444,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 174
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1337,6 +1453,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 175
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1345,6 +1462,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 176
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1353,6 +1471,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 177
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1370,13 +1489,14 @@
                         \clef "treble"
                         \context Voice = "Piano Upper Voice" {
                             {
+                                % Measure 161
                                 {
                                     r16
                                 }
                             }
                             {
                                 {
-                                    <c'' ef'' a'' d'''>16 -\staccato [
+                                    <c' ef' a' d''>16 -\staccato [
                                     \set stemLeftBeamCount = 2
                                     c'16 -\staccato \f ]
                                 }
@@ -1386,6 +1506,7 @@
                                     r8.
                                     r4
                                 }
+                                % Measure 162
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1394,6 +1515,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
+                                % Measure 163
                                 {
                                     r2.
                                 }
@@ -1409,12 +1531,13 @@
                                     <c' ef' a' d''>16 -\staccato
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2
-                                    c''16 -\staccato
+                                    c'16 -\staccato
                                     \set stemLeftBeamCount = 2
-                                    <c'' ef''>16 -\staccato \f ]
+                                    <c' ef'>16 -\staccato \f ]
                                 }
                             }
                             {
+                                % Measure 164
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1423,6 +1546,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
+                                % Measure 165
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1431,6 +1555,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
+                                % Measure 166
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1441,8 +1566,9 @@
                                 }
                             }
                             {
+                                % Measure 167
                                 {
-                                    <c'' ef'' a'' d'''>16 -\staccato \mf [
+                                    <c' ef' a' d''>16 -\staccato \mf [
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2
                                     c'16 -\staccato
@@ -1455,6 +1581,7 @@
                                     r8.
                                     r4
                                 }
+                                % Measure 168
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1463,6 +1590,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
+                                % Measure 169
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1471,6 +1599,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
+                                % Measure 170
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1479,6 +1608,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
+                                % Measure 171
                                 {
                                     r2.
                                 }
@@ -1488,7 +1618,7 @@
                                     r16 \f \> [
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2
-                                    <c'' ef'' a'' d'''>16 -\staccato
+                                    <c' ef' a' d''>16 -\staccato
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2
                                     c'16 -\staccato
@@ -1497,12 +1627,13 @@
                                     <c' ef'>16 -\staccato
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2
-                                    <c'' ef'' a'' d'''>16 -\staccato
+                                    <c' ef' a' d''>16 -\staccato
                                     \set stemLeftBeamCount = 2
-                                    c''16 -\staccato \mf ]
+                                    c'16 -\staccato \mf ]
                                 }
                             }
                             {
+                                % Measure 172
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1511,6 +1642,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
+                                % Measure 173
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1519,6 +1651,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
+                                % Measure 174
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1527,6 +1660,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
+                                % Measure 175
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1535,6 +1669,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
+                                % Measure 176
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1543,6 +1678,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
+                                % Measure 177
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1559,6 +1695,7 @@
                         \clef "bass"
                         \context Voice = "Piano Lower Voice" {
                             {
+                                % Measure 161
                                 {
                                     r4
                                 }
@@ -1569,114 +1706,34 @@
                                     r16 \ff \> [
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2
+                                    <c' ef' a' d''>16 -\staccato
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
+                                    c'16 -\staccato
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
                                     <c' ef'>16 -\staccato
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2
                                     <c' ef' a' d''>16 -\staccato
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2
-                                    c''16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c'' ef''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c'' ef'' a'' d'''>16 -\staccato
+                                    c'16 -\staccato
                                     \set stemLeftBeamCount = 2
                                     r16 ]
                                 }
+                                % Measure 162
                                 \times 4/6 {
-                                    c'16 -\staccato \f \> [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c'' ef'' a'' d'''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    <c'' ef'' a'' d'''>16 -\staccato \mf ]
-                                }
-                            }
-                            {
-                                {
-                                    r4
-                                }
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1
-                                    \stopStaff
-                                    \startStaff
-                                }
-                            }
-                            {
-                                {
-                                    c''16 -\staccato \mf \< [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c'' ef'' a'' d'''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    <c'' ef'' a'' d'''>16 -\staccato ]
-                                }
-                                \times 4/5 {
-                                    r16 \ff \> [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c'' ef''>16 -\staccato
+                                    <c' ef'>16 -\staccato \f \> [
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2
                                     <c' ef' a' d''>16 -\staccato
                                     \set stemLeftBeamCount = 2
-                                    r16 \f ]
-                                }
-                            }
-                            {
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 7/8
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 7/8
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                {
-                                    r4
-                                    r16
-                                }
-                            }
-                            {
-                                {
-                                    c''16 -\staccato \f \> [
+                                    \set stemRightBeamCount = 2
+                                    c'16 -\staccato
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2
-                                    <c'' ef''>16 -\staccato
+                                    <c' ef'>16 -\staccato
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2
                                     <c' ef' a' d''>16 -\staccato
@@ -1686,26 +1743,114 @@
                             }
                             {
                                 {
+                                    r4
+                                }
+                                % Measure 163
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 1
+                                    \stopStaff
+                                    \startStaff
+                                }
+                            }
+                            {
+                                % Measure 164
+                                {
+                                    <c' ef'>16 -\staccato \mf \< [
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
+                                    <c' ef' a' d''>16 -\staccato
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
+                                    c'16 -\staccato
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
+                                    <c' ef'>16 -\staccato
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
+                                    <c' ef' a' d''>16 -\staccato
+                                    \set stemLeftBeamCount = 2
+                                    c'16 -\staccato ]
+                                }
+                                \times 4/5 {
+                                    r16 \ff \> [
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
+                                    <c' ef'>16 -\staccato
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
+                                    <c' ef' a' d''>16 -\staccato
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
+                                    c'16 -\staccato
+                                    \set stemLeftBeamCount = 2
+                                    r16 \f ]
+                                }
+                            }
+                            {
+                                % Measure 165
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 7/8
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                % Measure 166
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 7/8
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                % Measure 167
+                                {
+                                    r4
                                     r16
                                 }
+                            }
+                            {
+                                {
+                                    <c' ef'>16 -\staccato \f \> [
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
+                                    <c' ef' a' d''>16 -\staccato
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
+                                    c'16 -\staccato
+                                    \set stemLeftBeamCount = 2
+                                    <c' ef'>16 -\staccato \mf ]
+                                }
+                            }
+                            {
+                                {
+                                    r16
+                                }
+                                % Measure 168
                                 {
                                     r16
                                 }
                             }
                             {
                                 {
-                                    <c'' ef''>16 -\staccato \ff [
+                                    <c' ef' a' d''>16 -\staccato \ff [
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
+                                    c'16 -\staccato
                                     \set stemLeftBeamCount = 2
-                                    c''16 -\staccato ]
+                                    <c' ef'>16 -\staccato ]
                                 }
                             }
                             {
                                 {
                                     r2.
                                 }
+                                % Measure 169
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1714,6 +1859,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
+                                % Measure 170
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1722,6 +1868,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
+                                % Measure 171
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1732,40 +1879,42 @@
                                 }
                             }
                             {
+                                % Measure 172
                                 \tweak #'text #tuplet-number::calc-fraction-text
                                 \times 6/7 {
                                     r16 \mf \< [
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2
-                                    <c'' ef''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c'' ef'' a'' d'''>16 -\staccato
+                                    <c' ef' a' d''>16 -\staccato
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2
                                     c'16 -\staccato
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2
-                                    <c'' ef''>16 -\staccato
+                                    <c' ef'>16 -\staccato
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2
                                     <c' ef' a' d''>16 -\staccato
                                     \set stemLeftBeamCount = 2
-                                    c'16 -\staccato ]
+                                    \set stemRightBeamCount = 2
+                                    c'16 -\staccato
+                                    \set stemLeftBeamCount = 2
+                                    <c' ef'>16 -\staccato ]
                                 }
                                 {
-                                    <c' ef'>16 -\staccato \ff [
+                                    <c' ef' a' d''>16 -\staccato \ff [
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2
-                                    <c'' ef'' a'' d'''>16 -\staccato
+                                    c'16 -\staccato
                                     \set stemLeftBeamCount = 2
-                                    c''16 -\staccato ]
+                                    <c' ef'>16 -\staccato ]
                                 }
                             }
                             {
                                 {
                                     r16
                                 }
+                                % Measure 173
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1774,6 +1923,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
+                                % Measure 174
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1782,6 +1932,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
+                                % Measure 175
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1790,6 +1941,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
+                                % Measure 176
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1798,6 +1950,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
+                                % Measure 177
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1812,6 +1965,7 @@
                     }
                     \context Dynamics = "Piano Pedals Voice" {
                         {
+                            % Measure 161
                             {
                                 r16
                             }
@@ -1831,6 +1985,7 @@
                             {
                                 s1 * 3/8 \sustainOn
                             }
+                            % Measure 162
                             {
                                 s1 * 1/4
                                 <> \sustainOff
@@ -1840,6 +1995,7 @@
                             {
                                 r4
                             }
+                            % Measure 163
                             {
                                 r2.
                             }
@@ -1848,20 +2004,24 @@
                             {
                                 s1 * 1/4 \sustainOn
                             }
+                            % Measure 164
                             {
                                 s1 * 5/8
                                 <> \sustainOff
                             }
                         }
                         {
+                            % Measure 165
                             {
                                 R1 * 7/8
                             }
+                            % Measure 166
                             {
                                 R1 * 7/8
                             }
                         }
                         {
+                            % Measure 167
                             {
                                 s1 * 3/16 \sustainOn
                                 <> \sustainOff
@@ -1883,6 +2043,7 @@
                             {
                                 r16
                             }
+                            % Measure 168
                             {
                                 r16
                             }
@@ -1897,12 +2058,15 @@
                             {
                                 r2.
                             }
+                            % Measure 169
                             {
                                 R1 * 1/2
                             }
+                            % Measure 170
                             {
                                 R1 * 7/8
                             }
+                            % Measure 171
                             {
                                 r2.
                             }
@@ -1911,6 +2075,7 @@
                             {
                                 s1 * 1/4 \sustainOn
                             }
+                            % Measure 172
                             {
                                 s1 * 9/16
                                 <> \sustainOff
@@ -1920,18 +2085,23 @@
                             {
                                 r16
                             }
+                            % Measure 173
                             {
                                 R1 * 7/8
                             }
+                            % Measure 174
                             {
                                 R1 * 1
                             }
+                            % Measure 175
                             {
                                 R1 * 5/8
                             }
+                            % Measure 176
                             {
                                 R1 * 5/8
                             }
+                            % Measure 177
                             {
                                 R1 * 1/2
                                 %%% \bar "|." %%%
@@ -1946,6 +2116,7 @@
                     \clef "percussion"
                     \context Voice = "Percussion Pitch Pipe Voice" {
                         {
+                            % Measure 161
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1954,6 +2125,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 162
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1962,6 +2134,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 163
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1970,6 +2143,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 164
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1978,6 +2152,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 165
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1986,6 +2161,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 166
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1994,6 +2170,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 167
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2002,6 +2179,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 168
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2010,6 +2188,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 169
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2018,6 +2197,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 170
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2026,6 +2206,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 171
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2034,6 +2215,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 172
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2042,6 +2224,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 173
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2050,6 +2233,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 174
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2058,6 +2242,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 175
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2066,6 +2251,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 176
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2074,6 +2260,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 177
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2090,6 +2277,7 @@
                     \clef "percussion"
                     \context Voice = "Percussion Voice" {
                         {
+                            % Measure 161
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2098,6 +2286,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 162
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2106,6 +2295,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 163
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2114,6 +2304,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 164
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2122,6 +2313,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 165
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2130,6 +2322,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 166
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2138,6 +2331,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 167
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2146,6 +2340,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 168
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2154,6 +2349,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 169
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2162,6 +2358,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 170
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2170,6 +2367,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 171
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2178,6 +2376,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 172
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2186,6 +2385,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 173
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2194,6 +2394,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 174
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2202,6 +2403,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 175
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2210,6 +2412,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 176
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2218,6 +2421,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 177
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2238,6 +2442,7 @@
                 \clef "treble"
                 \context Voice = "Violin Voice" {
                     {
+                        % Measure 161
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2246,6 +2451,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 162
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2254,6 +2460,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 163
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2262,6 +2469,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 164
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2270,6 +2478,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 165
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2278,6 +2487,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 166
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2286,6 +2496,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 167
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2294,6 +2505,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 168
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2302,6 +2514,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 169
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2310,6 +2523,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 170
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2318,6 +2532,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 171
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2326,6 +2541,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 172
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2334,6 +2550,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 173
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2342,6 +2559,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 174
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2350,6 +2568,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 175
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2358,6 +2577,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 176
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2366,6 +2586,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 177
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2383,6 +2604,7 @@
                 \clef "alto"
                 \context Voice = "Viola Voice" {
                     {
+                        % Measure 161
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2391,6 +2613,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 162
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2399,6 +2622,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 163
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2407,6 +2631,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 164
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2415,6 +2640,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 165
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2423,6 +2649,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 166
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2431,6 +2658,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 167
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2439,6 +2667,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 168
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2447,6 +2676,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 169
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2455,6 +2685,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 170
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2463,6 +2694,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 171
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2471,6 +2703,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 172
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2479,6 +2712,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 173
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2487,6 +2721,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 174
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2495,6 +2730,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 175
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2503,6 +2739,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 176
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2511,6 +2748,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 177
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2528,6 +2766,7 @@
                 \clef "bass"
                 \context Voice = "Cello Voice" {
                     {
+                        % Measure 161
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2536,6 +2775,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 162
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2544,6 +2784,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 163
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2552,6 +2793,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 164
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2560,6 +2802,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 165
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2568,6 +2811,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 166
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2576,6 +2820,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 167
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2584,6 +2829,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 168
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2592,6 +2838,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 169
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2600,6 +2847,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 170
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2608,6 +2856,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 171
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2616,6 +2865,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 172
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2624,6 +2874,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 173
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2632,6 +2883,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 174
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2640,6 +2892,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 175
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2648,6 +2901,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 176
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2656,6 +2910,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 177
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2674,6 +2929,7 @@
                     \clef "percussion"
                     \context Voice = "Contrabass Pitch Pipe Voice" {
                         {
+                            % Measure 161
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2682,6 +2938,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 162
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2690,6 +2947,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 163
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2698,6 +2956,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 164
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2706,6 +2965,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 165
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2714,6 +2974,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 166
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2722,6 +2983,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 167
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2730,6 +2992,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 168
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2738,6 +3001,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 169
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2746,6 +3010,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 170
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2754,6 +3019,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 171
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2762,6 +3028,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 172
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2770,6 +3037,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 173
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2778,6 +3046,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 174
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2786,6 +3055,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 175
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2794,6 +3064,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 176
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2802,6 +3073,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 177
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2818,6 +3090,7 @@
                     \clef "bass_8"
                     \context Voice = "Contrabass Voice" {
                         {
+                            % Measure 161
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2826,6 +3099,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 162
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2834,6 +3108,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 163
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2842,6 +3117,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 164
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2850,6 +3126,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 165
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2858,6 +3135,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 166
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2866,6 +3144,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 167
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2874,6 +3153,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 168
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2882,6 +3162,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 169
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2890,6 +3171,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 170
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2898,6 +3180,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 171
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2906,6 +3189,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 172
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2914,6 +3198,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 173
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2922,6 +3207,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 174
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2930,6 +3216,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 175
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2938,6 +3225,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 176
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2946,6 +3234,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 177
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)

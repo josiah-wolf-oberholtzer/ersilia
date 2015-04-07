@@ -44,6 +44,7 @@
                 \clef "treble"
                 \context Voice = "Flute Voice" {
                     {
+                        % Measure 99
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -52,6 +53,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 100
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -69,6 +71,7 @@
                 \clef "treble"
                 \context Voice = "Oboe Voice" {
                     {
+                        % Measure 99
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -77,6 +80,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 100
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -94,6 +98,7 @@
                 \clef "treble"
                 \context Voice = "Clarinet Voice" {
                     {
+                        % Measure 99
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -102,6 +107,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 100
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -119,6 +125,7 @@
                 \clef "treble"
                 \context Voice = "Saxophone Voice" {
                     {
+                        % Measure 99
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -127,6 +134,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 100
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -147,6 +155,7 @@
                     \clef "percussion"
                     \context Voice = "Guitar Pitch Pipe Voice" {
                         {
+                            % Measure 99
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -155,6 +164,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 100
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -171,6 +181,7 @@
                     \clef "treble"
                     \context Voice = "Guitar Voice" {
                         {
+                            % Measure 99
                             {
                                 r4
                             }
@@ -179,6 +190,7 @@
                             {
                                 <d' f'>2. :32 \mp \>
                             }
+                            % Measure 100
                             {
                                 <d' f'>4 :32 \pp \repeatTie \>
                                 <d' f'>8 :64 \ppp \repeatTie
@@ -199,6 +211,7 @@
                     \clef "percussion"
                     \context Voice = "Piano Pitch Pipe Voice" {
                         {
+                            % Measure 99
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -207,6 +220,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 100
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -224,6 +238,7 @@
                         \clef "treble"
                         \context Voice = "Piano Upper Voice" {
                             {
+                                % Measure 99
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -232,6 +247,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
+                                % Measure 100
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -248,6 +264,7 @@
                         \clef "bass"
                         \context Voice = "Piano Lower Voice" {
                             {
+                                % Measure 99
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -256,6 +273,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
+                                % Measure 100
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -269,9 +287,11 @@
                     }
                     \context Dynamics = "Piano Pedals Voice" {
                         {
+                            % Measure 99
                             {
                                 R1 * 1
                             }
+                            % Measure 100
                             {
                                 R1 * 1/2
                             }
@@ -286,6 +306,7 @@
                     \clef "percussion"
                     \context Voice = "Percussion Pitch Pipe Voice" {
                         {
+                            % Measure 99
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -294,6 +315,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 100
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -310,6 +332,7 @@
                     \clef "percussion"
                     \context Voice = "Percussion Voice" {
                         {
+                            % Measure 99
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -318,6 +341,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 100
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -338,6 +362,7 @@
                 \clef "treble"
                 \context Voice = "Violin Voice" {
                     {
+                        % Measure 99
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -346,6 +371,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 100
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -363,6 +389,7 @@
                 \clef "alto"
                 \context Voice = "Viola Voice" {
                     {
+                        % Measure 99
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -371,6 +398,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 100
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -388,6 +416,7 @@
                 \clef "bass"
                 \context Voice = "Cello Voice" {
                     {
+                        % Measure 99
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -396,6 +425,7 @@
                             \stopStaff
                             \startStaff
                         }
+                        % Measure 100
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -414,6 +444,7 @@
                     \clef "percussion"
                     \context Voice = "Contrabass Pitch Pipe Voice" {
                         {
+                            % Measure 99
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -422,6 +453,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 100
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -438,6 +470,7 @@
                     \clef "bass_8"
                     \context Voice = "Contrabass Voice" {
                         {
+                            % Measure 99
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -446,6 +479,7 @@
                                 \stopStaff
                                 \startStaff
                             }
+                            % Measure 100
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
