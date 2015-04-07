@@ -67,6 +67,50 @@ afterGraceFraction = #(cons 1023 1024)
     ragged-last = ##f
     ragged-right = ##t
 
+    %%% ANNOTATIONS %%%
+
+    \context {
+        \Voice
+        \name AnnotatedDivisionsVoice
+        \type Engraver_group
+        \alias Voice
+        \override Accidental.stencil = ##f
+        \override Dots.stencil = ##f
+        \override Flag.stencil = ##f
+        \override NoteCollision.merge-differently-dotted = ##t
+        \override NoteCollision.merge-differently-headed = ##t
+        \override NoteColumn.ignore-collision = ##t
+        \override NoteHead.no-ledgers = ##t
+        \override NoteHead.transparent = ##t
+        \override Stem.stencil = ##f
+        \override TupletBracket.direction = #down
+        \override TupletBracket.outside-staff-padding = 1
+        \override TupletBracket.outside-staff-priority = 999
+        \override TupletBracket.thickness = 2
+        \override TupletNumber.stencil = ##f
+    }
+
+    \context {
+        \Voice
+        \name AnnotatedPhrasesVoice
+        \type Engraver_group
+        \alias Voice
+        \override Accidental.stencil = ##f
+        \override Dots.stencil = ##f
+        \override Flag.stencil = ##f
+        \override NoteCollision.merge-differently-dotted = ##t
+        \override NoteCollision.merge-differently-headed = ##t
+        \override NoteColumn.ignore-collision = ##t
+        \override NoteHead.no-ledgers = ##t
+        \override NoteHead.transparent = ##t
+        \override Stem.stencil = ##f
+        \override TupletBracket.direction = #down
+        \override TupletBracket.outside-staff-padding = 1
+        \override TupletBracket.outside-staff-priority = 1000
+        \override TupletBracket.thickness = 2
+        \override TupletNumber.stencil = ##f
+    }
+
     %%% DEFAULTS %%%
 
     \context {
@@ -77,6 +121,8 @@ afterGraceFraction = #(cons 1023 1024)
     \context {
         \Staff
         \remove Time_signature_engraver
+        \accepts AnnotatedDivisionsVoice
+        \accepts AnnotatedPhrasesVoice
     }
 
     \context {
