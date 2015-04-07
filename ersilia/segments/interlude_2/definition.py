@@ -7,15 +7,14 @@ from abjad import new
 
 segment_maker = ersilia.ErsiliaSegmentMaker(
     desired_duration_in_seconds=5,
-    name='Repeat x5',
-    permitted_time_signatures=[
-        (2, 4),
-        ],
+    name='Interlude ii (x5)',
+    permitted_time_signatures=ersilia.permitted_time_signatures,
     repeat=True,
     )
 
 ### GUITAR ###
 
+# tremolo
 segment_maker.add_setting(
     timespan_maker=new(
         ersilia.sustained_timespan_maker,

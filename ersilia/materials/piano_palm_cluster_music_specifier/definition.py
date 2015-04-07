@@ -14,7 +14,7 @@ piano_palm_cluster_music_specifier = consort.MusicSpecifier(
             ),
         ),
     labels='pedaled',
-    pitch_handler=consort.PitchClassPitchHandler(
+    pitch_handler=consort.AbsolutePitchHandler(
         logical_tie_expressions=(
             consort.KeyClusterExpression(),
             consort.KeyClusterExpression(),

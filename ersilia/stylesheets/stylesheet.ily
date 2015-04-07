@@ -461,6 +461,7 @@ afterGraceFraction = #(cons 1023 1024)
 
         autoBeaming = ##f
         doubleRepeatType = #":|.|:"
+        pedalSustainStyle = #'mixed
         proportionalNotationDuration = #(ly:make-moment 1 16)
         tupletFullLength = ##t
     }

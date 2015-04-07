@@ -6,7 +6,7 @@ from abjad.tools import scoretools
 from abjad.tools import selectortools
 
 
-piano_pointillist_music_specifier = consort.MusicSpecifier(
+guitar_pointillist_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
         dynamic_expressions=consort.DynamicExpression(
             dynamic_tokens="f mf ff",
@@ -18,10 +18,8 @@ piano_pointillist_music_specifier = consort.MusicSpecifier(
                 [0]
             ),
         ),
-    labels='pedaled',
     pitch_handler=consort.AbsolutePitchHandler(
         logical_tie_expressions=(
-            consort.ChordExpression([0, 3, 9, 14]),
             None,
             consort.ChordExpression([0, 3]),
             ),
@@ -35,5 +33,5 @@ piano_pointillist_music_specifier = consort.MusicSpecifier(
             ),
         denominators=[16],
         extra_counts_per_division=(0, 0, 1, 2, 0, 1),
-        ),
+        )
     )

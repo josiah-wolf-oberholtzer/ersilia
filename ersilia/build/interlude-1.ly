@@ -1,11 +1,11 @@
     \context Score = "Ersilia Score" \with {
-        currentBarNumber = #31
+        currentBarNumber = #30
     } <<
         \tag #'time
         \repeat volta 2
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 4/4
+                \time 2/4
                 \tempo 4=96
                 \mark \markup {
                     \concat
@@ -18,17 +18,27 @@
                             " "
                             \fontsize
                                 #-3
-                                "Repeat x4"
+                                "Interlude i (x4)"
                         }
                     }
-                s1 * 1
+                s1 * 1/2
             }
             {
-                s1 * 1
+                s1 * 1/2
             }
             {
-                \time 6/8
-                s1 * 3/4
+                s1 * 1/2
+            }
+            {
+                s1 * 1/2
+            }
+            {
+                \time 5/8
+                s1 * 5/8
+            }
+            {
+                \time 2/4
+                s1 * 1/2
             }
         }
         \context WindSectionStaffGroup = "Wind Section Staff Group" <<
@@ -42,7 +52,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -50,7 +60,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -58,7 +68,31 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/4
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -75,7 +109,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -83,7 +117,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -91,7 +125,31 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/4
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -108,7 +166,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -116,7 +174,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -124,7 +182,31 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/4
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -141,7 +223,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -149,7 +231,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -157,7 +239,31 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/4
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -177,7 +283,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -185,7 +291,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -193,7 +299,31 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/4
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -206,26 +336,33 @@
                     \context Voice = "Guitar Voice" {
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1
-                                \stopStaff
-                                \startStaff
+                                r4
                             }
+                        }
+                        {
+                            {
+                                <d' f'>4 :32 \mp \>
+                            }
+                            {
+                                <d' f'>2 :32 \pp \repeatTie \<
+                            }
+                            {
+                                <d' f'>2 :32 \mf \repeatTie \>
+                            }
+                            {
+                                <d' f'>2 :32 \p \repeatTie
+                            }
+                            {
+                                <d' f'>4. :32 \repeatTie \>
+                                <d' f'>4 :32 \ppp \repeatTie
+                            }
+                        }
+                        {
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 3/4
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -244,7 +381,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -252,7 +389,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -260,7 +397,31 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/4
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -277,7 +438,7 @@
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 1
+                                    R1 * 1/2
                                     \stopStaff
                                     \startStaff
                                 }
@@ -285,7 +446,7 @@
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 1
+                                    R1 * 1/2
                                     \stopStaff
                                     \startStaff
                                 }
@@ -293,7 +454,31 @@
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 3/4
+                                    R1 * 1/2
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 1/2
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 5/8
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 1/2
                                     \stopStaff
                                     \startStaff
                                 }
@@ -309,7 +494,7 @@
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 1
+                                    R1 * 1/2
                                     \stopStaff
                                     \startStaff
                                 }
@@ -317,7 +502,7 @@
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 1
+                                    R1 * 1/2
                                     \stopStaff
                                     \startStaff
                                 }
@@ -325,7 +510,31 @@
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 3/4
+                                    R1 * 1/2
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 1/2
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 5/8
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 1/2
                                     \stopStaff
                                     \startStaff
                                 }
@@ -335,13 +544,22 @@
                     \context Dynamics = "Piano Pedals Voice" {
                         {
                             {
-                                R1 * 1
+                                R1 * 1/2
                             }
                             {
-                                R1 * 1
+                                R1 * 1/2
                             }
                             {
-                                R1 * 3/4
+                                R1 * 1/2
+                            }
+                            {
+                                R1 * 1/2
+                            }
+                            {
+                                R1 * 5/8
+                            }
+                            {
+                                R1 * 1/2
                             }
                         }
                     }
@@ -358,7 +576,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -366,7 +584,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -374,7 +592,31 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/4
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -390,7 +632,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -398,7 +640,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -406,7 +648,31 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/4
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -426,7 +692,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -434,7 +700,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -442,7 +708,31 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/4
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -459,7 +749,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -467,7 +757,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -475,7 +765,31 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/4
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -492,7 +806,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -500,7 +814,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -508,7 +822,31 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/4
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -526,7 +864,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -534,7 +872,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -542,7 +880,31 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/4
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -558,7 +920,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -566,7 +928,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -574,7 +936,31 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/4
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }

@@ -3,8 +3,6 @@ from abjad import *
 
 
 permitted_time_signatures = indicatortools.TimeSignatureInventory([
-    (3, 8),
-    (4, 8),
     (5, 8),
     (6, 8),
     (7, 8),

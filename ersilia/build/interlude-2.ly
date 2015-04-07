@@ -1,5 +1,5 @@
     \context Score = "Ersilia Score" \with {
-        currentBarNumber = #72
+        currentBarNumber = #99
     } <<
         \tag #'time
         \repeat volta 2
@@ -18,7 +18,7 @@
                             " "
                             \fontsize
                                 #-3
-                                "Repeat x5"
+                                "Interlude ii (x5)"
                         }
                     }
                 s1 * 1
@@ -163,20 +163,21 @@
                     \context Voice = "Guitar Voice" {
                         {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1
-                                \stopStaff
-                                \startStaff
+                                r4
+                            }
+                        }
+                        {
+                            {
+                                <d' f'>2. :32 \mp \>
                             }
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                <d' f'>4 :32 \pp \repeatTie \>
+                                <d' f'>8 :64 \ppp \repeatTie
+                            }
+                        }
+                        {
+                            {
+                                r8
                             }
                         }
                     }
