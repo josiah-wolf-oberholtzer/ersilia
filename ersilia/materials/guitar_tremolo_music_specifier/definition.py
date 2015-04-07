@@ -7,11 +7,11 @@ from abjad.tools import spannertools
 
 guitar_tremolo_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
-        dynamic_expressions=consort.DynamicExpression(
-            dynamic_tokens='pp mf p p mf mf pp',
-            start_dynamic_tokens='mp ppp',
-            stop_dynamic_tokens='ppp mp',
-            ),
+        #dynamic_expressions=consort.DynamicExpression(
+        #    dynamic_tokens='pp mf p p mf mf pp',
+        #    start_dynamic_tokens='mp ppp',
+        #    stop_dynamic_tokens='ppp mp',
+        #    ),
         stem_tremolo_spanner=consort.AttachmentExpression(
             attachments=spannertools.StemTremoloSpanner(),
             selector=selectortools.select_pitched_runs(),

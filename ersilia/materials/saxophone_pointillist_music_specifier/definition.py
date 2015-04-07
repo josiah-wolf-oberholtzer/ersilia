@@ -7,13 +7,11 @@ from abjad.tools import selectortools
 
 saxophone_pointillist_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
-        dynamic_expressions=consort.DynamicExpression(
-            dynamic_tokens="f mf ff",
-            ),
-        staccato=consort.AttachmentExpression(
-            attachments=[
-                indicatortools.Articulation('stopped'),
-                ],
+        #dynamic_expressions=consort.DynamicExpression(
+        #    dynamic_tokens="f mf ff",
+        #    ),
+        stopped=consort.AttachmentExpression(
+            attachments=indicatortools.Articulation('stopped'),
             selector=selectortools.Selector()
                 .by_logical_tie(pitched=True)
                 [0]
