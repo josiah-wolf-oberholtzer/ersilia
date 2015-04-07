@@ -9,14 +9,20 @@ from abjad.tools import spannertools
 import consort
 
 
-piano_tremolo_music_specifier = consort.tools.MusicSpecifier(
+guitar_tremolo_music_specifier = consort.tools.MusicSpecifier(
     attachment_handler=consort.tools.AttachmentHandler(
         dynamic_expressions=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [
                     consort.tools.DynamicExpression(
                         dynamic_tokens=datastructuretools.CyclicTuple(
-                            ['p', 'ppp', 'p', 'ppp', 'mf', 'p']
+                            ['pp', 'mf', 'p', 'mf', 'ppp']
+                            ),
+                        start_dynamic_tokens=datastructuretools.CyclicTuple(
+                            ['mp']
+                            ),
+                        stop_dynamic_tokens=datastructuretools.CyclicTuple(
+                            ['mp']
                             ),
                         transitions=datastructuretools.CyclicTuple(
                             [None]
@@ -46,32 +52,14 @@ piano_tremolo_music_specifier = consort.tools.MusicSpecifier(
                 ),
             ),
         ),
-    labels=('pedaled',),
     pitch_handler=consort.tools.AbsolutePitchHandler(
         logical_tie_expressions=datastructuretools.CyclicTuple(
             [
                 consort.tools.ChordExpression(
                     chord_expr=pitchtools.IntervalSegment(
                         (
-                            pitchtools.NumberedInterval(-7),
-                            pitchtools.NumberedInterval(-3),
                             pitchtools.NumberedInterval(0),
-                            pitchtools.NumberedInterval(5),
-                            pitchtools.NumberedInterval(6),
-                            pitchtools.NumberedInterval(12),
-                            ),
-                        item_class=pitchtools.NumberedInterval,
-                        ),
-                    ),
-                consort.tools.ChordExpression(
-                    chord_expr=pitchtools.IntervalSegment(
-                        (
-                            pitchtools.NumberedInterval(-7),
-                            pitchtools.NumberedInterval(-3),
-                            pitchtools.NumberedInterval(0),
-                            pitchtools.NumberedInterval(1),
-                            pitchtools.NumberedInterval(5),
-                            pitchtools.NumberedInterval(12),
+                            pitchtools.NumberedInterval(3),
                             ),
                         item_class=pitchtools.NumberedInterval,
                         ),

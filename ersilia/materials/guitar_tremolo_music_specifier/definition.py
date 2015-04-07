@@ -5,24 +5,22 @@ from abjad.tools import selectortools
 from abjad.tools import spannertools
 
 
-piano_tremolo_music_specifier = consort.MusicSpecifier(
+guitar_tremolo_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
         dynamic_expressions=consort.DynamicExpression(
-            dynamic_tokens='p ppp p ppp mf p',
+            dynamic_tokens='pp mf p p mf mf pp',
+            start_dynamic_tokens='mp ppp',
+            stop_dynamic_tokens='ppp mp',
             ),
         stem_tremolo_spanner=consort.AttachmentExpression(
             attachments=spannertools.StemTremoloSpanner(),
             selector=selectortools.select_pitched_runs(),
             ),
         ),
-    labels='pedaled',
     pitch_handler=consort.AbsolutePitchHandler(
         logical_tie_expressions=(
             consort.ChordExpression(
-                chord_expr=(-7, -3, 0, 5, 6, 12),
-                ),
-            consort.ChordExpression(
-                chord_expr=(-7, -3, 0, 1, 5, 12),
+                chord_expr=(0, 3),
                 ),
             ),
         pitch_specifier=consort.PitchSpecifier(
