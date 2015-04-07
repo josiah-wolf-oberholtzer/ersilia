@@ -1,11 +1,6 @@
 # -*- encoding: utf-8 -*-
-from abjad import iterate
-from abjad import detach
-from abjad import attach
-from abjad import inspect_
 from abjad.tools import durationtools
 from abjad.tools import markuptools
-from abjad.tools import spannertools
 import consort
 
 
@@ -21,6 +16,7 @@ class ErsiliaSegmentMaker(consort.SegmentMaker):
         self,
         desired_duration_in_seconds=None,
         discard_final_silence=None,
+        is_annotated=None,
         name=None,
         permitted_time_signatures=None,
         repeat=None,
@@ -34,6 +30,7 @@ class ErsiliaSegmentMaker(consort.SegmentMaker):
             self,
             desired_duration_in_seconds=desired_duration_in_seconds,
             discard_final_silence=discard_final_silence,
+            is_annotated=is_annotated,
             name=name,
             permitted_time_signatures=permitted_time_signatures,
             repeat=repeat,
