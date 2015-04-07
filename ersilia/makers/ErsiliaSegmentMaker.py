@@ -43,29 +43,6 @@ class ErsiliaSegmentMaker(consort.SegmentMaker):
             timespan_quantization=durationtools.Duration(1, 8),
             )
 
-    ### PUBLIC METHODS ###
-
-    def configure_score(self):
-        self.add_time_signature_context()
-        self.attach_tempo()
-        self.attach_rehearsal_mark()
-        self.attach_final_bar_line()
-        self.set_bar_number()
-        self.postprocess_grace_containers()
-        self.postprocess_ties()
-
-    def postprocess_ties(self):
-        for component in iterate(self.score).depth_first():
-            if not inspect_(component).has_spanner(spannertools.Tie):
-                continue
-            tie = inspect_(component).get_spanner(spannertools.Tie)
-            if component != tie[0]:
-                continue
-            components = tie.components
-            detach(tie)
-            tie = spannertools.Tie(use_messiaen_style_ties=True)
-            attach(tie, components)
-
     ### PUBLIC PROPERTIES ###
 
     @property
