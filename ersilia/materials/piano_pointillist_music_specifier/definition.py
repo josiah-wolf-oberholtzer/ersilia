@@ -18,7 +18,7 @@ piano_pointillist_music_specifier = consort.MusicSpecifier(
                 [0]
             ),
         ),
-    labels='pedaled',
+    labels=['pedaled'],
     pitch_handler=consort.AbsolutePitchHandler(
         logical_tie_expressions=(
             consort.ChordExpression([0, 3, 9, 14]),

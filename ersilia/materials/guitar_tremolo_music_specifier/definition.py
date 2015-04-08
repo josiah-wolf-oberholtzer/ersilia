@@ -17,6 +17,7 @@ guitar_tremolo_music_specifier = consort.MusicSpecifier(
             selector=selectortools.select_pitched_runs(),
             ),
         ),
+    color='red',
     pitch_handler=consort.AbsolutePitchHandler(
         logical_tie_expressions=(
             consort.ChordExpression(

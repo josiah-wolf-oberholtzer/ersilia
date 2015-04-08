@@ -2,7 +2,9 @@
 import consort
 from abjad.tools import indicatortools
 from abjad.tools import rhythmmakertools
+from abjad.tools import scoretools
 from abjad.tools import selectortools
+from abjad.tools import spannertools
 
 
 saxophone_pointillist_music_specifier = consort.MusicSpecifier(
@@ -13,14 +15,16 @@ saxophone_pointillist_music_specifier = consort.MusicSpecifier(
         stopped=consort.AttachmentExpression(
             attachments=indicatortools.Articulation('stopped'),
             selector=selectortools.Selector()
-                .by_logical_tie(pitched=True)
+                .by_leaves()
+                .by_run(scoretools.Note)
                 [0]
             ),
-        ),
-    pitch_handler=consort.AbsolutePitchHandler(
-        logical_tie_expressions=(
-            None,
-            consort.ChordExpression([0, 3]),
+        slur=consort.AttachmentExpression(
+            attachments=spannertools.Slur(),
+            selector=selectortools.Selector()
+                .by_leaves()
+                .by_run(scoretools.Note)
+                .by_length('>', 1)
             ),
         ),
     rhythm_maker=rhythmmakertools.TaleaRhythmMaker(
