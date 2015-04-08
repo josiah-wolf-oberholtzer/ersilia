@@ -5,20 +5,23 @@ from abjad.tools import spannertools
 from ersilia.materials import abbreviations
 
 
-piano_glissando_music_specifier = consort.MusicSpecifier(
+piano_string_glissando_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
+        clef_spanner=consort.ClefSpanner('percussion'),
         #dynamic_expressions=consort.DynamicExpression(),
         glissando=spannertools.Glissando(),
-        keys_spanner=(
-            abbreviations.chromatic_keys_spanner,
-            abbreviations.white_keys_spanner,
-            abbreviations.white_keys_spanner,
+        staff_lines_spanner=spannertools.StaffLinesSpanner(
+            lines=[-4, 4],
+            overrides={
+                'note_head__style': 'cross',
+                }
             ),
+        text_spanner=abbreviations.make_text_spanner('inside'),
         ),
     color=None,
     labels=[],
     pitch_handler=consort.AbsolutePitchHandler(
-        pitch_specifier="c' f' c'' f'' c''' c'' c' c'''",
+        pitch_specifier="f c' g' c' f g' c' f' c' g' f",
         ),
     rhythm_maker=consort.CompositeRhythmMaker(
         last=rhythmmakertools.IncisedRhythmMaker(

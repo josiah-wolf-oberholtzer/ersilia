@@ -213,10 +213,23 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             c'16 -\staccato \f \startTextSpan \> [
+                                ^ \markup {
+                                    \vcenter
+                                        \box
+                                            \pad-around
+                                                #0.5
+                                                \italic
+                                                    \concat
+                                                        {
+                                                            \vstrut
+                                                            test
+                                                        }
+                                    }
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 1
                             c'16 -\staccato
@@ -236,6 +249,7 @@
                             c'16 -\staccato \p ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
                         }
@@ -318,12 +332,14 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             c'4. :32 -\accent \fp \startTextSpan
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
                         }
@@ -470,6 +486,7 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
@@ -496,6 +513,7 @@
                             c'16 * 55/32 -\staccato \p ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
                         }
@@ -795,6 +813,7 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
@@ -815,6 +834,7 @@
                             c'16 * 109/64 -\staccato \p ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
                         }
@@ -992,6 +1012,7 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
@@ -1012,6 +1033,7 @@
                             c'16 * 109/64 -\staccato \p ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
                         }
@@ -1296,6 +1318,7 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
@@ -1322,6 +1345,7 @@
                             c'16 * 55/32 -\staccato \p ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
                         }
@@ -1369,12 +1393,14 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             c'2 :32 -\accent \fp \startTextSpan
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
                         }
@@ -1466,13 +1492,26 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            r8 -\staccato \f \startTextSpan \> [
+                            r8 -\staccato \startTextSpan [
+                                ^ \markup {
+                                    \vcenter
+                                        \box
+                                            \pad-around
+                                                #0.5
+                                                \italic
+                                                    \concat
+                                                        {
+                                                            \vstrut
+                                                            test
+                                                        }
+                                    }
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            c'16 -\staccato \f \>
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             r8 -\staccato
@@ -1484,11 +1523,12 @@
                             c'16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            c'16 -\staccato \p
                             \set stemLeftBeamCount = 2
-                            r16 -\staccato \p ]
+                            r16 -\staccato ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
                         }
@@ -1569,6 +1609,7 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
@@ -1589,6 +1630,7 @@
                             c'16 * 109/64 -\staccato \p ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
                         }
@@ -1639,12 +1681,14 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             c'4. :32 -\accent \fp \startTextSpan
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
                         }
@@ -6900,10 +6944,23 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             c'16 -\staccato \f \startTextSpan \> [
+                                ^ \markup {
+                                    \vcenter
+                                        \box
+                                            \pad-around
+                                                #0.5
+                                                \italic
+                                                    \concat
+                                                        {
+                                                            \vstrut
+                                                            test
+                                                        }
+                                    }
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16 -\staccato
@@ -6920,6 +6977,7 @@
                             c'16 -\staccato \p ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
                         }
@@ -7120,6 +7178,7 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
@@ -7140,6 +7199,7 @@
                             c'16 * 109/64 -\staccato \p ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
                         }
@@ -7380,10 +7440,23 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             c'16 -\staccato \f \startTextSpan \> [
+                                ^ \markup {
+                                    \vcenter
+                                        \box
+                                            \pad-around
+                                                #0.5
+                                                \italic
+                                                    \concat
+                                                        {
+                                                            \vstrut
+                                                            test
+                                                        }
+                                    }
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             c'16 -\staccato
@@ -7398,11 +7471,12 @@
                             c'16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            c'16 -\staccato \p
                             \set stemLeftBeamCount = 2
-                            r16 -\staccato \p ]
+                            r16 -\staccato ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "alto"
                         }
@@ -7545,10 +7619,23 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             c'16 -\staccato \f \startTextSpan \> [
+                                ^ \markup {
+                                    \vcenter
+                                        \box
+                                            \pad-around
+                                                #0.5
+                                                \italic
+                                                    \concat
+                                                        {
+                                                            \vstrut
+                                                            test
+                                                        }
+                                    }
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 1
                             c'16 -\staccato
@@ -7562,6 +7649,7 @@
                             c'16 -\staccato \p ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "alto"
                         }
@@ -7645,6 +7733,7 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
@@ -7671,6 +7760,7 @@
                             c'16 * 55/32 -\staccato \p ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "alto"
                         }
@@ -7715,6 +7805,7 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
@@ -7722,6 +7813,7 @@
                             c'4 :32 \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "alto"
                         }
@@ -7963,10 +8055,23 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             c'16 -\staccato \f \startTextSpan \> [
+                                ^ \markup {
+                                    \vcenter
+                                        \box
+                                            \pad-around
+                                                #0.5
+                                                \italic
+                                                    \concat
+                                                        {
+                                                            \vstrut
+                                                            test
+                                                        }
+                                    }
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 1
                             r16 -\staccato
@@ -7980,6 +8085,7 @@
                             c'16 -\staccato \p ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "bass"
                         }
@@ -8066,6 +8172,7 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
@@ -8086,6 +8193,7 @@
                             c'16 * 109/64 -\staccato \p ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "bass"
                         }
@@ -8130,6 +8238,7 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
@@ -8137,6 +8246,7 @@
                             c'4 :32 \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "bass"
                         }
@@ -8289,6 +8399,7 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
@@ -8309,6 +8420,7 @@
                             c'16 * 109/64 -\staccato \p ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "bass"
                         }
@@ -8359,12 +8471,14 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             c'4. :32 -\accent \fp \startTextSpan
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "bass"
                         }

@@ -65,7 +65,7 @@ segment_maker.add_setting(
 
 # shakers
 shaker_music_specifiers = (
-    ersilia.shaker_reiterated_music_specifier,
+    ersilia.shaker_sporadic_music_specifier,
     ersilia.shaker_decelerando_music_specifier,
     ersilia.shaker_tremolo_music_specifier,
     )

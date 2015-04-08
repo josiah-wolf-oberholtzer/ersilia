@@ -66,3 +66,11 @@ def make_text_spanner(text):
     markup = markup.italic().pad_around(0.5).box()
     text_spanner = consort.ComplexTextSpanner(markup=markup)
     return text_spanner
+
+
+test_markup = markuptools.Markup.concat([
+    markuptools.Markup(r'\vstrut'),
+    markuptools.Markup('test'),
+    ])
+test_markup = test_markup.italic().pad_around(0.5).box().vcenter()
+test_markup = markuptools.Markup(test_markup, Up)

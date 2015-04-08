@@ -8,9 +8,7 @@ from abjad.tools import selectortools
 
 piano_pointillist_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
-        #dynamic_expressions=consort.DynamicExpression(
-        #    dynamic_tokens="f mf ff",
-        #    ),
+        #dynamic_expressions=consort.DynamicExpression(),
         staccato=consort.AttachmentExpression(
             attachments=indicatortools.Articulation('staccato'),
             selector=selectortools.Selector()

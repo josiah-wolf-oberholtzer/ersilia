@@ -8,6 +8,7 @@ from abjad.tools import rhythmmakertools
 
 piano_palm_cluster_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
+        #dynamic_expressions=consort.DynamicExpression(),
         slur=consort.AttachmentExpression(
             attachments=spannertools.Slur(),
             selector=selectortools.select_pitched_runs(),
