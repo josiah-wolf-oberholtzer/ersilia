@@ -1,15 +1,24 @@
 # -*- encoding: utf-8 -*-
 import consort
 from abjad.tools import durationtools
+from abjad.tools import indicatortools
 from abjad.tools import rhythmmakertools
 from ersilia.materials import abbreviations
 
 
 shaker_decelerando_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
+        staccati=indicatortools.Articulation('staccato'),
+        dynamic_expression=consort.DynamicExpression(
+            start_dynamic_tokens='f',
+            stop_dynamic_tokens='p',
+            ),
         percussion_staff=abbreviations.percussion_staff,
+        text_spanner=abbreviations.make_text_spanner('shaker'),
         ),
-    rhythm_maker=rhythmmakertools.TaleaRhythmMaker(
+    color='blue',
+    labels=['shakers'],
+    rhythm_maker=rhythmmakertools.AccelerandoRhythmMaker(
         beam_specifier=rhythmmakertools.BeamSpecifier(
             use_feather_beams=True,
             ),
