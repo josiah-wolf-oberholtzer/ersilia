@@ -25,7 +25,12 @@ white_keys_spanner = spannertools.make_solid_text_spanner_with_nib(
 percussion_staff = consort.AttachmentExpression(
     attachments=[
         [
-            spannertools.StaffLinesSpanner([0]),
+            spannertools.StaffLinesSpanner(
+                lines=[0],
+                overrides={
+                    'note_head__style': 'cross',
+                    },
+                ),
             consort.ClefSpanner('percussion'),
             ],
         ],
@@ -51,3 +56,13 @@ pitch_specifier_two = consort.PitchSpecifier(
         ],
     ratio=[1, 2, 1, 1],
     )
+
+
+def make_text_spanner(text):
+    markup = markuptools.Markup.concat([
+        markuptools.Markup(r'\vstrut'),
+        markuptools.Markup(text),
+        ])
+    markup = markup.italic().pad_around(0.5).box()
+    text_spanner = consort.ComplexTextSpanner(markup=markup)
+    return text_spanner
