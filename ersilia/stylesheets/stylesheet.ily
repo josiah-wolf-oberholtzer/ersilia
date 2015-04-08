@@ -1,11 +1,11 @@
+\include "scheme.ily"
 \include "default-instrument-names.ily"
 
 #(set-default-paper-size "11x17" 'portrait)
 #(set-global-staff-size 12)
 
-afterGraceFraction = #(cons 1023 1024)
-
 \paper {
+    annotate-spacing = ##t
     bottom-margin = 10\mm
     left-margin = 30\mm
     right-margin = 10\mm
@@ -31,7 +31,7 @@ afterGraceFraction = #(cons 1023 1024)
     print-first-page-number = ##f
     print-page-number = ##t
     max-systems-per-page = 1
-    page-breaking = #ly:optimal-breaking
+    page-breaking = #ly:minimal-breaking
     ragged-bottom = ##f
     ragged-last-bottom = ##t
     markup-system-spacing = #'(
@@ -130,7 +130,6 @@ afterGraceFraction = #(cons 1023 1024)
         \remove Bar_engraver
         \override DynamicLineSpanner.staff-padding = 11.5
         \override DynamicText.self-alignment-X = -1
-        \override Hairpin.bound-padding = 1.5
     }
 
     %%% TIME SIGNATURE CONTEXT %%%
@@ -210,8 +209,8 @@ afterGraceFraction = #(cons 1023 1024)
         instrumentName = \fluteName
         shortInstrumentName = \shortFluteName
         \override Beam.positions = #'(-7 . -7)
-        \override DynamicLineSpanner.staff-padding = 10
-        \override TupletBracket.staff-padding = 6
+        %\override DynamicLineSpanner.staff-padding = 10
+        %\override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -464,14 +463,12 @@ afterGraceFraction = #(cons 1023 1024)
         \override Beam.length-fraction = 1.5
         \override Glissando.breakable = ##t
         \override Glissando.thickness = 3
-        \override GraceSpacing.common-shortest-duration = #(ly:make-moment 1 8)
         \override Hairpin.bound-padding = 1.5
         \override NoteCollision.merge-differently-dotted = ##t
         \override NoteColumn.ignore-collision = ##t
         \shape #'((-1.5 . 0) (-1 . 0) (-0.5 . 0) (0 . 0)) RepeatTie                 
         \override RepeatTie.X-extent = ##f
-        \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1 64)
-        \override SpacingSpanner.strict-grace-spacing = ##f
+        \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##f
         \override SpacingSpanner.uniform-stretching = ##t
         \override StaffSymbol.color = #(x11-color 'grey50)
@@ -487,6 +484,7 @@ afterGraceFraction = #(cons 1023 1024)
         \override SustainPedalLineSpanner.outside-staff-padding = 2
         \override SustainPedalLineSpanner.to-barline = ##t
         \override SystemStartSquare.thickness = 2
+        \override TextSpanner.padding = 1
         \override TupletBracket.breakable = ##t
         \override TupletBracket.direction = #down
         \override TupletBracket.full-length-to-extent = ##f
@@ -506,11 +504,10 @@ afterGraceFraction = #(cons 1023 1024)
             (padding . 5)
             (stretchability . 20)
             )
-
         autoBeaming = ##f
-        doubleRepeatType = #":|.|:"
+        %doubleRepeatType = #":|.|:"
         pedalSustainStyle = #'mixed
-        proportionalNotationDuration = #(ly:make-moment 1 16)
+        proportionalNotationDuration = #(ly:make-moment 1 24)
         tupletFullLength = ##t
     }
 }
