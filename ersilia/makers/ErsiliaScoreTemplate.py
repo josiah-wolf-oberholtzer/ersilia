@@ -63,7 +63,7 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                         \context Voice = "Piano Pitch Pipe Voice" {
                         }
                     }
-                    \new PianoStaff <<
+                    \context PianoStaff = "Piano Staff" <<
                         \context PianoUpperStaff = "Piano Upper Staff" {
                             \clef "treble"
                             \context Voice = "Piano Upper Voice" {
