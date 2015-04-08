@@ -5,6 +5,7 @@ from abjad.tools import rhythmmakertools
 
 piano_pedals_music_setting = consort.MusicSetting(
     timespan_maker=consort.DependentTimespanMaker(
+        hysteresis=(1, 4),
         include_inner_starts=True,
         include_inner_stops=False,
         inspect_music=True,
