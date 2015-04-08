@@ -10,8 +10,10 @@ from abjad.tools import rhythmmakertools
 
 segment_maker = ersilia.ErsiliaSegmentMaker(
     desired_duration_in_seconds=abjad.Multiplier(2, 20) * 480,
+    is_annotated=True,
     name='Scene IV',
     permitted_time_signatures=ersilia.permitted_time_signatures,
+    settings=[ersilia.piano_pedals_music_setting],
     tempo=abjad.Tempo((1, 4), 96),
     )
 

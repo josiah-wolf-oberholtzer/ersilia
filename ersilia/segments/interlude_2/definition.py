@@ -7,9 +7,11 @@ from abjad import new
 
 segment_maker = ersilia.ErsiliaSegmentMaker(
     desired_duration_in_seconds=5,
+    is_annotated=True,
     name='Interlude ii (x5)',
     permitted_time_signatures=ersilia.permitted_time_signatures,
     repeat=True,
+    settings=[ersilia.piano_pedals_music_setting],
     )
 
 ### GUITAR ###

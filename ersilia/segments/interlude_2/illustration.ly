@@ -40,11 +40,11 @@
         \context WindSectionStaffGroup = "Wind Section Staff Group" <<
             \tag #'flute
             \repeat volta 2
-            \context FluteStaff = "Flute Staff" {
+            \context FluteStaff = "Flute Staff" <<
                 \clef "treble"
                 \context Voice = "Flute Voice" {
                     {
-                        % Measure 99
+                        % [Flute Voice] Measure 99
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -53,7 +53,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 100
+                        % [Flute Voice] Measure 100
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -64,14 +64,24 @@
                         }
                     }
                 }
-            }
+                \new AnnotatedDivisionsVoice {
+                    {
+                        s1 * 3/2
+                    }
+                }
+                \new AnnotatedPhrasesVoice {
+                    {
+                        s1 * 3/2
+                    }
+                }
+            >>
             \tag #'oboe
             \repeat volta 2
-            \context OboeStaff = "Oboe Staff" {
+            \context OboeStaff = "Oboe Staff" <<
                 \clef "treble"
                 \context Voice = "Oboe Voice" {
                     {
-                        % Measure 99
+                        % [Oboe Voice] Measure 99
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -80,7 +90,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 100
+                        % [Oboe Voice] Measure 100
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -91,14 +101,24 @@
                         }
                     }
                 }
-            }
+                \new AnnotatedDivisionsVoice {
+                    {
+                        s1 * 3/2
+                    }
+                }
+                \new AnnotatedPhrasesVoice {
+                    {
+                        s1 * 3/2
+                    }
+                }
+            >>
             \tag #'clarinet
             \repeat volta 2
-            \context ClarinetStaff = "Clarinet Staff" {
+            \context ClarinetStaff = "Clarinet Staff" <<
                 \clef "treble"
                 \context Voice = "Clarinet Voice" {
                     {
-                        % Measure 99
+                        % [Clarinet Voice] Measure 99
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -107,7 +127,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 100
+                        % [Clarinet Voice] Measure 100
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -118,14 +138,24 @@
                         }
                     }
                 }
-            }
+                \new AnnotatedDivisionsVoice {
+                    {
+                        s1 * 3/2
+                    }
+                }
+                \new AnnotatedPhrasesVoice {
+                    {
+                        s1 * 3/2
+                    }
+                }
+            >>
             \tag #'saxophone
             \repeat volta 2
-            \context SaxophoneStaff = "Saxophone Staff" {
+            \context SaxophoneStaff = "Saxophone Staff" <<
                 \clef "treble"
                 \context Voice = "Saxophone Voice" {
                     {
-                        % Measure 99
+                        % [Saxophone Voice] Measure 99
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -134,7 +164,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 100
+                        % [Saxophone Voice] Measure 100
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -145,17 +175,27 @@
                         }
                     }
                 }
-            }
+                \new AnnotatedDivisionsVoice {
+                    {
+                        s1 * 3/2
+                    }
+                }
+                \new AnnotatedPhrasesVoice {
+                    {
+                        s1 * 3/2
+                    }
+                }
+            >>
         >>
         \context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
             \tag #'guitar
             \context GuitarStaffGroup = "Guitar Staff Group" <<
                 \repeat volta 2
-                \context PitchPipes = "Guitar Pitch Pipe Staff" {
+                \context PitchPipes = "Guitar Pitch Pipe Staff" <<
                     \clef "percussion"
                     \context Voice = "Guitar Pitch Pipe Voice" {
                         {
-                            % Measure 99
+                            % [Guitar Pitch Pipe Voice] Measure 99
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -164,7 +204,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 100
+                            % [Guitar Pitch Pipe Voice] Measure 100
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -175,25 +215,35 @@
                             }
                         }
                     }
-                }
+                    \new AnnotatedDivisionsVoice {
+                        {
+                            s1 * 3/2
+                        }
+                    }
+                    \new AnnotatedPhrasesVoice {
+                        {
+                            s1 * 3/2
+                        }
+                    }
+                >>
                 \repeat volta 2
-                \context GuitarStaff = "Guitar Staff" {
+                \context GuitarStaff = "Guitar Staff" <<
                     \clef "treble"
                     \context Voice = "Guitar Voice" {
                         {
-                            % Measure 99
+                            % [Guitar Voice] Measure 99
                             {
                                 r4
                             }
                         }
                         {
                             {
-                                <d' f'>2. :32 \mp \>
+                                <d' f'>2. :32
                             }
-                            % Measure 100
+                            % [Guitar Voice] Measure 100
                             {
-                                <d' f'>4 :32 \pp \repeatTie \>
-                                <d' f'>8 :64 \ppp \repeatTie
+                                <d' f'>4 :32 \repeatTie
+                                <d' f'>8 :64 \repeatTie
                             }
                         }
                         {
@@ -202,16 +252,44 @@
                             }
                         }
                     }
-                }
+                    \new AnnotatedDivisionsVoice {
+                        {
+                            s1 * 1/4
+                        }
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            c'''1
+                        }
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 3/8 {
+                            c'''1
+                        }
+                        {
+                            s1 * 1/8
+                        }
+                    }
+                    \new AnnotatedPhrasesVoice {
+                        {
+                            s1 * 1/4
+                        }
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 9/8 {
+                            c'''1
+                        }
+                        {
+                            s1 * 1/8
+                        }
+                    }
+                >>
             >>
             \tag #'piano
             \context PianoStaffGroup = "Piano Staff Group" <<
                 \repeat volta 2
-                \context PitchPipes = "Piano Pitch Pipe Staff" {
+                \context PitchPipes = "Piano Pitch Pipe Staff" <<
                     \clef "percussion"
                     \context Voice = "Piano Pitch Pipe Voice" {
                         {
-                            % Measure 99
+                            % [Piano Pitch Pipe Voice] Measure 99
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -220,7 +298,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 100
+                            % [Piano Pitch Pipe Voice] Measure 100
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -231,14 +309,24 @@
                             }
                         }
                     }
-                }
+                    \new AnnotatedDivisionsVoice {
+                        {
+                            s1 * 3/2
+                        }
+                    }
+                    \new AnnotatedPhrasesVoice {
+                        {
+                            s1 * 3/2
+                        }
+                    }
+                >>
                 \context PianoStaff = "Piano Staff" <<
                     \repeat volta 2
-                    \context PianoUpperStaff = "Piano Upper Staff" {
+                    \context PianoUpperStaff = "Piano Upper Staff" <<
                         \clef "treble"
                         \context Voice = "Piano Upper Voice" {
                             {
-                                % Measure 99
+                                % [Piano Upper Voice] Measure 99
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -247,7 +335,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
-                                % Measure 100
+                                % [Piano Upper Voice] Measure 100
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -258,13 +346,23 @@
                                 }
                             }
                         }
-                    }
+                        \new AnnotatedDivisionsVoice {
+                            {
+                                s1 * 3/2
+                            }
+                        }
+                        \new AnnotatedPhrasesVoice {
+                            {
+                                s1 * 3/2
+                            }
+                        }
+                    >>
                     \repeat volta 2
-                    \context PianoLowerStaff = "Piano Lower Staff" {
+                    \context PianoLowerStaff = "Piano Lower Staff" <<
                         \clef "bass"
                         \context Voice = "Piano Lower Voice" {
                             {
-                                % Measure 99
+                                % [Piano Lower Voice] Measure 99
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -273,7 +371,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
-                                % Measure 100
+                                % [Piano Lower Voice] Measure 100
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -284,14 +382,24 @@
                                 }
                             }
                         }
-                    }
+                        \new AnnotatedDivisionsVoice {
+                            {
+                                s1 * 3/2
+                            }
+                        }
+                        \new AnnotatedPhrasesVoice {
+                            {
+                                s1 * 3/2
+                            }
+                        }
+                    >>
                     \context Dynamics = "Piano Pedals Voice" {
                         {
-                            % Measure 99
+                            % [Piano Pedals Voice] Measure 99
                             {
                                 R1 * 1
                             }
-                            % Measure 100
+                            % [Piano Pedals Voice] Measure 100
                             {
                                 R1 * 1/2
                             }
@@ -302,11 +410,11 @@
             \tag #'percussion
             \context PercussionStaffGroup = "Percussion Staff Group" <<
                 \repeat volta 2
-                \context PitchPipes = "Percussion Pitch Pipe Staff" {
+                \context PitchPipes = "Percussion Pitch Pipe Staff" <<
                     \clef "percussion"
                     \context Voice = "Percussion Pitch Pipe Voice" {
                         {
-                            % Measure 99
+                            % [Percussion Pitch Pipe Voice] Measure 99
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -315,7 +423,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 100
+                            % [Percussion Pitch Pipe Voice] Measure 100
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -326,13 +434,23 @@
                             }
                         }
                     }
-                }
+                    \new AnnotatedDivisionsVoice {
+                        {
+                            s1 * 3/2
+                        }
+                    }
+                    \new AnnotatedPhrasesVoice {
+                        {
+                            s1 * 3/2
+                        }
+                    }
+                >>
                 \repeat volta 2
-                \context PercussionStaff = "Percussion Staff" {
+                \context PercussionStaff = "Percussion Staff" <<
                     \clef "percussion"
                     \context Voice = "Percussion Voice" {
                         {
-                            % Measure 99
+                            % [Percussion Voice] Measure 99
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -341,7 +459,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 100
+                            % [Percussion Voice] Measure 100
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -352,17 +470,27 @@
                             }
                         }
                     }
-                }
+                    \new AnnotatedDivisionsVoice {
+                        {
+                            s1 * 3/2
+                        }
+                    }
+                    \new AnnotatedPhrasesVoice {
+                        {
+                            s1 * 3/2
+                        }
+                    }
+                >>
             >>
         >>
         \context StringSectionStaffGroup = "String Section Staff Group" <<
             \tag #'violin
             \repeat volta 2
-            \context ViolinStaff = "Violin Staff" {
+            \context ViolinStaff = "Violin Staff" <<
                 \clef "treble"
                 \context Voice = "Violin Voice" {
                     {
-                        % Measure 99
+                        % [Violin Voice] Measure 99
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -371,7 +499,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 100
+                        % [Violin Voice] Measure 100
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -382,14 +510,24 @@
                         }
                     }
                 }
-            }
+                \new AnnotatedDivisionsVoice {
+                    {
+                        s1 * 3/2
+                    }
+                }
+                \new AnnotatedPhrasesVoice {
+                    {
+                        s1 * 3/2
+                    }
+                }
+            >>
             \tag #'viola
             \repeat volta 2
-            \context ViolaStaff = "Viola Staff" {
+            \context ViolaStaff = "Viola Staff" <<
                 \clef "alto"
                 \context Voice = "Viola Voice" {
                     {
-                        % Measure 99
+                        % [Viola Voice] Measure 99
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -398,7 +536,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 100
+                        % [Viola Voice] Measure 100
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -409,14 +547,24 @@
                         }
                     }
                 }
-            }
+                \new AnnotatedDivisionsVoice {
+                    {
+                        s1 * 3/2
+                    }
+                }
+                \new AnnotatedPhrasesVoice {
+                    {
+                        s1 * 3/2
+                    }
+                }
+            >>
             \tag #'cello
             \repeat volta 2
-            \context CelloStaff = "Cello Staff" {
+            \context CelloStaff = "Cello Staff" <<
                 \clef "bass"
                 \context Voice = "Cello Voice" {
                     {
-                        % Measure 99
+                        % [Cello Voice] Measure 99
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -425,7 +573,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 100
+                        % [Cello Voice] Measure 100
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -436,15 +584,25 @@
                         }
                     }
                 }
-            }
+                \new AnnotatedDivisionsVoice {
+                    {
+                        s1 * 3/2
+                    }
+                }
+                \new AnnotatedPhrasesVoice {
+                    {
+                        s1 * 3/2
+                    }
+                }
+            >>
             \tag #'contrabass
             \context ContrabassStaffGroup = "Contrabass Staff Group" <<
                 \repeat volta 2
-                \context PitchPipes = "Contrabass Pitch Pipe Staff" {
+                \context PitchPipes = "Contrabass Pitch Pipe Staff" <<
                     \clef "percussion"
                     \context Voice = "Contrabass Pitch Pipe Voice" {
                         {
-                            % Measure 99
+                            % [Contrabass Pitch Pipe Voice] Measure 99
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -453,7 +611,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 100
+                            % [Contrabass Pitch Pipe Voice] Measure 100
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -464,13 +622,23 @@
                             }
                         }
                     }
-                }
+                    \new AnnotatedDivisionsVoice {
+                        {
+                            s1 * 3/2
+                        }
+                    }
+                    \new AnnotatedPhrasesVoice {
+                        {
+                            s1 * 3/2
+                        }
+                    }
+                >>
                 \repeat volta 2
-                \context ContrabassStaff = "Contrabass Staff" {
+                \context ContrabassStaff = "Contrabass Staff" <<
                     \clef "bass_8"
                     \context Voice = "Contrabass Voice" {
                         {
-                            % Measure 99
+                            % [Contrabass Voice] Measure 99
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -479,7 +647,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 100
+                            % [Contrabass Voice] Measure 100
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -490,7 +658,17 @@
                             }
                         }
                     }
-                }
+                    \new AnnotatedDivisionsVoice {
+                        {
+                            s1 * 3/2
+                        }
+                    }
+                    \new AnnotatedPhrasesVoice {
+                        {
+                            s1 * 3/2
+                        }
+                    }
+                >>
             >>
         >>
     >>
