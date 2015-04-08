@@ -47,16 +47,3 @@ segment_maker.add_setting(
         seed=2,
         ),
     )
-
-### PIANO ###
-
-# pedals
-segment_maker.add_setting(
-    timespan_maker=consort.DependentTimespanMaker(
-        voice_names=('Piano Upper Voice', 'Piano Lower Voice'),
-        labels=('pedaled',),
-        include_inner_starts=True,
-        include_inner_stops=False,
-        ),
-    piano_pedals=ersilia.piano_pedals_music_specifier,
-    )
