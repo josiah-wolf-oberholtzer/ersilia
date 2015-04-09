@@ -10,7 +10,7 @@ shaker_decelerando_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
         staccati=indicatortools.Articulation('staccato'),
         dynamic_expression=consort.DynamicExpression(
-            start_dynamic_tokens='f',
+            start_dynamic_tokens='f mf mp',
             stop_dynamic_tokens='p',
             ),
         percussion_staff=abbreviations.percussion_staff,
@@ -26,9 +26,9 @@ shaker_decelerando_music_specifier = consort.MusicSpecifier(
             forbid_meter_rewriting=True,
             ),
         interpolation_specifier=rhythmmakertools.InterpolationSpecifier(
-            start_duration=durationtools.Duration(1, 24),
+            start_duration=durationtools.Duration(1, 32),
             stop_duration=durationtools.Duration(1, 8),
-            written_duration=durationtools.Duration(1, 16),
+            written_duration=durationtools.Duration(1, 32),
             ),
         tuplet_spelling_specifier=rhythmmakertools.TupletSpellingSpecifier(
             use_note_duration_bracket=True,

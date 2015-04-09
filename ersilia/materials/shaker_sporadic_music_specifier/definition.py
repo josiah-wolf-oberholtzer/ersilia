@@ -8,10 +8,6 @@ from ersilia.materials import abbreviations
 
 shaker_sporadic_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
-        test=consort.AttachmentExpression(
-            attachments=abbreviations.test_markup,
-            selector=selectortools.Selector().by_leaves()[0]
-            ),
         dynamic_expression=consort.DynamicExpression(
             start_dynamic_tokens='f',
             stop_dynamic_tokens='p',
