@@ -1,5 +1,6 @@
 # -*- encoding: utf-8 -*-
 import consort
+from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
 from abjad.tools import selectortools
 from abjad.tools import spannertools
@@ -18,18 +19,14 @@ piano_tremolo_music_specifier = consort.MusicSpecifier(
         deviations=[0, -2, 0, 0, 2, 0, 3],
         logical_tie_expressions=(
             consort.ChordExpression(
-                chord_expr=[-7, -3, 0, 5, 6, 12],
+                chord_expr=pitchtools.IntervalSegment([-7, -3, 0, 5, 6, 12]),
                 ),
             consort.ChordExpression(
-                chord_expr=[-7, -3, 0, 1, 5, 12],
+                chord_expr=pitchtools.IntervalSegment([-7, -3, 0, 1, 5, 12]),
                 ),
             ),
         pitch_specifier=consort.PitchSpecifier(
-            pitch_segments=[
-                "d'",
-                "f'",
-                "c'",
-                ],
+            pitch_segments=["d'", "f'", "c'"],
             ),
         ),
     rhythm_maker=rhythmmakertools.NoteRhythmMaker(
