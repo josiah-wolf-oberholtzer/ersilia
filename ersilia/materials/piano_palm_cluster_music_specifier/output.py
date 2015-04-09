@@ -51,10 +51,10 @@ piano_palm_cluster_music_specifier = consort.tools.MusicSpecifier(
                     consort.tools.RegisterInflection(
                         inflections=pitchtools.IntervalSegment(
                             (
-                                pitchtools.NumberedInterval(-12),
-                                pitchtools.NumberedInterval(6),
                                 pitchtools.NumberedInterval(-6),
-                                pitchtools.NumberedInterval(12),
+                                pitchtools.NumberedInterval(3),
+                                pitchtools.NumberedInterval(-3),
+                                pitchtools.NumberedInterval(6),
                                 ),
                             item_class=pitchtools.NumberedInterval,
                             ),
@@ -92,7 +92,7 @@ piano_palm_cluster_music_specifier = consort.tools.MusicSpecifier(
             ),
         ),
     rhythm_maker=rhythmmakertools.EvenDivisionRhythmMaker(
-        denominators=(16, 16, 8, 16, 4, 16, 8),
+        denominators=(16, 16, 8, 16, 16, 8),
         extra_counts_per_division=(0, 0, 1),
         burnish_specifier=rhythmmakertools.BurnishSpecifier(
             left_classes=(

@@ -311,5 +311,4 @@ piano_agitato_music_specifier = consort.tools.MusicSpecifier(
                 )
             ),
         ),
-    seed=10,
     )
