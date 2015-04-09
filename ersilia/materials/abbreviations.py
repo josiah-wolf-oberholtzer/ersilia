@@ -38,11 +38,11 @@ percussion_staff = consort.AttachmentExpression(
 
 pitch_specifier_one = consort.PitchSpecifier(
     pitch_segments=[
-        pitchtools.PitchClassSegment(),
-        pitchtools.PitchClassSegment(),
-        pitchtools.PitchClassSegment(),
-        pitchtools.PitchClassSegment(),
-        pitchtools.PitchClassSegment(),
+        pitchtools.PitchClassSegment([0, 3, 2, 5, 11, 1]),
+        pitchtools.PitchClassSegment([11, 9]),
+        pitchtools.PitchClassSegment([2, 4, 5, 8]),
+        pitchtools.PitchClassSegment([0, 3, 5]),
+        pitchtools.PitchClassSegment([2, 4, 5, 8]),
         ],
     ratio=[1, 2, 1, 2, 1],
     )

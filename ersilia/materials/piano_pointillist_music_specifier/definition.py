@@ -2,36 +2,52 @@
 import consort
 from abjad.tools import indicatortools
 from abjad.tools import rhythmmakertools
-from abjad.tools import scoretools
 from abjad.tools import selectortools
 
 
 piano_pointillist_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
         #dynamic_expressions=consort.DynamicExpression(),
-        staccato=consort.AttachmentExpression(
-            attachments=indicatortools.Articulation('staccato'),
+        tenuti=consort.AttachmentExpression(
+            attachments=indicatortools.Articulation('tenuto'),
             selector=selectortools.Selector()
                 .by_logical_tie(pitched=True)
                 [0]
             ),
         ),
     labels=['pedaled'],
-    pitch_handler=consort.AbsolutePitchHandler(
+    pitch_handler=consort.PitchClassPitchHandler(
         logical_tie_expressions=(
-            consort.ChordExpression([0, 3, 9, 14]),
             None,
+            consort.ChordExpression([-2, 3]),
             consort.ChordExpression([0, 3]),
+            None,
+            consort.ChordExpression([-4, 5]),
             ),
+        register_specifier=consort.RegisterSpecifier(
+            center_pitch="g",
+            phrase_inflections=consort.RegisterInflection.zigzag(6)
+                .reverse().align(),
+            segment_inflections=consort.RegisterInflection.descending(
+                width=12).align()
+            ),
+        register_spread=6,
         ),
-    rhythm_maker=rhythmmakertools.EvenDivisionRhythmMaker(
-        burnish_specifier=rhythmmakertools.BurnishSpecifier(
-            left_classes=[scoretools.Rest],
-            left_counts=[1, 1, 0],
-            right_classes=[scoretools.Rest],
-            right_counts=[1, 0],
+    rhythm_maker=consort.CompositeRhythmMaker(
+        default=rhythmmakertools.TaleaRhythmMaker(
+            extra_counts_per_division=[0, 0, 1],
+            talea=rhythmmakertools.Talea(
+                counts=[1, -1, 1, -2, 1, -3],
+                denominator=8,
+                ),
             ),
-        denominators=[16],
-        extra_counts_per_division=(0, 0, 1, 2, 0, 1),
+        last=rhythmmakertools.IncisedRhythmMaker(
+            incise_specifier=rhythmmakertools.InciseSpecifier(
+                fill_with_notes=False,
+                prefix_counts=[1],
+                prefix_talea=[1],
+                talea_denominator=8,
+                ),
+            ),
         ),
     )

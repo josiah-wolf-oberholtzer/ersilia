@@ -8,7 +8,7 @@ view_inventory=idetools.ViewInventory(
         (
             'piano',
             idetools.View(
-                ["'piano' in :ds:"]
+                ["'piano' in :ds: and 'music specifier' in :ds:"]
                 ),
             ),
         ]
