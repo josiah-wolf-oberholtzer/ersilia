@@ -26,10 +26,10 @@ piano_pointillist_music_specifier = consort.MusicSpecifier(
             ),
         register_specifier=consort.RegisterSpecifier(
             center_pitch="g",
-            phrase_inflections=consort.RegisterInflection.zigzag(6)
+            phrase_inflections=consort.RegisterInflection.zigzag(12)
                 .reverse().align(),
             segment_inflections=consort.RegisterInflection.descending(
-                width=12).align()
+                width=24).align()
             ),
         register_spread=6,
         ),

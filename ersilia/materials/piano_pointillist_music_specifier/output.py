@@ -76,9 +76,9 @@ piano_pointillist_music_specifier = consort.tools.MusicSpecifier(
                     consort.tools.RegisterInflection(
                         inflections=pitchtools.IntervalSegment(
                             (
-                                pitchtools.NumberedInterval(6),
-                                pitchtools.NumberedInterval(2),
-                                pitchtools.NumberedInterval(4),
+                                pitchtools.NumberedInterval(12),
+                                pitchtools.NumberedInterval(3),
+                                pitchtools.NumberedInterval(9),
                                 pitchtools.NumberedInterval(0),
                                 ),
                             item_class=pitchtools.NumberedInterval,
@@ -92,7 +92,7 @@ piano_pointillist_music_specifier = consort.tools.MusicSpecifier(
                     consort.tools.RegisterInflection(
                         inflections=pitchtools.IntervalSegment(
                             (
-                                pitchtools.NumberedInterval(12),
+                                pitchtools.NumberedInterval(24),
                                 pitchtools.NumberedInterval(0),
                                 ),
                             item_class=pitchtools.NumberedInterval,
