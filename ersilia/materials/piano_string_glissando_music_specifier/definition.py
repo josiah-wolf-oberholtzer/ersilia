@@ -16,12 +16,16 @@ piano_string_glissando_music_specifier = consort.MusicSpecifier(
                 'note_head__style': 'cross',
                 }
             ),
-        text_spanner=abbreviations.make_text_spanner('inside'),
+        text_spanner=(
+            abbreviations.make_text_spanner('inside/low'),
+            abbreviations.make_text_spanner('inside/high'),
+            ),
         ),
     color=None,
-    labels=[],
+    labels=['pedaled'],
     pitch_handler=consort.AbsolutePitchHandler(
-        pitch_specifier="f c' g' c' f g' c' f' c' g' f",
+        forbid_repetitions=True,
+        pitch_specifier="f c' g' c' f g' c' f c' g' f",
         ),
     rhythm_maker=consort.CompositeRhythmMaker(
         last=rhythmmakertools.IncisedRhythmMaker(
@@ -31,13 +35,21 @@ piano_string_glissando_music_specifier = consort.MusicSpecifier(
                 suffix_counts=[1],
                 talea_denominator=16,
                 ),
+            duration_spelling_specifier=rhythmmakertools.DurationSpellingSpecifier(
+                forbidden_written_duration=(1, 4),
+                forbid_meter_rewriting=True,
+                spell_metrically='unassignable',
+                ),
+            tie_specifier=rhythmmakertools.TieSpecifier(
+                strip_ties=True,
+                ),
             ),
         default=rhythmmakertools.EvenDivisionRhythmMaker(
             denominators=(4,),
             duration_spelling_specifier=rhythmmakertools.DurationSpellingSpecifier(
-                decrease_durations_monotonically=True,
                 forbidden_written_duration=(1, 4),
                 forbid_meter_rewriting=True,
+                spell_metrically='unassignable',
                 ),
             ),
         ),

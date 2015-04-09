@@ -18,7 +18,8 @@ piano_glissando_music_specifier = consort.MusicSpecifier(
     color=None,
     labels=[],
     pitch_handler=consort.AbsolutePitchHandler(
-        pitch_specifier="c' f' c'' f'' c''' c'' c' c'''",
+        forbid_repetitions=True,
+        pitch_specifier="c' c'' f' f'' c'' c' f' c'' f'' c''' c'' f'' f'",
         ),
     rhythm_maker=consort.CompositeRhythmMaker(
         last=rhythmmakertools.IncisedRhythmMaker(
@@ -28,13 +29,21 @@ piano_glissando_music_specifier = consort.MusicSpecifier(
                 suffix_counts=[1],
                 talea_denominator=16,
                 ),
+            duration_spelling_specifier=rhythmmakertools.DurationSpellingSpecifier(
+                forbidden_written_duration=(1, 4),
+                forbid_meter_rewriting=True,
+                spell_metrically='unassignable',
+                ),
+            tie_specifier=rhythmmakertools.TieSpecifier(
+                strip_ties=True,
+                ),
             ),
         default=rhythmmakertools.EvenDivisionRhythmMaker(
             denominators=(4,),
             duration_spelling_specifier=rhythmmakertools.DurationSpellingSpecifier(
-                decrease_durations_monotonically=True,
                 forbidden_written_duration=(1, 4),
                 forbid_meter_rewriting=True,
+                spell_metrically='unassignable',
                 ),
             ),
         ),

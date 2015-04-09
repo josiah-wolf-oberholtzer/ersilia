@@ -19,7 +19,7 @@ piano_arm_cluster_music_specifier = consort.MusicSpecifier(
     pitch_handler=consort.AbsolutePitchHandler(
         logical_tie_expressions=[
             consort.KeyClusterExpression(
-                staff_space_width=12,
+                staff_space_width=19,
                 ),
             ]
         ),
@@ -27,7 +27,7 @@ piano_arm_cluster_music_specifier = consort.MusicSpecifier(
         incise_specifier=rhythmmakertools.InciseSpecifier(
             fill_with_notes=False,
             prefix_counts=[1],
-            suffix_talea=[1],
+            prefix_talea=[1],
             talea_denominator=8,
             ),
         ),
