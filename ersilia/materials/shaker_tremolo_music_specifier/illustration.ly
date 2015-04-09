@@ -41,7 +41,7 @@
                     "Vln. 1"
                 }
         } <<
-            \context StringStaff = "Violin 1 Staff" {
+            \context StringStaff = "Violin 1 Staff" <<
                 \context Voice = "Violin 1 Voice" {
                     \clef "treble"
                     {
@@ -71,10 +71,10 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'4. :32 -\accent \fp \startTextSpan \>
+                            c'4. :32 -\accent \fp \startTextSpan
                         }
                         {
-                            c'4 :32 \ppp \repeatTie
+                            c'4 :32 \repeatTie
                         }
                         % [Violin 1 Voice] Measure 2
                         {
@@ -157,8 +157,8 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'4 :32 -\accent \fp \startTextSpan \>
-                            c'16 :128 \ppp \repeatTie
+                            c'4 :32 -\accent \fp \startTextSpan
+                            c'16 :128 \repeatTie
                             \stopStaff
                             \startStaff
                             \revert NoteHead #'style
@@ -198,8 +198,8 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'4 :32 -\accent \fp \startTextSpan \>
-                            c'16 :128 \ppp \repeatTie
+                            c'4 :32 -\accent \fp \startTextSpan
+                            c'16 :128 \repeatTie
                             \stopStaff
                             \startStaff
                             \revert NoteHead #'style
@@ -254,7 +254,105 @@
                         }
                     }
                 }
-            }
+                \new AnnotatedDivisionsVoice {
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 3/8 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    \override TupletBracket #'color = #blue
+                    \times 1/4 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    \override TupletBracket #'color = #blue
+                    \times 1/4 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 1/8
+                    }
+                    \override TupletBracket #'color = #blue
+                    \times 1/4 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 1/4
+                    }
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 5/16 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 1/16
+                    }
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 5/16 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 1/16
+                        s1 * 5/16
+                    }
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 5/16 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                }
+                \new AnnotatedPhrasesVoice {
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 7/8 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 1/8
+                    }
+                    \override TupletBracket #'color = #blue
+                    \times 1/4 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 1/4
+                    }
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 5/16 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 1/16
+                    }
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 5/16 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 1/16
+                        s1 * 5/16
+                    }
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 5/16 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                }
+            >>
         >>
         \tag #'violin-2
         \context StringPerformerGroup = "Violin 2 Performer Group" \with {
@@ -269,7 +367,7 @@
                     "Vln. 2"
                 }
         } <<
-            \context StringStaff = "Violin 2 Staff" {
+            \context StringStaff = "Violin 2 Staff" <<
                 \context Voice = "Violin 2 Voice" {
                     \clef "treble"
                     {
@@ -304,12 +402,12 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'8. :64 -\accent \fp \startTextSpan \> [
+                            c'8. :64 -\accent \fp \startTextSpan [
                             \set stemLeftBeamCount = 2
                             c'16 :128 \repeatTie ]
                         }
                         {
-                            c'8. :64 \ppp \repeatTie
+                            c'8. :64 \repeatTie
                         }
                         % [Violin 2 Voice] Measure 2
                         {
@@ -422,7 +520,85 @@
                         }
                     }
                 }
-            }
+                \new AnnotatedDivisionsVoice {
+                    {
+                        s1 * 3/16
+                    }
+                    \override TupletBracket #'color = #blue
+                    \times 1/4 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 3/16 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 3/16 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    \override TupletBracket #'color = #blue
+                    \times 1/2 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 3/16
+                    }
+                    \override TupletBracket #'color = #blue
+                    \times 1/4 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 1/8
+                        s1 * 1/8
+                    }
+                    \override TupletBracket #'color = #blue
+                    \times 1/4 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 5/8
+                    }
+                }
+                \new AnnotatedPhrasesVoice {
+                    {
+                        s1 * 3/16
+                    }
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 9/8 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 3/16
+                    }
+                    \override TupletBracket #'color = #blue
+                    \times 1/4 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 1/8
+                        s1 * 1/8
+                    }
+                    \override TupletBracket #'color = #blue
+                    \times 1/4 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 5/8
+                    }
+                }
+            >>
         >>
         \tag #'viola
         \context StringPerformerGroup = "Viola Performer Group" \with {
@@ -437,7 +613,7 @@
                     Va.
                 }
         } <<
-            \context StringStaff = "Viola Staff" {
+            \context StringStaff = "Viola Staff" <<
                 \context Voice = "Viola Voice" {
                     \clef "alto"
                     {
@@ -472,12 +648,12 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'8 :64 -\accent \fp \startTextSpan \>
+                            c'8 :64 -\accent \fp \startTextSpan
                             c'4 :32 \repeatTie
                         }
                         % [Viola Voice] Measure 2
                         {
-                            c'4. :32 \ppp \repeatTie
+                            c'4. :32 \repeatTie
                             \stopStaff
                             \startStaff
                             \revert NoteHead #'style
@@ -520,11 +696,11 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'4 :32 -\accent \fp \startTextSpan \>
+                            c'4 :32 -\accent \fp \startTextSpan
                         }
                         % [Viola Voice] Measure 4
                         {
-                            c'4. :32 \ppp \repeatTie
+                            c'4. :32 \repeatTie
                             \stopStaff
                             \startStaff
                             \revert NoteHead #'style
@@ -564,8 +740,8 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'4 :32 -\accent \fp \startTextSpan \>
-                            c'4 :32 \ppp \repeatTie
+                            c'4 :32 -\accent \fp \startTextSpan
+                            c'4 :32 \repeatTie
                             \bar "|."
                             \stopStaff
                             \startStaff
@@ -575,7 +751,76 @@
                         }
                     }
                 }
-            }
+                \new AnnotatedDivisionsVoice {
+                    {
+                        s1 * 1/4
+                    }
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 3/8 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 3/8 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 1/2
+                        s1 * 1/8
+                    }
+                    \override TupletBracket #'color = #blue
+                    \times 1/4 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 3/8 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 1/8
+                    }
+                    \override TupletBracket #'color = #blue
+                    \times 1/2 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                }
+                \new AnnotatedPhrasesVoice {
+                    {
+                        s1 * 1/4
+                    }
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 3/4 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 1/2
+                        s1 * 1/8
+                    }
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 5/8 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 1/8
+                    }
+                    \override TupletBracket #'color = #blue
+                    \times 1/2 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                }
+            >>
         >>
         \tag #'cello
         \context StringPerformerGroup = "Cello Performer Group" \with {
@@ -590,7 +835,7 @@
                     Vc.
                 }
         } <<
-            \context StringStaff = "Cello Staff" {
+            \context StringStaff = "Cello Staff" <<
                 \context Voice = "Cello Voice" {
                     \clef "bass"
                     {
@@ -625,10 +870,10 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'4 :32 -\accent \fp \startTextSpan \>
+                            c'4 :32 -\accent \fp \startTextSpan
                         }
                         {
-                            c'4 :32 \ppp \repeatTie
+                            c'4 :32 \repeatTie
                             \stopStaff
                             \startStaff
                             \revert NoteHead #'style
@@ -669,9 +914,9 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'16 :128 -\accent \fp \startTextSpan \>
+                            c'16 :128 -\accent \fp \startTextSpan
                             c'4 :32 \repeatTie
-                            c'16 :128 \ppp \repeatTie
+                            c'16 :128 \repeatTie
                             \stopStaff
                             \startStaff
                             \revert NoteHead #'style
@@ -714,11 +959,11 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'8. :64 -\accent \fp \startTextSpan \>
+                            c'8. :64 -\accent \fp \startTextSpan
                         }
                         % [Cello Voice] Measure 4
                         {
-                            c'8. :64 \ppp \repeatTie
+                            c'8. :64 \repeatTie
                         }
                         {
                             c'8. :64 \repeatTie
@@ -783,7 +1028,100 @@
                         }
                     }
                 }
-            }
+                \new AnnotatedDivisionsVoice {
+                    {
+                        s1 * 1/8
+                    }
+                    \override TupletBracket #'color = #blue
+                    \times 1/4 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    \override TupletBracket #'color = #blue
+                    \times 1/4 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 5/16
+                    }
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 3/8 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 3/16
+                        s1 * 3/16
+                    }
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 3/16 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 3/16 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 3/16 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 1/4
+                    }
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 3/8 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                }
+                \new AnnotatedPhrasesVoice {
+                    {
+                        s1 * 1/8
+                    }
+                    \override TupletBracket #'color = #blue
+                    \times 1/2 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 5/16
+                    }
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 3/8 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 3/16
+                        s1 * 3/16
+                    }
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 9/16 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                    {
+                        s1 * 1/4
+                    }
+                    \override TupletBracket #'color = #blue
+                    \tweak #'text #tuplet-number::calc-fraction-text
+                    \times 3/8 {
+                        c'''1
+                    }
+                    \revert TupletBracket #'color
+                }
+            >>
         >>
     >>
 }

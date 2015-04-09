@@ -3,6 +3,7 @@ from abjad.tools import datastructuretools
 from abjad.tools import indicatortools
 from abjad.tools import markuptools
 from abjad.tools import rhythmmakertools
+from abjad.tools import scoretools
 from abjad.tools import selectortools
 from abjad.tools import spannertools
 import consort
@@ -18,12 +19,11 @@ shaker_tremolo_music_specifier = consort.tools.MusicSpecifier(
                 ),
             selector=selectortools.Selector(
                 callbacks=(
-                    selectortools.LogicalTieSelectorCallback(
-                        flatten=True,
-                        pitched=False,
-                        trivial=True,
-                        only_with_head=False,
-                        only_with_tail=False,
+                    selectortools.PrototypeSelectorCallback(
+                        prototype=scoretools.Leaf,
+                        ),
+                    selectortools.RunSelectorCallback(
+                        prototype=scoretools.Note,
                         ),
                     selectortools.ItemSelectorCallback(
                         item=0,
@@ -37,9 +37,6 @@ shaker_tremolo_music_specifier = consort.tools.MusicSpecifier(
                 [
                     consort.tools.DynamicExpression(
                         dynamic_tokens=datastructuretools.CyclicTuple(
-                            ['ppp']
-                            ),
-                        start_dynamic_tokens=datastructuretools.CyclicTuple(
                             ['fp']
                             ),
                         transitions=datastructuretools.CyclicTuple(
