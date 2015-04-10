@@ -1,5 +1,6 @@
 # -*- encoding: utf-8 -*-
 from abjad.tools import datastructuretools
+from abjad.tools import indicatortools
 from abjad.tools import mathtools
 from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
@@ -11,6 +12,17 @@ import consort
 
 percussion_marimba_tremolo_music_specifier = consort.tools.MusicSpecifier(
     attachment_handler=consort.tools.AttachmentHandler(
+        clef_spanner=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    consort.tools.ClefSpanner(
+                        clef=indicatortools.Clef(
+                            name='treble',
+                            ),
+                        ),
+                    ]
+                ),
+            ),
         dynamic_expressions=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [
@@ -54,18 +66,8 @@ percussion_marimba_tremolo_music_specifier = consort.tools.MusicSpecifier(
             ),
         ),
     labels=(),
-    pitch_handler=consort.tools.AbsolutePitchHandler(
-        deviations=datastructuretools.CyclicTuple(
-            [
-                pitchtools.NumberedInterval(0),
-                pitchtools.NumberedInterval(-2),
-                pitchtools.NumberedInterval(0),
-                pitchtools.NumberedInterval(0),
-                pitchtools.NumberedInterval(2),
-                pitchtools.NumberedInterval(0),
-                pitchtools.NumberedInterval(3),
-                ]
-            ),
+    pitch_handler=consort.tools.PitchClassPitchHandler(
+        leap_constraint=pitchtools.NumberedInterval(9),
         logical_tie_expressions=datastructuretools.CyclicTuple(
             [
                 consort.tools.ChordExpression(
@@ -77,33 +79,96 @@ percussion_marimba_tremolo_music_specifier = consort.tools.MusicSpecifier(
                         item_class=pitchtools.NumberedInterval,
                         ),
                     ),
+                consort.tools.ChordExpression(
+                    chord_expr=pitchtools.IntervalSegment(
+                        (
+                            pitchtools.NumberedInterval(0),
+                            pitchtools.NumberedInterval(5),
+                            ),
+                        item_class=pitchtools.NumberedInterval,
+                        ),
+                    ),
+                consort.tools.ChordExpression(
+                    chord_expr=pitchtools.IntervalSegment(
+                        (
+                            pitchtools.NumberedInterval(0),
+                            pitchtools.NumberedInterval(3),
+                            ),
+                        item_class=pitchtools.NumberedInterval,
+                        ),
+                    ),
+                consort.tools.ChordExpression(
+                    chord_expr=pitchtools.IntervalSegment(
+                        (
+                            pitchtools.NumberedInterval(0),
+                            pitchtools.NumberedInterval(2),
+                            ),
+                        item_class=pitchtools.NumberedInterval,
+                        ),
+                    ),
                 ]
             ),
+        register_specifier=consort.tools.RegisterSpecifier(
+            center_pitch=pitchtools.NumberedPitch(-3),
+            segment_inflections=consort.tools.RegisterInflectionInventory(
+                [
+                    consort.tools.RegisterInflection(
+                        inflections=pitchtools.IntervalSegment(
+                            (
+                                pitchtools.NumberedInterval(6),
+                                pitchtools.NumberedInterval(2),
+                                pitchtools.NumberedInterval(4),
+                                pitchtools.NumberedInterval(0),
+                                ),
+                            item_class=pitchtools.NumberedInterval,
+                            ),
+                        ratio=mathtools.Ratio((1, 1, 1)),
+                        ),
+                    ]
+                ),
+            ),
+        register_spread=3,
         pitch_specifier=consort.tools.PitchSpecifier(
             pitch_segments=(
                 pitchtools.PitchSegment(
                     (
                         pitchtools.NamedPitch("d'"),
-                        ),
-                    item_class=pitchtools.NamedPitch,
-                    ),
-                pitchtools.PitchSegment(
-                    (
+                        pitchtools.NamedPitch("d'"),
                         pitchtools.NamedPitch("f'"),
+                        pitchtools.NamedPitch("d'"),
+                        pitchtools.NamedPitch("d'"),
+                        pitchtools.NamedPitch("f'"),
+                        pitchtools.NamedPitch("g'"),
                         ),
                     item_class=pitchtools.NamedPitch,
                     ),
                 pitchtools.PitchSegment(
                     (
-                        pitchtools.NamedPitch("c'"),
+                        pitchtools.NamedPitch("ef'"),
+                        pitchtools.NamedPitch("gf'"),
+                        pitchtools.NamedPitch("gf'"),
+                        pitchtools.NamedPitch("df'"),
+                        pitchtools.NamedPitch('b'),
+                        pitchtools.NamedPitch("df'"),
                         ),
                     item_class=pitchtools.NamedPitch,
                     ),
                 ),
-            ratio=mathtools.Ratio((1, 1, 1)),
+            ratio=mathtools.Ratio((1, 1)),
             ),
         ),
-    rhythm_maker=rhythmmakertools.NoteRhythmMaker(
+    rhythm_maker=rhythmmakertools.EvenDivisionRhythmMaker(
+        denominators=(16,),
+        output_masks=rhythmmakertools.BooleanPatternInventory(
+            (
+                rhythmmakertools.SustainMask(
+                    indices=(2,),
+                    invert=True,
+                    period=3,
+                    ),
+                )
+            ),
+        preferred_denominator='from_counts',
         tie_specifier=rhythmmakertools.TieSpecifier(
             tie_across_divisions=True,
             ),

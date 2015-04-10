@@ -48,14 +48,22 @@
                         % [Violin 1 Voice] Measure 1
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            <d' f'>4. :32 \<
+                            <d'' f''>4. :32 \<
                         }
                         {
-                            <d' f'>4 :32 \repeatTie
+                            <d'' f''>4 :32 \repeatTie
                         }
                         % [Violin 1 Voice] Measure 2
                         {
-                            <d' f'>4 :32 \p \repeatTie
+                            <d'' f''>16 :128 \repeatTie [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <g' bf'>16 :128
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <d' e'>16 :128
+                            \set stemLeftBeamCount = 2
+                            <d' f'>16 :128 \p ]
                         }
                     }
                     {
@@ -65,7 +73,7 @@
                     }
                     {
                         {
-                            <f' af'>4 :32 \p
+                            <d' f'>4 :32 \p
                         }
                     }
                     {
@@ -77,8 +85,8 @@
                         % [Violin 1 Voice] Measure 3
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            <gs' b'>4 :32 \<
-                            <gs' b'>16 :128 \p \repeatTie
+                            <cs' ds'>4 :32 \<
+                            <cs' ds'>16 :128 \p \repeatTie
                         }
                     }
                     {
@@ -90,8 +98,8 @@
                         % [Violin 1 Voice] Measure 4
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            <f' af'>4 :32 \<
-                            <f' af'>16 :128 \ppp \repeatTie
+                            <cs' fs'>4 :32 \<
+                            <cs' fs'>16 :128 \ppp \repeatTie
                         }
                     }
                     {
@@ -106,8 +114,8 @@
                     }
                     {
                         {
-                            <c' ef'>16 :128 \ppp
-                            <c' ef'>4 :32 \repeatTie
+                            <cs' fs'>16 :128 \ppp
+                            <cs' fs'>4 :32 \repeatTie
                             \bar "|."
                         }
                     }
@@ -213,22 +221,27 @@
                     {
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            <d' f'>8. :64 \< [
+                            <f' af'>8. :64 \< [
                             \set stemLeftBeamCount = 2
-                            <d' f'>16 :128 \repeatTie ]
+                            <f' af'>16 :128 \repeatTie ]
                         }
                         {
-                            <d' f'>8. :64 \repeatTie
+                            <f' af'>16 :128 \repeatTie [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <d'' f''>16 :128
+                            \set stemLeftBeamCount = 2
+                            <f' bf'>16 :128 ]
                         }
                         % [Violin 2 Voice] Measure 2
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            <d' f'>8. :64 \ppp \repeatTie \>
+                            <f' bf'>8. :64 \ppp \repeatTie \>
                         }
                         {
-                            <d' f'>8. :64 \repeatTie
-                            <d' f'>4 :32 \repeatTie
-                            <d' f'>16 :128 \repeatTie \!
+                            <f' bf'>8. :64 \repeatTie
+                            <f' bf'>4 :32 \repeatTie
+                            <f' bf'>16 :128 \repeatTie \!
                         }
                     }
                     {
@@ -239,7 +252,7 @@
                     {
                         % [Violin 2 Voice] Measure 3
                         {
-                            <f' af'>4 :32 \ppp
+                            <ds' fs'>4 :32 \ppp
                         }
                     }
                     {
@@ -253,7 +266,7 @@
                     }
                     {
                         {
-                            <d' f'>4 :32 \p
+                            <ds' fs'>4 :32 \p
                         }
                     }
                     {
@@ -355,13 +368,15 @@
                     }
                     {
                         {
+                            \clef "treble"
                             \once \override Hairpin.circled-tip = ##t
-                            <d' f'>8 :64 \<
-                            <d' f'>4 :32 \repeatTie
+                            <d' e'>8 :64 \<
+                            <d' e'>4 :32 \repeatTie
                         }
                         % [Viola Voice] Measure 2
                         {
-                            <d' f'>4. :32 \p \repeatTie
+                            <d' e'>4. :32 \p \repeatTie
+                            \clef "alto"
                         }
                     }
                     {
@@ -375,12 +390,14 @@
                     }
                     {
                         {
+                            \clef "treble"
                             \once \override Hairpin.circled-tip = ##t
-                            <ds' fs'>4 :32 \<
+                            <fs' b'>4 :32 \<
                         }
                         % [Viola Voice] Measure 4
                         {
-                            <ds' fs'>4. :32 \ppp \repeatTie
+                            <fs' b'>4. :32 \ppp \repeatTie
+                            \clef "alto"
                         }
                     }
                     {
@@ -391,10 +408,12 @@
                     }
                     {
                         {
+                            \clef "treble"
                             \once \override Hairpin.circled-tip = ##t
-                            <c' ef'>4 :32 \<
-                            <c' ef'>4 :32 \p \repeatTie
+                            <fs' gs'>4 :32 \<
+                            <fs' gs'>4 :32 \p \repeatTie
                             \bar "|."
+                            \clef "alto"
                         }
                     }
                 }
@@ -477,11 +496,13 @@
                     }
                     {
                         {
+                            \clef "treble"
                             \once \override Hairpin.circled-tip = ##t
-                            <c' ef'>4 :32 \<
+                            <d' g'>4 :32 \<
                         }
                         {
-                            <c' ef'>4 :32 \ppp \repeatTie
+                            <d' g'>4 :32 \ppp \repeatTie
+                            \clef "bass"
                         }
                     }
                     {
@@ -493,10 +514,12 @@
                     }
                     {
                         {
+                            \clef "treble"
                             \once \override Hairpin.circled-tip = ##t
-                            <e' g'>16 :128 \<
-                            <e' g'>4 :32 \repeatTie
-                            <e' g'>16 :128 \p \repeatTie
+                            <f' bf'>16 :128 \<
+                            <f' bf'>4 :32 \repeatTie
+                            <f' bf'>16 :128 \p \repeatTie
+                            \clef "bass"
                         }
                     }
                     {
@@ -510,15 +533,22 @@
                     }
                     {
                         {
+                            \clef "treble"
                             \once \override Hairpin.circled-tip = ##t
-                            <f' af'>8. :64 \<
+                            <fs' a'>16 :128 \< [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <cs'' ds''>16 :128
+                            \set stemLeftBeamCount = 2
+                            <b' d''>16 :128 ]
                         }
                         % [Cello Voice] Measure 4
                         {
-                            <f' af'>8. :64 \repeatTie
+                            <b' d''>8. :64 \repeatTie
                         }
                         {
-                            <f' af'>8. :64 \ppp \repeatTie
+                            <b' d''>8. :64 \ppp \repeatTie
+                            \clef "bass"
                         }
                     }
                     {
@@ -529,8 +559,9 @@
                     }
                     {
                         {
-                            <ds' fs'>8 :64 \ppp
-                            <ds' fs'>4 :32 \repeatTie
+                            \clef "treble"
+                            <fs' a'>8 :64 \ppp
+                            <fs' a'>4 :32 \repeatTie
                                 _ \markup {
                                     \italic
                                         \center-column
@@ -543,6 +574,7 @@
                                             }
                                     }
                             \bar "|."
+                            \clef "bass"
                         }
                     }
                 }
