@@ -62,7 +62,7 @@ tranquilo_pitch_specifier = consort.PitchSpecifier(
     )
 
 
-pitch_transform_specifier = consort.PitchOperationSpecifier(
+pitch_operation_specifier = consort.PitchOperationSpecifier(
     pitch_operations=[
         pitchtools.Rotation(1),
         None,

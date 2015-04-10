@@ -15,7 +15,7 @@ percussion_crotales_flash_music_specifier = consort.tools.MusicSpecifier(
                 [
                     consort.tools.ClefSpanner(
                         clef=indicatortools.Clef(
-                            name='treble',
+                            name='treble^15',
                             ),
                         ),
                     ]
@@ -78,7 +78,7 @@ percussion_crotales_flash_music_specifier = consort.tools.MusicSpecifier(
     pitch_handler=consort.tools.PitchClassPitchHandler(
         forbid_repetitions=True,
         register_specifier=consort.tools.RegisterSpecifier(
-            center_pitch=pitchtools.NumberedPitch(0),
+            center_pitch=pitchtools.NumberedPitch(24),
             segment_inflections=consort.tools.RegisterInflectionInventory(
                 [
                     consort.tools.RegisterInflection(
@@ -95,6 +95,42 @@ percussion_crotales_flash_music_specifier = consort.tools.MusicSpecifier(
                         ),
                     ]
                 ),
+            ),
+        pitch_operation_specifier=consort.tools.PitchOperationSpecifier(
+            pitch_operations=(
+                pitchtools.PitchOperation(
+                    operators=(
+                        pitchtools.Rotation(
+                            index=1,
+                            transpose=True,
+                            ),
+                        ),
+                    ),
+                None,
+                pitchtools.PitchOperation(
+                    operators=(
+                        pitchtools.Transposition(
+                            index=1,
+                            ),
+                        pitchtools.Inversion(),
+                        ),
+                    ),
+                None,
+                pitchtools.PitchOperation(
+                    operators=(
+                        pitchtools.Rotation(
+                            index=-1,
+                            transpose=True,
+                            ),
+                        ),
+                    ),
+                pitchtools.PitchOperation(
+                    operators=(
+                        pitchtools.Retrogression(),
+                        ),
+                    ),
+                ),
+            ratio=mathtools.Ratio((1, 3, 1, 1, 2, 1)),
             ),
         pitch_specifier=consort.tools.PitchSpecifier(
             pitch_segments=(

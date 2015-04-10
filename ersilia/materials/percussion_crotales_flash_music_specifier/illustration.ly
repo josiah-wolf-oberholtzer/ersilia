@@ -47,6 +47,7 @@
                     {
                         % [Violin 1 Voice] Measure 1
                         {
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -66,16 +67,17 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            ef''32 \f \startTextSpan [
+                            b'''32 \f \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            d'32
+                            b'''32
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            f'32
+                            d'''32
                             \set stemLeftBeamCount = 3
-                            b'32 ]
+                            cs'''32 ]
                             <> \stopTextSpan
+                            \clef "treble"
                         }
                     }
                     {
@@ -85,6 +87,7 @@
                     }
                     {
                         {
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -104,13 +107,14 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            d'32 \mp \startTextSpan [
+                            d'''32 \mp \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            b'32
+                            b'''32
                             \set stemLeftBeamCount = 3
-                            a'32 ]
+                            a'''32 ]
                             <> \stopTextSpan
+                            \clef "treble"
                         }
                     }
                     {
@@ -122,6 +126,7 @@
                     {
                         % [Violin 1 Voice] Measure 2
                         {
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -141,16 +146,17 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            b'32 \p \startTextSpan [
+                            b'''32 \p \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            a'32
+                            a'''32
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            b'32
+                            b'''32
                             \set stemLeftBeamCount = 3
-                            a'32 ]
+                            a'''32 ]
                             <> \stopTextSpan
+                            \clef "treble"
                         }
                     }
                     {
@@ -160,6 +166,7 @@
                     }
                     {
                         {
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -179,13 +186,14 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            b'32 \f \startTextSpan [
+                            b'''32 \f \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            a'32
+                            a'''32
                             \set stemLeftBeamCount = 3
-                            b'32 ]
+                            b'''32 ]
                             <> \stopTextSpan
+                            \clef "treble"
                         }
                     }
                     {
@@ -198,6 +206,7 @@
                     {
                         % [Violin 1 Voice] Measure 3
                         {
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -217,16 +226,17 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            f'32 \mp \startTextSpan [
+                            fs'''32 \mp \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            d'32
+                            a'''32
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            f''32
+                            fs''''32
                             \set stemLeftBeamCount = 3
-                            d'32 ]
+                            a'''32 ]
                             <> \stopTextSpan
+                            \clef "treble"
                         }
                     }
                     {
@@ -237,6 +247,7 @@
                     {
                         % [Violin 1 Voice] Measure 4
                         {
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -256,13 +267,14 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            c''32 \p \startTextSpan [
+                            c''''32 \p \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            ef''32
+                            ef''''32
                             \set stemLeftBeamCount = 3
-                            c''32 ]
+                            c''''32 ]
                             <> \stopTextSpan
+                            \clef "treble"
                         }
                     }
                     {
@@ -278,6 +290,7 @@
                     }
                     {
                         {
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -297,16 +310,17 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            af'32 \f \startTextSpan [
+                            d''''32 \f \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            e'32
+                            f'''32
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            af''32
+                            d''''32
                             \set stemLeftBeamCount = 3
-                            d''32 ]
+                            af'''32 ]
                             <> \stopTextSpan
+                            \clef "treble"
                         }
                     }
                     {
@@ -438,6 +452,7 @@
                     }
                     {
                         {
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -457,13 +472,14 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            ef''32 \mp \startTextSpan [
+                            b'''32 \mp \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            d'32
+                            d'''32
                             \set stemLeftBeamCount = 3
-                            f''32 ]
+                            cs''''32 ]
                             <> \stopTextSpan
+                            \clef "treble"
                         }
                     }
                     {
@@ -474,6 +490,7 @@
                     }
                     {
                         {
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -493,16 +510,17 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            a'32 \p \startTextSpan [
+                            a'''32 \p \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            b'32
+                            b'''32
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            a'32
+                            a'''32
                             \set stemLeftBeamCount = 3
-                            b'32 ]
+                            b'''32 ]
                             <> \stopTextSpan
+                            \clef "treble"
                         }
                     }
                     {
@@ -513,6 +531,7 @@
                     {
                         % [Violin 2 Voice] Measure 2
                         {
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -532,13 +551,14 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            a'32 \f \startTextSpan [
+                            a'''32 \f \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            b'32
+                            b'''32
                             \set stemLeftBeamCount = 3
-                            a'32 ]
+                            a'''32 ]
                             <> \stopTextSpan
+                            \clef "treble"
                         }
                     }
                     {
@@ -549,6 +569,7 @@
                     }
                     {
                         {
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -568,16 +589,17 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            b'32 \mp \startTextSpan [
+                            b'''32 \mp \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            a'32
+                            a'''32
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            b'32
+                            b'''32
                             \set stemLeftBeamCount = 3
-                            a'32 ]
+                            a'''32 ]
                             <> \stopTextSpan
+                            \clef "treble"
                         }
                     }
                     {
@@ -589,6 +611,7 @@
                     {
                         % [Violin 2 Voice] Measure 3
                         {
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -608,16 +631,17 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            af'32 \p \startTextSpan [
+                            ef''''32 \p \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            e'32
+                            g'''32
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            af'32
+                            ef''''32
                             \set stemLeftBeamCount = 3
-                            e''32 ]
+                            g''''32 ]
                             <> \stopTextSpan
+                            \clef "treble"
                         }
                     }
                     {
@@ -631,6 +655,7 @@
                     }
                     {
                         {
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -650,13 +675,14 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            f'32 \f \startTextSpan [
+                            a'''32 \f \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            c''32
+                            c''''32
                             \set stemLeftBeamCount = 3
-                            ef''32 ]
+                            d''''32 ]
                             <> \stopTextSpan
+                            \clef "treble"
                         }
                     }
                     {
@@ -794,7 +820,7 @@
                     }
                     {
                         {
-                            \clef "treble"
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -814,15 +840,15 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            b'32 \mp \startTextSpan [
+                            e'''32 \mp \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            cs'32
+                            bf'''32
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            c''32
+                            c''''32
                             \set stemLeftBeamCount = 3
-                            ef''32 ]
+                            ef''''32 ]
                             <> \stopTextSpan
                             \clef "alto"
                         }
@@ -835,7 +861,7 @@
                     {
                         % [Viola Voice] Measure 2
                         {
-                            \clef "treble"
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -855,12 +881,12 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            a'32 \p \startTextSpan [
+                            a'''32 \p \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            b'32
+                            b'''32
                             \set stemLeftBeamCount = 3
-                            a'32 ]
+                            a'''32 ]
                             <> \stopTextSpan
                             \clef "alto"
                         }
@@ -878,7 +904,7 @@
                     }
                     {
                         {
-                            \clef "treble"
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -898,12 +924,12 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            f''32 \f \startTextSpan [
+                            f''''32 \f \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            ef'32
+                            ef'''32
                             \set stemLeftBeamCount = 3
-                            f'32 ]
+                            f'''32 ]
                             <> \stopTextSpan
                             \clef "alto"
                         }
@@ -917,7 +943,7 @@
                     {
                         % [Viola Voice] Measure 4
                         {
-                            \clef "treble"
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -937,15 +963,15 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            ef'32 \mp \startTextSpan [
+                            ef'''32 \mp \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            f''32
+                            f''''32
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            ef'32
+                            d'''32
                             \set stemLeftBeamCount = 3
-                            c''32 ]
+                            c''''32 ]
                             <> \stopTextSpan
                             \clef "alto"
                         }
@@ -961,7 +987,7 @@
                     }
                     {
                         {
-                            \clef "treble"
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -981,15 +1007,15 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            f''32 \p \startTextSpan [
+                            a'''32 \p \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            c''32
+                            c''''32
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            ef''32
+                            d''''32
                             \set stemLeftBeamCount = 3
-                            d''32 ]
+                            ef''''32 ]
                             <> \stopTextSpan
                             \clef "alto"
                         }
@@ -1106,7 +1132,7 @@
                     }
                     {
                         {
-                            \clef "treble"
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -1126,12 +1152,12 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            b'32 \f \startTextSpan [
+                            e''''32 \f \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            cs''32
+                            bf'''32
                             \set stemLeftBeamCount = 3
-                            ef'32 ]
+                            b'''32 ]
                             <> \stopTextSpan
                             \clef "bass"
                         }
@@ -1144,7 +1170,7 @@
                     }
                     {
                         {
-                            \clef "treble"
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -1164,15 +1190,15 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            f''32 \mp \startTextSpan [
+                            f''''32 \mp \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            cs'32
+                            cs'''32
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            b'32
+                            b'''32
                             \set stemLeftBeamCount = 3
-                            a'32 ]
+                            a'''32 ]
                             <> \stopTextSpan
                             \clef "bass"
                         }
@@ -1189,7 +1215,7 @@
                     }
                     {
                         {
-                            \clef "treble"
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -1209,15 +1235,15 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            b'32 \p \startTextSpan [
+                            b'''32 \p \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            a'32
+                            a'''32
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            b'32
+                            b'''32
                             \set stemLeftBeamCount = 3
-                            a'32 ]
+                            a'''32 ]
                             <> \stopTextSpan
                             \clef "bass"
                         }
@@ -1234,7 +1260,7 @@
                     }
                     {
                         {
-                            \clef "treble"
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -1254,12 +1280,12 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            c''32 \f \startTextSpan [
+                            c''''32 \f \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            ef''32
+                            ef''''32
                             \set stemLeftBeamCount = 3
-                            f''32 ]
+                            f''''32 ]
                             <> \stopTextSpan
                             \clef "bass"
                         }
@@ -1272,7 +1298,7 @@
                     {
                         % [Cello Voice] Measure 4
                         {
-                            \clef "treble"
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -1292,15 +1318,15 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            c''32 \mp \startTextSpan [
+                            c''''32 \mp \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            f'32
+                            f'''32
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            c''32
+                            a'''32
                             \set stemLeftBeamCount = 3
-                            ef''32 ]
+                            d''''32 ]
                             <> \stopTextSpan
                             \clef "bass"
                         }
@@ -1312,7 +1338,7 @@
                     }
                     {
                         {
-                            \clef "treble"
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -1332,12 +1358,12 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            f'32 \p \startTextSpan [
+                            a'''32 \p \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            c''32
+                            c''''32
                             \set stemLeftBeamCount = 3
-                            ef''32 ]
+                            d''''32 ]
                             <> \stopTextSpan
                             \clef "bass"
                         }
@@ -1353,7 +1379,7 @@
                     }
                     {
                         {
-                            \clef "treble"
+                            \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
@@ -1373,15 +1399,15 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            e'32 \f \startTextSpan [
+                            ef''''32 \f \startTextSpan [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            f''32
+                            fs''''32
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
-                            d''32
+                            af''''32
                             \set stemLeftBeamCount = 3
-                            f''32 ]
+                            e''''32 ]
                             <> \stopTextSpan
                             \clef "bass"
                         }

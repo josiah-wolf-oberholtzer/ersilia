@@ -6,7 +6,7 @@ from ersilia.materials import abbreviations
 
 percussion_crotales_flash_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
-        clef_spanner=consort.ClefSpanner('treble'),
+        clef_spanner=consort.ClefSpanner('treble^15'),
         dynamic_expressions=consort.DynamicExpression(
             only_first=True,
             start_dynamic_tokens='f p mp',
@@ -18,8 +18,9 @@ percussion_crotales_flash_music_specifier = consort.MusicSpecifier(
     pitch_handler=consort.PitchClassPitchHandler(
         forbid_repetitions=True,
         pitch_specifier=abbreviations.agitato_pitch_specifier,
+        pitch_operation_specifier=abbreviations.pitch_operation_specifier,
         register_specifier=consort.RegisterSpecifier(
-            center_pitch="c'",
+            center_pitch="c'''",
             segment_inflections=consort.RegisterInflection.zigzag(6).align(),
             ),
         ),
