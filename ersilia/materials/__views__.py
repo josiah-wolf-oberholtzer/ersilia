@@ -6,6 +6,12 @@ from ide import idetools
 view_inventory=idetools.ViewInventory(
     [
         (
+            'guitar',
+            idetools.View(
+                ["'guitar' in :ds:"]
+                ),
+            ),
+        (
             'percussion',
             idetools.View(
                 ["'percussion' in :ds:"]
@@ -21,6 +27,18 @@ view_inventory=idetools.ViewInventory(
             'shaker',
             idetools.View(
                 ["'shaker' in :ds:"]
+                ),
+            ),
+        (
+            'strings',
+            idetools.View(
+                ["'string' in :ds:"]
+                ),
+            ),
+        (
+            'winds',
+            idetools.View(
+                ["'wind' in :ds:"]
                 ),
             ),
         ]
