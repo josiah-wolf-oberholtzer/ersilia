@@ -141,7 +141,7 @@ piano_glissando_music_specifier = consort.tools.MusicSpecifier(
                     item_class=pitchtools.NamedPitch,
                     ),
                 ),
-            ratio=mathtools.Ratio(1),
+            ratio=mathtools.Ratio((1,)),
             ),
         ),
     rhythm_maker=consort.tools.CompositeRhythmMaker(
@@ -153,6 +153,7 @@ piano_glissando_music_specifier = consort.tools.MusicSpecifier(
                 forbidden_written_duration=durationtools.Duration(1, 4),
                 spell_metrically='unassignable',
                 ),
+            preferred_denominator='from_counts',
             ),
         last=rhythmmakertools.IncisedRhythmMaker(
             incise_specifier=rhythmmakertools.InciseSpecifier(

@@ -109,15 +109,15 @@ percussion_marimba_tremolo_music_specifier = consort.tools.MusicSpecifier(
                 ]
             ),
         register_specifier=consort.tools.RegisterSpecifier(
-            center_pitch=pitchtools.NumberedPitch(-3),
+            center_pitch=pitchtools.NumberedPitch(-19),
             segment_inflections=consort.tools.RegisterInflectionInventory(
                 [
                     consort.tools.RegisterInflection(
                         inflections=pitchtools.IntervalSegment(
                             (
-                                pitchtools.NumberedInterval(6),
-                                pitchtools.NumberedInterval(2),
-                                pitchtools.NumberedInterval(4),
+                                pitchtools.NumberedInterval(12),
+                                pitchtools.NumberedInterval(3),
+                                pitchtools.NumberedInterval(9),
                                 pitchtools.NumberedInterval(0),
                                 ),
                             item_class=pitchtools.NumberedInterval,
@@ -132,24 +132,24 @@ percussion_marimba_tremolo_music_specifier = consort.tools.MusicSpecifier(
             pitch_segments=(
                 pitchtools.PitchSegment(
                     (
-                        pitchtools.NamedPitch("d'"),
-                        pitchtools.NamedPitch("d'"),
-                        pitchtools.NamedPitch("f'"),
-                        pitchtools.NamedPitch("d'"),
-                        pitchtools.NamedPitch("d'"),
-                        pitchtools.NamedPitch("f'"),
-                        pitchtools.NamedPitch("g'"),
+                        pitchtools.NamedPitch('d'),
+                        pitchtools.NamedPitch('d'),
+                        pitchtools.NamedPitch('f'),
+                        pitchtools.NamedPitch('d'),
+                        pitchtools.NamedPitch('d'),
+                        pitchtools.NamedPitch('f'),
+                        pitchtools.NamedPitch('g'),
                         ),
                     item_class=pitchtools.NamedPitch,
                     ),
                 pitchtools.PitchSegment(
                     (
-                        pitchtools.NamedPitch("ef'"),
-                        pitchtools.NamedPitch("gf'"),
-                        pitchtools.NamedPitch("gf'"),
-                        pitchtools.NamedPitch("df'"),
+                        pitchtools.NamedPitch('ef'),
+                        pitchtools.NamedPitch('gf'),
+                        pitchtools.NamedPitch('gf'),
+                        pitchtools.NamedPitch('df'),
                         pitchtools.NamedPitch('b'),
-                        pitchtools.NamedPitch("df'"),
+                        pitchtools.NamedPitch('df'),
                         ),
                     item_class=pitchtools.NamedPitch,
                     ),

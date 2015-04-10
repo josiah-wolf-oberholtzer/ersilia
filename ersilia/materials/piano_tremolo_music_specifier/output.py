@@ -96,7 +96,7 @@ piano_tremolo_music_specifier = consort.tools.MusicSpecifier(
                     item_class=pitchtools.NamedPitch,
                     ),
                 ),
-            ratio=mathtools.Ratio(1, 1, 1),
+            ratio=mathtools.Ratio((1, 1, 1)),
             ),
         ),
     rhythm_maker=rhythmmakertools.NoteRhythmMaker(

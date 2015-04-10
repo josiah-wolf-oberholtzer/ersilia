@@ -63,7 +63,7 @@ piano_agitato_music_specifier = consort.MusicSpecifier(
             None,
             None,
             ),
-        pitch_specifier=abbreviations.pitch_specifier_one,
+        pitch_specifier=abbreviations.agitato_pitch_specifier,
         register_specifier=consort.RegisterSpecifier(
             center_pitch="g",
             phrase_inflections=consort.RegisterInflection.zigzag(6)

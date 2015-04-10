@@ -42,7 +42,7 @@ piano_palm_cluster_music_specifier = consort.tools.MusicSpecifier(
                                 ),
                             item_class=pitchtools.NumberedInterval,
                             ),
-                        ratio=mathtools.Ratio(1),
+                        ratio=mathtools.Ratio((1,)),
                         ),
                     ]
                 ),
@@ -58,7 +58,7 @@ piano_palm_cluster_music_specifier = consort.tools.MusicSpecifier(
                                 ),
                             item_class=pitchtools.NumberedInterval,
                             ),
-                        ratio=mathtools.Ratio(1, 1, 1),
+                        ratio=mathtools.Ratio((1, 1, 1)),
                         ),
                     ]
                 ),
@@ -72,7 +72,7 @@ piano_palm_cluster_music_specifier = consort.tools.MusicSpecifier(
                                 ),
                             item_class=pitchtools.NumberedInterval,
                             ),
-                        ratio=mathtools.Ratio(1),
+                        ratio=mathtools.Ratio((1,)),
                         ),
                     ]
                 ),
@@ -88,7 +88,7 @@ piano_palm_cluster_music_specifier = consort.tools.MusicSpecifier(
                     item_class=pitchtools.NamedPitch,
                     ),
                 ),
-            ratio=mathtools.Ratio(1),
+            ratio=mathtools.Ratio((1,)),
             ),
         ),
     rhythm_maker=rhythmmakertools.EvenDivisionRhythmMaker(
@@ -104,5 +104,6 @@ piano_palm_cluster_music_specifier = consort.tools.MusicSpecifier(
             left_counts=(1, 1, 0),
             right_counts=(1, 0),
             ),
+        preferred_denominator='from_counts',
         ),
     )

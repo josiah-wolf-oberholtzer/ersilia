@@ -83,7 +83,7 @@ piano_pointillist_music_specifier = consort.tools.MusicSpecifier(
                                 ),
                             item_class=pitchtools.NumberedInterval,
                             ),
-                        ratio=mathtools.Ratio(1, 1, 1),
+                        ratio=mathtools.Ratio((1, 1, 1)),
                         ),
                     ]
                 ),
@@ -97,7 +97,7 @@ piano_pointillist_music_specifier = consort.tools.MusicSpecifier(
                                 ),
                             item_class=pitchtools.NumberedInterval,
                             ),
-                        ratio=mathtools.Ratio(1),
+                        ratio=mathtools.Ratio((1,)),
                         ),
                     ]
                 ),

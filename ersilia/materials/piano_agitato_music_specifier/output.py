@@ -216,7 +216,7 @@ piano_agitato_music_specifier = consort.tools.MusicSpecifier(
                                 ),
                             item_class=pitchtools.NumberedInterval,
                             ),
-                        ratio=mathtools.Ratio(1, 1, 1),
+                        ratio=mathtools.Ratio((1, 1, 1)),
                         ),
                     ]
                 ),
@@ -230,7 +230,7 @@ piano_agitato_music_specifier = consort.tools.MusicSpecifier(
                                 ),
                             item_class=pitchtools.NumberedInterval,
                             ),
-                        ratio=mathtools.Ratio(1),
+                        ratio=mathtools.Ratio((1,)),
                         ),
                     ]
                 ),
@@ -283,7 +283,7 @@ piano_agitato_music_specifier = consort.tools.MusicSpecifier(
                     item_class=pitchtools.NamedPitch,
                     ),
                 ),
-            ratio=mathtools.Ratio(1, 2, 1, 2, 1),
+            ratio=mathtools.Ratio((1, 2, 1, 2, 1)),
             ),
         ),
     rhythm_maker=rhythmmakertools.TaleaRhythmMaker(

@@ -60,13 +60,16 @@ piano_string_glissando_music_specifier = consort.tools.MusicSpecifier(
                                         markuptools.MarkupCommand(
                                             'italic',
                                             markuptools.MarkupCommand(
-                                                'concat',
-                                                [
-                                                    markuptools.MarkupCommand(
-                                                        'vstrut'
-                                                        ),
-                                                    'inside/low',
-                                                    ]
+                                                'smaller',
+                                                markuptools.MarkupCommand(
+                                                    'concat',
+                                                    [
+                                                        markuptools.MarkupCommand(
+                                                            'vstrut'
+                                                            ),
+                                                        'inside/low',
+                                                        ]
+                                                    )
                                                 )
                                             )
                                         )
@@ -85,13 +88,16 @@ piano_string_glissando_music_specifier = consort.tools.MusicSpecifier(
                                         markuptools.MarkupCommand(
                                             'italic',
                                             markuptools.MarkupCommand(
-                                                'concat',
-                                                [
-                                                    markuptools.MarkupCommand(
-                                                        'vstrut'
-                                                        ),
-                                                    'inside/high',
-                                                    ]
+                                                'smaller',
+                                                markuptools.MarkupCommand(
+                                                    'concat',
+                                                    [
+                                                        markuptools.MarkupCommand(
+                                                            'vstrut'
+                                                            ),
+                                                        'inside/high',
+                                                        ]
+                                                    )
                                                 )
                                             )
                                         )
@@ -125,7 +131,7 @@ piano_string_glissando_music_specifier = consort.tools.MusicSpecifier(
                     item_class=pitchtools.NamedPitch,
                     ),
                 ),
-            ratio=mathtools.Ratio(1),
+            ratio=mathtools.Ratio((1,)),
             ),
         ),
     rhythm_maker=consort.tools.CompositeRhythmMaker(
@@ -137,6 +143,7 @@ piano_string_glissando_music_specifier = consort.tools.MusicSpecifier(
                 forbidden_written_duration=durationtools.Duration(1, 4),
                 spell_metrically='unassignable',
                 ),
+            preferred_denominator='from_counts',
             ),
         last=rhythmmakertools.IncisedRhythmMaker(
             incise_specifier=rhythmmakertools.InciseSpecifier(

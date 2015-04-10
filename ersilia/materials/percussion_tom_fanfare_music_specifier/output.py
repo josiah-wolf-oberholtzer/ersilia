@@ -171,7 +171,7 @@ percussion_tom_fanfare_music_specifier = consort.tools.MusicSpecifier(
                     item_class=pitchtools.NamedPitch,
                     ),
                 ),
-            ratio=mathtools.Ratio(1),
+            ratio=mathtools.Ratio((1,)),
             ),
         pitch_operation_specifier=consort.tools.PitchOperationSpecifier(
             pitch_operations=(
@@ -183,7 +183,7 @@ percussion_tom_fanfare_music_specifier = consort.tools.MusicSpecifier(
                     ),
                 None,
                 ),
-            ratio=mathtools.Ratio(1, 1, 1),
+            ratio=mathtools.Ratio((1, 1, 1)),
             ),
         ),
     rhythm_maker=rhythmmakertools.TaleaRhythmMaker(
