@@ -4,6 +4,9 @@ from abjad import *
 
 metadata = datastructuretools.TypedOrderedDict(
     [
-        ('view_name', 'agitato'),
+        (
+            'output_material_class_name',
+            'BoundaryTimespanMaker',
+            ),
         ]
     )

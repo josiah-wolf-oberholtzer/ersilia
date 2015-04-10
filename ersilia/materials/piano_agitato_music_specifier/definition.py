@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
-import consort
 from abjad.tools import indicatortools
 from abjad.tools import rhythmmakertools
 from abjad.tools import scoretools
 from abjad.tools import selectortools
 from abjad.tools import spannertools
 from ersilia.materials import abbreviations
+import consort
 
 
 piano_agitato_music_specifier = consort.MusicSpecifier(
@@ -47,7 +47,7 @@ piano_agitato_music_specifier = consort.MusicSpecifier(
     pitch_handler=consort.PitchClassPitchHandler(
         forbid_repetitions=True,
         leap_constraint=12,
-        logical_tie_expressions=(
+        logical_tie_expressions=[
             consort.ChordExpression([-6, -3, 3, 8]),
             None,
             consort.ChordExpression([0, 3]),
@@ -62,10 +62,10 @@ piano_agitato_music_specifier = consort.MusicSpecifier(
             consort.ChordExpression([0, 3]),
             None,
             None,
-            ),
+            ],
         pitch_specifier=abbreviations.agitato_pitch_specifier,
         register_specifier=consort.RegisterSpecifier(
-            center_pitch="g",
+            center_pitch='G3',
             phrase_inflections=consort.RegisterInflection.zigzag(6)
                 .reverse().align(),
             segment_inflections=consort.RegisterInflection.descending(

@@ -9,7 +9,7 @@ from abjad.tools import spannertools
 import consort
 
 
-saxophone_pointillist_music_specifier = consort.tools.MusicSpecifier(
+saxophone_agitato_music_specifier = consort.tools.MusicSpecifier(
     attachment_handler=consort.tools.AttachmentHandler(
         slur=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(

@@ -6,9 +6,21 @@ from ide import idetools
 view_inventory=idetools.ViewInventory(
     [
         (
+            'agitato',
+            idetools.View(
+                ["'agitato' in :ds:"]
+                ),
+            ),
+        (
             'guitar',
             idetools.View(
                 ["'guitar' in :ds:"]
+                ),
+            ),
+        (
+            'ostinato',
+            idetools.View(
+                ["'ostinato' in :ds:"]
                 ),
             ),
         (
@@ -24,6 +36,12 @@ view_inventory=idetools.ViewInventory(
                 ),
             ),
         (
+            'pointillist',
+            idetools.View(
+                ["'pointillist' in :ds:"]
+                ),
+            ),
+        (
             'shaker',
             idetools.View(
                 ["'shaker' in :ds:"]
@@ -33,6 +51,18 @@ view_inventory=idetools.ViewInventory(
             'strings',
             idetools.View(
                 ["'string' in :ds:"]
+                ),
+            ),
+        (
+            'timespan maker',
+            idetools.View(
+                ["'timespan maker' in :ds:"]
+                ),
+            ),
+        (
+            'tremolo',
+            idetools.View(
+                ["'tremolo' in :ds:"]
                 ),
             ),
         (

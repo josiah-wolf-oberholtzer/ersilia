@@ -7,7 +7,7 @@ from abjad.tools import selectortools
 from abjad.tools import spannertools
 
 
-saxophone_pointillist_music_specifier = consort.MusicSpecifier(
+saxophone_agitato_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
         #dynamic_expressions=consort.DynamicExpression(
         #    dynamic_tokens="f mf ff",
