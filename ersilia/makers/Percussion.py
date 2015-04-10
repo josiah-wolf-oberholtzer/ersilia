@@ -5,6 +5,7 @@ from abjad.tools import pitchtools
 
 class Percussion(abctools.AbjadObject):
 
+    BAMBOO_WIND_CHIMES = pitchtools.NamedPitch("e''")
     CASTANET = pitchtools.NamedPitch("g''")
     GUIRO = pitchtools.NamedPitch("e''")
     TAMBOURINE = pitchtools.NamedPitch("c''")
