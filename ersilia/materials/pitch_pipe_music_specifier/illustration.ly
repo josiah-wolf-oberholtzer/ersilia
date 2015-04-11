@@ -130,7 +130,7 @@
                                                 \italic
                                                     exhale
                                     }
-                            c'16 \p \repeatTie
+                            c'16 \ppp \repeatTie
                             \stopStaff
                             \startStaff
                             \revert NoteHead #'style
@@ -146,12 +146,11 @@
                         % [Violin 1 Voice] Measure 4
                         {
                             \clef "percussion"
-                            \once \override Hairpin.circled-tip = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'4 \fp \>
+                            c'4 \fp
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -160,7 +159,7 @@
                                                 \italic
                                                     exhale
                                     }
-                            c'16 \repeatTie \!
+                            c'16 \p \repeatTie
                             \stopStaff
                             \startStaff
                             \revert NoteHead #'style
@@ -255,13 +254,12 @@
                         }
                         % [Violin 2 Voice] Measure 2
                         {
-                            \once \override Hairpin.circled-tip = ##t
-                            c'8. \ppp \repeatTie \>
+                            c'8. \ppp \repeatTie \<
                         }
                         {
                             c'8. \repeatTie
                             c'4 \repeatTie
-                            c'16 \repeatTie \!
+                            c'16 \mf \repeatTie
                             \stopStaff
                             \startStaff
                             \revert NoteHead #'style
@@ -281,7 +279,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'4 \ppp
+                            c'4 \mf
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -385,7 +383,7 @@
                         }
                         % [Viola Voice] Measure 2
                         {
-                            c'4. \p \repeatTie
+                            c'4. \ppp \repeatTie
                             \stopStaff
                             \startStaff
                             \revert NoteHead #'style
@@ -404,12 +402,11 @@
                     {
                         {
                             \clef "percussion"
-                            \once \override Hairpin.circled-tip = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'4 \fp \>
+                            c'4 \fp
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -421,7 +418,7 @@
                         }
                         % [Viola Voice] Measure 4
                         {
-                            c'4. \repeatTie \!
+                            c'4. \p \repeatTie
                             \stopStaff
                             \startStaff
                             \revert NoteHead #'style
@@ -451,7 +448,7 @@
                                                 \italic
                                                     inhale
                                     }
-                            c'4 \p \repeatTie
+                            c'4 \mf \repeatTie
                             \bar "|."
                             \stopStaff
                             \startStaff
@@ -487,7 +484,6 @@
                     {
                         {
                             \clef "percussion"
-                            \once \override Hairpin.circled-tip = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -503,7 +499,7 @@
                                     }
                         }
                         {
-                            c'4 \repeatTie \!
+                            c'4 \ppp \repeatTie
                             \stopStaff
                             \startStaff
                             \revert NoteHead #'style
@@ -554,12 +550,11 @@
                     {
                         {
                             \clef "percussion"
-                            \once \override Hairpin.circled-tip = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'8. \fp \>
+                            c'8. \fp \<
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -574,7 +569,7 @@
                             c'8. \repeatTie
                         }
                         {
-                            c'8. \repeatTie \!
+                            c'8. \mf \repeatTie
                             \stopStaff
                             \startStaff
                             \revert NoteHead #'style
@@ -594,7 +589,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'8 \ppp
+                            c'8 \p
                                 ^ \markup {
                                     \box
                                         \pad-around

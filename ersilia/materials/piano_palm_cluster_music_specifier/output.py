@@ -8,7 +8,23 @@ import consort
 
 
 piano_palm_cluster_music_specifier = consort.tools.MusicSpecifier(
-    attachment_handler=consort.tools.AttachmentHandler(),
+    attachment_handler=consort.tools.AttachmentHandler(
+        dynamic_expressions=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    consort.tools.DynamicExpression(
+                        dynamic_tokens=datastructuretools.CyclicTuple(
+                            ['p', 'mf', 'mp', 'pp', 'f']
+                            ),
+                        division_period=2,
+                        transitions=datastructuretools.CyclicTuple(
+                            [None]
+                            ),
+                        ),
+                    ]
+                ),
+            ),
+        ),
     labels=('pedaled',),
     pitch_handler=consort.tools.PitchClassPitchHandler(
         forbid_repetitions=True,

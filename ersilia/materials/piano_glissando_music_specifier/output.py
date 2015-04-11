@@ -12,6 +12,21 @@ import consort
 
 piano_glissando_music_specifier = consort.tools.MusicSpecifier(
     attachment_handler=consort.tools.AttachmentHandler(
+        dynamic_expressions=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    consort.tools.DynamicExpression(
+                        dynamic_tokens=datastructuretools.CyclicTuple(
+                            ['p']
+                            ),
+                        only_first=True,
+                        transitions=datastructuretools.CyclicTuple(
+                            [None]
+                            ),
+                        ),
+                    ]
+                ),
+            ),
         glissando=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [

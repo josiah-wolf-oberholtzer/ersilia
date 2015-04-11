@@ -6,7 +6,10 @@ from abjad.tools import rhythmmakertools
 
 piano_palm_cluster_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
-        #dynamic_expressions=consort.DynamicExpression(),
+        dynamic_expressions=consort.DynamicExpression(
+            dynamic_tokens='p mf mp pp f',
+            division_period=2,
+            ),
         ),
     labels='pedaled',
     pitch_handler=consort.PitchClassPitchHandler(

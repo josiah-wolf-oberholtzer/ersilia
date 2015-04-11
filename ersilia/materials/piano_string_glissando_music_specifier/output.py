@@ -23,6 +23,21 @@ piano_string_glissando_music_specifier = consort.tools.MusicSpecifier(
                     ]
                 ),
             ),
+        dynamic_expressions=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    consort.tools.DynamicExpression(
+                        dynamic_tokens=datastructuretools.CyclicTuple(
+                            ['p']
+                            ),
+                        only_first=True,
+                        transitions=datastructuretools.CyclicTuple(
+                            [None]
+                            ),
+                        ),
+                    ]
+                ),
+            ),
         glissando=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [
@@ -96,6 +111,34 @@ piano_string_glissando_music_specifier = consort.tools.MusicSpecifier(
                                                             'vstrut'
                                                             ),
                                                         'inside/high',
+                                                        ]
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                ),
+                            ),
+                        ),
+                    consort.tools.ComplexTextSpanner(
+                        markup=markuptools.Markup(
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'box',
+                                    markuptools.MarkupCommand(
+                                        'pad-around',
+                                        0.5,
+                                        markuptools.MarkupCommand(
+                                            'italic',
+                                            markuptools.MarkupCommand(
+                                                'smaller',
+                                                markuptools.MarkupCommand(
+                                                    'concat',
+                                                    [
+                                                        markuptools.MarkupCommand(
+                                                            'vstrut'
+                                                            ),
+                                                        'inside/medium',
                                                         ]
                                                     )
                                                 )

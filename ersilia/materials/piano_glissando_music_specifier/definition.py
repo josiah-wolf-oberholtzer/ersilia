@@ -7,7 +7,10 @@ from ersilia.materials import abbreviations
 
 piano_glissando_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
-        #dynamic_expressions=consort.DynamicExpression(),
+        dynamic_expressions=consort.DynamicExpression(
+            dynamic_tokens='p',
+            only_first=True,
+            ),
         glissando=spannertools.Glissando(),
         keys_spanner=(
             abbreviations.chromatic_keys_spanner,

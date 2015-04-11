@@ -69,7 +69,7 @@
                             \override TextSpanner #'bound-details #'right-broken #'text = ##f
                             \override TextSpanner #'dash-fraction = #1
                             \override TextSpanner #'direction = #up
-                            c'4. \glissando \startTextSpan
+                            c'4. \p \glissando \startTextSpan
                         }
                         {
                             c''4 \glissando
@@ -102,7 +102,7 @@
                             \override TextSpanner #'bound-details #'right-broken #'text = ##f
                             \override TextSpanner #'dash-fraction = #1
                             \override TextSpanner #'direction = #up
-                            c''8. [ \glissando \startTextSpan
+                            c''8. \p [ \glissando \startTextSpan
                             \set stemLeftBeamCount = 2
                             f''16 ] \stopTextSpan
                             \revert TextSpanner #'bound-details
@@ -129,7 +129,7 @@
                             \override TextSpanner #'bound-details #'right-broken #'text = ##f
                             \override TextSpanner #'dash-fraction = #1
                             \override TextSpanner #'direction = #up
-                            c''8 [ \glissando \startTextSpan
+                            c''8 \p [ \glissando \startTextSpan
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             f'8 \glissando
@@ -165,7 +165,7 @@
                             \override TextSpanner #'bound-details #'right-broken #'text = ##f
                             \override TextSpanner #'dash-fraction = #1
                             \override TextSpanner #'direction = #up
-                            c''8 [ \glissando \startTextSpan
+                            c''8 \p [ \glissando \startTextSpan
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             f''8 \glissando
@@ -199,7 +199,7 @@
                             \override TextSpanner #'bound-details #'right-broken #'text = ##f
                             \override TextSpanner #'dash-fraction = #1
                             \override TextSpanner #'direction = #up
-                            c'8 [ \glissando \startTextSpan
+                            c'8 \p [ \glissando \startTextSpan
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             c''8 \glissando
@@ -249,7 +249,7 @@
                             \override TextSpanner #'bound-details #'right-broken #'text = ##f
                             \override TextSpanner #'dash-fraction = #1
                             \override TextSpanner #'direction = #up
-                            f'4 \glissando \startTextSpan
+                            f'4 \p \glissando \startTextSpan
                         }
                         {
                             c''8. \glissando
@@ -298,7 +298,7 @@
                             \override TextSpanner #'bound-details #'right-broken #'text = ##f
                             \override TextSpanner #'dash-fraction = #1
                             \override TextSpanner #'direction = #up
-                            f'8. [ \glissando \startTextSpan
+                            f'8. \p [ \glissando \startTextSpan
                             \set stemLeftBeamCount = 2
                             c''16 ] \stopTextSpan
                             \revert TextSpanner #'bound-details
@@ -328,7 +328,7 @@
                             \override TextSpanner #'bound-details #'right-broken #'text = ##f
                             \override TextSpanner #'dash-fraction = #1
                             \override TextSpanner #'direction = #up
-                            f''8. [ \glissando \startTextSpan
+                            f''8. \p [ \glissando \startTextSpan
                             \set stemLeftBeamCount = 2
                             f'16 ] \stopTextSpan
                             \revert TextSpanner #'bound-details
@@ -386,7 +386,7 @@
                             \override TextSpanner #'bound-details #'right-broken #'text = ##f
                             \override TextSpanner #'dash-fraction = #1
                             \override TextSpanner #'direction = #up
-                            f''4. \glissando \startTextSpan
+                            f''4. \p \glissando \startTextSpan
                         }
                         % [Viola Voice] Measure 2
                         {
@@ -429,7 +429,7 @@
                             \override TextSpanner #'bound-details #'right-broken #'text = ##f
                             \override TextSpanner #'dash-fraction = #1
                             \override TextSpanner #'direction = #up
-                            c'4 \glissando \startTextSpan
+                            c'4 \p \glissando \startTextSpan
                         }
                         % [Viola Voice] Measure 4
                         {
@@ -463,7 +463,7 @@
                             \override TextSpanner #'bound-details #'right-broken #'text = ##f
                             \override TextSpanner #'dash-fraction = #1
                             \override TextSpanner #'direction = #up
-                            f'8 [ \glissando \startTextSpan
+                            f'8 \p [ \glissando \startTextSpan
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             f''8 \glissando
@@ -516,7 +516,7 @@
                             \override TextSpanner #'bound-details #'right-broken #'text = ##f
                             \override TextSpanner #'dash-fraction = #1
                             \override TextSpanner #'direction = #up
-                            c''4 \glissando \startTextSpan
+                            c''4 \p \glissando \startTextSpan
                         }
                         {
                             c'8. [ \glissando
@@ -553,7 +553,7 @@
                             \override TextSpanner #'bound-details #'right-broken #'text = ##f
                             \override TextSpanner #'dash-fraction = #1
                             \override TextSpanner #'direction = #up
-                            f''8. [ \glissando \startTextSpan
+                            f''8. \p [ \glissando \startTextSpan
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             f'8 \glissando
@@ -586,7 +586,7 @@
                             \override TextSpanner #'bound-details #'right-broken #'text = ##f
                             \override TextSpanner #'dash-fraction = #1
                             \override TextSpanner #'direction = #up
-                            f'8. \glissando \startTextSpan
+                            f'8. \p \glissando \startTextSpan
                         }
                         % [Cello Voice] Measure 4
                         {
@@ -620,7 +620,7 @@
                             \override TextSpanner #'bound-details #'right-broken #'text = ##f
                             \override TextSpanner #'dash-fraction = #1
                             \override TextSpanner #'direction = #up
-                            c'8. [ \glissando
+                            c'8. \p [ \glissando
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             f''8 \glissando

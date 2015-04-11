@@ -18,9 +18,8 @@ pitch_pipe_music_specifier = consort.MusicSpecifier(
             ),
         dynamic_expressions=consort.DynamicExpression(
             division_period=2,
-            dynamic_tokens='p ppp',
+            dynamic_tokens='p ppp mf',
             start_dynamic_tokens='o fp',
-            stop_dynamic_tokens='o',
             ),
         inhale_exhale=consort.AttachmentExpression(
             attachments=[

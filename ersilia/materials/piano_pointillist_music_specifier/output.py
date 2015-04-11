@@ -5,12 +5,56 @@ from abjad.tools import indicatortools
 from abjad.tools import mathtools
 from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
+from abjad.tools import scoretools
 from abjad.tools import selectortools
 import consort
 
 
 piano_pointillist_music_specifier = consort.tools.MusicSpecifier(
     attachment_handler=consort.tools.AttachmentHandler(
+        dynamic_expressions=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    consort.tools.DynamicExpression(
+                        dynamic_tokens=datastructuretools.CyclicTuple(
+                            ['ppp']
+                            ),
+                        only_first=True,
+                        start_dynamic_tokens=datastructuretools.CyclicTuple(
+                            ['ppp']
+                            ),
+                        transitions=datastructuretools.CyclicTuple(
+                            [None]
+                            ),
+                        ),
+                    ]
+                ),
+            ),
+        mordent=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    indicatortools.Articulation('mordent'),
+                    ]
+                ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.PrototypeSelectorCallback(
+                        prototype=scoretools.Note,
+                        ),
+                    selectortools.LogicalTieSelectorCallback(
+                        flatten=True,
+                        pitched=False,
+                        trivial=True,
+                        only_with_head=False,
+                        only_with_tail=False,
+                        ),
+                    selectortools.ItemSelectorCallback(
+                        item=0,
+                        apply_to_each=True,
+                        ),
+                    ),
+                ),
+            ),
         tenuti=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [
@@ -92,7 +136,7 @@ piano_pointillist_music_specifier = consort.tools.MusicSpecifier(
                     consort.tools.RegisterInflection(
                         inflections=pitchtools.IntervalSegment(
                             (
-                                pitchtools.NumberedInterval(24),
+                                pitchtools.NumberedInterval(12),
                                 pitchtools.NumberedInterval(0),
                                 ),
                             item_class=pitchtools.NumberedInterval,

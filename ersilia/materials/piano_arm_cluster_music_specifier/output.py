@@ -30,6 +30,20 @@ piano_arm_cluster_music_specifier = consort.tools.MusicSpecifier(
                     ),
                 ),
             ),
+        dynamic_expressions=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    consort.tools.DynamicExpression(
+                        dynamic_tokens=datastructuretools.CyclicTuple(
+                            ['fff']
+                            ),
+                        transitions=datastructuretools.CyclicTuple(
+                            [None]
+                            ),
+                        ),
+                    ]
+                ),
+            ),
         ),
     labels=(),
     pitch_handler=consort.tools.AbsolutePitchHandler(

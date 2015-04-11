@@ -46,14 +46,11 @@ pitch_pipe_music_specifier = consort.tools.MusicSpecifier(
                 [
                     consort.tools.DynamicExpression(
                         dynamic_tokens=datastructuretools.CyclicTuple(
-                            ['p', 'ppp']
+                            ['p', 'ppp', 'mf']
                             ),
                         division_period=2,
                         start_dynamic_tokens=datastructuretools.CyclicTuple(
                             ['o', 'fp']
-                            ),
-                        stop_dynamic_tokens=datastructuretools.CyclicTuple(
-                            ['o']
                             ),
                         transitions=datastructuretools.CyclicTuple(
                             [None]

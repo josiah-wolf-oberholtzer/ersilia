@@ -2,12 +2,23 @@
 import consort
 from abjad.tools import indicatortools
 from abjad.tools import rhythmmakertools
+from abjad.tools import scoretools
 from abjad.tools import selectortools
 
 
 piano_pointillist_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
-        #dynamic_expressions=consort.DynamicExpression(),
+        dynamic_expressions=consort.DynamicExpression(
+            start_dynamic_tokens='ppp',
+            only_first=True,
+            ),
+        mordent=consort.AttachmentExpression(
+            attachments=indicatortools.Articulation('mordent'),
+            selector=selectortools.Selector()
+                .by_class(scoretools.Note)
+                .by_logical_tie()
+                [0]
+            ),
         tenuti=consort.AttachmentExpression(
             attachments=indicatortools.Articulation('tenuto'),
             selector=selectortools.Selector()
@@ -25,11 +36,11 @@ piano_pointillist_music_specifier = consort.MusicSpecifier(
             consort.ChordExpression([-4, 5]),
             ),
         register_specifier=consort.RegisterSpecifier(
-            center_pitch="g",
+            center_pitch='G3',
             phrase_inflections=consort.RegisterInflection.zigzag(12)
                 .reverse().align(),
             segment_inflections=consort.RegisterInflection.descending(
-                width=24).align()
+                width=12).align()
             ),
         register_spread=6,
         ),

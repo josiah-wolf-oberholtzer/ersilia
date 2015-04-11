@@ -8,7 +8,10 @@ from ersilia.materials import abbreviations
 piano_string_glissando_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
         clef_spanner=consort.ClefSpanner('percussion'),
-        #dynamic_expressions=consort.DynamicExpression(),
+        dynamic_expressions=consort.DynamicExpression(
+            dynamic_tokens='p',
+            only_first=True,
+            ),
         glissando=spannertools.Glissando(),
         staff_lines_spanner=spannertools.StaffLinesSpanner(
             lines=[-4, 4],
@@ -19,6 +22,7 @@ piano_string_glissando_music_specifier = consort.MusicSpecifier(
         text_spanner=(
             abbreviations.make_text_spanner('inside/low'),
             abbreviations.make_text_spanner('inside/high'),
+            abbreviations.make_text_spanner('inside/medium'),
             ),
         ),
     color=None,

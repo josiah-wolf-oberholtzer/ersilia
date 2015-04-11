@@ -64,7 +64,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <c'''' e'''' g''''>16 [
+                            <c'''' e'''' g''''>16 \p \< [
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -109,7 +109,7 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <c''' e''' g'''>16 ]
+                            <c''' e''' g'''>16 \mf ]
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -131,7 +131,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <a''' c'''' e''''>16 [
+                            <a''' c'''' e''''>16 \f \> [
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -191,7 +191,7 @@
                             }
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
-                            <c''' e''' g''' b''' d''''>8
+                            <c''' e''' g''' b''' d''''>8 \p
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -221,7 +221,7 @@
                             }
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
-                            <a'' c''' e'''>8
+                            <a'' c''' e'''>8 \pp
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -256,7 +256,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <f' a' c'' e'' g''>16 [
+                            <f' a' c'' e'' g''>16 \mp \> [
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -301,7 +301,7 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <a' c'' e'' g'' b''>16 ]
+                            <a' c'' e'' g'' b''>16 \pp ]
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -330,7 +330,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <a'' c''' e'''>16 [
+                            <a'' c''' e'''>16 \mf \> [
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -375,7 +375,7 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <a' c'' e''>16 ]
+                            <a' c'' e''>16 \mp ]
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -405,7 +405,7 @@
                             }
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
-                            <c'' e'' g''>8
+                            <c'' e'' g''>8 \p
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -449,7 +449,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <c''' e''' g'''>16 [
+                            <c''' e''' g'''>16 \f \> [
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -494,7 +494,7 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <e''' g''' b'''>16 ]
+                            <e''' g''' b'''>16 \p ]
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -519,7 +519,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <c''' e''' g'''>16 [
+                            <c''' e''' g'''>16 \pp \< [
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -641,7 +641,7 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <a'' c''' e'''>16 ]
+                            <a'' c''' e'''>16 \f ]
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -666,7 +666,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <c'' e'' g''>16 [
+                            <c'' e'' g''>16 \mp [
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -711,7 +711,7 @@
                             }
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
-                            <c'' e'' g''>8
+                            <c'' e'' g''>8 \mf
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -777,7 +777,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <e''' g''' b'''>16 [
+                            <e''' g''' b'''>16 \p \< [
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -836,7 +836,7 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <e'' g'' b''>16 ]
+                            <e'' g'' b''>16 \mf ]
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -862,7 +862,7 @@
                             }
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
-                            <f'' a'' c''' e''' g'''>8
+                            <f'' a'' c''' e''' g'''>8 \f \>
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -893,7 +893,7 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 1
-                            <e''' g''' b'''>8 ]
+                            <e''' g''' b'''>8 \p ]
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -918,7 +918,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <f'' a'' c''' e''' g'''>16 [
+                            <f'' a'' c''' e''' g'''>16 \pp [
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -971,7 +971,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <a' c'' e'' g'' b''>16 [
+                            <a' c'' e'' g'' b''>16 \mp \> [
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -1016,7 +1016,7 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <a' c'' e'' g'' b''>16 ]
+                            <a' c'' e'' g'' b''>16 \pp ]
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -1048,7 +1048,7 @@
                             }
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
-                            <e'' g'' b''>8
+                            <e'' g'' b''>8 \mf \>
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -1076,7 +1076,7 @@
                             }
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
-                            <c' e' g' b' d''>8
+                            <c' e' g' b' d''>8 \mp
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -1124,7 +1124,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <e''' g''' b'''>16 [
+                            <e''' g''' b'''>16 \p \< [
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -1186,7 +1186,7 @@
                             }
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
-                            <e'''' g'''' b''''>8
+                            <e'''' g'''' b''''>8 \mf
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -1210,7 +1210,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <f'' a'' c''' e''' g'''>16 [
+                            <f'' a'' c''' e''' g'''>16 \f \> [
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -1255,7 +1255,7 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <a'' c''' e''' g''' b'''>16 ]
+                            <a'' c''' e''' g''' b'''>16 \p ]
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -1290,7 +1290,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <e'' g'' b''>16 [
+                            <e'' g'' b''>16 \pp [
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -1324,7 +1324,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <a' c'' e'' g'' b''>16 [
+                            <a' c'' e'' g'' b''>16 \mp [
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -1363,7 +1363,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <e' g' b'>16 [
+                            <e' g' b'>16 \mf \> [
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -1422,7 +1422,7 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <a c' e' g' b'>16 ]
+                            <a c' e' g' b'>16 \mp ]
                                 ^ \markup {
                                     \center-align
                                         \concat

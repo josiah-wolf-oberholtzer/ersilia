@@ -52,12 +52,12 @@
                     {
                         % [Violin 1 Voice] Measure 1
                         {
-                            c'''''8 -\tenuto [
+                            c''''8 -\mordent -\tenuto \ppp [
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             r8
                             \set stemLeftBeamCount = 1
-                            <bf'' ef'''>8 -\tenuto ]
+                            <bf' ef''>8 -\tenuto ]
                         }
                     }
                     {
@@ -68,7 +68,7 @@
                     {
                         % [Violin 1 Voice] Measure 2
                         {
-                            <c'''' ef''''>8 -\tenuto
+                            <c''' ef'''>8 -\tenuto \ppp
                         }
                     }
                     {
@@ -78,7 +78,7 @@
                     }
                     {
                         {
-                            c'''8 -\tenuto
+                            c'''8 -\mordent -\tenuto \ppp
                         }
                     }
                     {
@@ -90,7 +90,7 @@
                     {
                         % [Violin 1 Voice] Measure 3
                         {
-                            <af'' f'''>8 -\tenuto
+                            <af'' f'''>8 -\tenuto \ppp
                         }
                     }
                     {
@@ -101,7 +101,7 @@
                     {
                         % [Violin 1 Voice] Measure 4
                         {
-                            c'''8 -\tenuto
+                            c'''8 -\mordent -\tenuto \ppp
                         }
                     }
                     {
@@ -116,7 +116,7 @@
                     }
                     {
                         {
-                            <bf' ef''>8 -\tenuto
+                            <bf' ef''>8 -\tenuto \ppp
                         }
                     }
                     {
@@ -153,7 +153,7 @@
                     }
                     {
                         {
-                            c''''8 -\tenuto
+                            c'''8 -\mordent -\tenuto \ppp
                         }
                     }
                     {
@@ -167,10 +167,10 @@
                     }
                     {
                         {
-                            <bf''' ef''''>8 -\tenuto
+                            <bf'' ef'''>8 -\tenuto \ppp
                         }
                         {
-                            <c''' ef'''>8 -\tenuto
+                            <c'' ef''>8 -\tenuto
                         }
                     }
                     {
@@ -182,7 +182,7 @@
                     {
                         % [Violin 2 Voice] Measure 3
                         {
-                            c'''8 -\tenuto
+                            c'''8 -\mordent -\tenuto \ppp
                         }
                     }
                     {
@@ -196,7 +196,7 @@
                     }
                     {
                         {
-                            <af'' f'''>8 -\tenuto
+                            <af' f''>8 -\tenuto \ppp
                         }
                     }
                     {
@@ -242,7 +242,7 @@
                     {
                         \tweak #'text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            c''''8 -\tenuto [
+                            c'''8 -\mordent -\tenuto \ppp [
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             r8
@@ -250,11 +250,11 @@
                             \set stemRightBeamCount = 1
                             r8
                             \set stemLeftBeamCount = 1
-                            <bf''' ef''''>8 -\tenuto ]
+                            <bf'' ef'''>8 -\tenuto ]
                         }
                         % [Viola Voice] Measure 2
                         {
-                            <c''' ef'''>8 -\tenuto
+                            <c'' ef''>8 -\tenuto
                         }
                     }
                     {
@@ -275,7 +275,7 @@
                     {
                         % [Viola Voice] Measure 4
                         {
-                            c'''8 -\tenuto
+                            c''8 -\mordent -\tenuto \ppp
                         }
                     }
                     {
@@ -289,7 +289,7 @@
                     }
                     {
                         {
-                            <af' f''>8 -\tenuto
+                            <af' f''>8 -\tenuto \ppp
                         }
                     }
                     {
@@ -326,7 +326,7 @@
                     }
                     {
                         {
-                            c''''8 -\tenuto
+                            c'''8 -\mordent -\tenuto \ppp
                         }
                     }
                     {
@@ -341,7 +341,7 @@
                     }
                     {
                         {
-                            <bf'' ef'''>8 -\tenuto
+                            <bf'' ef'''>8 -\tenuto \ppp
                         }
                     }
                     {
@@ -357,12 +357,12 @@
                     }
                     {
                         {
-                            <c''' ef'''>16 -\tenuto
+                            <c'' ef''>16 -\tenuto \ppp
                         }
                         % [Cello Voice] Measure 4
                         \tweak #'text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            <c''' ef'''>16 \repeatTie [
+                            <c'' ef''>16 \repeatTie [
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             r8
@@ -370,7 +370,7 @@
                             r8 ]
                         }
                         {
-                            c''8 -\tenuto
+                            c''8 -\mordent -\tenuto
                         }
                     }
                     {
@@ -384,7 +384,7 @@
                     }
                     {
                         {
-                            <af'' f'''>8 -\tenuto
+                            <af'' f'''>8 -\tenuto \ppp
                         }
                     }
                     {
