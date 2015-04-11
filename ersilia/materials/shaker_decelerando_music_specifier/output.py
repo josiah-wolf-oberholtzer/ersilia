@@ -85,7 +85,6 @@ shaker_decelerando_music_specifier = consort.tools.MusicSpecifier(
                                         )
                                     ),
                                 ),
-                            direction=Up,
                             ),
                         ),
                     ]

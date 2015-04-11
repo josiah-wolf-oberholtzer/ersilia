@@ -94,7 +94,6 @@ shaker_tremolo_music_specifier = consort.tools.MusicSpecifier(
                                         )
                                     ),
                                 ),
-                            direction=Up,
                             ),
                         ),
                     ]

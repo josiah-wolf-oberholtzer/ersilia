@@ -89,7 +89,7 @@ def make_text_markup(text):
 
 
 def make_text_spanner(text):
-    markup = make_text_markup(text)
-    markup = markuptools.Markup(markup, None)
+    markup_contents = make_text_markup(text).contents
+    markup = markuptools.Markup(markup_contents)
     text_spanner = consort.ComplexTextSpanner(markup=markup)
     return text_spanner

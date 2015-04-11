@@ -1,16 +1,265 @@
 # -*- encoding: utf-8 -*-
+from abjad.tools import datastructuretools
+from abjad.tools import durationtools
+from abjad.tools import indicatortools
+from abjad.tools import markuptools
 from abjad.tools import mathtools
 from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
+from abjad.tools import scoretools
+from abjad.tools import selectortools
+from abjad.tools import spannertools
 import consort
 
 
 string_agitato_music_specifier = consort.tools.MusicSpecifier(
-    attachment_handler=consort.tools.AttachmentHandler(),
+    attachment_handler=consort.tools.AttachmentHandler(
+        accents=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    indicatortools.Articulation('accent'),
+                    ]
+                ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.LogicalTieSelectorCallback(
+                        flatten=True,
+                        pitched=True,
+                        trivial=True,
+                        only_with_head=False,
+                        only_with_tail=False,
+                        ),
+                    selectortools.DurationSelectorCallback(
+                        duration=selectortools.DurationInequality(
+                            operator_string='>',
+                            duration=durationtools.Duration(1, 16),
+                            ),
+                        preprolated=True,
+                        ),
+                    selectortools.ContiguitySelectorCallback(),
+                    selectortools.PrototypeSelectorCallback(
+                        prototype=scoretools.Leaf,
+                        ),
+                    selectortools.ItemSelectorCallback(
+                        item=0,
+                        apply_to_each=True,
+                        ),
+                    ),
+                ),
+            ),
+        dynamic_expressions=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    consort.tools.DynamicExpression(
+                        dynamic_tokens=datastructuretools.CyclicTuple(
+                            ['mp', 'fff']
+                            ),
+                        start_dynamic_tokens=datastructuretools.CyclicTuple(
+                            ['f']
+                            ),
+                        stop_dynamic_tokens=datastructuretools.CyclicTuple(
+                            ['mf']
+                            ),
+                        transitions=datastructuretools.CyclicTuple(
+                            [None]
+                            ),
+                        ),
+                    ]
+                ),
+            ),
+        flautando=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    consort.tools.ComplexTextSpanner(
+                        markup=markuptools.Markup(
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'box',
+                                    markuptools.MarkupCommand(
+                                        'pad-around',
+                                        0.5,
+                                        markuptools.MarkupCommand(
+                                            'italic',
+                                            markuptools.MarkupCommand(
+                                                'smaller',
+                                                markuptools.MarkupCommand(
+                                                    'concat',
+                                                    [
+                                                        markuptools.MarkupCommand(
+                                                            'vstrut'
+                                                            ),
+                                                        'flautando',
+                                                        ]
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                ),
+                            ),
+                        ),
+                    ]
+                ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.LogicalTieSelectorCallback(
+                        flatten=True,
+                        pitched=True,
+                        trivial=True,
+                        only_with_head=False,
+                        only_with_tail=False,
+                        ),
+                    selectortools.DurationSelectorCallback(
+                        duration=selectortools.DurationInequality(
+                            operator_string='>',
+                            duration=durationtools.Duration(1, 16),
+                            ),
+                        preprolated=True,
+                        ),
+                    selectortools.ContiguitySelectorCallback(),
+                    selectortools.PrototypeSelectorCallback(
+                        prototype=scoretools.Leaf,
+                        ),
+                    ),
+                ),
+            ),
+        harmonics=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    consort.tools.HarmonicExpression(
+                        touch_interval=pitchtools.NamedInterval('+P4'),
+                        ),
+                    ]
+                ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.LogicalTieSelectorCallback(
+                        flatten=True,
+                        pitched=True,
+                        trivial=True,
+                        only_with_head=False,
+                        only_with_tail=False,
+                        ),
+                    selectortools.DurationSelectorCallback(
+                        duration=selectortools.DurationInequality(
+                            operator_string='==',
+                            duration=durationtools.Duration(1, 16),
+                            ),
+                        preprolated=True,
+                        ),
+                    selectortools.PatternedSelectorCallback(
+                        pattern=rhythmmakertools.BooleanPattern(
+                            indices=(2, 4),
+                            period=5,
+                            ),
+                        ),
+                    ),
+                ),
+            ),
+        slur=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    spannertools.Slur(),
+                    ]
+                ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.LogicalTieSelectorCallback(
+                        flatten=True,
+                        pitched=True,
+                        trivial=True,
+                        only_with_head=False,
+                        only_with_tail=False,
+                        ),
+                    selectortools.DurationSelectorCallback(
+                        duration=selectortools.DurationInequality(
+                            operator_string='==',
+                            duration=durationtools.Duration(1, 16),
+                            ),
+                        preprolated=True,
+                        ),
+                    selectortools.ContiguitySelectorCallback(),
+                    selectortools.LengthSelectorCallback(
+                        length=selectortools.LengthInequality(
+                            operator_string='>',
+                            length=1,
+                            ),
+                        ),
+                    selectortools.PrototypeSelectorCallback(
+                        prototype=scoretools.Leaf,
+                        ),
+                    ),
+                ),
+            ),
+        staccati=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    indicatortools.Articulation('staccato'),
+                    ]
+                ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.LogicalTieSelectorCallback(
+                        flatten=True,
+                        pitched=True,
+                        trivial=True,
+                        only_with_head=False,
+                        only_with_tail=False,
+                        ),
+                    selectortools.DurationSelectorCallback(
+                        duration=selectortools.DurationInequality(
+                            operator_string='==',
+                            duration=durationtools.Duration(1, 16),
+                            ),
+                        preprolated=True,
+                        ),
+                    selectortools.ContiguitySelectorCallback(),
+                    selectortools.PrototypeSelectorCallback(
+                        prototype=scoretools.Leaf,
+                        ),
+                    ),
+                ),
+            ),
+        trill_spanner=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    spannertools.ComplexTrillSpanner(
+                        interval=pitchtools.NamedInterval('+m3'),
+                        ),
+                    spannertools.ComplexTrillSpanner(
+                        interval=pitchtools.NamedInterval('+P4'),
+                        ),
+                    ]
+                ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.LogicalTieSelectorCallback(
+                        flatten=True,
+                        pitched=True,
+                        trivial=True,
+                        only_with_head=False,
+                        only_with_tail=False,
+                        ),
+                    selectortools.DurationSelectorCallback(
+                        duration=selectortools.DurationInequality(
+                            operator_string='>',
+                            duration=durationtools.Duration(1, 16),
+                            ),
+                        preprolated=True,
+                        ),
+                    selectortools.ContiguitySelectorCallback(),
+                    selectortools.PrototypeSelectorCallback(
+                        prototype=scoretools.Leaf,
+                        ),
+                    ),
+                ),
+            ),
+        ),
     color='magenta',
     labels=(),
     pitch_handler=consort.tools.PitchClassPitchHandler(
         forbid_repetitions=True,
+        pitch_application_rate='division',
         register_specifier=consort.tools.RegisterSpecifier(
             center_pitch=pitchtools.NumberedPitch(-5),
             phrase_inflections=consort.tools.RegisterInflectionInventory(
@@ -95,9 +344,43 @@ string_agitato_music_specifier = consort.tools.MusicSpecifier(
             ratio=mathtools.Ratio((1, 2, 1, 2, 1)),
             ),
         ),
-    rhythm_maker=rhythmmakertools.NoteRhythmMaker(
-        tie_specifier=rhythmmakertools.TieSpecifier(
-            tie_across_divisions=True,
+    rhythm_maker=rhythmmakertools.TaleaRhythmMaker(
+        talea=rhythmmakertools.Talea(
+            counts=(
+                1,
+                -1,
+                1,
+                1,
+                -1,
+                1,
+                1,
+                1,
+                -1,
+                1,
+                1,
+                1,
+                1,
+                -1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                -1,
+                1,
+                1,
+                -2,
+                ),
+            denominator=16,
+            ),
+        extra_counts_per_division=(0, 0, 1, 2, 0, 1),
+        output_masks=rhythmmakertools.BooleanPatternInventory(
+            (
+                rhythmmakertools.SustainMask(
+                    indices=(1,),
+                    period=3,
+                    ),
+                )
             ),
         ),
     )

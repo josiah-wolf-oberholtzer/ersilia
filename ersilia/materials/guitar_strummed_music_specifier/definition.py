@@ -8,10 +8,10 @@ from abjad.tools import selectortools
 
 guitar_strummed_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
-        #dynamic_expressions=consort.DynamicExpression(
-        #    dynamic_tokens='p ppp p ppp mf p',
-        #    only_first=True,
-        #    ),
+        dynamic_expressions=consort.DynamicExpression(
+            dynamic_tokens='p ppp p ppp mf p',
+            only_first=True,
+            ),
         laissez_vibrer=consort.AttachmentExpression(
             attachments=[
                 [

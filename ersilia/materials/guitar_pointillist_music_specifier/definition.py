@@ -8,9 +8,6 @@ from abjad.tools import selectortools
 
 guitar_pointillist_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
-        #dynamic_expressions=consort.DynamicExpression(
-        #    dynamic_tokens="f mf ff",
-        #    ),
         staccato=consort.AttachmentExpression(
             attachments=indicatortools.Articulation('staccato'),
             selector=selectortools.Selector()

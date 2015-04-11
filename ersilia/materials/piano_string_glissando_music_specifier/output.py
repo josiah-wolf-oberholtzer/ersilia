@@ -75,7 +75,6 @@ piano_string_glissando_music_specifier = consort.tools.MusicSpecifier(
                                         )
                                     ),
                                 ),
-                            direction=Up,
                             ),
                         ),
                     consort.tools.ComplexTextSpanner(
@@ -104,7 +103,6 @@ piano_string_glissando_music_specifier = consort.tools.MusicSpecifier(
                                         )
                                     ),
                                 ),
-                            direction=Up,
                             ),
                         ),
                     ]

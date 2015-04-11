@@ -121,7 +121,6 @@ percussion_tom_fanfare_music_specifier = consort.tools.MusicSpecifier(
                                         )
                                     ),
                                 ),
-                            direction=Up,
                             ),
                         ),
                     ]

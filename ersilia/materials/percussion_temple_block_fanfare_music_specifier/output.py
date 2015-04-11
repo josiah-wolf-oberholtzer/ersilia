@@ -183,7 +183,6 @@ percussion_temple_block_fanfare_music_specifier = consort.tools.MusicSpecifier(
                                         )
                                     ),
                                 ),
-                            direction=Up,
                             ),
                         ),
                     ]
