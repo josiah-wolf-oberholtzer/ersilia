@@ -7,7 +7,7 @@ from ersilia.materials import abbreviations
 import consort
 
 
-marimba_agitato_music_specifier = consort.MusicSpecifier(
+percussion_marimba_agitato_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
         accents=consort.AttachmentExpression(
             attachments=indicatortools.Articulation('accent'),

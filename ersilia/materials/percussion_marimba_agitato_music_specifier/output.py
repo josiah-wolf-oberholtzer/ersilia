@@ -11,7 +11,7 @@ from abjad.tools import spannertools
 import consort
 
 
-marimba_agitato_music_specifier = consort.tools.MusicSpecifier(
+percussion_marimba_agitato_music_specifier = consort.tools.MusicSpecifier(
     attachment_handler=consort.tools.AttachmentHandler(
         accents=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
