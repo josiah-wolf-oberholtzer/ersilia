@@ -1,15 +1,76 @@
 # -*- encoding: utf-8 -*-
 from abjad.tools import datastructuretools
 from abjad.tools import indicatortools
+from abjad.tools import lilypondnametools
 from abjad.tools import markuptools
 from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
+from abjad.tools import schemetools
+from abjad.tools import scoretools
 from abjad.tools import selectortools
 import consort
 
 
 guitar_strummed_music_specifier = consort.tools.MusicSpecifier(
     attachment_handler=consort.tools.AttachmentHandler(
+        damped=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    consort.tools.LeafExpression(
+                        leaf=scoretools.Note("f''4"),
+                        attachments=(
+                            lilypondnametools.LilyPondGrobOverride(
+                                grob_name='NoteHead',
+                                is_once=True,
+                                property_path=('transparent',),
+                                value=True,
+                                ),
+                            markuptools.Markup(
+                                contents=(
+                                    markuptools.MarkupCommand(
+                                        'musicglyph',
+                                        schemetools.Scheme(
+                                            'scripts.coda',
+                                            force_quotes=True,
+                                            )
+                                        ),
+                                    ),
+                                direction=Up,
+                                ),
+                            indicatortools.Articulation('accent'),
+                            indicatortools.Dynamic(
+                                name='sfz',
+                                ),
+                            ),
+                        ),
+                    ]
+                ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.LogicalTieSelectorCallback(
+                        flatten=True,
+                        pitched=True,
+                        trivial=True,
+                        only_with_head=False,
+                        only_with_tail=False,
+                        ),
+                    selectortools.ContiguitySelectorCallback(),
+                    selectortools.LengthSelectorCallback(
+                        length=selectortools.LengthInequality(
+                            operator_string='>',
+                            length=1,
+                            ),
+                        ),
+                    selectortools.PrototypeSelectorCallback(
+                        prototype=scoretools.Leaf,
+                        ),
+                    selectortools.ItemSelectorCallback(
+                        item=-1,
+                        apply_to_each=True,
+                        ),
+                    ),
+                ),
+            ),
         dynamic_expressions=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [
@@ -33,15 +94,19 @@ guitar_strummed_music_specifier = consort.tools.MusicSpecifier(
                         markuptools.Markup(
                             contents=(
                                 markuptools.MarkupCommand(
-                                    'box',
+                                    'pad-around',
+                                    0.5,
                                     markuptools.MarkupCommand(
-                                        'pad-around',
-                                        0.5,
+                                        'box',
                                         markuptools.MarkupCommand(
-                                            'tiny',
+                                            'pad-around',
+                                            0.5,
                                             markuptools.MarkupCommand(
-                                                'caps',
-                                                'L.V'
+                                                'tiny',
+                                                markuptools.MarkupCommand(
+                                                    'caps',
+                                                    'L.V'
+                                                    )
                                                 )
                                             )
                                         )
@@ -56,10 +121,20 @@ guitar_strummed_music_specifier = consort.tools.MusicSpecifier(
                 callbacks=(
                     selectortools.LogicalTieSelectorCallback(
                         flatten=True,
-                        pitched=False,
+                        pitched=True,
                         trivial=True,
                         only_with_head=False,
                         only_with_tail=False,
+                        ),
+                    selectortools.ContiguitySelectorCallback(),
+                    selectortools.LengthSelectorCallback(
+                        length=selectortools.LengthInequality(
+                            operator_string='==',
+                            length=1,
+                            ),
+                        ),
+                    selectortools.PrototypeSelectorCallback(
+                        prototype=scoretools.Leaf,
                         ),
                     selectortools.ItemSelectorCallback(
                         item=0,
@@ -91,8 +166,8 @@ guitar_strummed_music_specifier = consort.tools.MusicSpecifier(
     rhythm_maker=rhythmmakertools.IncisedRhythmMaker(
         incise_specifier=rhythmmakertools.InciseSpecifier(
             prefix_talea=(1,),
-            prefix_counts=(1,),
-            talea_denominator=8,
+            prefix_counts=(1, 1, 1, 2, 1, 2, 3),
+            talea_denominator=16,
             fill_with_notes=False,
             ),
         ),

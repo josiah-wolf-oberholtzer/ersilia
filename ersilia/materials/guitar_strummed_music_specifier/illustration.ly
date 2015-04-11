@@ -52,108 +52,120 @@
                     {
                         % [Violin 1 Voice] Measure 1
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
+                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
+                                    \pad-around
+                                        #0.5
+                                        \box
+                                            \pad-around
+                                                #0.5
+                                                \tiny
+                                                    \caps
+                                                        L.V
                                     }
                         }
                     }
                     {
                         {
+                            r16
                             r4
                         }
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
+                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
+                                    \pad-around
+                                        #0.5
+                                        \box
+                                            \pad-around
+                                                #0.5
+                                                \tiny
+                                                    \caps
+                                                        L.V
                                     }
                         }
                     }
                     {
                         {
-                            r8
+                            r8.
                         }
                     }
                     {
                         % [Violin 1 Voice] Measure 2
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \mf
+                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \mf
                                 ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
+                                    \pad-around
+                                        #0.5
+                                        \box
+                                            \pad-around
+                                                #0.5
+                                                \tiny
+                                                    \caps
+                                                        L.V
                                     }
                         }
                     }
                     {
                         {
+                            r16
                             r4
                         }
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \ppp
+                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
+                                    \pad-around
+                                        #0.5
+                                        \box
+                                            \pad-around
+                                                #0.5
+                                                \tiny
+                                                    \caps
+                                                        L.V
                                     }
                         }
                     }
                     {
                         {
-                            r8
+                            r8.
                             r4
                         }
                     }
                     {
                         % [Violin 1 Voice] Measure 3
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
+                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
+                                    \pad-around
+                                        #0.5
+                                        \box
+                                            \pad-around
+                                                #0.5
+                                                \tiny
+                                                    \caps
+                                                        L.V
                                     }
                         }
                     }
                     {
                         {
+                            r16
                             r4
                         }
                     }
                     {
                         % [Violin 1 Voice] Measure 4
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \ppp
+                            <c' ef' g' bf' c'''>16 \arpeggio \ppp [
+                            \once \override NoteHead.transparent = ##t
+                            \set stemLeftBeamCount = 2
+                            f''16 -\accent \sfz ]
                                 ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
+                                    \musicglyph
+                                        #"scripts.coda"
                                     }
                         }
                     }
@@ -169,20 +181,22 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
+                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
+                                    \pad-around
+                                        #0.5
+                                        \box
+                                            \pad-around
+                                                #0.5
+                                                \tiny
+                                                    \caps
+                                                        L.V
                                     }
                         }
                     }
                     {
                         {
-                            r8.
+                            r4
                             \bar "|."
                         }
                     }
@@ -213,14 +227,13 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
+                            <c' ef' g' bf' c'''>16 \arpeggio \p [
+                            \once \override NoteHead.transparent = ##t
+                            \set stemLeftBeamCount = 2
+                            f''16 -\accent \sfz ]
                                 ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
+                                    \musicglyph
+                                        #"scripts.coda"
                                     }
                         }
                     }
@@ -232,77 +245,69 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \mf
-                                ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
-                                    }
+                            <c' ef' g' bf' c'''>16 \arpeggio \mf [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <c' ef' g' bf' c'''>16 \arpeggio
+                            \set stemLeftBeamCount = 2
+                            <c' ef' g' bf' c'''>16 \arpeggio ]
                         }
-                    }
-                    {
-                        {
-                            r16
-                        }
-                    }
-                    {
                         % [Violin 2 Voice] Measure 2
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \ppp
+                            \once \override NoteHead.transparent = ##t
+                            f''16 -\accent \sfz
                                 ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
+                                    \musicglyph
+                                        #"scripts.coda"
                                     }
                         }
                     }
                     {
                         {
                             r16
+                            r16
                         }
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
+                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
+                                    \pad-around
+                                        #0.5
+                                        \box
+                                            \pad-around
+                                                #0.5
+                                                \tiny
+                                                    \caps
+                                                        L.V
                                     }
                         }
                     }
                     {
                         {
-                            r16
+                            r8
                             r2
                         }
                     }
                     {
                         % [Violin 2 Voice] Measure 3
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \ppp
+                            <c' ef' g' bf' c'''>16 \arpeggio \p [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <c' ef' g' bf' c'''>16 \arpeggio
+                            \once \override NoteHead.transparent = ##t
+                            \set stemLeftBeamCount = 2
+                            f''16 -\accent \sfz ]
                                 ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
+                                    \musicglyph
+                                        #"scripts.coda"
                                     }
                         }
                     }
                     {
                         {
-                            r4
+                            r8.
                         }
                         % [Violin 2 Voice] Measure 4
                         {
@@ -311,20 +316,22 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
+                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
+                                    \pad-around
+                                        #0.5
+                                        \box
+                                            \pad-around
+                                                #0.5
+                                                \tiny
+                                                    \caps
+                                                        L.V
                                     }
                         }
                     }
                     {
                         {
-                            r8
+                            r8.
                         }
                         % [Violin 2 Voice] Measure 5
                         {
@@ -364,38 +371,44 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
+                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
+                                    \pad-around
+                                        #0.5
+                                        \box
+                                            \pad-around
+                                                #0.5
+                                                \tiny
+                                                    \caps
+                                                        L.V
                                     }
                         }
                     }
                     {
                         {
+                            r16
                             r4
                         }
                     }
                     {
                         % [Viola Voice] Measure 2
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \mf
+                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
+                                    \pad-around
+                                        #0.5
+                                        \box
+                                            \pad-around
+                                                #0.5
+                                                \tiny
+                                                    \caps
+                                                        L.V
                                     }
                         }
                     }
                     {
                         {
+                            r16
                             r4
                             r2
                         }
@@ -406,33 +419,34 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \ppp
+                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \mf
                                 ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
+                                    \pad-around
+                                        #0.5
+                                        \box
+                                            \pad-around
+                                                #0.5
+                                                \tiny
+                                                    \caps
+                                                        L.V
                                     }
                         }
                     }
                     {
                         {
-                            r8
+                            r8.
                         }
                     }
                     {
                         % [Viola Voice] Measure 4
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
+                            <c' ef' g' bf' c'''>16 \arpeggio \ppp [
+                            \once \override NoteHead.transparent = ##t
+                            \set stemLeftBeamCount = 2
+                            f''16 -\accent \sfz ]
                                 ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
+                                    \musicglyph
+                                        #"scripts.coda"
                                     }
                         }
                     }
@@ -447,14 +461,13 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \ppp
+                            <c' ef' g' bf' c'''>16 \arpeggio \p [
+                            \once \override NoteHead.transparent = ##t
+                            \set stemLeftBeamCount = 2
+                            f''16 -\accent \sfz ]
                                 ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
+                                    \musicglyph
+                                        #"scripts.coda"
                                     }
                         }
                     }
@@ -492,32 +505,33 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
+                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
+                                    \pad-around
+                                        #0.5
+                                        \box
+                                            \pad-around
+                                                #0.5
+                                                \tiny
+                                                    \caps
+                                                        L.V
                                     }
                         }
                     }
                     {
                         {
-                            r8
+                            r8.
                         }
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
+                            <c' ef' g' bf' c'''>16 \arpeggio \p [
+                            \once \override NoteHead.transparent = ##t
+                            \set stemLeftBeamCount = 2
+                            f''16 -\accent \sfz ]
                                 ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
+                                    \musicglyph
+                                        #"scripts.coda"
                                     }
                         }
                     }
@@ -533,14 +547,13 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \mf
+                            <c' ef' g' bf' c'''>16 \arpeggio \p [
+                            \once \override NoteHead.transparent = ##t
+                            \set stemLeftBeamCount = 2
+                            f''16 -\accent \sfz ]
                                 ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
+                                    \musicglyph
+                                        #"scripts.coda"
                                     }
                         }
                     }
@@ -556,57 +569,47 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \ppp
-                                ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
-                                    }
+                            <c' ef' g' bf' c'''>16 \arpeggio \mf [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <c' ef' g' bf' c'''>16 \arpeggio
+                            \set stemLeftBeamCount = 2
+                            <c' ef' g' bf' c'''>16 \arpeggio ]
                         }
-                    }
-                    {
-                        {
-                            r16
-                        }
-                    }
-                    {
                         % [Cello Voice] Measure 4
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
+                            \once \override NoteHead.transparent = ##t
+                            f''16 -\accent \sfz
                                 ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
+                                    \musicglyph
+                                        #"scripts.coda"
                                     }
                         }
                     }
                     {
                         {
                             r16
+                            r16
                         }
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \ppp
+                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
+                                    \pad-around
+                                        #0.5
+                                        \box
+                                            \pad-around
+                                                #0.5
+                                                \tiny
+                                                    \caps
+                                                        L.V
                                     }
                         }
                     }
                     {
                         {
-                            r16
+                            r8
                         }
                         % [Cello Voice] Measure 5
                         {
@@ -615,19 +618,22 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
+                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \tiny
-                                                \caps
-                                                    L.V
+                                    \pad-around
+                                        #0.5
+                                        \box
+                                            \pad-around
+                                                #0.5
+                                                \tiny
+                                                    \caps
+                                                        L.V
                                     }
                         }
                     }
                     {
                         {
+                            r16
                             r4
                                 _ \markup {
                                     \italic
