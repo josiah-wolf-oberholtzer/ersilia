@@ -47,7 +47,7 @@
                     {
                         % [Violin 1 Voice] Measure 1
                         {
-                            ef'16 -\stopped \f \< [
+                            ef'16 -\stopped \f \> [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
@@ -321,7 +321,7 @@
                     {
                         {
                             \pitchedTrill
-                            cs'8 -\stopped \f \< \startTrillSpan e'
+                            cs'8 -\stopped \f \> \startTrillSpan e'
                             cs'4 \repeatTie
                             <> \stopTrillSpan
                         }
@@ -447,7 +447,7 @@
                     {
                         {
                             \pitchedTrill
-                            d'4 -\stopped \f \< \startTrillSpan f'
+                            d'4 -\stopped \f \> \startTrillSpan f'
                             <> \stopTrillSpan
                         }
                         {

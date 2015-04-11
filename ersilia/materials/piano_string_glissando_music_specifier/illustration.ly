@@ -54,11 +54,12 @@
                                     \pad-around
                                         #0.5
                                         \italic
-                                            \concat
-                                                {
-                                                    \vstrut
-                                                    inside/low
-                                                }
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        inside/low
+                                                    }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.text = \markup {
@@ -101,11 +102,12 @@
                                     \pad-around
                                         #0.5
                                         \italic
-                                            \concat
-                                                {
-                                                    \vstrut
-                                                    inside/high
-                                                }
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        inside/high
+                                                    }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.text = \markup {
@@ -142,11 +144,12 @@
                                     \pad-around
                                         #0.5
                                         \italic
-                                            \concat
-                                                {
-                                                    \vstrut
-                                                    inside/low
-                                                }
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        inside/low
+                                                    }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.text = \markup {
@@ -186,11 +189,12 @@
                                     \pad-around
                                         #0.5
                                         \italic
-                                            \concat
-                                                {
-                                                    \vstrut
-                                                    inside/high
-                                                }
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        inside/high
+                                                    }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.text = \markup {
@@ -234,11 +238,12 @@
                                     \pad-around
                                         #0.5
                                         \italic
-                                            \concat
-                                                {
-                                                    \vstrut
-                                                    inside/low
-                                                }
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        inside/low
+                                                    }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.text = \markup {
@@ -298,11 +303,12 @@
                                     \pad-around
                                         #0.5
                                         \italic
-                                            \concat
-                                                {
-                                                    \vstrut
-                                                    inside/high
-                                                }
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        inside/high
+                                                    }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.text = \markup {
@@ -355,11 +361,12 @@
                                     \pad-around
                                         #0.5
                                         \italic
-                                            \concat
-                                                {
-                                                    \vstrut
-                                                    inside/low
-                                                }
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        inside/low
+                                                    }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.text = \markup {
@@ -399,11 +406,12 @@
                                     \pad-around
                                         #0.5
                                         \italic
-                                            \concat
-                                                {
-                                                    \vstrut
-                                                    inside/high
-                                                }
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        inside/high
+                                                    }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.text = \markup {
@@ -471,11 +479,12 @@
                                     \pad-around
                                         #0.5
                                         \italic
-                                            \concat
-                                                {
-                                                    \vstrut
-                                                    inside/low
-                                                }
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        inside/low
+                                                    }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.text = \markup {
@@ -522,11 +531,12 @@
                                     \pad-around
                                         #0.5
                                         \italic
-                                            \concat
-                                                {
-                                                    \vstrut
-                                                    inside/high
-                                                }
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        inside/high
+                                                    }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.text = \markup {
@@ -570,11 +580,12 @@
                                     \pad-around
                                         #0.5
                                         \italic
-                                            \concat
-                                                {
-                                                    \vstrut
-                                                    inside/low
-                                                }
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        inside/low
+                                                    }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.text = \markup {
@@ -637,11 +648,12 @@
                                     \pad-around
                                         #0.5
                                         \italic
-                                            \concat
-                                                {
-                                                    \vstrut
-                                                    inside/high
-                                                }
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        inside/high
+                                                    }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.text = \markup {
@@ -682,11 +694,12 @@
                                     \pad-around
                                         #0.5
                                         \italic
-                                            \concat
-                                                {
-                                                    \vstrut
-                                                    inside/low
-                                                }
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        inside/low
+                                                    }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.text = \markup {
@@ -729,11 +742,12 @@
                                     \pad-around
                                         #0.5
                                         \italic
-                                            \concat
-                                                {
-                                                    \vstrut
-                                                    inside/high
-                                                }
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        inside/high
+                                                    }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.text = \markup {
@@ -777,11 +791,12 @@
                                     \pad-around
                                         #0.5
                                         \italic
-                                            \concat
-                                                {
-                                                    \vstrut
-                                                    inside/low
-                                                }
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        inside/low
+                                                    }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.text = \markup {

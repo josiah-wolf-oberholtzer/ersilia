@@ -103,8 +103,8 @@
                     }
                     {
                         {
-                            <c' e' g' c'' df'' g''>16 :128
-                            <c' e' g' c'' df'' g''>4 :32 \repeatTie
+                            <f a c' f' gf' c''>16 :128
+                            <f a c' f' gf' c''>4 :32 \repeatTie
                             \bar "|."
                         }
                     }

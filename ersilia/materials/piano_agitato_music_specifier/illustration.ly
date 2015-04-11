@@ -46,29 +46,14 @@
                     \clef "treble"
                     {
                         % [Violin 1 Voice] Measure 1
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 6/7 {
-                            r16 [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            b''16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            cs''16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 1
-                            ef''16 -\staccato
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            b'8 -\accent -\mordent
-                            \set stemLeftBeamCount = 2
-                            r16 ]
+                        {
+                            <a'' c''' fs''' b'''>4. :32 \f \>
                         }
                         {
-                            <f'' af''>16 -\staccato [
+                            <f'' af''>16 -\staccato \mf [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            a''16 -\staccato
+                            a'16 -\staccato
                             \set stemLeftBeamCount = 2
                             <b' d''>16 -\staccato ]
                         }
@@ -80,55 +65,64 @@
                     }
                     {
                         % [Violin 1 Voice] Measure 2
-                        {
-                            a''4 -\mordent
-                        }
-                    }
-                    {
-                        {
-                            r8
-                        }
-                    }
-                    {
-                        {
-                            b'4 -\mordent
-                        }
-                    }
-                    {
-                        {
-                            r4
-                        }
-                        % [Violin 1 Voice] Measure 3
-                        {
-                            r16
-                        }
-                    }
-                    {
-                        {
-                            af'16 -\staccato [
-                            \set stemLeftBeamCount = 1
-                            <e'' g''>8 :64 -\accent ]
-                        }
-                    }
-                    {
-                        {
-                            r8
-                        }
-                    }
-                    {
-                        % [Violin 1 Voice] Measure 4
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 5/6 {
-                            <f'' af''>16 -\staccato [
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c''8 -\accent -\mordent
+                        \times 4/5 {
+                            r8 [
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
-                            <d'' f''>16 -\staccato
+                            <f'' a'' c'''>16 -\staccato \f
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c'' ef''>16 -\staccato
+                            b'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            r16 ]
+                        }
+                    }
+                    {
+                        {
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            <a'' c'''>16 -\staccato \f [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            b'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            <a' c''>16 -\staccato ]
+                        }
+                    }
+                    {
+                        {
+                            r16
+                            r4
+                        }
+                    }
+                    {
+                        % [Violin 1 Voice] Measure 3
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 5/6 {
+                            r16 [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
+                            <af' b' f'' bf''>16 -\staccato \f \>
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            e''8 -\accent -\mordent
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            ef''16 -\staccato \mf
                             \set stemLeftBeamCount = 2
                             r16 ]
                         }
@@ -137,16 +131,34 @@
                         {
                             r16
                         }
+                    }
+                    {
+                        % [Violin 1 Voice] Measure 4
+                        {
+                            <f' af'>4 :32 \f \>
+                            <f' af'>16 \mf \repeatTie
+                        }
+                    }
+                    {
+                        {
+                            r16
+                        }
                         % [Violin 1 Voice] Measure 5
                         {
-                            r4
+                            r4.
                             r16
                         }
                     }
                     {
                         {
-                            e'16 -\mordent
-                            e'4 \repeatTie
+                            af'16 -\staccato \f [
+                            \set stemLeftBeamCount = 2
+                            <e' g'>16 -\staccato ]
+                        }
+                    }
+                    {
+                        {
+                            r16
                             \bar "|."
                         }
                     }
@@ -176,13 +188,30 @@
                         }
                     }
                     {
-                        {
-                            <d'' f''>16 -\staccato [
+                        \times 4/5 {
+                            f''16 -\staccato \f \> [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <cs'' e''>16 -\staccato
+                            <cs''' e'''>16 -\staccato
                             \set stemLeftBeamCount = 2
-                            ef''16 -\staccato ]
+                            \set stemRightBeamCount = 2
+                            <b'' d'''>16 -\staccato
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <b' d'' f''>16 -\staccato \mf
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \set stemLeftBeamCount = 2
+                            r16 ]
                         }
                     }
                     {
@@ -192,22 +221,33 @@
                     }
                     {
                         {
-                            <f' af' d'' g''>8. :64
+                            a''16 -\staccato \f
                         }
+                    }
+                    {
+                        {
+                            r16
+                        }
+                    }
+                    {
                         % [Violin 2 Voice] Measure 2
                         {
-                            <a'' c'''>16 -\staccato [
+                            <as'' cs'''>8. :64 \f \>
+                        }
+                        \times 8/9 {
+                            r16 [
                             \set stemLeftBeamCount = 2
-                            b'16 -\staccato ]
-                        }
-                    }
-                    {
-                        {
-                            r8
-                        }
-                    }
-                    {
-                        {
+                            \set stemRightBeamCount = 2
+                            <ef'' fs'' c''' f'''>16 -\staccato \mp \<
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <b'' d'''>16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            a''16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
+                            <as' cs''>16 -\staccato
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -215,52 +255,29 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <f'' a'' c'''>16 -\staccato [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            <f'' a'' c'''>8 :64 -\accent
                                 ^ \markup {
                                     \center-align
                                         \natural
                                     }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <b' d''>16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <ef'' fs'' c''' f'''>16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 1
-                            <b' d''>16 -\staccato
                             \set stemLeftBeamCount = 1
-                            a'8 -\accent -\mordent ]
+                            \set stemRightBeamCount = 2
+                            b'16 -\staccato \mf
+                            \set stemLeftBeamCount = 2
+                            r16 ]
                         }
                     }
                     {
                         {
-                            r4
+                            r8.
                         }
                     }
                     {
                         % [Violin 2 Voice] Measure 3
-                        \times 4/5 {
-                            r16 [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <e'' g''>16 -\staccato
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 1
-                            <b' d'' f''>16 -\staccato
-                                ^ \markup {
-                                    \center-align
-                                        \natural
-                                    }
-                            \set stemLeftBeamCount = 1
-                            r8 ]
+                        {
+                            af'4 -\mordent \f
                         }
                     }
                     {
@@ -274,10 +291,26 @@
                     }
                     {
                         {
-                            <f'' af''>4 :32
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            <d'' f'' a''>16 -\staccato \f [
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \set stemLeftBeamCount = 2
+                            ef''16 -\staccato ]
                         }
                     }
                     {
+                        {
+                            r8
+                        }
                         % [Violin 2 Voice] Measure 5
                         {
                             \stopStaff
@@ -312,43 +345,43 @@
                         % [Viola Voice] Measure 1
                         {
                             r4
-                            r16
                         }
                     }
                     {
-                        {
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            <g'' b'' d'''>8 :64 -\accent [
-                                ^ \markup {
-                                    \center-align
-                                        \natural
-                                    }
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 6/7 {
+                            r16 [
                             \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            ef''8 -\accent -\mordent \f \>
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            b'16 -\staccato
+                            \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             a''16 -\staccato
                             \set stemLeftBeamCount = 2
-                            b'16 -\staccato ]
+                            \set stemRightBeamCount = 2
+                            <b' d''>16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            r16 ]
+                        }
+                        % [Viola Voice] Measure 2
+                        {
+                            a'8 -\accent -\mordent \mp \< [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            <b' d''>16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            a''16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            b'16 -\staccato \mf ]
                         }
                     }
                     {
                         {
                             r16
-                        }
-                    }
-                    {
-                        % [Viola Voice] Measure 2
-                        {
-                            <gs'' b''>4. :32
-                        }
-                    }
-                    {
-                        {
                             r2
                         }
                         % [Viola Voice] Measure 3
@@ -357,16 +390,8 @@
                         }
                     }
                     {
-                        \times 4/5 {
-                            f''8 -\accent -\mordent [
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 2
-                            <fs' a' ef'' af''>16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            ef'16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            r16 ]
+                        {
+                            <f'' af''>4 :32 \f
                         }
                     }
                     {
@@ -377,12 +402,12 @@
                     }
                     {
                         {
-                            f'8 -\accent -\mordent [
+                            ef''16 -\staccato \f \> [
                             \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 2
-                            ef'16 -\staccato
+                            \set stemRightBeamCount = 1
+                            <c'' ef''>8 :64 -\accent
                             \set stemLeftBeamCount = 2
-                            f'16 -\staccato ]
+                            <a c' fs' b'>16 -\staccato \mf ]
                         }
                     }
                     {
@@ -391,13 +416,28 @@
                         }
                         % [Viola Voice] Measure 5
                         {
-                            r8
+                            r8.
                         }
                     }
                     {
                         {
-                            <fs' a' ef'' af''>4 :32
-                            <fs' a' ef'' af''>4 \repeatTie
+                            f'16 -\staccato \f \> [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <gs' b'>16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
+                            d''16 -\staccato
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            <e'' g''>8 :64 -\accent
+                            \set stemLeftBeamCount = 2
+                            f'16 -\staccato \mf ]
+                        }
+                    }
+                    {
+                        {
+                            r16
                             \bar "|."
                         }
                     }
@@ -427,13 +467,16 @@
                         }
                     }
                     {
-                        {
-                            <cs' e' bf' ef''>16 -\staccato [
+                        \times 4/5 {
+                            ef''16 -\staccato \f [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            f''16 -\staccato
+                            <d'' f''>16 -\staccato
                             \set stemLeftBeamCount = 2
-                            <b' d''>16 -\staccato ]
+                            \set stemRightBeamCount = 1
+                            b''16 -\staccato
+                            \set stemLeftBeamCount = 1
+                            r8 ]
                         }
                     }
                     {
@@ -443,10 +486,15 @@
                     }
                     {
                         {
-                            b'4 -\mordent
+                            <ef'' fs'' c''' f'''>16 -\staccato \f [
+                            \set stemLeftBeamCount = 2
+                            b'16 -\staccato ]
                         }
                     }
                     {
+                        {
+                            r16
+                        }
                         % [Cello Voice] Measure 2
                         {
                             r4
@@ -454,23 +502,10 @@
                         }
                     }
                     {
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 6/7 {
-                            r16 [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 1
-                            a'16 -\staccato
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            b'8 -\accent -\mordent
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 2
-                            a'16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <b' d''>16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            r16 ]
+                        {
+                            a'16 -\mordent \f \>
+                            a'4 \repeatTie
+                            a'16 \mf \repeatTie
                         }
                     }
                     {
@@ -484,18 +519,42 @@
                     }
                     {
                         {
-                            f''8. -\mordent
+                            c''16 -\staccato \f
+                        }
+                    }
+                    {
+                        {
+                            r8
                         }
                     }
                     {
                         % [Cello Voice] Measure 4
                         {
-                            r8.
+                            <d'' f''>8. :64 \f \>
+                        }
+                        {
+                            f'8 -\accent -\mordent \mf
+                        }
+                    }
+                    {
+                        {
+                            r16
+                        }
+                        % [Cello Voice] Measure 5
+                        {
+                            r4
                         }
                     }
                     {
                         \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 3/4 {
+                        \times 6/7 {
+                            r8 [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            d'16 -\staccato \f \>
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <e' g'>16 -\staccato
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -503,37 +562,18 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <a' c'' e''>16 -\staccato [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <b d' f'>16 -\staccato
                                 ^ \markup {
                                     \center-align
                                         \natural
                                     }
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            ef''8 -\accent -\mordent
-                            \set stemLeftBeamCount = 2
-                            r16 ]
-                        }
-                    }
-                    {
-                        % [Cello Voice] Measure 5
-                        {
-                            r4.
-                        }
-                    }
-                    {
-                        {
-                            <f' af'>16 -\staccato [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            af'16 -\staccato
+                            af'16 -\staccato \mf
                             \set stemLeftBeamCount = 2
-                            d'16 -\staccato ]
-                        }
-                    }
-                    {
-                        {
-                            r16
+                            r16 ]
                                 _ \markup {
                                     \italic
                                         \center-column

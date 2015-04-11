@@ -47,7 +47,7 @@
                     {
                         % [Violin 1 Voice] Measure 1
                         {
-                            c''''8 -\tenuto [
+                            c'''''8 -\tenuto [
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             r8
@@ -237,7 +237,7 @@
                     {
                         \tweak #'text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            <a'' c'''>8 -\tenuto [
+                            <c'''' ef''''>8 -\tenuto [
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             r8
@@ -245,11 +245,11 @@
                             \set stemRightBeamCount = 1
                             r8
                             \set stemLeftBeamCount = 1
-                            c'''8 -\tenuto ]
+                            c''''8 -\tenuto ]
                         }
                         % [Viola Voice] Measure 2
                         {
-                            <a'' c'''>8 -\tenuto
+                            <c''' ef'''>8 -\tenuto
                         }
                     }
                     {
@@ -270,7 +270,7 @@
                     {
                         % [Viola Voice] Measure 4
                         {
-                            <g'' c'''>8 -\tenuto
+                            <bf'' ef'''>8 -\tenuto
                         }
                     }
                     {
@@ -321,7 +321,7 @@
                     }
                     {
                         {
-                            c''8 -\tenuto
+                            c''''8 -\tenuto
                         }
                     }
                     {
@@ -336,7 +336,7 @@
                     }
                     {
                         {
-                            c''8 -\tenuto
+                            c'''8 -\tenuto
                         }
                     }
                     {
@@ -352,12 +352,12 @@
                     }
                     {
                         {
-                            <af' f''>16 -\tenuto
+                            <af'' f'''>16 -\tenuto
                         }
                         % [Cello Voice] Measure 4
                         \tweak #'text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            <af' f''>16 \repeatTie [
+                            <af'' f'''>16 \repeatTie [
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             r8
@@ -379,7 +379,7 @@
                     }
                     {
                         {
-                            c''8 -\tenuto
+                            c'''8 -\tenuto
                         }
                     }
                     {

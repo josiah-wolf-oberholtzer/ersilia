@@ -41,29 +41,29 @@
                     "Vln. 1"
                 }
         } <<
-            \context StringStaff = "Violin 1 Staff" <<
+            \context StringStaff = "Violin 1 Staff" {
                 \context Voice = "Violin 1 Voice" {
                     \clef "treble"
                     {
                         % [Violin 1 Voice] Measure 1
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            <d'' f''>4. :32 \<
+                            <d' f'>4. :32 \<
                         }
                         {
-                            <d'' f''>4 :32 \repeatTie
+                            <d' f'>4 :32 \repeatTie
                         }
                         % [Violin 1 Voice] Measure 2
                         {
-                            <d'' f''>16 :128 \repeatTie [
+                            <d' f'>16 :128 \repeatTie [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <g' bf'>16 :128
+                            <g bf>16 :128
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <d' e'>16 :128
+                            <d e>16 :128
                             \set stemLeftBeamCount = 2
-                            <d' f'>16 :128 \p ]
+                            <d f>16 :128 \p ]
                         }
                     }
                     {
@@ -73,7 +73,7 @@
                     }
                     {
                         {
-                            <d' f'>4 :32 \p
+                            <d f>4 :32 \p
                         }
                     }
                     {
@@ -85,8 +85,8 @@
                         % [Violin 1 Voice] Measure 3
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            <cs' ds'>4 :32 \<
-                            <cs' ds'>16 :128 \p \repeatTie
+                            <cs ds>4 :32 \<
+                            <cs ds>16 :128 \p \repeatTie
                         }
                     }
                     {
@@ -98,8 +98,8 @@
                         % [Violin 1 Voice] Measure 4
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            <cs' fs'>4 :32 \<
-                            <cs' fs'>16 :128 \ppp \repeatTie
+                            <cs fs>4 :32 \<
+                            <cs fs>16 :128 \ppp \repeatTie
                         }
                     }
                     {
@@ -114,87 +114,13 @@
                     }
                     {
                         {
-                            <cs' fs'>16 :128 \ppp
-                            <cs' fs'>4 :32 \repeatTie
+                            <cs fs>16 :128 \ppp
+                            <cs fs>4 :32 \repeatTie
                             \bar "|."
                         }
                     }
                 }
-                \new AnnotatedDivisionsVoice {
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/8 {
-                        c'''1
-                    }
-                    \times 1/4 {
-                        c'''1
-                    }
-                    \times 1/4 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/8
-                    }
-                    \times 1/4 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/4
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 5/16 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/16
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 5/16 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/16
-                        s1 * 5/16
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 5/16 {
-                        c'''1
-                    }
-                }
-                \new AnnotatedPhrasesVoice {
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 7/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/8
-                    }
-                    \times 1/4 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/4
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 5/16 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/16
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 5/16 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/16
-                        s1 * 5/16
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 5/16 {
-                        c'''1
-                    }
-                }
-            >>
+            }
         >>
         \tag #'violin-2
         \context StringPerformerGroup = "Violin 2 Performer Group" \with {
@@ -209,7 +135,7 @@
                     "Vln. 2"
                 }
         } <<
-            \context StringStaff = "Violin 2 Staff" <<
+            \context StringStaff = "Violin 2 Staff" {
                 \context Voice = "Violin 2 Voice" {
                     \clef "treble"
                     {
@@ -221,27 +147,27 @@
                     {
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            <f' af'>8. :64 \< [
+                            <f af>8. :64 \< [
                             \set stemLeftBeamCount = 2
-                            <f' af'>16 :128 \repeatTie ]
+                            <f af>16 :128 \repeatTie ]
                         }
                         {
-                            <f' af'>16 :128 \repeatTie [
+                            <f af>16 :128 \repeatTie [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <d'' f''>16 :128
+                            <d' f'>16 :128
                             \set stemLeftBeamCount = 2
-                            <f' bf'>16 :128 ]
+                            <f bf>16 :128 ]
                         }
                         % [Violin 2 Voice] Measure 2
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            <f' bf'>8. :64 \ppp \repeatTie \>
+                            <f bf>8. :64 \ppp \repeatTie \>
                         }
                         {
-                            <f' bf'>8. :64 \repeatTie
-                            <f' bf'>4 :32 \repeatTie
-                            <f' bf'>16 :128 \repeatTie \!
+                            <f bf>8. :64 \repeatTie
+                            <f bf>4 :32 \repeatTie
+                            <f bf>16 :128 \repeatTie \!
                         }
                     }
                     {
@@ -252,7 +178,7 @@
                     {
                         % [Violin 2 Voice] Measure 3
                         {
-                            <ds' fs'>4 :32 \ppp
+                            <ds fs>4 :32 \ppp
                         }
                     }
                     {
@@ -266,7 +192,7 @@
                     }
                     {
                         {
-                            <ds' fs'>4 :32 \p
+                            <ds fs>4 :32 \p
                         }
                     }
                     {
@@ -282,67 +208,7 @@
                         }
                     }
                 }
-                \new AnnotatedDivisionsVoice {
-                    {
-                        s1 * 3/16
-                    }
-                    \times 1/4 {
-                        c'''1
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/16 {
-                        c'''1
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/16 {
-                        c'''1
-                    }
-                    \times 1/2 {
-                        c'''1
-                    }
-                    {
-                        s1 * 3/16
-                    }
-                    \times 1/4 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/8
-                        s1 * 1/8
-                    }
-                    \times 1/4 {
-                        c'''1
-                    }
-                    {
-                        s1 * 5/8
-                    }
-                }
-                \new AnnotatedPhrasesVoice {
-                    {
-                        s1 * 3/16
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 9/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 3/16
-                    }
-                    \times 1/4 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/8
-                        s1 * 1/8
-                    }
-                    \times 1/4 {
-                        c'''1
-                    }
-                    {
-                        s1 * 5/8
-                    }
-                }
-            >>
+            }
         >>
         \tag #'viola
         \context StringPerformerGroup = "Viola Performer Group" \with {
@@ -357,7 +223,7 @@
                     Va.
                 }
         } <<
-            \context StringStaff = "Viola Staff" <<
+            \context StringStaff = "Viola Staff" {
                 \context Voice = "Viola Voice" {
                     \clef "alto"
                     {
@@ -370,12 +236,12 @@
                         {
                             \clef "treble"
                             \once \override Hairpin.circled-tip = ##t
-                            <d' e'>8 :64 \<
-                            <d' e'>4 :32 \repeatTie
+                            <d e>8 :64 \<
+                            <d e>4 :32 \repeatTie
                         }
                         % [Viola Voice] Measure 2
                         {
-                            <d' e'>4. :32 \p \repeatTie
+                            <d e>4. :32 \p \repeatTie
                             \clef "alto"
                         }
                     }
@@ -392,11 +258,11 @@
                         {
                             \clef "treble"
                             \once \override Hairpin.circled-tip = ##t
-                            <fs' b'>4 :32 \<
+                            <fs b>4 :32 \<
                         }
                         % [Viola Voice] Measure 4
                         {
-                            <fs' b'>4. :32 \ppp \repeatTie
+                            <fs b>4. :32 \ppp \repeatTie
                             \clef "alto"
                         }
                     }
@@ -410,67 +276,14 @@
                         {
                             \clef "treble"
                             \once \override Hairpin.circled-tip = ##t
-                            <fs' gs'>4 :32 \<
-                            <fs' gs'>4 :32 \p \repeatTie
+                            <fs gs>4 :32 \<
+                            <fs gs>4 :32 \p \repeatTie
                             \bar "|."
                             \clef "alto"
                         }
                     }
                 }
-                \new AnnotatedDivisionsVoice {
-                    {
-                        s1 * 1/4
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/8 {
-                        c'''1
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/2
-                        s1 * 1/8
-                    }
-                    \times 1/4 {
-                        c'''1
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/8
-                    }
-                    \times 1/2 {
-                        c'''1
-                    }
-                }
-                \new AnnotatedPhrasesVoice {
-                    {
-                        s1 * 1/4
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/4 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/2
-                        s1 * 1/8
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 5/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/8
-                    }
-                    \times 1/2 {
-                        c'''1
-                    }
-                }
-            >>
+            }
         >>
         \tag #'cello
         \context StringPerformerGroup = "Cello Performer Group" \with {
@@ -485,7 +298,7 @@
                     Vc.
                 }
         } <<
-            \context StringStaff = "Cello Staff" <<
+            \context StringStaff = "Cello Staff" {
                 \context Voice = "Cello Voice" {
                     \clef "bass"
                     {
@@ -516,9 +329,9 @@
                         {
                             \clef "treble"
                             \once \override Hairpin.circled-tip = ##t
-                            <f' bf'>16 :128 \<
-                            <f' bf'>4 :32 \repeatTie
-                            <f' bf'>16 :128 \p \repeatTie
+                            <f bf>16 :128 \<
+                            <f bf>4 :32 \repeatTie
+                            <f bf>16 :128 \p \repeatTie
                             \clef "bass"
                         }
                     }
@@ -535,19 +348,19 @@
                         {
                             \clef "treble"
                             \once \override Hairpin.circled-tip = ##t
-                            <fs' a'>16 :128 \< [
+                            <fs a>16 :128 \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <cs'' ds''>16 :128
+                            <cs' ds'>16 :128
                             \set stemLeftBeamCount = 2
-                            <b' d''>16 :128 ]
+                            <b d'>16 :128 ]
                         }
                         % [Cello Voice] Measure 4
                         {
-                            <b' d''>8. :64 \repeatTie
+                            <b d'>8. :64 \repeatTie
                         }
                         {
-                            <b' d''>8. :64 \ppp \repeatTie
+                            <b d'>8. :64 \ppp \repeatTie
                             \clef "bass"
                         }
                     }
@@ -560,8 +373,8 @@
                     {
                         {
                             \clef "treble"
-                            <fs' a'>8 :64 \ppp
-                            <fs' a'>4 :32 \repeatTie
+                            <fs a>8 :64 \ppp
+                            <fs a>4 :32 \repeatTie
                                 _ \markup {
                                     \italic
                                         \center-column
@@ -578,78 +391,7 @@
                         }
                     }
                 }
-                \new AnnotatedDivisionsVoice {
-                    {
-                        s1 * 1/8
-                    }
-                    \times 1/4 {
-                        c'''1
-                    }
-                    \times 1/4 {
-                        c'''1
-                    }
-                    {
-                        s1 * 5/16
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 3/16
-                        s1 * 3/16
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/16 {
-                        c'''1
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/16 {
-                        c'''1
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/16 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/4
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/8 {
-                        c'''1
-                    }
-                }
-                \new AnnotatedPhrasesVoice {
-                    {
-                        s1 * 1/8
-                    }
-                    \times 1/2 {
-                        c'''1
-                    }
-                    {
-                        s1 * 5/16
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 3/16
-                        s1 * 3/16
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 9/16 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/4
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/8 {
-                        c'''1
-                    }
-                }
-            >>
+            }
         >>
     >>
 }

@@ -283,7 +283,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'32 * 27/32 -\staccato \f \startTextSpan \> [
+                            c'32 * 27/32 -\staccato \mp \startTextSpan \> [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
                             c'32 * 15/16 -\staccato
@@ -367,7 +367,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'32 * 7/8 -\staccato \f \startTextSpan \> [
+                            c'32 * 7/8 -\staccato \mf \startTextSpan \> [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
                             c'32 * 15/16 -\staccato
@@ -545,7 +545,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'32 * 7/8 -\staccato \f \startTextSpan \> [
+                            c'32 * 7/8 -\staccato \mp \startTextSpan \> [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
                             c'32 * 15/16 -\staccato
@@ -651,7 +651,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'32 * 27/32 -\staccato \f \startTextSpan \> [
+                            c'32 * 27/32 -\staccato \mf \startTextSpan \> [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
                             c'32 * 15/16 -\staccato
@@ -965,7 +965,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'32 * 27/32 -\staccato \f \startTextSpan \> [
+                            c'32 * 27/32 -\staccato \mp \startTextSpan \> [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
                             c'32 * 15/16 -\staccato
@@ -1079,7 +1079,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'32 * 29/32 -\staccato \f \startTextSpan \> [
+                            c'32 * 29/32 -\staccato \mf \startTextSpan \> [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
                             c'32 * 15/16 -\staccato
@@ -1360,7 +1360,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'32 * 15/16 -\staccato \f \startTextSpan \> [
+                            c'32 * 15/16 -\staccato \mp \startTextSpan \> [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
                             c'32 * 15/16 -\staccato
@@ -1475,7 +1475,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'32 * 27/32 -\staccato \f \startTextSpan \> [
+                            c'32 * 27/32 -\staccato \mf \startTextSpan \> [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
                             c'32 * 15/16 -\staccato
@@ -1697,7 +1697,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'32 * 13/16 -\staccato \f \startTextSpan \> [
+                            c'32 * 13/16 -\staccato \mp \startTextSpan \> [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
                             c'32 * 31/32 -\staccato
@@ -1864,7 +1864,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'32 * 29/32 -\staccato \f \startTextSpan \> [
+                            c'32 * 29/32 -\staccato \mf \startTextSpan \> [
                             \set stemLeftBeamCount = 3
                             \set stemRightBeamCount = 3
                             c'32 * 15/16 -\staccato

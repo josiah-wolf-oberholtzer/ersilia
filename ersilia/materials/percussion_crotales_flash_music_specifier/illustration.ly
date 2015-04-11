@@ -41,7 +41,7 @@
                     "Vln. 1"
                 }
         } <<
-            \context StringStaff = "Violin 1 Staff" <<
+            \context StringStaff = "Violin 1 Staff" {
                 \context Voice = "Violin 1 Voice" {
                     \clef "treble"
                     {
@@ -330,103 +330,7 @@
                         }
                     }
                 }
-                \new AnnotatedDivisionsVoice {
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/4
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/32 {
-                        c'''1
-                    }
-                    {
-                        s1 * 5/32
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/4
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/32 {
-                        c'''1
-                    }
-                    {
-                        s1 * 13/32
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/4
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/32 {
-                        c'''1
-                    }
-                    {
-                        s1 * 9/32
-                        s1 * 5/16
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 3/16
-                    }
-                }
-                \new AnnotatedPhrasesVoice {
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/4
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/32 {
-                        c'''1
-                    }
-                    {
-                        s1 * 5/32
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/4
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/32 {
-                        c'''1
-                    }
-                    {
-                        s1 * 13/32
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/4
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/32 {
-                        c'''1
-                    }
-                    {
-                        s1 * 9/32
-                        s1 * 5/16
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 3/16
-                    }
-                }
-            >>
+            }
         >>
         \tag #'violin-2
         \context StringPerformerGroup = "Violin 2 Performer Group" \with {
@@ -441,7 +345,7 @@
                     "Vln. 2"
                 }
         } <<
-            \context StringStaff = "Violin 2 Staff" <<
+            \context StringStaff = "Violin 2 Staff" {
                 \context Voice = "Violin 2 Voice" {
                     \clef "treble"
                     {
@@ -702,99 +606,7 @@
                         }
                     }
                 }
-                \new AnnotatedDivisionsVoice {
-                    {
-                        s1 * 3/16
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/32 {
-                        c'''1
-                    }
-                    {
-                        s1 * 5/32
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/16
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/32 {
-                        c'''1
-                    }
-                    {
-                        s1 * 3/32
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 9/16
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/4
-                        s1 * 1/8
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/32 {
-                        c'''1
-                    }
-                    {
-                        s1 * 5/32
-                        s1 * 5/8
-                    }
-                }
-                \new AnnotatedPhrasesVoice {
-                    {
-                        s1 * 3/16
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/32 {
-                        c'''1
-                    }
-                    {
-                        s1 * 5/32
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/16
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/32 {
-                        c'''1
-                    }
-                    {
-                        s1 * 3/32
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 9/16
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/4
-                        s1 * 1/8
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/32 {
-                        c'''1
-                    }
-                    {
-                        s1 * 5/32
-                        s1 * 5/8
-                    }
-                }
-            >>
+            }
         >>
         \tag #'viola
         \context StringPerformerGroup = "Viola Performer Group" \with {
@@ -809,7 +621,7 @@
                     Va.
                 }
         } <<
-            \context StringStaff = "Viola Staff" <<
+            \context StringStaff = "Viola Staff" {
                 \context Voice = "Viola Voice" {
                     \clef "alto"
                     {
@@ -1028,85 +840,7 @@
                         }
                     }
                 }
-                \new AnnotatedDivisionsVoice {
-                    {
-                        s1 * 1/4
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/4
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/32 {
-                        c'''1
-                    }
-                    {
-                        s1 * 25/32
-                        s1 * 1/8
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/32 {
-                        c'''1
-                    }
-                    {
-                        s1 * 5/32
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/4
-                        s1 * 1/8
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 3/8
-                    }
-                }
-                \new AnnotatedPhrasesVoice {
-                    {
-                        s1 * 1/4
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/4
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/32 {
-                        c'''1
-                    }
-                    {
-                        s1 * 25/32
-                        s1 * 1/8
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/32 {
-                        c'''1
-                    }
-                    {
-                        s1 * 5/32
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/4
-                        s1 * 1/8
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 3/8
-                    }
-                }
-            >>
+            }
         >>
         \tag #'cello
         \context StringPerformerGroup = "Cello Performer Group" \with {
@@ -1121,7 +855,7 @@
                     Vc.
                 }
         } <<
-            \context StringStaff = "Cello Staff" <<
+            \context StringStaff = "Cello Staff" {
                 \context Voice = "Cello Voice" {
                     \clef "bass"
                     {
@@ -1430,113 +1164,7 @@
                         }
                     }
                 }
-                \new AnnotatedDivisionsVoice {
-                    {
-                        s1 * 1/8
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/32 {
-                        c'''1
-                    }
-                    {
-                        s1 * 5/32
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/8
-                        s1 * 5/16
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 7/16
-                        s1 * 3/16
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/32 {
-                        c'''1
-                    }
-                    {
-                        s1 * 3/32
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/16
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/32 {
-                        c'''1
-                    }
-                    {
-                        s1 * 3/32
-                        s1 * 1/4
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/4
-                    }
-                }
-                \new AnnotatedPhrasesVoice {
-                    {
-                        s1 * 1/8
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/32 {
-                        c'''1
-                    }
-                    {
-                        s1 * 5/32
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/8
-                        s1 * 5/16
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 7/16
-                        s1 * 3/16
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/32 {
-                        c'''1
-                    }
-                    {
-                        s1 * 3/32
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/16
-                    }
-                    \tweak #'text #tuplet-number::calc-fraction-text
-                    \times 3/32 {
-                        c'''1
-                    }
-                    {
-                        s1 * 3/32
-                        s1 * 1/4
-                    }
-                    \times 1/8 {
-                        c'''1
-                    }
-                    {
-                        s1 * 1/4
-                    }
-                }
-            >>
+            }
         >>
     >>
 }
