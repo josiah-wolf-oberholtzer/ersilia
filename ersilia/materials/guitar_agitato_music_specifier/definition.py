@@ -10,17 +10,17 @@ import consort
 
 guitar_agitato_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
-        dynamic_expressions=consort.DynamicExpression(
-            dynamic_tokens='mf mp fff',
-            start_dynamic_tokens='f',
-            stop_dynamic_tokens='mf',
-            ),
         accents=consort.AttachmentExpression(
             attachments=indicatortools.Articulation('accent'),
             selector=selectortools.Selector()
                 .by_logical_tie(pitched=True)
                 .by_duration('==', (1, 8), preprolated=True)
                 [0],
+            ),
+        dynamic_expressions=consort.DynamicExpression(
+            dynamic_tokens='mf mp fff',
+            start_dynamic_tokens='f',
+            stop_dynamic_tokens='mf',
             ),
         mordent=consort.AttachmentExpression(
             attachments=indicatortools.Articulation('mordent'),
