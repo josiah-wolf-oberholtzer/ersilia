@@ -84,7 +84,12 @@ saxophone_agitato_music_specifier = consort.MusicSpecifier(
                 ),
             ],
         talea=rhythmmakertools.Talea(
-            counts=(1, -1, 1, 1, -1, 1, 1, 1, -1),
+            counts=[
+                1, -1,
+                1, 1, -1,
+                1, 1, 1, -1,
+                1, 1, 1, 1, 1, 1, -1,
+                ],
             denominator=16,
             ),
         )
