@@ -85,12 +85,6 @@ wind_ostinato_music_specifier = consort.tools.MusicSpecifier(
                         preprolated=True,
                         ),
                     selectortools.ContiguitySelectorCallback(),
-                    selectortools.LengthSelectorCallback(
-                        length=selectortools.LengthInequality(
-                            operator_string='>',
-                            length=1,
-                            ),
-                        ),
                     selectortools.PrototypeSelectorCallback(
                         prototype=scoretools.Leaf,
                         ),

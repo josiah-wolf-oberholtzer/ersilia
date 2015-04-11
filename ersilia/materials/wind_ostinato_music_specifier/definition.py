@@ -26,7 +26,6 @@ wind_ostinato_music_specifier = consort.MusicSpecifier(
                 .by_logical_tie(pitched=True)
                 .by_duration('==', (1, 16), preprolated=True)
                 .by_contiguity()
-                .by_length('>', 1)
                 .by_leaves()
                 [-1]
             ),
@@ -36,12 +35,11 @@ wind_ostinato_music_specifier = consort.MusicSpecifier(
         forbid_repetitions=True,
         pitch_specifier="d' f'",
         ),
-    rhythm_maker=rhythmmakertools.TupletRhythmMaker(
-        tuplet_ratios=[
-            (2, 1, -2),
-            (1, 1, -2),
-            (2, 1, -2),
-            (1, 1, -1),
-            ],
+    rhythm_maker=rhythmmakertools.TaleaRhythmMaker(
+        extra_counts_per_division=[0, 0, 1, 2, 0, 1],
+        talea=rhythmmakertools.Talea(
+            counts=[1, 1, -3],
+            denominator=16,
+            )
         ),
     )
