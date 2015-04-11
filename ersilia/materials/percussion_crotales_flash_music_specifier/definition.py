@@ -21,7 +21,9 @@ percussion_crotales_flash_music_specifier = consort.MusicSpecifier(
         pitch_operation_specifier=abbreviations.pitch_operation_specifier,
         register_specifier=consort.RegisterSpecifier(
             center_pitch="c'''",
-            segment_inflections=consort.RegisterInflection.zigzag(6).align(),
+            segment_inflections=consort.RegisterInflection
+                .zigzag(6)
+                .align()
             ),
         ),
     rhythm_maker=rhythmmakertools.IncisedRhythmMaker(

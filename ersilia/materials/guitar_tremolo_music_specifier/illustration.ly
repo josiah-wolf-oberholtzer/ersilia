@@ -3,6 +3,11 @@
 
 \include "/Users/josiah/Documents/Development/consort/consort/stylesheets/stylesheet.ily"
 
+\header {
+    tagline = \markup {}
+    title = #"Guitar Tremolo Music Specifier"
+}
+
 \score {
     \context Score = "String Quartet Score" <<
         \tag #'time
@@ -64,7 +69,7 @@
                     }
                     {
                         {
-                            <f af g'>4 :32 \ppp
+                            <f bf>4 :32 \ppp
                         }
                     }
                     {
@@ -75,8 +80,8 @@
                     {
                         % [Violin 1 Voice] Measure 3
                         {
-                            <f af>4 :32 \mp \>
-                            <f af>16 :128 \ppp \repeatTie
+                            <f af g'>4 :32 \mp \>
+                            <f af g'>16 :128 \ppp \repeatTie
                         }
                     }
                     {
@@ -103,8 +108,8 @@
                     }
                     {
                         {
-                            <g, bf, a>16 :128 \mp
-                            <g, bf, a>4 :32 \repeatTie
+                            <g, bf, d a>16 :128 \mp
+                            <g, bf, d a>4 :32 \repeatTie
                             \bar "|."
                         }
                     }
@@ -135,21 +140,21 @@
                     }
                     {
                         {
-                            <d f e'>8. :64 \ppp \< [
+                            <d f>8. :64 \ppp \< [
                             \set stemLeftBeamCount = 2
-                            <d f e'>16 :128 -\accent \repeatTie ]
+                            <d f>16 :128 -\accent \repeatTie ]
                         }
                         {
-                            <d f e'>8. :64 \p \repeatTie
+                            <d f>8. :64 \p \repeatTie
                         }
                         % [Violin 2 Voice] Measure 2
                         {
-                            <d f e'>8. :64 \repeatTie \<
+                            <d f>8. :64 \repeatTie \<
                         }
                         {
-                            <d f e'>8. :64 -\accent \mf \repeatTie \>
-                            <d f e'>4 :32 \repeatTie
-                            <d f e'>16 :128 \mp \repeatTie
+                            <d f>8. :64 -\accent \mf \repeatTie \>
+                            <d f>4 :32 \repeatTie
+                            <d f>16 :128 \mp \repeatTie
                         }
                     }
                     {
@@ -235,11 +240,11 @@
                     }
                     {
                         {
-                            <f af g'>4 :32 \ppp \<
+                            <f bf>4 :32 \ppp \<
                         }
                         % [Viola Voice] Measure 4
                         {
-                            <f af g'>4. :32 \mp \repeatTie
+                            <f bf>4. :32 \mp \repeatTie
                         }
                     }
                     {
@@ -250,8 +255,8 @@
                     }
                     {
                         {
-                            <g, bf,>4 :32 \mp \>
-                            <g, bf,>4 :32 \ppp \repeatTie
+                            <g, bf, a>4 :32 \mp \>
+                            <g, bf, a>4 :32 \ppp \repeatTie
                             \bar "|."
                         }
                     }
@@ -282,10 +287,10 @@
                     }
                     {
                         {
-                            <d g>4 :32 \ppp \<
+                            <d f>4 :32 \ppp \<
                         }
                         {
-                            <d g>4 :32 \mp \repeatTie
+                            <d f>4 :32 \mp \repeatTie
                         }
                     }
                     {
@@ -313,14 +318,14 @@
                     }
                     {
                         {
-                            <f af>8. :64 \ppp \<
+                            <f af g'>8. :64 \ppp \<
                         }
                         % [Cello Voice] Measure 4
                         {
-                            <f af>8. :64 -\accent \mf \repeatTie \>
+                            <f af g'>8. :64 -\accent \mf \repeatTie \>
                         }
                         {
-                            <f af>8. :64 \mp \repeatTie
+                            <f af g'>8. :64 \mp \repeatTie
                         }
                     }
                     {

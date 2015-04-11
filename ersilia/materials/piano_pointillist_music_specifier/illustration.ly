@@ -3,6 +3,11 @@
 
 \include "/Users/josiah/Documents/Development/consort/consort/stylesheets/stylesheet.ily"
 
+\header {
+    tagline = \markup {}
+    title = #"Piano Pointillist Music Specifier"
+}
+
 \score {
     \context Score = "String Quartet Score" <<
         \tag #'time
@@ -63,7 +68,7 @@
                     {
                         % [Violin 1 Voice] Measure 2
                         {
-                            <bf''' ef''''>8 -\tenuto
+                            <c'''' ef''''>8 -\tenuto
                         }
                     }
                     {
@@ -73,7 +78,7 @@
                     }
                     {
                         {
-                            <bf'' ef'''>8 -\tenuto
+                            c'''8 -\tenuto
                         }
                     }
                     {
@@ -85,7 +90,7 @@
                     {
                         % [Violin 1 Voice] Measure 3
                         {
-                            <c''' ef'''>8 -\tenuto
+                            <af'' f'''>8 -\tenuto
                         }
                     }
                     {
@@ -148,7 +153,7 @@
                     }
                     {
                         {
-                            <af''' f''''>8 -\tenuto
+                            c''''8 -\tenuto
                         }
                     }
                     {
@@ -162,10 +167,10 @@
                     }
                     {
                         {
-                            c''''8 -\tenuto
+                            <bf''' ef''''>8 -\tenuto
                         }
                         {
-                            <af'' f'''>8 -\tenuto
+                            <c''' ef'''>8 -\tenuto
                         }
                     }
                     {
@@ -191,7 +196,7 @@
                     }
                     {
                         {
-                            <c''' ef'''>8 -\tenuto
+                            <af'' f'''>8 -\tenuto
                         }
                     }
                     {
@@ -237,7 +242,7 @@
                     {
                         \tweak #'text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            <c'''' ef''''>8 -\tenuto [
+                            c''''8 -\tenuto [
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             r8
@@ -245,7 +250,7 @@
                             \set stemRightBeamCount = 1
                             r8
                             \set stemLeftBeamCount = 1
-                            c''''8 -\tenuto ]
+                            <bf''' ef''''>8 -\tenuto ]
                         }
                         % [Viola Voice] Measure 2
                         {
@@ -270,7 +275,7 @@
                     {
                         % [Viola Voice] Measure 4
                         {
-                            <bf'' ef'''>8 -\tenuto
+                            c'''8 -\tenuto
                         }
                     }
                     {
@@ -336,7 +341,7 @@
                     }
                     {
                         {
-                            c'''8 -\tenuto
+                            <bf'' ef'''>8 -\tenuto
                         }
                     }
                     {
@@ -352,12 +357,12 @@
                     }
                     {
                         {
-                            <af'' f'''>16 -\tenuto
+                            <c''' ef'''>16 -\tenuto
                         }
                         % [Cello Voice] Measure 4
                         \tweak #'text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            <af'' f'''>16 \repeatTie [
+                            <c''' ef'''>16 \repeatTie [
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             r8
@@ -379,7 +384,7 @@
                     }
                     {
                         {
-                            c'''8 -\tenuto
+                            <af'' f'''>8 -\tenuto
                         }
                     }
                     {

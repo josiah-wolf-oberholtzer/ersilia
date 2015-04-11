@@ -3,6 +3,11 @@
 
 \include "/Users/josiah/Documents/Development/consort/consort/stylesheets/stylesheet.ily"
 
+\header {
+    tagline = \markup {}
+    title = #"Guitar Continuo Music Specifier"
+}
+
 \score {
     \context Score = "String Quartet Score" <<
         \tag #'time
@@ -52,44 +57,42 @@
                     }
                     {
                         {
-                            c'16 -\staccato [
+                            d'16 -\accent \p [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            e'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            d'16 )
                             \set stemLeftBeamCount = 2
-                            c'16 -\staccato ]
+                            \set stemRightBeamCount = 2
+                            f'16 -\accent (
+                            \set stemLeftBeamCount = 2
+                            d'16 ]
                         }
-                    }
-                    {
                         {
-                            r16
-                            r16
-                        }
-                    }
-                    {
-                        {
-                            c'16 -\staccato [
+                            f'16 ) [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            d'16 -\accent (
                             \set stemLeftBeamCount = 2
-                            c'16 -\staccato ]
+                            \set stemRightBeamCount = 2
+                            e'16
+                            \set stemLeftBeamCount = 2
+                            d'16 ]
                         }
                         % [Violin 1 Voice] Measure 2
                         \times 4/5 {
-                            <c' ef'>16 -\staccato [
+                            g'16 ) [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            d'16 -\accent (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            f'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            d'16 )
                             \set stemLeftBeamCount = 2
                             r16 ]
                         }
@@ -104,15 +107,15 @@
                             r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            fs'16 -\accent \mp (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            cs'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            ef'16
                             \set stemLeftBeamCount = 2
-                            <c' ef'>16 -\staccato ]
+                            cs'16 ] )
                         }
                     }
                     {
@@ -123,15 +126,15 @@
                     {
                         % [Violin 1 Voice] Measure 3
                         {
-                            c'16 -\staccato [
+                            f'16 -\accent \p [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            d'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            f'16
                             \set stemLeftBeamCount = 2
-                            c'16 -\staccato ]
+                            d'16 ] )
                         }
                     }
                     {
@@ -146,21 +149,21 @@
                             r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            g'16 -\accent \mp (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            f'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            bf'16 )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            f'16 -\accent (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            af'16
                             \set stemLeftBeamCount = 2
-                            c'16 -\staccato ]
+                            f'16 ] )
                         }
                     }
                     {
@@ -179,16 +182,16 @@
                             r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            fs'16 -\accent \p (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            cs'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            ef'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            cs'16 )
                             \set stemLeftBeamCount = 2
                             r16 ]
                             \bar "|."
@@ -221,68 +224,71 @@
                     }
                     {
                         {
-                            c'16 -\staccato [
+                            cs'16 -\accent \mp [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            ef'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            cs'16 )
                             \set stemLeftBeamCount = 2
-                            <c' ef'>16 -\staccato ]
+                            e'16 -\accent ] (
                         }
                         \tweak #'text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            r16 [
+                            cs'16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            e'16 )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            cs'16 -\accent (
                             \set stemLeftBeamCount = 2
-                            r16 ]
+                            ef'16 ]
                         }
                         % [Violin 2 Voice] Measure 2
                         \tweak #'text #tuplet-number::calc-fraction-text
                         \times 3/5 {
-                            r16 [
+                            cs'16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            fs'16 )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            cs'16 -\accent (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            e'16
                             \set stemLeftBeamCount = 2
-                            c'16 -\staccato ]
+                            cs'16 ] )
                         }
                         {
-                            c'16 -\staccato [
+                            fs'16 -\accent [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            cs'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            ef'16 )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            cs'16 -\accent (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            e'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            cs'16
                             \set stemLeftBeamCount = 2
-                            <c' ef'>16 -\staccato ]
+                            \set stemRightBeamCount = 2
+                            e'16
+                            \set stemLeftBeamCount = 2
+                            cs'16 ] )
                         }
                     }
                     {
                         {
-                            r4
+                            r8.
                         }
                         % [Violin 2 Voice] Measure 3
                         {
@@ -291,9 +297,9 @@
                     }
                     {
                         {
-                            c'16 -\staccato [
+                            g'16 -\accent \p [ (
                             \set stemLeftBeamCount = 2
-                            c'16 -\staccato ]
+                            f'16 ] )
                         }
                     }
                     {
@@ -310,15 +316,15 @@
                             r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            fs'16 -\accent \mp (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            cs'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            e'16
                             \set stemLeftBeamCount = 2
-                            <c' ef'>16 -\staccato ]
+                            cs'16 ] )
                         }
                     }
                     {
@@ -360,47 +366,43 @@
                     }
                     {
                         {
-                            c'16 -\staccato [
+                            d'16 -\accent \p [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            e'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            d'16 )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            f'16 -\accent (
                             \set stemLeftBeamCount = 2
-                            <c' ef'>16 -\staccato ]
+                            \set stemRightBeamCount = 2
+                            d'16
+                            \set stemLeftBeamCount = 2
+                            f'16 ] )
                         }
-                    }
-                    {
-                        {
-                            r16
-                        }
-                    }
-                    {
                         % [Viola Voice] Measure 2
                         \tweak #'text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            r16 [
+                            d'16 -\accent [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            e'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            d'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            g'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            d'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            f'16 )
                             \set stemLeftBeamCount = 2
-                            <c' ef'>16 -\staccato ]
+                            r16 ]
                         }
                     }
                     {
@@ -417,43 +419,39 @@
                             r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            cs'16 -\accent \mp (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            fs'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            cs'16 )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            ef'16 -\accent (
                             \set stemLeftBeamCount = 2
-                            <c' ef'>16 -\staccato ]
+                            cs'16 ]
                         }
-                    }
-                    {
                         % [Viola Voice] Measure 4
                         {
-                            r16
+                            e'16 ) [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            cs'16 -\accent (
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            e'16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            cs'16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            ef'16
+                            \set stemLeftBeamCount = 2
+                            cs'16 ] )
                         }
                     }
                     {
-                        {
-                            c'16 -\staccato [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            c'16 -\staccato ]
-                        }
-                    }
-                    {
-                        {
-                            r16
-                        }
                         % [Viola Voice] Measure 5
                         {
                             r8
@@ -464,25 +462,25 @@
                             r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            g'16 -\accent \p (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            d'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            f'16 )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            d'16 -\accent (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            g'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            d'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            e'16 )
                             \set stemLeftBeamCount = 2
                             r16 ]
                             \bar "|."
@@ -515,29 +513,29 @@
                     }
                     {
                         {
-                            c'16 -\staccato [
+                            f'16 -\accent \mp [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            g'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            f'16 )
                             \set stemLeftBeamCount = 2
-                            c'16 -\staccato ]
+                            af'16 -\accent ] (
                         }
                         \times 4/5 {
-                            r16 [
+                            f'16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            af'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            f'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            g'16
                             \set stemLeftBeamCount = 2
-                            r16 ]
+                            f'16 ] )
                         }
                     }
                     {
@@ -548,15 +546,15 @@
                     }
                     {
                         {
-                            <c' ef'>16 -\staccato [
+                            bf'16 -\accent \p [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            f'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            af'16
                             \set stemLeftBeamCount = 2
-                            c'16 -\staccato ]
+                            f'16 ] )
                         }
                     }
                     {
@@ -574,30 +572,29 @@
                             r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            g'16 -\accent \mp (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            d'16
                             \set stemLeftBeamCount = 2
-                            c'16 -\staccato ]
+                            e'16 ] )
                         }
                         % [Cello Voice] Measure 4
                         {
-                            c'16 -\staccato [
+                            d'16 -\accent [ (
                             \set stemLeftBeamCount = 2
-                            <c' ef'>16 -\staccato ]
-                        }
-                    }
-                    {
-                        {
-                            r8
-                        }
-                    }
-                    {
-                        {
-                            <c' ef'>16 -\staccato [
+                            \set stemRightBeamCount = 2
+                            f'16
                             \set stemLeftBeamCount = 2
-                            c'16 -\staccato ]
+                            d'16 ]
+                        }
+                        {
+                            f'16 [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            d'16
+                            \set stemLeftBeamCount = 2
+                            e'16 ] )
                         }
                     }
                     {
@@ -608,18 +605,18 @@
                     }
                     {
                         {
-                            c'16 -\staccato [
+                            f'16 -\accent \p [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            bf'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c' ef'>16 -\staccato
+                            f'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            af'16
                             \set stemLeftBeamCount = 2
-                            <c' ef'>16 -\staccato ]
+                            f'16 ] )
                         }
                     }
                     {

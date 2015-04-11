@@ -3,6 +3,11 @@
 
 \include "/Users/josiah/Documents/Development/consort/consort/stylesheets/stylesheet.ily"
 
+\header {
+    tagline = \markup {}
+    title = #"Piano Palm Cluster Music Specifier"
+}
+
 \score {
     \context Score = "String Quartet Score" <<
         \tag #'time
@@ -87,10 +92,14 @@
                             }
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <a'' c''' e'''>16
+                            <f'' a'' c''' e''' g'''>16
                                 ^ \markup {
                                     \center-align
-                                        \natural
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
                                     }
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -136,10 +145,14 @@
                             }
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c''' e''' g'''>16
+                            <a'' c''' e''' g''' b'''>16
                                 ^ \markup {
                                     \center-align
-                                        \natural
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
                                     }
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -149,14 +162,10 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <c'' e'' g'' b'' d'''>16 ]
+                            <e'' g'' b''>16 ]
                                 ^ \markup {
                                     \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
+                                        \natural
                                     }
                         }
                         % [Violin 1 Voice] Measure 2
@@ -212,14 +221,10 @@
                             }
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
-                            <f'' a'' c''' e''' g'''>8
+                            <a'' c''' e'''>8
                                 ^ \markup {
                                     \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
+                                        \natural
                                     }
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -229,14 +234,10 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 1
-                            <c''' e''' g''' b''' d''''>8 ]
+                            <e''' g''' b'''>8 ]
                                 ^ \markup {
                                     \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
+                                        \natural
                                     }
                         }
                     }
@@ -287,14 +288,10 @@
                             }
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c'' e'' g'' b'' d'''>16
+                            <e'' g'' b''>16
                                 ^ \markup {
                                     \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
+                                        \natural
                                     }
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -304,10 +301,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <c'' e'' g''>16 ]
+                            <a' c'' e'' g'' b''>16 ]
                                 ^ \markup {
                                     \center-align
-                                        \natural
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
                                     }
                         }
                     }
@@ -374,14 +375,10 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <f' a' c'' e'' g''>16 ]
+                            <a' c'' e''>16 ]
                                 ^ \markup {
                                     \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
+                                        \natural
                                     }
                         }
                     }
@@ -480,10 +477,14 @@
                             }
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c'' e'' g''>16
+                            <a' c'' e'' g'' b''>16
                                 ^ \markup {
                                     \center-align
-                                        \natural
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
                                     }
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -531,10 +532,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <e'' g'' b''>16 ]
+                            <c'' e'' g'' b'' d'''>16 ]
                                 ^ \markup {
                                     \center-align
-                                        \natural
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
                                     }
                         }
                         {
@@ -545,14 +550,10 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <f''' a''' c'''' e'''' g''''>16 [
+                            <a''' c'''' e''''>16 [
                                 ^ \markup {
                                     \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
+                                        \natural
                                     }
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -577,10 +578,14 @@
                             }
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <a'' c''' e'''>16
+                            <f'' a'' c''' e''' g'''>16
                                 ^ \markup {
                                     \center-align
-                                        \natural
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
                                     }
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -619,10 +624,14 @@
                             }
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c''' e''' g'''>16
+                            <a'' c''' e''' g''' b'''>16
                                 ^ \markup {
                                     \center-align
-                                        \natural
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
                                     }
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -670,10 +679,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <a'' c''' e'''>16 ]
+                            <f'' a'' c''' e''' g'''>16 ]
                                 ^ \markup {
                                     \center-align
-                                        \natural
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
                                     }
                         }
                     }
@@ -711,14 +724,10 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 1
-                            <c' e' g' b' d''>8 ]
+                            <e' g' b'>8 ]
                                 ^ \markup {
                                     \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
+                                        \natural
                                     }
                         }
                     }
@@ -768,14 +777,10 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <c''' e''' g''' b''' d''''>16 [
+                            <e''' g''' b'''>16 [
                                 ^ \markup {
                                     \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
+                                        \natural
                                     }
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -786,14 +791,10 @@
                             }
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <f'' a'' c''' e''' g'''>16
+                            <a'' c''' e'''>16
                                 ^ \markup {
                                     \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
+                                        \natural
                                     }
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -861,10 +862,14 @@
                             }
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
-                            <a'' c''' e'''>8
+                            <f'' a'' c''' e''' g'''>8
                                 ^ \markup {
                                     \center-align
-                                        \natural
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
                                     }
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -888,14 +893,10 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 1
-                            <c''' e''' g''' b''' d''''>8 ]
+                            <e''' g''' b'''>8 ]
                                 ^ \markup {
                                     \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
+                                        \natural
                                     }
                         }
                     }
@@ -970,10 +971,14 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <c'' e'' g''>16 [
+                            <a' c'' e'' g'' b''>16 [
                                 ^ \markup {
                                     \center-align
-                                        \natural
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
                                     }
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1011,10 +1016,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <c'' e'' g''>16 ]
+                            <a' c'' e'' g'' b''>16 ]
                                 ^ \markup {
                                     \center-align
-                                        \natural
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
                                     }
                         }
                     }
@@ -1067,10 +1076,14 @@
                             }
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
-                            <e' g' b'>8
+                            <c' e' g' b' d''>8
                                 ^ \markup {
                                     \center-align
-                                        \natural
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
                                     }
                             \set stemLeftBeamCount = 1
                             r8 ]
@@ -1111,46 +1124,42 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <c''' e''' g''' b''' d''''>16 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <f''' a''' c'''' e'''' g''''>16
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <c''' e''' g'''>16
+                            <e''' g''' b'''>16 [
                                 ^ \markup {
                                     \center-align
                                         \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <a''' c'''' e''''>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <a'' c''' e''' g''' b'''>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
                                     }
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1177,14 +1186,10 @@
                             }
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
-                            <c'''' e'''' g'''' b'''' d'''''>8
+                            <e'''' g'''' b''''>8
                                 ^ \markup {
                                     \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
+                                        \natural
                                     }
                             \set stemLeftBeamCount = 1
                             r8 ]
@@ -1250,10 +1255,14 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <c''' e''' g'''>16 ]
+                            <a'' c''' e''' g''' b'''>16 ]
                                 ^ \markup {
                                     \center-align
-                                        \natural
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
                                     }
                         }
                     }
@@ -1281,14 +1290,10 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <c'' e'' g'' b'' d'''>16 [
+                            <e'' g'' b''>16 [
                                 ^ \markup {
                                     \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
+                                        \natural
                                     }
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1298,14 +1303,10 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <f'' a'' c''' e''' g'''>16 ]
+                            <a'' c''' e'''>16 ]
                                 ^ \markup {
                                     \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
+                                        \natural
                                     }
                         }
                     }
@@ -1323,10 +1324,14 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <c'' e'' g''>16 [
+                            <a' c'' e'' g'' b''>16 [
                                 ^ \markup {
                                     \center-align
-                                        \natural
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
                                     }
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1358,25 +1363,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <c' e' g' b' d''>16 [
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <a' c'' e''>16
+                            <e' g' b'>16 [
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -1390,7 +1377,7 @@
                             }
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c'' e'' g'' b'' d'''>16
+                            <f' a' c'' e'' g''>16
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -1408,14 +1395,10 @@
                             }
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <f a c' e' g'>16
+                            <e'' g'' b''>16
                                 ^ \markup {
                                     \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
+                                        \natural
                                     }
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1425,10 +1408,28 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <c' e' g'>16 ]
+                            \set stemRightBeamCount = 2
+                            <a c' e'>16
                                 ^ \markup {
                                     \center-align
                                         \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            <a c' e' g' b'>16 ]
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
                                     }
                         }
                     }

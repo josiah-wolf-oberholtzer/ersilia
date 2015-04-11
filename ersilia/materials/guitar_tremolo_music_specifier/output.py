@@ -119,6 +119,26 @@ guitar_tremolo_music_specifier = consort.tools.MusicSpecifier(
                         item_class=pitchtools.NumberedInterval,
                         ),
                     ),
+                consort.tools.ChordExpression(
+                    chord_expr=pitchtools.IntervalSegment(
+                        (
+                            pitchtools.NumberedInterval(0),
+                            pitchtools.NumberedInterval(5),
+                            ),
+                        item_class=pitchtools.NumberedInterval,
+                        ),
+                    ),
+                consort.tools.ChordExpression(
+                    chord_expr=pitchtools.IntervalSegment(
+                        (
+                            pitchtools.NumberedInterval(0),
+                            pitchtools.NumberedInterval(3),
+                            pitchtools.NumberedInterval(7),
+                            pitchtools.NumberedInterval(14),
+                            ),
+                        item_class=pitchtools.NumberedInterval,
+                        ),
+                    ),
                 ]
             ),
         pitch_specifier=consort.tools.PitchSpecifier(

@@ -3,6 +3,11 @@
 
 \include "/Users/josiah/Documents/Development/consort/consort/stylesheets/stylesheet.ily"
 
+\header {
+    tagline = \markup {}
+    title = #"String Pizzicati Music Specifier"
+}
+
 \score {
     \context Score = "String Quartet Score" <<
         \tag #'time

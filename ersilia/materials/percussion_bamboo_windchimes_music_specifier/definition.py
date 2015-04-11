@@ -13,7 +13,6 @@ percussion_bamboo_windchimes_music_specifier = consort.MusicSpecifier(
             attachments=[
                 [
                     indicatortools.Articulation('accent'),
-                    indicatortools.LaissezVibrer(),
                     indicatortools.Dynamic('f'),
                     ]
                 ],

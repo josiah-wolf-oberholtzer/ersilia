@@ -3,6 +3,11 @@
 
 \include "/Users/josiah/Documents/Development/consort/consort/stylesheets/stylesheet.ily"
 
+\header {
+    tagline = \markup {}
+    title = #"Guitar Pointillist Harmonics Music Specifier"
+}
+
 \score {
     \context Score = "String Quartet Score" <<
         \tag #'time
@@ -69,7 +74,7 @@
                             <
                                 b
                                 \tweak #'style #'harmonic
-                                e'
+                                fs'
                             >8 \mp
                         }
                     }
@@ -84,7 +89,7 @@
                             <
                                 a
                                 \tweak #'style #'harmonic
-                                e'
+                                a'
                             >8 \p
                         }
                     }
@@ -114,7 +119,7 @@
                             <
                                 f
                                 \tweak #'style #'harmonic
-                                f'
+                                bf
                             >8 \p
                         }
                     }
@@ -148,7 +153,7 @@
                             <
                                 af,
                                 \tweak #'style #'harmonic
-                                ef
+                                af
                             >8 \p
                         }
                     }
@@ -188,7 +193,7 @@
                             <
                                 d'
                                 \tweak #'style #'harmonic
-                                d''
+                                g'
                             >8 \mp
                         }
                     }
@@ -214,7 +219,7 @@
                             <
                                 b
                                 \tweak #'style #'harmonic
-                                e'
+                                b'
                             >16
                             \set stemLeftBeamCount = 2
                             r16 ]
@@ -247,7 +252,7 @@
                             <
                                 af
                                 \tweak #'style #'harmonic
-                                ef'
+                                df'
                             >8 \p
                         }
                     }
@@ -318,14 +323,14 @@
                             <
                                 f'
                                 \tweak #'style #'harmonic
-                                c''
+                                bf'
                             >8 \p \<
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             <
                                 b
                                 \tweak #'style #'harmonic
-                                b'
+                                fs'
                             >8
                             \set stemLeftBeamCount = 1
                             r8 ]
@@ -354,7 +359,7 @@
                             <
                                 d'
                                 \tweak #'style #'harmonic
-                                g'
+                                a'
                             >8 \mp
                         }
                     }
@@ -369,7 +374,7 @@
                             <
                                 ef'
                                 \tweak #'style #'harmonic
-                                ef''
+                                af'
                             >8 \p
                         }
                     }
@@ -428,7 +433,7 @@
                             <
                                 ef'
                                 \tweak #'style #'harmonic
-                                bf'
+                                af'
                             >8 \p
                         }
                     }
@@ -461,7 +466,7 @@
                             <
                                 b
                                 \tweak #'style #'harmonic
-                                e'
+                                b'
                             >8 \p
                         }
                     }
@@ -488,7 +493,7 @@
                             <
                                 c
                                 \tweak #'style #'harmonic
-                                c'
+                                f
                             >16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
@@ -502,7 +507,7 @@
                             <
                                 f
                                 \tweak #'style #'harmonic
-                                bf
+                                f'
                             >16
                             \set stemLeftBeamCount = 2
                             r16 ]
@@ -519,7 +524,7 @@
                             <
                                 c
                                 \tweak #'style #'harmonic
-                                f
+                                g
                             >8 \p
                         }
                     }
@@ -537,7 +542,7 @@
                             <
                                 f
                                 \tweak #'style #'harmonic
-                                f'
+                                bf
                             >8 \mp
                         }
                     }

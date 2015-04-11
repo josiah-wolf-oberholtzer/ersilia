@@ -30,6 +30,8 @@ guitar_tremolo_music_specifier = consort.MusicSpecifier(
             consort.ChordExpression(chord_expr=(0, 3)),
             consort.ChordExpression(chord_expr=(0, 5)),
             consort.ChordExpression(chord_expr=(0, 3, 14)),
+            consort.ChordExpression(chord_expr=(0, 5)),
+            consort.ChordExpression(chord_expr=(0, 3, 7, 14)),
             ),
         pitch_specifier=consort.PitchSpecifier(
             pitch_segments=(

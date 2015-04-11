@@ -3,6 +3,11 @@
 
 \include "/Users/josiah/Documents/Development/consort/consort/stylesheets/stylesheet.ily"
 
+\header {
+    tagline = \markup {}
+    title = #"Piano Tremolo Music Specifier"
+}
+
 \score {
     \context Score = "String Quartet Score" <<
         \tag #'time
@@ -64,7 +69,7 @@
                     }
                     {
                         {
-                            <bf d' f' gf' bf' f''>4 :32
+                            <gs c' ds' e' gs' ds''>4 :32
                         }
                     }
                     {
@@ -75,8 +80,8 @@
                     {
                         % [Violin 1 Voice] Measure 3
                         {
-                            <cs' f' af' cs'' d'' af''>4 :32
-                            <cs' f' af' cs'' d'' af''>16 :128 \repeatTie
+                            <as d' f' as' b' f''>4 :32
+                            <as d' f' as' b' f''>16 :128 \repeatTie
                         }
                     }
                     {
@@ -87,8 +92,8 @@
                     {
                         % [Violin 1 Voice] Measure 4
                         {
-                            <as d' f' as' b' f''>4 :32
-                            <as d' f' as' b' f''>16 :128 \repeatTie
+                            <bf d' f' gf' bf' f''>4 :32
+                            <bf d' f' gf' bf' f''>16 :128 \repeatTie
                         }
                     }
                     {
@@ -103,8 +108,8 @@
                     }
                     {
                         {
-                            <f a c' f' gf' c''>16 :128
-                            <f a c' f' gf' c''>4 :32 \repeatTie
+                            <g b d' g' af' d''>16 :128
+                            <g b d' g' af' d''>4 :32 \repeatTie
                             \bar "|."
                         }
                     }
@@ -160,7 +165,7 @@
                     {
                         % [Violin 2 Voice] Measure 3
                         {
-                            <bf d' f' gf' bf' f''>4 :32
+                            <gs c' ds' e' gs' ds''>4 :32
                         }
                     }
                     {
@@ -174,7 +179,7 @@
                     }
                     {
                         {
-                            <g b d' ef' g' d''>4 :32
+                            <f a c' f' gf' c''>4 :32
                         }
                     }
                     {
@@ -216,12 +221,12 @@
                     }
                     {
                         {
-                            <g b d' ef' g' d''>8 :64
-                            <g b d' ef' g' d''>4 :32 \repeatTie
+                            <g b d' g' af' d''>8 :64
+                            <g b d' g' af' d''>4 :32 \repeatTie
                         }
                         % [Viola Voice] Measure 2
                         {
-                            <g b d' ef' g' d''>4. :32 \repeatTie
+                            <g b d' g' af' d''>4. :32 \repeatTie
                         }
                     }
                     {
@@ -235,11 +240,11 @@
                     }
                     {
                         {
-                            <gs c' ds' gs' a' ds''>4 :32
+                            <gs c' ds' e' gs' ds''>4 :32
                         }
                         % [Viola Voice] Measure 4
                         {
-                            <gs c' ds' gs' a' ds''>4. :32 \repeatTie
+                            <gs c' ds' e' gs' ds''>4. :32 \repeatTie
                         }
                     }
                     {
@@ -282,10 +287,10 @@
                     }
                     {
                         {
-                            <f a c' df' f' c''>4 :32
+                            <g b d' g' af' d''>4 :32
                         }
                         {
-                            <f a c' df' f' c''>4 :32 \repeatTie
+                            <g b d' g' af' d''>4 :32 \repeatTie
                         }
                     }
                     {
@@ -297,9 +302,9 @@
                     }
                     {
                         {
-                            <a cs' e' a' bf' e''>16 :128
-                            <a cs' e' a' bf' e''>4 :32 \repeatTie
-                            <a cs' e' a' bf' e''>16 :128 \repeatTie
+                            <f a c' df' f' c''>16 :128
+                            <f a c' df' f' c''>4 :32 \repeatTie
+                            <f a c' df' f' c''>16 :128 \repeatTie
                         }
                     }
                     {
@@ -313,14 +318,14 @@
                     }
                     {
                         {
-                            <bf d' f' gf' bf' f''>8. :64
+                            <as d' f' as' b' f''>8. :64
                         }
                         % [Cello Voice] Measure 4
                         {
-                            <bf d' f' gf' bf' f''>8. :64 \repeatTie
+                            <as d' f' as' b' f''>8. :64 \repeatTie
                         }
                         {
-                            <bf d' f' gf' bf' f''>8. :64 \repeatTie
+                            <as d' f' as' b' f''>8. :64 \repeatTie
                         }
                     }
                     {
@@ -331,8 +336,8 @@
                     }
                     {
                         {
-                            <gs c' ds' e' gs' ds''>8 :64
-                            <gs c' ds' e' gs' ds''>4 :32 \repeatTie
+                            <f a c' df' f' c''>8 :64
+                            <f a c' df' f' c''>4 :32 \repeatTie
                                 _ \markup {
                                     \italic
                                         \center-column

@@ -5,7 +5,7 @@ from abjad.tools import scoretools
 from ersilia.materials import abbreviations
 
 
-guitar_harmonics_music_specifier = consort.MusicSpecifier(
+guitar_pointillist_harmonics_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
         dynamic_expressions=consort.DynamicExpression(
             dynamic_tokens='p mp',

@@ -7,7 +7,7 @@ from abjad.tools import scoretools
 import consort
 
 
-guitar_harmonics_music_specifier = consort.tools.MusicSpecifier(
+guitar_pointillist_harmonics_music_specifier = consort.tools.MusicSpecifier(
     attachment_handler=consort.tools.AttachmentHandler(
         dynamic_expressions=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(

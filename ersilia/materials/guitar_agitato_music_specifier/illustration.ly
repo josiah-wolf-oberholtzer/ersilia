@@ -3,6 +3,11 @@
 
 \include "/Users/josiah/Documents/Development/consort/consort/stylesheets/stylesheet.ily"
 
+\header {
+    tagline = \markup {}
+    title = #"Guitar Agitato Music Specifier"
+}
+
 \score {
     \context Score = "String Quartet Score" <<
         \tag #'time
@@ -50,12 +55,12 @@
                             ef''4. -\mordent \f \>
                         }
                         {
-                            <f' bf'>16 -\snappizzicato -\staccato \mf [
+                            <f' af'>16 -\snappizzicato -\staccato \mf [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <a c'>16 -\staccato
+                            a16 -\staccato
                             \set stemLeftBeamCount = 2
-                            <b e'>16 -\staccato ]
+                            b16 -\staccato ]
                         }
                     }
                     {
@@ -69,7 +74,7 @@
                             r8 [
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
-                            a'16 -\snappizzicato -\staccato \f
+                            <a' d''>16 -\snappizzicato -\staccato \f
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             b16 -\staccato
@@ -84,10 +89,10 @@
                     }
                     {
                         {
-                            <a' d''>16 -\snappizzicato -\staccato \f [
+                            <a' c''>16 -\snappizzicato -\staccato \f [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <b d'>16 -\staccato
+                            b16 -\staccato
                             \set stemLeftBeamCount = 2
                             a16 -\staccato ]
                         }
@@ -105,13 +110,13 @@
                             r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 1
-                            <d' f'>16 -\snappizzicato -\staccato \f \>
+                            <d' g'>16 -\snappizzicato -\staccato \f \>
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             e'8 -\accent -\mordent
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
-                            ef'16 -\snappizzicato -\staccato \mf
+                            <ds' fs'>16 -\snappizzicato -\staccato \mf
                             \set stemLeftBeamCount = 2
                             r16 ]
                         }
@@ -124,8 +129,8 @@
                     {
                         % [Violin 1 Voice] Measure 4
                         {
-                            <f' af'>4 :32 \f \>
-                            <f' af'>16 \mf \repeatTie
+                            f'4 -\mordent \f \>
+                            f'16 \mf \repeatTie
                         }
                     }
                     {
@@ -142,7 +147,7 @@
                         {
                             af16 -\snappizzicato -\staccato \f [
                             \set stemLeftBeamCount = 2
-                            e16 -\staccato ]
+                            <e a>16 -\staccato ]
                         }
                     }
                     {
@@ -181,10 +186,10 @@
                             f'16 -\snappizzicato -\staccato \f \> [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            cs''16 -\staccato
+                            <cs'' e''>16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c'' ef''>16 -\staccato
+                            c''16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             d'16 -\staccato \mf
@@ -199,7 +204,7 @@
                     }
                     {
                         {
-                            a'16 -\snappizzicato -\staccato \f
+                            <a' d''>16 -\snappizzicato -\staccato \f
                         }
                     }
                     {
@@ -216,22 +221,22 @@
                             r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <a' d''>16 -\snappizzicato -\staccato \mp \<
+                            <a' c''>16 -\snappizzicato -\staccato \mp \<
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <b' d''>16 -\staccato
+                            b'16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             a'16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 1
-                            b'16 -\staccato
+                            <b' e''>16 -\staccato
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             a'8 -\accent -\mordent
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
-                            <b e'>16 -\snappizzicato -\staccato \mf
+                            <b d'>16 -\snappizzicato -\staccato \mf
                             \set stemLeftBeamCount = 2
                             r16 ]
                         }
@@ -258,9 +263,9 @@
                     }
                     {
                         {
-                            <f' bf'>16 -\snappizzicato -\staccato \f [
+                            f'16 -\snappizzicato -\staccato \f [
                             \set stemLeftBeamCount = 2
-                            <ds' fs'>16 -\staccato ]
+                            <ef' af'>16 -\staccato ]
                         }
                     }
                     {
@@ -312,7 +317,7 @@
                             ef'8 -\accent -\mordent \f \>
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
-                            b16 -\snappizzicato -\staccato
+                            <b d'>16 -\snappizzicato -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             a'16 -\staccato
@@ -327,10 +332,10 @@
                             <a d'>8 :64 -\accent \mp \< [
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
-                            <b d'>16 -\snappizzicato -\staccato
+                            b16 -\snappizzicato -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            a'16 -\staccato
+                            <a' c''>16 -\staccato
                             \set stemLeftBeamCount = 2
                             b16 -\staccato \mf ]
                         }
@@ -358,12 +363,12 @@
                     }
                     {
                         {
-                            ef'16 -\snappizzicato -\staccato \f \> [
+                            <ef' af'>16 -\snappizzicato -\staccato \f \> [
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             c'8 -\accent -\mordent
                             \set stemLeftBeamCount = 2
-                            ef16 -\snappizzicato -\staccato \mf ]
+                            <ds fs>16 -\snappizzicato -\staccato \mf ]
                         }
                     }
                     {
@@ -377,18 +382,18 @@
                     }
                     {
                         {
-                            <f bf>16 -\snappizzicato -\staccato \f \> [
+                            f16 -\snappizzicato -\staccato \f \> [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             af16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 1
-                            <d' f'>16 -\staccato
+                            <d' g'>16 -\staccato
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             e'8 -\accent -\mordent
                             \set stemLeftBeamCount = 2
-                            f16 -\snappizzicato -\staccato \mf ]
+                            <f af>16 -\snappizzicato -\staccato \mf ]
                         }
                     }
                     {
@@ -424,13 +429,13 @@
                     }
                     {
                         \times 4/5 {
-                            <ds' fs'>16 -\snappizzicato -\staccato \f [
+                            ef'16 -\snappizzicato -\staccato \f [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            d'16 -\staccato
+                            <d' f'>16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 1
-                            <b' e''>16 -\staccato
+                            b'16 -\staccato
                             \set stemLeftBeamCount = 1
                             r8 ]
                         }
@@ -444,7 +449,7 @@
                         {
                             a'16 -\snappizzicato -\staccato \f [
                             \set stemLeftBeamCount = 2
-                            <b d'>16 -\staccato ]
+                            <b e'>16 -\staccato ]
                         }
                     }
                     {
@@ -475,7 +480,7 @@
                     }
                     {
                         {
-                            <c' f'>16 -\snappizzicato -\staccato \f
+                            <c' ef'>16 -\snappizzicato -\staccato \f
                         }
                     }
                     {
@@ -507,16 +512,16 @@
                             r8 [
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
-                            d'16 -\snappizzicato -\staccato \f \>
+                            <d' g'>16 -\snappizzicato -\staccato \f \>
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <f bf>16 -\staccato
+                            f16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             <d f>16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <gs cs'>16 -\staccato \mf
+                            af16 -\staccato \mf
                             \set stemLeftBeamCount = 2
                             r16 ]
                                 _ \markup {

@@ -3,6 +3,11 @@
 
 \include "/Users/josiah/Documents/Development/consort/consort/stylesheets/stylesheet.ily"
 
+\header {
+    tagline = \markup {}
+    title = #"Guitar Strummed Music Specifier"
+}
+
 \score {
     \context Score = "String Quartet Score" <<
         \tag #'time
@@ -47,7 +52,7 @@
                     {
                         % [Violin 1 Voice] Measure 1
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -65,7 +70,7 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -84,7 +89,7 @@
                     {
                         % [Violin 1 Voice] Measure 2
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \mf
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -102,7 +107,7 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -122,7 +127,7 @@
                     {
                         % [Violin 1 Voice] Measure 3
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -141,7 +146,7 @@
                     {
                         % [Violin 1 Voice] Measure 4
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -164,7 +169,7 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -208,7 +213,7 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -227,7 +232,7 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \mf
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -246,7 +251,7 @@
                     {
                         % [Violin 2 Voice] Measure 2
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -264,7 +269,7 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -284,7 +289,7 @@
                     {
                         % [Violin 2 Voice] Measure 3
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -306,7 +311,7 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -359,7 +364,7 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -378,7 +383,7 @@
                     {
                         % [Viola Voice] Measure 2
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \mf
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -401,7 +406,7 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -420,7 +425,7 @@
                     {
                         % [Viola Voice] Measure 4
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -442,7 +447,7 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -487,7 +492,7 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -505,7 +510,7 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -528,7 +533,7 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \mf
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -551,7 +556,7 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -570,7 +575,7 @@
                     {
                         % [Cello Voice] Measure 4
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -588,7 +593,7 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -610,7 +615,7 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
+                            <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \box
                                         \pad-around

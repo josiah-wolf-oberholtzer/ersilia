@@ -3,6 +3,11 @@
 
 \include "/Users/josiah/Documents/Development/consort/consort/stylesheets/stylesheet.ily"
 
+\header {
+    tagline = \markup {}
+    title = #"Percussion Bamboo Windchimes Music Specifier"
+}
+
 \score {
     \context Score = "String Quartet Score" <<
         \tag #'time
@@ -47,7 +52,7 @@
                     {
                         % [Violin 1 Voice] Measure 1
                         {
-                            e''16 -\accent \laissezVibrer \f
+                            e''16 -\accent \f
                         }
                     }
                     {
@@ -72,7 +77,7 @@
                     }
                     {
                         {
-                            e''16 -\accent \laissezVibrer \f
+                            e''16 -\accent \f
                         }
                     }
                     {
@@ -84,7 +89,7 @@
                     {
                         % [Violin 1 Voice] Measure 3
                         {
-                            e''16 -\accent \laissezVibrer \f
+                            e''16 -\accent \f
                         }
                     }
                     {
@@ -96,7 +101,7 @@
                     {
                         % [Violin 1 Voice] Measure 4
                         {
-                            e''16 -\accent \laissezVibrer \f
+                            e''16 -\accent \f
                         }
                     }
                     {
@@ -112,7 +117,7 @@
                     }
                     {
                         {
-                            e''16 -\accent \laissezVibrer \f
+                            e''16 -\accent \f
                         }
                     }
                     {
@@ -148,7 +153,7 @@
                     }
                     {
                         {
-                            e''16 -\accent \laissezVibrer \f
+                            e''16 -\accent \f
                         }
                     }
                     {
@@ -179,7 +184,7 @@
                     {
                         % [Violin 2 Voice] Measure 3
                         {
-                            e''16 -\accent \laissezVibrer \f
+                            e''16 -\accent \f
                         }
                     }
                     {
@@ -194,7 +199,7 @@
                     }
                     {
                         {
-                            e''16 -\accent \laissezVibrer \f
+                            e''16 -\accent \f
                         }
                     }
                     {
@@ -239,7 +244,7 @@
                     }
                     {
                         {
-                            e''16 -\accent \laissezVibrer \f
+                            e''16 -\accent \f
                         }
                     }
                     {
@@ -265,7 +270,7 @@
                     }
                     {
                         {
-                            e''16 -\accent \laissezVibrer \f
+                            e''16 -\accent \f
                         }
                     }
                     {
@@ -287,7 +292,7 @@
                     }
                     {
                         {
-                            e''16 -\accent \laissezVibrer \f
+                            e''16 -\accent \f
                         }
                     }
                     {
@@ -324,7 +329,7 @@
                     }
                     {
                         {
-                            e''16 -\accent \laissezVibrer \f
+                            e''16 -\accent \f
                         }
                     }
                     {
@@ -346,7 +351,7 @@
                     }
                     {
                         {
-                            e''16 -\accent \laissezVibrer \f
+                            e''16 -\accent \f
                         }
                     }
                     {
@@ -360,7 +365,7 @@
                     }
                     {
                         {
-                            e''16 -\accent \laissezVibrer \f
+                            e''16 -\accent \f
                         }
                     }
                     {
@@ -385,7 +390,7 @@
                     }
                     {
                         {
-                            e''16 -\accent \laissezVibrer \f
+                            e''16 -\accent \f
                         }
                     }
                     {

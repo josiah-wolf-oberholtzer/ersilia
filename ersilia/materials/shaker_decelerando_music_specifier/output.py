@@ -110,6 +110,7 @@ shaker_decelerando_music_specifier = consort.tools.MusicSpecifier(
             ),
         tuplet_spelling_specifier=rhythmmakertools.TupletSpellingSpecifier(
             avoid_dots=False,
+            flatten_trivial_tuplets=False,
             is_diminution=True,
             simplify_tuplets=False,
             use_note_duration_bracket=True,
