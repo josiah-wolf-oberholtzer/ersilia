@@ -56,7 +56,7 @@ guitar_agitato_music_specifier = consort.MusicSpecifier(
                 [0],
             ),
         ),
-    color=None,
+    color='magenta',
     labels=[],
     pitch_handler=consort.PitchClassPitchHandler(
         forbid_repetitions=True,

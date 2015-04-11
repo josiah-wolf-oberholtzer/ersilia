@@ -1,56 +1,66 @@
 # -*- encoding: utf-8 -*-
-import consort
 from abjad.tools import indicatortools
 from abjad.tools import rhythmmakertools
 from abjad.tools import selectortools
 from abjad.tools import spannertools
 from ersilia.materials import abbreviations
+import consort
 
 
-wind_agitato_music_specifier = consort.MusicSpecifier(
+marimba_agitato_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
+        accents=consort.AttachmentExpression(
+            attachments=indicatortools.Articulation('accent'),
+            selector=selectortools.select_pitched_runs()[0],
+            ),
+        chords=consort.AttachmentExpression(
+            attachments=[
+                consort.ChordExpression(chord_expr=[0, 3]),
+                consort.ChordExpression(chord_expr=[0, 5]),
+                ],
+            selector=selectortools.Selector()
+                .by_logical_tie(pitched=True)
+                .by_duration('==', (1, 16), preprolated=True)
+                .by_pattern(
+                    rhythmmakertools.BooleanPattern(
+                        indices=[0, 3],
+                        period=7,
+                        ),
+                    ),
+            ),
         dynamic_expressions=consort.DynamicExpression(
             dynamic_tokens='mf mp fff',
             start_dynamic_tokens='f',
             stop_dynamic_tokens='mf',
-            ),
-        slur=consort.AttachmentExpression(
-            attachments=spannertools.Slur(),
-            selector=selectortools.Selector()
-                .by_logical_tie(pitched=True)
-                .by_duration('==', (1, 16), preprolated=True)
-                .by_contiguity()
-                .by_length('>', 1)
-                .by_pattern(
-                    pattern=rhythmmakertools.BooleanPattern(
-                        indices=[0], period=2,
-                        ),
-                    )
-                .by_leaves()
             ),
         staccati=consort.AttachmentExpression(
             attachments=indicatortools.Articulation('staccato'),
             selector=selectortools.Selector()
                 .by_logical_tie(pitched=True)
                 .by_duration('==', (1, 16), preprolated=True)
-                .by_contiguity()
-                .by_length('>', 1)
-                .by_pattern(
-                    pattern=rhythmmakertools.BooleanPattern(
-                        indices=[1], period=2,
-                        ),
-                    )
-                .by_leaves()
-                [1:]
+                [0]
             ),
+        tremolo_chords=consort.AttachmentExpression(
+            attachments=[
+                [
+                    spannertools.StemTremoloSpanner(),
+                    consort.ChordExpression(chord_expr=[0, 3]),
+                    ],
+                ],
+            selector=selectortools.Selector()
+                .by_logical_tie(pitched=True)
+                .by_duration('>', (1, 16), preprolated=True)
+            ),
+
         ),
     color='magenta',
     labels=[],
     pitch_handler=consort.PitchClassPitchHandler(
         forbid_repetitions=True,
+        leap_constraint=9,
         pitch_specifier=abbreviations.agitato_pitch_specifier,
         register_specifier=consort.RegisterSpecifier(
-            center_pitch='C4',
+            center_pitch='F2',
             phrase_inflections=consort.RegisterInflection.zigzag(6)
                 .reverse()
                 .align(),
@@ -73,8 +83,8 @@ wind_agitato_music_specifier = consort.MusicSpecifier(
                 1, -1,
                 1, 1, -1,
                 1, 1, 1, -1,
-                1, 1, -2,
-                1, 1, 1, 1, -1,
+                1, 1, -1,
+                1, 1, 1, -2,
                 ],
             denominator=16,
             ),
