@@ -85,6 +85,17 @@ percussion_marimba_agitato_music_specifier = consort.tools.MusicSpecifier(
                     ),
                 ),
             ),
+        clef_spanner=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    consort.tools.ClefSpanner(
+                        clef=indicatortools.Clef(
+                            name='treble',
+                            ),
+                        ),
+                    ]
+                ),
+            ),
         dynamic_expressions=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [

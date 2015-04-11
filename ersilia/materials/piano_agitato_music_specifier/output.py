@@ -42,6 +42,26 @@ piano_agitato_music_specifier = consort.tools.MusicSpecifier(
                     ),
                 ),
             ),
+        dynamic_expressions=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    consort.tools.DynamicExpression(
+                        dynamic_tokens=datastructuretools.CyclicTuple(
+                            ['mf', 'mp', 'fff']
+                            ),
+                        start_dynamic_tokens=datastructuretools.CyclicTuple(
+                            ['f']
+                            ),
+                        stop_dynamic_tokens=datastructuretools.CyclicTuple(
+                            ['mf']
+                            ),
+                        transitions=datastructuretools.CyclicTuple(
+                            [None]
+                            ),
+                        ),
+                    ]
+                ),
+            ),
         mordent=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [
@@ -136,6 +156,7 @@ piano_agitato_music_specifier = consort.tools.MusicSpecifier(
                 ),
             ),
         ),
+    color='magenta',
     labels=(),
     pitch_handler=consort.tools.PitchClassPitchHandler(
         forbid_repetitions=True,

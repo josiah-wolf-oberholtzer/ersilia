@@ -172,6 +172,7 @@ saxophone_agitato_music_specifier = consort.tools.MusicSpecifier(
                 ),
             ),
         ),
+    color='magenta',
     pitch_handler=consort.tools.PitchClassPitchHandler(
         forbid_repetitions=True,
         leap_constraint=pitchtools.NumberedInterval(12),

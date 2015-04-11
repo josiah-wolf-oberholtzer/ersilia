@@ -68,6 +68,7 @@ percussion_crotales_flash_music_specifier = consort.tools.MusicSpecifier(
                                         )
                                     ),
                                 ),
+                            direction=Up,
                             ),
                         ),
                     ]
