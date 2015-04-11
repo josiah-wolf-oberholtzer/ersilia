@@ -2,6 +2,7 @@
 import consort
 from abjad.tools import rhythmmakertools
 from abjad.tools import scoretools
+from ersilia.materials import abbreviations
 
 
 guitar_harmonics_music_specifier = consort.MusicSpecifier(
@@ -12,13 +13,26 @@ guitar_harmonics_music_specifier = consort.MusicSpecifier(
         ),
     color=None,
     labels=[],
-    pitch_handler=consort.AbsolutePitchHandler(
+    pitch_handler=consort.PitchClassPitchHandler(
+        forbid_repetitions=True,
+        leap_constraint=6,
         logical_tie_expressions=[
             consort.HarmonicExpression('P4'),
             consort.HarmonicExpression('P5'),
             consort.HarmonicExpression('P8'),
             consort.HarmonicExpression('P5'),
             ],
+        pitch_specifier=abbreviations.agitato_pitch_specifier,
+        register_specifier=consort.RegisterSpecifier(
+            center_pitch='E2',
+            phrase_inflections=consort.RegisterInflection
+                .zigzag(6)
+                .reverse()
+                .align(),
+            segment_inflections=consort.RegisterInflection
+                .descending(width=12)
+                .align()
+            ),
         ),
     rhythm_maker=consort.CompositeRhythmMaker(
         default=rhythmmakertools.EvenDivisionRhythmMaker(

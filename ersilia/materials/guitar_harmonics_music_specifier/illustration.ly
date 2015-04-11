@@ -53,9 +53,9 @@
                     {
                         {
                             <
-                                c'
+                                ef'
                                 \tweak #'style #'harmonic
-                                f'
+                                af'
                             >8 \p
                         }
                     }
@@ -67,9 +67,9 @@
                     {
                         {
                             <
-                                c'
+                                b
                                 \tweak #'style #'harmonic
-                                f'
+                                e'
                             >8 \mp
                         }
                     }
@@ -82,9 +82,9 @@
                         % [Violin 1 Voice] Measure 2
                         {
                             <
-                                c'
+                                a
                                 \tweak #'style #'harmonic
-                                g'
+                                e'
                             >8 \p
                         }
                     }
@@ -96,9 +96,9 @@
                     {
                         {
                             <
-                                c'
+                                b
                                 \tweak #'style #'harmonic
-                                g'
+                                fs'
                             >8 \mp
                         }
                     }
@@ -112,9 +112,9 @@
                         % [Violin 1 Voice] Measure 3
                         {
                             <
-                                c'
+                                f
                                 \tweak #'style #'harmonic
-                                c''
+                                f'
                             >8 \p
                         }
                     }
@@ -127,9 +127,9 @@
                         % [Violin 1 Voice] Measure 4
                         {
                             <
-                                c'
+                                c
                                 \tweak #'style #'harmonic
-                                g'
+                                g
                             >8 \mp
                         }
                     }
@@ -146,9 +146,9 @@
                     {
                         {
                             <
-                                c'
+                                af,
                                 \tweak #'style #'harmonic
-                                g'
+                                ef
                             >8 \p
                         }
                     }
@@ -186,9 +186,9 @@
                     {
                         {
                             <
-                                c'
+                                d'
                                 \tweak #'style #'harmonic
-                                c''
+                                d''
                             >8 \mp
                         }
                     }
@@ -205,16 +205,16 @@
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             <
-                                c'
+                                a
                                 \tweak #'style #'harmonic
-                                g'
+                                e'
                             >16 \p
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             <
-                                c'
+                                b
                                 \tweak #'style #'harmonic
-                                f'
+                                e'
                             >16
                             \set stemLeftBeamCount = 2
                             r16 ]
@@ -229,9 +229,9 @@
                     {
                         {
                             <
-                                c'
+                                a
                                 \tweak #'style #'harmonic
-                                g'
+                                e'
                             >8 \mp
                         }
                     }
@@ -245,9 +245,9 @@
                         % [Violin 2 Voice] Measure 3
                         {
                             <
-                                c'
+                                af
                                 \tweak #'style #'harmonic
-                                g'
+                                ef'
                             >8 \p
                         }
                     }
@@ -263,9 +263,9 @@
                     {
                         {
                             <
-                                c'
+                                f
                                 \tweak #'style #'harmonic
-                                g'
+                                c'
                             >8 \mp
                         }
                     }
@@ -316,16 +316,16 @@
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             <
-                                c'
+                                f'
                                 \tweak #'style #'harmonic
-                                g'
+                                c''
                             >8 \p \<
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             <
-                                c'
+                                b
                                 \tweak #'style #'harmonic
-                                c''
+                                b'
                             >8
                             \set stemLeftBeamCount = 1
                             r8 ]
@@ -333,9 +333,9 @@
                         % [Viola Voice] Measure 2
                         {
                             <
-                                c'
+                                a
                                 \tweak #'style #'harmonic
-                                c''
+                                a'
                             >8 \mp
                         }
                     }
@@ -352,9 +352,9 @@
                     {
                         {
                             <
-                                c'
+                                d'
                                 \tweak #'style #'harmonic
-                                f'
+                                g'
                             >8 \mp
                         }
                     }
@@ -367,9 +367,9 @@
                         % [Viola Voice] Measure 4
                         {
                             <
-                                c'
+                                ef'
                                 \tweak #'style #'harmonic
-                                c''
+                                ef''
                             >8 \p
                         }
                     }
@@ -385,9 +385,9 @@
                     {
                         {
                             <
-                                c'
+                                f'
                                 \tweak #'style #'harmonic
-                                g'
+                                c''
                             >8 \mp
                         }
                     }
@@ -426,9 +426,9 @@
                     {
                         {
                             <
-                                c'
+                                ef'
                                 \tweak #'style #'harmonic
-                                g'
+                                bf'
                             >8 \p
                         }
                     }
@@ -440,9 +440,9 @@
                     {
                         {
                             <
-                                c'
+                                cs'
                                 \tweak #'style #'harmonic
-                                g'
+                                gs'
                             >8 \mp
                         }
                     }
@@ -459,9 +459,9 @@
                     {
                         {
                             <
-                                c'
+                                b
                                 \tweak #'style #'harmonic
-                                f'
+                                e'
                             >8 \p
                         }
                     }
@@ -479,30 +479,30 @@
                         \tweak #'text #tuplet-number::calc-fraction-text
                         \times 3/5 {
                             <
-                                c'
+                                f
                                 \tweak #'style #'harmonic
-                                g'
+                                c'
                             >16 \mp [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             <
-                                c'
+                                c
                                 \tweak #'style #'harmonic
-                                c''
+                                c'
                             >16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             <
-                                c'
+                                ef
                                 \tweak #'style #'harmonic
-                                g'
+                                bf
                             >16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             <
-                                c'
+                                f
                                 \tweak #'style #'harmonic
-                                f'
+                                bf
                             >16
                             \set stemLeftBeamCount = 2
                             r16 ]
@@ -517,9 +517,9 @@
                     {
                         {
                             <
-                                c'
+                                c
                                 \tweak #'style #'harmonic
-                                f'
+                                f
                             >8 \p
                         }
                     }
@@ -535,9 +535,9 @@
                     {
                         {
                             <
-                                c'
+                                f
                                 \tweak #'style #'harmonic
-                                c''
+                                f'
                             >8 \mp
                         }
                     }

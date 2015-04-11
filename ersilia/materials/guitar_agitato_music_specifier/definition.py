@@ -71,10 +71,13 @@ guitar_agitato_music_specifier = consort.MusicSpecifier(
         pitch_specifier=abbreviations.agitato_pitch_specifier,
         register_specifier=consort.RegisterSpecifier(
             center_pitch='A2',
-            phrase_inflections=consort.RegisterInflection.zigzag(6)
-                .reverse().align(),
-            segment_inflections=consort.RegisterInflection.descending(
-                width=12).align()
+            phrase_inflections=consort.RegisterInflection
+                .zigzag(6)
+                .reverse()
+                .align(),
+            segment_inflections=consort.RegisterInflection
+                .descending(width=12)
+                .align()
             ),
         ),
     rhythm_maker=rhythmmakertools.TaleaRhythmMaker(
