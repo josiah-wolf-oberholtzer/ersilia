@@ -28,6 +28,7 @@ percussion_marimba_agitato_music_specifier = consort.MusicSpecifier(
                         ),
                     ),
             ),
+        clef_spanner=consort.ClefSpanner('treble'),
         dynamic_expressions=consort.DynamicExpression(
             dynamic_tokens='mf mp fff',
             start_dynamic_tokens='f',
