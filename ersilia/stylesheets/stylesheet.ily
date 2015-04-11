@@ -168,6 +168,10 @@
         \override TextScript.font-size = 3
         \override TextScript.outside-staff-priority = 600
         \override TextScript.padding = 6
+
+        \override TextScript.parent-alignment-X = #center
+        \override TextScript.self-alignment-X = #center
+
         \override TextSpanner.bound-details.right.attach-dir = #LEFT
         \override TextSpanner.padding = 6.75
         \override TimeSignature.X-extent = #'(0 . 0)

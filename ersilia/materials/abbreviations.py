@@ -78,11 +78,18 @@ pitch_operation_specifier = consort.PitchOperationSpecifier(
     )
 
 
-def make_text_spanner(text):
+def make_text_markup(text):
     markup = markuptools.Markup.concat([
         markuptools.Markup(r'\vstrut'),
         markuptools.Markup(text),
         ])
     markup = markup.smaller().italic().pad_around(0.5).box()
+    markup = markuptools.Markup(markup, Up)
+    return markup
+
+
+def make_text_spanner(text):
+    markup = make_text_markup(text)
+    markup = markuptools.Markup(markup, None)
     text_spanner = consort.ComplexTextSpanner(markup=markup)
     return text_spanner

@@ -42,6 +42,7 @@ percussion_marimba_ostinato_music_specifier = consort.MusicSpecifier(
                 [-1]
             ),
         ),
+    color='darkyellow',
     pitch_handler=consort.AbsolutePitchHandler(
         forbid_repetitions=True,
         logical_tie_expressions=[
