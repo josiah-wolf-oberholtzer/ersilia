@@ -13,9 +13,15 @@
         \tag #'time
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 5/8
+                \time 3/8
                 \tempo 4=72
-                s1 * 5/8
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
             }
             {
                 \time 7/8
@@ -29,8 +35,7 @@
                 s1 * 3/8
             }
             {
-                \time 5/8
-                s1 * 5/8
+                s1 * 3/8
             }
         }
         \tag #'violin-1
@@ -57,40 +62,22 @@
                             \set stemRightBeamCount = 1
                             r8
                             \set stemLeftBeamCount = 1
-                            <bf' ef''>8 -\tenuto ]
+                            <cs'' fs''>8 -\tenuto ]
                         }
-                    }
-                    {
-                        {
-                            r4
-                        }
-                    }
-                    {
                         % [Violin 1 Voice] Measure 2
                         {
-                            <c''' ef'''>8 -\tenuto \ppp
+                            <cs'' e''>8 -\tenuto
                         }
                     }
                     {
                         {
-                            r4
-                        }
-                    }
-                    {
-                        {
-                            c'''8 -\mordent -\tenuto \ppp
-                        }
-                    }
-                    {
-                        {
-                            r8
                             r4
                         }
                     }
                     {
                         % [Violin 1 Voice] Measure 3
                         {
-                            <af'' f'''>8 -\tenuto \ppp
+                            a'''8 -\mordent -\tenuto \ppp
                         }
                     }
                     {
@@ -100,28 +87,52 @@
                     }
                     {
                         % [Violin 1 Voice] Measure 4
-                        {
-                            c'''8 -\mordent -\tenuto \ppp
+                        \times 4/5 {
+                            <f'' d'''>8 -\tenuto \ppp
+                            r4
+                            e'8 -\mordent -\tenuto [
+                            \set stemLeftBeamCount = 1
+                            r8 ]
                         }
                     }
                     {
                         {
-                            r4
-                        }
-                        % [Violin 1 Voice] Measure 5
-                        {
-                            r4
-                            r16
+                            r8
+                            r8
                         }
                     }
                     {
                         {
                             <bf' ef''>8 -\tenuto \ppp
                         }
+                        % [Violin 1 Voice] Measure 5
+                        {
+                            <f' af'>8 -\tenuto
+                        }
                     }
                     {
                         {
-                            r8.
+                            r4
+                        }
+                        % [Violin 1 Voice] Measure 6
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                    }
+                    {
+                        % [Violin 1 Voice] Measure 7
+                        {
+                            af'8 -\mordent -\tenuto \ppp
+                        }
+                    }
+                    {
+                        {
+                            r4
                             \bar "|."
                         }
                     }
@@ -147,71 +158,88 @@
                     {
                         % [Violin 2 Voice] Measure 1
                         {
-                            r4.
-                            r16
+                            r4
                         }
                     }
                     {
                         {
-                            c'''8 -\mordent -\tenuto \ppp
+                            d'''8 -\mordent -\tenuto \ppp
                         }
                     }
                     {
-                        {
-                            r16
-                        }
                         % [Violin 2 Voice] Measure 2
                         {
-                            r16
+                            r4
                         }
                     }
                     {
                         {
-                            <bf'' ef'''>8 -\tenuto \ppp
+                            <g'' c'''>8 -\tenuto \ppp
                         }
-                        {
-                            <c'' ef''>8 -\tenuto
-                        }
-                    }
-                    {
-                        {
-                            r16
-                            r2
-                        }
-                    }
-                    {
                         % [Violin 2 Voice] Measure 3
                         {
-                            c'''8 -\mordent -\tenuto \ppp
+                            <b' d''>8 -\tenuto
                         }
                     }
                     {
                         {
                             r4
                         }
+                    }
+                    {
                         % [Violin 2 Voice] Measure 4
                         {
+                            b''8 -\mordent -\tenuto \ppp
+                        }
+                    }
+                    {
+                        {
+                            r4
                             r8
                         }
                     }
                     {
                         {
-                            <af' f''>8 -\tenuto \ppp
+                            <cs''' as'''>8 -\tenuto \ppp
                         }
                     }
                     {
                         {
                             r8
+                        }
+                    }
+                    {
+                        {
+                            ef'''8 -\mordent -\tenuto \ppp
                         }
                         % [Violin 2 Voice] Measure 5
+                        \times 2/3 {
+                            r4
+                            <bf ef'>8 -\tenuto
+                        }
+                    }
+                    {
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
+                            r8
+                        }
+                        % [Violin 2 Voice] Measure 6
+                        {
+                            r4
+                        }
+                    }
+                    {
+                        {
+                            <c''' ef'''>8 -\tenuto \ppp
+                        }
+                        % [Violin 2 Voice] Measure 7
+                        {
+                            d'8 -\mordent -\tenuto
+                        }
+                    }
+                    {
+                        {
+                            r4
                             \bar "|."
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 }
@@ -240,42 +268,46 @@
                         }
                     }
                     {
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 3/4 {
-                            c'''8 -\mordent -\tenuto \ppp [
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            r8
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            r8
-                            \set stemLeftBeamCount = 1
-                            <bf'' ef'''>8 -\tenuto ]
+                        {
+                            f'''8 -\mordent -\tenuto \ppp
                         }
+                    }
+                    {
                         % [Viola Voice] Measure 2
                         {
-                            <c'' ef''>8 -\tenuto
+                            r4
+                        }
+                    }
+                    {
+                        {
+                            <a'' d'''>8 -\tenuto \ppp
+                        }
+                        % [Viola Voice] Measure 3
+                        {
+                            <a' c''>8 -\tenuto
                         }
                     }
                     {
                         {
                             r4
-                            r2
                         }
-                        % [Viola Voice] Measure 3
+                        % [Viola Voice] Measure 4
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
+                            r4
                         }
                     }
                     {
-                        % [Viola Voice] Measure 4
-                        {
-                            c''8 -\mordent -\tenuto \ppp
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            d''8 -\mordent -\tenuto \ppp [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            r8
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            r8
+                            \set stemLeftBeamCount = 1
+                            <e' cs''>8 -\tenuto ]
                         }
                     }
                     {
@@ -288,15 +320,32 @@
                         }
                     }
                     {
+                        \times 2/3 {
+                            ef''8 -\mordent -\tenuto \ppp [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            r8
+                            \set stemLeftBeamCount = 1
+                            <cs'' fs''>8 -\tenuto ]
+                        }
+                        % [Viola Voice] Measure 6
                         {
-                            <af' f''>8 -\tenuto \ppp
+                            <f' af'>8 -\tenuto
                         }
                     }
                     {
                         {
-                            r8
                             r4
+                        }
+                        % [Viola Voice] Measure 7
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
                             \bar "|."
+                            \stopStaff
+                            \startStaff
                         }
                     }
                 }
@@ -321,70 +370,83 @@
                     {
                         % [Cello Voice] Measure 1
                         {
-                            r4.
+                            r4
                         }
                     }
                     {
                         {
-                            c'''8 -\mordent -\tenuto \ppp
-                        }
-                    }
-                    {
-                        {
-                            r8
+                            b'''8 -\mordent -\tenuto \ppp
                         }
                         % [Cello Voice] Measure 2
                         {
-                            r4
-                            r16
+                            <bf' ef''>8 -\tenuto
                         }
                     }
                     {
                         {
-                            <bf'' ef'''>8 -\tenuto \ppp
+                            r4
                         }
                     }
                     {
-                        {
-                            r8.
-                            r4
-                        }
                         % [Cello Voice] Measure 3
                         {
+                            <b'' d'''>8 -\tenuto \ppp
+                        }
+                    }
+                    {
+                        {
                             r4
-                            r16
                         }
                     }
                     {
-                        {
-                            <c'' ef''>16 -\tenuto \ppp
-                        }
                         % [Cello Voice] Measure 4
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 3/5 {
-                            <c'' ef''>16 \repeatTie [
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            r8
-                            \set stemLeftBeamCount = 1
-                            r8 ]
-                        }
                         {
-                            c''8 -\mordent -\tenuto
+                            a''8 -\mordent -\tenuto \ppp
                         }
                     }
                     {
                         {
-                            r16
+                            r4
+                            r4
                         }
+                    }
+                    {
+                        {
+                            <bf'' g'''>8 -\tenuto \ppp
+                        }
+                    }
+                    {
+                        {
+                            r8
+                        }
+                    }
+                    {
                         % [Cello Voice] Measure 5
                         {
-                            r4
+                            c''8 -\mordent -\tenuto \ppp
+                        }
+                        {
+                            <ef' af'>8 -\tenuto
                         }
                     }
                     {
                         {
-                            <af'' f'''>8 -\tenuto \ppp
+                            r8
+                        }
+                        % [Cello Voice] Measure 6
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                    }
+                    {
+                        % [Cello Voice] Measure 7
+                        {
+                            <e'' g''>8 -\tenuto \ppp
                         }
                     }
                     {

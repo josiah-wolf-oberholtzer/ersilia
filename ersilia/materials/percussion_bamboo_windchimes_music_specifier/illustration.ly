@@ -13,9 +13,15 @@
         \tag #'time
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 5/8
+                \time 3/8
                 \tempo 4=72
-                s1 * 5/8
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
             }
             {
                 \time 7/8
@@ -29,8 +35,7 @@
                 s1 * 3/8
             }
             {
-                \time 5/8
-                s1 * 5/8
+                s1 * 3/8
             }
         }
         \tag #'violin-1
@@ -62,28 +67,14 @@
                         }
                     }
                     {
-                        {
-                            e''4 :32 \pp
-                        }
                         % [Violin 1 Voice] Measure 2
                         {
-                            e''4 :32 \repeatTie
+                            e''4 :32 \pp
                         }
                     }
                     {
                         {
                             r8
-                        }
-                    }
-                    {
-                        {
-                            e''16 -\accent \f
-                        }
-                    }
-                    {
-                        {
-                            r8.
-                            r4
                         }
                     }
                     {
@@ -108,11 +99,26 @@
                         {
                             r16
                             r4
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            e''8 :64 \pp
+                            e''4 :32 \repeatTie
                         }
                         % [Violin 1 Voice] Measure 5
                         {
+                            e''4 :32 \repeatTie
+                        }
+                    }
+                    {
+                        {
+                            r8
+                        }
+                        % [Violin 1 Voice] Measure 6
+                        {
                             r4
-                            r16
                         }
                     }
                     {
@@ -122,7 +128,18 @@
                     }
                     {
                         {
-                            r4
+                            r16
+                        }
+                    }
+                    {
+                        % [Violin 1 Voice] Measure 7
+                        {
+                            e''4 :32 \pp
+                        }
+                    }
+                    {
+                        {
+                            r8
                             \bar "|."
                         }
                     }
@@ -148,7 +165,7 @@
                     {
                         % [Violin 2 Voice] Measure 1
                         {
-                            r8.
+                            r4
                         }
                     }
                     {
@@ -158,31 +175,29 @@
                     }
                     {
                         {
-                            r8
                             r16
                         }
                     }
                     {
-                        {
-                            e''8. :64 \pp
-                        }
                         % [Violin 2 Voice] Measure 2
                         {
-                            e''8. :64 \repeatTie
+                            e''4 :32 \pp
                         }
                         {
-                            e''8. :64 \repeatTie
-                            e''4 :32 \repeatTie
-                            e''16 :128 \repeatTie
+                            e''8 :64 \repeatTie
                         }
-                    }
-                    {
-                        {
-                            r8.
-                        }
-                    }
-                    {
                         % [Violin 2 Voice] Measure 3
+                        {
+                            e''4 :32 \repeatTie
+                        }
+                    }
+                    {
+                        {
+                            r8
+                        }
+                    }
+                    {
+                        % [Violin 2 Voice] Measure 4
                         {
                             e''16 -\accent \f
                         }
@@ -191,9 +206,6 @@
                         {
                             r16
                             r4
-                        }
-                        % [Violin 2 Voice] Measure 4
-                        {
                             r8
                         }
                     }
@@ -204,17 +216,33 @@
                     }
                     {
                         {
-                            r8.
+                            r16
+                        }
+                    }
+                    {
+                        {
+                            e''4 :32 \pp
                         }
                         % [Violin 2 Voice] Measure 5
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
+                            e''4 :32 \repeatTie
+                        }
+                        {
+                            e''8 :64 \repeatTie
+                        }
+                        % [Violin 2 Voice] Measure 6
+                        {
+                            e''4. :32 \repeatTie
+                        }
+                        % [Violin 2 Voice] Measure 7
+                        {
+                            e''8 :64 \repeatTie
+                        }
+                    }
+                    {
+                        {
+                            r4
                             \bar "|."
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 }
@@ -239,6 +267,41 @@
                     {
                         % [Viola Voice] Measure 1
                         {
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            e''16 -\accent \f
+                        }
+                    }
+                    {
+                        {
+                            r8.
+                        }
+                    }
+                    {
+                        % [Viola Voice] Measure 2
+                        {
+                            e''8 :64 \pp
+                        }
+                        {
+                            e''8 :64 \repeatTie
+                        }
+                        {
+                            e''8 :64 \repeatTie
+                        }
+                        % [Viola Voice] Measure 3
+                        {
+                            e''8 :64 \repeatTie
+                        }
+                    }
+                    {
+                        {
+                            r4
+                        }
+                        % [Viola Voice] Measure 4
+                        {
                             r4
                         }
                     }
@@ -254,52 +317,34 @@
                         }
                     }
                     {
-                        % [Viola Voice] Measure 2
                         {
-                            e''4. :32 \pp
+                            e''4 :32 \pp
                         }
-                    }
-                    {
-                        {
-                            r2
-                        }
-                        % [Viola Voice] Measure 3
-                        {
-                            r8
-                        }
-                    }
-                    {
-                        {
-                            e''16 -\accent \f
-                        }
-                    }
-                    {
-                        {
-                            r8.
-                        }
-                    }
-                    {
-                        % [Viola Voice] Measure 4
-                        {
-                            e''4. :32 \pp
-                        }
-                    }
-                    {
                         % [Viola Voice] Measure 5
                         {
+                            e''8 :64 \repeatTie
+                        }
+                        {
+                            e''4 :32 \repeatTie
+                        }
+                        % [Viola Voice] Measure 6
+                        {
+                            e''4 :32 \repeatTie
+                        }
+                    }
+                    {
+                        {
                             r8
                         }
-                    }
-                    {
+                        % [Viola Voice] Measure 7
                         {
-                            e''16 -\accent \f
-                        }
-                    }
-                    {
-                        {
-                            r8.
-                            r4
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
                             \bar "|."
+                            \stopStaff
+                            \startStaff
                         }
                     }
                 }
@@ -324,7 +369,47 @@
                     {
                         % [Cello Voice] Measure 1
                         {
+                            e''16 -\accent \f
+                        }
+                    }
+                    {
+                        {
+                            r16
+                            r4
+                        }
+                    }
+                    {
+                        % [Cello Voice] Measure 2
+                        {
+                            e''4 :32 \pp
+                        }
+                    }
+                    {
+                        {
                             r8
+                        }
+                    }
+                    {
+                        % [Cello Voice] Measure 3
+                        {
+                            e''16 -\accent \f
+                        }
+                    }
+                    {
+                        {
+                            r16
+                            r4
+                        }
+                    }
+                    {
+                        % [Cello Voice] Measure 4
+                        {
+                            e''8 :64 \pp
+                        }
+                    }
+                    {
+                        {
+                            r4
                         }
                     }
                     {
@@ -341,54 +426,27 @@
                         {
                             e''4 :32 \pp
                         }
-                    }
-                    {
-                        % [Cello Voice] Measure 2
-                        {
-                            r4
-                            r16
-                        }
-                    }
-                    {
-                        {
-                            e''16 -\accent \f
-                        }
-                    }
-                    {
-                        {
-                            r2
-                        }
-                        % [Cello Voice] Measure 3
-                        {
-                            r8.
-                        }
-                    }
-                    {
-                        {
-                            e''16 -\accent \f
-                        }
-                    }
-                    {
-                        {
-                            r8
-                        }
-                    }
-                    {
-                        % [Cello Voice] Measure 4
-                        {
-                            e''8. :64 \pp
-                        }
-                        {
-                            e''8. :64 \repeatTie
-                        }
-                    }
-                    {
                         % [Cello Voice] Measure 5
                         {
-                            r4
+                            e''8 :64 \repeatTie
+                        }
+                        {
+                            e''4 :32 \repeatTie
                         }
                     }
                     {
+                        % [Cello Voice] Measure 6
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                    }
+                    {
+                        % [Cello Voice] Measure 7
                         {
                             e''16 -\accent \f
                         }

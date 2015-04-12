@@ -4,6 +4,7 @@ from abjad.tools import indicatortools
 from abjad.tools import rhythmmakertools
 from abjad.tools import scoretools
 from abjad.tools import selectortools
+from ersilia.materials import abbreviations
 
 
 piano_pointillist_music_specifier = consort.MusicSpecifier(
@@ -26,6 +27,7 @@ piano_pointillist_music_specifier = consort.MusicSpecifier(
                 [0]
             ),
         ),
+    color='darkyellow',
     labels=['pedaled'],
     pitch_handler=consort.PitchClassPitchHandler(
         logical_tie_expressions=(
@@ -35,12 +37,16 @@ piano_pointillist_music_specifier = consort.MusicSpecifier(
             None,
             consort.ChordExpression([-4, 5]),
             ),
+        pitch_specifier=abbreviations.agitato_pitch_specifier,
         register_specifier=consort.RegisterSpecifier(
             center_pitch='G3',
-            phrase_inflections=consort.RegisterInflection.zigzag(12)
-                .reverse().align(),
-            segment_inflections=consort.RegisterInflection.descending(
-                width=12).align()
+            phrase_inflections=consort.RegisterInflection
+                .zigzag(12)
+                .reverse()
+                .align(),
+            segment_inflections=consort.RegisterInflection
+                .descending(width=12)
+                .align()
             ),
         register_spread=6,
         ),

@@ -13,9 +13,15 @@
         \tag #'time
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 5/8
+                \time 3/8
                 \tempo 4=72
-                s1 * 5/8
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
             }
             {
                 \time 7/8
@@ -29,8 +35,7 @@
                 s1 * 3/8
             }
             {
-                \time 5/8
-                s1 * 5/8
+                s1 * 3/8
             }
         }
         \tag #'violin-1
@@ -62,30 +67,14 @@
                         }
                     }
                     {
-                        {
-                            \override Hairpin #'circled-tip = ##t
-                            c4 :32 \<
-                        }
                         % [Violin 1 Voice] Measure 2
                         {
-                            c4 :32 \repeatTie \p
-                            \revert Hairpin #'circled-tip
+                            c4 :32 \p
                         }
                     }
                     {
                         {
                             r8
-                        }
-                    }
-                    {
-                        {
-                            c16 -\accent \laissezVibrer \fff
-                        }
-                    }
-                    {
-                        {
-                            r8.
-                            r4
                         }
                     }
                     {
@@ -110,11 +99,28 @@
                         {
                             r16
                             r4
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            \override Hairpin #'circled-tip = ##t
+                            c8 :64 \<
+                            c4 :32 \repeatTie
                         }
                         % [Violin 1 Voice] Measure 5
                         {
+                            c4 :32 \repeatTie \p
+                            \revert Hairpin #'circled-tip
+                        }
+                    }
+                    {
+                        {
+                            r8
+                        }
+                        % [Violin 1 Voice] Measure 6
+                        {
                             r4
-                            r16
                         }
                     }
                     {
@@ -124,7 +130,18 @@
                     }
                     {
                         {
-                            r4
+                            r16
+                        }
+                    }
+                    {
+                        % [Violin 1 Voice] Measure 7
+                        {
+                            c4 :32 \p
+                        }
+                    }
+                    {
+                        {
+                            r8
                             \bar "|."
                         }
                     }
@@ -150,7 +167,7 @@
                     {
                         % [Violin 2 Voice] Measure 1
                         {
-                            r8.
+                            r4
                         }
                     }
                     {
@@ -160,33 +177,31 @@
                     }
                     {
                         {
-                            r8
                             r16
                         }
                     }
                     {
-                        {
-                            \override Hairpin #'circled-tip = ##t
-                            c8. :64 \<
-                        }
                         % [Violin 2 Voice] Measure 2
                         {
-                            c8. :64 \repeatTie
+                            \override Hairpin #'circled-tip = ##t
+                            c4 :32 \<
                         }
                         {
-                            c8. :64 \repeatTie
-                            c4 :32 \repeatTie
-                            c16 :128 \repeatTie \p
+                            c8 :64 \repeatTie
+                        }
+                        % [Violin 2 Voice] Measure 3
+                        {
+                            c4 :32 \repeatTie \p
                             \revert Hairpin #'circled-tip
                         }
                     }
                     {
                         {
-                            r8.
+                            r8
                         }
                     }
                     {
-                        % [Violin 2 Voice] Measure 3
+                        % [Violin 2 Voice] Measure 4
                         {
                             c16 -\accent \laissezVibrer \fff
                         }
@@ -195,9 +210,6 @@
                         {
                             r16
                             r4
-                        }
-                        % [Violin 2 Voice] Measure 4
-                        {
                             r8
                         }
                     }
@@ -208,17 +220,35 @@
                     }
                     {
                         {
-                            r8.
+                            r16
+                        }
+                    }
+                    {
+                        {
+                            \override Hairpin #'circled-tip = ##t
+                            c4 :32 \<
                         }
                         % [Violin 2 Voice] Measure 5
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
+                            c4 :32 \repeatTie
+                        }
+                        {
+                            c8 :64 \repeatTie
+                        }
+                        % [Violin 2 Voice] Measure 6
+                        {
+                            c4. :32 \repeatTie
+                        }
+                        % [Violin 2 Voice] Measure 7
+                        {
+                            c8 :64 \repeatTie \p
+                            \revert Hairpin #'circled-tip
+                        }
+                    }
+                    {
+                        {
+                            r4
                             \bar "|."
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 }
@@ -243,6 +273,43 @@
                     {
                         % [Viola Voice] Measure 1
                         {
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            c16 -\accent \laissezVibrer \fff
+                        }
+                    }
+                    {
+                        {
+                            r8.
+                        }
+                    }
+                    {
+                        % [Viola Voice] Measure 2
+                        {
+                            \override Hairpin #'circled-tip = ##t
+                            c8 :64 \<
+                        }
+                        {
+                            c8 :64 \repeatTie
+                        }
+                        {
+                            c8 :64 \repeatTie
+                        }
+                        % [Viola Voice] Measure 3
+                        {
+                            c8 :64 \repeatTie \p
+                            \revert Hairpin #'circled-tip
+                        }
+                    }
+                    {
+                        {
+                            r4
+                        }
+                        % [Viola Voice] Measure 4
+                        {
                             r4
                         }
                     }
@@ -258,52 +325,36 @@
                         }
                     }
                     {
-                        % [Viola Voice] Measure 2
                         {
-                            c4. :32 \p
+                            \override Hairpin #'circled-tip = ##t
+                            c4 :32 \<
                         }
-                    }
-                    {
-                        {
-                            r2
-                        }
-                        % [Viola Voice] Measure 3
-                        {
-                            r8
-                        }
-                    }
-                    {
-                        {
-                            c16 -\accent \laissezVibrer \fff
-                        }
-                    }
-                    {
-                        {
-                            r8.
-                        }
-                    }
-                    {
-                        % [Viola Voice] Measure 4
-                        {
-                            c4. :32 \p
-                        }
-                    }
-                    {
                         % [Viola Voice] Measure 5
                         {
+                            c8 :64 \repeatTie
+                        }
+                        {
+                            c4 :32 \repeatTie
+                        }
+                        % [Viola Voice] Measure 6
+                        {
+                            c4 :32 \repeatTie \p
+                            \revert Hairpin #'circled-tip
+                        }
+                    }
+                    {
+                        {
                             r8
                         }
-                    }
-                    {
+                        % [Viola Voice] Measure 7
                         {
-                            c16 -\accent \laissezVibrer \fff
-                        }
-                    }
-                    {
-                        {
-                            r8.
-                            r4
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
                             \bar "|."
+                            \stopStaff
+                            \startStaff
                         }
                     }
                 }
@@ -328,48 +379,19 @@
                     {
                         % [Cello Voice] Measure 1
                         {
-                            r8
-                        }
-                    }
-                    {
-                        {
                             c16 -\accent \laissezVibrer \fff
                         }
                     }
                     {
                         {
-                            r8.
-                        }
-                    }
-                    {
-                        {
-                            c4 :32 \p
+                            r16
+                            r4
                         }
                     }
                     {
                         % [Cello Voice] Measure 2
                         {
-                            r4
-                            r16
-                        }
-                    }
-                    {
-                        {
-                            c16 -\accent \laissezVibrer \fff
-                        }
-                    }
-                    {
-                        {
-                            r2
-                        }
-                        % [Cello Voice] Measure 3
-                        {
-                            r8.
-                        }
-                    }
-                    {
-                        {
-                            c16 -\accent \laissezVibrer \fff
+                            c4 :32 \p
                         }
                     }
                     {
@@ -378,23 +400,65 @@
                         }
                     }
                     {
-                        % [Cello Voice] Measure 4
+                        % [Cello Voice] Measure 3
                         {
-                            \override Hairpin #'circled-tip = ##t
-                            c8. :64 \<
-                        }
-                        {
-                            c8. :64 \repeatTie \p
-                            \revert Hairpin #'circled-tip
+                            c16 -\accent \laissezVibrer \fff
                         }
                     }
                     {
-                        % [Cello Voice] Measure 5
+                        {
+                            r16
+                            r4
+                        }
+                    }
+                    {
+                        % [Cello Voice] Measure 4
+                        {
+                            c8 :64 \p
+                        }
+                    }
+                    {
                         {
                             r4
                         }
                     }
                     {
+                        {
+                            c16 -\accent \laissezVibrer \fff
+                        }
+                    }
+                    {
+                        {
+                            r8.
+                        }
+                    }
+                    {
+                        {
+                            \override Hairpin #'circled-tip = ##t
+                            c4 :32 \<
+                        }
+                        % [Cello Voice] Measure 5
+                        {
+                            c8 :64 \repeatTie
+                        }
+                        {
+                            c4 :32 \repeatTie \p
+                            \revert Hairpin #'circled-tip
+                        }
+                    }
+                    {
+                        % [Cello Voice] Measure 6
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                    }
+                    {
+                        % [Cello Voice] Measure 7
                         {
                             c16 -\accent \laissezVibrer \fff
                         }

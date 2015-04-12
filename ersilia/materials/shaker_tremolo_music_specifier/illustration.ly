@@ -13,9 +13,15 @@
         \tag #'time
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 5/8
+                \time 3/8
                 \tempo 4=72
-                s1 * 5/8
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
             }
             {
                 \time 7/8
@@ -29,8 +35,7 @@
                 s1 * 3/8
             }
             {
-                \time 5/8
-                s1 * 5/8
+                s1 * 3/8
             }
         }
         \tag #'violin-1
@@ -78,9 +83,6 @@
                             \startStaff
                             c'4. :32 -\accent \fp \startTextSpan
                         }
-                        {
-                            c'4 :32 \repeatTie
-                        }
                         % [Violin 1 Voice] Measure 2
                         {
                             c'4 :32 \repeatTie
@@ -94,45 +96,6 @@
                     {
                         {
                             r8
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'4 :32 -\accent \fp \startTextSpan
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "treble"
-                        }
-                    }
-                    {
-                        {
-                            r4
                         }
                     }
                     {
@@ -162,8 +125,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'4 :32 -\accent \fp \startTextSpan
-                            c'16 :128 \repeatTie
+                            c'8 :64 -\accent \fp \startTextSpan
                             \stopStaff
                             \startStaff
                             \revert NoteHead #'style
@@ -173,7 +135,7 @@
                     }
                     {
                         {
-                            r16
+                            r4
                         }
                     }
                     {
@@ -203,8 +165,16 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'4 :32 -\accent \fp \startTextSpan
-                            c'16 :128 \repeatTie
+                            c'4. :32 -\accent \fp \startTextSpan
+                            c'8 :64 \repeatTie
+                        }
+                        {
+                            c'8 :64 \repeatTie
+                            c'4 :32 \repeatTie
+                        }
+                        % [Violin 1 Voice] Measure 5
+                        {
+                            c'4 :32 \repeatTie
                             \stopStaff
                             \startStaff
                             \revert NoteHead #'style
@@ -214,12 +184,11 @@
                     }
                     {
                         {
-                            r16
+                            r8
                         }
-                        % [Violin 1 Voice] Measure 5
+                        % [Violin 1 Voice] Measure 6
                         {
                             r4
-                            r16
                         }
                     }
                     {
@@ -248,14 +217,22 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'16 :128 -\accent \fp \startTextSpan
+                            c'8 :64 -\accent \fp \startTextSpan
+                        }
+                        % [Violin 1 Voice] Measure 7
+                        {
                             c'4 :32 \repeatTie
-                            \bar "|."
                             \stopStaff
                             \startStaff
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
+                        }
+                    }
+                    {
+                        {
+                            r8
+                            \bar "|."
                         }
                     }
                 }
@@ -280,7 +257,7 @@
                     {
                         % [Violin 2 Voice] Measure 1
                         {
-                            r8.
+                            r4
                         }
                     }
                     {
@@ -309,61 +286,18 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'8. :64 -\accent \fp \startTextSpan [
-                            \set stemLeftBeamCount = 2
-                            c'16 :128 \repeatTie ]
-                        }
-                        {
-                            c'8. :64 \repeatTie
+                            c'8 :64 -\accent \fp \startTextSpan
                         }
                         % [Violin 2 Voice] Measure 2
                         {
-                            c'8. :64 \repeatTie
-                        }
-                        {
-                            c'8. :64 \repeatTie
                             c'4 :32 \repeatTie
-                            c'16 :128 \repeatTie
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "treble"
                         }
-                    }
-                    {
                         {
-                            r8.
+                            c'8 :64 \repeatTie
                         }
-                    }
-                    {
                         % [Violin 2 Voice] Measure 3
                         {
-                            \clef "percussion"
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'4 :32 -\accent \fp \startTextSpan
+                            c'4 :32 \repeatTie
                             \stopStaff
                             \startStaff
                             \revert NoteHead #'style
@@ -375,13 +309,10 @@
                         {
                             r8
                         }
+                    }
+                    {
                         % [Violin 2 Voice] Measure 4
                         {
-                            r8
-                        }
-                    }
-                    {
-                        {
                             \clef "percussion"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
@@ -415,15 +346,67 @@
                         }
                     }
                     {
-                        % [Violin 2 Voice] Measure 5
                         {
+                            r8
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/8
-                            \bar "|."
+                            c'8 :64 -\accent \fp \startTextSpan
+                        }
+                        {
+                            c'4 :32 \repeatTie
+                        }
+                        % [Violin 2 Voice] Measure 5
+                        {
+                            c'4 :32 \repeatTie
+                        }
+                        {
+                            c'8 :64 \repeatTie
+                        }
+                        % [Violin 2 Voice] Measure 6
+                        {
+                            c'4. :32 \repeatTie
+                        }
+                        % [Violin 2 Voice] Measure 7
+                        {
+                            c'8 :64 \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        {
+                            r4
+                            \bar "|."
                         }
                     }
                 }
@@ -448,6 +431,63 @@
                     {
                         % [Viola Voice] Measure 1
                         {
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'4 :32 -\accent \fp \startTextSpan
+                        }
+                        % [Viola Voice] Measure 2
+                        {
+                            c'8 :64 \repeatTie
+                        }
+                        {
+                            c'8 :64 \repeatTie
+                        }
+                        {
+                            c'8 :64 \repeatTie
+                        }
+                        % [Viola Voice] Measure 3
+                        {
+                            c'8 :64 \repeatTie
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "alto"
+                        }
+                    }
+                    {
+                        {
+                            r4
+                        }
+                        % [Viola Voice] Measure 4
+                        {
                             r4
                         }
                     }
@@ -480,103 +520,39 @@
                             c'8 :64 -\accent \fp \startTextSpan
                             c'4 :32 \repeatTie
                         }
-                        % [Viola Voice] Measure 2
                         {
-                            c'4. :32 \repeatTie
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "alto"
+                            c'4 :32 \repeatTie
                         }
-                    }
-                    {
-                        {
-                            r2
-                        }
-                        % [Viola Voice] Measure 3
-                        {
-                            r8
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'4 :32 -\accent \fp \startTextSpan
-                        }
-                        % [Viola Voice] Measure 4
-                        {
-                            c'4. :32 \repeatTie
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "alto"
-                        }
-                    }
-                    {
                         % [Viola Voice] Measure 5
                         {
-                            r8
+                            c'8 :64 \repeatTie
+                        }
+                        {
+                            c'4 :32 \repeatTie
+                        }
+                        % [Viola Voice] Measure 6
+                        {
+                            c'4 :32 \repeatTie
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "alto"
                         }
                     }
                     {
                         {
-                            \clef "percussion"
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
+                            r8
+                        }
+                        % [Viola Voice] Measure 7
+                        {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'4 :32 -\accent \fp \startTextSpan
-                            c'4 :32 \repeatTie
+                            R1 * 3/8
                             \bar "|."
                             \stopStaff
                             \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "alto"
                         }
                     }
                 }
@@ -601,7 +577,89 @@
                     {
                         % [Cello Voice] Measure 1
                         {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'4. :32 -\accent \fp \startTextSpan
+                        }
+                        % [Cello Voice] Measure 2
+                        {
+                            c'4 :32 \repeatTie
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "bass"
+                        }
+                    }
+                    {
+                        {
                             r8
+                        }
+                    }
+                    {
+                        % [Cello Voice] Measure 3
+                        {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'4. :32 -\accent \fp \startTextSpan
+                        }
+                        % [Cello Voice] Measure 4
+                        {
+                            c'8 :64 \repeatTie
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "bass"
+                        }
+                    }
+                    {
+                        {
+                            r4
                         }
                     }
                     {
@@ -634,113 +692,33 @@
                         }
                         {
                             c'4 :32 \repeatTie
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "bass"
                         }
-                    }
-                    {
-                        % [Cello Voice] Measure 2
-                        {
-                            r4
-                            r16
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'16 :128 -\accent \fp \startTextSpan
-                            c'4 :32 \repeatTie
-                            c'16 :128 \repeatTie
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "bass"
-                        }
-                    }
-                    {
-                        {
-                            r8.
-                        }
-                        % [Cello Voice] Measure 3
-                        {
-                            r8.
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'8. :64 -\accent \fp \startTextSpan
-                        }
-                        % [Cello Voice] Measure 4
-                        {
-                            c'8. :64 \repeatTie
-                        }
-                        {
-                            c'8. :64 \repeatTie
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "bass"
-                        }
-                    }
-                    {
                         % [Cello Voice] Measure 5
                         {
-                            r4
+                            c'8 :64 \repeatTie
+                        }
+                        {
+                            c'4 :32 \repeatTie
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "bass"
                         }
                     }
                     {
+                        % [Cello Voice] Measure 6
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                    }
+                    {
+                        % [Cello Voice] Measure 7
                         {
                             \clef "percussion"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -767,7 +745,16 @@
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             c'8 :64 -\accent \fp \startTextSpan
-                            c'4 :32 \repeatTie
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "bass"
+                        }
+                    }
+                    {
+                        {
+                            r4
                                 _ \markup {
                                     \italic
                                         \center-column
@@ -780,11 +767,6 @@
                                             }
                                     }
                             \bar "|."
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "bass"
                         }
                     }
                 }

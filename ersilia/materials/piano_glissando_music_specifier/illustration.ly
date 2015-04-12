@@ -13,9 +13,15 @@
         \tag #'time
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 5/8
+                \time 3/8
                 \tempo 4=72
-                s1 * 5/8
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
             }
             {
                 \time 7/8
@@ -29,8 +35,7 @@
                 s1 * 3/8
             }
             {
-                \time 5/8
-                s1 * 5/8
+                s1 * 3/8
             }
         }
         \tag #'violin-1
@@ -71,14 +76,11 @@
                             \override TextSpanner #'direction = #up
                             c'4. \p \glissando \startTextSpan
                         }
-                        {
-                            c''4 \glissando
-                        }
                         % [Violin 1 Voice] Measure 2
                         {
-                            f''8. [ \glissando
+                            c''8. [ \glissando
                             \set stemLeftBeamCount = 2
-                            f'16 ] \stopTextSpan
+                            c'''16 ] \stopTextSpan
                             \revert TextSpanner #'bound-details
                             \revert TextSpanner #'dash-fraction
                             \revert TextSpanner #'direction
@@ -87,32 +89,6 @@
                     {
                         {
                             r8
-                        }
-                    }
-                    {
-                        {
-                            \override TextSpanner #'bound-details #'left #'text = \markup {
-                                \vcenter
-                                    \natural
-                                }
-                            \override TextSpanner #'bound-details #'right #'text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \override TextSpanner #'bound-details #'right-broken #'text = ##f
-                            \override TextSpanner #'dash-fraction = #1
-                            \override TextSpanner #'direction = #up
-                            c''8. \p [ \glissando \startTextSpan
-                            \set stemLeftBeamCount = 2
-                            f''16 ] \stopTextSpan
-                            \revert TextSpanner #'bound-details
-                            \revert TextSpanner #'dash-fraction
-                            \revert TextSpanner #'direction
-                        }
-                    }
-                    {
-                        {
-                            r4
                         }
                     }
                     {
@@ -129,12 +105,9 @@
                             \override TextSpanner #'bound-details #'right-broken #'text = ##f
                             \override TextSpanner #'dash-fraction = #1
                             \override TextSpanner #'direction = #up
-                            c''8 \p [ \glissando \startTextSpan
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            f'8 \glissando
+                            c'16 \p [ \glissando \startTextSpan
                             \set stemLeftBeamCount = 2
-                            f''16 ] \stopTextSpan
+                            c''16 ] \stopTextSpan
                             \revert TextSpanner #'bound-details
                             \revert TextSpanner #'dash-fraction
                             \revert TextSpanner #'direction
@@ -142,11 +115,49 @@
                     }
                     {
                         {
-                            r16
+                            r4
                         }
                     }
                     {
                         % [Violin 1 Voice] Measure 4
+                        {
+                            \override TextSpanner #'bound-details #'left #'text = \markup {
+                                \vcenter
+                                    \natural
+                                }
+                            \override TextSpanner #'bound-details #'right #'text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \override TextSpanner #'bound-details #'right-broken #'text = ##f
+                            \override TextSpanner #'dash-fraction = #1
+                            \override TextSpanner #'direction = #up
+                            f''4 \p \glissando \startTextSpan
+                            f'4 \glissando
+                        }
+                        {
+                            f''4. \glissando
+                        }
+                        % [Violin 1 Voice] Measure 5
+                        {
+                            c''8. [ \glissando
+                            \set stemLeftBeamCount = 2
+                            c'16 ] \stopTextSpan
+                            \revert TextSpanner #'bound-details
+                            \revert TextSpanner #'dash-fraction
+                            \revert TextSpanner #'direction
+                        }
+                    }
+                    {
+                        {
+                            r8
+                        }
+                        % [Violin 1 Voice] Measure 6
+                        {
+                            r4
+                        }
+                    }
+                    {
                         {
                             \override TextSpanner #'bound-details #'left #'text = \markup {
                                 \vcenter
@@ -165,10 +176,11 @@
                             \override TextSpanner #'bound-details #'right-broken #'text = ##f
                             \override TextSpanner #'dash-fraction = #1
                             \override TextSpanner #'direction = #up
-                            c''8 \p [ \glissando \startTextSpan
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            f''8 \glissando
+                            f'8 \p \glissando \startTextSpan
+                        }
+                        % [Violin 1 Voice] Measure 7
+                        {
+                            c''8. [ \glissando
                             \set stemLeftBeamCount = 2
                             f'16 ] \stopTextSpan
                             \revert TextSpanner #'bound-details
@@ -178,37 +190,8 @@
                     }
                     {
                         {
-                            r16
-                        }
-                        % [Violin 1 Voice] Measure 5
-                        {
-                            r4
-                            r16
-                        }
-                    }
-                    {
-                        {
-                            \override TextSpanner #'bound-details #'left #'text = \markup {
-                                \vcenter
-                                    \natural
-                                }
-                            \override TextSpanner #'bound-details #'right #'text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \override TextSpanner #'bound-details #'right-broken #'text = ##f
-                            \override TextSpanner #'dash-fraction = #1
-                            \override TextSpanner #'direction = #up
-                            c'8 \p [ \glissando \startTextSpan
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c''8 \glissando
-                            \set stemLeftBeamCount = 2
-                            c'''16 ] \stopTextSpan
+                            r8
                             \bar "|."
-                            \revert TextSpanner #'bound-details
-                            \revert TextSpanner #'dash-fraction
-                            \revert TextSpanner #'direction
                         }
                     }
                 }
@@ -233,7 +216,7 @@
                     {
                         % [Violin 2 Voice] Measure 1
                         {
-                            r8.
+                            r4
                         }
                     }
                     {
@@ -249,58 +232,20 @@
                             \override TextSpanner #'bound-details #'right-broken #'text = ##f
                             \override TextSpanner #'dash-fraction = #1
                             \override TextSpanner #'direction = #up
-                            f'4 \p \glissando \startTextSpan
-                        }
-                        {
-                            c''8. \glissando
+                            f''8 \p \glissando \startTextSpan
                         }
                         % [Violin 2 Voice] Measure 2
                         {
-                            c'''8. \glissando
+                            c'4 \glissando
                         }
                         {
-                            f'8 [ \glissando
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c''8 \glissando
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c'8. \glissando
-                            \set stemLeftBeamCount = 2
-                            f''16 ] \stopTextSpan
-                            \revert TextSpanner #'bound-details
-                            \revert TextSpanner #'dash-fraction
-                            \revert TextSpanner #'direction
+                            f''8 \glissando
                         }
-                    }
-                    {
-                        {
-                            r8.
-                        }
-                    }
-                    {
                         % [Violin 2 Voice] Measure 3
                         {
-                            \override TextSpanner #'bound-details #'left #'text = \markup {
-                                \vcenter
-                                    \concat
-                                        {
-                                            \natural
-                                            \hspace
-                                                #0.1
-                                            \flat
-                                        }
-                                }
-                            \override TextSpanner #'bound-details #'right #'text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \override TextSpanner #'bound-details #'right-broken #'text = ##f
-                            \override TextSpanner #'dash-fraction = #1
-                            \override TextSpanner #'direction = #up
-                            f'8. \p [ \glissando \startTextSpan
+                            c''8. [ \glissando
                             \set stemLeftBeamCount = 2
-                            c''16 ] \stopTextSpan
+                            f'16 ] \stopTextSpan
                             \revert TextSpanner #'bound-details
                             \revert TextSpanner #'dash-fraction
                             \revert TextSpanner #'direction
@@ -310,12 +255,9 @@
                         {
                             r8
                         }
-                        % [Violin 2 Voice] Measure 4
-                        {
-                            r8
-                        }
                     }
                     {
+                        % [Violin 2 Voice] Measure 4
                         {
                             \override TextSpanner #'bound-details #'left #'text = \markup {
                                 \vcenter
@@ -337,15 +279,60 @@
                         }
                     }
                     {
+                        {
+                            r8
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            \override TextSpanner #'bound-details #'left #'text = \markup {
+                                \vcenter
+                                    \concat
+                                        {
+                                            \natural
+                                            \hspace
+                                                #0.1
+                                            \flat
+                                        }
+                                }
+                            \override TextSpanner #'bound-details #'right #'text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \override TextSpanner #'bound-details #'right-broken #'text = ##f
+                            \override TextSpanner #'dash-fraction = #1
+                            \override TextSpanner #'direction = #up
+                            f''8 \p \glissando \startTextSpan
+                        }
+                        {
+                            c''4 \glissando
+                        }
                         % [Violin 2 Voice] Measure 5
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
+                            f''4 \glissando
+                        }
+                        {
+                            c''8 \glissando
+                        }
+                        % [Violin 2 Voice] Measure 6
+                        {
+                            f''4. \glissando
+                        }
+                        % [Violin 2 Voice] Measure 7
+                        {
+                            c'''16 [ \glissando
+                            \set stemLeftBeamCount = 2
+                            c''16 ] \stopTextSpan
+                            \revert TextSpanner #'bound-details
+                            \revert TextSpanner #'dash-fraction
+                            \revert TextSpanner #'direction
+                        }
+                    }
+                    {
+                        {
+                            r4
                             \bar "|."
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 }
@@ -370,6 +357,50 @@
                     {
                         % [Viola Voice] Measure 1
                         {
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            \override TextSpanner #'bound-details #'left #'text = \markup {
+                                \vcenter
+                                    \natural
+                                }
+                            \override TextSpanner #'bound-details #'right #'text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \override TextSpanner #'bound-details #'right-broken #'text = ##f
+                            \override TextSpanner #'dash-fraction = #1
+                            \override TextSpanner #'direction = #up
+                            f'4 \p \glissando \startTextSpan
+                        }
+                        % [Viola Voice] Measure 2
+                        {
+                            c''8 \glissando
+                        }
+                        {
+                            f''8 \glissando
+                        }
+                        {
+                            f'8 \glissando
+                        }
+                        % [Viola Voice] Measure 3
+                        {
+                            f''16 [ \glissando
+                            \set stemLeftBeamCount = 2
+                            c'16 ] \stopTextSpan
+                            \revert TextSpanner #'bound-details
+                            \revert TextSpanner #'dash-fraction
+                            \revert TextSpanner #'direction
+                        }
+                    }
+                    {
+                        {
+                            r4
+                        }
+                        % [Viola Voice] Measure 4
+                        {
                             r4
                         }
                     }
@@ -386,57 +417,21 @@
                             \override TextSpanner #'bound-details #'right-broken #'text = ##f
                             \override TextSpanner #'dash-fraction = #1
                             \override TextSpanner #'direction = #up
-                            f''4. \p \glissando \startTextSpan
+                            c''4. \p \glissando \startTextSpan
                         }
-                        % [Viola Voice] Measure 2
+                        {
+                            c'4 \glissando
+                        }
+                        % [Viola Voice] Measure 5
+                        {
+                            c'''8 \glissando
+                        }
+                        {
+                            f''4 \glissando
+                        }
+                        % [Viola Voice] Measure 6
                         {
                             c''8. [ \glissando
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c'8 \glissando
-                            \set stemLeftBeamCount = 2
-                            f'16 ] \stopTextSpan
-                            \revert TextSpanner #'bound-details
-                            \revert TextSpanner #'dash-fraction
-                            \revert TextSpanner #'direction
-                        }
-                    }
-                    {
-                        {
-                            r2
-                        }
-                        % [Viola Voice] Measure 3
-                        {
-                            r8
-                        }
-                    }
-                    {
-                        {
-                            \override TextSpanner #'bound-details #'left #'text = \markup {
-                                \vcenter
-                                    \concat
-                                        {
-                                            \natural
-                                            \hspace
-                                                #0.1
-                                            \flat
-                                        }
-                                }
-                            \override TextSpanner #'bound-details #'right #'text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \override TextSpanner #'bound-details #'right-broken #'text = ##f
-                            \override TextSpanner #'dash-fraction = #1
-                            \override TextSpanner #'direction = #up
-                            c'4 \p \glissando \startTextSpan
-                        }
-                        % [Viola Voice] Measure 4
-                        {
-                            f'8. [ \glissando
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            c'''8 \glissando
                             \set stemLeftBeamCount = 2
                             c'16 ] \stopTextSpan
                             \revert TextSpanner #'bound-details
@@ -445,37 +440,18 @@
                         }
                     }
                     {
-                        % [Viola Voice] Measure 5
                         {
                             r8
                         }
-                    }
-                    {
+                        % [Viola Voice] Measure 7
                         {
-                            \override TextSpanner #'bound-details #'left #'text = \markup {
-                                \vcenter
-                                    \natural
-                                }
-                            \override TextSpanner #'bound-details #'right #'text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \override TextSpanner #'bound-details #'right-broken #'text = ##f
-                            \override TextSpanner #'dash-fraction = #1
-                            \override TextSpanner #'direction = #up
-                            f'8 \p [ \glissando \startTextSpan
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            f''8 \glissando
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            f'8. \glissando
-                            \set stemLeftBeamCount = 2
-                            c''16 ] \stopTextSpan
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
                             \bar "|."
-                            \revert TextSpanner #'bound-details
-                            \revert TextSpanner #'dash-fraction
-                            \revert TextSpanner #'direction
+                            \stopStaff
+                            \startStaff
                         }
                     }
                 }
@@ -500,7 +476,69 @@
                     {
                         % [Cello Voice] Measure 1
                         {
+                            \override TextSpanner #'bound-details #'left #'text = \markup {
+                                \vcenter
+                                    \concat
+                                        {
+                                            \natural
+                                            \hspace
+                                                #0.1
+                                            \flat
+                                        }
+                                }
+                            \override TextSpanner #'bound-details #'right #'text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \override TextSpanner #'bound-details #'right-broken #'text = ##f
+                            \override TextSpanner #'dash-fraction = #1
+                            \override TextSpanner #'direction = #up
+                            c''4. \p \glissando \startTextSpan
+                        }
+                        % [Cello Voice] Measure 2
+                        {
+                            f''8. [ \glissando
+                            \set stemLeftBeamCount = 2
+                            c''16 ] \stopTextSpan
+                            \revert TextSpanner #'bound-details
+                            \revert TextSpanner #'dash-fraction
+                            \revert TextSpanner #'direction
+                        }
+                    }
+                    {
+                        {
                             r8
+                        }
+                    }
+                    {
+                        % [Cello Voice] Measure 3
+                        {
+                            \override TextSpanner #'bound-details #'left #'text = \markup {
+                                \vcenter
+                                    \natural
+                                }
+                            \override TextSpanner #'bound-details #'right #'text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \override TextSpanner #'bound-details #'right-broken #'text = ##f
+                            \override TextSpanner #'dash-fraction = #1
+                            \override TextSpanner #'direction = #up
+                            f''4. \p \glissando \startTextSpan
+                        }
+                        % [Cello Voice] Measure 4
+                        {
+                            c'''16 [ \glissando
+                            \set stemLeftBeamCount = 2
+                            c''16 ] \stopTextSpan
+                            \revert TextSpanner #'bound-details
+                            \revert TextSpanner #'dash-fraction
+                            \revert TextSpanner #'direction
+                        }
+                    }
+                    {
+                        {
+                            r4
                         }
                     }
                     {
@@ -516,25 +554,37 @@
                             \override TextSpanner #'bound-details #'right-broken #'text = ##f
                             \override TextSpanner #'dash-fraction = #1
                             \override TextSpanner #'direction = #up
-                            c''4 \p \glissando \startTextSpan
+                            f'4 \p \glissando \startTextSpan
                         }
                         {
-                            c'8. [ \glissando
+                            c''4 \glissando
+                        }
+                        % [Cello Voice] Measure 5
+                        {
+                            f''8 \glissando
+                        }
+                        {
+                            f'8. [ \glissando
                             \set stemLeftBeamCount = 2
-                            c''16 ] \stopTextSpan
+                            f''16 ] \stopTextSpan
                             \revert TextSpanner #'bound-details
                             \revert TextSpanner #'dash-fraction
                             \revert TextSpanner #'direction
                         }
                     }
                     {
-                        % [Cello Voice] Measure 2
+                        % [Cello Voice] Measure 6
                         {
-                            r4
-                            r16
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
                         }
                     }
                     {
+                        % [Cello Voice] Measure 7
                         {
                             \override TextSpanner #'bound-details #'left #'text = \markup {
                                 \vcenter
@@ -553,79 +603,17 @@
                             \override TextSpanner #'bound-details #'right-broken #'text = ##f
                             \override TextSpanner #'dash-fraction = #1
                             \override TextSpanner #'direction = #up
-                            f''8. \p [ \glissando \startTextSpan
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            f'8 \glissando
+                            c'''16 \p [ \glissando \startTextSpan
                             \set stemLeftBeamCount = 2
-                            c'''16 ] \stopTextSpan
+                            f''16 ] \stopTextSpan
                             \revert TextSpanner #'bound-details
                             \revert TextSpanner #'dash-fraction
                             \revert TextSpanner #'direction
                         }
                     }
                     {
-                        {
-                            r8.
-                        }
-                        % [Cello Voice] Measure 3
-                        {
-                            r8.
-                        }
-                    }
-                    {
-                        {
-                            \override TextSpanner #'bound-details #'left #'text = \markup {
-                                \vcenter
-                                    \natural
-                                }
-                            \override TextSpanner #'bound-details #'right #'text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \override TextSpanner #'bound-details #'right-broken #'text = ##f
-                            \override TextSpanner #'dash-fraction = #1
-                            \override TextSpanner #'direction = #up
-                            f'8. \p \glissando \startTextSpan
-                        }
-                        % [Cello Voice] Measure 4
-                        {
-                            c''8. \glissando
-                        }
-                        {
-                            f''8 [ \glissando
-                            \set stemLeftBeamCount = 2
-                            c''16 ] \stopTextSpan
-                            \revert TextSpanner #'bound-details
-                            \revert TextSpanner #'dash-fraction
-                            \revert TextSpanner #'direction
-                        }
-                    }
-                    {
-                        % [Cello Voice] Measure 5
                         {
                             r4
-                        }
-                    }
-                    {
-                        {
-                            \override TextSpanner #'bound-details #'left #'text = \markup {
-                                \vcenter
-                                    \natural
-                                }
-                            \override TextSpanner #'bound-details #'right #'text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \override TextSpanner #'bound-details #'right-broken #'text = ##f
-                            \override TextSpanner #'dash-fraction = #1
-                            \override TextSpanner #'direction = #up
-                            c'8. \p [ \glissando
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            f''8 \glissando
-                            \set stemLeftBeamCount = 2
-                            f'16 ]
                                 _ \markup {
                                     \italic
                                         \center-column
@@ -637,21 +625,7 @@
                                                 "2001 - 3001"
                                             }
                                     }
-                                ^ \markup {
-                                \italic
-                                    \center-column
-                                        {
-                                            " "
-                                            " "
-                                            " "
-                                            Nowhere
-                                            "2001 - 3001"
-                                        }
-                                }
                             \bar "|."
-                            \revert TextSpanner #'bound-details
-                            \revert TextSpanner #'dash-fraction
-                            \revert TextSpanner #'direction
                         }
                     }
                 }

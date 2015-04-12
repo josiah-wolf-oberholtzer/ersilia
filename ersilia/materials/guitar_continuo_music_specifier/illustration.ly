@@ -13,9 +13,15 @@
         \tag #'time
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 5/8
+                \time 3/8
                 \tempo 4=72
-                s1 * 5/8
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
             }
             {
                 \time 7/8
@@ -29,8 +35,7 @@
                 s1 * 3/8
             }
             {
-                \time 5/8
-                s1 * 5/8
+                s1 * 3/8
             }
         }
         \tag #'violin-1
@@ -57,36 +62,54 @@
                     }
                     {
                         {
-                            d'16 -\accent \p [ (
+                            f'16 -\accent \p [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            e'16
+                            g'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            d'16 )
+                            f'16 )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            f'16 -\accent (
+                            af'16 -\accent (
                             \set stemLeftBeamCount = 2
-                            d'16 ]
-                        }
-                        {
-                            f'16 ) [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            d'16 -\accent (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            e'16
-                            \set stemLeftBeamCount = 2
-                            d'16 ]
+                            f'16 ]
                         }
                         % [Violin 1 Voice] Measure 2
-                        \times 4/5 {
-                            g'16 ) [
+                        {
+                            af'16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            d'16 -\accent (
+                            f'16
+                            \set stemLeftBeamCount = 2
+                            g'16 ] )
+                        }
+                    }
+                    {
+                        {
+                            r8.
+                        }
+                    }
+                    {
+                        % [Violin 1 Voice] Measure 3
+                        \times 2/3 {
+                            r16 [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            f'16 -\accent \mp (
+                            \set stemLeftBeamCount = 2
+                            bf'16 ] )
+                        }
+                    }
+                    {
+                        {
+                            r4
+                        }
+                    }
+                    {
+                        % [Violin 1 Voice] Measure 4
+                        {
+                            d'16 -\accent \p [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             f'16
@@ -94,106 +117,81 @@
                             \set stemRightBeamCount = 2
                             d'16 )
                             \set stemLeftBeamCount = 2
-                            r16 ]
+                            \set stemRightBeamCount = 2
+                            g'16 -\accent (
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            d'16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            e'16 )
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            d'16 -\accent (
+                            \set stemLeftBeamCount = 2
+                            f'16 ]
+                        }
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 6/7 {
+                            d'16 [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            f'16 )
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            d'16 -\accent (
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            e'16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            d'16 )
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            g'16 -\accent (
+                            \set stemLeftBeamCount = 2
+                            d'16 ]
+                        }
+                        % [Violin 1 Voice] Measure 5
+                        {
+                            f'16 [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            d'16
+                            \set stemLeftBeamCount = 2
+                            g'16 ] )
                         }
                     }
                     {
                         {
-                            r8
+                            r8.
+                        }
+                        % [Violin 1 Voice] Measure 6
+                        {
+                            r4
+                            r16
                         }
                     }
                     {
-                        \times 4/5 {
-                            r16 [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            fs'16 -\accent \mp (
+                        {
+                            cs'16 -\accent \mp (
+                        }
+                        % [Violin 1 Voice] Measure 7
+                        {
+                            ef'16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             cs'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            ef'16
+                            e'16
                             \set stemLeftBeamCount = 2
                             cs'16 ] )
                         }
                     }
                     {
                         {
-                            r4
-                        }
-                    }
-                    {
-                        % [Violin 1 Voice] Measure 3
-                        {
-                            f'16 -\accent \p [ (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            d'16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16
-                            \set stemLeftBeamCount = 2
-                            d'16 ] )
-                        }
-                    }
-                    {
-                        {
                             r8
-                        }
-                    }
-                    {
-                        % [Violin 1 Voice] Measure 4
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 5/7 {
-                            r16 [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            g'16 -\accent \mp (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            bf'16 )
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16 -\accent (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            af'16
-                            \set stemLeftBeamCount = 2
-                            f'16 ] )
-                        }
-                    }
-                    {
-                        {
-                            r16
-                        }
-                        % [Violin 1 Voice] Measure 5
-                        {
-                            r4
-                            r16
-                        }
-                    }
-                    {
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 5/6 {
-                            r16 [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            fs'16 -\accent \p (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            cs'16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            ef'16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            cs'16 )
-                            \set stemLeftBeamCount = 2
-                            r16 ]
                             \bar "|."
                         }
                     }
@@ -219,124 +217,149 @@
                     {
                         % [Violin 2 Voice] Measure 1
                         {
-                            r8.
+                            r4
                         }
                     }
                     {
-                        {
-                            cs'16 -\accent \mp [ (
+                        \times 2/3 {
+                            r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            ef'16
+                            d'16 -\accent \p (
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            cs'16 )
-                            \set stemLeftBeamCount = 2
-                            e'16 -\accent ] (
-                        }
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 3/4 {
-                            cs'16 [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            e'16 )
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            cs'16 -\accent (
-                            \set stemLeftBeamCount = 2
-                            ef'16 ]
+                            e'16 ]
                         }
                         % [Violin 2 Voice] Measure 2
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 3/5 {
-                            cs'16 [
+                        \times 4/6 {
+                            d'16 ) [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            fs'16 )
+                            f'16 -\accent (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            cs'16 -\accent (
+                            d'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            e'16
+                            f'16 )
                             \set stemLeftBeamCount = 2
-                            cs'16 ] )
+                            \set stemRightBeamCount = 2
+                            d'16 -\accent (
+                            \set stemLeftBeamCount = 2
+                            e'16 ]
                         }
                         {
-                            fs'16 -\accent [ (
+                            d'16 [
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            cs'16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            ef'16 )
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            cs'16 -\accent (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            e'16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            cs'16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            e'16
-                            \set stemLeftBeamCount = 2
-                            cs'16 ] )
-                        }
-                    }
-                    {
-                        {
-                            r8.
+                            g'16 ] )
                         }
                         % [Violin 2 Voice] Measure 3
-                        {
-                            r16
-                        }
-                    }
-                    {
-                        {
-                            g'16 -\accent \p [ (
+                        \times 4/5 {
+                            d'16 -\accent [ (
                             \set stemLeftBeamCount = 2
-                            f'16 ] )
+                            \set stemRightBeamCount = 2
+                            f'16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            d'16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            g'16 )
+                            \set stemLeftBeamCount = 2
+                            r16 ]
                         }
                     }
                     {
-                        {
-                            r8.
-                        }
-                        % [Violin 2 Voice] Measure 4
                         {
                             r8
                         }
                     }
                     {
-                        \times 4/5 {
-                            r16 [
+                        % [Violin 2 Voice] Measure 4
+                        {
+                            f'16 -\accent \mp [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            fs'16 -\accent \mp (
+                            g'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            cs'16
+                            f'16
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            e'16
-                            \set stemLeftBeamCount = 2
-                            cs'16 ] )
+                            af'16 ] )
                         }
                     }
                     {
-                        % [Violin 2 Voice] Measure 5
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
+                            r8
+                            r8.
+                        }
+                    }
+                    {
+                        {
+                            f'16 -\accent \p (
+                        }
+                        {
+                            af'16 [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            f'16 )
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            g'16 -\accent (
+                            \set stemLeftBeamCount = 2
+                            f'16 ]
+                        }
+                        % [Violin 2 Voice] Measure 5
+                        \times 4/5 {
+                            bf'16 ) [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            f'16 -\accent (
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            af'16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            f'16
+                            \set stemLeftBeamCount = 2
+                            bf'16 ] )
+                        }
+                        {
+                            f'16 -\accent [ (
+                            \set stemLeftBeamCount = 2
+                            g'16 ]
+                        }
+                        % [Violin 2 Voice] Measure 6
+                        {
+                            f'16 ) [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            af'16 -\accent (
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            f'16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            af'16 )
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            f'16 -\accent (
+                            \set stemLeftBeamCount = 2
+                            g'16 ]
+                        }
+                        % [Violin 2 Voice] Measure 7
+                        \times 2/3 {
+                            f'16 [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            bf'16 )
+                            \set stemLeftBeamCount = 2
+                            r16 ]
+                        }
+                    }
+                    {
+                        {
+                            r4
                             \bar "|."
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 }
@@ -361,65 +384,99 @@
                     {
                         % [Viola Voice] Measure 1
                         {
+                            r8
+                        }
+                    }
+                    {
+                        \times 4/5 {
+                            r16 [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            cs'16 -\accent \mp (
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            ef'16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            cs'16 )
+                            \set stemLeftBeamCount = 2
+                            e'16 -\accent ] (
+                        }
+                        % [Viola Voice] Measure 2
+                        {
+                            cs'16 [
+                            \set stemLeftBeamCount = 2
+                            e'16 ] )
+                        }
+                        {
+                            cs'16 -\accent [ (
+                            \set stemLeftBeamCount = 2
+                            ef'16 ]
+                        }
+                        \times 2/3 {
+                            cs'16 [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            fs'16 )
+                            \set stemLeftBeamCount = 2
+                            cs'16 -\accent ] (
+                        }
+                        % [Viola Voice] Measure 3
+                        {
+                            e'16 [
+                            \set stemLeftBeamCount = 2
+                            cs'16 ] )
+                        }
+                    }
+                    {
+                        {
+                            r4
+                        }
+                        % [Viola Voice] Measure 4
+                        {
                             r4
                         }
                     }
                     {
                         {
-                            d'16 -\accent \p [ (
+                            fs'16 -\accent \p [ (
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            cs'16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            ef'16 )
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            cs'16 -\accent (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             e'16
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            d'16 )
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16 -\accent (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            d'16
-                            \set stemLeftBeamCount = 2
-                            f'16 ] )
+                            cs'16 ] )
                         }
-                        % [Viola Voice] Measure 2
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 6/7 {
-                            d'16 -\accent [ (
+                        \times 4/5 {
+                            e'16 -\accent [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            e'16
+                            cs'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            d'16
+                            ef'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            g'16
+                            cs'16 )
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            d'16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16 )
-                            \set stemLeftBeamCount = 2
-                            r16 ]
+                            fs'16 -\accent ] (
                         }
-                    }
-                    {
+                        % [Viola Voice] Measure 5
                         {
-                            r2
-                        }
-                        % [Viola Voice] Measure 3
-                        {
-                            r8
-                        }
-                    }
-                    {
-                        \times 4/6 {
-                            r16 [
+                            cs'16 [
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            cs'16 -\accent \mp (
+                            e'16 ] )
+                        }
+                        {
+                            cs'16 -\accent [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             fs'16
@@ -427,17 +484,11 @@
                             \set stemRightBeamCount = 2
                             cs'16 )
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            ef'16 -\accent (
-                            \set stemLeftBeamCount = 2
-                            cs'16 ]
+                            ef'16 -\accent ] (
                         }
-                        % [Viola Voice] Measure 4
-                        {
-                            e'16 ) [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            cs'16 -\accent (
+                        % [Viola Voice] Measure 6
+                        \times 4/5 {
+                            cs'16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             e'16
@@ -446,44 +497,24 @@
                             cs'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            ef'16
-                            \set stemLeftBeamCount = 2
-                            cs'16 ] )
-                        }
-                    }
-                    {
-                        % [Viola Voice] Measure 5
-                        {
-                            r8
-                        }
-                    }
-                    {
-                        \times 8/9 {
-                            r16 [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            g'16 -\accent \p (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            d'16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16 )
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            d'16 -\accent (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            g'16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            d'16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
                             e'16 )
                             \set stemLeftBeamCount = 2
                             r16 ]
+                        }
+                    }
+                    {
+                        {
+                            r8
+                        }
+                        % [Viola Voice] Measure 7
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
                             \bar "|."
+                            \stopStaff
+                            \startStaff
                         }
                     }
                 }
@@ -507,121 +538,142 @@
                     \clef "bass"
                     {
                         % [Cello Voice] Measure 1
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 6/8 {
+                            r16 [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            d'16 -\accent \mp (
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            e'16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            d'16 )
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            f'16 -\accent (
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            d'16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            f'16 )
+                            \set stemLeftBeamCount = 2
+                            d'16 -\accent ] (
+                        }
+                        % [Cello Voice] Measure 2
+                        {
+                            e'16 [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            d'16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            g'16
+                            \set stemLeftBeamCount = 2
+                            d'16 ] )
+                        }
+                    }
+                    {
                         {
                             r8
                         }
                     }
                     {
-                        {
-                            f'16 -\accent \mp [ (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            g'16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16 )
-                            \set stemLeftBeamCount = 2
-                            af'16 -\accent ] (
-                        }
-                        \times 4/5 {
-                            f'16 [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            af'16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            g'16
-                            \set stemLeftBeamCount = 2
-                            f'16 ] )
-                        }
-                    }
-                    {
-                        % [Cello Voice] Measure 2
-                        {
-                            r4.
-                        }
-                    }
-                    {
-                        {
-                            bf'16 -\accent \p [ (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            af'16
-                            \set stemLeftBeamCount = 2
-                            f'16 ] )
-                        }
-                    }
-                    {
-                        {
-                            r4
-                        }
                         % [Cello Voice] Measure 3
-                        {
-                            r8.
-                        }
-                    }
-                    {
                         \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 3/4 {
+                        \times 6/7 {
                             r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            g'16 -\accent \mp (
+                            e'16 -\accent \p (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            d'16
+                            cs'16
                             \set stemLeftBeamCount = 2
-                            e'16 ] )
+                            \set stemRightBeamCount = 2
+                            fs'16 )
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            cs'16 -\accent (
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            ef'16
+                            \set stemLeftBeamCount = 2
+                            cs'16 ]
                         }
                         % [Cello Voice] Measure 4
                         {
-                            d'16 -\accent [ (
+                            e'16 )
+                        }
+                    }
+                    {
+                        {
+                            r16
+                            r4
+                        }
+                    }
+                    {
+                        {
+                            d'16 -\accent \mp [ (
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            f'16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            d'16 )
+                            \set stemLeftBeamCount = 2
+                            e'16 -\accent ] (
+                        }
+                        \times 4/5 {
+                            d'16 [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            g'16 )
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            d'16 -\accent (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             f'16
                             \set stemLeftBeamCount = 2
                             d'16 ]
                         }
+                        % [Cello Voice] Measure 5
                         {
-                            f'16 [
+                            g'16 ) [
+                            \set stemLeftBeamCount = 2
+                            d'16 -\accent ] (
+                        }
+                        {
+                            e'16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             d'16
                             \set stemLeftBeamCount = 2
-                            e'16 ] )
-                        }
-                    }
-                    {
-                        % [Cello Voice] Measure 5
-                        {
-                            r4
-                        }
-                    }
-                    {
-                        {
-                            f'16 -\accent \p [ (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            bf'16
-                            \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             f'16
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            af'16
-                            \set stemLeftBeamCount = 2
-                            f'16 ] )
+                            d'16 ] )
                         }
                     }
                     {
+                        % [Cello Voice] Measure 6
                         {
-                            r16
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Cello Voice] Measure 7
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
                                 _ \markup {
                                     \italic
                                         \center-column
@@ -634,6 +686,8 @@
                                             }
                                     }
                             \bar "|."
+                            \stopStaff
+                            \startStaff
                         }
                     }
                 }

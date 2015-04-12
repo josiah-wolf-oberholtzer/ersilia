@@ -78,6 +78,7 @@ piano_pointillist_music_specifier = consort.tools.MusicSpecifier(
                 ),
             ),
         ),
+    color='darkyellow',
     labels=('pedaled',),
     pitch_handler=consort.tools.PitchClassPitchHandler(
         logical_tie_expressions=datastructuretools.CyclicTuple(
@@ -147,6 +148,55 @@ piano_pointillist_music_specifier = consort.tools.MusicSpecifier(
                 ),
             ),
         register_spread=6,
+        pitch_specifier=consort.tools.PitchSpecifier(
+            pitch_segments=(
+                pitchtools.PitchSegment(
+                    (
+                        pitchtools.NamedPitch("c'"),
+                        pitchtools.NamedPitch("ef'"),
+                        pitchtools.NamedPitch("d'"),
+                        pitchtools.NamedPitch("f'"),
+                        pitchtools.NamedPitch("b'"),
+                        pitchtools.NamedPitch("cs'"),
+                        ),
+                    item_class=pitchtools.NamedPitch,
+                    ),
+                pitchtools.PitchSegment(
+                    (
+                        pitchtools.NamedPitch("b'"),
+                        pitchtools.NamedPitch("a'"),
+                        ),
+                    item_class=pitchtools.NamedPitch,
+                    ),
+                pitchtools.PitchSegment(
+                    (
+                        pitchtools.NamedPitch("d'"),
+                        pitchtools.NamedPitch("e'"),
+                        pitchtools.NamedPitch("f'"),
+                        pitchtools.NamedPitch("af'"),
+                        ),
+                    item_class=pitchtools.NamedPitch,
+                    ),
+                pitchtools.PitchSegment(
+                    (
+                        pitchtools.NamedPitch("c'"),
+                        pitchtools.NamedPitch("ef'"),
+                        pitchtools.NamedPitch("f'"),
+                        ),
+                    item_class=pitchtools.NamedPitch,
+                    ),
+                pitchtools.PitchSegment(
+                    (
+                        pitchtools.NamedPitch("d'"),
+                        pitchtools.NamedPitch("e'"),
+                        pitchtools.NamedPitch("f'"),
+                        pitchtools.NamedPitch("af'"),
+                        ),
+                    item_class=pitchtools.NamedPitch,
+                    ),
+                ),
+            ratio=mathtools.Ratio((1, 2, 1, 2, 1)),
+            ),
         ),
     rhythm_maker=consort.tools.CompositeRhythmMaker(
         default=rhythmmakertools.TaleaRhythmMaker(

@@ -13,9 +13,15 @@
         \tag #'time
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 5/8
+                \time 3/8
                 \tempo 4=72
-                s1 * 5/8
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
             }
             {
                 \time 7/8
@@ -29,8 +35,7 @@
                 s1 * 3/8
             }
             {
-                \time 5/8
-                s1 * 5/8
+                s1 * 3/8
             }
         }
         \tag #'violin-1
@@ -54,9 +59,6 @@
                         {
                             <d f>4. :32 \mp \>
                         }
-                        {
-                            <d f>4 :32 -\accent \pp \repeatTie \>
-                        }
                         % [Violin 1 Voice] Measure 2
                         {
                             <d f>4 :32 \ppp \repeatTie
@@ -68,48 +70,52 @@
                         }
                     }
                     {
+                        % [Violin 1 Voice] Measure 3
                         {
-                            <f bf>4 :32 \ppp
+                            <d g>8 :64 \ppp
                         }
                     }
                     {
                         {
                             r4
-                        }
-                    }
-                    {
-                        % [Violin 1 Voice] Measure 3
-                        {
-                            <f af g'>4 :32 \mp \>
-                            <f af g'>16 :128 \ppp \repeatTie
-                        }
-                    }
-                    {
-                        {
-                            r16
                         }
                     }
                     {
                         % [Violin 1 Voice] Measure 4
                         {
-                            <f bf>4 :32 \ppp \<
-                            <f bf>16 :128 \mp \repeatTie
+                            <f af g'>4. :32 \mp \<
+                            <f af g'>8 :64 -\accent \repeatTie
                         }
-                    }
-                    {
                         {
-                            r16
+                            <f af g'>8 :64 \mf \repeatTie \>
+                            <f af g'>4 :32 \repeatTie
                         }
                         % [Violin 1 Voice] Measure 5
                         {
-                            r4
-                            r16
+                            <f af g'>4 :32 \ppp \repeatTie
                         }
                     }
                     {
                         {
-                            <g, bf, d a>16 :128 \mp
-                            <g, bf, d a>4 :32 \repeatTie
+                            r8
+                        }
+                        % [Violin 1 Voice] Measure 6
+                        {
+                            r4
+                        }
+                    }
+                    {
+                        {
+                            <g, c>8 :64 \ppp \<
+                        }
+                        % [Violin 1 Voice] Measure 7
+                        {
+                            <g, c>4 :32 \mp \repeatTie
+                        }
+                    }
+                    {
+                        {
+                            r8
                             \bar "|."
                         }
                     }
@@ -135,63 +141,69 @@
                     {
                         % [Violin 2 Voice] Measure 1
                         {
-                            r8.
+                            r4
                         }
                     }
                     {
                         {
-                            <d f>8. :64 \ppp \< [
-                            \set stemLeftBeamCount = 2
-                            <d f>16 :128 -\accent \repeatTie ]
-                        }
-                        {
-                            <d f>8. :64 \p \repeatTie
+                            <d f>8 :64 \mp \>
                         }
                         % [Violin 2 Voice] Measure 2
                         {
-                            <d f>8. :64 \repeatTie \<
+                            <d f>4 :32 -\accent \p \repeatTie \<
                         }
                         {
-                            <d f>8. :64 -\accent \mf \repeatTie \>
-                            <d f>4 :32 \repeatTie
-                            <d f>16 :128 \mp \repeatTie
+                            <d f>8 :64 \mf \repeatTie \>
                         }
-                    }
-                    {
-                        {
-                            r8.
-                        }
-                    }
-                    {
                         % [Violin 2 Voice] Measure 3
                         {
-                            <f bf>4 :32 \mp
+                            <d f>4 :32 \ppp \repeatTie
                         }
                     }
                     {
                         {
                             r8
                         }
+                    }
+                    {
                         % [Violin 2 Voice] Measure 4
                         {
+                            <f bf>4 :32 \ppp
+                        }
+                    }
+                    {
+                        {
+                            r8
                             r8
                         }
                     }
                     {
                         {
-                            <g, bf, a>4 :32 \ppp
+                            <f af g'>8 :64 \mp \<
+                        }
+                        {
+                            <f af g'>4 :32 -\accent \mf \repeatTie \>
+                        }
+                        % [Violin 2 Voice] Measure 5
+                        {
+                            <f af g'>4 :32 \p \repeatTie
+                        }
+                        {
+                            <f af g'>8 :64 \repeatTie \<
+                        }
+                        % [Violin 2 Voice] Measure 6
+                        {
+                            <f af g'>4. :32 -\accent \mf \repeatTie \>
+                        }
+                        % [Violin 2 Voice] Measure 7
+                        {
+                            <f af g'>8 :64 \ppp \repeatTie
                         }
                     }
                     {
-                        % [Violin 2 Voice] Measure 5
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
+                            r4
                             \bar "|."
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 }
@@ -216,48 +228,70 @@
                     {
                         % [Viola Voice] Measure 1
                         {
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            <d f>4 :32 \ppp \<
+                        }
+                        % [Viola Voice] Measure 2
+                        {
+                            <d f>8 :64 -\accent \pp \repeatTie \<
+                        }
+                        {
+                            <d f>8 :64 \mf \repeatTie \>
+                        }
+                        {
+                            <d f>8 :64 \p \repeatTie \<
+                        }
+                        % [Viola Voice] Measure 3
+                        {
+                            <d f>8 :64 \mp \repeatTie
+                        }
+                    }
+                    {
+                        {
+                            r4
+                        }
+                        % [Viola Voice] Measure 4
+                        {
                             r4
                         }
                     }
                     {
                         {
-                            <d f>8 :64 \mp \>
-                            <d f>4 :32 -\accent \repeatTie
+                            <f bf>8 :64 \mp \>
+                            <f bf>4 :32 -\accent \repeatTie
                         }
-                        % [Viola Voice] Measure 2
                         {
-                            <d f>4. :32 \ppp \repeatTie
+                            <f bf>4 :32 \pp \repeatTie
                         }
-                    }
-                    {
-                        {
-                            r2
-                        }
-                        % [Viola Voice] Measure 3
-                        {
-                            r8
-                        }
-                    }
-                    {
-                        {
-                            <f bf>4 :32 \ppp \<
-                        }
-                        % [Viola Voice] Measure 4
-                        {
-                            <f bf>4. :32 \mp \repeatTie
-                        }
-                    }
-                    {
                         % [Viola Voice] Measure 5
                         {
-                            r8
+                            <f bf>8 :64 \repeatTie \<
+                        }
+                        {
+                            <f bf>4 :32 -\accent \mf \repeatTie \>
+                        }
+                        % [Viola Voice] Measure 6
+                        {
+                            <f bf>4 :32 \ppp \repeatTie
                         }
                     }
                     {
                         {
-                            <g, bf, a>4 :32 \mp \>
-                            <g, bf, a>4 :32 \ppp \repeatTie
+                            r8
+                        }
+                        % [Viola Voice] Measure 7
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
                             \bar "|."
+                            \stopStaff
+                            \startStaff
                         }
                     }
                 }
@@ -282,62 +316,68 @@
                     {
                         % [Cello Voice] Measure 1
                         {
-                            r8
+                            <d f>4. :32 \ppp \<
                         }
-                    }
-                    {
-                        {
-                            <d f>4 :32 \ppp \<
-                        }
+                        % [Cello Voice] Measure 2
                         {
                             <d f>4 :32 \mp \repeatTie
                         }
                     }
                     {
-                        % [Cello Voice] Measure 2
                         {
-                            r4
-                            r16
+                            r8
                         }
                     }
                     {
-                        {
-                            <d g>16 :128 \mp \>
-                            <d g>4 :32 -\accent \repeatTie
-                            <d g>16 :128 \ppp \repeatTie
-                        }
-                    }
-                    {
-                        {
-                            r8.
-                        }
                         % [Cello Voice] Measure 3
                         {
-                            r8.
-                        }
-                    }
-                    {
-                        {
-                            <f af g'>8. :64 \ppp \<
+                            <d g>4. :32 \mp \>
                         }
                         % [Cello Voice] Measure 4
                         {
-                            <f af g'>8. :64 -\accent \mf \repeatTie \>
-                        }
-                        {
-                            <f af g'>8. :64 \mp \repeatTie
+                            <d g>8 :64 \ppp \repeatTie
                         }
                     }
                     {
-                        % [Cello Voice] Measure 5
                         {
                             r4
                         }
                     }
                     {
                         {
+                            <f af g'>4 :32 \ppp \<
+                        }
+                        {
+                            <f af g'>4 :32 -\accent \p \repeatTie \<
+                        }
+                        % [Cello Voice] Measure 5
+                        {
+                            <f af g'>8 :64 \mf \repeatTie \>
+                        }
+                        {
+                            <f af g'>4 :32 \mp \repeatTie
+                        }
+                    }
+                    {
+                        % [Cello Voice] Measure 6
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                    }
+                    {
+                        % [Cello Voice] Measure 7
+                        {
                             <g, c>8 :64 \mp
-                            <g, c>4 :32 \repeatTie
+                        }
+                    }
+                    {
+                        {
+                            r4
                                 _ \markup {
                                     \italic
                                         \center-column

@@ -56,7 +56,10 @@ wind_agitato_music_specifier = consort.tools.MusicSpecifier(
         accents_short=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [
-                    indicatortools.Articulation('accent'),
+                    [
+                        indicatortools.Articulation('accent'),
+                        indicatortools.Articulation('staccatissimo'),
+                        ],
                     ]
                 ),
             selector=selectortools.Selector(
@@ -241,47 +244,6 @@ wind_agitato_music_specifier = consort.tools.MusicSpecifier(
                     selectortools.PatternedSelectorCallback(
                         pattern=rhythmmakertools.BooleanPattern(
                             indices=(0, 2),
-                            period=3,
-                            ),
-                        ),
-                    selectortools.PrototypeSelectorCallback(
-                        prototype=scoretools.Leaf,
-                        ),
-                    ),
-                ),
-            ),
-        staccatissimi=consort.tools.AttachmentExpression(
-            attachments=datastructuretools.TypedList(
-                [
-                    indicatortools.Articulation('staccatissimo'),
-                    ]
-                ),
-            selector=selectortools.Selector(
-                callbacks=(
-                    selectortools.LogicalTieSelectorCallback(
-                        flatten=True,
-                        pitched=True,
-                        trivial=True,
-                        only_with_head=False,
-                        only_with_tail=False,
-                        ),
-                    selectortools.DurationSelectorCallback(
-                        duration=selectortools.DurationInequality(
-                            operator_string='==',
-                            duration=durationtools.Duration(1, 16),
-                            ),
-                        preprolated=True,
-                        ),
-                    selectortools.ContiguitySelectorCallback(),
-                    selectortools.LengthSelectorCallback(
-                        length=selectortools.LengthInequality(
-                            operator_string='>',
-                            length=1,
-                            ),
-                        ),
-                    selectortools.PatternedSelectorCallback(
-                        pattern=rhythmmakertools.BooleanPattern(
-                            indices=(1,),
                             period=3,
                             ),
                         ),

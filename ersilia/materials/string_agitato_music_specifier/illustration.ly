@@ -13,9 +13,15 @@
         \tag #'time
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 5/8
+                \time 3/8
                 \tempo 4=72
-                s1 * 5/8
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
             }
             {
                 \time 7/8
@@ -29,8 +35,7 @@
                 s1 * 3/8
             }
             {
-                \time 5/8
-                s1 * 5/8
+                s1 * 3/8
             }
         }
         \tag #'violin-1
@@ -72,6 +77,7 @@
                             \set stemLeftBeamCount = 2
                             c'''16 -\staccato ]
                         }
+                        % [Violin 1 Voice] Measure 2
                         {
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
@@ -93,145 +99,158 @@
                                 }
                             \once \override TextSpanner.dash-fraction = 1
                             \pitchedTrill
-                            b''4 -\accent \mp \startTextSpan \< \startTrillSpan d'''
+                            b'4 -\accent \mf \startTextSpan \startTrillSpan d''
                             <> \stopTextSpan
                             <> \stopTrillSpan
-                        }
-                        % [Violin 1 Voice] Measure 2
-                        \times 4/5 {
-                            <
-                                a'
-                                \tweak #'style #'harmonic
-                                d''
-                            >16 -\staccato -\staccato \fff \fff \> [ (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            a'16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            a'16 -\staccato )
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            <
-                                a'
-                                \tweak #'style #'harmonic
-                                d''
-                            >16 -\staccato -\staccato \mf \mf ]
                         }
                     }
                     {
                         {
                             r8
+                        }
+                        % [Violin 1 Voice] Measure 3
+                        {
                             r16
                         }
                     }
                     {
                         {
-                            b''16 -\staccato \f [ (
-                            \set stemLeftBeamCount = 2
-                            b'16 -\staccato ] )
+                            a''16 -\staccato \f
                         }
                     }
                     {
                         {
-                            r16
                             r4
                         }
                     }
                     {
-                        % [Violin 1 Voice] Measure 3
+                        % [Violin 1 Voice] Measure 4
+                        {
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        flautando
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \pitchedTrill
+                            b''4. -\accent \f \startTextSpan \> \startTrillSpan d'''
+                            b''8 \repeatTie
+                            <> \stopTextSpan
+                            <> \stopTrillSpan
+                        }
                         \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 5/6 {
-                            e''16 -\staccato \f \> [ (
+                        \times 3/4 {
+                            d''16 -\staccato \mp \< [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            e''16 -\staccato )
+                            <
+                                d''
+                                \tweak #'style #'harmonic
+                                g''
+                            >16 -\staccato -\staccato )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <
-                                ef''
-                                \tweak #'style #'harmonic
-                                af''
-                            >16 -\staccato -\staccato (
+                            d''16 -\staccato (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            ef''16 -\staccato
+                            f''16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <
+                                f''
+                                \tweak #'style #'harmonic
+                                bf''
+                            >16 -\staccato -\staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            f'16 -\staccato
                             \set stemLeftBeamCount = 2
                             <
-                                ef''
+                                f'
                                 \tweak #'style #'harmonic
-                                af''
+                                bf'
                             >16 -\staccato -\staccato \mf \mf ] )
                         }
                     }
                     {
-                        {
-                            r16
-                        }
-                    }
-                    {
-                        % [Violin 1 Voice] Measure 4
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 5/7 {
-                            f'16 -\staccato \f \> [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16 -\staccato (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <
-                                f'
-                                \tweak #'style #'harmonic
-                                bf'
-                            >16 -\staccato -\staccato
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16 -\staccato )
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            <
-                                f'
-                                \tweak #'style #'harmonic
-                                bf'
-                            >16 -\staccato -\staccato \mf \mf ]
-                        }
-                    }
-                    {
-                        {
-                            r16
-                        }
                         % [Violin 1 Voice] Measure 5
                         {
-                            r4.
+                            r16
                         }
                     }
                     {
                         {
-                            d'16 -\staccato \f [ (
+                            ef''16 -\staccato \f [ (
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            d'16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            <
-                                d'
-                                \tweak #'style #'harmonic
-                                g'
-                            >16 -\staccato -\staccato ] )
+                            ef''16 -\staccato ] )
+                        }
+                    }
+                    {
+                        {
+                            r8.
+                        }
+                        % [Violin 1 Voice] Measure 6
+                        {
+                            r4
+                        }
+                    }
+                    {
+                        {
+                            f'16 -\staccato \f
                         }
                     }
                     {
                         {
                             r16
+                        }
+                    }
+                    {
+                        % [Violin 1 Voice] Measure 7
+                        {
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        flautando
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \pitchedTrill
+                            af'4 -\accent \f \startTextSpan \startTrillSpan df''
+                            <> \stopTextSpan
+                            <> \stopTrillSpan
+                        }
+                    }
+                    {
+                        {
+                            r8
                             \bar "|."
                         }
                     }
@@ -257,59 +276,34 @@
                     {
                         % [Violin 2 Voice] Measure 1
                         {
-                            r8.
-                        }
-                    }
-                    {
-                        {
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        flautando
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \pitchedTrill
-                            d''8. -\accent \f \startTextSpan \> [ \startTrillSpan g''
-                            \set stemLeftBeamCount = 2
-                            d''16 \repeatTie ]
-                            <> \stopTextSpan
-                            <> \stopTrillSpan
-                        }
-                        {
-                            b''16 -\staccato \mf [ (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            b''16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            <
-                                b'
-                                \tweak #'style #'harmonic
-                                e''
-                            >16 -\staccato -\staccato ] )
-                        }
-                    }
-                    {
-                        % [Violin 2 Voice] Measure 2
-                        {
+                            r4
                             r16
                         }
                     }
                     {
                         {
-                            a''16 -\staccato \f \> [ (
+                            <
+                                f''
+                                \tweak #'style #'harmonic
+                                bf''
+                            >16 -\staccato -\staccato \f \f \> (
+                        }
+                        % [Violin 2 Voice] Measure 2
+                        \times 4/5 {
+                            cs'''16 -\staccato \mp \< [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            cs''16 -\staccato )
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <
+                                a''
+                                \tweak #'style #'harmonic
+                                d'''
+                            >16 -\staccato -\staccato (
                             \set stemLeftBeamCount = 2
                             a''16 -\staccato ] )
                         }
@@ -334,72 +328,166 @@
                                 }
                             \once \override TextSpanner.dash-fraction = 1
                             \pitchedTrill
-                            b'8. -\accent \mp \startTextSpan \< \startTrillSpan d''
-                            b'4 \repeatTie
-                            b'16 \mf \repeatTie
+                            a''8 -\accent \mf \startTextSpan \startTrillSpan c'''
                             <> \stopTextSpan
                             <> \stopTrillSpan
                         }
                     }
                     {
-                        {
-                            r8.
-                        }
-                    }
-                    {
                         % [Violin 2 Voice] Measure 3
                         {
-                            f''16 -\staccato \f \> [ (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16 -\staccato )
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
                             r16
+                        }
+                    }
+                    {
+                        {
+                            b'16 -\staccato \f [ (
                             \set stemLeftBeamCount = 2
-                            <
-                                f'
-                                \tweak #'style #'harmonic
-                                bf'
-                            >16 -\staccato -\staccato \mf \mf ]
+                            \set stemRightBeamCount = 2
+                            b'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            b'16 -\staccato ] )
                         }
                     }
                     {
                         {
                             r8
                         }
+                    }
+                    {
                         % [Violin 2 Voice] Measure 4
+                        \times 4/5 {
+                            <
+                                a'
+                                \tweak #'style #'harmonic
+                                d''
+                            >16 -\staccato -\staccato \f \f \> [ (
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            b'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            b'16 -\staccato )
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            b'16 -\staccato \mf ]
+                        }
+                    }
+                    {
                         {
+                            r8
                             r8
                         }
                     }
                     {
                         {
-                            c''16 -\staccato \f \> [
+                            e''16 -\staccato \f \< [ (
+                            \set stemLeftBeamCount = 2
+                            <
+                                e''
+                                \tweak #'style #'harmonic
+                                a''
+                            >16 -\staccato -\staccato ] )
+                        }
+                        {
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        flautando
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \pitchedTrill
+                            f''4 -\accent \fff \startTextSpan \> \startTrillSpan bf''
+                            <> \stopTextSpan
+                            <> \stopTrillSpan
+                        }
+                        % [Violin 2 Voice] Measure 5
+                        \times 4/5 {
+                            ef'16 -\staccato \mp \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            f''16 -\staccato (
+                            <
+                                ef'
+                                \tweak #'style #'harmonic
+                                af'
+                            >16 -\staccato -\staccato (
                             \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            ef'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            ef'16 -\staccato ]
+                        }
+                        {
                             <
                                 f'
                                 \tweak #'style #'harmonic
                                 bf'
-                            >16 -\staccato -\staccato \mf \mf ] )
+                            >16 -\staccato -\staccato \fff \fff \> [
+                            \set stemLeftBeamCount = 2
+                            ef'16 -\staccato ] )
+                        }
+                        % [Violin 2 Voice] Measure 6
+                        {
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        flautando
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \pitchedTrill
+                            c''4. -\accent \mp \startTextSpan \< \startTrillSpan ef''
+                            <> \stopTextSpan
+                            <> \stopTrillSpan
+                        }
+                        % [Violin 2 Voice] Measure 7
+                        \times 2/3 {
+                            r16 [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <
+                                e'
+                                \tweak #'style #'harmonic
+                                a'
+                            >16 -\staccato -\staccato (
+                            \set stemLeftBeamCount = 2
+                            e'16 -\staccato \mf ] )
                         }
                     }
                     {
-                        % [Violin 2 Voice] Measure 5
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
+                            r4
                             \bar "|."
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 }
@@ -423,6 +511,88 @@
                     \clef "alto"
                     {
                         % [Viola Voice] Measure 1
+                        {
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            d''16 -\staccato \f \> [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            d''16 -\staccato (
+                            \set stemLeftBeamCount = 2
+                            <
+                                d''
+                                \tweak #'style #'harmonic
+                                g''
+                            >16 -\staccato -\staccato ]
+                        }
+                        % [Viola Voice] Measure 2
+                        \times 2/3 {
+                            c'''16 -\staccato \mp \< [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <
+                                c'''
+                                \tweak #'style #'harmonic
+                                f'''
+                            >16 -\staccato -\staccato )
+                            \set stemLeftBeamCount = 2
+                            r16 ]
+                        }
+                        {
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        flautando
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \pitchedTrill
+                            b'8 -\accent \fff \startTextSpan \> \startTrillSpan d''
+                            <> \stopTextSpan
+                            <> \stopTrillSpan
+                        }
+                        {
+                            a'16 -\staccato \mp \< [ (
+                            \set stemLeftBeamCount = 2
+                            b'16 -\staccato ]
+                        }
+                        % [Viola Voice] Measure 3
+                        \times 2/3 {
+                            <
+                                b'
+                                \tweak #'style #'harmonic
+                                e''
+                            >16 -\staccato -\staccato ) [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            a'16 -\staccato \mf ]
+                        }
+                    }
+                    {
+                        {
+                            r4
+                        }
+                        % [Viola Voice] Measure 4
                         {
                             r4
                         }
@@ -454,76 +624,46 @@
                             <> \stopTextSpan
                             <> \stopTrillSpan
                         }
-                        % [Viola Voice] Measure 2
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 3/4 {
-                            b'16 -\staccato \fff \> [ (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            b'16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <
-                                b'
-                                \tweak #'style #'harmonic
-                                e''
-                            >16 -\staccato -\staccato
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            b'16 -\staccato )
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <
-                                b'
-                                \tweak #'style #'harmonic
-                                e''
-                            >16 -\staccato -\staccato (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            b'16 -\staccato \mf )
-                            \set stemLeftBeamCount = 2
-                            r16 ]
-                        }
-                    }
-                    {
-                        {
-                            r2
-                        }
-                        % [Viola Voice] Measure 3
-                        {
-                            r8
-                        }
-                    }
-                    {
                         \times 2/3 {
-                            af''16 -\staccato \f \> [ (
+                            <
+                                af''
+                                \tweak #'style #'harmonic
+                                df'''
+                            >16 -\staccato -\staccato \fff \fff \> [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c''16 -\staccato
+                            f''16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            f''16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             <
-                                c''
-                                \tweak #'style #'harmonic
                                 f''
-                            >16 -\staccato -\staccato
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c''16 -\staccato )
+                                \tweak #'style #'harmonic
+                                bf''
+                            >16 -\staccato -\staccato )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
-                            <
-                                c''
-                                \tweak #'style #'harmonic
-                                f''
-                            >16 -\staccato -\staccato ]
+                            f'16 -\staccato ] (
                         }
-                        % [Viola Voice] Measure 4
+                        % [Viola Voice] Measure 5
+                        {
+                            <
+                                f'
+                                \tweak #'style #'harmonic
+                                bf'
+                            >16 -\staccato -\staccato \mf \mf )
+                        }
+                    }
+                    {
+                        {
+                            r16
+                        }
+                    }
+                    {
                         {
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
@@ -545,49 +685,44 @@
                                 }
                             \once \override TextSpanner.dash-fraction = 1
                             \pitchedTrill
-                            c''4. -\accent \mf \startTextSpan \startTrillSpan ef''
+                            c''4 -\accent \f \startTextSpan \startTrillSpan ef''
                             <> \stopTextSpan
                             <> \stopTrillSpan
                         }
                     }
                     {
-                        % [Viola Voice] Measure 5
+                        % [Viola Voice] Measure 6
                         {
-                            r8
+                            r16
                         }
                     }
                     {
                         {
-                            ef''16 -\staccato \f \> [ (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            ef''16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
                             <
-                                f'
+                                ef'
                                 \tweak #'style #'harmonic
-                                bf'
-                            >16 -\staccato -\staccato )
+                                af'
+                            >16 -\staccato -\staccato \f \f [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            r16
+                            c'16 -\staccato
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16 -\staccato (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <
-                                f'
-                                \tweak #'style #'harmonic
-                                bf'
-                            >16 -\staccato -\staccato
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            f'16 -\staccato \mf ] )
+                            c'16 -\staccato ] )
+                        }
+                    }
+                    {
+                        {
+                            r8
+                        }
+                        % [Viola Voice] Measure 7
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
                             \bar "|."
+                            \stopStaff
+                            \startStaff
                         }
                     }
                 }
@@ -611,121 +746,166 @@
                     \clef "bass"
                     {
                         % [Cello Voice] Measure 1
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            ef''16 -\staccato \f \> [ (
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <
+                                ef''
+                                \tweak #'style #'harmonic
+                                af''
+                            >16 -\staccato -\staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            ef''16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <
+                                ef''
+                                \tweak #'style #'harmonic
+                                af''
+                            >16 -\staccato -\staccato )
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            ef''16 -\staccato (
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            ef''16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            <
+                                ef''
+                                \tweak #'style #'harmonic
+                                af''
+                            >16 -\staccato -\staccato ] )
+                        }
+                        % [Cello Voice] Measure 2
+                        {
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        flautando
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \pitchedTrill
+                            d''4 -\accent \mf \startTextSpan \startTrillSpan f''
+                            <> \stopTextSpan
+                            <> \stopTrillSpan
+                        }
+                    }
+                    {
                         {
                             r8
                         }
                     }
                     {
+                        % [Cello Voice] Measure 3
                         {
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        flautando
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \pitchedTrill
-                            ef''4 -\accent \f \startTextSpan \> \startTrillSpan gf''
-                            <> \stopTextSpan
-                            <> \stopTrillSpan
-                        }
-                        {
-                            cs'''16 -\staccato \mf [ (
+                            b''16 -\staccato \f \> [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            a''16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            <
-                                a''
-                                \tweak #'style #'harmonic
-                                d'''
-                            >16 -\staccato -\staccato ] )
-                        }
-                    }
-                    {
-                        {
-                            r16
-                        }
-                        % [Cello Voice] Measure 2
-                        {
-                            r4
-                            r16
-                        }
-                    }
-                    {
-                        {
-                            a'16 -\staccato \f \> [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            a'16 -\staccato (
+                            b''16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             <
-                                a'
+                                b'
                                 \tweak #'style #'harmonic
-                                d''
-                            >16 -\staccato -\staccato
+                                e''
+                            >16 -\staccato -\staccato )
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            b''16 -\staccato (
+                            \set stemLeftBeamCount = 2
+                            <
+                                b'
+                                \tweak #'style #'harmonic
+                                e''
+                            >16 -\staccato -\staccato ]
+                        }
+                        % [Cello Voice] Measure 4
+                        \times 2/3 {
+                            a'16 -\staccato \mf [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             a'16 -\staccato
                             \set stemLeftBeamCount = 2
                             <
-                                af'
+                                a'
                                 \tweak #'style #'harmonic
-                                df''
-                            >16 -\staccato -\staccato \mf \mf ] )
+                                d''
+                            >16 -\staccato -\staccato ] )
                         }
                     }
                     {
-                        {
-                            r8.
-                        }
-                        % [Cello Voice] Measure 3
                         {
                             r4
                         }
                     }
                     {
                         {
-                            ef''16 -\staccato \f \> [ (
-                            \set stemLeftBeamCount = 2
-                            ef'16 -\staccato ]
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        flautando
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \pitchedTrill
+                            af'4 -\accent \f \startTextSpan \> \startTrillSpan cf''
+                            <> \stopTextSpan
+                            <> \stopTrillSpan
                         }
-                        % [Cello Voice] Measure 4
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 3/4 {
-                            <
-                                f'
-                                \tweak #'style #'harmonic
-                                bf'
-                            >16 -\staccato -\staccato \mp \mp \< [
+                        {
+                            d''16 -\staccato \mf [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            ef'16 -\staccato
+                            c''16 -\staccato
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <
-                                ef'
-                                \tweak #'style #'harmonic
-                                af'
-                            >16 -\staccato -\staccato )
+                            c'16 -\staccato ] )
+                        }
+                    }
+                    {
+                        {
+                            r16
+                        }
+                    }
+                    {
+                        % [Cello Voice] Measure 5
+                        {
+                            c''16 -\staccato \f \> [ (
                             \set stemLeftBeamCount = 2
-                            r16 ]
+                            c''16 -\staccato ] )
                         }
                         {
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -748,46 +928,32 @@
                                 }
                             \once \override TextSpanner.dash-fraction = 1
                             \pitchedTrill
-                            c'8. -\accent \mf \startTextSpan \startTrillSpan ef'
+                            ef''4 -\accent \mf \startTextSpan \startTrillSpan af''
                             <> \stopTextSpan
                             <> \stopTrillSpan
                         }
                     }
                     {
-                        % [Cello Voice] Measure 5
+                        % [Cello Voice] Measure 6
                         {
-                            r4
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
                         }
                     }
                     {
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 6/7 {
-                            af'16 -\staccato \f \> [ (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            af'16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <
-                                af'
-                                \tweak #'style #'harmonic
-                                df''
-                            >16 -\staccato -\staccato
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            af'16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <
-                                af'
-                                \tweak #'style #'harmonic
-                                df''
-                            >16 -\staccato -\staccato )
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
+                        % [Cello Voice] Measure 7
+                        {
+                            d''16 -\staccato \f
+                        }
+                    }
+                    {
+                        {
                             r16
-                            \set stemLeftBeamCount = 2
-                            af'16 -\staccato \mf ]
+                            r4
                                 _ \markup {
                                     \italic
                                         \center-column

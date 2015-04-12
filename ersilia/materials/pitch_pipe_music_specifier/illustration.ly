@@ -13,9 +13,15 @@
         \tag #'time
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 5/8
+                \time 3/8
                 \tempo 4=72
-                s1 * 5/8
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
+            }
+            {
+                s1 * 3/8
             }
             {
                 \time 7/8
@@ -29,8 +35,7 @@
                 s1 * 3/8
             }
             {
-                \time 5/8
-                s1 * 5/8
+                s1 * 3/8
             }
         }
         \tag #'violin-1
@@ -68,9 +73,6 @@
                                                     exhale
                                     }
                         }
-                        {
-                            c'4 \repeatTie
-                        }
                         % [Violin 1 Voice] Measure 2
                         {
                             c'4 \p \repeatTie
@@ -86,13 +88,14 @@
                         }
                     }
                     {
+                        % [Violin 1 Voice] Measure 3
                         {
                             \clef "percussion"
                             \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'4 \fp
+                            c'8 \fp
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -113,7 +116,7 @@
                         }
                     }
                     {
-                        % [Violin 1 Voice] Measure 3
+                        % [Violin 1 Voice] Measure 4
                         {
                             \clef "percussion"
                             \once \override Hairpin.circled-tip = ##t
@@ -121,7 +124,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'4 \<
+                            c'4. \<
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -130,50 +133,41 @@
                                                 \italic
                                                     exhale
                                     }
-                            c'16 \ppp \repeatTie
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            \clef "treble"
+                            c'8 \repeatTie
                         }
-                    }
-                    {
                         {
-                            r16
-                        }
-                    }
-                    {
-                        % [Violin 1 Voice] Measure 4
-                        {
-                            \clef "percussion"
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'4 \fp
-                                ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \smaller
-                                                \italic
-                                                    exhale
-                                    }
-                            c'16 \p \repeatTie
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            \clef "treble"
-                        }
-                    }
-                    {
-                        {
-                            r16
+                            c'16 \repeatTie [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\accent
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\accent
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\accent
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\accent
+                            \set stemLeftBeamCount = 2
+                            c'16 -\accent ]
                         }
                         % [Violin 1 Voice] Measure 5
                         {
+                            c'4 \ppp \repeatTie
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        {
+                            r8
+                        }
+                        % [Violin 1 Voice] Measure 6
+                        {
                             r4
-                            r16
                         }
                     }
                     {
@@ -183,21 +177,29 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'16 \ppp
+                            c'8 \fp
                                 ^ \markup {
                                     \box
                                         \pad-around
                                             #0.5
                                             \smaller
                                                 \italic
-                                                    inhale
+                                                    exhale
                                     }
+                        }
+                        % [Violin 1 Voice] Measure 7
+                        {
                             c'4 \repeatTie
-                            \bar "|."
                             \stopStaff
                             \startStaff
                             \revert NoteHead #'style
                             \clef "treble"
+                        }
+                    }
+                    {
+                        {
+                            r8
+                            \bar "|."
                         }
                     }
                 }
@@ -222,72 +224,37 @@
                     {
                         % [Violin 2 Voice] Measure 1
                         {
-                            r8.
+                            r4
                         }
                     }
                     {
                         {
                             \clef "percussion"
+                            \once \override Hairpin.circled-tip = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'8. \fp \> [
+                            c'8 \<
                                 ^ \markup {
                                     \box
                                         \pad-around
                                             #0.5
                                             \smaller
                                                 \italic
-                                                    exhale
+                                                    inhale
                                     }
-                            \set stemLeftBeamCount = 2
-                            c'16 \repeatTie ]
-                        }
-                        {
-                            c'16 \repeatTie [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\accent
-                            \set stemLeftBeamCount = 2
-                            c'16 -\accent ]
                         }
                         % [Violin 2 Voice] Measure 2
                         {
-                            c'8. \ppp \repeatTie \<
-                        }
-                        {
-                            c'8. \repeatTie
                             c'4 \repeatTie
-                            c'16 \mf \repeatTie
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            \clef "treble"
                         }
-                    }
-                    {
                         {
-                            r8.
+                            c'8 \mf \repeatTie
                         }
-                    }
-                    {
                         % [Violin 2 Voice] Measure 3
                         {
-                            \clef "percussion"
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'4 \mf
-                                ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \smaller
-                                                \italic
-                                                    exhale
-                                    }
+                            c'4 \repeatTie
                             \stopStaff
                             \startStaff
                             \revert NoteHead #'style
@@ -298,12 +265,9 @@
                         {
                             r8
                         }
-                        % [Violin 2 Voice] Measure 4
-                        {
-                            r8
-                        }
                     }
                     {
+                        % [Violin 2 Voice] Measure 4
                         {
                             \clef "percussion"
                             \override NoteHead #'style = #'cross
@@ -317,7 +281,7 @@
                                             #0.5
                                             \smaller
                                                 \italic
-                                                    inhale
+                                                    exhale
                                     }
                             \stopStaff
                             \startStaff
@@ -326,15 +290,64 @@
                         }
                     }
                     {
-                        % [Violin 2 Voice] Measure 5
                         {
+                            r8
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            \clef "percussion"
+                            \once \override Hairpin.circled-tip = ##t
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/8
-                            \bar "|."
+                            c'8 \<
+                                ^ \markup {
+                                    \box
+                                        \pad-around
+                                            #0.5
+                                            \smaller
+                                                \italic
+                                                    exhale
+                                    }
+                        }
+                        {
+                            c'4 \repeatTie
+                        }
+                        % [Violin 2 Voice] Measure 5
+                        {
+                            c'16 \p \repeatTie \> [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\accent
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\accent
+                            \set stemLeftBeamCount = 2
+                            c'16 -\accent ]
+                        }
+                        {
+                            c'8 \repeatTie
+                        }
+                        % [Violin 2 Voice] Measure 6
+                        {
+                            c'4. \ppp \repeatTie \<
+                        }
+                        % [Violin 2 Voice] Measure 7
+                        {
+                            c'8 \mf \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        {
+                            r4
+                            \bar "|."
                         }
                     }
                 }
@@ -359,6 +372,53 @@
                     {
                         % [Viola Voice] Measure 1
                         {
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            \clef "percussion"
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'4 \fp \<
+                                ^ \markup {
+                                    \box
+                                        \pad-around
+                                            #0.5
+                                            \smaller
+                                                \italic
+                                                    inhale
+                                    }
+                        }
+                        % [Viola Voice] Measure 2
+                        {
+                            c'8 \repeatTie
+                        }
+                        {
+                            c'8 \mf \repeatTie \>
+                        }
+                        {
+                            c'16 \repeatTie [
+                            \set stemLeftBeamCount = 2
+                            c'16 ]
+                        }
+                        % [Viola Voice] Measure 3
+                        {
+                            c'8 \p \repeatTie
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            \clef "alto"
+                        }
+                    }
+                    {
+                        {
+                            r4
+                        }
+                        % [Viola Voice] Measure 4
+                        {
                             r4
                         }
                     }
@@ -381,79 +441,46 @@
                                     }
                             c'4 \repeatTie
                         }
-                        % [Viola Voice] Measure 2
                         {
-                            c'4. \ppp \repeatTie
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            \clef "alto"
+                            c'16 \repeatTie [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\accent
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\accent
+                            \set stemLeftBeamCount = 2
+                            c'16 -\accent ]
                         }
-                    }
-                    {
-                        {
-                            r2
-                        }
-                        % [Viola Voice] Measure 3
-                        {
-                            r8
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'4 \fp
-                                ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \smaller
-                                                \italic
-                                                    exhale
-                                    }
-                        }
-                        % [Viola Voice] Measure 4
-                        {
-                            c'4. \p \repeatTie
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            \clef "alto"
-                        }
-                    }
-                    {
                         % [Viola Voice] Measure 5
                         {
-                            r8
+                            c'8 \ppp \repeatTie \<
+                        }
+                        {
+                            c'4 \repeatTie
+                        }
+                        % [Viola Voice] Measure 6
+                        {
+                            c'4 \mf \repeatTie
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            \clef "alto"
                         }
                     }
                     {
                         {
-                            \clef "percussion"
-                            \once \override Hairpin.circled-tip = ##t
-                            \override NoteHead #'style = #'cross
+                            r8
+                        }
+                        % [Viola Voice] Measure 7
+                        {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'4 \<
-                                ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \smaller
-                                                \italic
-                                                    inhale
-                                    }
-                            c'4 \mf \repeatTie
+                            R1 * 3/8
                             \bar "|."
                             \stopStaff
                             \startStaff
-                            \revert NoteHead #'style
-                            \clef "alto"
                         }
                     }
                 }
@@ -478,7 +505,66 @@
                     {
                         % [Cello Voice] Measure 1
                         {
+                            \clef "percussion"
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'4. \fp
+                                ^ \markup {
+                                    \box
+                                        \pad-around
+                                            #0.5
+                                            \smaller
+                                                \italic
+                                                    exhale
+                                    }
+                        }
+                        % [Cello Voice] Measure 2
+                        {
+                            c'4 \p \repeatTie
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            \clef "bass"
+                        }
+                    }
+                    {
+                        {
                             r8
+                        }
+                    }
+                    {
+                        % [Cello Voice] Measure 3
+                        {
+                            \clef "percussion"
+                            \once \override Hairpin.circled-tip = ##t
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'4. \<
+                                ^ \markup {
+                                    \box
+                                        \pad-around
+                                            #0.5
+                                            \smaller
+                                                \italic
+                                                    inhale
+                                    }
+                        }
+                        % [Cello Voice] Measure 4
+                        {
+                            c'8 \mf \repeatTie
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            \clef "bass"
+                        }
+                    }
+                    {
+                        {
+                            r4
                         }
                     }
                     {
@@ -499,97 +585,48 @@
                                     }
                         }
                         {
-                            c'4 \ppp \repeatTie
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            \clef "bass"
+                            c'16 \repeatTie [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\accent
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\accent
+                            \set stemLeftBeamCount = 2
+                            c'16 -\accent ]
                         }
-                    }
-                    {
-                        % [Cello Voice] Measure 2
-                        {
-                            r4
-                            r16
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
-                            \once \override Hairpin.circled-tip = ##t
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'16 \<
-                                ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \smaller
-                                                \italic
-                                                    exhale
-                                    }
-                            c'4 \repeatTie
-                            c'16 \p \repeatTie
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            \clef "bass"
-                        }
-                    }
-                    {
-                        {
-                            r8.
-                        }
-                        % [Cello Voice] Measure 3
-                        {
-                            r8.
-                        }
-                    }
-                    {
-                        {
-                            \clef "percussion"
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'8. \fp \<
-                                ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \smaller
-                                                \italic
-                                                    inhale
-                                    }
-                        }
-                        % [Cello Voice] Measure 4
-                        {
-                            c'8. \repeatTie
-                        }
-                        {
-                            c'8. \mf \repeatTie
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            \clef "bass"
-                        }
-                    }
-                    {
                         % [Cello Voice] Measure 5
                         {
-                            r4
+                            c'8 \ppp \repeatTie
+                        }
+                        {
+                            c'4 \repeatTie
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            \clef "bass"
                         }
                     }
                     {
+                        % [Cello Voice] Measure 6
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
+                    }
+                    {
+                        % [Cello Voice] Measure 7
                         {
                             \clef "percussion"
                             \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'8 \p
+                            c'8 \mf
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -598,7 +635,15 @@
                                                 \italic
                                                     exhale
                                     }
-                            c'4 \repeatTie
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            \clef "bass"
+                        }
+                    }
+                    {
+                        {
+                            r4
                                 _ \markup {
                                     \italic
                                         \center-column
@@ -611,10 +656,6 @@
                                             }
                                     }
                             \bar "|."
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            \clef "bass"
                         }
                     }
                 }

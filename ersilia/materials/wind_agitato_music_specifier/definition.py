@@ -10,7 +10,12 @@ from ersilia.materials import abbreviations
 wind_agitato_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
         accents_short=consort.AttachmentExpression(
-            attachments=indicatortools.Articulation('accent'),
+            attachments=[
+                [
+                    indicatortools.Articulation('accent'),
+                    indicatortools.Articulation('staccatissimo'),
+                    ],
+                ],
             selector=selectortools.Selector()
                 .by_logical_tie(pitched=True)
                 .by_duration('==', (1, 16), preprolated=True)
@@ -67,21 +72,6 @@ wind_agitato_music_specifier = consort.MusicSpecifier(
                 .by_pattern(
                     pattern=rhythmmakertools.BooleanPattern(
                         indices=[0, 2],
-                        period=3,
-                        ),
-                    )
-                .by_leaves()
-            ),
-        staccatissimi=consort.AttachmentExpression(
-            attachments=indicatortools.Articulation('staccatissimo'),
-            selector=selectortools.Selector()
-                .by_logical_tie(pitched=True)
-                .by_duration('==', (1, 16), preprolated=True)
-                .by_contiguity()
-                .by_length('>', 1)
-                .by_pattern(
-                    pattern=rhythmmakertools.BooleanPattern(
-                        indices=[1],
                         period=3,
                         ),
                     )
