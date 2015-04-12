@@ -39,7 +39,7 @@ wind_tremolo_music_specifier = consort.MusicSpecifier(
         pitch_specifier=abbreviations.agitato_pitch_specifier,
         pitch_operation_specifier=abbreviations.pitch_operation_specifier,
         register_specifier=consort.RegisterSpecifier(
-            center_pitch='C4',
+            base_pitch='C4',
             ),
         ),
     rhythm_maker=rhythmmakertools.EvenDivisionRhythmMaker(

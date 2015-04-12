@@ -288,7 +288,7 @@ wind_agitato_music_specifier = consort.tools.MusicSpecifier(
     pitch_handler=consort.tools.PitchClassPitchHandler(
         forbid_repetitions=True,
         register_specifier=consort.tools.RegisterSpecifier(
-            center_pitch=pitchtools.NumberedPitch(0),
+            base_pitch=pitchtools.NumberedPitch(0),
             phrase_inflections=consort.tools.RegisterInflectionInventory(
                 [
                     consort.tools.RegisterInflection(

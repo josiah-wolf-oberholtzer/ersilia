@@ -61,7 +61,7 @@ percussion_marimba_agitato_music_specifier = consort.MusicSpecifier(
         leap_constraint=9,
         pitch_specifier=abbreviations.agitato_pitch_specifier,
         register_specifier=consort.RegisterSpecifier(
-            center_pitch='F2',
+            base_pitch='F2',
             phrase_inflections=consort.RegisterInflection.zigzag(6)
                 .reverse()
                 .align(),

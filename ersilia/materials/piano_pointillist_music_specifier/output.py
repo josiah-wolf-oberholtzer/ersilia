@@ -115,7 +115,7 @@ piano_pointillist_music_specifier = consort.tools.MusicSpecifier(
                 ]
             ),
         register_specifier=consort.tools.RegisterSpecifier(
-            center_pitch=pitchtools.NumberedPitch(-5),
+            base_pitch=pitchtools.NumberedPitch(-5),
             phrase_inflections=consort.tools.RegisterInflectionInventory(
                 [
                     consort.tools.RegisterInflection(

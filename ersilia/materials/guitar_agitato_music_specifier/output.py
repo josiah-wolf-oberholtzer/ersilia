@@ -223,7 +223,7 @@ guitar_agitato_music_specifier = consort.tools.MusicSpecifier(
                 ]
             ),
         register_specifier=consort.tools.RegisterSpecifier(
-            center_pitch=pitchtools.NumberedPitch(-15),
+            base_pitch=pitchtools.NumberedPitch(-15),
             phrase_inflections=consort.tools.RegisterInflectionInventory(
                 [
                     consort.tools.RegisterInflection(

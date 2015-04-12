@@ -26,7 +26,7 @@ wind_continuo_music_specifier = consort.MusicSpecifier(
         pitch_specifier="d' f' df'",
         pitch_application_rate='division',
         register_specifier=consort.RegisterSpecifier(
-            center_pitch='C4',
+            base_pitch='C4',
             ),
         ),
     rhythm_maker=rhythmmakertools.EvenDivisionRhythmMaker(

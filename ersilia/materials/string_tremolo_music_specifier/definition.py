@@ -34,7 +34,7 @@ string_tremolo_music_specifier = consort.MusicSpecifier(
         pitch_specifier=abbreviations.agitato_pitch_specifier,
         pitch_operation_specifier=abbreviations.pitch_operation_specifier,
         register_specifier=consort.RegisterSpecifier(
-            center_pitch='G3',
+            base_pitch='G3',
             ),
         ),
     rhythm_maker=rhythmmakertools.EvenDivisionRhythmMaker(

@@ -39,7 +39,7 @@ piano_pointillist_music_specifier = consort.MusicSpecifier(
             ),
         pitch_specifier=abbreviations.agitato_pitch_specifier,
         register_specifier=consort.RegisterSpecifier(
-            center_pitch='G3',
+            base_pitch='G3',
             phrase_inflections=consort.RegisterInflection
                 .zigzag(12)
                 .reverse()

@@ -45,7 +45,7 @@ percussion_marimba_tremolo_music_specifier = consort.MusicSpecifier(
                 ],
             ),
         register_specifier=consort.RegisterSpecifier(
-            center_pitch='F2',
+            base_pitch='F2',
             segment_inflections=consort.RegisterInflection
                 .zigzag(12)
                 .reverse()

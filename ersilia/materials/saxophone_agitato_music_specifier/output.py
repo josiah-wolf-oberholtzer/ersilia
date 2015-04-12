@@ -177,7 +177,7 @@ saxophone_agitato_music_specifier = consort.tools.MusicSpecifier(
         forbid_repetitions=True,
         leap_constraint=pitchtools.NumberedInterval(12),
         register_specifier=consort.tools.RegisterSpecifier(
-            center_pitch=pitchtools.NumberedPitch(-24),
+            base_pitch=pitchtools.NumberedPitch(-24),
             phrase_inflections=consort.tools.RegisterInflectionInventory(
                 [
                     consort.tools.RegisterInflection(

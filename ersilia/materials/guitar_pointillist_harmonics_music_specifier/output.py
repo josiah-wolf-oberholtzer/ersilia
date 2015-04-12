@@ -45,7 +45,7 @@ guitar_pointillist_harmonics_music_specifier = consort.tools.MusicSpecifier(
                 ]
             ),
         register_specifier=consort.tools.RegisterSpecifier(
-            center_pitch=pitchtools.NumberedPitch(-20),
+            base_pitch=pitchtools.NumberedPitch(-20),
             phrase_inflections=consort.tools.RegisterInflectionInventory(
                 [
                     consort.tools.RegisterInflection(

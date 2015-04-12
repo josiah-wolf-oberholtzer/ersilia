@@ -109,7 +109,7 @@ percussion_marimba_tremolo_music_specifier = consort.tools.MusicSpecifier(
                 ]
             ),
         register_specifier=consort.tools.RegisterSpecifier(
-            center_pitch=pitchtools.NumberedPitch(-19),
+            base_pitch=pitchtools.NumberedPitch(-19),
             segment_inflections=consort.tools.RegisterInflectionInventory(
                 [
                     consort.tools.RegisterInflection(

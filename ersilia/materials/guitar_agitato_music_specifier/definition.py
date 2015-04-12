@@ -70,7 +70,7 @@ guitar_agitato_music_specifier = consort.MusicSpecifier(
             ],
         pitch_specifier=abbreviations.agitato_pitch_specifier,
         register_specifier=consort.RegisterSpecifier(
-            center_pitch='A2',
+            base_pitch='A2',
             phrase_inflections=consort.RegisterInflection
                 .zigzag(6)
                 .reverse()

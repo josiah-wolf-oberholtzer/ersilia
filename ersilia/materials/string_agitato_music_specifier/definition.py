@@ -79,7 +79,7 @@ string_agitato_music_specifier = consort.MusicSpecifier(
         pitch_application_rate='division',
         pitch_specifier=abbreviations.agitato_pitch_specifier,
         register_specifier=consort.RegisterSpecifier(
-            center_pitch='G3',
+            base_pitch='G3',
             phrase_inflections=consort.RegisterInflection.zigzag(6)
                 .reverse()
                 .align(),

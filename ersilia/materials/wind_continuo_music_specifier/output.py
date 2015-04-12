@@ -78,7 +78,7 @@ wind_continuo_music_specifier = consort.tools.MusicSpecifier(
             ),
         pitch_application_rate='division',
         register_specifier=consort.tools.RegisterSpecifier(
-            center_pitch=pitchtools.NumberedPitch(0),
+            base_pitch=pitchtools.NumberedPitch(0),
             ),
         pitch_specifier=consort.tools.PitchSpecifier(
             pitch_segments=(

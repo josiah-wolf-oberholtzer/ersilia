@@ -92,7 +92,7 @@ string_tremolo_music_specifier = consort.tools.MusicSpecifier(
             ),
         pitch_application_rate='phrase',
         register_specifier=consort.tools.RegisterSpecifier(
-            center_pitch=pitchtools.NumberedPitch(-5),
+            base_pitch=pitchtools.NumberedPitch(-5),
             ),
         pitch_operation_specifier=consort.tools.PitchOperationSpecifier(
             pitch_operations=(

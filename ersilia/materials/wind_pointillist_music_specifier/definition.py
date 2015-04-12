@@ -25,7 +25,7 @@ wind_pointillist_music_specifier = consort.MusicSpecifier(
         forbid_repetitions=True,
         pitch_specifier=abbreviations.agitato_pitch_specifier,
         register_specifier=consort.RegisterSpecifier(
-            center_pitch='C4',
+            base_pitch='C4',
             phrase_inflections=consort.RegisterInflection
                 .zigzag(6)
                 .reverse()
