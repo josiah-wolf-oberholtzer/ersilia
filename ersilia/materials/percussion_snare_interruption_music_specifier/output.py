@@ -115,6 +115,7 @@ percussion_snare_interruption_music_specifier = consort.tools.MusicSpecifier(
                 ),
             ratio=mathtools.Ratio((1,)),
             ),
+        pitches_are_nonsemantic=True,
         ),
     rhythm_maker=consort.tools.CompositeRhythmMaker(
         default=rhythmmakertools.NoteRhythmMaker(

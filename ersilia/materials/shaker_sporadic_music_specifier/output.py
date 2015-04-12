@@ -135,6 +135,9 @@ shaker_sporadic_music_specifier = consort.tools.MusicSpecifier(
         ),
     color='blue',
     labels=('shakers',),
+    pitch_handler=consort.tools.AbsolutePitchHandler(
+        pitches_are_nonsemantic=True,
+        ),
     rhythm_maker=rhythmmakertools.TaleaRhythmMaker(
         talea=rhythmmakertools.Talea(
             counts=(

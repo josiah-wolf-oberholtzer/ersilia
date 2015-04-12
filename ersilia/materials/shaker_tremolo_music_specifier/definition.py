@@ -26,6 +26,9 @@ shaker_tremolo_music_specifier = consort.MusicSpecifier(
         ),
     color='blue',
     labels=['shakers'],
+    pitch_handler=consort.AbsolutePitchHandler(
+        pitches_are_nonsemantic=True,
+        ),
     rhythm_maker=rhythmmakertools.NoteRhythmMaker(
         tie_specifier=rhythmmakertools.TieSpecifier(
             tie_across_divisions=True,

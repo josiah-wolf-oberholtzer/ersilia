@@ -103,6 +103,7 @@ percussion_low_rolls_music_specifier = consort.tools.MusicSpecifier(
                 ),
             ratio=mathtools.Ratio((1,)),
             ),
+        pitches_are_nonsemantic=True,
         ),
     rhythm_maker=rhythmmakertools.NoteRhythmMaker(
         tie_specifier=rhythmmakertools.TieSpecifier(

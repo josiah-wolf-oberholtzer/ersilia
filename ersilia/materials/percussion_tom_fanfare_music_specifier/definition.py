@@ -60,6 +60,7 @@ percussion_tom_fanfare_music_specifier = consort.MusicSpecifier(
                 None,
                 ],
             ),
+        pitches_are_nonsemantic=True,
         ),
     rhythm_maker=rhythmmakertools.TaleaRhythmMaker(
         extra_counts_per_division=[0, 1, 2],

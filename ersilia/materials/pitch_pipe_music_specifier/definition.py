@@ -35,6 +35,9 @@ pitch_pipe_music_specifier = consort.MusicSpecifier(
         percussion_staff=abbreviations.percussion_staff
         ),
     labels=['pitch pipes'],
+    pitch_handler=consort.AbsolutePitchHandler(
+        pitches_are_nonsemantic=True,
+        ),
     rhythm_maker=rhythmmakertools.EvenDivisionRhythmMaker(
         denominators=[16],
         output_masks=[

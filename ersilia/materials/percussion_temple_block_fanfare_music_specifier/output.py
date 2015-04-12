@@ -248,6 +248,7 @@ percussion_temple_block_fanfare_music_specifier = consort.tools.MusicSpecifier(
                 ),
             ratio=mathtools.Ratio((1, 1, 1)),
             ),
+        pitches_are_nonsemantic=True,
         ),
     rhythm_maker=rhythmmakertools.TaleaRhythmMaker(
         talea=rhythmmakertools.Talea(

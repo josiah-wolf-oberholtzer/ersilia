@@ -18,6 +18,9 @@ shaker_decelerando_music_specifier = consort.MusicSpecifier(
         ),
     color='blue',
     labels=['shakers'],
+    pitch_handler=consort.AbsolutePitchHandler(
+        pitches_are_nonsemantic=True,
+        ),
     rhythm_maker=rhythmmakertools.AccelerandoRhythmMaker(
         beam_specifier=rhythmmakertools.BeamSpecifier(
             use_feather_beams=True,

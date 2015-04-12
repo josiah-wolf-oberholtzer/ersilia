@@ -160,6 +160,9 @@ pitch_pipe_music_specifier = consort.tools.MusicSpecifier(
             ),
         ),
     labels=('pitch pipes',),
+    pitch_handler=consort.tools.AbsolutePitchHandler(
+        pitches_are_nonsemantic=True,
+        ),
     rhythm_maker=rhythmmakertools.EvenDivisionRhythmMaker(
         denominators=(16,),
         output_masks=rhythmmakertools.BooleanPatternInventory(

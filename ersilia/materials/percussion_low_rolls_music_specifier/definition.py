@@ -34,6 +34,7 @@ percussion_low_rolls_music_specifier = consort.MusicSpecifier(
             ersilia.Percussion.BASS_DRUM,
             ersilia.Percussion.TAM_TAM,
             ]),
+        pitches_are_nonsemantic=True,
         ),
     rhythm_maker=rhythmmakertools.NoteRhythmMaker(
         tie_specifier=rhythmmakertools.TieSpecifier(

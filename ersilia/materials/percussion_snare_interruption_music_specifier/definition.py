@@ -39,7 +39,8 @@ percussion_snare_interruption_music_specifier = consort.MusicSpecifier(
     color=None,
     labels=[],
     pitch_handler=consort.AbsolutePitchHandler(
-        pitch_specifier=ersilia.Percussion.SNARE_DRUM
+        pitch_specifier=ersilia.Percussion.SNARE_DRUM,
+        pitches_are_nonsemantic=True,
         ),
     rhythm_maker=consort.CompositeRhythmMaker(
         default=rhythmmakertools.NoteRhythmMaker(

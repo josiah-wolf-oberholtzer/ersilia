@@ -109,6 +109,9 @@ shaker_tremolo_music_specifier = consort.tools.MusicSpecifier(
         ),
     color='blue',
     labels=('shakers',),
+    pitch_handler=consort.tools.AbsolutePitchHandler(
+        pitches_are_nonsemantic=True,
+        ),
     rhythm_maker=rhythmmakertools.NoteRhythmMaker(
         tie_specifier=rhythmmakertools.TieSpecifier(
             tie_across_divisions=True,

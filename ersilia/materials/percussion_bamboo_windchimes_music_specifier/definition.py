@@ -38,7 +38,8 @@ percussion_bamboo_windchimes_music_specifier = consort.MusicSpecifier(
     color=None,
     labels=[],
     pitch_handler=consort.AbsolutePitchHandler(
-        pitch_specifier=ersilia.Percussion.BAMBOO_WIND_CHIMES
+        pitch_specifier=ersilia.Percussion.BAMBOO_WIND_CHIMES,
+        pitches_are_nonsemantic=True,
         ),
     rhythm_maker=consort.CompositeRhythmMaker(
         default=rhythmmakertools.NoteRhythmMaker(

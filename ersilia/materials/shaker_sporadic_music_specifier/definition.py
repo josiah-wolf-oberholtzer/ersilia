@@ -10,8 +10,6 @@ from ersilia.materials import abbreviations
 shaker_sporadic_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
         dynamic_expression=consort.DynamicExpression(
-            #start_dynamic_tokens='f',
-            #stop_dynamic_tokens='p',
             dynamic_tokens='ppp',
             transitions=['constante'],
             ),
@@ -33,6 +31,9 @@ shaker_sporadic_music_specifier = consort.MusicSpecifier(
         ),
     color='blue',
     labels=['shakers'],
+    pitch_handler=consort.AbsolutePitchHandler(
+        pitches_are_nonsemantic=True,
+        ),
     rhythm_maker=rhythmmakertools.TaleaRhythmMaker(
         extra_counts_per_division=[0, 0, 1],
         output_masks=[
