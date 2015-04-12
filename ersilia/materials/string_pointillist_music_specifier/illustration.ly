@@ -57,22 +57,67 @@
                     {
                         % [Violin 1 Voice] Measure 1
                         {
-                            c'4.
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        pizz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            ef''8 -\mordent \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            r8
+                            \set stemLeftBeamCount = 1
+                            d'8 -\mordent ]
                         }
                         % [Violin 1 Voice] Measure 2
                         {
-                            c'4 \repeatTie
+                            cs''8 -\mordent
+                            <> \stopTextSpan
                         }
                     }
                     {
                         {
-                            r8
+                            r4
                         }
                     }
                     {
                         % [Violin 1 Voice] Measure 3
                         {
-                            c'8
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        pizz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            a'8 -\mordent \ppp \startTextSpan
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -82,40 +127,112 @@
                     }
                     {
                         % [Violin 1 Voice] Measure 4
-                        {
-                            c'4.
-                            c'8 \repeatTie
+                        \times 4/5 {
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        pizz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            b'8 -\mordent \ppp \startTextSpan
+                            r4
+                            e'8 -\mordent [
+                            \set stemLeftBeamCount = 1
+                            r8 ]
+                            <> \stopTextSpan
                         }
+                    }
+                    {
                         {
-                            c'8 \repeatTie
-                            c'4 \repeatTie
+                            r8
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        pizz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            c'8 -\mordent \ppp \startTextSpan
                         }
                         % [Violin 1 Voice] Measure 5
                         {
-                            c'4 \repeatTie
+                            f'8 -\mordent
+                            <> \stopTextSpan
                         }
                     }
                     {
-                        {
-                            r8
-                        }
-                        % [Violin 1 Voice] Measure 6
                         {
                             r4
                         }
+                        % [Violin 1 Voice] Measure 6
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
+                            \stopStaff
+                            \startStaff
+                        }
                     }
                     {
-                        {
-                            c'8
-                        }
                         % [Violin 1 Voice] Measure 7
                         {
-                            c'4 \repeatTie
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        pizz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            af'8 -\mordent \ppp \startTextSpan
+                            <> \stopTextSpan
                         }
                     }
                     {
                         {
-                            r8
+                            r4
                             \bar "|."
                         }
                     }
@@ -146,58 +263,197 @@
                     }
                     {
                         {
-                            c'8
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        pizz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            d'8 -\mordent \ppp \startTextSpan
+                            <> \stopTextSpan
                         }
+                    }
+                    {
                         % [Violin 2 Voice] Measure 2
                         {
-                            c'4 \repeatTie
-                        }
-                        {
-                            c'8 \repeatTie
-                        }
-                        % [Violin 2 Voice] Measure 3
-                        {
-                            c'4 \repeatTie
+                            r4
                         }
                     }
                     {
                         {
-                            r8
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        pizz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            a'8 -\mordent \ppp \startTextSpan
+                        }
+                        % [Violin 2 Voice] Measure 3
+                        {
+                            b8 -\mordent
+                            <> \stopTextSpan
+                        }
+                    }
+                    {
+                        {
+                            r4
                         }
                     }
                     {
                         % [Violin 2 Voice] Measure 4
                         {
-                            c'4
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        pizz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            a'8 -\mordent \ppp \startTextSpan
+                            <> \stopTextSpan
+                        }
+                    }
+                    {
+                        {
+                            r4
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        pizz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            f'8 -\mordent \ppp \startTextSpan
+                            <> \stopTextSpan
                         }
                     }
                     {
                         {
                             r8
-                            r8
                         }
                     }
                     {
                         {
-                            c'8
-                        }
-                        {
-                            c'4 \repeatTie
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        pizz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            ef'8 -\mordent \ppp \startTextSpan
                         }
                         % [Violin 2 Voice] Measure 5
-                        {
-                            c'4 \repeatTie
+                        \times 2/3 {
+                            r4
+                            c'8 -\mordent
+                            <> \stopTextSpan
                         }
+                    }
+                    {
                         {
-                            c'8 \repeatTie
+                            r8
                         }
                         % [Violin 2 Voice] Measure 6
                         {
-                            c'4. \repeatTie
+                            r4
+                        }
+                    }
+                    {
+                        {
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        pizz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            ef'8 -\mordent \ppp \startTextSpan
                         }
                         % [Violin 2 Voice] Measure 7
                         {
-                            c'8 \repeatTie
+                            d'8 -\mordent
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -228,26 +484,67 @@
                     {
                         % [Viola Voice] Measure 1
                         {
-                            r8
+                            r4
                         }
                     }
                     {
                         {
-                            c'4
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        pizz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            f'8 -\mordent \ppp \startTextSpan
+                            <> \stopTextSpan
                         }
+                    }
+                    {
                         % [Viola Voice] Measure 2
                         {
-                            c'8 \repeatTie
+                            r4
                         }
+                    }
+                    {
                         {
-                            c'8 \repeatTie
-                        }
-                        {
-                            c'8 \repeatTie
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        pizz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            b8 -\mordent \ppp \startTextSpan
                         }
                         % [Viola Voice] Measure 3
                         {
-                            c'8 \repeatTie
+                            a8 -\mordent
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -260,28 +557,85 @@
                         }
                     }
                     {
-                        {
-                            c'8
-                            c'4 \repeatTie
-                        }
-                        {
-                            c'4 \repeatTie
-                        }
-                        % [Viola Voice] Measure 5
-                        {
-                            c'8 \repeatTie
-                        }
-                        {
-                            c'4 \repeatTie
-                        }
-                        % [Viola Voice] Measure 6
-                        {
-                            c'4 \repeatTie
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        pizz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            d'8 -\mordent \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            r8
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            r8
+                            \set stemLeftBeamCount = 1
+                            af8 -\mordent ]
+                            <> \stopTextSpan
                         }
                     }
                     {
                         {
+                            r4
+                        }
+                        % [Viola Voice] Measure 5
+                        {
                             r8
+                        }
+                    }
+                    {
+                        \times 2/3 {
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        pizz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            ef'8 -\mordent \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            r8
+                            \set stemLeftBeamCount = 1
+                            f'8 -\mordent ]
+                        }
+                        % [Viola Voice] Measure 6
+                        {
+                            c''8 -\mordent
+                            <> \stopTextSpan
+                        }
+                    }
+                    {
+                        {
+                            r4
                         }
                         % [Viola Voice] Measure 7
                         {
@@ -316,26 +670,36 @@
                     {
                         % [Cello Voice] Measure 1
                         {
-                            c'4.
+                            r4
+                        }
+                    }
+                    {
+                        {
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        pizz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            b'8 -\mordent \ppp \startTextSpan
                         }
                         % [Cello Voice] Measure 2
                         {
-                            c'4 \repeatTie
-                        }
-                    }
-                    {
-                        {
-                            r8
-                        }
-                    }
-                    {
-                        % [Cello Voice] Measure 3
-                        {
-                            c'4.
-                        }
-                        % [Cello Voice] Measure 4
-                        {
-                            c'8 \repeatTie
+                            c''8 -\mordent
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -344,21 +708,131 @@
                         }
                     }
                     {
+                        % [Cello Voice] Measure 3
                         {
-                            c'4
-                        }
-                        {
-                            c'4 \repeatTie
-                        }
-                        % [Cello Voice] Measure 5
-                        {
-                            c'8 \repeatTie
-                        }
-                        {
-                            c'4 \repeatTie
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        pizz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            b'8 -\mordent \ppp \startTextSpan
+                            <> \stopTextSpan
                         }
                     }
                     {
+                        {
+                            r4
+                        }
+                    }
+                    {
+                        % [Cello Voice] Measure 4
+                        {
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        pizz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            a'8 -\mordent \ppp \startTextSpan
+                            <> \stopTextSpan
+                        }
+                    }
+                    {
+                        {
+                            r4
+                            r4
+                        }
+                    }
+                    {
+                        {
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        pizz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            d''8 -\mordent \ppp \startTextSpan
+                            <> \stopTextSpan
+                        }
+                    }
+                    {
+                        {
+                            r8
+                        }
+                    }
+                    {
+                        % [Cello Voice] Measure 5
+                        {
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        pizz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            c'8 -\mordent \ppp \startTextSpan
+                        }
+                        {
+                            f'8 -\mordent
+                            <> \stopTextSpan
+                        }
+                    }
+                    {
+                        {
+                            r8
+                        }
                         % [Cello Voice] Measure 6
                         {
                             \stopStaff
@@ -372,7 +846,27 @@
                     {
                         % [Cello Voice] Measure 7
                         {
-                            c'8
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        pizz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            e'8 -\mordent \ppp \startTextSpan
+                            <> \stopTextSpan
                         }
                     }
                     {
