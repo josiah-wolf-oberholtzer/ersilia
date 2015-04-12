@@ -9,10 +9,38 @@ from ersilia.materials import abbreviations
 
 wind_agitato_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
+        accents_short=consort.AttachmentExpression(
+            attachments=indicatortools.Articulation('accent'),
+            selector=selectortools.Selector()
+                .by_logical_tie(pitched=True)
+                .by_duration('==', (1, 16), preprolated=True)
+                .by_contiguity()
+                .by_length('==', 1)
+                .by_leaves()
+                [0]
+            ),
+        accents_long=consort.AttachmentExpression(
+            attachments=indicatortools.Articulation('accent'),
+            selector=selectortools.Selector()
+                .by_logical_tie(pitched=True)
+                .by_duration('>', (1, 16), preprolated=True)
+                .by_contiguity()
+                .by_length('==', 1)
+                .by_leaves()
+                [0]
+            ),
         dynamic_expressions=consort.DynamicExpression(
             dynamic_tokens='mf mp fff',
             start_dynamic_tokens='f',
             stop_dynamic_tokens='mf',
+            ),
+        flutter_tongue=consort.AttachmentExpression(
+            attachments=abbreviations.make_text_spanner('Flz.'),
+            selector=selectortools.Selector()
+                .by_logical_tie(pitched=True)
+                .by_duration('>', (1, 16), preprolated=True)
+                .by_contiguity()
+                .by_leaves()
             ),
         slur=consort.AttachmentExpression(
             attachments=spannertools.Slur(),
@@ -23,7 +51,8 @@ wind_agitato_music_specifier = consort.MusicSpecifier(
                 .by_length('>', 1)
                 .by_pattern(
                     pattern=rhythmmakertools.BooleanPattern(
-                        indices=[0], period=2,
+                        indices=[0],
+                        period=2,
                         ),
                     )
                 .by_leaves()
@@ -37,11 +66,34 @@ wind_agitato_music_specifier = consort.MusicSpecifier(
                 .by_length('>', 1)
                 .by_pattern(
                     pattern=rhythmmakertools.BooleanPattern(
-                        indices=[1], period=2,
+                        indices=[0, 2],
+                        period=3,
                         ),
                     )
                 .by_leaves()
-                [1:]
+            ),
+        staccatissimi=consort.AttachmentExpression(
+            attachments=indicatortools.Articulation('staccatissimo'),
+            selector=selectortools.Selector()
+                .by_logical_tie(pitched=True)
+                .by_duration('==', (1, 16), preprolated=True)
+                .by_contiguity()
+                .by_length('>', 1)
+                .by_pattern(
+                    pattern=rhythmmakertools.BooleanPattern(
+                        indices=[1],
+                        period=3,
+                        ),
+                    )
+                .by_leaves()
+            ),
+        stem_tremolo_spanner=consort.AttachmentExpression(
+            attachments=spannertools.StemTremoloSpanner(),
+            selector=selectortools.Selector()
+                .by_logical_tie(pitched=True)
+                .by_duration('>', (1, 16), preprolated=True)
+                .by_contiguity()
+                .by_leaves()
             ),
         ),
     color='magenta',

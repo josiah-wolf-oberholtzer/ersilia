@@ -52,36 +52,56 @@
                     {
                         % [Violin 1 Voice] Measure 1
                         {
-                            ef'''16 \f \> [
+                            ef'''16 -\accent \f \> [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            d'''16 (
+                            d'''16 -\staccato (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            f''16 )
+                            f''16 -\staccato )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
-                            c'''16 ]
+                            c'''16 -\accent ]
                         }
                         {
-                            ef''4 \mf \>
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        Flz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            ef''4 :32 -\accent \mf \startTextSpan \>
+                            <> \stopTextSpan
                         }
                         % [Violin 1 Voice] Measure 2
                         \times 4/5 {
-                            a''16 \mp \< [
+                            a''16 -\accent \mp \< [
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             r8
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
-                            b''16
+                            b''16 -\staccatissimo
                             \set stemLeftBeamCount = 2
-                            a''16 -\staccato \mf ]
+                            a''16 -\staccatissimo \mf ]
                         }
                     }
                     {
@@ -92,9 +112,9 @@
                     }
                     {
                         {
-                            b''16 \f [ (
+                            b''16 -\staccato \f [ (
                             \set stemLeftBeamCount = 2
-                            a'16 ] )
+                            a'16 -\staccato ] )
                         }
                     }
                     {
@@ -107,21 +127,21 @@
                         % [Violin 1 Voice] Measure 3
                         \tweak #'text #tuplet-number::calc-fraction-text
                         \times 5/6 {
-                            f''16 \f \> [ (
+                            f''16 -\staccato \f \> [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            d''16 )
+                            d''16 -\staccato )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            f''16
+                            f''16 -\staccatissimo
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c''16 -\staccato
+                            c''16 -\staccatissimo
                             \set stemLeftBeamCount = 2
-                            f'16 -\staccato \mf ]
+                            f'16 -\staccatissimo \mf ]
                         }
                     }
                     {
@@ -133,24 +153,24 @@
                         % [Violin 1 Voice] Measure 4
                         \tweak #'text #tuplet-number::calc-fraction-text
                         \times 5/7 {
-                            c'''16 \f \> [
+                            c'''16 -\accent \f \> [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            ef''16 (
+                            ef''16 -\staccato (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            f''16
+                            f''16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            ef''16 )
+                            ef''16 -\staccato )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
-                            f'16 \mf ]
+                            f'16 -\accent \mf ]
                         }
                     }
                     {
@@ -164,12 +184,12 @@
                     }
                     {
                         {
-                            e''16 \f [ (
+                            e''16 -\staccato \f [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            d''16
+                            d''16 -\staccato
                             \set stemLeftBeamCount = 2
-                            f'16 ] )
+                            f'16 -\staccato ] )
                         }
                     }
                     {
@@ -205,12 +225,32 @@
                     }
                     {
                         {
-                            b''8. \f \> [
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        Flz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            b''8. :64 -\accent \f \startTextSpan \> [
                             \set stemLeftBeamCount = 2
-                            b''16 \repeatTie ]
+                            b''16 :128 \repeatTie ]
+                            <> \stopTextSpan
                         }
                         {
-                            a''16 \mf
+                            a''16 -\accent \mf
                         }
                     }
                     {
@@ -221,17 +261,37 @@
                     {
                         % [Violin 2 Voice] Measure 2
                         {
-                            b''16 \f \> [ (
+                            b''16 -\staccato \f \> [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            a''16
+                            a''16 -\staccato
                             \set stemLeftBeamCount = 2
-                            b''16 ] )
+                            b''16 -\staccato ] )
                         }
                         {
-                            a'8. \mf
-                            a'4 \repeatTie
-                            a'16 \repeatTie
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        Flz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            a'8. :64 -\accent \mf \startTextSpan
+                            a'4 :32 \repeatTie
+                            a'16 :128 \repeatTie
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -242,15 +302,15 @@
                     {
                         % [Violin 2 Voice] Measure 3
                         {
-                            af''16 \f \> [ (
+                            af''16 -\staccato \f \> [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            e''16 )
+                            e''16 -\staccato )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
-                            ef''16 \mf ]
+                            ef''16 -\accent \mf ]
                         }
                     }
                     {
@@ -264,15 +324,15 @@
                     }
                     {
                         {
-                            f''16 \f \> [
+                            f''16 -\accent \f \> [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'''16 (
+                            c'''16 -\staccato (
                             \set stemLeftBeamCount = 2
-                            f'16 \mf ] )
+                            f'16 -\staccato \mf ] )
                         }
                     }
                     {
@@ -314,31 +374,51 @@
                     }
                     {
                         {
-                            cs'''8 \f \>
-                            cs'''4 \repeatTie
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        Flz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            cs'''8 :64 -\accent \f \startTextSpan \>
+                            cs'''4 :32 \repeatTie
+                            <> \stopTextSpan
                         }
                         % [Viola Voice] Measure 2
                         \tweak #'text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            a''16 \mf [ (
+                            a''16 -\staccato \mf [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            b''16 )
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            a''16
+                            b''16 -\staccato )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            b'16
+                            a''16 -\accent
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            a''16 -\staccato
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            b'16 -\staccatissimo
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            a''16 -\staccatissimo
                             \set stemLeftBeamCount = 2
                             r16 ]
                         }
@@ -354,22 +434,42 @@
                     }
                     {
                         \times 2/3 {
-                            f''16 \f \> [ (
+                            f''16 -\staccato \f \> [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 1
-                            c'''16 )
+                            c'''16 -\staccato )
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             r8
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
-                            ef''16
+                            ef''16 -\staccatissimo
                             \set stemLeftBeamCount = 2
-                            f''16 -\staccato ]
+                            f''16 -\staccatissimo ]
                         }
                         % [Viola Voice] Measure 4
                         {
-                            ef''4. \mf
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        Flz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            ef''4. :32 -\accent \mf \startTextSpan
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -380,7 +480,7 @@
                     }
                     {
                         {
-                            c''16 \f \> [
+                            c''16 -\accent \f \> [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
@@ -389,15 +489,15 @@
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            d''16 (
+                            d''16 -\staccato (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            f'16
+                            f'16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            e'16
+                            e'16 -\staccato
                             \set stemLeftBeamCount = 2
-                            af'16 \mf ] )
+                            af'16 -\staccato \mf ] )
                         }
                     }
                     {
@@ -433,15 +533,35 @@
                     }
                     {
                         {
-                            d'''4 \f \>
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        Flz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            d'''4 :32 -\accent \f \startTextSpan \>
+                            <> \stopTextSpan
                         }
                         {
-                            f''16 \mf [
+                            f''16 -\accent \mf [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
-                            b'16 ]
+                            b'16 -\accent ]
                         }
                     }
                     {
@@ -456,21 +576,21 @@
                     }
                     {
                         {
-                            a''16 \f \> [ (
+                            a''16 -\staccato \f \> [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            b'16
+                            b'16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            a''16
+                            a''16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            b''16 )
+                            b''16 -\staccato )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
-                            e''16 \mf ]
+                            e''16 -\accent \mf ]
                         }
                     }
                     {
@@ -484,12 +604,12 @@
                     }
                     {
                         {
-                            f''16 \f \> [ (
+                            f''16 -\staccato \f \> [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            ef''16
+                            ef''16 -\staccato
                             \set stemLeftBeamCount = 2
-                            f''16 ] )
+                            f''16 -\staccato ] )
                         }
                         % [Cello Voice] Measure 4
                         \tweak #'text #tuplet-number::calc-fraction-text
@@ -497,15 +617,35 @@
                             r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c''16 \mp \<
+                            c''16 -\accent \mp \<
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
-                            ef''16 ]
+                            ef''16 -\accent ]
                         }
                         {
-                            f''8. \mf
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        Flz.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            f''8. :64 -\accent \mf \startTextSpan
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -517,24 +657,24 @@
                     {
                         \tweak #'text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            af''16 \f \> [ (
+                            af''16 -\staccato \f \> [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            d''16 )
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            af''16
+                            d''16 -\staccato )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            d''16
+                            af''16 -\accent
                             \set stemLeftBeamCount = 2
-                            e''16 -\staccato \mf ]
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            d''16 -\staccatissimo
+                            \set stemLeftBeamCount = 2
+                            e''16 -\staccatissimo \mf ]
                                 _ \markup {
                                     \italic
                                         \center-column
