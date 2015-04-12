@@ -76,7 +76,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
-                            f4. \startTextSpan \glissando
+                            f4. \p \startTextSpan \glissando
                         }
                         {
                             g'4 \glissando
@@ -111,7 +111,7 @@
                                                 \concat
                                                     {
                                                         \vstrut
-                                                        inside/high
+                                                        inside/medium
                                                     }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
@@ -124,7 +124,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
-                            c'8. \startTextSpan [ \glissando
+                            c'8. \p \startTextSpan [ \glissando
                             \set stemLeftBeamCount = 2
                             g'16 ]
                             \stopStaff
@@ -153,7 +153,7 @@
                                                 \concat
                                                     {
                                                         \vstrut
-                                                        inside/low
+                                                        inside/high
                                                     }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
@@ -166,7 +166,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
-                            c'8 \startTextSpan [ \glissando
+                            c'8 \p \startTextSpan [ \glissando
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             f8 \glissando
@@ -198,7 +198,7 @@
                                                 \concat
                                                     {
                                                         \vstrut
-                                                        inside/high
+                                                        inside/low
                                                     }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
@@ -211,7 +211,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
-                            g'8 \startTextSpan [ \glissando
+                            g'8 \p \startTextSpan [ \glissando
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             f8 \glissando
@@ -247,7 +247,7 @@
                                                 \concat
                                                     {
                                                         \vstrut
-                                                        inside/low
+                                                        inside/medium
                                                     }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
@@ -260,7 +260,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
-                            f8 \startTextSpan [ \glissando
+                            f8 \p \startTextSpan [ \glissando
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             g'8 \glissando
@@ -325,7 +325,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
-                            g'4 \startTextSpan \glissando
+                            g'4 \p \startTextSpan \glissando
                         }
                         {
                             c'8. \glissando
@@ -383,7 +383,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
-                            g'8. \startTextSpan [ \glissando
+                            g'8. \p \startTextSpan [ \glissando
                             \set stemLeftBeamCount = 2
                             c'16 ]
                             \stopStaff
@@ -415,7 +415,7 @@
                                                 \concat
                                                     {
                                                         \vstrut
-                                                        inside/high
+                                                        inside/medium
                                                     }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
@@ -428,7 +428,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
-                            g'8. \startTextSpan [ \glissando
+                            g'8. \p \startTextSpan [ \glissando
                             \set stemLeftBeamCount = 2
                             c'16 ]
                             \stopStaff
@@ -488,7 +488,7 @@
                                                 \concat
                                                     {
                                                         \vstrut
-                                                        inside/low
+                                                        inside/high
                                                     }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
@@ -501,7 +501,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
-                            c'4. \startTextSpan \glissando
+                            c'4. \p \startTextSpan \glissando
                         }
                         % [Viola Voice] Measure 2
                         {
@@ -540,7 +540,7 @@
                                                 \concat
                                                     {
                                                         \vstrut
-                                                        inside/high
+                                                        inside/low
                                                     }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
@@ -553,7 +553,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
-                            g'4 \startTextSpan \glissando
+                            g'4 \p \startTextSpan \glissando
                         }
                         % [Viola Voice] Measure 4
                         {
@@ -589,7 +589,7 @@
                                                 \concat
                                                     {
                                                         \vstrut
-                                                        inside/low
+                                                        inside/medium
                                                     }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
@@ -602,7 +602,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
-                            g'8 \startTextSpan [ \glissando
+                            g'8 \p \startTextSpan [ \glissando
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             f8 \glissando
@@ -670,7 +670,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
-                            c'4 \startTextSpan \glissando
+                            c'4 \p \startTextSpan \glissando
                         }
                         {
                             g'8. [ \glissando
@@ -716,7 +716,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
-                            g'8. \startTextSpan [ \glissando
+                            g'8. \p \startTextSpan [ \glissando
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             c'8 \glissando
@@ -751,7 +751,7 @@
                                                 \concat
                                                     {
                                                         \vstrut
-                                                        inside/high
+                                                        inside/medium
                                                     }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
@@ -764,7 +764,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
-                            c'8. \startTextSpan \glissando
+                            c'8. \p \startTextSpan \glissando
                         }
                         % [Cello Voice] Measure 4
                         {
@@ -800,7 +800,7 @@
                                                 \concat
                                                     {
                                                         \vstrut
-                                                        inside/low
+                                                        inside/high
                                                     }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
@@ -813,7 +813,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
-                            c'8. \startTextSpan [ \glissando
+                            c'8. \p \startTextSpan [ \glissando
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             f8 \glissando

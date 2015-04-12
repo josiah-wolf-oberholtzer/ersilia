@@ -52,14 +52,47 @@
                     {
                         % [Violin 1 Voice] Measure 1
                         {
-                            c'4.
+                            \pitchedTrill
+                            c''4. -\accent \fp \< \startTrillSpan d''
                         }
-                        {
-                            c'4 \repeatTie
+                        \times 4/5 {
+                            c''16 \repeatTie [
+                            <> \stopTrillSpan
+                            \once \override TrillSpanner.bound-details.left.text = \markup {
+                                \null
+                                }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            \pitchedTrill
+                            c''16 -\accent \startTrillSpan d''
+                            <> \stopTrillSpan
+                            \once \override TrillSpanner.bound-details.left.text = \markup {
+                                \null
+                                }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            \pitchedTrill
+                            b'16 -\accent \startTrillSpan cs''
+                            <> \stopTrillSpan
+                            \once \override TrillSpanner.bound-details.left.text = \markup {
+                                \null
+                                }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            \pitchedTrill
+                            c''16 -\accent \startTrillSpan d''
+                            <> \stopTrillSpan
+                            \once \override TrillSpanner.bound-details.left.text = \markup {
+                                \null
+                                }
+                            \set stemLeftBeamCount = 2
+                            \pitchedTrill
+                            b'16 -\accent ] \startTrillSpan cs''
                         }
                         % [Violin 1 Voice] Measure 2
                         {
-                            c'4 \repeatTie
+                            b'4 \mf \repeatTie
+                            <> \stopTrillSpan
                         }
                     }
                     {
@@ -69,7 +102,9 @@
                     }
                     {
                         {
-                            c'4
+                            \pitchedTrill
+                            bf'4 -\accent \fp \startTrillSpan c''
+                            <> \stopTrillSpan
                         }
                     }
                     {
@@ -80,8 +115,10 @@
                     {
                         % [Violin 1 Voice] Measure 3
                         {
-                            c'4
-                            c'16 \repeatTie
+                            \pitchedTrill
+                            fs'4 -\accent \fp \< \startTrillSpan gs'
+                            fs'16 \mf \repeatTie
+                            <> \stopTrillSpan
                         }
                     }
                     {
@@ -92,8 +129,10 @@
                     {
                         % [Violin 1 Voice] Measure 4
                         {
-                            c'4
-                            c'16 \repeatTie
+                            \pitchedTrill
+                            e'4 -\accent \fp \> \startTrillSpan fs'
+                            e'16 \ppp \repeatTie
+                            <> \stopTrillSpan
                         }
                     }
                     {
@@ -108,8 +147,9 @@
                     }
                     {
                         {
-                            c'16
-                            c'4 \repeatTie
+                            \pitchedTrill
+                            e'16 -\accent \fp \startTrillSpan fs'
+                            e'4 \repeatTie \stopTrillSpan
                             \bar "|."
                         }
                     }
@@ -140,21 +180,47 @@
                     }
                     {
                         {
-                            c'8. [
+                            \pitchedTrill
+                            d'8. -\accent \fp \> [ \startTrillSpan e'
                             \set stemLeftBeamCount = 2
-                            c'16 \repeatTie ]
+                            d'16 \repeatTie ]
                         }
                         {
-                            c'8. \repeatTie
+                            d'8. \repeatTie
                         }
                         % [Violin 2 Voice] Measure 2
-                        {
-                            c'8. \repeatTie
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            d'16 \ppp \repeatTie [
+                            <> \stopTrillSpan
+                            \once \override TrillSpanner.bound-details.left.text = \markup {
+                                \null
+                                }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            \pitchedTrill
+                            c''16 -\accent \startTrillSpan d''
+                            <> \stopTrillSpan
+                            \once \override TrillSpanner.bound-details.left.text = \markup {
+                                \null
+                                }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            \pitchedTrill
+                            b'16 -\accent \startTrillSpan cs''
+                            <> \stopTrillSpan
+                            \once \override TrillSpanner.bound-details.left.text = \markup {
+                                \null
+                                }
+                            \set stemLeftBeamCount = 2
+                            \pitchedTrill
+                            c''16 -\accent ] \startTrillSpan d''
                         }
                         {
-                            c'8. \repeatTie
-                            c'4 \repeatTie
-                            c'16 \repeatTie
+                            c''8. \repeatTie
+                            c''4 \repeatTie
+                            c''16 \repeatTie
+                            <> \stopTrillSpan
                         }
                     }
                     {
@@ -165,7 +231,9 @@
                     {
                         % [Violin 2 Voice] Measure 3
                         {
-                            c'4
+                            \pitchedTrill
+                            ef'4 -\accent \fp \startTrillSpan f'
+                            <> \stopTrillSpan
                         }
                     }
                     {
@@ -179,7 +247,9 @@
                     }
                     {
                         {
-                            c'4
+                            \pitchedTrill
+                            bf'4 -\accent \fp \startTrillSpan c''
+                            <> \stopTrillSpan
                         }
                     }
                     {
@@ -221,12 +291,14 @@
                     }
                     {
                         {
-                            c'8
-                            c'4 \repeatTie
+                            \pitchedTrill
+                            cs'8 -\accent \fp \< \startTrillSpan ds'
+                            cs'4 \repeatTie
                         }
                         % [Viola Voice] Measure 2
                         {
-                            c'4. \repeatTie
+                            cs'4. \mf \repeatTie
+                            <> \stopTrillSpan
                         }
                     }
                     {
@@ -240,11 +312,13 @@
                     }
                     {
                         {
-                            c'4
+                            \pitchedTrill
+                            ef'4 -\accent \fp \> \startTrillSpan f'
                         }
                         % [Viola Voice] Measure 4
                         {
-                            c'4. \repeatTie
+                            ef'4. \ppp \repeatTie
+                            <> \stopTrillSpan
                         }
                     }
                     {
@@ -255,8 +329,9 @@
                     }
                     {
                         {
-                            c'4
-                            c'4 \repeatTie
+                            \pitchedTrill
+                            c''4 -\accent \fp \< \startTrillSpan d''
+                            c''4 \mf \repeatTie \stopTrillSpan
                             \bar "|."
                         }
                     }
@@ -287,10 +362,12 @@
                     }
                     {
                         {
-                            c'4
+                            \pitchedTrill
+                            b'4 -\accent \fp \> \startTrillSpan cs''
                         }
                         {
-                            c'4 \repeatTie
+                            b'4 \ppp \repeatTie
+                            <> \stopTrillSpan
                         }
                     }
                     {
@@ -302,9 +379,11 @@
                     }
                     {
                         {
-                            c'16
-                            c'4 \repeatTie
-                            c'16 \repeatTie
+                            \pitchedTrill
+                            c''16 -\accent \fp \< \startTrillSpan d''
+                            c''4 \repeatTie
+                            c''16 \mf \repeatTie
+                            <> \stopTrillSpan
                         }
                     }
                     {
@@ -318,14 +397,31 @@
                     }
                     {
                         {
-                            c'8.
+                            \pitchedTrill
+                            c''8. -\accent \fp \> \startTrillSpan d''
                         }
                         % [Cello Voice] Measure 4
                         {
-                            c'8. \repeatTie
+                            c''16 \repeatTie [
+                            <> \stopTrillSpan
+                            \once \override TrillSpanner.bound-details.left.text = \markup {
+                                \null
+                                }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            \pitchedTrill
+                            cs''16 -\accent \startTrillSpan ds''
+                            <> \stopTrillSpan
+                            \once \override TrillSpanner.bound-details.left.text = \markup {
+                                \null
+                                }
+                            \set stemLeftBeamCount = 2
+                            \pitchedTrill
+                            c''16 -\accent ] \startTrillSpan d''
                         }
                         {
-                            c'8. \repeatTie
+                            c''8. \ppp \repeatTie
+                            <> \stopTrillSpan
                         }
                     }
                     {
@@ -336,8 +432,9 @@
                     }
                     {
                         {
-                            c'8
-                            c'4 \repeatTie
+                            \pitchedTrill
+                            e''8 -\accent \fp \startTrillSpan fs''
+                            e''4 \repeatTie \stopTrillSpan
                                 _ \markup {
                                     \italic
                                         \center-column

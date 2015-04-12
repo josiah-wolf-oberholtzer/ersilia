@@ -52,14 +52,26 @@
                     {
                         % [Violin 1 Voice] Measure 1
                         {
-                            c'4.
+                            \once \override Hairpin.circled-tip = ##t
+                            <c'' af''>4. :32 \<
                         }
-                        {
-                            c'4 \repeatTie
+                        \times 4/5 {
+                            <c'' af''>16 :128 \repeatTie [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <bqs' gqs''>16 :128 -\accent
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <b' g''>16 :128 -\accent
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <bqf' gqf''>16 :128 -\accent
+                            \set stemLeftBeamCount = 2
+                            <b' g''>16 :128 -\accent ]
                         }
                         % [Violin 1 Voice] Measure 2
                         {
-                            c'4 \repeatTie
+                            <b' g''>4 :32 \p \repeatTie
                         }
                     }
                     {
@@ -69,7 +81,7 @@
                     }
                     {
                         {
-                            c'4
+                            <aqs' fqs''>4 :32 \fp
                         }
                     }
                     {
@@ -80,8 +92,9 @@
                     {
                         % [Violin 1 Voice] Measure 3
                         {
-                            c'4
-                            c'16 \repeatTie
+                            \once \override Hairpin.circled-tip = ##t
+                            <fs' d''>4 :32 \<
+                            <fs' d''>16 :128 \ppp \repeatTie
                         }
                     }
                     {
@@ -92,8 +105,8 @@
                     {
                         % [Violin 1 Voice] Measure 4
                         {
-                            c'4
-                            c'16 \repeatTie
+                            <dqs' bqf'>4 :32 \fp
+                            <dqs' bqf'>16 :128 \p \repeatTie
                         }
                     }
                     {
@@ -108,8 +121,8 @@
                     }
                     {
                         {
-                            c'16
-                            c'4 \repeatTie
+                            <e' c''>16 :128 \ppp
+                            <e' c''>4 :32 \repeatTie
                             \bar "|."
                         }
                     }
@@ -140,21 +153,30 @@
                     }
                     {
                         {
-                            c'8. [
+                            <d' bf'>8. :64 \fp \> [
                             \set stemLeftBeamCount = 2
-                            c'16 \repeatTie ]
+                            <d' bf'>16 :128 \repeatTie ]
                         }
                         {
-                            c'8. \repeatTie
+                            <d' bf'>8. :64 \repeatTie
                         }
                         % [Violin 2 Voice] Measure 2
-                        {
-                            c'8. \repeatTie
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            <d' bf'>16 :128 \ppp \repeatTie \< [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <bqs gqs'>16 :128 -\accent
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <b g'>16 :128 -\accent
+                            \set stemLeftBeamCount = 2
+                            <bqf gqf'>16 :128 -\accent ]
                         }
                         {
-                            c'8. \repeatTie
-                            c'4 \repeatTie
-                            c'16 \repeatTie
+                            <bqf gqf'>8. :64 \repeatTie
+                            <bqf gqf'>4 :32 \repeatTie
+                            <bqf gqf'>16 :128 \mp \repeatTie
                         }
                     }
                     {
@@ -165,7 +187,7 @@
                     {
                         % [Violin 2 Voice] Measure 3
                         {
-                            c'4
+                            <ds' b'>4 :32 \mp
                         }
                     }
                     {
@@ -179,7 +201,7 @@
                     }
                     {
                         {
-                            c'4
+                            <aqs fqs'>4 :32 \fp
                         }
                     }
                     {
@@ -221,12 +243,13 @@
                     }
                     {
                         {
-                            c'8
-                            c'4 \repeatTie
+                            \once \override Hairpin.circled-tip = ##t
+                            <cs' a'>8 :64 \<
+                            <cs' a'>4 :32 \repeatTie
                         }
                         % [Viola Voice] Measure 2
                         {
-                            c'4. \repeatTie
+                            <cs' a'>4. :32 \ppp \repeatTie
                         }
                     }
                     {
@@ -240,11 +263,11 @@
                     }
                     {
                         {
-                            c'4
+                            <dqs' bqf'>4 :32 \fp
                         }
                         % [Viola Voice] Measure 4
                         {
-                            c'4. \repeatTie
+                            <dqs' bqf'>4. :32 \p \repeatTie
                         }
                     }
                     {
@@ -255,8 +278,9 @@
                     }
                     {
                         {
-                            c'4
-                            c'4 \repeatTie
+                            \once \override Hairpin.circled-tip = ##t
+                            <c'' af''>4 :32 \<
+                            <c'' af''>4 :32 \mp \repeatTie
                             \bar "|."
                         }
                     }
@@ -287,10 +311,10 @@
                     }
                     {
                         {
-                            c'4
+                            <b g'>4 :32 \fp \>
                         }
                         {
-                            c'4 \repeatTie
+                            <b g'>4 :32 \ppp \repeatTie
                         }
                     }
                     {
@@ -302,9 +326,10 @@
                     }
                     {
                         {
-                            c'16
-                            c'4 \repeatTie
-                            c'16 \repeatTie
+                            \once \override Hairpin.circled-tip = ##t
+                            <bqs' gqs''>16 :128 \<
+                            <bqs' gqs''>4 :32 \repeatTie
+                            <bqs' gqs''>16 :128 \p \repeatTie
                         }
                     }
                     {
@@ -318,14 +343,19 @@
                     }
                     {
                         {
-                            c'8.
+                            <c'' af''>8. :64 \fp \<
                         }
                         % [Cello Voice] Measure 4
                         {
-                            c'8. \repeatTie
+                            <c'' af''>16 :128 \repeatTie [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <bqs' gqs''>16 :128 -\accent
+                            \set stemLeftBeamCount = 2
+                            <c'' af''>16 :128 -\accent ]
                         }
                         {
-                            c'8. \repeatTie
+                            <c'' af''>8. :64 \mp \repeatTie
                         }
                     }
                     {
@@ -336,8 +366,8 @@
                     }
                     {
                         {
-                            c'8
-                            c'4 \repeatTie
+                            <dtqs' bqs'>8 :64 \p
+                            <dtqs' bqs'>4 :32 \repeatTie
                                 _ \markup {
                                     \italic
                                         \center-column
