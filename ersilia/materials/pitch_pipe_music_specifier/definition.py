@@ -13,8 +13,8 @@ pitch_pipe_music_specifier = consort.MusicSpecifier(
             attachments=indicatortools.Articulation('accent'),
             selector=selectortools.Selector()
                 .by_logical_tie()
-                .by_duration('==', (1, 16), preprolated=True)
-                .with_next_leaf()
+                .get_slice(start=1, apply_to_each=False)
+                [0]
             ),
         dynamic_expressions=consort.DynamicExpression(
             division_period=2,
@@ -25,7 +25,7 @@ pitch_pipe_music_specifier = consort.MusicSpecifier(
             attachments=[
                 markuptools.Markup('exhale', Up)
                     .italic().smaller().pad_around(0.5).box(),
-                markuptools.Markup('exhale', Up)
+                markuptools.Markup('inhale', Up)
                     .italic().smaller().pad_around(0.5).box(),
                 markuptools.Markup('inhale', Up)
                     .italic().smaller().pad_around(0.5).box(),
@@ -40,7 +40,7 @@ pitch_pipe_music_specifier = consort.MusicSpecifier(
         pitches_are_nonsemantic=True,
         ),
     rhythm_maker=rhythmmakertools.EvenDivisionRhythmMaker(
-        denominators=[16],
+        denominators=[8],
         output_masks=[
             rhythmmakertools.SustainMask(
                 indices=[0, 2],

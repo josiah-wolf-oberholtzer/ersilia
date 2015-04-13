@@ -1,6 +1,5 @@
 # -*- encoding: utf-8 -*-
 from abjad.tools import datastructuretools
-from abjad.tools import durationtools
 from abjad.tools import indicatortools
 from abjad.tools import markuptools
 from abjad.tools import rhythmmakertools
@@ -27,16 +26,13 @@ pitch_pipe_music_specifier = consort.tools.MusicSpecifier(
                         only_with_head=False,
                         only_with_tail=False,
                         ),
-                    selectortools.DurationSelectorCallback(
-                        duration=selectortools.DurationInequality(
-                            operator_string='==',
-                            duration=durationtools.Duration(1, 16),
-                            ),
-                        preprolated=True,
+                    selectortools.SliceSelectorCallback(
+                        start=1,
+                        apply_to_each=False,
                         ),
-                    selectortools.ExtraLeafSelectorCallback(
-                        with_next_leaf=True,
-                        with_previous_leaf=False,
+                    selectortools.ItemSelectorCallback(
+                        item=0,
+                        apply_to_each=True,
                         ),
                     ),
                 ),
@@ -92,7 +88,7 @@ pitch_pipe_music_specifier = consort.tools.MusicSpecifier(
                                         'smaller',
                                         markuptools.MarkupCommand(
                                             'italic',
-                                            'exhale'
+                                            'inhale'
                                             )
                                         )
                                     )
@@ -159,16 +155,17 @@ pitch_pipe_music_specifier = consort.tools.MusicSpecifier(
                 ),
             ),
         ),
+    color='cyan',
     labels=('pitch pipes',),
     pitch_handler=consort.tools.AbsolutePitchHandler(
         pitches_are_nonsemantic=True,
         ),
     rhythm_maker=rhythmmakertools.EvenDivisionRhythmMaker(
-        denominators=(16,),
+        denominators=(8,),
         output_masks=rhythmmakertools.BooleanPatternInventory(
             (
                 rhythmmakertools.SustainMask(
-                    indices=(0, 1),
+                    indices=(0, 2),
                     period=3,
                     ),
                 rhythmmakertools.SustainMask(

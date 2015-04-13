@@ -54,6 +54,7 @@
             \context StringStaff = "Violin 1 Staff" {
                 \context Voice = "Violin 1 Voice" {
                     \clef "treble"
+                    \tag #'transposition \transposition c'
                     {
                         % [Violin 1 Voice] Measure 1
                         {
@@ -87,6 +88,7 @@
                             r8
                         }
                     }
+                    \tag #'transposition \transposition c'
                     {
                         % [Violin 1 Voice] Measure 3
                         {
@@ -115,6 +117,7 @@
                             r4
                         }
                     }
+                    \tag #'transposition \transposition c'
                     {
                         % [Violin 1 Voice] Measure 4
                         {
@@ -131,26 +134,13 @@
                                             #0.5
                                             \smaller
                                                 \italic
-                                                    exhale
+                                                    inhale
                                     }
                             c'8 \repeatTie
                         }
                         {
-                            c'16 \repeatTie [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\accent
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\accent
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\accent
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\accent
-                            \set stemLeftBeamCount = 2
-                            c'16 -\accent ]
+                            c'8 \repeatTie
+                            c'4 \repeatTie
                         }
                         % [Violin 1 Voice] Measure 5
                         {
@@ -170,6 +160,7 @@
                             r4
                         }
                     }
+                    \tag #'transposition \transposition c'
                     {
                         {
                             \clef "percussion"
@@ -227,6 +218,7 @@
                             r4
                         }
                     }
+                    \tag #'transposition \transposition c'
                     {
                         {
                             \clef "percussion"
@@ -266,6 +258,7 @@
                             r8
                         }
                     }
+                    \tag #'transposition \transposition c'
                     {
                         % [Violin 2 Voice] Measure 4
                         {
@@ -281,7 +274,7 @@
                                             #0.5
                                             \smaller
                                                 \italic
-                                                    exhale
+                                                    inhale
                                     }
                             \stopStaff
                             \startStaff
@@ -295,6 +288,7 @@
                             r8
                         }
                     }
+                    \tag #'transposition \transposition c'
                     {
                         {
                             \clef "percussion"
@@ -314,26 +308,25 @@
                                     }
                         }
                         {
-                            c'4 \repeatTie
+                            c'8 \repeatTie [
+                            \set stemLeftBeamCount = 1
+                            c'8 -\accent ]
                         }
                         % [Violin 2 Voice] Measure 5
                         {
-                            c'16 \p \repeatTie \> [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\accent
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\accent
-                            \set stemLeftBeamCount = 2
-                            c'16 -\accent ]
+                            c'4 \p \repeatTie \>
                         }
                         {
                             c'8 \repeatTie
                         }
                         % [Violin 2 Voice] Measure 6
                         {
-                            c'4. \ppp \repeatTie \<
+                            c'8 \ppp \repeatTie \< [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            c'8 -\accent
+                            \set stemLeftBeamCount = 1
+                            c'8 -\accent ]
                         }
                         % [Violin 2 Voice] Measure 7
                         {
@@ -375,6 +368,7 @@
                             r8
                         }
                     }
+                    \tag #'transposition \transposition c'
                     {
                         {
                             \clef "percussion"
@@ -400,9 +394,7 @@
                             c'8 \mf \repeatTie \>
                         }
                         {
-                            c'16 \repeatTie [
-                            \set stemLeftBeamCount = 2
-                            c'16 ]
+                            c'8 \repeatTie
                         }
                         % [Viola Voice] Measure 3
                         {
@@ -422,6 +414,7 @@
                             r4
                         }
                     }
+                    \tag #'transposition \transposition c'
                     {
                         {
                             \clef "percussion"
@@ -437,27 +430,21 @@
                                             #0.5
                                             \smaller
                                                 \italic
-                                                    exhale
+                                                    inhale
                                     }
                             c'4 \repeatTie
                         }
                         {
-                            c'16 \repeatTie [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\accent
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\accent
-                            \set stemLeftBeamCount = 2
-                            c'16 -\accent ]
+                            c'4 \repeatTie
                         }
                         % [Viola Voice] Measure 5
                         {
                             c'8 \ppp \repeatTie \<
                         }
                         {
-                            c'4 \repeatTie
+                            c'8 \repeatTie [
+                            \set stemLeftBeamCount = 1
+                            c'8 -\accent ]
                         }
                         % [Viola Voice] Measure 6
                         {
@@ -479,8 +466,6 @@
                             \startStaff
                             R1 * 3/8
                             \bar "|."
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 }
@@ -502,6 +487,7 @@
             \context StringStaff = "Cello Staff" {
                 \context Voice = "Cello Voice" {
                     \clef "bass"
+                    \tag #'transposition \transposition c'
                     {
                         % [Cello Voice] Measure 1
                         {
@@ -534,6 +520,7 @@
                             r8
                         }
                     }
+                    \tag #'transposition \transposition c'
                     {
                         % [Cello Voice] Measure 3
                         {
@@ -567,6 +554,7 @@
                             r4
                         }
                     }
+                    \tag #'transposition \transposition c'
                     {
                         {
                             \clef "percussion"
@@ -581,19 +569,11 @@
                                             #0.5
                                             \smaller
                                                 \italic
-                                                    exhale
+                                                    inhale
                                     }
                         }
                         {
-                            c'16 \repeatTie [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\accent
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\accent
-                            \set stemLeftBeamCount = 2
-                            c'16 -\accent ]
+                            c'4 \repeatTie
                         }
                         % [Cello Voice] Measure 5
                         {
@@ -614,10 +594,9 @@
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 3/8
-                            \stopStaff
-                            \startStaff
                         }
                     }
+                    \tag #'transposition \transposition c'
                     {
                         % [Cello Voice] Measure 7
                         {
