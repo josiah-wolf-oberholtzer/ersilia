@@ -472,7 +472,7 @@
         \shape #'((-1.5 . 0) (-1 . 0) (-0.5 . 0) (0 . 0)) RepeatTie                 
         \override RepeatTie.X-extent = ##f
         \override SpacingSpanner.strict-grace-spacing = ##t
-        \override SpacingSpanner.strict-note-spacing = ##f
+        \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
         \override StaffSymbol.color = #(x11-color 'grey50)
         \override Stem.details.beamed-lengths = #'(6)
@@ -508,7 +508,6 @@
             (stretchability . 20)
             )
         autoBeaming = ##f
-        %doubleRepeatType = #":|.|:"
         pedalSustainStyle = #'mixed
         proportionalNotationDuration = #(ly:make-moment 1 24)
         tupletFullLength = ##t
