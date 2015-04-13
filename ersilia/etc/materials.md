@@ -14,13 +14,9 @@ INTERRUPT:                          :   1   2   3   4   5   6
 
 guitar strummed                     |   +               +    
 piano arm cluster                   |   +   +       +
-piano glissando                     |   -           -
-piano palm cluster                  |   -   -   +   +
-piano string glissando              |                   -   -
 percussion bamboo windchimes        |       +               +
-percussion crotales flash           |   x   x       x       x
+percussion crotales flash           |   -   -       +       -
 percussion snare interruption       |   +                   +
-string legato                       |       -   -
 string overpressure                 |                   -
 
 AGITATO:                            :   1   2   3   4   5   6
@@ -44,6 +40,7 @@ string pointillist                  |
 OSTINATO:                           :   1   2   3   4   5   6
 
 wind ostinato                       |
+piano palm cluster                  |   -   -   +   +
 percussion marimba ostinato         |
 string ostinato                     |
 
@@ -60,6 +57,9 @@ CONTINUO:                           :   1   2   3   4   5   6
 
 wind continuo                       |
 guitar continuo                     |               -   -
+piano glissando                     |   -           -
+piano string glissando              |                   +   +
+string legato                       |       -   -
 
 PEDAL:                              :   1   2   3   4   5   6
 
