@@ -34,6 +34,7 @@ pitch_pipe_music_specifier = consort.MusicSpecifier(
             ),
         percussion_staff=abbreviations.percussion_staff
         ),
+    color='cyan',
     labels=['pitch pipes'],
     pitch_handler=consort.AbsolutePitchHandler(
         pitches_are_nonsemantic=True,
@@ -42,7 +43,7 @@ pitch_pipe_music_specifier = consort.MusicSpecifier(
         denominators=[16],
         output_masks=[
             rhythmmakertools.SustainMask(
-                indices=[0, 1],
+                indices=[0, 2],
                 period=3,
                 ),
             rhythmmakertools.SustainMask(

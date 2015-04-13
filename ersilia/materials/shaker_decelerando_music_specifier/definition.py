@@ -28,7 +28,7 @@ shaker_decelerando_music_specifier = consort.MusicSpecifier(
         duration_spelling_specifier=rhythmmakertools.DurationSpellingSpecifier(
             forbid_meter_rewriting=True,
             ),
-        interpolation_specifier=rhythmmakertools.InterpolationSpecifier(
+        interpolation_specifiers=rhythmmakertools.InterpolationSpecifier(
             start_duration=durationtools.Duration(1, 32),
             stop_duration=durationtools.Duration(1, 8),
             written_duration=durationtools.Duration(1, 32),

@@ -13,7 +13,6 @@ percussion_snare_interruption_music_specifier = consort.MusicSpecifier(
             attachments=[
                 [
                     indicatortools.Articulation('accent'),
-                    indicatortools.LaissezVibrer(),
                     indicatortools.Dynamic('fff'),
                     ]
                 ],
@@ -22,12 +21,27 @@ percussion_snare_interruption_music_specifier = consort.MusicSpecifier(
                 .by_duration('==', (1, 16), preprolated=True)
                 [0],
             ),
-        piano=consort.AttachmentExpression(
-            #attachments=indicatortools.Dynamic('pp'),
-            attachments=consort.SimpleDynamicExpression('o', 'p'),
+        shimmer=consort.AttachmentExpression(
+            attachments=[
+                [
+                    indicatortools.Articulation('accent'),
+                    indicatortools.Dynamic('fp'),
+                    ],
+                ],
             selector=selectortools.Selector()
                 .by_logical_tie(pitched=True)
                 .by_duration('>', (1, 16), preprolated=True)
+                .by_leaves()
+                .by_length('==', 1)
+                [0]
+            ),
+        swell=consort.AttachmentExpression(
+            attachments=consort.SimpleDynamicExpression('o', 'f'),
+            selector=selectortools.Selector()
+                .by_logical_tie(pitched=True)
+                .by_duration('>', (1, 16), preprolated=True)
+                .by_leaves()
+                .by_length('>', 1)
             ),
         tremolo=consort.AttachmentExpression(
             attachments=spannertools.StemTremoloSpanner(),
@@ -51,8 +65,8 @@ percussion_snare_interruption_music_specifier = consort.MusicSpecifier(
         first=rhythmmakertools.IncisedRhythmMaker(
             incise_specifier=rhythmmakertools.InciseSpecifier(
                 fill_with_notes=False,
-                prefix_counts=[1],
-                prefix_talea=[1],
+                prefix_counts=[1, 2],
+                prefix_talea=[1, -1],
                 talea_denominator=16,
                 ),
             ),

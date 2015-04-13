@@ -53,11 +53,12 @@ guitar_tremolo_music_specifier = consort.tools.MusicSpecifier(
                         dynamic_tokens=datastructuretools.CyclicTuple(
                             ['pp', 'mf', 'p', 'p', 'mf', 'mf', 'pp']
                             ),
+                        division_period=2,
                         start_dynamic_tokens=datastructuretools.CyclicTuple(
-                            ['mp', 'ppp']
+                            ['fp', 'o']
                             ),
                         stop_dynamic_tokens=datastructuretools.CyclicTuple(
-                            ['ppp', 'mp']
+                            ['o', 'f']
                             ),
                         transitions=datastructuretools.CyclicTuple(
                             [None]

@@ -5,6 +5,7 @@ from abjad.tools import indicatortools
 from abjad.tools import mathtools
 from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
+from abjad.tools import scoretools
 from abjad.tools import selectortools
 from abjad.tools import spannertools
 import consort
@@ -17,7 +18,6 @@ percussion_snare_interruption_music_specifier = consort.tools.MusicSpecifier(
                 [
                     [
                         indicatortools.Articulation('accent'),
-                        indicatortools.LaissezVibrer(),
                         indicatortools.Dynamic(
                             name='fff',
                             ),
@@ -47,12 +47,55 @@ percussion_snare_interruption_music_specifier = consort.tools.MusicSpecifier(
                     ),
                 ),
             ),
-        piano=consort.tools.AttachmentExpression(
+        shimmer=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    [
+                        indicatortools.Articulation('accent'),
+                        indicatortools.Dynamic(
+                            name='fp',
+                            ),
+                        ],
+                    ]
+                ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.LogicalTieSelectorCallback(
+                        flatten=True,
+                        pitched=True,
+                        trivial=True,
+                        only_with_head=False,
+                        only_with_tail=False,
+                        ),
+                    selectortools.DurationSelectorCallback(
+                        duration=selectortools.DurationInequality(
+                            operator_string='>',
+                            duration=durationtools.Duration(1, 16),
+                            ),
+                        preprolated=True,
+                        ),
+                    selectortools.PrototypeSelectorCallback(
+                        prototype=scoretools.Leaf,
+                        ),
+                    selectortools.LengthSelectorCallback(
+                        length=selectortools.LengthInequality(
+                            operator_string='==',
+                            length=1,
+                            ),
+                        ),
+                    selectortools.ItemSelectorCallback(
+                        item=0,
+                        apply_to_each=True,
+                        ),
+                    ),
+                ),
+            ),
+        swell=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [
                     consort.tools.SimpleDynamicExpression(
                         hairpin_start_token='o',
-                        hairpin_stop_token='p',
+                        hairpin_stop_token='f',
                         minimum_duration=durationtools.Duration(1, 4),
                         ),
                     ]
@@ -72,6 +115,15 @@ percussion_snare_interruption_music_specifier = consort.tools.MusicSpecifier(
                             duration=durationtools.Duration(1, 16),
                             ),
                         preprolated=True,
+                        ),
+                    selectortools.PrototypeSelectorCallback(
+                        prototype=scoretools.Leaf,
+                        ),
+                    selectortools.LengthSelectorCallback(
+                        length=selectortools.LengthInequality(
+                            operator_string='>',
+                            length=1,
+                            ),
                         ),
                     ),
                 ),
@@ -125,8 +177,8 @@ percussion_snare_interruption_music_specifier = consort.tools.MusicSpecifier(
             ),
         first=rhythmmakertools.IncisedRhythmMaker(
             incise_specifier=rhythmmakertools.InciseSpecifier(
-                prefix_talea=(1,),
-                prefix_counts=(1,),
+                prefix_talea=(1, -1),
+                prefix_counts=(1, 2),
                 talea_denominator=16,
                 fill_with_notes=False,
                 ),

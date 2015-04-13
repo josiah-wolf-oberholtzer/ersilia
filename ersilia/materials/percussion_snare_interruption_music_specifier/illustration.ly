@@ -57,7 +57,7 @@
                     {
                         % [Violin 1 Voice] Measure 1
                         {
-                            c16 -\accent \laissezVibrer \fff
+                            c16 -\accent \fff
                         }
                     }
                     {
@@ -69,30 +69,32 @@
                     {
                         % [Violin 1 Voice] Measure 2
                         {
-                            c4 :32 \p
+                            c4 :32 -\accent \fp
                         }
                     }
                     {
                         {
                             r8
                         }
-                    }
-                    {
                         % [Violin 1 Voice] Measure 3
                         {
-                            c16 -\accent \laissezVibrer \fff
+                            r16
                         }
                     }
                     {
                         {
-                            r16
+                            c16 -\accent \fff
+                        }
+                    }
+                    {
+                        {
                             r4
                         }
                     }
                     {
                         % [Violin 1 Voice] Measure 4
                         {
-                            c16 -\accent \laissezVibrer \fff
+                            c16 -\accent \fff
                         }
                     }
                     {
@@ -110,7 +112,7 @@
                         }
                         % [Violin 1 Voice] Measure 5
                         {
-                            c4 :32 \repeatTie \p
+                            c4 :32 \repeatTie \f
                             \revert Hairpin #'circled-tip
                         }
                     }
@@ -121,22 +123,16 @@
                         % [Violin 1 Voice] Measure 6
                         {
                             r4
-                        }
-                    }
-                    {
-                        {
-                            c16 -\accent \laissezVibrer \fff
-                        }
-                    }
-                    {
-                        {
                             r16
                         }
                     }
                     {
+                        {
+                            c16 -\accent \fff
+                        }
                         % [Violin 1 Voice] Measure 7
                         {
-                            c4 :32 \p
+                            c4 :32 -\accent \fp
                         }
                     }
                     {
@@ -172,7 +168,7 @@
                     }
                     {
                         {
-                            c16 -\accent \laissezVibrer \fff
+                            c16 -\accent \fff
                         }
                     }
                     {
@@ -191,7 +187,7 @@
                         }
                         % [Violin 2 Voice] Measure 3
                         {
-                            c4 :32 \repeatTie \p
+                            c4 :32 \repeatTie \f
                             \revert Hairpin #'circled-tip
                         }
                     }
@@ -199,23 +195,25 @@
                         {
                             r8
                         }
-                    }
-                    {
                         % [Violin 2 Voice] Measure 4
                         {
-                            c16 -\accent \laissezVibrer \fff
+                            r16
                         }
                     }
                     {
                         {
-                            r16
+                            c16 -\accent \fff
+                        }
+                    }
+                    {
+                        {
                             r4
                             r8
                         }
                     }
                     {
                         {
-                            c16 -\accent \laissezVibrer \fff
+                            c16 -\accent \fff
                         }
                     }
                     {
@@ -241,7 +239,7 @@
                         }
                         % [Violin 2 Voice] Measure 7
                         {
-                            c8 :64 \repeatTie \p
+                            c8 :64 \repeatTie \f
                             \revert Hairpin #'circled-tip
                         }
                     }
@@ -273,17 +271,17 @@
                     {
                         % [Viola Voice] Measure 1
                         {
-                            r8
-                        }
-                    }
-                    {
-                        {
-                            c16 -\accent \laissezVibrer \fff
-                        }
-                    }
-                    {
-                        {
                             r8.
+                        }
+                    }
+                    {
+                        {
+                            c16 -\accent \fff
+                        }
+                    }
+                    {
+                        {
+                            r8
                         }
                     }
                     {
@@ -300,7 +298,7 @@
                         }
                         % [Viola Voice] Measure 3
                         {
-                            c8 :64 \repeatTie \p
+                            c8 :64 \repeatTie \f
                             \revert Hairpin #'circled-tip
                         }
                     }
@@ -315,7 +313,7 @@
                     }
                     {
                         {
-                            c16 -\accent \laissezVibrer \fff
+                            c16 -\accent \fff
                         }
                     }
                     {
@@ -338,7 +336,7 @@
                         }
                         % [Viola Voice] Measure 6
                         {
-                            c4 :32 \repeatTie \p
+                            c4 :32 \repeatTie \f
                             \revert Hairpin #'circled-tip
                         }
                     }
@@ -379,19 +377,23 @@
                     {
                         % [Cello Voice] Measure 1
                         {
-                            c16 -\accent \laissezVibrer \fff
+                            r16
                         }
                     }
                     {
                         {
-                            r16
+                            c16 -\accent \fff
+                        }
+                    }
+                    {
+                        {
                             r4
                         }
                     }
                     {
                         % [Cello Voice] Measure 2
                         {
-                            c4 :32 \p
+                            c4 :32 -\accent \fp
                         }
                     }
                     {
@@ -402,7 +404,7 @@
                     {
                         % [Cello Voice] Measure 3
                         {
-                            c16 -\accent \laissezVibrer \fff
+                            c16 -\accent \fff
                         }
                     }
                     {
@@ -414,22 +416,23 @@
                     {
                         % [Cello Voice] Measure 4
                         {
-                            c8 :64 \p
+                            c8 :64 -\accent \fp
                         }
                     }
                     {
                         {
                             r4
+                            r16
                         }
                     }
                     {
                         {
-                            c16 -\accent \laissezVibrer \fff
+                            c16 -\accent \fff
                         }
                     }
                     {
                         {
-                            r8.
+                            r8
                         }
                     }
                     {
@@ -442,7 +445,7 @@
                             c8 :64 \repeatTie
                         }
                         {
-                            c4 :32 \repeatTie \p
+                            c4 :32 \repeatTie \f
                             \revert Hairpin #'circled-tip
                         }
                     }
@@ -460,7 +463,7 @@
                     {
                         % [Cello Voice] Measure 7
                         {
-                            c16 -\accent \laissezVibrer \fff
+                            c16 -\accent \fff
                         }
                     }
                     {

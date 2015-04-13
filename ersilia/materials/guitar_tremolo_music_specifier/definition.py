@@ -15,9 +15,10 @@ guitar_tremolo_music_specifier = consort.MusicSpecifier(
                 [1],
             ),
         dynamic_expressions=consort.DynamicExpression(
+            division_period=2,
             dynamic_tokens='pp mf p p mf mf pp',
-            start_dynamic_tokens='mp ppp',
-            stop_dynamic_tokens='ppp mp',
+            start_dynamic_tokens='fp o',
+            stop_dynamic_tokens='o f',
             ),
         stem_tremolo_spanner=consort.AttachmentExpression(
             attachments=spannertools.StemTremoloSpanner(),

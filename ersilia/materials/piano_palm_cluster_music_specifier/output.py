@@ -117,8 +117,8 @@ piano_palm_cluster_music_specifier = consort.tools.MusicSpecifier(
             right_classes=(
                 scoretools.Rest,
                 ),
-            left_counts=(1, 1, 0),
-            right_counts=(1, 0),
+            left_counts=(1,),
+            right_counts=(1, 0, 0),
             ),
         preferred_denominator='from_counts',
         ),
