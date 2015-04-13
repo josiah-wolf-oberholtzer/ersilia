@@ -13,7 +13,7 @@ guitar_undulation_tremolo_music_specifier = consort.MusicSpecifier(
             attachments=indicatortools.Articulation('accent'),
             selector=selectortools.Selector()
                 .by_logical_tie(pitched=True)
-                .by_duration('==', (1, 16), preprolated=True)
+                .by_duration('==', (1, 8), preprolated=True)
                 [0]
                 .with_next_leaf()
             ),
@@ -39,7 +39,7 @@ guitar_undulation_tremolo_music_specifier = consort.MusicSpecifier(
         pitch_operation_specifier=abbreviations.pitch_operation_specifier,
         ),
     rhythm_maker=rhythmmakertools.EvenDivisionRhythmMaker(
-        denominators=[16],
+        denominators=[8],
         extra_counts_per_division=[0, 1],
         output_masks=[
             rhythmmakertools.SustainMask(
