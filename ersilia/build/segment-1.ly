@@ -4,37 +4,14 @@
         \tag #'time
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 2/4
+                \time 4/4
                 \tempo 4=96
                 \mark \markup {
                     \fontsize
                         #-3
                         "Scene I"
                     }
-                s1 * 1/2
-            }
-            {
-                \time 4/4
                 s1 * 1
-            }
-            {
-                \time 7/8
-                s1 * 7/8
-            }
-            {
-                \time 2/4
-                s1 * 1/2
-            }
-            {
-                \time 7/8
-                s1 * 7/8
-            }
-            {
-                \time 2/4
-                s1 * 1/2
-            }
-            {
-                s1 * 1/2
             }
             {
                 \time 5/8
@@ -47,6 +24,33 @@
             {
                 \time 2/4
                 s1 * 1/2
+            }
+            {
+                \time 3/4
+                s1 * 3/4
+            }
+            {
+                \time 2/4
+                s1 * 1/2
+            }
+            {
+                \time 7/8
+                s1 * 7/8
+            }
+            {
+                \time 5/8
+                s1 * 5/8
+            }
+            {
+                s1 * 5/8
+            }
+            {
+                \time 2/4
+                s1 * 1/2
+            }
+            {
+                \time 6/8
+                s1 * 3/4
             }
             {
                 \time 4/4
@@ -75,10 +79,19 @@
                 s1 * 3/4
             }
             {
-                \time 4/4
-                s1 * 1
+                \time 7/8
+                s1 * 7/8
             }
             {
+                \time 3/4
+                s1 * 3/4
+            }
+            {
+                \time 2/4
+                s1 * 1/2
+            }
+            {
+                \time 4/4
                 s1 * 1
             }
             {
@@ -86,29 +99,18 @@
                 s1 * 1/2
             }
             {
+                \time 5/8
+                s1 * 5/8
+            }
+            {
+                s1 * 5/8
+            }
+            {
                 \time 4/4
                 s1 * 1
             }
             {
                 \time 2/4
-                s1 * 1/2
-            }
-            {
-                s1 * 1/2
-            }
-            {
-                s1 * 1/2
-            }
-            {
-                s1 * 1/2
-            }
-            {
-                s1 * 1/2
-            }
-            {
-                s1 * 1/2
-            }
-            {
                 s1 * 1/2
             }
             {
@@ -121,16 +123,7 @@
                 \clef "treble"
                 \context Voice = "Flute Voice" {
                     {
-                        % Measure 1
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 2
+                        % [Flute Voice] Measure 1
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -139,52 +132,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 3
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 4
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 5
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 6
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 7
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 8
+                        % [Flute Voice] Measure 2
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -193,79 +141,101 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 9
+                        % [Flute Voice] Measure 3
                         {
+                            r4
+                        }
+                    }
+                    {
+                        {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            c'16 -\staccato \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            c'16 -\staccato ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "treble"
                         }
-                        % Measure 10
+                    }
+                    {
                         {
+                            r8
+                            r2
+                        }
+                    }
+                    {
+                        % [Flute Voice] Measure 4
+                        {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1/2
+                            c'16 -\staccato \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            c'16 -\staccato ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "treble"
                         }
-                        % Measure 11
+                    }
+                    {
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1
-                            \stopStaff
-                            \startStaff
+                            r4
                         }
-                        % Measure 12
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 13
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 14
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 15
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 16
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 17
+                        % [Flute Voice] Measure 5
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -274,7 +244,175 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 18
+                        % [Flute Voice] Measure 6
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Flute Voice] Measure 7
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Flute Voice] Measure 8
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Flute Voice] Measure 9
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Flute Voice] Measure 10
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Flute Voice] Measure 11
+                        {
+                            r8
+                        }
+                    }
+                    {
+                        \times 4/5 {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            r8 \startTextSpan [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato \ppp
+                            \set stemLeftBeamCount = 1
+                            r8 ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        {
+                            r4.
+                        }
+                        % [Flute Voice] Measure 12
+                        {
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'16 -\staccato \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            c'16 -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        {
+                            r2
+                        }
+                        % [Flute Voice] Measure 13
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Flute Voice] Measure 14
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Flute Voice] Measure 15
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -283,7 +421,137 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 19
+                        % [Flute Voice] Measure 16
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Flute Voice] Measure 17
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Flute Voice] Measure 18
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/4
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Flute Voice] Measure 19
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Flute Voice] Measure 20
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/4
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Flute Voice] Measure 21
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Flute Voice] Measure 22
+                        {
+                            r4
+                        }
+                    }
+                    {
+                        {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'16 -\staccato \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            c'16 -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        {
+                            r16
+                            r2
+                        }
+                        % [Flute Voice] Measure 23
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Flute Voice] Measure 24
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Flute Voice] Measure 25
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Flute Voice] Measure 26
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -292,7 +560,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 20
+                        % [Flute Voice] Measure 27
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -301,79 +569,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 21
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 22
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 23
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 24
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 25
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 26
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 27
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 28
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 29
+                        % [Flute Voice] Measure 28
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -390,16 +586,7 @@
                 \clef "treble"
                 \context Voice = "Oboe Voice" {
                     {
-                        % Measure 1
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 2
+                        % [Oboe Voice] Measure 1
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -408,52 +595,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 3
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 4
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 5
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 6
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 7
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 8
+                        % [Oboe Voice] Measure 2
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -462,70 +604,59 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 9
+                        % [Oboe Voice] Measure 3
                         {
+                            r8
+                        }
+                    }
+                    {
+                        \times 4/5 {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            c'16 -\staccato \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
+                            c'16 -\staccato
+                            \set stemLeftBeamCount = 1
+                            r8 ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "treble"
                         }
-                        % Measure 10
+                    }
+                    {
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            r8
+                            r2
                         }
-                        % Measure 11
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 12
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 13
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 14
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 15
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 16
+                        % [Oboe Voice] Measure 4
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -534,7 +665,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 17
+                        % [Oboe Voice] Measure 5
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -543,7 +674,147 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 18
+                        % [Oboe Voice] Measure 6
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Oboe Voice] Measure 7
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Oboe Voice] Measure 8
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Oboe Voice] Measure 9
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Oboe Voice] Measure 10
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                    }
+                    {
+                        % [Oboe Voice] Measure 11
+                        {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'16 -\staccato \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            c'16 -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        {
+                            r4
+                            r4.
+                        }
+                        % [Oboe Voice] Measure 12
+                        {
+                            r2
+                        }
+                    }
+                    {
+                        {
+                            \clef "percussion"
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'16 -\staccato \ppp ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        {
+                            r4..
+                        }
+                        % [Oboe Voice] Measure 13
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Oboe Voice] Measure 14
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Oboe Voice] Measure 15
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -552,7 +823,169 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 19
+                        % [Oboe Voice] Measure 16
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Oboe Voice] Measure 17
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Oboe Voice] Measure 18
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/4
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Oboe Voice] Measure 19
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Oboe Voice] Measure 20
+                        {
+                            r2
+                        }
+                    }
+                    {
+                        \times 4/5 {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            r8. \startTextSpan [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato \ppp
+                            \set stemLeftBeamCount = 2
+                            c'16 -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        % [Oboe Voice] Measure 21
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Oboe Voice] Measure 22
+                        {
+                            r2
+                        }
+                    }
+                    {
+                        {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'16 -\staccato \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            c'16 -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        {
+                            r4.
+                        }
+                        % [Oboe Voice] Measure 23
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Oboe Voice] Measure 24
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Oboe Voice] Measure 25
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Oboe Voice] Measure 26
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -561,7 +994,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 20
+                        % [Oboe Voice] Measure 27
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -570,79 +1003,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 21
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 22
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 23
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 24
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 25
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 26
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 27
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 28
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 29
+                        % [Oboe Voice] Measure 28
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -659,16 +1020,7 @@
                 \clef "treble"
                 \context Voice = "Clarinet Voice" {
                     {
-                        % Measure 1
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 2
+                        % [Clarinet Voice] Measure 1
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -677,52 +1029,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 3
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 4
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 5
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 6
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 7
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 8
+                        % [Clarinet Voice] Measure 2
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -731,7 +1038,286 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 9
+                        % [Clarinet Voice] Measure 3
+                        {
+                            r2
+                        }
+                    }
+                    {
+                        {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'16 -\staccato \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            c'16 -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        {
+                            r8.
+                        }
+                        % [Clarinet Voice] Measure 4
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Clarinet Voice] Measure 5
+                        {
+                            r8
+                        }
+                    }
+                    {
+                        \times 4/5 {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            r8 \startTextSpan [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato \ppp
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            r16 ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        {
+                            r4.
+                        }
+                        % [Clarinet Voice] Measure 6
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Clarinet Voice] Measure 7
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Clarinet Voice] Measure 8
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Clarinet Voice] Measure 9
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Clarinet Voice] Measure 10
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Clarinet Voice] Measure 11
+                        {
+                            r4.
+                        }
+                    }
+                    {
+                        {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'16 -\staccato \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            c'16 -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        {
+                            r16
+                        }
+                        % [Clarinet Voice] Measure 12
+                        {
+                            r2.
+                        }
+                    }
+                    {
+                        {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'16 -\staccato \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            c'16 -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        % [Clarinet Voice] Measure 13
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Clarinet Voice] Measure 14
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Clarinet Voice] Measure 15
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -740,7 +1326,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 10
+                        % [Clarinet Voice] Measure 16
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -749,16 +1335,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 11
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 12
+                        % [Clarinet Voice] Measure 17
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -767,43 +1344,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 13
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 14
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 15
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 16
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 17
+                        % [Clarinet Voice] Measure 18
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -812,7 +1353,152 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 18
+                        % [Clarinet Voice] Measure 19
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Clarinet Voice] Measure 20
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/4
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Clarinet Voice] Measure 21
+                        {
+                            r8
+                        }
+                    }
+                    {
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 6/7 {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            r16 \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato \ppp
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
+                            c'16 -\staccato
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            r8
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            r16 ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        % [Clarinet Voice] Measure 22
+                        {
+                            r2.
+                        }
+                    }
+                    {
+                        {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'16 -\staccato \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            c'16 -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        {
+                            r8
+                        }
+                        % [Clarinet Voice] Measure 23
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Clarinet Voice] Measure 24
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Clarinet Voice] Measure 25
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Clarinet Voice] Measure 26
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -821,16 +1507,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 19
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 20
+                        % [Clarinet Voice] Measure 27
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -839,79 +1516,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 21
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 22
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 23
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 24
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 25
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 26
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 27
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 28
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 29
+                        % [Clarinet Voice] Measure 28
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -928,26 +1533,7 @@
                 \clef "treble"
                 \context Voice = "Saxophone Voice" {
                     {
-                        % Measure 1
-                        {
-                            r4
-                        }
-                    }
-                    {
-                        {
-                            c'16 -\stopped \f \> [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <c' ef'>16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            c'16 -\stopped \mf ]
-                        }
-                    }
-                    {
-                        % Measure 2
+                        % [Saxophone Voice] Measure 1
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -956,135 +1542,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 3
-                        {
-                            r8.
-                        }
-                    }
-                    {
-                        {
-                            <c' ef'>16 -\stopped [
-                            \set stemLeftBeamCount = 2
-                            c'16 -\stopped \ff ]
-                        }
-                    }
-                    {
-                        {
-                            r16
-                        }
-                    }
-                    {
-                        \times 4/5 {
-                            <c' ef'>16 -\stopped \mf \< [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <c' ef'>16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            c'16 -\stopped \ff ]
-                        }
-                    }
-                    {
-                        {
-                            r4
-                        }
-                        % Measure 4
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                    }
-                    {
-                        % Measure 5
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 6/7 {
-                            <c' ef'>16 -\stopped \f \> [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <c' ef'>16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <c' ef'>16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            r16 \mf ]
-                        }
-                    }
-                    {
-                        {
-                            r2
-                        }
-                    }
-                    {
-                        % Measure 6
-                        \times 2/3 {
-                            c'16 -\stopped \ff \> [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <c' ef'>16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <c' ef'>16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            r16 ]
-                        }
-                        {
-                            c'16 -\stopped \f \> [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <c' ef'>16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            c'16 -\stopped ]
-                        }
-                        % Measure 7
-                        \times 2/3 {
-                            r16 \mf \< [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <c' ef'>16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            c'16 -\stopped ]
-                        }
-                        {
-                            <c' ef'>16 -\stopped \ff [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            c'16 -\stopped ]
-                        }
-                    }
-                    {
-                        {
-                            r8.
-                        }
-                        % Measure 8
+                        % [Saxophone Voice] Measure 2
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1093,7 +1551,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 9
+                        % [Saxophone Voice] Measure 3
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1102,7 +1560,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 10
+                        % [Saxophone Voice] Measure 4
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1111,99 +1569,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 11
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 12
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 13
-                        {
-                            r8.
-                        }
-                    }
-                    {
-                        {
-                            <c' ef'>16 -\stopped \mf \< [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <c' ef'>16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            c'16 -\stopped \ff ]
-                        }
-                    }
-                    {
-                        % Measure 14
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1
-                            \stopStaff
-                            \startStaff
-                        }
-                    }
-                    {
-                        % Measure 15
-                        \times 4/5 {
-                            <c' ef'>16 -\stopped \f \> [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <c' ef'>16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            c'16 -\stopped \mf ]
-                        }
-                    }
-                    {
-                        {
-                            r16
-                        }
-                    }
-                    {
-                        {
-                            <c' ef'>16 -\stopped [
-                            \set stemLeftBeamCount = 2
-                            c'16 -\stopped \ff ]
-                        }
-                    }
-                    {
-                        {
-                            r16
-                        }
-                        % Measure 16
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 17
+                        % [Saxophone Voice] Measure 5
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1212,7 +1578,61 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 18
+                        % [Saxophone Voice] Measure 6
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Saxophone Voice] Measure 7
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Saxophone Voice] Measure 8
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Saxophone Voice] Measure 9
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Saxophone Voice] Measure 10
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Saxophone Voice] Measure 11
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/4
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Saxophone Voice] Measure 12
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1221,7 +1641,25 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 19
+                        % [Saxophone Voice] Measure 13
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Saxophone Voice] Measure 14
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Saxophone Voice] Measure 15
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1230,26 +1668,61 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 20
+                        % [Saxophone Voice] Measure 16
                         {
-                            r4
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
                         }
-                    }
-                    {
+                        % [Saxophone Voice] Measure 17
                         {
-                            <c' ef'>16 -\stopped \mf \< [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            <c' ef'>16 -\stopped \ff ]
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
                         }
-                    }
-                    {
-                        % Measure 21
+                        % [Saxophone Voice] Measure 18
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/4
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Saxophone Voice] Measure 19
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Saxophone Voice] Measure 20
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/4
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Saxophone Voice] Measure 21
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Saxophone Voice] Measure 22
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1258,147 +1731,52 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 22
+                        % [Saxophone Voice] Measure 23
                         {
-                            r8
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
                         }
-                    }
-                    {
+                        % [Saxophone Voice] Measure 24
                         {
-                            c'16 -\stopped \f [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            <c' ef'>16 -\stopped ]
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
                         }
-                    }
-                    {
+                        % [Saxophone Voice] Measure 25
                         {
-                            r16
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
                         }
-                    }
-                    {
-                        \times 2/3 {
-                            c'16 -\stopped \ff \> [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <c' ef'>16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            r16 ]
-                        }
-                        % Measure 23
+                        % [Saxophone Voice] Measure 26
                         {
-                            c'16 -\stopped [
-                            \set stemLeftBeamCount = 2
-                            <c' ef'>16 -\stopped \f ]
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1
+                            \stopStaff
+                            \startStaff
                         }
-                    }
-                    {
+                        % [Saxophone Voice] Measure 27
                         {
-                            r8
-                            r4
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
                         }
-                        % Measure 24
-                        {
-                            r4
-                            r8
-                        }
-                    }
-                    {
-                        \times 2/3 {
-                            r16 \mf \< [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            r16 ]
-                        }
-                        % Measure 25
-                        \times 2/3 {
-                            <c' ef'>16 -\stopped \ff \> [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <c' ef'>16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            <c' ef'>16 -\stopped \f ]
-                        }
-                    }
-                    {
-                        {
-                            r4
-                        }
-                        % Measure 26
-                        {
-                            r4
-                        }
-                    }
-                    {
-                        \times 2/3 {
-                            c'16 -\stopped \f \> [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <c' ef'>16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            <c' ef'>16 -\stopped ]
-                        }
-                        % Measure 27
-                        {
-                            c'16 -\stopped \mf \< [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <c' ef'>16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            <c' ef'>16 -\stopped ]
-                        }
-                        \times 2/3 {
-                            c'16 -\stopped \ff \> [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            <c' ef'>16 -\stopped ]
-                        }
-                        % Measure 28
-                        {
-                            c'16 -\stopped [
-                            \set stemLeftBeamCount = 2
-                            <c' ef'>16 -\stopped \f ]
-                        }
-                    }
-                    {
-                        {
-                            r8
-                            r4
-                        }
-                        % Measure 29
+                        % [Saxophone Voice] Measure 28
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1418,16 +1796,7 @@
                     \clef "percussion"
                     \context Voice = "Guitar Pitch Pipe Voice" {
                         {
-                            % Measure 1
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 2
+                            % [Guitar Pitch Pipe Voice] Measure 1
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1436,52 +1805,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 3
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 4
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 5
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 6
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 7
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 8
+                            % [Guitar Pitch Pipe Voice] Measure 2
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1490,7 +1814,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 9
+                            % [Guitar Pitch Pipe Voice] Measure 3
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1499,7 +1823,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 10
+                            % [Guitar Pitch Pipe Voice] Measure 4
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1508,61 +1832,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 11
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 12
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 13
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 14
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 15
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 16
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 17
+                            % [Guitar Pitch Pipe Voice] Measure 5
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1571,7 +1841,61 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 18
+                            % [Guitar Pitch Pipe Voice] Measure 6
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 7
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 8
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 9
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 10
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 11
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 12
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1580,7 +1904,25 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 19
+                            % [Guitar Pitch Pipe Voice] Measure 13
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 14
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 15
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1589,7 +1931,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 20
+                            % [Guitar Pitch Pipe Voice] Measure 16
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1598,7 +1940,52 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 21
+                            % [Guitar Pitch Pipe Voice] Measure 17
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 18
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 19
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 20
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 21
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 22
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1607,7 +1994,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 22
+                            % [Guitar Pitch Pipe Voice] Measure 23
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1616,7 +2003,34 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 23
+                            % [Guitar Pitch Pipe Voice] Measure 24
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 25
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 26
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 27
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1625,52 +2039,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 24
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 25
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 26
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 27
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 28
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 29
+                            % [Guitar Pitch Pipe Voice] Measure 28
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -1686,404 +2055,155 @@
                     \clef "treble"
                     \context Voice = "Guitar Voice" {
                         {
-                            % Measure 1
+                            % [Guitar Voice] Measure 1
                             {
-                                r8.
+                                \once \override Hairpin.circled-tip = ##t
+                                <d f>1 :32 \fp \>
+                            }
+                            % [Guitar Voice] Measure 2
+                            {
+                                <d f>4. :32 -\accent \repeatTie
+                                <d f>4 :32 \repeatTie \!
+                            }
+                        }
+                        {
+                            % [Guitar Voice] Measure 3
+                            {
+                                r4
                             }
                         }
                         {
                             {
-                                c'16 -\staccato [
-                                \set stemLeftBeamCount = 2
-                                <c' ef'>16 -\staccato \f ]
+                                \once \override Hairpin.circled-tip = ##t
+                                <d g>2. :32 \<
+                            }
+                            % [Guitar Voice] Measure 4
+                            {
+                                <d g>2 :32 -\accent \repeatTie
+                            }
+                            % [Guitar Voice] Measure 5
+                            {
+                                <d g>2. :32 \pp \repeatTie \<
+                            }
+                            % [Guitar Voice] Measure 6
+                            {
+                                <d g>2 :32 \f \repeatTie
                             }
                         }
                         {
+                            % [Guitar Voice] Measure 7
                             {
-                                r16
-                                r16
-                            }
-                        }
-                        {
-                            {
-                                c'16 -\staccato \ff \>
-                            }
-                            % Measure 2
-                            \times 4/5 {
-                                <c' ef'>16 -\staccato \f \> [
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                c'16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                c'16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                r16 ]
-                            }
-                            \times 4/6 {
-                                r16 \mf \< [
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                c'16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                c'16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                <c' ef'>16 -\staccato \ff ]
-                            }
-                        }
-                        {
-                            {
-                                <d' f'>2 :32 \mp \>
-                            }
-                            % Measure 3
-                            {
-                                <d' f'>4. :32 \pp \repeatTie \>
-                                <d' f'>8 :64 \ppp \repeatTie
-                            }
-                        }
-                        {
-                            \tweak #'text #tuplet-number::calc-fraction-text
-                            \times 6/7 {
-                                r16 \mf \< [
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                c'16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                c'16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                c'16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                <c' ef'>16 -\staccato ]
-                            }
-                            % Measure 4
-                            {
-                                c'16 -\staccato \ff [
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                c'16 -\staccato ]
-                            }
-                        }
-                        {
-                            {
-                                r16
                                 r8
                             }
                         }
                         {
                             {
-                                <d' f'>8 :64 \ppp \<
+                                \once \override Hairpin.circled-tip = ##t
+                                <d f e'>4 :32 \fp \>
+                                <d f e'>2 :32 -\accent \repeatTie
                             }
-                            % Measure 5
+                            % [Guitar Voice] Measure 8
                             {
-                                <d' f'>4. :32 \pp \repeatTie \<
-                                <d' f'>8 :64 \mp \repeatTie
-                            }
-                        }
-                        {
-                            {
-                                <c' ef'>16 -\staccato \f [
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                c'16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                <c' ef'>16 -\staccato ]
-                            }
-                        }
-                        {
-                            {
-                                r16
-                            }
-                        }
-                        {
-                            {
-                                <d' f'>8 :64 \mp \>
-                            }
-                            % Measure 6
-                            {
-                                <d' f'>4 :32 \ppp \repeatTie
+                                <d f e'>4. :32 \repeatTie \!
                             }
                         }
                         {
                             {
                                 r4
                             }
-                            % Measure 7
+                        }
+                        {
+                            % [Guitar Voice] Measure 9
                             {
-                                r16
+                                \once \override Hairpin.circled-tip = ##t
+                                <d g>4. :32 \<
+                                <d g>4 :32 -\accent \repeatTie
                             }
-                        }
-                        {
+                            % [Guitar Voice] Measure 10
                             {
-                                c'16 -\staccato [
-                                \set stemLeftBeamCount = 2
-                                <c' ef'>16 -\staccato \ff ]
+                                <d g>2 :32 \repeatTie
                             }
-                        }
-                        {
+                            % [Guitar Voice] Measure 11
                             {
-                                r16
+                                <d g>8 :64 \f \repeatTie
                             }
                         }
                         {
-                            \times 4/5 {
-                                c'16 -\staccato \mf \< [
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                c'16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                c'16 -\staccato \ff ]
-                            }
-                        }
-                        {
-                            % Measure 8
-                            {
-                                <d' f'>4 :32 \ppp
-                            }
-                        }
-                        {
-                            {
-                                <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
-                                    ^ \markup {
-                                        \box
-                                            \pad-around
-                                                #0.5
-                                                \tiny
-                                                    \caps
-                                                        L.V
-                                        }
-                            }
-                        }
-                        {
-                            {
-                                <d' f'>4 :32 \mp
-                            }
-                        }
-                        {
-                            % Measure 9
                             {
                                 r8
                             }
                         }
                         {
                             {
-                                <d' f'>2.. :32 \ppp \<
+                                \once \override Hairpin.circled-tip = ##t
+                                <f af c' g'>8 :64 \fp \>
+                                <f af c' g'>4. :32 -\accent \repeatTie
                             }
-                            % Measure 10
+                            % [Guitar Voice] Measure 12
                             {
-                                <d' f'>4 :32 \p \repeatTie \<
-                                <d' f'>8 :64 \mp \repeatTie
+                                <f af c' g'>1 :32 \repeatTie
+                            }
+                            % [Guitar Voice] Measure 13
+                            {
+                                <f af c' g'>4 :32 \repeatTie
+                                <f af c' g'>8 :64 \repeatTie \!
                             }
                         }
                         {
-                            {
-                                <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \p
-                                    ^ \markup {
-                                        \box
-                                            \pad-around
-                                                #0.5
-                                                \tiny
-                                                    \caps
-                                                        L.V
-                                        }
-                            }
-                            % Measure 11
-                            {
-                                <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer
-                                    ^ \markup {
-                                        \box
-                                            \pad-around
-                                                #0.5
-                                                \tiny
-                                                    \caps
-                                                        L.V
-                                        }
-                            }
-                        }
-                        {
-                            {
-                                <f' af'>8 :64 \mp
-                                <f' af'>4. :32 \repeatTie
-                            }
-                        }
-                        {
-                            {
-                                r4.
-                            }
-                        }
-                        {
-                            % Measure 12
-                            {
-                                <f' af'>2 :32 \ppp
-                            }
-                        }
-                        {
-                            % Measure 13
-                            \tweak #'text #tuplet-number::calc-fraction-text
-                            \times 6/7 {
-                                r16 \f \> [
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                c'16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                c'16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                r16 ]
-                            }
-                            {
-                                c'16 -\staccato [
-                                \set stemLeftBeamCount = 2
-                                <c' ef'>16 -\staccato \mf ]
-                            }
-                        }
-                        {
-                            % Measure 14
                             {
                                 r8
                             }
-                        }
-                        {
+                            % [Guitar Voice] Measure 14
                             {
-                                <f' af'>8 :64 \mp \>
-                                <f' af'>2 :32 \repeatTie
-                                <f' af'>8 :64 \ppp \repeatTie
-                            }
-                        }
-                        {
-                            {
-                                c'16 -\staccato \ff \> [
-                                \set stemLeftBeamCount = 2
-                                <c' ef'>16 -\staccato ]
-                            }
-                            % Measure 15
-                            \times 4/5 {
-                                r16 \f \> [
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                c'16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                c'16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                r16 \mf ]
+                                r4
                             }
                         }
                         {
                             {
-                                <f' af'>4 :32 \ppp \<
+                                \once \override Hairpin.circled-tip = ##t
+                                <f af>4 :32 \<
                             }
-                            % Measure 16
+                            % [Guitar Voice] Measure 15
                             {
-                                <f' af'>4 :32 \mp \repeatTie
+                                <f af>1 :32 -\accent \repeatTie
+                            }
+                            % [Guitar Voice] Measure 16
+                            {
+                                <f af>2 :32 \p \repeatTie \<
+                            }
+                            % [Guitar Voice] Measure 17
+                            {
+                                <f af>2 :32 \repeatTie
+                            }
+                            % [Guitar Voice] Measure 18
+                            {
+                                <f af>2. :32 \f \repeatTie
                             }
                         }
                         {
-                            {
-                                r16
-                            }
-                        }
-                        {
-                            {
-                                <c' ef'>16 -\staccato [
-                                \set stemLeftBeamCount = 2
-                                c'16 -\staccato \mf ]
-                            }
-                        }
-                        {
-                            {
-                                r16
-                            }
-                            % Measure 17
+                            % [Guitar Voice] Measure 19
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/4
+                                R1 * 7/8
                                 \stopStaff
                                 \startStaff
                             }
                         }
                         {
-                            % Measure 18
+                            % [Guitar Voice] Measure 20
                             {
-                                <f' af'>8 :64 \mp
+                                \once \override Hairpin.circled-tip = ##t
+                                <g, c>2. :32 \fp \>
                             }
-                        }
-                        {
+                            % [Guitar Voice] Measure 21
                             {
-                                <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \mf
-                                    ^ \markup {
-                                        \box
-                                            \pad-around
-                                                #0.5
-                                                \tiny
-                                                    \caps
-                                                        L.V
-                                        }
+                                <g, c>2 :32 -\accent \repeatTie
                             }
-                        }
-                        {
+                            % [Guitar Voice] Measure 22
                             {
-                                <f' af'>2. :32 \ppp
-                            }
-                        }
-                        {
-                            % Measure 19
-                            {
-                                <c' ef' g' bf' c'''>8 \arpeggio \laissezVibrer \ppp
-                                    ^ \markup {
-                                        \box
-                                            \pad-around
-                                                #0.5
-                                                \tiny
-                                                    \caps
-                                                        L.V
-                                        }
-                            }
-                        }
-                        {
-                            {
-                                <d' f'>8 :64 \mp \>
-                                <d' f'>2 :32 \repeatTie
-                                <d' f'>8 :64 \ppp \repeatTie
+                                <g, c>4 :32 \repeatTie \!
                             }
                         }
                         {
@@ -2092,195 +2212,55 @@
                             }
                         }
                         {
-                            % Measure 20
                             {
-                                <d' f'>8 :64 \ppp
+                                \once \override Hairpin.circled-tip = ##t
+                                <g, bf, a>8 :64 \<
+                                <g, bf, a>2 :32 -\accent \repeatTie
                             }
-                        }
-                        {
-                            \times 4/5 {
-                                r16 \f \> [
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                c'16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                c'16 -\staccato ]
-                            }
+                            % [Guitar Voice] Measure 23
                             {
-                                <c' ef'>16 -\staccato \mf
+                                <g, bf, a>2 :32 \repeatTie
                             }
-                        }
-                        {
+                            % [Guitar Voice] Measure 24
                             {
-                                r16
+                                <g, bf, a>4. :32 \pp \repeatTie \<
+                                <g, bf, a>4 :32 -\accent \repeatTie
                             }
-                            % Measure 21
+                            % [Guitar Voice] Measure 25
                             {
-                                r16
+                                <g, bf, a>4. :32 \repeatTie
+                                <g, bf, a>4 :32 \repeatTie
                             }
-                        }
-                        {
+                            % [Guitar Voice] Measure 26
                             {
-                                c'16 -\staccato \ff \> [
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                c'16 -\staccato ]
-                            }
-                            \times 4/5 {
-                                r16 \f \> [
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                c'16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                r16 \mf ]
-                            }
-                        }
-                        {
-                            {
-                                <d' f'>2 :32 \mp \>
-                            }
-                            % Measure 22
-                            {
-                                <d' f'>2 :32 \ppp \repeatTie
-                            }
-                        }
-                        {
-                            % Measure 23
-                            {
-                                c'16 -\staccato \mf \< [
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                c'16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                c'16 -\staccato \ff ]
-                            }
-                        }
-                        {
-                            {
-                                r16
-                            }
-                        }
-                        {
-                            \times 2/3 {
-                                r16 [
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                c'16 -\staccato \f ]
-                            }
-                        }
-                        {
-                            % Measure 24
-                            {
-                                r4
-                            }
-                        }
-                        {
-                            {
-                                <d' f'>4 :32 \ppp \<
-                            }
-                            % Measure 25
-                            {
-                                <d' f'>4 :32 \pp \repeatTie \<
-                                <d' f'>8 :64 \mp \repeatTie
+                                <g, bf, a>4. :32 \f \repeatTie
                             }
                         }
                         {
                             {
                                 r8
-                            }
-                            % Measure 26
-                            {
                                 r8
                             }
                         }
                         {
                             {
-                                <d' f'>8 :64 \mp [
-                                \set stemLeftBeamCount = 1
-                                <d' f'>8 :64 \repeatTie ]
+                                \once \override Hairpin.circled-tip = ##t
+                                <g, c>4. :32 \fp \>
+                            }
+                            % [Guitar Voice] Measure 27
+                            {
+                                <g, c>2 :32 \repeatTie \!
                             }
                         }
                         {
+                            % [Guitar Voice] Measure 28
                             {
-                                r8
-                            }
-                            % Measure 27
-                            {
-                                r8
-                            }
-                        }
-                        {
-                            \tweak #'text #tuplet-number::calc-fraction-text
-                            \times 6/7 {
-                                r16 \ff \> [
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                c'16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                c'16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                r16 ]
-                            }
-                            % Measure 28
-                            \times 4/6 {
-                                c'16 -\staccato \f \> [
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                c'16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' ef'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                c'16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                <c' ef'>16 -\staccato \mf ]
-                            }
-                        }
-                        {
-                            {
-                                r4
-                            }
-                        }
-                        {
-                            % Measure 29
-                            {
-                                <d' f'>2 :32 \ppp
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
                             }
                         }
                     }
@@ -2292,16 +2272,7 @@
                     \clef "percussion"
                     \context Voice = "Piano Pitch Pipe Voice" {
                         {
-                            % Measure 1
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 2
+                            % [Piano Pitch Pipe Voice] Measure 1
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2310,52 +2281,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 3
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 4
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 5
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 6
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 7
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 8
+                            % [Piano Pitch Pipe Voice] Measure 2
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2364,7 +2290,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 9
+                            % [Piano Pitch Pipe Voice] Measure 3
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2373,7 +2299,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 10
+                            % [Piano Pitch Pipe Voice] Measure 4
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2382,61 +2308,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 11
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 12
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 13
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 14
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 15
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 16
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 17
+                            % [Piano Pitch Pipe Voice] Measure 5
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2445,7 +2317,61 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 18
+                            % [Piano Pitch Pipe Voice] Measure 6
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 7
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 8
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 9
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 10
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 11
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 12
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2454,7 +2380,25 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 19
+                            % [Piano Pitch Pipe Voice] Measure 13
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 14
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 15
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2463,7 +2407,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 20
+                            % [Piano Pitch Pipe Voice] Measure 16
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2472,7 +2416,52 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 21
+                            % [Piano Pitch Pipe Voice] Measure 17
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 18
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 19
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 20
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 21
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 22
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2481,7 +2470,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 22
+                            % [Piano Pitch Pipe Voice] Measure 23
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2490,7 +2479,34 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 23
+                            % [Piano Pitch Pipe Voice] Measure 24
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 25
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 26
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 27
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2499,52 +2515,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 24
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 25
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 26
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 27
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 28
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 29
+                            % [Piano Pitch Pipe Voice] Measure 28
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2561,156 +2532,16 @@
                         \clef "treble"
                         \context Voice = "Piano Upper Voice" {
                             {
-                                % Measure 1
+                                % [Piano Upper Voice] Measure 1
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 1/2
+                                    R1 * 1
                                     \stopStaff
                                     \startStaff
                                 }
-                                % Measure 2
-                                {
-                                    r16
-                                }
-                            }
-                            {
-                                {
-                                    <c' ef' a' d''>16 -\staccato \f \> [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    <c' ef'>16 -\staccato ]
-                                }
-                                \times 4/5 {
-                                    <c' ef' a' d''>16 -\staccato \mf \< [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    r16 \ff ]
-                                }
-                            }
-                            {
-                                {
-                                    r2
-                                }
-                                % Measure 3
-                                {
-                                    r4.
-                                    r8
-                                }
-                            }
-                            {
-                                \times 4/5 {
-                                    r16 \ff \> [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    c'16 -\staccato \f ]
-                                }
-                            }
-                            {
-                                {
-                                    r8
-                                }
-                                % Measure 4
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                % Measure 5
-                                {
-                                    r8
-                                }
-                            }
-                            {
-                                {
-                                    <c' ef'>16 -\staccato \mf \< [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato \ff ]
-                                }
-                            }
-                            {
-                                {
-                                    r16
-                                }
-                            }
-                            {
-                                \times 4/5 {
-                                    r16 \f \> [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    c'16 -\staccato \mf ]
-                                }
-                            }
-                            {
-                                {
-                                    r8
-                                }
-                                % Measure 6
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                % Measure 7
-                                {
-                                    r16
-                                }
-                            }
-                            {
-                                {
-                                    <c' ef'>16 -\staccato [
-                                    \set stemLeftBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato \ff ]
-                                }
-                            }
-                            {
-                                {
-                                    r16
-                                    r4
-                                }
-                                % Measure 8
+                                % [Piano Upper Voice] Measure 2
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2719,7 +2550,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
-                                % Measure 9
+                                % [Piano Upper Voice] Measure 3
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2728,7 +2559,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
-                                % Measure 10
+                                % [Piano Upper Voice] Measure 4
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2737,121 +2568,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
-                                % Measure 11
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                % Measure 12
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                % Measure 13
-                                {
-                                    r4
-                                }
-                            }
-                            {
-                                \times 4/5 {
-                                    r16 \mf \< [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    r16 ]
-                                }
-                                % Measure 14
-                                \tweak #'text #tuplet-number::calc-fraction-text
-                                \times 6/8 {
-                                    c'16 -\staccato \ff \> [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    <c' ef'>16 -\staccato \f ]
-                                }
-                            }
-                            {
-                                {
-                                    r16
-                                }
-                            }
-                            {
-                                {
-                                    <c' ef' a' d''>16 -\staccato [
-                                    \set stemLeftBeamCount = 2
-                                    c'16 -\staccato \f ]
-                                }
-                            }
-                            {
-                                {
-                                    r4..
-                                }
-                                % Measure 15
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                % Measure 16
-                                {
-                                    r8
-                                }
-                            }
-                            {
-                                {
-                                    <c' ef'>16 -\staccato \ff \> [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    c'16 -\staccato \f ]
-                                }
-                            }
-                            {
-                                % Measure 17
+                                % [Piano Upper Voice] Measure 5
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2860,25 +2577,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
-                                % Measure 18
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                % Measure 19
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                % Measure 20
+                                % [Piano Upper Voice] Measure 6
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2887,40 +2586,641 @@
                                     \stopStaff
                                     \startStaff
                                 }
-                                % Measure 21
+                                % [Piano Upper Voice] Measure 7
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 7/8
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                % [Piano Upper Voice] Measure 8
                                 {
                                     r16
                                 }
                             }
                             {
                                 {
-                                    <c' ef'>16 -\staccato \mf \< [
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <c''' e''' g'''>16 \p \< [
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
+                                    <e''' g''' b'''>16
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
                                     \set stemLeftBeamCount = 2
-                                    c'16 -\staccato ]
+                                    \set stemRightBeamCount = 2
+                                    <f' a' c'' e'' g''>16
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 2
+                                    <c''' e''' g'''>16 \mf ]
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
                                 }
+                            }
+                            {
+                                {
+                                    r16
+                                    r16
+                                }
+                            }
+                            {
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <e''' g''' b'''>16 \f \> [
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
+                                    <f'' a'' c''' e''' g'''>16
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 2
+                                    <c''' e''' g'''>16 ]
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                }
+                                % [Piano Upper Voice] Measure 9
+                                \times 2/3 {
+                                    r8 [
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
+                                    <e''' g''' b'''>8
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 1
+                                    <f'' a'' c''' e''' g'''>8 \p ]
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    r8
+                                }
+                            }
+                            {
+                                \times 2/3 {
+                                    r8 [
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
+                                    <c''' e''' g'''>8 \pp
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 1
+                                    <e'' g'' b''>8 ]
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                }
+                            }
+                            {
+                                % [Piano Upper Voice] Measure 10
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 1/2
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                % [Piano Upper Voice] Measure 11
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 3/4
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                % [Piano Upper Voice] Measure 12
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 1
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                % [Piano Upper Voice] Measure 13
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 1/2
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                % [Piano Upper Voice] Measure 14
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 1/2
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                % [Piano Upper Voice] Measure 15
+                                {
+                                    r2
+                                    r8.
+                                }
+                            }
+                            {
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <f' a' c'' e'' g''>16 \mp \> [
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
+                                    <c'' e'' g''>16
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
+                                    <e'' g'' b''>16
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
+                                    <f' a' c'' e'' g''>16
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 2
+                                    <c'' e'' g''>16 ]
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                }
+                                % [Piano Upper Voice] Measure 16
                                 \times 4/5 {
-                                    <c' ef'>16 -\staccato \ff \> [
+                                    r8 [
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
+                                    <e'' g'' b''>8
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
+                                    <f' a' c'' e'' g''>8
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
+                                    <c'' e'' g''>8 \pp
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                    \set stemLeftBeamCount = 1
+                                    r8 ]
+                                }
+                            }
+                            {
+                                % [Piano Upper Voice] Measure 17
+                                {
+                                    r8.
+                                }
+                            }
+                            {
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <e'' g'' b''>16 \mf [
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 2
+                                    <f'' a'' c''' e''' g'''>16 ]
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    r8.
+                                }
+                                % [Piano Upper Voice] Measure 18
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 3/4
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                % [Piano Upper Voice] Measure 19
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 7/8
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                % [Piano Upper Voice] Measure 20
+                                {
+                                    r2
+                                }
+                            }
+                            {
+                                \times 2/3 {
+                                    r8 [
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
+                                    <c'' e'' g''>8 \p
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 1
+                                    <e'' g'' b''>8 ]
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                }
+                            }
+                            {
+                                % [Piano Upper Voice] Measure 21
+                                {
+                                    r16
+                                }
+                            }
+                            {
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <f' a' c'' e'' g''>16 \f
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    r16
+                                }
+                            }
+                            {
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <c'' e'' g''>16 \pp \< [
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
+                                    <e'' g'' b''>16
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2
-                                    c'16 -\staccato
+                                    <f' a' c'' e'' g''>16
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 2
+                                    <c'' e'' g''>16 \f ]
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    r16
+                                }
+                                % [Piano Upper Voice] Measure 22
+                                {
+                                    r4
+                                    r16
+                                }
+                            }
+                            {
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <e'' g'' b''>16 \mp [
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
+                                    <f' a' c'' e'' g''>16
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
                                     \set stemLeftBeamCount = 2
-                                    r16 \f ]
+                                    <c'' e'' g''>16 ]
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
                                 }
                             }
                             {
                                 {
                                     r2
                                 }
-                                % Measure 22
+                                % [Piano Upper Voice] Measure 23
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2929,29 +3229,34 @@
                                     \stopStaff
                                     \startStaff
                                 }
-                            }
-                            {
-                                % Measure 23
-                                \times 4/5 {
-                                    r16 \f \> [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato \mf ]
-                                }
-                            }
-                            {
+                                % [Piano Upper Voice] Measure 24
                                 {
-                                    r4
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 5/8
+                                    \stopStaff
+                                    \startStaff
                                 }
-                                % Measure 24
+                                % [Piano Upper Voice] Measure 25
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 5/8
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                % [Piano Upper Voice] Measure 26
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 1
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                % [Piano Upper Voice] Measure 27
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -2960,91 +3265,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
-                            }
-                            {
-                                % Measure 25
-                                {
-                                    c'16 -\staccato \ff \> [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    <c' ef'>16 -\staccato \f ]
-                                }
-                            }
-                            {
-                                {
-                                    r16
-                                }
-                            }
-                            {
-                                \times 2/3 {
-                                    r16 [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    c'16 -\staccato \mf ]
-                                }
-                            }
-                            {
-                                % Measure 26
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                % Measure 27
-                                {
-                                    r8
-                                }
-                            }
-                            {
-                                \tweak #'text #tuplet-number::calc-fraction-text
-                                \times 6/8 {
-                                    r16 \f \> [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    <c' ef'>16 -\staccato \mf ]
-                                }
-                            }
-                            {
-                                % Measure 28
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                % Measure 29
+                                % [Piano Upper Voice] Measure 28
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -3060,168 +3281,195 @@
                         \clef "bass"
                         \context Voice = "Piano Lower Voice" {
                             {
-                                % Measure 1
+                                % [Piano Lower Voice] Measure 1
                                 {
-                                    r4
-                                }
-                            }
-                            {
-                                \times 4/5 {
-                                    r16 \ff \> [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    r16 \f ]
-                                }
-                            }
-                            {
-                                % Measure 2
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1
-                                    \stopStaff
-                                    \startStaff
-                                }
-                            }
-                            {
-                                % Measure 3
-                                {
-                                    <c' ef' a' d''>16 -\staccato \mf \< [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato ]
-                                }
-                                \tweak #'text #tuplet-number::calc-fraction-text
-                                \times 6/7 {
-                                    r16 \ff \> [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    r16 ]
-                                }
-                                \times 4/6 {
-                                    r16 \f \> [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    c'16 -\staccato \mf ]
-                                }
-                            }
-                            {
-                                % Measure 4
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                % Measure 5
-                                {
-                                    r4
-                                    r16
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
                                 }
                             }
                             {
                                 {
-                                    <c' ef'>16 -\staccato \f \> [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    <c' ef'>16 -\staccato \mf ]
+                                    r2..
                                 }
                             }
                             {
+                                % [Piano Lower Voice] Measure 2
                                 {
-                                    r16
-                                    r16
-                                }
-                            }
-                            {
-                                {
-                                    <c' ef' a' d''>16 -\staccato \ff [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    <c' ef'>16 -\staccato ]
-                                }
-                            }
-                            {
-                                % Measure 6
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
-                                }
-                            }
-                            {
-                                % Measure 7
-                                \times 4/5 {
-                                    r16 \mf \< [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato \ff ]
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
                                 }
                             }
                             {
                                 {
                                     r4
+                                    r4
                                 }
-                                % Measure 8
+                                % [Piano Lower Voice] Measure 3
+                                {
+                                    r2.
+                                }
+                            }
+                            {
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    r8
+                                }
+                            }
+                            {
+                                % [Piano Lower Voice] Measure 4
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    r8
+                                    r4
+                                }
+                            }
+                            {
+                                % [Piano Lower Voice] Measure 5
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    r8
+                                    r2
+                                }
+                            }
+                            {
+                                % [Piano Lower Voice] Measure 6
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    r8
+                                    r4
+                                }
+                            }
+                            {
+                                % [Piano Lower Voice] Measure 7
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    r4
+                                    r2
+                                }
+                                % [Piano Lower Voice] Measure 8
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -3230,122 +3478,61 @@
                                     \stopStaff
                                     \startStaff
                                 }
-                                % Measure 9
+                            }
+                            {
+                                % [Piano Lower Voice] Measure 9
                                 {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1
-                                    \stopStaff
-                                    \startStaff
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
                                 }
-                                % Measure 10
+                            }
+                            {
                                 {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
+                                    r4
+                                    r4
                                 }
-                                % Measure 11
+                            }
+                            {
+                                % [Piano Lower Voice] Measure 10
                                 {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1
-                                    \stopStaff
-                                    \startStaff
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
                                 }
-                                % Measure 12
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                % Measure 13
+                            }
+                            {
                                 {
                                     r8
-                                }
-                            }
-                            {
-                                {
-                                    c'16 -\staccato \f [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato ]
-                                }
-                            }
-                            {
-                                {
-                                    r16
-                                }
-                            }
-                            {
-                                \times 2/3 {
-                                    r16 [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    <c' ef'>16 -\staccato \ff ]
-                                }
-                            }
-                            {
-                                % Measure 14
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                % Measure 15
-                                {
-                                    r16
-                                }
-                            }
-                            {
-                                {
-                                    <c' ef' a' d''>16 -\staccato [
-                                    \set stemLeftBeamCount = 2
-                                    c'16 -\staccato \mf ]
-                                }
-                            }
-                            {
-                                {
-                                    r16
                                     r4
                                 }
-                                % Measure 16
-                                {
-                                    r4
-                                }
-                            }
-                            {
-                                \times 4/5 {
-                                    r16 \f \> [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    r16 \mf ]
-                                }
-                            }
-                            {
-                                % Measure 17
+                                % [Piano Lower Voice] Measure 11
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -3354,7 +3541,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
-                                % Measure 18
+                                % [Piano Lower Voice] Measure 12
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -3363,102 +3550,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
-                                % Measure 19
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                % Measure 20
-                                {
-                                    r4
-                                }
-                            }
-                            {
-                                {
-                                    <c' ef'>16 -\staccato \ff \> [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    <c' ef'>16 -\staccato \f ]
-                                }
-                            }
-                            {
-                                % Measure 21
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                % Measure 22
-                                {
-                                    r16
-                                }
-                            }
-                            {
-                                {
-                                    <c' ef' a' d''>16 -\staccato [
-                                    \set stemLeftBeamCount = 2
-                                    c'16 -\staccato \mf ]
-                                }
-                            }
-                            {
-                                {
-                                    r16
-                                    r16
-                                }
-                            }
-                            {
-                                {
-                                    <c' ef'>16 -\staccato \f \> [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    c'16 -\staccato ]
-                                }
-                                % Measure 23
-                                \times 2/3 {
-                                    <c' ef'>16 -\staccato \mf \< [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    r16 ]
-                                }
-                                \times 4/6 {
-                                    r16 \ff \> [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    <c' ef'>16 -\staccato \f ]
-                                }
-                            }
-                            {
-                                {
-                                    r8
-                                }
-                                % Measure 24
+                                % [Piano Lower Voice] Measure 13
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -3467,68 +3559,7 @@
                                     \stopStaff
                                     \startStaff
                                 }
-                                % Measure 25
-                                {
-                                    r8
-                                }
-                            }
-                            {
-                                \tweak #'text #tuplet-number::calc-fraction-text
-                                \times 6/7 {
-                                    r16 \ff \> [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef'>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c' ef' a' d''>16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    <c' ef'>16 -\staccato ]
-                                }
-                                % Measure 26
-                                {
-                                    <c' ef' a' d''>16 -\staccato \f [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    <c' ef'>16 -\staccato ]
-                                }
-                            }
-                            {
-                                {
-                                    r16
-                                    r4
-                                }
-                                % Measure 27
-                                {
-                                    r4
-                                }
-                            }
-                            {
-                                {
-                                    <c' ef' a' d''>16 -\staccato \mf [
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    c'16 -\staccato
-                                    \set stemLeftBeamCount = 2
-                                    <c' ef'>16 -\staccato ]
-                                }
-                            }
-                            {
-                                {
-                                    r16
-                                }
-                                % Measure 28
+                                % [Piano Lower Voice] Measure 14
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -3537,7 +3568,268 @@
                                     \stopStaff
                                     \startStaff
                                 }
-                                % Measure 29
+                            }
+                            {
+                                % [Piano Lower Voice] Measure 15
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    r2..
+                                }
+                            }
+                            {
+                                % [Piano Lower Voice] Measure 16
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    r8
+                                    r4
+                                }
+                                % [Piano Lower Voice] Measure 17
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 1/2
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                % [Piano Lower Voice] Measure 18
+                                {
+                                    r4
+                                }
+                            }
+                            {
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    r4.
+                                }
+                            }
+                            {
+                                % [Piano Lower Voice] Measure 19
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    r4
+                                    r2
+                                }
+                            }
+                            {
+                                % [Piano Lower Voice] Measure 20
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    r8
+                                    r2
+                                }
+                            }
+                            {
+                                % [Piano Lower Voice] Measure 21
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    r8
+                                    r4
+                                }
+                                % [Piano Lower Voice] Measure 22
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 1
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                % [Piano Lower Voice] Measure 23
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 1/2
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                % [Piano Lower Voice] Measure 24
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 5/8
+                                    \stopStaff
+                                    \startStaff
+                                }
+                            }
+                            {
+                                % [Piano Lower Voice] Measure 25
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    r4
+                                    r4
+                                }
+                            }
+                            {
+                                % [Piano Lower Voice] Measure 26
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    r2..
+                                }
+                                % [Piano Lower Voice] Measure 27
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 1/2
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                % [Piano Lower Voice] Measure 28
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -3551,169 +3843,49 @@
                     }
                     \context Dynamics = "Piano Pedals Voice" {
                         {
-                            % Measure 1
+                            % [Piano Pedals Voice] Measure 1
                             {
-                                r4
+                                R1 * 1
                             }
-                        }
-                        {
-                            {
-                                s1 * 1/4 \sustainOn
-                                <> \sustainOff
-                            }
-                        }
-                        {
-                            % Measure 2
-                            {
-                                r16
-                            }
-                        }
-                        {
-                            {
-                                s1 * 7/16 \sustainOn
-                                <> \sustainOff
-                            }
-                        }
-                        {
-                            {
-                                r2
-                            }
-                        }
-                        {
-                            % Measure 3
-                            {
-                                s1 * 1/2 \sustainOn
-                            }
-                            {
-                                s1 * 3/8
-                                <> \sustainOff
-                            }
-                        }
-                        {
-                            % Measure 4
-                            {
-                                R1 * 1/2
-                            }
-                            % Measure 5
-                            {
-                                r8
-                            }
-                        }
-                        {
-                            {
-                                s1 * 3/16 \sustainOn
-                            }
-                            {
-                                s1 * 3/16 \sustainOff \sustainOn
-                            }
-                            {
-                                s1 * 3/16 \sustainOff \sustainOn
-                            }
-                            {
-                                s1 * 3/16
-                                <> \sustainOff
-                            }
-                        }
-                        {
-                            % Measure 6
-                            {
-                                R1 * 1/2
-                            }
-                        }
-                        {
-                            % Measure 7
-                            {
-                                s1 * 1/16 \sustainOn
-                            }
-                            {
-                                s1 * 3/16
-                                <> \sustainOff
-                            }
-                        }
-                        {
-                            {
-                                r4
-                            }
-                            % Measure 8
+                            % [Piano Pedals Voice] Measure 2
                             {
                                 R1 * 5/8
                             }
-                            % Measure 9
+                            % [Piano Pedals Voice] Measure 3
                             {
                                 R1 * 1
                             }
-                            % Measure 10
+                            % [Piano Pedals Voice] Measure 4
                             {
                                 R1 * 1/2
                             }
-                            % Measure 11
+                            % [Piano Pedals Voice] Measure 5
                             {
-                                R1 * 1
+                                R1 * 3/4
                             }
-                            % Measure 12
+                            % [Piano Pedals Voice] Measure 6
                             {
                                 R1 * 1/2
                             }
-                            % Measure 13
+                            % [Piano Pedals Voice] Measure 7
                             {
-                                r8
+                                R1 * 7/8
                             }
-                        }
-                        {
-                            {
-                                s1 * 1/8 \sustainOn
-                            }
-                            {
-                                s1 * 1/8 \sustainOff \sustainOn
-                            }
-                            {
-                                s1 * 1/8 \sustainOff \sustainOn
-                            }
-                            % Measure 14
-                            {
-                                s1 * 3/8
-                                <> \sustainOff
-                            }
-                        }
-                        {
+                            % [Piano Pedals Voice] Measure 8
                             {
                                 r16
                             }
                         }
                         {
                             {
-                                s1 * 1/8 \sustainOn
-                                <> \sustainOff
+                                s1 * 3/8 \sustainOn
                             }
-                        }
-                        {
                             {
-                                r4..
+                                s1 * 3/16 \sustainOff \sustainOn
                             }
-                            % Measure 15
+                            % [Piano Pedals Voice] Measure 9
                             {
-                                r16
-                            }
-                        }
-                        {
-                            {
-                                s1 * 1/8 \sustainOn
-                                <> \sustainOff
-                            }
-                        }
-                        {
-                            {
-                                r16
-                                r4
-                            }
-                            % Measure 16
-                            {
-                                r8
-                            }
-                        }
-                        {
-                            {
-                                s1 * 1/8 \sustainOn
+                                s1 * 3/8 \sustainOff \sustainOn
                             }
                             {
                                 s1 * 1/4
@@ -3721,38 +3893,95 @@
                             }
                         }
                         {
-                            % Measure 17
+                            % [Piano Pedals Voice] Measure 10
+                            {
+                                R1 * 1/2
+                            }
+                            % [Piano Pedals Voice] Measure 11
                             {
                                 R1 * 3/4
                             }
-                            % Measure 18
+                            % [Piano Pedals Voice] Measure 12
                             {
                                 R1 * 1
                             }
-                            % Measure 19
+                            % [Piano Pedals Voice] Measure 13
                             {
-                                R1 * 1
+                                R1 * 1/2
                             }
-                            % Measure 20
+                            % [Piano Pedals Voice] Measure 14
                             {
-                                r4
+                                R1 * 1/2
+                            }
+                            % [Piano Pedals Voice] Measure 15
+                            {
+                                r2
+                                r8.
+                            }
+                        }
+                        {
+                            {
+                                s1 * 5/16 \sustainOn
+                            }
+                            % [Piano Pedals Voice] Measure 16
+                            {
+                                s1 * 1/2 \sustainOff \sustainOn
+                            }
+                            % [Piano Pedals Voice] Measure 17
+                            {
+                                s1 * 3/16 \sustainOff \sustainOn
+                            }
+                            {
+                                s1 * 1/8
+                                <> \sustainOff
+                            }
+                        }
+                        {
+                            {
+                                r8.
+                            }
+                            % [Piano Pedals Voice] Measure 18
+                            {
+                                R1 * 3/4
+                            }
+                            % [Piano Pedals Voice] Measure 19
+                            {
+                                R1 * 7/8
+                            }
+                            % [Piano Pedals Voice] Measure 20
+                            {
+                                r2
                             }
                         }
                         {
                             {
                                 s1 * 1/4 \sustainOn
+                            }
+                            % [Piano Pedals Voice] Measure 21
+                            {
+                                s1 * 1/16 \sustainOff \sustainOn
+                            }
+                            {
+                                s1 * 1/8 \sustainOff \sustainOn
+                            }
+                            {
+                                s1 * 1/4
                                 <> \sustainOff
                             }
                         }
                         {
-                            % Measure 21
                             {
+                                r16
+                            }
+                            % [Piano Pedals Voice] Measure 22
+                            {
+                                r4
                                 r16
                             }
                         }
                         {
                             {
-                                s1 * 7/16 \sustainOn
+                                s1 * 3/16 \sustainOn
                                 <> \sustainOff
                             }
                         }
@@ -3760,84 +3989,27 @@
                             {
                                 r2
                             }
-                            % Measure 22
-                            {
-                                r16
-                            }
-                        }
-                        {
-                            {
-                                s1 * 1/8 \sustainOn
-                                <> \sustainOff
-                            }
-                        }
-                        {
-                            {
-                                r16
-                                r16
-                            }
-                        }
-                        {
-                            {
-                                s1 * 3/16 \sustainOn
-                            }
-                            % Measure 23
-                            {
-                                s1 * 3/8
-                                <> \sustainOff
-                            }
-                        }
-                        {
-                            {
-                                r8
-                            }
-                            % Measure 24
+                            % [Piano Pedals Voice] Measure 23
                             {
                                 R1 * 1/2
                             }
-                        }
-                        {
-                            % Measure 25
+                            % [Piano Pedals Voice] Measure 24
                             {
-                                s1 * 1/8 \sustainOn
+                                R1 * 5/8
                             }
+                            % [Piano Pedals Voice] Measure 25
                             {
-                                s1 * 1/4 \sustainOff \sustainOn
+                                R1 * 5/8
                             }
+                            % [Piano Pedals Voice] Measure 26
                             {
-                                s1 * 1/8 \sustainOff \sustainOn
+                                R1 * 1
                             }
-                            % Measure 26
-                            {
-                                s1 * 3/16
-                                <> \sustainOff
-                            }
-                        }
-                        {
-                            {
-                                r16
-                                r4
-                            }
-                            % Measure 27
-                            {
-                                r8
-                            }
-                        }
-                        {
-                            {
-                                s1 * 1/8 \sustainOn
-                            }
-                            {
-                                s1 * 1/4
-                                <> \sustainOff
-                            }
-                        }
-                        {
-                            % Measure 28
+                            % [Piano Pedals Voice] Measure 27
                             {
                                 R1 * 1/2
                             }
-                            % Measure 29
+                            % [Piano Pedals Voice] Measure 28
                             {
                                 R1 * 1/2
                             }
@@ -3851,16 +4023,7 @@
                     \clef "percussion"
                     \context Voice = "Percussion Pitch Pipe Voice" {
                         {
-                            % Measure 1
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 2
+                            % [Percussion Pitch Pipe Voice] Measure 1
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -3869,52 +4032,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 3
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 4
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 5
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 6
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 7
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 8
+                            % [Percussion Pitch Pipe Voice] Measure 2
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -3923,7 +4041,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 9
+                            % [Percussion Pitch Pipe Voice] Measure 3
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -3932,7 +4050,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 10
+                            % [Percussion Pitch Pipe Voice] Measure 4
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -3941,61 +4059,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 11
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 12
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 13
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 14
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 15
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 16
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 17
+                            % [Percussion Pitch Pipe Voice] Measure 5
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4004,7 +4068,61 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 18
+                            % [Percussion Pitch Pipe Voice] Measure 6
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 7
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 8
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 9
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 10
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 11
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 12
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4013,7 +4131,25 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 19
+                            % [Percussion Pitch Pipe Voice] Measure 13
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 14
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 15
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4022,7 +4158,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 20
+                            % [Percussion Pitch Pipe Voice] Measure 16
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4031,7 +4167,52 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 21
+                            % [Percussion Pitch Pipe Voice] Measure 17
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 18
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 19
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 20
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 21
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 22
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4040,7 +4221,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 22
+                            % [Percussion Pitch Pipe Voice] Measure 23
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4049,7 +4230,34 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 23
+                            % [Percussion Pitch Pipe Voice] Measure 24
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 25
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 26
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 27
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4058,52 +4266,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 24
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 25
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 26
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 27
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 28
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 29
+                            % [Percussion Pitch Pipe Voice] Measure 28
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4119,70 +4282,70 @@
                     \clef "percussion"
                     \context Voice = "Percussion Voice" {
                         {
-                            % Measure 1
+                            % [Percussion Voice] Measure 1
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                c16 -\accent \fff
                             }
-                            % Measure 2
+                        }
+                        {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1
-                                \stopStaff
-                                \startStaff
+                                r8.
+                                r2.
                             }
-                            % Measure 3
+                        }
+                        {
+                            % [Percussion Voice] Measure 2
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
+                                \override Hairpin #'circled-tip = ##t
+                                c4. :32 \<
+                                c4 :32 \repeatTie \f
+                                \revert Hairpin #'circled-tip
                             }
-                            % Measure 4
+                        }
+                        {
+                            % [Percussion Voice] Measure 3
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                r2.
+                                r16
                             }
-                            % Measure 5
+                        }
+                        {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
+                                c16 -\accent \fff
                             }
-                            % Measure 6
+                        }
+                        {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                r8
                             }
-                            % Measure 7
+                        }
+                        {
+                            % [Percussion Voice] Measure 4
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                \override Hairpin #'circled-tip = ##t
+                                c2 :32 \<
                             }
-                            % Measure 8
+                            % [Percussion Voice] Measure 5
+                            {
+                                c2. :32 \repeatTie
+                            }
+                            % [Percussion Voice] Measure 6
+                            {
+                                c2 :32 \repeatTie
+                            }
+                            % [Percussion Voice] Measure 7
+                            {
+                                c4. :32 \repeatTie
+                                c8 :64 \repeatTie \f
+                                \revert Hairpin #'circled-tip
+                            }
+                        }
+                        {
+                            {
+                                r8
+                                r4
+                            }
+                            % [Percussion Voice] Measure 8
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4191,79 +4354,28 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 9
+                        }
+                        {
+                            % [Percussion Voice] Measure 9
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1
-                                \stopStaff
-                                \startStaff
+                                c16 -\accent \fff
                             }
-                            % Measure 10
+                        }
+                        {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                r16
+                                r4
+                                r4
                             }
-                            % Measure 11
+                        }
+                        {
+                            % [Percussion Voice] Measure 10
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1
-                                \stopStaff
-                                \startStaff
+                                c2 :32 -\accent \fp
                             }
-                            % Measure 12
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 13
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 14
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 15
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 16
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 17
+                        }
+                        {
+                            % [Percussion Voice] Measure 11
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4272,7 +4384,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 18
+                            % [Percussion Voice] Measure 12
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4281,7 +4393,93 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 19
+                            % [Percussion Voice] Measure 13
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Percussion Voice] Measure 14
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Percussion Voice] Measure 15
+                            {
+                                r16
+                            }
+                        }
+                        {
+                            {
+                                c16 -\accent \fff
+                            }
+                        }
+                        {
+                            {
+                                r2..
+                            }
+                        }
+                        {
+                            % [Percussion Voice] Measure 16
+                            {
+                                c2 :32 -\accent \fp
+                            }
+                        }
+                        {
+                            % [Percussion Voice] Measure 17
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Percussion Voice] Measure 18
+                            {
+                                r4
+                            }
+                        }
+                        {
+                            {
+                                c16 -\accent \fff
+                            }
+                        }
+                        {
+                            {
+                                r16
+                                r4.
+                            }
+                        }
+                        {
+                            % [Percussion Voice] Measure 19
+                            {
+                                \override Hairpin #'circled-tip = ##t
+                                c2.. :32 \<
+                            }
+                            % [Percussion Voice] Measure 20
+                            {
+                                c2. :32 \repeatTie
+                            }
+                            % [Percussion Voice] Measure 21
+                            {
+                                c4 :32 \repeatTie
+                                c8 :64 \repeatTie \f
+                                \revert Hairpin #'circled-tip
+                            }
+                        }
+                        {
+                            {
+                                r8
+                            }
+                            % [Percussion Voice] Measure 22
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4290,7 +4488,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 20
+                            % [Percussion Voice] Measure 23
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4299,52 +4497,39 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 21
+                            % [Percussion Voice] Measure 24
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
+                                R1 * 5/8
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 22
+                            % [Percussion Voice] Measure 25
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                r16
                             }
-                            % Measure 23
+                        }
+                        {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                c16 -\accent \fff
                             }
-                            % Measure 24
+                        }
+                        {
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                r4
+                                r4
                             }
-                            % Measure 25
+                        }
+                        {
+                            % [Percussion Voice] Measure 26
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                c1 :32 -\accent \fp
                             }
-                            % Measure 26
+                        }
+                        {
+                            % [Percussion Voice] Measure 27
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4353,25 +4538,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 27
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 28
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 29
+                            % [Percussion Voice] Measure 28
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4391,16 +4558,7 @@
                 \clef "treble"
                 \context Voice = "Violin Voice" {
                     {
-                        % Measure 1
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 2
+                        % [Violin Voice] Measure 1
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4409,52 +4567,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 3
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 4
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 5
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 6
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 7
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 8
+                        % [Violin Voice] Measure 2
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4463,7 +4576,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 9
+                        % [Violin Voice] Measure 3
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4472,7 +4585,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 10
+                        % [Violin Voice] Measure 4
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4481,16 +4594,134 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 11
+                    }
+                    {
+                        % [Violin Voice] Measure 5
+                        {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'16 -\staccato \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            c'16 -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        {
+                            r2
+                        }
+                    }
+                    {
+                        % [Violin Voice] Measure 6
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 6/7 {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            r8 \startTextSpan [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato \ppp
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            r8
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            c'16 -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        {
+                            r8
+                        }
+                        % [Violin Voice] Measure 7
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            R1 * 7/8
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 12
+                        % [Violin Voice] Measure 8
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Violin Voice] Measure 9
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Violin Voice] Measure 10
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4499,43 +4730,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 13
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 14
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 15
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 16
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 17
+                        % [Violin Voice] Measure 11
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4544,7 +4739,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 18
+                        % [Violin Voice] Measure 12
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4553,7 +4748,255 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 19
+                        % [Violin Voice] Measure 13
+                        {
+                            r4
+                        }
+                    }
+                    {
+                        {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'16 -\staccato \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            c'16 -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        % [Violin Voice] Measure 14
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Violin Voice] Measure 15
+                        {
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'16 -\staccato \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            c'16 -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        {
+                            r8.
+                            r2
+                        }
+                        % [Violin Voice] Measure 16
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Violin Voice] Measure 17
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Violin Voice] Measure 18
+                        {
+                            r8
+                        }
+                    }
+                    {
+                        \times 4/5 {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'16 -\staccato \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
+                            c'16 -\staccato
+                            \set stemLeftBeamCount = 1
+                            r8 ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        {
+                            r4.
+                        }
+                        % [Violin Voice] Measure 19
+                        {
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'16 -\staccato \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
+                            c'16 -\staccato
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            r8
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            c'16 -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        {
+                            r8
+                            r4
+                        }
+                        % [Violin Voice] Measure 20
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/4
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Violin Voice] Measure 21
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Violin Voice] Measure 22
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4562,7 +5005,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 20
+                        % [Violin Voice] Measure 23
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4571,7 +5014,91 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 21
+                        % [Violin Voice] Measure 24
+                        {
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            \clef "percussion"
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'16 -\staccato \ppp ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        {
+                            r8.
+                            r4
+                        }
+                        % [Violin Voice] Measure 25
+                        {
+                            r4
+                        }
+                    }
+                    {
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 6/7 {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            r8. \startTextSpan [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato \ppp
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
+                            c'16 -\staccato
+                            \set stemLeftBeamCount = 1
+                            r8 ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "treble"
+                        }
+                    }
+                    {
+                        % [Violin Voice] Measure 26
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4580,7 +5107,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 22
+                        % [Violin Voice] Measure 27
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4589,61 +5116,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 23
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 24
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 25
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 26
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 27
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 28
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 29
+                        % [Violin Voice] Measure 28
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4660,16 +5133,7 @@
                 \clef "alto"
                 \context Voice = "Viola Voice" {
                     {
-                        % Measure 1
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 2
+                        % [Viola Voice] Measure 1
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4678,52 +5142,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 3
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 4
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 5
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 6
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 7
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 8
+                        % [Viola Voice] Measure 2
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4732,7 +5151,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 9
+                        % [Viola Voice] Measure 3
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4741,7 +5160,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 10
+                        % [Viola Voice] Measure 4
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4750,61 +5169,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 11
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 12
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 13
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 14
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 15
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 16
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 17
+                        % [Viola Voice] Measure 5
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4813,7 +5178,61 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 18
+                        % [Viola Voice] Measure 6
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Viola Voice] Measure 7
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Viola Voice] Measure 8
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Viola Voice] Measure 9
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Viola Voice] Measure 10
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Viola Voice] Measure 11
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/4
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Viola Voice] Measure 12
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4822,7 +5241,61 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 19
+                        % [Viola Voice] Measure 13
+                        {
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'16 -\staccato \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            c'16 -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "alto"
+                        }
+                    }
+                    {
+                        {
+                            r4
+                        }
+                        % [Viola Voice] Measure 14
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Viola Voice] Measure 15
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4831,7 +5304,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 20
+                        % [Viola Voice] Measure 16
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4840,7 +5313,135 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 21
+                        % [Viola Voice] Measure 17
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                    }
+                    {
+                        % [Viola Voice] Measure 18
+                        {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'16 -\staccato \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            c'16 -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "alto"
+                        }
+                    }
+                    {
+                        {
+                            r8
+                            r4.
+                        }
+                        % [Viola Voice] Measure 19
+                        {
+                            r4.
+                            r8
+                        }
+                    }
+                    {
+                        \times 4/5 {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            r8 \startTextSpan [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato \ppp
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            r16 ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "alto"
+                        }
+                    }
+                    {
+                        {
+                            r8
+                        }
+                        % [Viola Voice] Measure 20
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/4
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Viola Voice] Measure 21
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Viola Voice] Measure 22
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4849,7 +5450,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 22
+                        % [Viola Voice] Measure 23
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4858,7 +5459,113 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 23
+                    }
+                    {
+                        % [Viola Voice] Measure 24
+                        {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'16 -\staccato \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            c'16 -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "alto"
+                        }
+                    }
+                    {
+                        {
+                            r8
+                            r4
+                        }
+                        % [Viola Voice] Measure 25
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                    }
+                    {
+                        % [Viola Voice] Measure 26
+                        {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'16 -\staccato \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            c'16 -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "alto"
+                        }
+                    }
+                    {
+                        {
+                            r2.
+                        }
+                        % [Viola Voice] Measure 27
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4867,52 +5574,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 24
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 25
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 26
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 27
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 28
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 29
+                        % [Viola Voice] Measure 28
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4929,16 +5591,7 @@
                 \clef "bass"
                 \context Voice = "Cello Voice" {
                     {
-                        % Measure 1
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 2
+                        % [Cello Voice] Measure 1
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -4947,52 +5600,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 3
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 4
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 5
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 7/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 6
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 7
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 8
+                        % [Cello Voice] Measure 2
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5001,7 +5609,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 9
+                        % [Cello Voice] Measure 3
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5010,7 +5618,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 10
+                        % [Cello Voice] Measure 4
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5019,16 +5627,58 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 11
+                        % [Cello Voice] Measure 5
                         {
+                            r4
+                        }
+                    }
+                    {
+                        \times 4/5 {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
+                            r16 \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato \ppp
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
+                            c'16 -\staccato
+                            \set stemLeftBeamCount = 1
+                            r8 ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "bass"
                         }
-                        % Measure 12
+                    }
+                    {
+                        {
+                            r4
+                        }
+                        % [Cello Voice] Measure 6
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5037,7 +5687,34 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 13
+                        % [Cello Voice] Measure 7
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Cello Voice] Measure 8
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Cello Voice] Measure 9
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Cello Voice] Measure 10
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5046,34 +5723,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 14
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 15
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 16
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 17
+                        % [Cello Voice] Measure 11
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5082,7 +5732,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 18
+                        % [Cello Voice] Measure 12
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5091,7 +5741,59 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 19
+                        % [Cello Voice] Measure 13
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                    }
+                    {
+                        % [Cello Voice] Measure 14
+                        {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'16 -\staccato \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            c'16 -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "bass"
+                        }
+                    }
+                    {
+                        {
+                            r8
+                            r4
+                        }
+                        % [Cello Voice] Measure 15
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5100,7 +5802,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 20
+                        % [Cello Voice] Measure 16
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5109,7 +5811,94 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 21
+                        % [Cello Voice] Measure 17
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Cello Voice] Measure 18
+                        {
+                            r4.
+                        }
+                    }
+                    {
+                        {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            c'16 -\staccato \ppp \startTextSpan [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            c'16 -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "bass"
+                        }
+                    }
+                    {
+                        {
+                            r8
+                        }
+                        % [Cello Voice] Measure 19
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 7/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Cello Voice] Measure 20
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/4
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Cello Voice] Measure 21
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Cello Voice] Measure 22
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5118,7 +5907,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 22
+                        % [Cello Voice] Measure 23
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5127,7 +5916,70 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 23
+                        % [Cello Voice] Measure 24
+                        {
+                            r4.
+                        }
+                    }
+                    {
+                        \times 4/5 {
+                            \clef "percussion"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        shaker
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'style = #'cross
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            r8 \startTextSpan [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato \ppp
+                            \set stemLeftBeamCount = 1
+                            r8 ]
+                            \stopStaff
+                            \startStaff
+                            \revert NoteHead #'style
+                            <> \stopTextSpan
+                            \clef "bass"
+                        }
+                    }
+                    {
+                        % [Cello Voice] Measure 25
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Cello Voice] Measure 26
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Cello Voice] Measure 27
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5136,52 +5988,7 @@
                             \stopStaff
                             \startStaff
                         }
-                        % Measure 24
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 25
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 26
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 27
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 28
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % Measure 29
+                        % [Cello Voice] Measure 28
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5199,16 +6006,7 @@
                     \clef "percussion"
                     \context Voice = "Contrabass Pitch Pipe Voice" {
                         {
-                            % Measure 1
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 2
+                            % [Contrabass Pitch Pipe Voice] Measure 1
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5217,52 +6015,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 3
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 4
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 5
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 6
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 7
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 8
+                            % [Contrabass Pitch Pipe Voice] Measure 2
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5271,7 +6024,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 9
+                            % [Contrabass Pitch Pipe Voice] Measure 3
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5280,7 +6033,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 10
+                            % [Contrabass Pitch Pipe Voice] Measure 4
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5289,61 +6042,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 11
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 12
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 13
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 14
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 15
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 16
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 17
+                            % [Contrabass Pitch Pipe Voice] Measure 5
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5352,7 +6051,61 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 18
+                            % [Contrabass Pitch Pipe Voice] Measure 6
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 7
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 8
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 9
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 10
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 11
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 12
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5361,7 +6114,25 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 19
+                            % [Contrabass Pitch Pipe Voice] Measure 13
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 14
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 15
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5370,7 +6141,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 20
+                            % [Contrabass Pitch Pipe Voice] Measure 16
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5379,7 +6150,52 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 21
+                            % [Contrabass Pitch Pipe Voice] Measure 17
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 18
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 19
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 20
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 21
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 22
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5388,7 +6204,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 22
+                            % [Contrabass Pitch Pipe Voice] Measure 23
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5397,7 +6213,34 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 23
+                            % [Contrabass Pitch Pipe Voice] Measure 24
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 25
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 26
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 27
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5406,52 +6249,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 24
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 25
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 26
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 27
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 28
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 29
+                            % [Contrabass Pitch Pipe Voice] Measure 28
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5467,16 +6265,7 @@
                     \clef "bass_8"
                     \context Voice = "Contrabass Voice" {
                         {
-                            % Measure 1
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 2
+                            % [Contrabass Voice] Measure 1
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5485,52 +6274,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 3
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 4
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 5
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 7/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 6
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 7
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 8
+                            % [Contrabass Voice] Measure 2
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5539,7 +6283,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 9
+                            % [Contrabass Voice] Measure 3
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5548,7 +6292,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 10
+                            % [Contrabass Voice] Measure 4
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5557,61 +6301,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 11
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 12
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 13
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 14
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 15
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 16
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 17
+                            % [Contrabass Voice] Measure 5
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5620,7 +6310,61 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 18
+                            % [Contrabass Voice] Measure 6
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Voice] Measure 7
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Voice] Measure 8
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Voice] Measure 9
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Voice] Measure 10
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Voice] Measure 11
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Voice] Measure 12
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5629,7 +6373,25 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 19
+                            % [Contrabass Voice] Measure 13
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Voice] Measure 14
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Voice] Measure 15
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5638,7 +6400,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 20
+                            % [Contrabass Voice] Measure 16
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5647,7 +6409,52 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 21
+                            % [Contrabass Voice] Measure 17
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Voice] Measure 18
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Voice] Measure 19
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 7/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Voice] Measure 20
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 3/4
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Voice] Measure 21
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Voice] Measure 22
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5656,7 +6463,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 22
+                            % [Contrabass Voice] Measure 23
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5665,7 +6472,34 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 23
+                            % [Contrabass Voice] Measure 24
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Voice] Measure 25
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 5/8
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Voice] Measure 26
+                            {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1
+                                \stopStaff
+                                \startStaff
+                            }
+                            % [Contrabass Voice] Measure 27
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -5674,52 +6508,7 @@
                                 \stopStaff
                                 \startStaff
                             }
-                            % Measure 24
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 25
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 26
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 27
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 28
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            % Measure 29
+                            % [Contrabass Voice] Measure 28
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
