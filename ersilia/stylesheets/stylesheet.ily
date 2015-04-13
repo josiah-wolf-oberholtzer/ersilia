@@ -5,7 +5,6 @@
 #(set-global-staff-size 12)
 
 \paper {
-    annotate-spacing = ##t
     bottom-margin = 10\mm
     left-margin = 30\mm
     right-margin = 10\mm
