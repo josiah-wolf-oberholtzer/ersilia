@@ -1,6 +1,8 @@
 # -*- encoding: utf-8 -*-
-from abjad.tools import scoretools
 import consort
+from abjad import attach
+from abjad.tools import scoretools
+from abjad.tools import instrumenttools
 
 
 class ErsiliaScoreTemplate(consort.ScoreTemplate):
@@ -166,15 +168,38 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
 
     def __call__(self):
 
-        manager = consort.ScoreTemplateManager
+        pitch_pipes = instrumenttools.Percussion(
+            instrument_name='pitch pipes',
+            short_instrument_name='pp.',
+            )
 
-        time_signature_context = manager.make_time_signature_context()
+        time_signature_context = scoretools.Context(
+            context_name='TimeSignatureContext',
+            name='Time Signature Context',
+            )
+        self._attach_tag('time', time_signature_context)
 
-        flute_staff = self._make_staff('Flute', 'treble', tag='flute')
-        oboe_staff = self._make_staff('Oboe', 'treble', tag='oboe')
-        clarinet_staff = self._make_staff('Clarinet', 'treble', tag='clarinet')
+        flute_staff = self._make_staff(
+            'Flute', 'treble',
+            instrument=instrumenttools.Flute(),
+            tag='flute',
+            )
+
+        oboe_staff = self._make_staff(
+            'Oboe', 'treble',
+            instrument=instrumenttools.Oboe(),
+            tag='oboe',
+            )
+
+        clarinet_staff = self._make_staff(
+            'Clarinet', 'treble',
+            instrument=instrumenttools.BassClarinet(),
+            tag='clarinet',
+            )
+
         saxophone_staff = self._make_staff(
             'Saxophone', 'treble',
+            instrument=instrumenttools.BaritoneSaxophone(),
             tag='saxophone',
             )
 
@@ -189,11 +214,15 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
             name='Wind Section Staff Group',
             )
 
-        guitar_staff = self._make_staff('Guitar', 'treble')
+        guitar_staff = self._make_staff(
+            'Guitar', 'treble_8',
+            instrument=instrumenttools.Guitar(),
+            )
         guitar_aux_staff = self._make_staff(
             'Guitar Pitch Pipe', 'percussion',
             abbreviation='guitar_pp',
             context_name='Pitch Pipes',
+            instrument=pitch_pipes,
             )
         guitar_staff_group = scoretools.StaffGroup(
             [guitar_aux_staff, guitar_staff],
@@ -206,6 +235,7 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
             'Piano Pitch Pipe', 'percussion',
             abbreviation='piano_pp',
             context_name='Pitch Pipes',
+            instrument=pitch_pipes,
             )
         piano_rh_staff = self._make_staff(
             'Piano Upper', 'treble',
@@ -224,6 +254,7 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
             context_name='PianoStaff',
             name='Piano Staff',
             )
+        attach(instrumenttools.Piano(), piano_staff)
         piano_staff_group = scoretools.StaffGroup(
             [piano_aux_staff, piano_staff],
             context_name='PianoStaffGroup',
@@ -236,6 +267,7 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
             'Percussion Pitch Pipe', 'percussion',
             abbreviation='percussion_pp',
             context_name='Pitch Pipes',
+            instrument=pitch_pipes,
             )
         percussion_staff_group = scoretools.StaffGroup(
             [percussion_aux_staff, percussion_staff],
@@ -254,18 +286,35 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
             name='Percussion Section Staff Group',
             )
 
-        violin_staff = self._make_staff('Violin', 'treble', tag='violin')
-        viola_staff = self._make_staff('Viola', 'alto', tag='viola')
-        cello_staff = self._make_staff('Cello', 'bass', tag='cello')
+        violin_staff = self._make_staff(
+            'Violin', 'treble',
+            instrument=instrumenttools.Violin(),
+            tag='violin',
+            )
+
+        viola_staff = self._make_staff(
+            'Viola', 'alto',
+            instrument=instrumenttools.Violin(),
+            tag='viola',
+            )
+
+        cello_staff = self._make_staff(
+            'Cello', 'bass',
+            instrument=instrumenttools.Cello(),
+            tag='cello',
+            )
+
         contrabass_aux_staff = self._make_staff(
             'Contrabass Pitch Pipe',
             'percussion',
             abbreviation='bass_pp',
             context_name='Pitch Pipes',
+            instrument=pitch_pipes,
             )
         contrabass_staff = self._make_staff(
-            'Contrabass', 'bass_8',
+            'Contrabass', 'bass',
             abbreviation='bass',
+            instrument=instrumenttools.Contrabass(),
             )
         contrabass_staff_group = scoretools.StaffGroup(
             [contrabass_aux_staff, contrabass_staff],

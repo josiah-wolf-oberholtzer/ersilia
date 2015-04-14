@@ -5,6 +5,7 @@ from abjad.tools import indicatortools
 from abjad.tools import rhythmmakertools
 from abjad.tools import selectortools
 from abjad.tools import spannertools
+from ersilia.materials import abbreviations
 
 
 percussion_snare_interruption_music_specifier = consort.MusicSpecifier(
@@ -43,6 +44,7 @@ percussion_snare_interruption_music_specifier = consort.MusicSpecifier(
                 .by_leaves()
                 .by_length('>', 1)
             ),
+        text_spanner=abbreviations.make_text_spanner('snare'),
         tremolo=consort.AttachmentExpression(
             attachments=spannertools.StemTremoloSpanner(),
             selector=selectortools.Selector()

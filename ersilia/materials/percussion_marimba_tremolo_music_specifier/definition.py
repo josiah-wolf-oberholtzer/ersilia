@@ -15,6 +15,7 @@ percussion_marimba_tremolo_music_specifier = consort.MusicSpecifier(
             start_dynamic_tokens='o',
             stop_dynamic_tokens='o',
             ),
+        staff_lines_spanner=spannertools.StaffLinesSpanner([-4, -2, 0, 2, 4]),
         stem_tremolo_spanner=consort.AttachmentExpression(
             attachments=spannertools.StemTremoloSpanner(),
             selector=selectortools.select_pitched_runs(),

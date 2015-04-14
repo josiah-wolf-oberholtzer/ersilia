@@ -335,7 +335,7 @@
         \name PercussionStaff
         \type Engraver_group
         \alias Staff
-        \override StaffSymbol.line-positions = #'(-10 -8 -4 -2 0 2 4 8 10)
+        \override StaffSymbol.line-positions = #'(0)
         instrumentName = \percussionName
         shortInstrumentName = \shortPercussionName
         \override Beam.positions = #'(-11 . -11)
@@ -472,7 +472,7 @@
         \shape #'((-1.5 . 0) (-1 . 0) (-0.5 . 0) (0 . 0)) RepeatTie                 
         \override RepeatTie.X-extent = ##f
         \override SpacingSpanner.strict-grace-spacing = ##t
-        \override SpacingSpanner.strict-note-spacing = ##t
+        \override SpacingSpanner.strict-note-spacing = ##f
         \override SpacingSpanner.uniform-stretching = ##t
         \override StaffSymbol.color = #(x11-color 'grey50)
         \override Stem.details.beamed-lengths = #'(6)

@@ -5,25 +5,19 @@ from abjad.tools import pitchtools
 
 class Percussion(abctools.AbjadObject):
 
-    BAMBOO_WIND_CHIMES = pitchtools.NamedPitch("e''")
-    CASTANET = pitchtools.NamedPitch("g''")
-    GUIRO = pitchtools.NamedPitch("e''")
-    TAMBOURINE = pitchtools.NamedPitch("c''")
+    BAMBOO_WIND_CHIMES = pitchtools.NamedPitch('C4')
 
-    WOOD_BLOCK_5 = pitchtools.NamedPitch("g'")
-    TOM_4 = pitchtools.NamedPitch("f'")
-    WOOD_BLOCK_4 = pitchtools.NamedPitch("e'")
-    TOM_3 = pitchtools.NamedPitch("d'")
-    WOOD_BLOCK_3 = pitchtools.NamedPitch("c'")
-    TOM_2 = pitchtools.NamedPitch("b")
-    WOOD_BLOCK_2 = pitchtools.NamedPitch("a")
-    TOM_1 = pitchtools.NamedPitch("g")
-    WOOD_BLOCK_1 = pitchtools.NamedPitch("f")
+    WOOD_BLOCK_5 = pitchtools.NamedPitch('G4')
+    WOOD_BLOCK_4 = pitchtools.NamedPitch('E4')
+    WOOD_BLOCK_3 = pitchtools.NamedPitch('C4')
+    WOOD_BLOCK_2 = pitchtools.NamedPitch('A3')
+    WOOD_BLOCK_1 = pitchtools.NamedPitch('F3')
 
-    SNARE_DRUM = pitchtools.NamedPitch("c")
-    TAM_TAM = pitchtools.NamedPitch("a,")
-    BASS_DRUM = pitchtools.NamedPitch("f,")
+    TOM_4 = pitchtools.NamedPitch('F4')
+    TOM_3 = pitchtools.NamedPitch('D4')
+    TOM_2 = pitchtools.NamedPitch('B3')
+    TOM_1 = pitchtools.NamedPitch('G3')
 
-    # MARIMBA
-
-    # CROTALES
+    SNARE_DRUM = pitchtools.NamedPitch('C4')
+    TAM_TAM = pitchtools.NamedPitch('D4')
+    BASS_DRUM = pitchtools.NamedPitch('B3')

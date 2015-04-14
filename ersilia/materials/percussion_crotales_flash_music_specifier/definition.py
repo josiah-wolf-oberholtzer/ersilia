@@ -1,6 +1,7 @@
 # -*- encoding: utf-8 -*-
 import consort
 from abjad.tools import rhythmmakertools
+from abjad.tools import spannertools
 from ersilia.materials import abbreviations
 
 
@@ -11,6 +12,7 @@ percussion_crotales_flash_music_specifier = consort.MusicSpecifier(
             only_first=True,
             start_dynamic_tokens='f p mp',
             ),
+        staff_lines_spanner=spannertools.StaffLinesSpanner([-4, -2, 0, 2, 4]),
         text_spanner=abbreviations.make_text_spanner('crotales'),
         ),
     color=None,
