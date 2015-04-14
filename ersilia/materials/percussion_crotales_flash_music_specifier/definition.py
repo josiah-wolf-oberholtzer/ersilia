@@ -20,7 +20,6 @@ percussion_crotales_flash_music_specifier = consort.MusicSpecifier(
     pitch_handler=consort.PitchClassPitchHandler(
         forbid_repetitions=True,
         pitch_specifier=abbreviations.agitato_pitch_specifier,
-        pitch_operation_specifier=abbreviations.pitch_operation_specifier,
         register_specifier=consort.RegisterSpecifier(
             base_pitch="c'''",
             segment_inflections=consort.RegisterInflection
@@ -33,7 +32,7 @@ percussion_crotales_flash_music_specifier = consort.MusicSpecifier(
             fill_with_notes=False,
             prefix_counts=[4, 3],
             prefix_talea=[1],
-            talea_denominator=32,
+            talea_denominator=16,
             ),
         ),
     )

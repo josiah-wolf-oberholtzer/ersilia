@@ -106,42 +106,6 @@ percussion_crotales_flash_music_specifier = consort.tools.MusicSpecifier(
                     ]
                 ),
             ),
-        pitch_operation_specifier=consort.tools.PitchOperationSpecifier(
-            pitch_operations=(
-                pitchtools.PitchOperation(
-                    operators=(
-                        pitchtools.Rotation(
-                            index=1,
-                            transpose=True,
-                            ),
-                        ),
-                    ),
-                None,
-                pitchtools.PitchOperation(
-                    operators=(
-                        pitchtools.Transposition(
-                            index=1,
-                            ),
-                        pitchtools.Inversion(),
-                        ),
-                    ),
-                None,
-                pitchtools.PitchOperation(
-                    operators=(
-                        pitchtools.Rotation(
-                            index=-1,
-                            transpose=True,
-                            ),
-                        ),
-                    ),
-                pitchtools.PitchOperation(
-                    operators=(
-                        pitchtools.Retrogression(),
-                        ),
-                    ),
-                ),
-            ratio=mathtools.Ratio((1, 3, 1, 1, 2, 1)),
-            ),
         pitch_specifier=consort.tools.PitchSpecifier(
             pitch_segments=(
                 pitchtools.PitchSegment(
@@ -196,7 +160,7 @@ percussion_crotales_flash_music_specifier = consort.tools.MusicSpecifier(
         incise_specifier=rhythmmakertools.InciseSpecifier(
             prefix_talea=(1,),
             prefix_counts=(4, 3),
-            talea_denominator=32,
+            talea_denominator=16,
             fill_with_notes=False,
             ),
         ),

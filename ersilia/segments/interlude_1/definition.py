@@ -1,8 +1,6 @@
 # -*- encoding: utf-8 -*-
-import abjad
-import consort
 import ersilia
-from abjad import new
+
 
 ### SEGMENT ###
 
@@ -18,15 +16,15 @@ segment_maker = ersilia.ErsiliaSegmentMaker(
 
 ### PEDAL ###
 
-### CONTINUO ###
-
 ### TREMOLO ###
+
+### CONTINUO ###
 
 ### OSTINATO ###
 
-### POINTILLIST ###
-
 ### AGITATO ###
+
+### POINTILLIST ###
 
 ### INTERRUPT ###
 

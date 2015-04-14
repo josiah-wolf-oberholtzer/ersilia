@@ -13,7 +13,7 @@
         \tag #'time
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 6/4
+                \time 5/4
                 \tempo 4=48
                 \mark \markup {
                     \concat
@@ -29,7 +29,7 @@
                                 "Scene II/a"
                         }
                     }
-                s1 * 3/2
+                s1 * 5/4
                     ^ \markup {
                         \box
                             \pad-around
@@ -41,64 +41,27 @@
                                             1
                                         " : "
                                         \fraction
-                                            3
-                                            2
-                                    }
-                        }
-            }
-            {
-                \time 2/4
-                s1 * 1/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            3
-                                            2
-                                        " : "
-                                        \fraction
-                                            2
-                                            1
-                                    }
-                        }
-            }
-            {
-                s1 * 1/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            2
-                                            1
-                                        " : "
-                                        \fraction
                                             5
-                                            2
-                                    }
-                        }
-            }
-            {
-                \time 6/4
-                s1 * 3/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            5
-                                            2
-                                        " : "
-                                        \fraction
                                             4
-                                            1
+                                    }
+                        }
+            }
+            {
+                \time 5/8
+                s1 * 5/8
+                    ^ \markup {
+                        \box
+                            \pad-around
+                                #0.5
+                                \concat
+                                    {
+                                        \fraction
+                                            5
+                                            4
+                                        " : "
+                                        \fraction
+                                            15
+                                            8
                                     }
                         }
             }
@@ -112,12 +75,68 @@
                                 \concat
                                     {
                                         \fraction
-                                            4
-                                            1
+                                            15
+                                            8
                                         " : "
                                         \fraction
-                                            21
-                                            4
+                                            25
+                                            8
+                                    }
+                        }
+            }
+            {
+                s1 * 5/4
+                    ^ \markup {
+                        \box
+                            \pad-around
+                                #0.5
+                                \concat
+                                    {
+                                        \fraction
+                                            25
+                                            8
+                                        " : "
+                                        \fraction
+                                            35
+                                            8
+                                    }
+                        }
+            }
+            {
+                \time 6/4
+                s1 * 3/2
+                    ^ \markup {
+                        \box
+                            \pad-around
+                                #0.5
+                                \concat
+                                    {
+                                        \fraction
+                                            35
+                                            8
+                                        " : "
+                                        \fraction
+                                            47
+                                            8
+                                    }
+                        }
+            }
+            {
+                \time 9/8
+                s1 * 9/8
+                    ^ \markup {
+                        \box
+                            \pad-around
+                                #0.5
+                                \concat
+                                    {
+                                        \fraction
+                                            47
+                                            8
+                                        " : "
+                                        \fraction
+                                            7
+                                            1
                                     }
                         }
             }
@@ -131,63 +150,8 @@
                                 \concat
                                     {
                                         \fraction
-                                            21
-                                            4
-                                        " : "
-                                        \fraction
-                                            23
-                                            4
-                                    }
-                        }
-            }
-            {
-                s1 * 1/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            23
-                                            4
-                                        " : "
-                                        \fraction
-                                            25
-                                            4
-                                    }
-                        }
-            }
-            {
-                s1 * 1/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            25
-                                            4
-                                        " : "
-                                        \fraction
-                                            27
-                                            4
-                                    }
-                        }
-            }
-            {
-                \time 3/4
-                s1 * 3/4
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            27
-                                            4
+                                            7
+                                            1
                                         " : "
                                         \fraction
                                             15
@@ -215,8 +179,8 @@
                         }
             }
             {
-                \time 5/8
-                s1 * 5/8
+                \time 4/4
+                s1 * 1
                     ^ \markup {
                         \box
                             \pad-around
@@ -228,8 +192,8 @@
                                             1
                                         " : "
                                         \fraction
-                                            77
-                                            8
+                                            10
+                                            1
                                     }
                         }
             }
@@ -243,30 +207,12 @@
                                 \concat
                                     {
                                         \fraction
-                                            77
-                                            8
+                                            10
+                                            1
                                         " : "
                                         \fraction
-                                            81
-                                            8
-                                    }
-                        }
-            }
-            {
-                s1 * 1/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            81
-                                            8
-                                        " : "
-                                        \fraction
-                                            85
-                                            8
+                                            21
+                                            2
                                     }
                         }
             }
@@ -280,11 +226,49 @@
                                 \concat
                                     {
                                         \fraction
-                                            85
-                                            8
+                                            21
+                                            2
                                         " : "
                                         \fraction
-                                            95
+                                            47
+                                            4
+                                    }
+                        }
+            }
+            {
+                \time 2/4
+                s1 * 1/2
+                    ^ \markup {
+                        \box
+                            \pad-around
+                                #0.5
+                                \concat
+                                    {
+                                        \fraction
+                                            47
+                                            4
+                                        " : "
+                                        \fraction
+                                            49
+                                            4
+                                    }
+                        }
+            }
+            {
+                \time 9/8
+                s1 * 9/8
+                    ^ \markup {
+                        \box
+                            \pad-around
+                                #0.5
+                                \concat
+                                    {
+                                        \fraction
+                                            49
+                                            4
+                                        " : "
+                                        \fraction
+                                            107
                                             8
                                     }
                         }
@@ -299,50 +283,12 @@
                                 \concat
                                     {
                                         \fraction
-                                            95
+                                            107
                                             8
                                         " : "
                                         \fraction
-                                            99
+                                            111
                                             8
-                                    }
-                        }
-            }
-            {
-                \time 5/8
-                s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            99
-                                            8
-                                        " : "
-                                        \fraction
-                                            13
-                                            1
-                                    }
-                        }
-            }
-            {
-                \time 2/4
-                s1 * 1/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            13
-                                            1
-                                        " : "
-                                        \fraction
-                                            27
-                                            2
                                     }
                         }
             }
@@ -355,30 +301,12 @@
                                 \concat
                                     {
                                         \fraction
-                                            27
-                                            2
+                                            111
+                                            8
                                         " : "
                                         \fraction
-                                            14
-                                            1
-                                    }
-                        }
-            }
-            {
-                s1 * 1/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            14
-                                            1
-                                        " : "
-                                        \fraction
-                                            29
-                                            2
+                                            115
+                                            8
                                     }
                         }
             }
@@ -396,417 +324,61 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/2
+                            R1 * 5/4
                         }
                         % [Flute Voice] Measure 28
                         {
-                            R1 * 1/2
+                            R1 * 5/8
                         }
                         % [Flute Voice] Measure 29
                         {
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            R1 * 5/4
                         }
-                    }
-                    {
-                        \override Beam #'color = #blue
-                        \override Dots #'color = #blue
-                        \override Flag #'color = #blue
-                        \override NoteHead #'color = #blue
-                        \override Stem #'color = #blue
                         % [Flute Voice] Measure 30
-                        \override TupletNumber #'text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score \with {
-                                            \override SpacingSpanner #'spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        } <<
-                                            \new RhythmicStaff \with {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem #'direction = #up
-                                                \override Stem #'length = #5
-                                                \override TupletBracket #'bracket-visibility = ##t
-                                                \override TupletBracket #'direction = #up
-                                                \override TupletBracket #'padding = #1.25
-                                                \override TupletBracket #'shorten-pair = #'(-1 . -1.5)
-                                                \override TupletNumber #'text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            } {
-                                                c'4
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
-                        \times 1/1 {
-                            \clef "percussion"
-                            \once \override Beam #'grow-direction = #left
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'32 * 27/32 -\staccato \f \startTextSpan \> [
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 15/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 41/32 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 31/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            c'32 * 3 -\staccato \p ]
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "treble"
-                        }
-                        \revert TupletNumber #'text
-                        \revert Beam #'color
-                        \revert Dots #'color
-                        \revert Flag #'color
-                        \revert NoteHead #'color
-                        \revert Stem #'color
-                    }
-                    {
                         {
-                            r2
-                            r2.
+                            R1 * 5/4
                         }
                         % [Flute Voice] Measure 31
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/4
+                            R1 * 3/2
                         }
                         % [Flute Voice] Measure 32
                         {
-                            R1 * 1/2
+                            R1 * 9/8
                         }
                         % [Flute Voice] Measure 33
                         {
                             R1 * 1/2
-                            \stopStaff
-                            \startStaff
                         }
                         % [Flute Voice] Measure 34
                         {
-                            r4
+                            R1 * 3/2
                         }
-                    }
-                    {
-                        \override Beam #'color = #blue
-                        \override Dots #'color = #blue
-                        \override Flag #'color = #blue
-                        \override NoteHead #'color = #blue
-                        \override Stem #'color = #blue
-                        \override TupletNumber #'text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score \with {
-                                            \override SpacingSpanner #'spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        } <<
-                                            \new RhythmicStaff \with {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem #'direction = #up
-                                                \override Stem #'length = #5
-                                                \override TupletBracket #'bracket-visibility = ##t
-                                                \override TupletBracket #'direction = #up
-                                                \override TupletBracket #'padding = #1.25
-                                                \override TupletBracket #'shorten-pair = #'(-1 . -1.5)
-                                                \override TupletNumber #'text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            } {
-                                                c'4
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
-                        \times 1/1 {
-                            \clef "percussion"
-                            \once \override Beam #'grow-direction = #left
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'32 * 27/32 -\staccato \mp \startTextSpan \> [
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 15/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 41/32 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 31/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            c'32 * 3 -\staccato \p ]
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "treble"
-                        }
-                        \revert TupletNumber #'text
-                        \revert Beam #'color
-                        \revert Dots #'color
-                        \revert Flag #'color
-                        \revert NoteHead #'color
-                        \revert Stem #'color
-                    }
-                    {
                         % [Flute Voice] Measure 35
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/4
-                            \stopStaff
-                            \startStaff
+                            R1 * 1
                         }
                         % [Flute Voice] Measure 36
                         {
-                            r2.
-                            r2
-                            r8
-                        }
-                    }
-                    {
-                        \override Beam #'color = #blue
-                        \override Dots #'color = #blue
-                        \override Flag #'color = #blue
-                        \override NoteHead #'color = #blue
-                        \override Stem #'color = #blue
-                        {
-                            \clef "percussion"
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'8 -\staccato \mf \startTextSpan \>
+                            R1 * 1/2
                         }
                         % [Flute Voice] Measure 37
                         {
-                            c'8 -\staccato \p
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "treble"
-                        }
-                        \revert Beam #'color
-                        \revert Dots #'color
-                        \revert Flag #'color
-                        \revert NoteHead #'color
-                        \revert Stem #'color
-                    }
-                    {
-                        {
-                            r4
-                            r4
+                            R1 * 5/4
                         }
                         % [Flute Voice] Measure 38
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
                             R1 * 1/2
                         }
                         % [Flute Voice] Measure 39
                         {
-                            R1 * 1/2
+                            R1 * 9/8
                         }
                         % [Flute Voice] Measure 40
                         {
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
+                            R1 * 1/2
                         }
                         % [Flute Voice] Measure 41
-                        {
-                            r4
-                        }
-                    }
-                    {
-                        \override Beam #'color = #blue
-                        \override Dots #'color = #blue
-                        \override Flag #'color = #blue
-                        \override NoteHead #'color = #blue
-                        \override Stem #'color = #blue
-                        \override TupletNumber #'text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score \with {
-                                            \override SpacingSpanner #'spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        } <<
-                                            \new RhythmicStaff \with {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem #'direction = #up
-                                                \override Stem #'length = #5
-                                                \override TupletBracket #'bracket-visibility = ##t
-                                                \override TupletBracket #'direction = #up
-                                                \override TupletBracket #'padding = #1.25
-                                                \override TupletBracket #'shorten-pair = #'(-1 . -1.5)
-                                                \override TupletNumber #'text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            } {
-                                                c'4
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
-                        \times 1/1 {
-                            \clef "percussion"
-                            \once \override Beam #'grow-direction = #left
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'32 * 27/32 -\staccato \f \startTextSpan \> [
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 15/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 41/32 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 31/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            c'32 * 3 -\staccato \p ]
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "treble"
-                        }
-                        \revert TupletNumber #'text
-                        \revert Beam #'color
-                        \revert Dots #'color
-                        \revert Flag #'color
-                        \revert NoteHead #'color
-                        \revert Stem #'color
-                    }
-                    {
-                        % [Flute Voice] Measure 42
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
-                        }
-                        % [Flute Voice] Measure 43
-                        {
-                            R1 * 1/2
-                        }
-                        % [Flute Voice] Measure 44
-                        {
-                            R1 * 1/2
-                        }
-                        % [Flute Voice] Measure 45
                         {
                             R1 * 1/2
                             \stopStaff
@@ -827,475 +399,61 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/2
+                            R1 * 5/4
                         }
                         % [Oboe Voice] Measure 28
                         {
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            R1 * 5/8
                         }
                         % [Oboe Voice] Measure 29
                         {
-                            r4
-                            r8
-                        }
-                    }
-                    {
-                        \override Beam #'color = #blue
-                        \override Dots #'color = #blue
-                        \override Flag #'color = #blue
-                        \override NoteHead #'color = #blue
-                        \override Stem #'color = #blue
-                        {
-                            \clef "percussion"
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'8 -\staccato \mp \startTextSpan \>
+                            R1 * 5/4
                         }
                         % [Oboe Voice] Measure 30
-                        \override TupletNumber #'text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score \with {
-                                            \override SpacingSpanner #'spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        } <<
-                                            \new RhythmicStaff \with {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem #'direction = #up
-                                                \override Stem #'length = #5
-                                                \override TupletBracket #'bracket-visibility = ##t
-                                                \override TupletBracket #'direction = #up
-                                                \override TupletBracket #'padding = #1.25
-                                                \override TupletBracket #'shorten-pair = #'(-1 . -1.5)
-                                                \override TupletNumber #'text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            } {
-                                                c'4
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
-                        \times 1/1 {
-                            \once \override Beam #'grow-direction = #left
-                            c'32 * 27/32 -\staccato \ppp \< [
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 15/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 41/32 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 31/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            c'32 * 3 -\staccato \p ]
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "treble"
-                        }
-                        \revert TupletNumber #'text
-                        \revert Beam #'color
-                        \revert Dots #'color
-                        \revert Flag #'color
-                        \revert NoteHead #'color
-                        \revert Stem #'color
-                    }
-                    {
                         {
-                            r2
-                            r2.
+                            R1 * 5/4
                         }
                         % [Oboe Voice] Measure 31
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/4
+                            R1 * 3/2
                         }
                         % [Oboe Voice] Measure 32
                         {
-                            R1 * 1/2
+                            R1 * 9/8
                         }
                         % [Oboe Voice] Measure 33
                         {
                             R1 * 1/2
-                            \stopStaff
-                            \startStaff
                         }
                         % [Oboe Voice] Measure 34
                         {
-                            r8
+                            R1 * 3/2
                         }
-                    }
-                    {
-                        \override Beam #'color = #blue
-                        \override Dots #'color = #blue
-                        \override Flag #'color = #blue
-                        \override NoteHead #'color = #blue
-                        \override Stem #'color = #blue
-                        \override TupletNumber #'text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score \with {
-                                            \override SpacingSpanner #'spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        } <<
-                                            \new RhythmicStaff \with {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem #'direction = #up
-                                                \override Stem #'length = #5
-                                                \override TupletBracket #'bracket-visibility = ##t
-                                                \override TupletBracket #'direction = #up
-                                                \override TupletBracket #'padding = #1.25
-                                                \override TupletBracket #'shorten-pair = #'(-1 . -1.5)
-                                                \override TupletNumber #'text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            } {
-                                                c'4.
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
-                        \times 1/1 {
-                            \clef "percussion"
-                            \once \override Beam #'grow-direction = #left
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'32 * 29/32 -\staccato \mf \startTextSpan \> [
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 15/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 35/32 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 11/8 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 29/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 81/32 -\staccato
-                            \set stemLeftBeamCount = 3
-                            c'32 * 107/32 -\staccato \p ]
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "treble"
-                        }
-                        \revert TupletNumber #'text
-                        \revert Beam #'color
-                        \revert Dots #'color
-                        \revert Flag #'color
-                        \revert NoteHead #'color
-                        \revert Stem #'color
-                    }
-                    {
                         % [Oboe Voice] Measure 35
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/4
-                            \stopStaff
-                            \startStaff
+                            R1 * 1
                         }
                         % [Oboe Voice] Measure 36
                         {
-                            r2.
-                            r2
+                            R1 * 1/2
                         }
-                    }
-                    {
-                        \override Beam #'color = #blue
-                        \override Dots #'color = #blue
-                        \override Flag #'color = #blue
-                        \override NoteHead #'color = #blue
-                        \override Stem #'color = #blue
-                        \override TupletNumber #'text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score \with {
-                                            \override SpacingSpanner #'spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        } <<
-                                            \new RhythmicStaff \with {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem #'direction = #up
-                                                \override Stem #'length = #5
-                                                \override TupletBracket #'bracket-visibility = ##t
-                                                \override TupletBracket #'direction = #up
-                                                \override TupletBracket #'padding = #1.25
-                                                \override TupletBracket #'shorten-pair = #'(-1 . -1.5)
-                                                \override TupletNumber #'text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            } {
-                                                c'4
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
-                        \times 1/1 {
-                            \clef "percussion"
-                            \once \override Beam #'grow-direction = #left
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'32 * 27/32 -\staccato \f \startTextSpan \> [
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 15/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 41/32 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 31/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            c'32 * 3 -\staccato ]
-                        }
-                        \revert TupletNumber #'text
                         % [Oboe Voice] Measure 37
                         {
-                            c'8 -\staccato \p
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "treble"
-                        }
-                        \revert Beam #'color
-                        \revert Dots #'color
-                        \revert Flag #'color
-                        \revert NoteHead #'color
-                        \revert Stem #'color
-                    }
-                    {
-                        {
-                            r4
-                            r4
+                            R1 * 5/4
                         }
                         % [Oboe Voice] Measure 38
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
                             R1 * 1/2
                         }
                         % [Oboe Voice] Measure 39
                         {
-                            R1 * 1/2
+                            R1 * 9/8
                         }
                         % [Oboe Voice] Measure 40
                         {
-                            R1 * 5/4
-                            \stopStaff
-                            \startStaff
+                            R1 * 1/2
                         }
                         % [Oboe Voice] Measure 41
-                        {
-                            r8
-                        }
-                    }
-                    {
-                        \override Beam #'color = #blue
-                        \override Dots #'color = #blue
-                        \override Flag #'color = #blue
-                        \override NoteHead #'color = #blue
-                        \override Stem #'color = #blue
-                        \override TupletNumber #'text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score \with {
-                                            \override SpacingSpanner #'spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        } <<
-                                            \new RhythmicStaff \with {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem #'direction = #up
-                                                \override Stem #'length = #5
-                                                \override TupletBracket #'bracket-visibility = ##t
-                                                \override TupletBracket #'direction = #up
-                                                \override TupletBracket #'padding = #1.25
-                                                \override TupletBracket #'shorten-pair = #'(-1 . -1.5)
-                                                \override TupletNumber #'text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            } {
-                                                c'4.
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
-                        \times 1/1 {
-                            \clef "percussion"
-                            \once \override Beam #'grow-direction = #left
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'32 * 29/32 -\staccato \mp \startTextSpan \> [
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 15/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 35/32 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 11/8 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 29/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 81/32 -\staccato
-                            \set stemLeftBeamCount = 3
-                            c'32 * 107/32 -\staccato \p ]
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "treble"
-                        }
-                        \revert TupletNumber #'text
-                        \revert Beam #'color
-                        \revert Dots #'color
-                        \revert Flag #'color
-                        \revert NoteHead #'color
-                        \revert Stem #'color
-                    }
-                    {
-                        % [Oboe Voice] Measure 42
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
-                        }
-                        % [Oboe Voice] Measure 43
-                        {
-                            R1 * 1/2
-                        }
-                        % [Oboe Voice] Measure 44
-                        {
-                            R1 * 1/2
-                        }
-                        % [Oboe Voice] Measure 45
                         {
                             R1 * 1/2
                             \stopStaff
@@ -1316,113 +474,31 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/2
+                            R1 * 5/4
+                            \stopStaff
+                            \startStaff
                         }
                         % [Clarinet Voice] Measure 28
                         {
-                            R1 * 1/2
+                            r4
+                        }
+                    }
+                    \transpose bf, c'
+                    {
+                        {
+                            \once \override Hairpin.circled-tip = ##t
+                            d,8 \<
+                            d,4 \repeatTie
                         }
                         % [Clarinet Voice] Measure 29
                         {
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            d,2. \repeatTie
+                            d,2 \p \repeatTie
                         }
+                    }
+                    {
                         % [Clarinet Voice] Measure 30
                         {
-                            r4
-                        }
-                    }
-                    {
-                        \override Beam #'color = #blue
-                        \override Dots #'color = #blue
-                        \override Flag #'color = #blue
-                        \override NoteHead #'color = #blue
-                        \override Stem #'color = #blue
-                        \override TupletNumber #'text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score \with {
-                                            \override SpacingSpanner #'spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        } <<
-                                            \new RhythmicStaff \with {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem #'direction = #up
-                                                \override Stem #'length = #5
-                                                \override TupletBracket #'bracket-visibility = ##t
-                                                \override TupletBracket #'direction = #up
-                                                \override TupletBracket #'padding = #1.25
-                                                \override TupletBracket #'shorten-pair = #'(-1 . -1.5)
-                                                \override TupletNumber #'text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            } {
-                                                c'4
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
-                        \times 1/1 {
-                            \clef "percussion"
-                            \once \override Beam #'grow-direction = #left
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'32 * 27/32 -\staccato \mf \startTextSpan \> [
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 15/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 41/32 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 31/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            c'32 * 3 -\staccato \p ]
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "treble"
-                        }
-                        \revert TupletNumber #'text
-                        \revert Beam #'color
-                        \revert Dots #'color
-                        \revert Flag #'color
-                        \revert NoteHead #'color
-                        \revert Stem #'color
-                    }
-                    {
-                        {
-                            r4
                             r2
                         }
                     }
@@ -1430,362 +506,89 @@
                     {
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            f,4 \<
+                            d,4 \<
+                            d,2 \repeatTie
                         }
                         % [Clarinet Voice] Measure 31
                         {
-                            f,2. \repeatTie
-                            f,2 \repeatTie
+                            d,1. \repeatTie
                         }
                         % [Clarinet Voice] Measure 32
                         {
-                            \once \override Hairpin.circled-tip = ##t
-                            f,2 \p \repeatTie \>
-                        }
-                        % [Clarinet Voice] Measure 33
-                        {
-                            f,4 \repeatTie
+                            d,4 \ppp \repeatTie
                         }
                     }
                     {
                         {
-                            r4 \!
+                            r8
+                            r2.
                         }
-                        % [Clarinet Voice] Measure 34
+                        % [Clarinet Voice] Measure 33
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 1/2
-                            \stopStaff
-                            \startStaff
                         }
-                    }
-                    {
-                        \override Beam #'color = #blue
-                        \override Dots #'color = #blue
-                        \override Flag #'color = #blue
-                        \override NoteHead #'color = #blue
-                        \override Stem #'color = #blue
-                        % [Clarinet Voice] Measure 35
-                        \override TupletNumber #'text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score \with {
-                                            \override SpacingSpanner #'spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        } <<
-                                            \new RhythmicStaff \with {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem #'direction = #up
-                                                \override Stem #'length = #5
-                                                \override TupletBracket #'bracket-visibility = ##t
-                                                \override TupletBracket #'direction = #up
-                                                \override TupletBracket #'padding = #1.25
-                                                \override TupletBracket #'shorten-pair = #'(-1 . -1.5)
-                                                \override TupletNumber #'text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            } {
-                                                c'4
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
-                        \times 1/1 {
-                            \clef "percussion"
-                            \once \override Beam #'grow-direction = #left
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'32 * 27/32 -\staccato \f \startTextSpan \> [
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 15/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 41/32 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 31/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            c'32 * 3 -\staccato \p ]
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "treble"
-                        }
-                        \revert TupletNumber #'text
-                        \revert Beam #'color
-                        \revert Dots #'color
-                        \revert Flag #'color
-                        \revert NoteHead #'color
-                        \revert Stem #'color
-                    }
-                    {
+                        % [Clarinet Voice] Measure 34
                         {
-                            r2
-                        }
-                        % [Clarinet Voice] Measure 36
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
                             R1 * 3/2
                             \stopStaff
                             \startStaff
                         }
+                        % [Clarinet Voice] Measure 35
+                        {
+                            r2
+                        }
+                    }
+                    \transpose bf, c'
+                    {
+                        {
+                            \once \override Hairpin.circled-tip = ##t
+                            d,2 \<
+                        }
+                        % [Clarinet Voice] Measure 36
+                        {
+                            d,2 \repeatTie
+                        }
                         % [Clarinet Voice] Measure 37
                         {
-                            r8
+                            d,2. \repeatTie
+                            d,8 \p \repeatTie
                         }
-                    }
-                    {
-                        \override Beam #'color = #blue
-                        \override Dots #'color = #blue
-                        \override Flag #'color = #blue
-                        \override NoteHead #'color = #blue
-                        \override Stem #'color = #blue
-                        \override TupletNumber #'text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score \with {
-                                            \override SpacingSpanner #'spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        } <<
-                                            \new RhythmicStaff \with {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem #'direction = #up
-                                                \override Stem #'length = #5
-                                                \override TupletBracket #'bracket-visibility = ##t
-                                                \override TupletBracket #'direction = #up
-                                                \override TupletBracket #'padding = #1.25
-                                                \override TupletBracket #'shorten-pair = #'(-1 . -1.5)
-                                                \override TupletNumber #'text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            } {
-                                                c'4
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
-                        \times 1/1 {
-                            \clef "percussion"
-                            \once \override Beam #'grow-direction = #left
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'32 * 27/32 -\staccato \mp \startTextSpan \> [
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 15/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 41/32 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 31/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            c'32 * 3 -\staccato \p ]
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "treble"
-                        }
-                        \revert TupletNumber #'text
-                        \revert Beam #'color
-                        \revert Dots #'color
-                        \revert Flag #'color
-                        \revert NoteHead #'color
-                        \revert Stem #'color
                     }
                     {
                         {
-                            r4
+                            r4.
                         }
                         % [Clarinet Voice] Measure 38
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
+                            r4
+                            r8
+                        }
+                    }
+                    \transpose bf, c'
+                    {
+                        {
+                            \once \override Hairpin.circled-tip = ##t
+                            f,8 \<
                         }
                         % [Clarinet Voice] Measure 39
                         {
-                            R1 * 1/2
+                            f,2. \repeatTie
+                            f,4. \repeatTie
                         }
                         % [Clarinet Voice] Measure 40
                         {
-                            R1 * 5/4
+                            f,2 \ppp \repeatTie
                         }
+                    }
+                    {
                         % [Clarinet Voice] Measure 41
                         {
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                    }
-                    {
-                        \override Beam #'color = #blue
-                        \override Dots #'color = #blue
-                        \override Flag #'color = #blue
-                        \override NoteHead #'color = #blue
-                        \override Stem #'color = #blue
-                        % [Clarinet Voice] Measure 42
-                        \override TupletNumber #'text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score \with {
-                                            \override SpacingSpanner #'spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        } <<
-                                            \new RhythmicStaff \with {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem #'direction = #up
-                                                \override Stem #'length = #5
-                                                \override TupletBracket #'bracket-visibility = ##t
-                                                \override TupletBracket #'direction = #up
-                                                \override TupletBracket #'padding = #1.25
-                                                \override TupletBracket #'shorten-pair = #'(-1 . -1.5)
-                                                \override TupletNumber #'text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            } {
-                                                c'4
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
-                        \times 1/1 {
-                            \clef "percussion"
-                            \once \override Beam #'grow-direction = #left
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'32 * 27/32 -\staccato \mf \startTextSpan \> [
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 15/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 41/32 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 31/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            c'32 * 3 -\staccato \p ]
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "treble"
-                        }
-                        \revert TupletNumber #'text
-                        \revert Beam #'color
-                        \revert Dots #'color
-                        \revert Flag #'color
-                        \revert NoteHead #'color
-                        \revert Stem #'color
-                    }
-                    {
-                        {
-                            r8
-                            r4
-                        }
-                        % [Clarinet Voice] Measure 43
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                        }
-                        % [Clarinet Voice] Measure 44
-                        {
-                            R1 * 1/2
-                        }
-                        % [Clarinet Voice] Measure 45
-                        {
                             R1 * 1/2
                             \stopStaff
                             \startStaff
@@ -1805,120 +608,109 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/2
+                            R1 * 5/4
                         }
                         % [Saxophone Voice] Measure 28
                         {
-                            R1 * 1/2
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
                         }
                         % [Saxophone Voice] Measure 29
                         {
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            r2
+                            r8
                         }
                     }
                     \transpose ef, c'
                     {
-                        % [Saxophone Voice] Measure 30
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            d,1. \<
+                            f,8 \<
+                            f,2 \repeatTie
+                        }
+                        % [Saxophone Voice] Measure 30
+                        {
+                            f,2. \repeatTie
+                            f,2 \repeatTie
                         }
                         % [Saxophone Voice] Measure 31
                         {
-                            d,2. \repeatTie
-                            d,2 \ppp \repeatTie
+                            f,2. \repeatTie
+                            f,8 \p \repeatTie
                         }
                     }
                     {
+                        {
+                            r8
+                            r2
+                        }
                         % [Saxophone Voice] Measure 32
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1/2
-                        }
-                        % [Saxophone Voice] Measure 33
-                        {
-                            R1 * 1/2
-                        }
-                        % [Saxophone Voice] Measure 34
-                        {
-                            R1 * 1/2
+                            R1 * 9/8
                             \stopStaff
                             \startStaff
                         }
+                    }
+                    \transpose ef, c'
+                    {
+                        % [Saxophone Voice] Measure 33
+                        {
+                            \once \override Hairpin.circled-tip = ##t
+                            g,2 \<
+                        }
+                        % [Saxophone Voice] Measure 34
+                        {
+                            g,1. \repeatTie
+                        }
                         % [Saxophone Voice] Measure 35
                         {
-                            r4
+                            g,8 \ppp \repeatTie
+                        }
+                    }
+                    {
+                        {
+                            r8
+                            r8
                         }
                     }
                     \transpose ef, c'
                     {
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            d,2 \<
+                            f,8 \<
+                            f,2 \repeatTie
                         }
                         % [Saxophone Voice] Measure 36
                         {
-                            d,1. \repeatTie
+                            f,2 \repeatTie
                         }
                         % [Saxophone Voice] Measure 37
                         {
-                            d,8 \p \repeatTie
+                            f,2. \repeatTie
+                            f,2 \p \repeatTie
                         }
                     }
                     {
-                        {
-                            r4
-                        }
-                    }
-                    \transpose ef, c'
-                    {
-                        {
-                            \once \override Hairpin.circled-tip = ##t
-                            g,4 \<
-                        }
                         % [Saxophone Voice] Measure 38
-                        {
-                            g,2 \repeatTie
-                        }
-                        % [Saxophone Voice] Measure 39
-                        {
-                            \once \override Hairpin.circled-tip = ##t
-                            g,2 \ppp \repeatTie \>
-                        }
-                        % [Saxophone Voice] Measure 40
-                        {
-                            g,2. \repeatTie
-                            g,4. \repeatTie
-                        }
-                    }
-                    {
-                        {
-                            r8 \!
-                        }
-                        % [Saxophone Voice] Measure 41
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 1/2
                         }
-                        % [Saxophone Voice] Measure 42
+                        % [Saxophone Voice] Measure 39
                         {
-                            R1 * 5/8
+                            R1 * 9/8
                         }
-                        % [Saxophone Voice] Measure 43
-                        {
-                            R1 * 1/2
-                        }
-                        % [Saxophone Voice] Measure 44
+                        % [Saxophone Voice] Measure 40
                         {
                             R1 * 1/2
                         }
-                        % [Saxophone Voice] Measure 45
+                        % [Saxophone Voice] Measure 41
                         {
                             R1 * 1/2
                             \stopStaff
@@ -1942,171 +734,61 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/2
+                                R1 * 5/4
                             }
                             % [Guitar Pitch Pipe Voice] Measure 28
                             {
-                                R1 * 1/2
+                                R1 * 5/8
                             }
                             % [Guitar Pitch Pipe Voice] Measure 29
                             {
-                                R1 * 1/2
+                                R1 * 5/4
                             }
                             % [Guitar Pitch Pipe Voice] Measure 30
                             {
-                                R1 * 3/2
+                                R1 * 5/4
                             }
                             % [Guitar Pitch Pipe Voice] Measure 31
                             {
-                                R1 * 5/4
+                                R1 * 3/2
                             }
                             % [Guitar Pitch Pipe Voice] Measure 32
                             {
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                R1 * 9/8
                             }
                             % [Guitar Pitch Pipe Voice] Measure 33
                             {
-                                r4
-                                r8
-                            }
-                        }
-                        {
-                            \override Beam #'color = #blue
-                            \override Dots #'color = #blue
-                            \override Flag #'color = #blue
-                            \override NoteHead #'color = #blue
-                            \override Stem #'color = #blue
-                            {
-                                \once \override Hairpin.circled-tip = ##t
-                                \override NoteHead #'style = #'cross
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                c'8 \<
-                                    ^ \markup {
-                                        \box
-                                            \pad-around
-                                                #0.5
-                                                \smaller
-                                                    \italic
-                                                        exhale
-                                        }
+                                R1 * 1/2
                             }
                             % [Guitar Pitch Pipe Voice] Measure 34
                             {
-                                c'8 \repeatTie [
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                c'8 -\accent
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                c'8 -\accent
-                                \set stemLeftBeamCount = 1
-                                c'8 -\accent ]
+                                R1 * 3/2
                             }
                             % [Guitar Pitch Pipe Voice] Measure 35
                             {
-                                c'2. \p \repeatTie \>
+                                R1 * 1
                             }
                             % [Guitar Pitch Pipe Voice] Measure 36
                             {
-                                c'4 \ppp \repeatTie
-                                \stopStaff
-                                \startStaff
-                                \revert NoteHead #'style
-                            }
-                            \revert Beam #'color
-                            \revert Dots #'color
-                            \revert Flag #'color
-                            \revert NoteHead #'color
-                            \revert Stem #'color
-                        }
-                        {
-                            {
-                                r2
-                                r2.
+                                R1 * 1/2
                             }
                             % [Guitar Pitch Pipe Voice] Measure 37
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 5/8
+                                R1 * 5/4
                             }
                             % [Guitar Pitch Pipe Voice] Measure 38
                             {
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
                             }
                             % [Guitar Pitch Pipe Voice] Measure 39
                             {
-                                r8
-                            }
-                        }
-                        {
-                            \override Beam #'color = #blue
-                            \override Dots #'color = #blue
-                            \override Flag #'color = #blue
-                            \override NoteHead #'color = #blue
-                            \override Stem #'color = #blue
-                            {
-                                \override NoteHead #'style = #'cross
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                c'8 \fp \<
-                                    ^ \markup {
-                                        \box
-                                            \pad-around
-                                                #0.5
-                                                \smaller
-                                                    \italic
-                                                        inhale
-                                        }
-                                c'4 \repeatTie
+                                R1 * 9/8
                             }
                             % [Guitar Pitch Pipe Voice] Measure 40
                             {
-                                c'8 \mf \repeatTie
-                                \stopStaff
-                                \startStaff
-                                \revert NoteHead #'style
-                            }
-                            \revert Beam #'color
-                            \revert Dots #'color
-                            \revert Flag #'color
-                            \revert NoteHead #'color
-                            \revert Stem #'color
-                        }
-                        {
-                            {
-                                r8
-                                r2
-                                r2
+                                R1 * 1/2
                             }
                             % [Guitar Pitch Pipe Voice] Measure 41
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 42
-                            {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 43
-                            {
-                                R1 * 1/2
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 44
-                            {
-                                R1 * 1/2
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 45
                             {
                                 R1 * 1/2
                                 \stopStaff
@@ -2129,11 +811,12 @@
                             % [Guitar Voice] Measure 27
                             {
                                 \once \override Hairpin.circled-tip = ##t
-                                <d f>1. :32 \fp \>
+                                <d f>2. :32 \fp \>
+                                <d f>2 :32 -\accent \repeatTie
                             }
                             % [Guitar Voice] Measure 28
                             {
-                                <d f>8 :64 \repeatTie
+                                <d f>4. :32 \repeatTie
                             }
                             \revert Beam #'color
                             \revert Dots #'color
@@ -2143,8 +826,7 @@
                         }
                         {
                             {
-                                r8 \!
-                                r8
+                                r4 \!
                             }
                         }
                         {
@@ -2153,33 +835,16 @@
                             \override Flag #'color = #red
                             \override NoteHead #'color = #red
                             \override Stem #'color = #red
+                            % [Guitar Voice] Measure 29
                             {
                                 \once \override Hairpin.circled-tip = ##t
-                                <c' ef' g' d''>8 :64 \<
-                            }
-                            % [Guitar Voice] Measure 29
-                            \times 4/5 {
-                                <c' ef' g' d''>8 :64 \repeatTie [
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                <g bf d' a'>8 :64 -\accent
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                <a c' e' b'>8 :64 -\accent
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                <g bf d' a'>8 :64 -\accent
-                                \set stemLeftBeamCount = 1
-                                <a c' e' b'>8 :64 -\accent ]
+                                <c' ef' g' d''>2. :32 \<
+                                <c' ef' g' d''>2 :32 \repeatTie
                             }
                             % [Guitar Voice] Measure 30
                             {
-                                \once \override Hairpin.circled-tip = ##t
-                                <a c' e' b'>1. :32 \p \repeatTie \>
-                            }
-                            % [Guitar Voice] Measure 31
-                            {
-                                <a c' e' b'>4. :32 \repeatTie
+                                <c' ef' g' d''>2. :32 \repeatTie
+                                <c' ef' g' d''>2 :32 \p \repeatTie
                             }
                             \revert Beam #'color
                             \revert Dots #'color
@@ -2188,8 +853,9 @@
                             \revert Stem #'color
                         }
                         {
+                            % [Guitar Voice] Measure 31
                             {
-                                r8 \!
+                                r8
                             }
                         }
                         {
@@ -2200,13 +866,9 @@
                             \override Stem #'color = #red
                             {
                                 \once \override Hairpin.circled-tip = ##t
-                                <d g>4 :32 \<
+                                <d g>8 :64 \<
                                 <d g>2 :32 -\accent \repeatTie
-                            }
-                            % [Guitar Voice] Measure 32
-                            {
-                                <d g>4 :32 \repeatTie
-                                <d g>8 :64 \f \repeatTie
+                                <d g>2 :32 \f \repeatTie
                             }
                             \revert Beam #'color
                             \revert Dots #'color
@@ -2216,39 +878,24 @@
                         }
                         {
                             {
-                                r8
+                                r4
+                            }
+                        }
+                        {
+                            \override Beam #'color = #red
+                            \override Dots #'color = #red
+                            \override Flag #'color = #red
+                            \override NoteHead #'color = #red
+                            \override Stem #'color = #red
+                            % [Guitar Voice] Measure 32
+                            {
+                                \once \override Hairpin.circled-tip = ##t
+                                <g bf d' a'>2. :32 \<
+                                <g bf d' a'>4. :32 \repeatTie
                             }
                             % [Guitar Voice] Measure 33
                             {
-                                r8
-                            }
-                        }
-                        {
-                            \override Beam #'color = #red
-                            \override Dots #'color = #red
-                            \override Flag #'color = #red
-                            \override NoteHead #'color = #red
-                            \override Stem #'color = #red
-                            {
-                                \once \override Hairpin.circled-tip = ##t
-                                <g bf d' a'>8 :64 \<
-                                <g bf d' a'>4 :32 \repeatTie
-                            }
-                            % [Guitar Voice] Measure 34
-                            {
-                                <g bf d' a'>8 :64 \repeatTie [
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                <ef fs bf f'>8 :64 -\accent
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                <ef fs bf f'>8 :64 -\accent
-                                \set stemLeftBeamCount = 1
-                                <a c' e' b'>8 :64 -\accent ]
-                            }
-                            % [Guitar Voice] Measure 35
-                            {
-                                <a c' e' b'>4. :32 \pp \repeatTie
+                                <g bf d' a'>8 :64 \pp \repeatTie
                             }
                             \revert Beam #'color
                             \revert Dots #'color
@@ -2271,11 +918,11 @@
                                 \once \override Hairpin.circled-tip = ##t
                                 <f af g'>4 :32 \fp \>
                             }
-                            % [Guitar Voice] Measure 36
+                            % [Guitar Voice] Measure 34
                             {
                                 <f af g'>1. :32 -\accent \repeatTie
                             }
-                            % [Guitar Voice] Measure 37
+                            % [Guitar Voice] Measure 35
                             {
                                 <f af g'>8 :64 \repeatTie
                             }
@@ -2287,8 +934,7 @@
                         }
                         {
                             {
-                                r4 \!
-                                r8
+                                r4. \!
                             }
                         }
                         {
@@ -2299,15 +945,49 @@
                             \override Stem #'color = #red
                             {
                                 \once \override Hairpin.circled-tip = ##t
-                                <c' ef' g' d''>8 :64 \<
+                                <ef fs bf f'>2 :32 \<
+                            }
+                            % [Guitar Voice] Measure 36
+                            {
+                                <ef fs bf f'>2 :32 \repeatTie
+                            }
+                            % [Guitar Voice] Measure 37
+                            {
+                                \once \override Hairpin.circled-tip = ##t
+                                <ef fs bf f'>8 :64 \mp \repeatTie \> [
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
+                                <c' ef' g' d''>8 :64 -\accent
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
+                                <d' f' a' e''>8 :64 -\accent
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
+                                <a c' e' b'>8 :64 -\accent
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
+                                <c' ef' g' d''>8 :64 -\accent
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
+                                <d' f' a' e''>8 :64 -\accent
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
+                                <a c' e' b'>8 :64 -\accent
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
+                                <c' ef' g' d''>8 :64 -\accent
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
+                                <d' f' a' e''>8 :64 -\accent
+                                \set stemLeftBeamCount = 1
+                                <a c' e' b'>8 :64 -\accent ]
                             }
                             % [Guitar Voice] Measure 38
-                            {
-                                <c' ef' g' d''>2 :32 \repeatTie
-                            }
-                            % [Guitar Voice] Measure 39
-                            {
-                                <c' ef' g' d''>8 :64 \mp \repeatTie \> [
+                            \times 4/5 {
+                                <a c' e' b'>8 :64 \repeatTie [
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
+                                <c' ef' g' d''>8 :64 -\accent
                                 \set stemLeftBeamCount = 1
                                 \set stemRightBeamCount = 1
                                 <d' f' a' e''>8 :64 -\accent
@@ -2317,48 +997,9 @@
                                 \set stemLeftBeamCount = 1
                                 <c' ef' g' d''>8 :64 -\accent ]
                             }
-                            % [Guitar Voice] Measure 40
-                            \tweak #'text #tuplet-number::calc-fraction-text
-                            \times 10/11 {
-                                <c' ef' g' d''>8 :64 \repeatTie [
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                <d' f' a' e''>8 :64 -\accent
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                <a c' e' b'>8 :64 -\accent
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                <c' ef' g' d''>8 :64 -\accent
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                <d' f' a' e''>8 :64 -\accent
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                <a c' e' b'>8 :64 -\accent
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                <c' ef' g' d''>8 :64 -\accent
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                <d' f' a' e''>8 :64 -\accent
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                <a c' e' b'>8 :64 -\accent
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                <c' ef' g' d''>8 :64 -\accent
-                                \set stemLeftBeamCount = 1
-                                <d' f' a' e''>8 :64 -\accent ]
-                            }
-                            % [Guitar Voice] Measure 41
+                            % [Guitar Voice] Measure 39
                             {
-                                \once \override Hairpin.circled-tip = ##t
-                                <d' f' a' e''>2 :32 \pp \repeatTie \>
-                            }
-                            % [Guitar Voice] Measure 42
-                            {
-                                <d' f' a' e''>8 :64 \repeatTie
+                                <c' ef' g' d''>4 :32 \repeatTie
                             }
                             \revert Beam #'color
                             \revert Dots #'color
@@ -2368,13 +1009,8 @@
                         }
                         {
                             {
-                                r4 \!
-                                r4
-                            }
-                            % [Guitar Voice] Measure 43
-                            {
-                                r4
-                                r8
+                                r8 \!
+                                r2.
                             }
                         }
                         {
@@ -2383,12 +1019,14 @@
                             \override Flag #'color = #red
                             \override NoteHead #'color = #red
                             \override Stem #'color = #red
+                            % [Guitar Voice] Measure 40
                             {
-                                <g, c>8 :64 \p
+                                \once \override Hairpin.circled-tip = ##t
+                                <g, c>2 :32 \<
                             }
-                            % [Guitar Voice] Measure 44
+                            % [Guitar Voice] Measure 41
                             {
-                                <g, c>2 :32 \repeatTie
+                                <g, c>8 :64 \f \repeatTie
                             }
                             \revert Beam #'color
                             \revert Dots #'color
@@ -2397,14 +1035,9 @@
                             \revert Stem #'color
                         }
                         {
-                            % [Guitar Voice] Measure 45
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                r8
+                                r4
                             }
                         }
                     }
@@ -2423,163 +1056,61 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/2
+                                R1 * 5/4
                             }
                             % [Piano Pitch Pipe Voice] Measure 28
                             {
-                                R1 * 1/2
+                                R1 * 5/8
                             }
                             % [Piano Pitch Pipe Voice] Measure 29
                             {
-                                R1 * 1/2
+                                R1 * 5/4
                             }
                             % [Piano Pitch Pipe Voice] Measure 30
                             {
-                                R1 * 3/2
+                                R1 * 5/4
                             }
                             % [Piano Pitch Pipe Voice] Measure 31
                             {
-                                R1 * 5/4
+                                R1 * 3/2
                             }
                             % [Piano Pitch Pipe Voice] Measure 32
                             {
-                                R1 * 1/2
+                                R1 * 9/8
                             }
                             % [Piano Pitch Pipe Voice] Measure 33
                             {
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
                             }
                             % [Piano Pitch Pipe Voice] Measure 34
                             {
-                                r8
-                            }
-                        }
-                        {
-                            \override Beam #'color = #blue
-                            \override Dots #'color = #blue
-                            \override Flag #'color = #blue
-                            \override NoteHead #'color = #blue
-                            \override Stem #'color = #blue
-                            {
-                                \once \override Hairpin.circled-tip = ##t
-                                \override NoteHead #'style = #'cross
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                c'8 \<
-                                    ^ \markup {
-                                        \box
-                                            \pad-around
-                                                #0.5
-                                                \smaller
-                                                    \italic
-                                                        inhale
-                                        }
-                                c'4 \repeatTie
+                                R1 * 3/2
                             }
                             % [Piano Pitch Pipe Voice] Measure 35
                             {
-                                c'2. \repeatTie
+                                R1 * 1
                             }
                             % [Piano Pitch Pipe Voice] Measure 36
                             {
-                                c'8 \ppp \repeatTie
-                                \stopStaff
-                                \startStaff
-                                \revert NoteHead #'style
-                            }
-                            \revert Beam #'color
-                            \revert Dots #'color
-                            \revert Flag #'color
-                            \revert NoteHead #'color
-                            \revert Stem #'color
-                        }
-                        {
-                            {
-                                r8
-                                r2
-                                r2.
+                                R1 * 1/2
                             }
                             % [Piano Pitch Pipe Voice] Measure 37
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 5/8
+                                R1 * 5/4
                             }
                             % [Piano Pitch Pipe Voice] Measure 38
                             {
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
                             }
                             % [Piano Pitch Pipe Voice] Measure 39
                             {
-                                r4
-                                r8
-                            }
-                        }
-                        {
-                            \override Beam #'color = #blue
-                            \override Dots #'color = #blue
-                            \override Flag #'color = #blue
-                            \override NoteHead #'color = #blue
-                            \override Stem #'color = #blue
-                            {
-                                \override NoteHead #'style = #'cross
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                c'8 \fp
-                                    ^ \markup {
-                                        \box
-                                            \pad-around
-                                                #0.5
-                                                \smaller
-                                                    \italic
-                                                        exhale
-                                        }
+                                R1 * 9/8
                             }
                             % [Piano Pitch Pipe Voice] Measure 40
                             {
-                                c'2 \repeatTie
-                                \stopStaff
-                                \startStaff
-                                \revert NoteHead #'style
-                            }
-                            \revert Beam #'color
-                            \revert Dots #'color
-                            \revert Flag #'color
-                            \revert NoteHead #'color
-                            \revert Stem #'color
-                        }
-                        {
-                            {
-                                r4
-                                r2
+                                R1 * 1/2
                             }
                             % [Piano Pitch Pipe Voice] Measure 41
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 42
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 43
-                            {
-                                R1 * 1/2
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 44
-                            {
-                                R1 * 1/2
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 45
                             {
                                 R1 * 1/2
                                 \stopStaff
@@ -2597,91 +1128,7 @@
                             {
                                 % [Piano Upper Voice] Measure 27
                                 {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 3/2
-                                }
-                                % [Piano Upper Voice] Measure 28
-                                {
-                                    R1 * 1/2
-                                }
-                                % [Piano Upper Voice] Measure 29
-                                {
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                % [Piano Upper Voice] Measure 30
-                                {
-                                    r2
-                                    r16
-                                }
-                            }
-                            {
-                                {
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <c''' e''' g'''>16 \p \< [
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <e''' g''' b'''>16
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <f'' a'' c''' e''' g'''>16
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    <c''' e''' g'''>16 \mf ]
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                }
-                            }
-                            {
-                                {
-                                    r16
+                                    r8
                                 }
                             }
                             {
@@ -2704,6 +1151,41 @@
                             {
                                 {
                                     r4.
+                                    r8
+                                }
+                            }
+                            {
+                                \override Beam #'color = #red
+                                \override Dots #'color = #red
+                                \override Flag #'color = #red
+                                \override NoteHead #'color = #red
+                                \override Stem #'color = #red
+                                {
+                                    <f a c' df' f' c''>4. :32 \pp
+                                }
+                                \revert Beam #'color
+                                \revert Dots #'color
+                                \revert Flag #'color
+                                \revert NoteHead #'color
+                                \revert Stem #'color
+                            }
+                            {
+                                % [Piano Upper Voice] Measure 28
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 5/8
+                                }
+                                % [Piano Upper Voice] Measure 29
+                                {
+                                    R1 * 5/4
+                                }
+                                % [Piano Upper Voice] Measure 30
+                                {
+                                    R1 * 5/4
+                                    \stopStaff
+                                    \startStaff
                                 }
                                 % [Piano Upper Voice] Measure 31
                                 {
@@ -2717,7 +1199,9 @@
                                 \override NoteHead #'color = #red
                                 \override Stem #'color = #red
                                 {
-                                    <f a c' df' f' c''>8 :64 \pp
+                                    <g b d' g' af' d''>8 :64 \mf [
+                                    \set stemLeftBeamCount = 1
+                                    <g b d' g' af' d''>8 :64 \repeatTie ]
                                 }
                                 \revert Beam #'color
                                 \revert Dots #'color
@@ -2726,67 +1210,36 @@
                                 \revert Stem #'color
                             }
                             {
-                                \tweak #'text #tuplet-number::calc-fraction-text
-                                \times 3/4 {
-                                    r8 [
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 1
-                                    \set stemRightBeamCount = 1
-                                    <e''' g''' b'''>8 \f \>
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 1
-                                    \set stemRightBeamCount = 1
-                                    <f'' a'' c''' e''' g'''>8
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 1
-                                    <c''' e''' g'''>8 \p ]
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
+                                {
+                                    r4.
+                                    r8
                                 }
                             }
                             {
+                                \override Beam #'color = #red
+                                \override Dots #'color = #red
+                                \override Flag #'color = #red
+                                \override NoteHead #'color = #red
+                                \override Stem #'color = #red
                                 {
-                                    r8
-                                    r2
+                                    <bf d' f' gf' bf' f''>4. :32 \p
+                                }
+                                \revert Beam #'color
+                                \revert Dots #'color
+                                \revert Flag #'color
+                                \revert NoteHead #'color
+                                \revert Stem #'color
+                            }
+                            {
+                                {
+                                    r4
                                 }
                                 % [Piano Upper Voice] Measure 32
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 1/2
+                                    R1 * 9/8
                                 }
                                 % [Piano Upper Voice] Measure 33
                                 {
@@ -2794,264 +1247,17 @@
                                 }
                                 % [Piano Upper Voice] Measure 34
                                 {
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
+                                    R1 * 3/2
                                 }
                                 % [Piano Upper Voice] Measure 35
                                 {
-                                    r2
-                                    r16
+                                    R1 * 1
+                                    \stopStaff
+                                    \startStaff
                                 }
-                            }
-                            {
-                                {
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <e'' g'' b''>16 \pp [
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <f' a' c'' e'' g''>16
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    <c''' e''' g'''>16 ]
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                }
-                            }
-                            {
                                 % [Piano Upper Voice] Measure 36
                                 {
-                                    r2.
-                                    r8.
-                                }
-                            }
-                            {
-                                {
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <e'' g'' b''>16 \mp \> [
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <f'' a'' c''' e''' g'''>16
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c'' e'' g''>16
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    <e'' g'' b''>16 \pp ]
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                }
-                            }
-                            {
-                                {
-                                    r16
-                                    r16
-                                }
-                            }
-                            {
-                                {
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <f' a' c'' e'' g''>16 \mf \> [
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c'' e'' g''>16
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    <e' g' b'>16 ]
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                }
-                                % [Piano Upper Voice] Measure 37
-                                \times 2/3 {
-                                    r8 [
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 1
-                                    \set stemRightBeamCount = 1
-                                    <f'' a'' c''' e''' g'''>8
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 1
-                                    <c'' e'' g''>8 \mp ]
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                }
-                            }
-                            {
-                                {
-                                    r8
-                                }
-                            }
-                            {
-                                \times 2/3 {
-                                    r8 [
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 1
-                                    \set stemRightBeamCount = 1
-                                    <e'' g'' b''>8 \p
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 1
-                                    <f'' a'' c''' e''' g'''>8 ]
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                }
-                            }
-                            {
-                                % [Piano Upper Voice] Measure 38
-                                {
-                                    r8
+                                    r4
                                 }
                             }
                             {
@@ -3060,134 +1266,6 @@
                                 \override Flag #'color = #red
                                 \override NoteHead #'color = #red
                                 \override Stem #'color = #red
-                                {
-                                    <f a c' f' gf' c''>8 :64 \mf
-                                }
-                                \revert Beam #'color
-                                \revert Dots #'color
-                                \revert Flag #'color
-                                \revert NoteHead #'color
-                                \revert Stem #'color
-                            }
-                            {
-                                {
-                                    r16
-                                }
-                            }
-                            {
-                                {
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <c'' e'' g''>16 \f \> [
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <e'' g'' b''>16
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    <f' a' c'' e'' g''>16 ]
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                }
-                                % [Piano Upper Voice] Measure 39
-                                \tweak #'text #tuplet-number::calc-fraction-text
-                                \times 3/4 {
-                                    r8 [
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 1
-                                    \set stemRightBeamCount = 1
-                                    <c'' e'' g''>8
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 1
-                                    \set stemRightBeamCount = 1
-                                    <e' g' b'>8 \p
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                    \set stemLeftBeamCount = 1
-                                    r8 ]
-                                }
-                            }
-                            {
-                                \override Beam #'color = #red
-                                \override Dots #'color = #red
-                                \override Flag #'color = #red
-                                \override NoteHead #'color = #red
-                                \override Stem #'color = #red
-                                {
-                                    <f a c' df' f' c''>8 :64 \p
-                                }
-                                % [Piano Upper Voice] Measure 40
-                                {
-                                    <f a c' df' f' c''>4 :32 \repeatTie
-                                }
-                                \revert Beam #'color
-                                \revert Dots #'color
-                                \revert Flag #'color
-                                \revert NoteHead #'color
-                                \revert Stem #'color
-                            }
-                            {
-                                {
-                                    r2
-                                    r2
-                                }
-                            }
-                            {
-                                \override Beam #'color = #red
-                                \override Dots #'color = #red
-                                \override Flag #'color = #red
-                                \override NoteHead #'color = #red
-                                \override Stem #'color = #red
-                                % [Piano Upper Voice] Measure 41
                                 {
                                     <g b d' g' af' d''>4 :32 \p
                                 }
@@ -3198,96 +1276,72 @@
                                 \revert Stem #'color
                             }
                             {
+                                % [Piano Upper Voice] Measure 37
                                 {
-                                    r4
-                                }
-                                % [Piano Upper Voice] Measure 42
-                                {
-                                    r4
-                                    r16
+                                    r2
                                 }
                             }
                             {
+                                \override Beam #'color = #red
+                                \override Dots #'color = #red
+                                \override Flag #'color = #red
+                                \override NoteHead #'color = #red
+                                \override Stem #'color = #red
                                 {
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <f' a' c'' e'' g''>16 \pp \< [
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <c'' e'' g''>16
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <e' g' b'>16
-                                        ^ \markup {
-                                            \center-align
-                                                \natural
-                                            }
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    \set stemLeftBeamCount = 2
-                                    <f' a' c'' e'' g''>16 \f ]
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
+                                    <f a c' df' f' c''>4 :32 \mf \>
+                                    <f a c' df' f' c''>8 :64 \p \repeatTie
                                 }
+                                \revert Beam #'color
+                                \revert Dots #'color
+                                \revert Flag #'color
+                                \revert NoteHead #'color
+                                \revert Stem #'color
                             }
                             {
                                 {
-                                    r16
+                                    r4.
                                 }
-                                % [Piano Upper Voice] Measure 43
+                                % [Piano Upper Voice] Measure 38
+                                {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 1/2
+                                    \stopStaff
+                                    \startStaff
+                                }
+                                % [Piano Upper Voice] Measure 39
+                                {
+                                    r8
+                                }
+                            }
+                            {
+                                \override Beam #'color = #red
+                                \override Dots #'color = #red
+                                \override Flag #'color = #red
+                                \override NoteHead #'color = #red
+                                \override Stem #'color = #red
+                                {
+                                    <gs c' ds' gs' a' ds''>4 :32 \p
+                                }
+                                \revert Beam #'color
+                                \revert Dots #'color
+                                \revert Flag #'color
+                                \revert NoteHead #'color
+                                \revert Stem #'color
+                            }
+                            {
+                                {
+                                    r2.
+                                }
+                                % [Piano Upper Voice] Measure 40
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
                                     R1 * 1/2
                                 }
-                                % [Piano Upper Voice] Measure 44
-                                {
-                                    R1 * 1/2
-                                }
-                                % [Piano Upper Voice] Measure 45
+                                % [Piano Upper Voice] Measure 41
                                 {
                                     R1 * 1/2
                                     \stopStaff
@@ -3302,326 +1356,50 @@
                             {
                                 % [Piano Lower Voice] Measure 27
                                 {
-                                    r2.
-                                    r2
-                                }
-                            }
-                            {
-                                \override Beam #'color = #yellow
-                                \override Dots #'color = #yellow
-                                \override Flag #'color = #yellow
-                                \override NoteHead #'color = #yellow
-                                \override Stem #'color = #yellow
-                                {
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                }
-                                \revert Beam #'color
-                                \revert Dots #'color
-                                \revert Flag #'color
-                                \revert NoteHead #'color
-                                \revert Stem #'color
-                            }
-                            {
-                                {
-                                    r8
-                                }
-                            }
-                            {
-                                \override Beam #'color = #yellow
-                                \override Dots #'color = #yellow
-                                \override Flag #'color = #yellow
-                                \override NoteHead #'color = #yellow
-                                \override Stem #'color = #yellow
-                                % [Piano Lower Voice] Measure 28
-                                {
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                }
-                                {
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <a,, c, e, g, b, d f a c' e'>8 -\accent
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                }
-                                \revert Beam #'color
-                                \revert Dots #'color
-                                \revert Flag #'color
-                                \revert NoteHead #'color
-                                \revert Stem #'color
-                            }
-                            {
-                                {
-                                    r4
-                                }
-                            }
-                            {
-                                \override Beam #'color = #yellow
-                                \override Dots #'color = #yellow
-                                \override Flag #'color = #yellow
-                                \override NoteHead #'color = #yellow
-                                \override Stem #'color = #yellow
-                                % [Piano Lower Voice] Measure 29
-                                {
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                }
-                                \revert Beam #'color
-                                \revert Dots #'color
-                                \revert Flag #'color
-                                \revert NoteHead #'color
-                                \revert Stem #'color
-                            }
-                            {
-                                {
-                                    r8
-                                    r4
-                                }
-                                % [Piano Lower Voice] Measure 30
-                                {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 3/2
+                                    R1 * 5/4
                                 }
-                                % [Piano Lower Voice] Measure 31
+                                % [Piano Lower Voice] Measure 28
+                                {
+                                    R1 * 5/8
+                                }
+                                % [Piano Lower Voice] Measure 29
                                 {
                                     R1 * 5/4
                                 }
+                                % [Piano Lower Voice] Measure 30
+                                {
+                                    R1 * 5/4
+                                }
+                                % [Piano Lower Voice] Measure 31
+                                {
+                                    R1 * 3/2
+                                }
                                 % [Piano Lower Voice] Measure 32
                                 {
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
+                                    R1 * 9/8
                                 }
                                 % [Piano Lower Voice] Measure 33
                                 {
-                                    r4
+                                    R1 * 1/2
                                 }
-                            }
-                            {
-                                \override Beam #'color = #yellow
-                                \override Dots #'color = #yellow
-                                \override Flag #'color = #yellow
-                                \override NoteHead #'color = #yellow
-                                \override Stem #'color = #yellow
-                                {
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                }
-                                \revert Beam #'color
-                                \revert Dots #'color
-                                \revert Flag #'color
-                                \revert NoteHead #'color
-                                \revert Stem #'color
-                            }
-                            {
-                                {
-                                    r8
-                                }
-                            }
-                            {
-                                \override Beam #'color = #yellow
-                                \override Dots #'color = #yellow
-                                \override Flag #'color = #yellow
-                                \override NoteHead #'color = #yellow
-                                \override Stem #'color = #yellow
                                 % [Piano Lower Voice] Measure 34
                                 {
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
+                                    R1 * 3/2
                                 }
-                                {
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <a,, c, e, g, b, d f a c' e'>8 -\accent
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                }
-                                \revert Beam #'color
-                                \revert Dots #'color
-                                \revert Flag #'color
-                                \revert NoteHead #'color
-                                \revert Stem #'color
-                            }
-                            {
-                                {
-                                    r4
-                                }
-                            }
-                            {
-                                \override Beam #'color = #yellow
-                                \override Dots #'color = #yellow
-                                \override Flag #'color = #yellow
-                                \override NoteHead #'color = #yellow
-                                \override Stem #'color = #yellow
                                 % [Piano Lower Voice] Measure 35
                                 {
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                }
-                                \revert Beam #'color
-                                \revert Dots #'color
-                                \revert Flag #'color
-                                \revert NoteHead #'color
-                                \revert Stem #'color
-                            }
-                            {
-                                {
-                                    r8
-                                }
-                            }
-                            {
-                                \override Beam #'color = #yellow
-                                \override Dots #'color = #yellow
-                                \override Flag #'color = #yellow
-                                \override NoteHead #'color = #yellow
-                                \override Stem #'color = #yellow
-                                {
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                }
-                                \revert Beam #'color
-                                \revert Dots #'color
-                                \revert Flag #'color
-                                \revert NoteHead #'color
-                                \revert Stem #'color
-                            }
-                            {
-                                {
-                                    r4.
+                                    R1 * 1
                                 }
                                 % [Piano Lower Voice] Measure 36
                                 {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 3/2
+                                    R1 * 1/2
                                 }
                                 % [Piano Lower Voice] Measure 37
                                 {
-                                    R1 * 5/8
+                                    R1 * 5/4
                                 }
                                 % [Piano Lower Voice] Measure 38
                                 {
@@ -3629,136 +1407,17 @@
                                 }
                                 % [Piano Lower Voice] Measure 39
                                 {
-                                    R1 * 1/2
+                                    R1 * 9/8
                                 }
                                 % [Piano Lower Voice] Measure 40
                                 {
-                                    R1 * 5/4
+                                    R1 * 1/2
                                 }
                                 % [Piano Lower Voice] Measure 41
                                 {
                                     R1 * 1/2
-                                }
-                                % [Piano Lower Voice] Measure 42
-                                {
-                                    R1 * 5/8
                                     \stopStaff
                                     \startStaff
-                                }
-                                % [Piano Lower Voice] Measure 43
-                                {
-                                    r8
-                                }
-                            }
-                            {
-                                \override Beam #'color = #yellow
-                                \override Dots #'color = #yellow
-                                \override Flag #'color = #yellow
-                                \override NoteHead #'color = #yellow
-                                \override Stem #'color = #yellow
-                                {
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                }
-                                \revert Beam #'color
-                                \revert Dots #'color
-                                \revert Flag #'color
-                                \revert NoteHead #'color
-                                \revert Stem #'color
-                            }
-                            {
-                                {
-                                    r4
-                                }
-                            }
-                            {
-                                \override Beam #'color = #yellow
-                                \override Dots #'color = #yellow
-                                \override Flag #'color = #yellow
-                                \override NoteHead #'color = #yellow
-                                \override Stem #'color = #yellow
-                                % [Piano Lower Voice] Measure 44
-                                {
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                }
-                                \revert Beam #'color
-                                \revert Dots #'color
-                                \revert Flag #'color
-                                \revert NoteHead #'color
-                                \revert Stem #'color
-                            }
-                            {
-                                {
-                                    r8
-                                    r4
-                                }
-                                % [Piano Lower Voice] Measure 45
-                                {
-                                    r8
-                                }
-                            }
-                            {
-                                \override Beam #'color = #yellow
-                                \override Dots #'color = #yellow
-                                \override Flag #'color = #yellow
-                                \override NoteHead #'color = #yellow
-                                \override Stem #'color = #yellow
-                                {
-                                    \once \override Accidental.stencil = ##f
-                                    \once \override AccidentalCautionary.stencil = ##f
-                                    \once \override Arpeggio.X-offset = #-2
-                                    \once \override NoteHead.stencil = #ly:text-interface::print
-                                    \once \override NoteHead.text = \markup {
-                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                                    }
-                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
-                                        ^ \markup {
-                                            \center-align
-                                                \concat
-                                                    {
-                                                        \natural
-                                                        \flat
-                                                    }
-                                            }
-                                }
-                                \revert Beam #'color
-                                \revert Dots #'color
-                                \revert Flag #'color
-                                \revert NoteHead #'color
-                                \revert Stem #'color
-                            }
-                            {
-                                {
-                                    r4
                                 }
                             }
                         }
@@ -3767,27 +1426,27 @@
                         {
                             % [Piano Pedals Voice] Measure 27
                             {
-                                R1 * 3/2
+                                R1 * 5/4
                             }
                             % [Piano Pedals Voice] Measure 28
                             {
-                                R1 * 1/2
+                                R1 * 5/8
                             }
                             % [Piano Pedals Voice] Measure 29
                             {
-                                R1 * 1/2
+                                R1 * 5/4
                             }
                             % [Piano Pedals Voice] Measure 30
                             {
-                                R1 * 3/2
+                                R1 * 5/4
                             }
                             % [Piano Pedals Voice] Measure 31
                             {
-                                R1 * 5/4
+                                R1 * 3/2
                             }
                             % [Piano Pedals Voice] Measure 32
                             {
-                                R1 * 1/2
+                                R1 * 9/8
                             }
                             % [Piano Pedals Voice] Measure 33
                             {
@@ -3795,19 +1454,19 @@
                             }
                             % [Piano Pedals Voice] Measure 34
                             {
-                                R1 * 1/2
+                                R1 * 3/2
                             }
                             % [Piano Pedals Voice] Measure 35
                             {
-                                R1 * 3/4
+                                R1 * 1
                             }
                             % [Piano Pedals Voice] Measure 36
                             {
-                                R1 * 3/2
+                                R1 * 1/2
                             }
                             % [Piano Pedals Voice] Measure 37
                             {
-                                R1 * 5/8
+                                R1 * 5/4
                             }
                             % [Piano Pedals Voice] Measure 38
                             {
@@ -3815,29 +1474,13 @@
                             }
                             % [Piano Pedals Voice] Measure 39
                             {
-                                R1 * 1/2
+                                R1 * 9/8
                             }
                             % [Piano Pedals Voice] Measure 40
                             {
-                                R1 * 5/4
+                                R1 * 1/2
                             }
                             % [Piano Pedals Voice] Measure 41
-                            {
-                                R1 * 1/2
-                            }
-                            % [Piano Pedals Voice] Measure 42
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 43
-                            {
-                                R1 * 1/2
-                            }
-                            % [Piano Pedals Voice] Measure 44
-                            {
-                                R1 * 1/2
-                            }
-                            % [Piano Pedals Voice] Measure 45
                             {
                                 R1 * 1/2
                             }
@@ -3858,159 +1501,61 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/2
+                                R1 * 5/4
                             }
                             % [Percussion Pitch Pipe Voice] Measure 28
                             {
-                                R1 * 1/2
+                                R1 * 5/8
                             }
                             % [Percussion Pitch Pipe Voice] Measure 29
                             {
-                                R1 * 1/2
+                                R1 * 5/4
                             }
                             % [Percussion Pitch Pipe Voice] Measure 30
                             {
-                                R1 * 3/2
+                                R1 * 5/4
                             }
                             % [Percussion Pitch Pipe Voice] Measure 31
                             {
-                                R1 * 5/4
+                                R1 * 3/2
                             }
                             % [Percussion Pitch Pipe Voice] Measure 32
                             {
-                                R1 * 1/2
+                                R1 * 9/8
                             }
                             % [Percussion Pitch Pipe Voice] Measure 33
                             {
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
                             }
-                        }
-                        {
-                            \override Beam #'color = #blue
-                            \override Dots #'color = #blue
-                            \override Flag #'color = #blue
-                            \override NoteHead #'color = #blue
-                            \override Stem #'color = #blue
                             % [Percussion Pitch Pipe Voice] Measure 34
                             {
-                                \once \override Hairpin.circled-tip = ##t
-                                \override NoteHead #'style = #'cross
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                c'2 \<
-                                    ^ \markup {
-                                        \box
-                                            \pad-around
-                                                #0.5
-                                                \smaller
-                                                    \italic
-                                                        inhale
-                                        }
+                                R1 * 3/2
                             }
                             % [Percussion Pitch Pipe Voice] Measure 35
                             {
-                                c'2. \repeatTie
+                                R1 * 1
                             }
                             % [Percussion Pitch Pipe Voice] Measure 36
                             {
-                                c'2 \repeatTie
-                                c'8 \mf \repeatTie
-                                \stopStaff
-                                \startStaff
-                                \revert NoteHead #'style
-                            }
-                            \revert Beam #'color
-                            \revert Dots #'color
-                            \revert Flag #'color
-                            \revert NoteHead #'color
-                            \revert Stem #'color
-                        }
-                        {
-                            {
-                                r8
-                                r2.
+                                R1 * 1/2
                             }
                             % [Percussion Pitch Pipe Voice] Measure 37
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 5/8
+                                R1 * 5/4
                             }
                             % [Percussion Pitch Pipe Voice] Measure 38
                             {
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
                             }
                             % [Percussion Pitch Pipe Voice] Measure 39
                             {
-                                r4
-                            }
-                        }
-                        {
-                            \override Beam #'color = #blue
-                            \override Dots #'color = #blue
-                            \override Flag #'color = #blue
-                            \override NoteHead #'color = #blue
-                            \override Stem #'color = #blue
-                            {
-                                \override NoteHead #'style = #'cross
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                c'4 \fp \>
-                                    ^ \markup {
-                                        \box
-                                            \pad-around
-                                                #0.5
-                                                \smaller
-                                                    \italic
-                                                        inhale
-                                        }
+                                R1 * 9/8
                             }
                             % [Percussion Pitch Pipe Voice] Measure 40
                             {
-                                c'2 \repeatTie
-                                c'8 \ppp \repeatTie
-                                \stopStaff
-                                \startStaff
-                                \revert NoteHead #'style
-                            }
-                            \revert Beam #'color
-                            \revert Dots #'color
-                            \revert Flag #'color
-                            \revert NoteHead #'color
-                            \revert Stem #'color
-                        }
-                        {
-                            {
-                                r8
-                                r2
+                                R1 * 1/2
                             }
                             % [Percussion Pitch Pipe Voice] Measure 41
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 42
-                            {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 43
-                            {
-                                R1 * 1/2
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 44
-                            {
-                                R1 * 1/2
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 45
                             {
                                 R1 * 1/2
                                 \stopStaff
@@ -4025,84 +1570,36 @@
                         {
                             % [Percussion Voice] Measure 27
                             {
-                                \clef "treble^15"
-                                \once \override TextSpanner.bound-details.left-broken.text = ##f
-                                \once \override TextSpanner.bound-details.left.text = \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \italic
-                                                \smaller
-                                                    \concat
-                                                        {
-                                                            \vstrut
-                                                            crotales
-                                                        }
-                                    }
-                                \once \override TextSpanner.bound-details.right-broken.text = ##f
-                                \once \override TextSpanner.bound-details.right.text = \markup {
-                                    \draw-line
-                                        #'(0 . -1)
-                                    }
-                                \once \override TextSpanner.dash-fraction = 1
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
-                                \startStaff
-                                b'''32 \p \startTextSpan [
-                                \set stemLeftBeamCount = 3
-                                \set stemRightBeamCount = 3
-                                d'''32
-                                \set stemLeftBeamCount = 3
-                                cs'''32 ]
-                                \stopStaff
-                                \startStaff
-                                <> \stopTextSpan
-                                \clef "percussion"
-                            }
-                        }
-                        {
-                            {
-                                r32
-                                r8
-                                r2
-                                r2.
-                            }
-                            % [Percussion Voice] Measure 28
-                            {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1/2
+                                R1 * 5/4
+                            }
+                            % [Percussion Voice] Measure 28
+                            {
+                                R1 * 5/8
                             }
                             % [Percussion Voice] Measure 29
                             {
-                                R1 * 1/2
+                                R1 * 5/4
                             }
                             % [Percussion Voice] Measure 30
                             {
-                                R1 * 3/2
+                                R1 * 5/4
                             }
                             % [Percussion Voice] Measure 31
                             {
-                                R1 * 5/4
+                                R1 * 3/2
                             }
                             % [Percussion Voice] Measure 32
                             {
-                                R1 * 1/2
-                            }
-                            % [Percussion Voice] Measure 33
-                            {
-                                R1 * 1/2
-                            }
-                            % [Percussion Voice] Measure 34
-                            {
-                                R1 * 1/2
+                                R1 * 9/8
                                 \stopStaff
                                 \startStaff
                             }
-                            % [Percussion Voice] Measure 35
+                            % [Percussion Voice] Measure 33
                             {
-                                r4.
+                                r8
                             }
                         }
                         {
@@ -4132,9 +1629,10 @@
                                         #'(0 . -1)
                                     }
                                 \once \override TextSpanner.dash-fraction = 1
-                                b4. :32 \startTextSpan \<
+                                b8 :64 \startTextSpan \<
+                                b4 :32 \repeatTie
                             }
-                            % [Percussion Voice] Measure 36
+                            % [Percussion Voice] Measure 34
                             {
                                 b1. :32 \p \repeatTie
                                 <> \stopTextSpan
@@ -4146,7 +1644,7 @@
                             \revert Stem #'color
                         }
                         {
-                            % [Percussion Voice] Measure 37
+                            % [Percussion Voice] Measure 35
                             {
                                 r4
                             }
@@ -4178,52 +1676,21 @@
                                         #'(0 . -1)
                                     }
                                 \once \override TextSpanner.dash-fraction = 1
-                                d'8 :64 \startTextSpan \<
-                                d'4 :32 \repeatTie
+                                d'2. :32 \startTextSpan \<
+                            }
+                            % [Percussion Voice] Measure 36
+                            {
+                                d'2 :32 \repeatTie
+                            }
+                            % [Percussion Voice] Measure 37
+                            {
+                                \once \override Hairpin.circled-tip = ##t
+                                d'2. :32 \mf \repeatTie \>
+                                d'2 :32 \repeatTie
                             }
                             % [Percussion Voice] Measure 38
                             {
                                 d'2 :32 \repeatTie
-                            }
-                            % [Percussion Voice] Measure 39
-                            {
-                                \once \override Hairpin.circled-tip = ##t
-                                d'2 :32 \mf \repeatTie \>
-                            }
-                            % [Percussion Voice] Measure 40
-                            {
-                                d'8 :64 \repeatTie [
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                d'8 :64 -\accent
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                d'8 :64 -\accent
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                d'8 :64 -\accent
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                d'8 :64 -\accent
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                d'8 :64 -\accent
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                d'8 :64 -\accent
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                d'8 :64 -\accent
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                d'8 :64 -\accent
-                                \set stemLeftBeamCount = 1
-                                d'8 :64 -\accent ]
-                            }
-                            % [Percussion Voice] Measure 41
-                            {
-                                d'4 :32 \repeatTie
-                                d'8 :64 \repeatTie
                                 <> \stopTextSpan
                             }
                             \revert Beam #'color
@@ -4233,12 +1700,10 @@
                             \revert Stem #'color
                         }
                         {
+                            % [Percussion Voice] Measure 39
                             {
-                                r8 \!
-                            }
-                            % [Percussion Voice] Measure 42
-                            {
-                                r4.
+                                r4. \!
+                                r8
                             }
                         }
                         {
@@ -4269,8 +1734,9 @@
                                     }
                                 \once \override TextSpanner.dash-fraction = 1
                                 b4 :32 \startTextSpan \<
+                                b4. :32 \repeatTie
                             }
-                            % [Percussion Voice] Measure 43
+                            % [Percussion Voice] Measure 40
                             {
                                 b8 :64 \repeatTie [
                                 \set stemLeftBeamCount = 1
@@ -4282,14 +1748,10 @@
                                 \set stemLeftBeamCount = 1
                                 b8 :64 -\accent ]
                             }
-                            % [Percussion Voice] Measure 44
-                            {
-                                \once \override Hairpin.circled-tip = ##t
-                                b2 :32 \ppp \repeatTie \>
-                            }
-                            % [Percussion Voice] Measure 45
+                            % [Percussion Voice] Measure 41
                             {
                                 b4 :32 \repeatTie
+                                b8 :64 \ppp \repeatTie
                                 <> \stopTextSpan
                             }
                             \revert Beam #'color
@@ -4300,7 +1762,7 @@
                         }
                         {
                             {
-                                r4 \!
+                                r8
                             }
                         }
                     }
@@ -4315,102 +1777,15 @@
                 \set Staff.shortInstrumentName = \markup { Vn. }
                 \context Voice = "Violin Voice" {
                     {
+                        \override Beam #'color = #red
+                        \override Dots #'color = #red
+                        \override Flag #'color = #red
+                        \override NoteHead #'color = #red
+                        \override Stem #'color = #red
                         % [Violin Voice] Measure 27
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/2
+                            <c'' af''>2 :32 \fp
                         }
-                        % [Violin Voice] Measure 28
-                        {
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                    }
-                    {
-                        \override Beam #'color = #blue
-                        \override Dots #'color = #blue
-                        \override Flag #'color = #blue
-                        \override NoteHead #'color = #blue
-                        \override Stem #'color = #blue
-                        % [Violin Voice] Measure 29
-                        \override TupletNumber #'text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score \with {
-                                            \override SpacingSpanner #'spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        } <<
-                                            \new RhythmicStaff \with {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem #'direction = #up
-                                                \override Stem #'length = #5
-                                                \override TupletBracket #'bracket-visibility = ##t
-                                                \override TupletBracket #'direction = #up
-                                                \override TupletBracket #'padding = #1.25
-                                                \override TupletBracket #'shorten-pair = #'(-1 . -1.5)
-                                                \override TupletNumber #'text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            } {
-                                                c'4
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
-                        \times 1/1 {
-                            \clef "percussion"
-                            \once \override Beam #'grow-direction = #left
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'32 * 27/32 -\staccato \f \startTextSpan \> [
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 15/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 41/32 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 31/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            c'32 * 3 -\staccato \p ]
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "treble"
-                        }
-                        \revert TupletNumber #'text
                         \revert Beam #'color
                         \revert Dots #'color
                         \revert Flag #'color
@@ -4420,110 +1795,36 @@
                     {
                         {
                             r4
+                            r2
                         }
-                        % [Violin Voice] Measure 30
+                        % [Violin Voice] Measure 28
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/2
+                            R1 * 5/8
                         }
-                        % [Violin Voice] Measure 31
+                        % [Violin Voice] Measure 29
                         {
                             R1 * 5/4
                         }
-                        % [Violin Voice] Measure 32
+                        % [Violin Voice] Measure 30
                         {
-                            R1 * 1/2
+                            R1 * 5/4
                             \stopStaff
                             \startStaff
-                        }
-                        % [Violin Voice] Measure 33
-                        {
-                            r8
                         }
                     }
                     {
-                        \override Beam #'color = #blue
-                        \override Dots #'color = #blue
-                        \override Flag #'color = #blue
-                        \override NoteHead #'color = #blue
-                        \override Stem #'color = #blue
-                        \override TupletNumber #'text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score \with {
-                                            \override SpacingSpanner #'spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        } <<
-                                            \new RhythmicStaff \with {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem #'direction = #up
-                                                \override Stem #'length = #5
-                                                \override TupletBracket #'bracket-visibility = ##t
-                                                \override TupletBracket #'direction = #up
-                                                \override TupletBracket #'padding = #1.25
-                                                \override TupletBracket #'shorten-pair = #'(-1 . -1.5)
-                                                \override TupletNumber #'text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            } {
-                                                c'4
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
-                        \times 1/1 {
-                            \clef "percussion"
-                            \once \override Beam #'grow-direction = #left
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'32 * 27/32 -\staccato \mp \startTextSpan \> [
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 15/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 41/32 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 31/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            c'32 * 3 -\staccato \p ]
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "treble"
+                        \override Beam #'color = #red
+                        \override Dots #'color = #red
+                        \override Flag #'color = #red
+                        \override NoteHead #'color = #red
+                        \override Stem #'color = #red
+                        % [Violin Voice] Measure 31
+                        {
+                            <aqs fqs'>2 :32 \fp
                         }
-                        \revert TupletNumber #'text
                         \revert Beam #'color
                         \revert Dots #'color
                         \revert Flag #'color
@@ -4532,26 +1833,58 @@
                     }
                     {
                         {
-                            r8
+                            r4
+                            r2.
                         }
-                        % [Violin Voice] Measure 34
+                        % [Violin Voice] Measure 32
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
+                            R1 * 9/8
+                        }
+                        % [Violin Voice] Measure 33
+                        {
                             R1 * 1/2
                         }
-                        % [Violin Voice] Measure 35
-                        {
-                            R1 * 3/4
-                        }
-                        % [Violin Voice] Measure 36
+                        % [Violin Voice] Measure 34
                         {
                             R1 * 3/2
                         }
+                        % [Violin Voice] Measure 35
+                        {
+                            R1 * 1
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Violin Voice] Measure 36
+                        {
+                            r8
+                        }
+                    }
+                    {
+                        \override Beam #'color = #red
+                        \override Dots #'color = #red
+                        \override Flag #'color = #red
+                        \override NoteHead #'color = #red
+                        \override Stem #'color = #red
+                        {
+                            <a f'>8 :64 \fp
+                            <a f'>4 :32 \repeatTie
+                        }
+                        \revert Beam #'color
+                        \revert Dots #'color
+                        \revert Flag #'color
+                        \revert NoteHead #'color
+                        \revert Stem #'color
+                    }
+                    {
                         % [Violin Voice] Measure 37
                         {
-                            R1 * 5/8
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/4
                         }
                         % [Violin Voice] Measure 38
                         {
@@ -4559,124 +1892,13 @@
                         }
                         % [Violin Voice] Measure 39
                         {
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            R1 * 9/8
                         }
-                    }
-                    {
-                        \override Beam #'color = #blue
-                        \override Dots #'color = #blue
-                        \override Flag #'color = #blue
-                        \override NoteHead #'color = #blue
-                        \override Stem #'color = #blue
                         % [Violin Voice] Measure 40
-                        \override TupletNumber #'text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score \with {
-                                            \override SpacingSpanner #'spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        } <<
-                                            \new RhythmicStaff \with {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem #'direction = #up
-                                                \override Stem #'length = #5
-                                                \override TupletBracket #'bracket-visibility = ##t
-                                                \override TupletBracket #'direction = #up
-                                                \override TupletBracket #'padding = #1.25
-                                                \override TupletBracket #'shorten-pair = #'(-1 . -1.5)
-                                                \override TupletNumber #'text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            } {
-                                                c'4
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
-                        \times 1/1 {
-                            \clef "percussion"
-                            \once \override Beam #'grow-direction = #left
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'32 * 27/32 -\staccato \mf \startTextSpan \> [
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 15/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 41/32 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 31/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            c'32 * 3 -\staccato \p ]
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "treble"
-                        }
-                        \revert TupletNumber #'text
-                        \revert Beam #'color
-                        \revert Dots #'color
-                        \revert Flag #'color
-                        \revert NoteHead #'color
-                        \revert Stem #'color
-                    }
-                    {
                         {
-                            r2
-                            r2
+                            R1 * 1/2
                         }
                         % [Violin Voice] Measure 41
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                        }
-                        % [Violin Voice] Measure 42
-                        {
-                            R1 * 5/8
-                        }
-                        % [Violin Voice] Measure 43
-                        {
-                            R1 * 1/2
-                        }
-                        % [Violin Voice] Measure 44
-                        {
-                            R1 * 1/2
-                        }
-                        % [Violin Voice] Measure 45
                         {
                             R1 * 1/2
                             \stopStaff
@@ -4692,222 +1914,54 @@
                 \set Staff.shortInstrumentName = \markup { Vn. }
                 \context Voice = "Viola Voice" {
                     {
+                        \override Beam #'color = #red
+                        \override Dots #'color = #red
+                        \override Flag #'color = #red
+                        \override NoteHead #'color = #red
+                        \override Stem #'color = #red
                         % [Viola Voice] Measure 27
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/2
-                            \stopStaff
-                            \startStaff
+                            <bqs gqs'>2 :32 \fp
+                        }
+                        \revert Beam #'color
+                        \revert Dots #'color
+                        \revert Flag #'color
+                        \revert NoteHead #'color
+                        \revert Stem #'color
+                    }
+                    {
+                        {
+                            r4
+                            r2
                         }
                         % [Viola Voice] Measure 28
                         {
-                            r4
-                            r8
-                        }
-                    }
-                    {
-                        \override Beam #'color = #blue
-                        \override Dots #'color = #blue
-                        \override Flag #'color = #blue
-                        \override NoteHead #'color = #blue
-                        \override Stem #'color = #blue
-                        {
-                            \clef "percussion"
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            c'8 -\staccato \f \startTextSpan \>
+                            R1 * 5/8
                         }
                         % [Viola Voice] Measure 29
-                        \override TupletNumber #'text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score \with {
-                                            \override SpacingSpanner #'spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        } <<
-                                            \new RhythmicStaff \with {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem #'direction = #up
-                                                \override Stem #'length = #5
-                                                \override TupletBracket #'bracket-visibility = ##t
-                                                \override TupletBracket #'direction = #up
-                                                \override TupletBracket #'padding = #1.25
-                                                \override TupletBracket #'shorten-pair = #'(-1 . -1.5)
-                                                \override TupletNumber #'text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            } {
-                                                c'4
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
-                        \times 1/1 {
-                            \once \override Beam #'grow-direction = #left
-                            c'32 * 27/32 -\staccato \ppp \< [
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 15/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 41/32 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 31/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            c'32 * 3 -\staccato \p ]
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "alto"
-                        }
-                        \revert TupletNumber #'text
-                        \revert Beam #'color
-                        \revert Dots #'color
-                        \revert Flag #'color
-                        \revert NoteHead #'color
-                        \revert Stem #'color
-                    }
-                    {
-                        {
-                            r4
-                        }
-                        % [Viola Voice] Measure 30
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/2
-                        }
-                        % [Viola Voice] Measure 31
                         {
                             R1 * 5/4
                         }
-                        % [Viola Voice] Measure 32
+                        % [Viola Voice] Measure 30
                         {
-                            R1 * 1/2
+                            R1 * 5/4
                             \stopStaff
                             \startStaff
                         }
                     }
                     {
-                        \override Beam #'color = #blue
-                        \override Dots #'color = #blue
-                        \override Flag #'color = #blue
-                        \override NoteHead #'color = #blue
-                        \override Stem #'color = #blue
-                        % [Viola Voice] Measure 33
-                        \override TupletNumber #'text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score \with {
-                                            \override SpacingSpanner #'spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        } <<
-                                            \new RhythmicStaff \with {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem #'direction = #up
-                                                \override Stem #'length = #5
-                                                \override TupletBracket #'bracket-visibility = ##t
-                                                \override TupletBracket #'direction = #up
-                                                \override TupletBracket #'padding = #1.25
-                                                \override TupletBracket #'shorten-pair = #'(-1 . -1.5)
-                                                \override TupletNumber #'text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            } {
-                                                c'4.
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
-                        \times 1/1 {
-                            \clef "percussion"
-                            \once \override Beam #'grow-direction = #left
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'32 * 29/32 -\staccato \mp \startTextSpan \> [
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 15/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 35/32 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 11/8 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 29/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 81/32 -\staccato
-                            \set stemLeftBeamCount = 3
-                            c'32 * 107/32 -\staccato \p ]
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "alto"
+                        \override Beam #'color = #red
+                        \override Dots #'color = #red
+                        \override Flag #'color = #red
+                        \override NoteHead #'color = #red
+                        \override Stem #'color = #red
+                        % [Viola Voice] Measure 31
+                        {
+                            <b g'>2 :32 \fp
                         }
-                        \revert TupletNumber #'text
                         \revert Beam #'color
                         \revert Dots #'color
                         \revert Flag #'color
@@ -4916,155 +1970,72 @@
                     }
                     {
                         {
-                            r8
+                            r4
+                            r2.
                         }
-                        % [Viola Voice] Measure 34
+                        % [Viola Voice] Measure 32
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
+                            R1 * 9/8
+                        }
+                        % [Viola Voice] Measure 33
+                        {
                             R1 * 1/2
                         }
-                        % [Viola Voice] Measure 35
-                        {
-                            R1 * 3/4
-                        }
-                        % [Viola Voice] Measure 36
+                        % [Viola Voice] Measure 34
                         {
                             R1 * 3/2
                         }
+                        % [Viola Voice] Measure 35
+                        {
+                            R1 * 1
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Viola Voice] Measure 36
+                        {
+                            r8
+                        }
+                    }
+                    {
+                        \override Beam #'color = #red
+                        \override Dots #'color = #red
+                        \override Flag #'color = #red
+                        \override NoteHead #'color = #red
+                        \override Stem #'color = #red
+                        {
+                            <bqs gqs'>8 :64 \fp
+                            <bqs gqs'>4 :32 \repeatTie
+                        }
+                        \revert Beam #'color
+                        \revert Dots #'color
+                        \revert Flag #'color
+                        \revert NoteHead #'color
+                        \revert Stem #'color
+                    }
+                    {
                         % [Viola Voice] Measure 37
                         {
-                            R1 * 5/8
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/4
                         }
                         % [Viola Voice] Measure 38
                         {
                             R1 * 1/2
-                            \stopStaff
-                            \startStaff
                         }
                         % [Viola Voice] Measure 39
                         {
-                            r4
-                            r8
-                        }
-                    }
-                    {
-                        \override Beam #'color = #blue
-                        \override Dots #'color = #blue
-                        \override Flag #'color = #blue
-                        \override NoteHead #'color = #blue
-                        \override Stem #'color = #blue
-                        {
-                            \clef "percussion"
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'8 -\staccato \mf \startTextSpan \>
+                            R1 * 9/8
                         }
                         % [Viola Voice] Measure 40
-                        \override TupletNumber #'text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score \with {
-                                            \override SpacingSpanner #'spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        } <<
-                                            \new RhythmicStaff \with {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem #'direction = #up
-                                                \override Stem #'length = #5
-                                                \override TupletBracket #'bracket-visibility = ##t
-                                                \override TupletBracket #'direction = #up
-                                                \override TupletBracket #'padding = #1.25
-                                                \override TupletBracket #'shorten-pair = #'(-1 . -1.5)
-                                                \override TupletNumber #'text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            } {
-                                                c'4
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
-                        \times 1/1 {
-                            \once \override Beam #'grow-direction = #left
-                            c'32 * 27/32 -\staccato \ppp \< [
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 15/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 41/32 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 31/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            c'32 * 3 -\staccato \p ]
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "alto"
-                        }
-                        \revert TupletNumber #'text
-                        \revert Beam #'color
-                        \revert Dots #'color
-                        \revert Flag #'color
-                        \revert NoteHead #'color
-                        \revert Stem #'color
-                    }
-                    {
                         {
-                            r2
-                            r2
+                            R1 * 1/2
                         }
                         % [Viola Voice] Measure 41
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                        }
-                        % [Viola Voice] Measure 42
-                        {
-                            R1 * 5/8
-                        }
-                        % [Viola Voice] Measure 43
-                        {
-                            R1 * 1/2
-                        }
-                        % [Viola Voice] Measure 44
-                        {
-                            R1 * 1/2
-                        }
-                        % [Viola Voice] Measure 45
                         {
                             R1 * 1/2
                             \stopStaff
@@ -5080,299 +2051,15 @@
                 \set Staff.shortInstrumentName = \markup { Vc. }
                 \context Voice = "Cello Voice" {
                     {
+                        \override Beam #'color = #red
+                        \override Dots #'color = #red
+                        \override Flag #'color = #red
+                        \override NoteHead #'color = #red
+                        \override Stem #'color = #red
                         % [Cello Voice] Measure 27
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/2
+                            <d bf>2 :32 \fp
                         }
-                        % [Cello Voice] Measure 28
-                        {
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % [Cello Voice] Measure 29
-                        {
-                            r4
-                        }
-                    }
-                    {
-                        \override Beam #'color = #blue
-                        \override Dots #'color = #blue
-                        \override Flag #'color = #blue
-                        \override NoteHead #'color = #blue
-                        \override Stem #'color = #blue
-                        \override TupletNumber #'text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score \with {
-                                            \override SpacingSpanner #'spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        } <<
-                                            \new RhythmicStaff \with {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem #'direction = #up
-                                                \override Stem #'length = #5
-                                                \override TupletBracket #'bracket-visibility = ##t
-                                                \override TupletBracket #'direction = #up
-                                                \override TupletBracket #'padding = #1.25
-                                                \override TupletBracket #'shorten-pair = #'(-1 . -1.5)
-                                                \override TupletNumber #'text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            } {
-                                                c'4
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
-                        \times 1/1 {
-                            \clef "percussion"
-                            \once \override Beam #'grow-direction = #left
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'32 * 27/32 -\staccato \f \startTextSpan \> [
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 15/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 41/32 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 31/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            c'32 * 3 -\staccato \p ]
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "bass"
-                        }
-                        \revert TupletNumber #'text
-                        \revert Beam #'color
-                        \revert Dots #'color
-                        \revert Flag #'color
-                        \revert NoteHead #'color
-                        \revert Stem #'color
-                    }
-                    {
-                        % [Cello Voice] Measure 30
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/2
-                        }
-                        % [Cello Voice] Measure 31
-                        {
-                            R1 * 5/4
-                        }
-                        % [Cello Voice] Measure 32
-                        {
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % [Cello Voice] Measure 33
-                        {
-                            r4
-                            r8
-                        }
-                    }
-                    {
-                        \override Beam #'color = #blue
-                        \override Dots #'color = #blue
-                        \override Flag #'color = #blue
-                        \override NoteHead #'color = #blue
-                        \override Stem #'color = #blue
-                        {
-                            \clef "percussion"
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'8 -\staccato \mp \startTextSpan \>
-                        }
-                        % [Cello Voice] Measure 34
-                        {
-                            c'8 -\staccato \p
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "bass"
-                        }
-                        \revert Beam #'color
-                        \revert Dots #'color
-                        \revert Flag #'color
-                        \revert NoteHead #'color
-                        \revert Stem #'color
-                    }
-                    {
-                        {
-                            r8
-                            r4
-                        }
-                        % [Cello Voice] Measure 35
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/4
-                        }
-                        % [Cello Voice] Measure 36
-                        {
-                            R1 * 3/2
-                        }
-                        % [Cello Voice] Measure 37
-                        {
-                            R1 * 5/8
-                        }
-                        % [Cello Voice] Measure 38
-                        {
-                            R1 * 1/2
-                        }
-                        % [Cello Voice] Measure 39
-                        {
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        % [Cello Voice] Measure 40
-                        {
-                            r4
-                        }
-                    }
-                    {
-                        \override Beam #'color = #blue
-                        \override Dots #'color = #blue
-                        \override Flag #'color = #blue
-                        \override NoteHead #'color = #blue
-                        \override Stem #'color = #blue
-                        \override TupletNumber #'text = \markup {
-                            \scale
-                                #'(0.75 . 0.75)
-                                \score
-                                    {
-                                        \new Score \with {
-                                            \override SpacingSpanner #'spacing-increment = #0.5
-                                            proportionalNotationDuration = ##f
-                                        } <<
-                                            \new RhythmicStaff \with {
-                                                \remove Time_signature_engraver
-                                                \remove Staff_symbol_engraver
-                                                \override Stem #'direction = #up
-                                                \override Stem #'length = #5
-                                                \override TupletBracket #'bracket-visibility = ##t
-                                                \override TupletBracket #'direction = #up
-                                                \override TupletBracket #'padding = #1.25
-                                                \override TupletBracket #'shorten-pair = #'(-1 . -1.5)
-                                                \override TupletNumber #'text = #tuplet-number::calc-fraction-text
-                                                tupletFullLength = ##t
-                                            } {
-                                                c'4
-                                            }
-                                        >>
-                                        \layout {
-                                            indent = #0
-                                            ragged-right = ##t
-                                        }
-                                    }
-                            }
-                        \times 1/1 {
-                            \clef "percussion"
-                            \once \override Beam #'grow-direction = #left
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        shaker
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            \override NoteHead #'style = #'cross
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            c'32 * 27/32 -\staccato \mf \startTextSpan \> [
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 15/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 41/32 -\staccato
-                            \set stemLeftBeamCount = 3
-                            \set stemRightBeamCount = 3
-                            c'32 * 31/16 -\staccato
-                            \set stemLeftBeamCount = 3
-                            c'32 * 3 -\staccato \p ]
-                            \stopStaff
-                            \startStaff
-                            \revert NoteHead #'style
-                            <> \stopTextSpan
-                            \clef "bass"
-                        }
-                        \revert TupletNumber #'text
                         \revert Beam #'color
                         \revert Dots #'color
                         \revert Flag #'color
@@ -5384,26 +2071,108 @@
                             r4
                             r2
                         }
-                        % [Cello Voice] Measure 41
+                        % [Cello Voice] Measure 28
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1/2
-                        }
-                        % [Cello Voice] Measure 42
-                        {
                             R1 * 5/8
                         }
-                        % [Cello Voice] Measure 43
+                        % [Cello Voice] Measure 29
+                        {
+                            R1 * 5/4
+                        }
+                        % [Cello Voice] Measure 30
+                        {
+                            R1 * 5/4
+                            \stopStaff
+                            \startStaff
+                        }
+                    }
+                    {
+                        \override Beam #'color = #red
+                        \override Dots #'color = #red
+                        \override Flag #'color = #red
+                        \override NoteHead #'color = #red
+                        \override Stem #'color = #red
+                        % [Cello Voice] Measure 31
+                        {
+                            <gtqs, eqs>2 :32 \fp
+                        }
+                        \revert Beam #'color
+                        \revert Dots #'color
+                        \revert Flag #'color
+                        \revert NoteHead #'color
+                        \revert Stem #'color
+                    }
+                    {
+                        {
+                            r4
+                            r2.
+                        }
+                        % [Cello Voice] Measure 32
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 9/8
+                        }
+                        % [Cello Voice] Measure 33
                         {
                             R1 * 1/2
                         }
-                        % [Cello Voice] Measure 44
+                        % [Cello Voice] Measure 34
+                        {
+                            R1 * 3/2
+                        }
+                        % [Cello Voice] Measure 35
+                        {
+                            R1 * 1
+                            \stopStaff
+                            \startStaff
+                        }
+                        % [Cello Voice] Measure 36
+                        {
+                            r8
+                        }
+                    }
+                    {
+                        \override Beam #'color = #red
+                        \override Dots #'color = #red
+                        \override Flag #'color = #red
+                        \override NoteHead #'color = #red
+                        \override Stem #'color = #red
+                        {
+                            <d bf>8 :64 \fp
+                            <d bf>4 :32 \repeatTie
+                        }
+                        \revert Beam #'color
+                        \revert Dots #'color
+                        \revert Flag #'color
+                        \revert NoteHead #'color
+                        \revert Stem #'color
+                    }
+                    {
+                        % [Cello Voice] Measure 37
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 5/4
+                        }
+                        % [Cello Voice] Measure 38
                         {
                             R1 * 1/2
                         }
-                        % [Cello Voice] Measure 45
+                        % [Cello Voice] Measure 39
+                        {
+                            R1 * 9/8
+                        }
+                        % [Cello Voice] Measure 40
+                        {
+                            R1 * 1/2
+                        }
+                        % [Cello Voice] Measure 41
                         {
                             R1 * 1/2
                             \stopStaff
@@ -5425,170 +2194,61 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/2
+                                R1 * 5/4
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 28
                             {
-                                R1 * 1/2
+                                R1 * 5/8
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 29
                             {
-                                R1 * 1/2
+                                R1 * 5/4
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 30
                             {
-                                R1 * 3/2
+                                R1 * 5/4
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 31
                             {
-                                R1 * 5/4
+                                R1 * 3/2
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 32
                             {
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                R1 * 9/8
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 33
                             {
-                                r4
-                                r8
-                            }
-                        }
-                        {
-                            \override Beam #'color = #blue
-                            \override Dots #'color = #blue
-                            \override Flag #'color = #blue
-                            \override NoteHead #'color = #blue
-                            \override Stem #'color = #blue
-                            {
-                                \once \override Hairpin.circled-tip = ##t
-                                \override NoteHead #'style = #'cross
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                c'8 \<
-                                    ^ \markup {
-                                        \box
-                                            \pad-around
-                                                #0.5
-                                                \smaller
-                                                    \italic
-                                                        exhale
-                                        }
+                                R1 * 1/2
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 34
                             {
-                                c'8 \repeatTie [
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                c'8 -\accent
-                                \set stemLeftBeamCount = 1
-                                \set stemRightBeamCount = 1
-                                c'8 -\accent
-                                \set stemLeftBeamCount = 1
-                                c'8 -\accent ]
+                                R1 * 3/2
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 35
                             {
-                                c'2. \p \repeatTie \>
+                                R1 * 1
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 36
                             {
-                                c'4. \ppp \repeatTie
-                                \stopStaff
-                                \startStaff
-                                \revert NoteHead #'style
-                            }
-                            \revert Beam #'color
-                            \revert Dots #'color
-                            \revert Flag #'color
-                            \revert NoteHead #'color
-                            \revert Stem #'color
-                        }
-                        {
-                            {
-                                r4.
-                                r2.
+                                R1 * 1/2
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 37
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 5/8
+                                R1 * 5/4
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 38
                             {
                                 R1 * 1/2
-                                \stopStaff
-                                \startStaff
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 39
                             {
-                                r8
-                            }
-                        }
-                        {
-                            \override Beam #'color = #blue
-                            \override Dots #'color = #blue
-                            \override Flag #'color = #blue
-                            \override NoteHead #'color = #blue
-                            \override Stem #'color = #blue
-                            {
-                                \override NoteHead #'style = #'cross
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                c'8 \fp \<
-                                    ^ \markup {
-                                        \box
-                                            \pad-around
-                                                #0.5
-                                                \smaller
-                                                    \italic
-                                                        inhale
-                                        }
-                                c'4 \repeatTie
+                                R1 * 9/8
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 40
                             {
-                                c'2 \mf \repeatTie
-                                \stopStaff
-                                \startStaff
-                                \revert NoteHead #'style
-                            }
-                            \revert Beam #'color
-                            \revert Dots #'color
-                            \revert Flag #'color
-                            \revert NoteHead #'color
-                            \revert Stem #'color
-                        }
-                        {
-                            {
-                                r4
-                                r2
+                                R1 * 1/2
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 41
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 42
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 43
-                            {
-                                R1 * 1/2
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 44
-                            {
-                                R1 * 1/2
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 45
                             {
                                 R1 * 1/2
                                 \stopStaff
@@ -5608,77 +2268,113 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/2
+                                R1 * 5/4
+                                \stopStaff
+                                \startStaff
                             }
                             % [Contrabass Voice] Measure 28
                             {
-                                R1 * 1/2
+                                r4
+                            }
+                        }
+                        {
+                            {
+                                \once \override Hairpin.circled-tip = ##t
+                                d'8 \<
+                                d'4 \repeatTie
                             }
                             % [Contrabass Voice] Measure 29
                             {
-                                R1 * 1/2
+                                d'2. \repeatTie
+                                d'2 \repeatTie
                             }
                             % [Contrabass Voice] Measure 30
                             {
-                                R1 * 3/2
+                                d'2 \p \repeatTie
+                            }
+                        }
+                        {
+                            {
+                                r4
+                            }
+                        }
+                        {
+                            {
+                                \once \override Hairpin.circled-tip = ##t
+                                f'2 \<
                             }
                             % [Contrabass Voice] Measure 31
                             {
-                                R1 * 5/4
+                                f'1. \repeatTie
                             }
                             % [Contrabass Voice] Measure 32
                             {
-                                R1 * 1/2
+                                f'4. \ppp \repeatTie
+                            }
+                        }
+                        {
+                            {
+                                r2.
                             }
                             % [Contrabass Voice] Measure 33
                             {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
                                 R1 * 1/2
                             }
                             % [Contrabass Voice] Measure 34
                             {
-                                R1 * 1/2
+                                R1 * 3/2
                             }
                             % [Contrabass Voice] Measure 35
                             {
-                                R1 * 3/4
+                                R1 * 1
                             }
                             % [Contrabass Voice] Measure 36
                             {
-                                R1 * 3/2
+                                R1 * 1/2
+                                \stopStaff
+                                \startStaff
                             }
                             % [Contrabass Voice] Measure 37
                             {
-                                R1 * 5/8
+                                r2.
+                                r8
+                            }
+                        }
+                        {
+                            {
+                                \once \override Hairpin.circled-tip = ##t
+                                d'4. \<
                             }
                             % [Contrabass Voice] Measure 38
                             {
-                                R1 * 1/2
+                                d'8 \repeatTie [ \glissando
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
+                                dqs'8 -\accent \glissando
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
+                                d'8 -\accent
+                                \set stemLeftBeamCount = 1
+                                d'8 -\accent ]
                             }
                             % [Contrabass Voice] Measure 39
                             {
-                                R1 * 1/2
+                                d'2. \repeatTie
+                                d'4. \p \repeatTie
                             }
+                        }
+                        {
                             % [Contrabass Voice] Measure 40
                             {
-                                R1 * 5/4
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
+                                R1 * 1/2
                             }
                             % [Contrabass Voice] Measure 41
-                            {
-                                R1 * 1/2
-                            }
-                            % [Contrabass Voice] Measure 42
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Voice] Measure 43
-                            {
-                                R1 * 1/2
-                            }
-                            % [Contrabass Voice] Measure 44
-                            {
-                                R1 * 1/2
-                            }
-                            % [Contrabass Voice] Measure 45
                             {
                                 R1 * 1/2
                                 \stopStaff
