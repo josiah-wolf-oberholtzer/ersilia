@@ -17,6 +17,7 @@ piano_tremolo_music_specifier = consort.MusicSpecifier(
             selector=selectortools.select_pitched_runs(),
             ),
         ),
+    color='red',
     labels=['pedaled'],
     pitch_handler=consort.AbsolutePitchHandler(
         deviations=[0, -2, 0, 0, 2, 0, 3],

@@ -23,7 +23,7 @@ string_tremolo_music_specifier = consort.MusicSpecifier(
             ),
         stem_tremolo=spannertools.StemTremoloSpanner(),
         ),
-    color=None,
+    color='red',
     labels=[],
     pitch_handler=consort.PitchClassPitchHandler(
         deviations=[0, 0.5, 0, -0.5],

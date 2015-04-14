@@ -88,6 +88,7 @@ guitar_undulation_tremolo_music_specifier = consort.tools.MusicSpecifier(
                 ),
             ),
         ),
+    color='red',
     labels=(),
     pitch_handler=consort.tools.AbsolutePitchHandler(
         forbid_repetitions=True,

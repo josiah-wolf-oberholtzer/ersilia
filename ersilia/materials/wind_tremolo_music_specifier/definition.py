@@ -31,7 +31,7 @@ wind_tremolo_music_specifier = consort.MusicSpecifier(
             selector=selectortools.select_pitched_runs(),
             ),
         ),
-    color=None,
+    color='red',
     labels=[],
     pitch_handler=consort.PitchClassPitchHandler(
         deviations=[0, 1],

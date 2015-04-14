@@ -21,7 +21,7 @@ percussion_marimba_tremolo_music_specifier = consort.MusicSpecifier(
             selector=selectortools.select_pitched_runs(),
             ),
         ),
-    color=None,
+    color='red',
     labels=[],
     pitch_handler=consort.PitchClassPitchHandler(
         leap_constraint=9,

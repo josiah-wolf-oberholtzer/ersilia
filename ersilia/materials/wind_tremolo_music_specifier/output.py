@@ -110,6 +110,7 @@ wind_tremolo_music_specifier = consort.tools.MusicSpecifier(
                 ),
             ),
         ),
+    color='red',
     labels=(),
     pitch_handler=consort.tools.PitchClassPitchHandler(
         deviations=datastructuretools.CyclicTuple(
