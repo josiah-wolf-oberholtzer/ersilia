@@ -103,6 +103,7 @@ percussion_temple_block_fanfare_music_specifier = consort.tools.MusicSpecifier(
                         ),
                     ),
                 ),
+            is_destructive=True,
             ),
         dynamic_expression=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(

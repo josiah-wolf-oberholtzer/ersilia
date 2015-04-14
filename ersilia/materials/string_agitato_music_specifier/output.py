@@ -156,6 +156,7 @@ string_agitato_music_specifier = consort.tools.MusicSpecifier(
                         ),
                     ),
                 ),
+            is_destructive=True,
             ),
         slur=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(

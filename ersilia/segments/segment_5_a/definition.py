@@ -9,13 +9,12 @@ from abjad.tools import timespantools
 ### SEGMENT ###
 
 segment_maker = ersilia.ErsiliaSegmentMaker(
-    desired_duration_in_seconds=abjad.Multiplier(6, 20) * 480,
+    desired_duration_in_seconds=abjad.Multiplier(3, 20) * 480,
     annotate_colors=True,
     annotate_phrasing=False,
     annotate_timespans=True,
-    name='Scene V',
+    name='Scene V/a',
     permitted_time_signatures=ersilia.permitted_time_signatures,
-    #settings=[ersilia.piano_pedals_music_setting],
     tempo=abjad.Tempo((1, 4), 32),
     )
 

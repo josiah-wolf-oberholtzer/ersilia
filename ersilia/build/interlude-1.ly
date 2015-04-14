@@ -1,11 +1,11 @@
     \context Score = "Ersilia Score" \with {
-        currentBarNumber = #30
+        currentBarNumber = #24
     } <<
         \tag #'time
         \repeat volta 2
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 2/4
+                \time 6/4
                 \tempo 4=96
                 \mark \markup {
                     \concat
@@ -18,27 +18,62 @@
                             " "
                             \fontsize
                                 #-3
-                                "Interlude i (x4)"
+                                "Interlude i"
                         }
                     }
-                s1 * 1/2
+                s1 * 3/2
+                    ^ \markup {
+                        \box
+                            \pad-around
+                                #0.5
+                                \concat
+                                    {
+                                        \fraction
+                                            0
+                                            1
+                                        " : "
+                                        \fraction
+                                            3
+                                            2
+                                    }
+                        }
             }
             {
-                s1 * 1/2
+                s1 * 3/2
+                    ^ \markup {
+                        \box
+                            \pad-around
+                                #0.5
+                                \concat
+                                    {
+                                        \fraction
+                                            3
+                                            2
+                                        " : "
+                                        \fraction
+                                            3
+                                            1
+                                    }
+                        }
             }
             {
-                s1 * 1/2
-            }
-            {
-                s1 * 1/2
-            }
-            {
-                \time 5/8
-                s1 * 5/8
-            }
-            {
-                \time 2/4
-                s1 * 1/2
+                \time 4/4
+                s1 * 1
+                    ^ \markup {
+                        \box
+                            \pad-around
+                                #0.5
+                                \concat
+                                    {
+                                        \fraction
+                                            3
+                                            1
+                                        " : "
+                                        \fraction
+                                            4
+                                            1
+                                    }
+                        }
             }
         }
         \context WindSectionStaffGroup = "Wind Section Staff Group" <<
@@ -46,53 +81,24 @@
             \repeat volta 2
             \context FluteStaff = "Flute Staff" {
                 \clef "treble"
+                \set Staff.instrumentName = \markup { Flute }
+                \set Staff.shortInstrumentName = \markup { Fl. }
                 \context Voice = "Flute Voice" {
                     {
+                        % [Flute Voice] Measure 24
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            R1 * 3/2
                         }
+                        % [Flute Voice] Measure 25
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            R1 * 3/2
                         }
+                        % [Flute Voice] Measure 26
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -103,53 +109,24 @@
             \repeat volta 2
             \context OboeStaff = "Oboe Staff" {
                 \clef "treble"
+                \set Staff.instrumentName = \markup { Oboe }
+                \set Staff.shortInstrumentName = \markup { Ob. }
                 \context Voice = "Oboe Voice" {
                     {
+                        % [Oboe Voice] Measure 24
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            R1 * 3/2
                         }
+                        % [Oboe Voice] Measure 25
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            R1 * 3/2
                         }
+                        % [Oboe Voice] Measure 26
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -160,53 +137,24 @@
             \repeat volta 2
             \context ClarinetStaff = "Clarinet Staff" {
                 \clef "treble"
+                \set Staff.instrumentName = \markup { Bass clarinet }
+                \set Staff.shortInstrumentName = \markup { Bass cl. }
                 \context Voice = "Clarinet Voice" {
                     {
+                        % [Clarinet Voice] Measure 24
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            R1 * 3/2
                         }
+                        % [Clarinet Voice] Measure 25
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            R1 * 3/2
                         }
+                        % [Clarinet Voice] Measure 26
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -217,53 +165,24 @@
             \repeat volta 2
             \context SaxophoneStaff = "Saxophone Staff" {
                 \clef "treble"
+                \set Staff.instrumentName = \markup { Baritone saxophone }
+                \set Staff.shortInstrumentName = \markup { Bar. sax. }
                 \context Voice = "Saxophone Voice" {
                     {
+                        % [Saxophone Voice] Measure 24
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            R1 * 3/2
                         }
+                        % [Saxophone Voice] Measure 25
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            R1 * 3/2
                         }
+                        % [Saxophone Voice] Measure 26
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -277,53 +196,24 @@
                 \repeat volta 2
                 \context PitchPipes = "Guitar Pitch Pipe Staff" {
                     \clef "percussion"
+                    \set Staff.instrumentName = \markup { Pitch pipes }
+                    \set Staff.shortInstrumentName = \markup { Pp. }
                     \context Voice = "Guitar Pitch Pipe Voice" {
                         {
+                            % [Guitar Pitch Pipe Voice] Measure 24
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                R1 * 3/2
                             }
+                            % [Guitar Pitch Pipe Voice] Measure 25
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                R1 * 3/2
                             }
+                            % [Guitar Pitch Pipe Voice] Measure 26
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -332,37 +222,25 @@
                 }
                 \repeat volta 2
                 \context GuitarStaff = "Guitar Staff" {
-                    \clef "treble"
+                    \clef "treble_8"
+                    \set Staff.instrumentName = \markup { Guitar }
+                    \set Staff.shortInstrumentName = \markup { Gt. }
                     \context Voice = "Guitar Voice" {
                         {
-                            {
-                                r4
-                            }
-                        }
-                        {
-                            {
-                                <d' f'>4 :32 \mp \>
-                            }
-                            {
-                                <d' f'>2 :32 \pp \repeatTie \<
-                            }
-                            {
-                                <d' f'>2 :32 \mf \repeatTie \>
-                            }
-                            {
-                                <d' f'>2 :32 \p \repeatTie
-                            }
-                            {
-                                <d' f'>4. :32 \repeatTie \>
-                                <d' f'>4 :32 \ppp \repeatTie
-                            }
-                        }
-                        {
+                            % [Guitar Voice] Measure 24
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1/2
+                                R1 * 3/2
+                            }
+                            % [Guitar Voice] Measure 25
+                            {
+                                R1 * 3/2
+                            }
+                            % [Guitar Voice] Measure 26
+                            {
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -375,53 +253,24 @@
                 \repeat volta 2
                 \context PitchPipes = "Piano Pitch Pipe Staff" {
                     \clef "percussion"
+                    \set Staff.instrumentName = \markup { Pitch pipes }
+                    \set Staff.shortInstrumentName = \markup { Pp. }
                     \context Voice = "Piano Pitch Pipe Voice" {
                         {
+                            % [Piano Pitch Pipe Voice] Measure 24
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                R1 * 3/2
                             }
+                            % [Piano Pitch Pipe Voice] Measure 25
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                R1 * 3/2
                             }
+                            % [Piano Pitch Pipe Voice] Measure 26
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -429,56 +278,27 @@
                     }
                 }
                 \context PianoStaff = "Piano Staff" <<
+                    \set PianoStaff.instrumentName = \markup { Piano }
+                    \set PianoStaff.shortInstrumentName = \markup { Pf. }
                     \repeat volta 2
                     \context PianoUpperStaff = "Piano Upper Staff" {
                         \clef "treble"
                         \context Voice = "Piano Upper Voice" {
                             {
+                                % [Piano Upper Voice] Measure 24
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
+                                    R1 * 3/2
                                 }
+                                % [Piano Upper Voice] Measure 25
                                 {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
+                                    R1 * 3/2
                                 }
+                                % [Piano Upper Voice] Measure 26
                                 {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 5/8
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1/2
+                                    R1 * 1
                                     \stopStaff
                                     \startStaff
                                 }
@@ -490,51 +310,20 @@
                         \clef "bass"
                         \context Voice = "Piano Lower Voice" {
                             {
+                                % [Piano Lower Voice] Measure 24
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
+                                    R1 * 3/2
                                 }
+                                % [Piano Lower Voice] Measure 25
                                 {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
+                                    R1 * 3/2
                                 }
+                                % [Piano Lower Voice] Measure 26
                                 {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 5/8
-                                    \stopStaff
-                                    \startStaff
-                                }
-                                {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1/2
+                                    R1 * 1
                                     \stopStaff
                                     \startStaff
                                 }
@@ -543,23 +332,17 @@
                     }
                     \context Dynamics = "Piano Pedals Voice" {
                         {
+                            % [Piano Pedals Voice] Measure 24
                             {
-                                R1 * 1/2
+                                R1 * 3/2
                             }
+                            % [Piano Pedals Voice] Measure 25
                             {
-                                R1 * 1/2
+                                R1 * 3/2
                             }
+                            % [Piano Pedals Voice] Measure 26
                             {
-                                R1 * 1/2
-                            }
-                            {
-                                R1 * 1/2
-                            }
-                            {
-                                R1 * 5/8
-                            }
-                            {
-                                R1 * 1/2
+                                R1 * 1
                             }
                         }
                     }
@@ -570,53 +353,24 @@
                 \repeat volta 2
                 \context PitchPipes = "Percussion Pitch Pipe Staff" {
                     \clef "percussion"
+                    \set Staff.instrumentName = \markup { Pitch pipes }
+                    \set Staff.shortInstrumentName = \markup { Pp. }
                     \context Voice = "Percussion Pitch Pipe Voice" {
                         {
+                            % [Percussion Pitch Pipe Voice] Measure 24
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                R1 * 3/2
                             }
+                            % [Percussion Pitch Pipe Voice] Measure 25
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                R1 * 3/2
                             }
+                            % [Percussion Pitch Pipe Voice] Measure 26
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -628,51 +382,20 @@
                     \clef "percussion"
                     \context Voice = "Percussion Voice" {
                         {
+                            % [Percussion Voice] Measure 24
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                R1 * 3/2
                             }
+                            % [Percussion Voice] Measure 25
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                R1 * 3/2
                             }
+                            % [Percussion Voice] Measure 26
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -686,53 +409,24 @@
             \repeat volta 2
             \context ViolinStaff = "Violin Staff" {
                 \clef "treble"
+                \set Staff.instrumentName = \markup { Violin }
+                \set Staff.shortInstrumentName = \markup { Vn. }
                 \context Voice = "Violin Voice" {
                     {
+                        % [Violin Voice] Measure 24
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            R1 * 3/2
                         }
+                        % [Violin Voice] Measure 25
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            R1 * 3/2
                         }
+                        % [Violin Voice] Measure 26
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -743,53 +437,24 @@
             \repeat volta 2
             \context ViolaStaff = "Viola Staff" {
                 \clef "alto"
+                \set Staff.instrumentName = \markup { Violin }
+                \set Staff.shortInstrumentName = \markup { Vn. }
                 \context Voice = "Viola Voice" {
                     {
+                        % [Viola Voice] Measure 24
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            R1 * 3/2
                         }
+                        % [Viola Voice] Measure 25
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            R1 * 3/2
                         }
+                        % [Viola Voice] Measure 26
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -800,53 +465,24 @@
             \repeat volta 2
             \context CelloStaff = "Cello Staff" {
                 \clef "bass"
+                \set Staff.instrumentName = \markup { Cello }
+                \set Staff.shortInstrumentName = \markup { Vc. }
                 \context Voice = "Cello Voice" {
                     {
+                        % [Cello Voice] Measure 24
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            R1 * 3/2
                         }
+                        % [Cello Voice] Measure 25
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            R1 * 3/2
                         }
+                        % [Cello Voice] Measure 26
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
-                        }
-                        {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1/2
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -858,53 +494,24 @@
                 \repeat volta 2
                 \context PitchPipes = "Contrabass Pitch Pipe Staff" {
                     \clef "percussion"
+                    \set Staff.instrumentName = \markup { Pitch pipes }
+                    \set Staff.shortInstrumentName = \markup { Pp. }
                     \context Voice = "Contrabass Pitch Pipe Voice" {
                         {
+                            % [Contrabass Pitch Pipe Voice] Measure 24
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                R1 * 3/2
                             }
+                            % [Contrabass Pitch Pipe Voice] Measure 25
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                R1 * 3/2
                             }
+                            % [Contrabass Pitch Pipe Voice] Measure 26
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -913,54 +520,25 @@
                 }
                 \repeat volta 2
                 \context ContrabassStaff = "Contrabass Staff" {
-                    \clef "bass_8"
+                    \clef "bass"
+                    \set Staff.instrumentName = \markup { Contrabass }
+                    \set Staff.shortInstrumentName = \markup { Cb. }
                     \context Voice = "Contrabass Voice" {
                         {
+                            % [Contrabass Voice] Measure 24
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                R1 * 3/2
                             }
+                            % [Contrabass Voice] Measure 25
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
+                                R1 * 3/2
                             }
+                            % [Contrabass Voice] Measure 26
                             {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 5/8
-                                \stopStaff
-                                \startStaff
-                            }
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }

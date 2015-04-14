@@ -18,6 +18,7 @@ percussion_marimba_agitato_music_specifier = consort.MusicSpecifier(
                 consort.ChordExpression(chord_expr=[0, 3]),
                 consort.ChordExpression(chord_expr=[0, 5]),
                 ],
+            is_destructive=True,
             selector=selectortools.Selector()
                 .by_logical_tie(pitched=True)
                 .by_duration('==', (1, 16), preprolated=True)
@@ -49,6 +50,7 @@ percussion_marimba_agitato_music_specifier = consort.MusicSpecifier(
                     consort.ChordExpression(chord_expr=[0, 3]),
                     ],
                 ],
+            is_destructive=True,
             selector=selectortools.Selector()
                 .by_logical_tie(pitched=True)
                 .by_duration('>', (1, 16), preprolated=True)

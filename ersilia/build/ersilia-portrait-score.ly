@@ -9,14 +9,6 @@
 
 \score {
     {
-        \include "../segment-1.ly"
-        \include "../interlude-1.ly"
-        \include "../segment-2.ly"
-        \include "../segment-3.ly"
-        \include "../interlude-2.ly"
-        \include "../segment-4.ly"
-        \include "../segment-5.ly"
-        \include "../interlude-3.ly"
-        \include "../segment-6.ly"
+        \include "segments.ly"
     }
 }

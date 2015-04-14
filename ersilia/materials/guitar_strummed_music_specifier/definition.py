@@ -25,6 +25,7 @@ guitar_strummed_music_specifier = consort.MusicSpecifier(
                     indicatortools.Dynamic('sfz'),
                     ],
                 ),
+            is_destructive=True,
             selector=selectortools.Selector()
                 .by_logical_tie(pitched=True)
                 .by_contiguity()

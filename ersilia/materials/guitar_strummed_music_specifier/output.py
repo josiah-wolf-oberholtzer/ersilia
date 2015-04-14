@@ -70,6 +70,7 @@ guitar_strummed_music_specifier = consort.tools.MusicSpecifier(
                         ),
                     ),
                 ),
+            is_destructive=True,
             ),
         dynamic_expressions=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(

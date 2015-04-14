@@ -84,6 +84,7 @@ percussion_marimba_agitato_music_specifier = consort.tools.MusicSpecifier(
                         ),
                     ),
                 ),
+            is_destructive=True,
             ),
         clef_spanner=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
@@ -189,6 +190,7 @@ percussion_marimba_agitato_music_specifier = consort.tools.MusicSpecifier(
                         ),
                     ),
                 ),
+            is_destructive=True,
             ),
         ),
     color='magenta',

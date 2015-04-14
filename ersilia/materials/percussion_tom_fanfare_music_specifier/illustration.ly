@@ -76,6 +76,9 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             f'16 -\staccato \p \startTextSpan \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
@@ -88,6 +91,8 @@
                             f'16 -\staccato
                             \set stemLeftBeamCount = 2
                             d'16 -\staccato \f ]
+                            \stopStaff
+                            \startStaff
                             <> \stopTextSpan
                         }
                     }
@@ -99,8 +104,10 @@
                     {
                         % [Violin 1 Voice] Measure 2
                         {
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            b4 :32 -\accent \p ^ \markup {
                                 \box
                                     \pad-around
                                         #0.5
@@ -112,14 +119,8 @@
                                                         toms
                                                     }
                                 }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            b4 :32 -\accent \p \startTextSpan
-                            <> \stopTextSpan
+                            \stopStaff
+                            \startStaff
                         }
                     }
                     {
@@ -149,12 +150,17 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             f'16 -\staccato \p \startTextSpan [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             f'16 -\staccato ]
+                            \stopStaff
+                            \startStaff
                             <> \stopTextSpan
                         }
                     }
@@ -185,6 +191,9 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             r16 \startTextSpan [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
@@ -228,6 +237,8 @@
                             d'16 -\staccato
                             \set stemLeftBeamCount = 2
                             d'16 -\staccato \f ]
+                            \stopStaff
+                            \startStaff
                             <> \stopTextSpan
                         }
                     }
@@ -261,6 +272,9 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             f'8 :64 -\accent \p \startTextSpan
                         }
                         % [Violin 1 Voice] Measure 7
@@ -274,6 +288,8 @@
                             d'16 -\staccato
                             \set stemLeftBeamCount = 1
                             r8 ]
+                            \stopStaff
+                            \startStaff
                             <> \stopTextSpan
                         }
                     }
@@ -329,6 +345,9 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             b16 -\staccato \fp \startTextSpan \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
@@ -339,6 +358,8 @@
                         % [Violin 2 Voice] Measure 2
                         {
                             b4 :32 -\accent \f
+                            \stopStaff
+                            \startStaff
                             <> \stopTextSpan
                         }
                     }
@@ -368,11 +389,16 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             b16 -\staccato \p \startTextSpan \<
                         }
                         % [Violin 2 Voice] Measure 3
                         {
                             d'4 :32 -\accent \f
+                            \stopStaff
+                            \startStaff
                             <> \stopTextSpan
                         }
                     }
@@ -403,6 +429,9 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             r16 \startTextSpan [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
@@ -418,6 +447,8 @@
                             r16
                             \set stemLeftBeamCount = 2
                             f'16 -\staccato \f ]
+                            \stopStaff
+                            \startStaff
                             <> \stopTextSpan
                         }
                     }
@@ -448,6 +479,9 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             b16 -\staccato \p \startTextSpan \> [
                             \set stemLeftBeamCount = 2
                             f'16 -\staccato ]
@@ -498,6 +532,8 @@
                         % [Violin 2 Voice] Measure 7
                         {
                             d'8 :64 -\accent \f
+                            \stopStaff
+                            \startStaff
                             <> \stopTextSpan
                         }
                     }
@@ -534,8 +570,10 @@
                     }
                     {
                         {
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            g4 :32 -\accent \p ^ \markup {
                                 \box
                                     \pad-around
                                         #0.5
@@ -547,14 +585,8 @@
                                                         toms
                                                     }
                                 }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            g4 :32 -\accent \p \startTextSpan
-                            <> \stopTextSpan
+                            \stopStaff
+                            \startStaff
                         }
                     }
                     {
@@ -584,6 +616,9 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             g8 :64 -\accent \p \startTextSpan \>
                         }
                         \times 2/3 {
@@ -597,6 +632,8 @@
                         % [Viola Voice] Measure 3
                         {
                             b8 :64 -\accent \f
+                            \stopStaff
+                            \startStaff
                             <> \stopTextSpan
                         }
                     }
@@ -631,6 +668,9 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             r8 \startTextSpan [
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
@@ -673,6 +713,8 @@
                             b16 -\staccato
                             \set stemLeftBeamCount = 2
                             b16 -\staccato \f ]
+                            \stopStaff
+                            \startStaff
                             <> \stopTextSpan
                         }
                     }
@@ -687,8 +729,6 @@
                             \startStaff
                             R1 * 3/8
                             \bar "|."
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 }
@@ -732,6 +772,9 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             d'4. :32 -\accent \p \startTextSpan \>
                         }
                         % [Cello Voice] Measure 2
@@ -748,6 +791,8 @@
                             f'16 -\staccato
                             \set stemLeftBeamCount = 2
                             d'16 -\staccato \f ]
+                            \stopStaff
+                            \startStaff
                             <> \stopTextSpan
                         }
                     }
@@ -779,6 +824,9 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             g16 -\staccato \fp \startTextSpan \< [
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
@@ -798,6 +846,8 @@
                         % [Cello Voice] Measure 4
                         {
                             f'8 :64 -\accent \f
+                            \stopStaff
+                            \startStaff
                             <> \stopTextSpan
                         }
                     }
@@ -827,6 +877,9 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             d'4 :32 -\accent \p \startTextSpan \>
                         }
                         {
@@ -860,6 +913,8 @@
                             d'16 -\staccato \f
                             \set stemLeftBeamCount = 2
                             r16 ]
+                            \stopStaff
+                            \startStaff
                             <> \stopTextSpan
                         }
                     }
@@ -870,8 +925,6 @@
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 3/8
-                            \stopStaff
-                            \startStaff
                         }
                     }
                     {
@@ -896,9 +949,14 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             b16 -\staccato \p \startTextSpan [
                             \set stemLeftBeamCount = 2
                             f'16 -\staccato ]
+                            \stopStaff
+                            \startStaff
                             <> \stopTextSpan
                         }
                     }

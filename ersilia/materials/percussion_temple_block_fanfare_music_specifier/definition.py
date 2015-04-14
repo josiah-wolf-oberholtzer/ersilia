@@ -47,6 +47,7 @@ percussion_temple_block_fanfare_music_specifier = consort.MusicSpecifier(
                         ]),
                     ),
                 ),
+            is_destructive=True,
             selector=selectortools.Selector()
                 .by_logical_tie(pitched=True)
                 .by_duration('>', (1, 16), preprolated=True)
