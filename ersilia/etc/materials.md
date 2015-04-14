@@ -21,14 +21,14 @@ string overpressure                 |                   -
 
 AGITATO:                            :   1   2   3   4   5   6
 
-wind agitato                        |
-saxophone agitato                   |
+wind agitato                        |   +           +
+saxophone agitato                   |   +   -   +   +       
 guitar agitato                      |   +       -   -       +
-piano agitato                       |
-percussion marimba agitato          |
-percussion temple block fanfare     |
-percussion tom fanfare              |
-string agitato                      |
+piano agitato                       |   +   -       +   -
+percussion marimba agitato          |       -   -   
+percussion temple block fanfare     |   +           +
+percussion tom fanfare              |   +           +
+string agitato                      |   +           +
 
 POINTILLIST:                        :   1   2   3   4   5   6
 
@@ -49,7 +49,7 @@ TREMOLO:                            :   1   2   3   4   5   6
 wind tremolo                        |
 guitar tremolo                      |   +   +       +       
 guitar undulation tremolo           |       -   +   -   
-piano tremolo                       |
+piano tremolo                       |       -   -       +    
 percussion marimba tremolo          |
 string tremolo                      |
 
@@ -63,5 +63,5 @@ string legato                       |       -   -
 
 PEDAL:                              :   1   2   3   4   5   6
 
-wind low pedal                      |
-percussion low rolls                |
+wind low pedal                      |       -           -    
+percussion low rolls                |       -   -       -    
