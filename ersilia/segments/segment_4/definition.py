@@ -10,10 +10,12 @@ from abjad.tools import timespantools
 
 segment_maker = ersilia.ErsiliaSegmentMaker(
     desired_duration_in_seconds=abjad.Multiplier(2, 20) * 480,
-    is_annotated=False,
+    annotate_colors=True,
+    annotate_phrasing=False,
+    annotate_timespans=True,
     name='Scene IV',
     permitted_time_signatures=ersilia.permitted_time_signatures,
-    settings=[ersilia.piano_pedals_music_setting],
+    #settings=[ersilia.piano_pedals_music_setting],
     tempo=abjad.Tempo((1, 4), 96),
     )
 
@@ -76,7 +78,6 @@ music_specifier = consort.MusicSpecifierSequence(
 timespan_maker = new(
     ersilia.sparse_timespan_maker,
     padding=(3, 4),
-    timespan_specifier__minimum_duration=(1, 4),
     )
 segment_maker.add_setting(
     timespan_identifier=[-3, 1, -4, 1, -2, 1, -3, 1, -2],
@@ -91,7 +92,10 @@ segment_maker.add_setting(
 
 segment_maker.add_setting(
     timespan_identifier=[-1, 1, -1, 1, -3, 1, -3],
-    timespan_maker=ersilia.sustained_timespan_maker,
+    timespan_maker=new(
+        ersilia.sustained_timespan_maker,
+        fuse_groups=True,
+        ),
     guitar_pp=ersilia.pitch_pipe_music_specifier,
     piano_pp=ersilia.pitch_pipe_music_specifier,
     percussion_pp=ersilia.pitch_pipe_music_specifier,

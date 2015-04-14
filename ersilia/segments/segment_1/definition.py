@@ -9,10 +9,12 @@ from abjad import new
 
 segment_maker = ersilia.ErsiliaSegmentMaker(
     desired_duration_in_seconds=abjad.Multiplier(2, 20) * 480,
-    is_annotated=False,
+    annotate_colors=True,
+    annotate_phrasing=False,
+    annotate_timespans=True,
     name='Scene I',
     permitted_time_signatures=ersilia.permitted_time_signatures,
-    settings=[ersilia.piano_pedals_music_setting],
+    #settings=[ersilia.piano_pedals_music_setting],
     tempo=abjad.Tempo((1, 4), 96),
     )
 
@@ -30,6 +32,15 @@ segment_maker.add_setting(
     guitar=ersilia.guitar_tremolo_music_specifier,
     )
 
+segment_maker.add_setting(
+    timespan_identifier=[-2, 1, -3, 1, -1],
+    timespan_maker=new(
+        ersilia.sparse_timespan_maker,
+        fuse_groups=True,
+        ),
+    piano_rh=ersilia.piano_tremolo_music_specifier.transpose(12),
+    )
+
 ### OSTINATO ###
 
 segment_maker.add_setting(
@@ -41,6 +52,38 @@ segment_maker.add_setting(
 ### POINTILLIST ###
 
 ### AGITATO ###
+
+segment_maker.add_setting(
+    timespan_identifier=[-1, 1, -2, 1, -3, 1, -4, 1],
+    timespan_maker=new(
+        ersilia.dense_timespan_maker,
+        repeat=False,
+        ),
+    flute=ersilia.wind_agitato_music_specifier,
+    clarinet=ersilia.wind_agitato_music_specifier.transpose('C2'),
+    oboe=ersilia.wind_agitato_music_specifier,
+    saxophone=ersilia.saxophone_agitato_music_specifier.transpose('C2'),
+    guitar=ersilia.guitar_agitato_music_specifier,
+    piano_rh=ersilia.piano_agitato_music_specifier,
+    piano_lh=ersilia.piano_agitato_music_specifier.transpose(-24),
+    violin=ersilia.string_agitato_music_specifier,
+    viola=ersilia.string_agitato_music_specifier.transpose('C3'),
+    cello=ersilia.string_agitato_music_specifier.transpose('C2'),
+    bass=ersilia.string_agitato_music_specifier.transpose('E1'),
+    )
+
+segment_maker.add_setting(
+    timespan_identifier=[-1, 1, -2, 1, -3, 1, -4, 1],
+    timespan_maker=ersilia.dense_timespan_maker,
+    percussion=consort.MusicSpecifierSequence(
+        application_rate='division',
+        music_specifiers=[
+            ersilia.percussion_temple_block_fanfare_music_specifier,
+            ersilia.percussion_tom_fanfare_music_specifier,
+            ersilia.percussion_tom_fanfare_music_specifier,
+            ],
+        )
+    )
 
 ### INTERRUPT ###
 
@@ -64,7 +107,6 @@ music_specifier = consort.MusicSpecifierSequence(
 timespan_maker = new(
     ersilia.sparse_timespan_maker,
     padding=(3, 4),
-    timespan_specifier__minimum_duration=(1, 4),
     )
 segment_maker.add_setting(
     timespan_identifier=[-1, 1, -2, 1, -3, 1, -2],
