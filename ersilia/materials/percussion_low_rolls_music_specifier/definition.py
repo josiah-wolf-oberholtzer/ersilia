@@ -6,15 +6,33 @@ from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
 from abjad.tools import selectortools
 from abjad.tools import spannertools
+from ersilia.materials import abbreviations
 
 
 percussion_low_rolls_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
         accents=consort.AttachmentExpression(
             attachments=indicatortools.Articulation('accent'),
-            selector=selectortools.select_pitched_runs()
-                .by_counts([3], cyclic=True)
-                [1],
+            selector=selectortools.Selector()
+                .by_logical_tie()
+                .get_slice(start=1, apply_to_each=False)
+                [0]
+            ),
+        bass_drum_indication=consort.AttachmentExpression(
+            attachments=abbreviations.make_text_spanner('b.d.'),
+            selector=selectortools.Selector()
+                .by_logical_tie()
+                .by_pitch(pitches=ersilia.Percussion.BASS_DRUM)
+                .by_contiguity()
+                .by_leaves()
+            ),
+        tam_tam_indication=consort.AttachmentExpression(
+            attachments=abbreviations.make_text_spanner('tam'),
+            selector=selectortools.Selector()
+                .by_logical_tie()
+                .by_pitch(pitches=ersilia.Percussion.TAM_TAM)
+                .by_contiguity()
+                .by_leaves()
             ),
         dynamic_expressions=consort.DynamicExpression(
             division_period=2,
@@ -30,13 +48,24 @@ percussion_low_rolls_music_specifier = consort.MusicSpecifier(
     color='red',
     labels=[],
     pitch_handler=consort.AbsolutePitchHandler(
+        pitch_application_rate='phrase',
         pitch_specifier=pitchtools.PitchSegment([
             ersilia.Percussion.BASS_DRUM,
             ersilia.Percussion.TAM_TAM,
             ]),
         pitches_are_nonsemantic=True,
         ),
-    rhythm_maker=rhythmmakertools.NoteRhythmMaker(
+    rhythm_maker=rhythmmakertools.EvenDivisionRhythmMaker(
+        denominators=[8],
+        output_masks=[
+            rhythmmakertools.SustainMask(
+                indices=[0, 1],
+                period=3,
+                ),
+            rhythmmakertools.SustainMask(
+                indices=[0, -1],
+                ),
+            ],
         tie_specifier=rhythmmakertools.TieSpecifier(
             tie_across_divisions=True,
             ),

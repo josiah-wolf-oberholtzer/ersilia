@@ -1,6 +1,7 @@
 # -*- encoding: utf-8 -*-
 from abjad.tools import datastructuretools
 from abjad.tools import indicatortools
+from abjad.tools import markuptools
 from abjad.tools import mathtools
 from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
@@ -20,28 +21,74 @@ percussion_low_rolls_music_specifier = consort.tools.MusicSpecifier(
                 ),
             selector=selectortools.Selector(
                 callbacks=(
-                    selectortools.PrototypeSelectorCallback(
-                        prototype=scoretools.Leaf,
+                    selectortools.LogicalTieSelectorCallback(
+                        flatten=True,
+                        pitched=False,
+                        trivial=True,
+                        only_with_head=False,
+                        only_with_tail=False,
                         ),
-                    selectortools.RunSelectorCallback(
-                        prototype=(
-                            scoretools.Note,
-                            scoretools.Chord,
-                            ),
-                        ),
-                    selectortools.CountsSelectorCallback(
-                        counts=datastructuretools.CyclicTuple(
-                            [3]
-                            ),
-                        cyclic=True,
-                        fuse_overhang=False,
-                        nonempty=False,
-                        overhang=False,
-                        rotate=False,
+                    selectortools.SliceSelectorCallback(
+                        start=1,
+                        apply_to_each=False,
                         ),
                     selectortools.ItemSelectorCallback(
-                        item=1,
+                        item=0,
                         apply_to_each=True,
+                        ),
+                    ),
+                ),
+            ),
+        bass_drum_indication=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    consort.tools.ComplexTextSpanner(
+                        markup=markuptools.Markup(
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'box',
+                                    markuptools.MarkupCommand(
+                                        'pad-around',
+                                        0.5,
+                                        markuptools.MarkupCommand(
+                                            'italic',
+                                            markuptools.MarkupCommand(
+                                                'smaller',
+                                                markuptools.MarkupCommand(
+                                                    'concat',
+                                                    [
+                                                        markuptools.MarkupCommand(
+                                                            'vstrut'
+                                                            ),
+                                                        'b.d.',
+                                                        ]
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                ),
+                            ),
+                        ),
+                    ]
+                ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.LogicalTieSelectorCallback(
+                        flatten=True,
+                        pitched=False,
+                        trivial=True,
+                        only_with_head=False,
+                        only_with_tail=False,
+                        ),
+                    selectortools.PitchSelectorCallback(
+                        pitches=pitchtools.PitchSet(
+                            [-1]
+                            ),
+                        ),
+                    selectortools.ContiguitySelectorCallback(),
+                    selectortools.PrototypeSelectorCallback(
+                        prototype=scoretools.Leaf,
                         ),
                     ),
                 ),
@@ -87,16 +134,71 @@ percussion_low_rolls_music_specifier = consort.tools.MusicSpecifier(
                     ),
                 ),
             ),
+        tam_tam_indication=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    consort.tools.ComplexTextSpanner(
+                        markup=markuptools.Markup(
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'box',
+                                    markuptools.MarkupCommand(
+                                        'pad-around',
+                                        0.5,
+                                        markuptools.MarkupCommand(
+                                            'italic',
+                                            markuptools.MarkupCommand(
+                                                'smaller',
+                                                markuptools.MarkupCommand(
+                                                    'concat',
+                                                    [
+                                                        markuptools.MarkupCommand(
+                                                            'vstrut'
+                                                            ),
+                                                        'tam',
+                                                        ]
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                ),
+                            ),
+                        ),
+                    ]
+                ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.LogicalTieSelectorCallback(
+                        flatten=True,
+                        pitched=False,
+                        trivial=True,
+                        only_with_head=False,
+                        only_with_tail=False,
+                        ),
+                    selectortools.PitchSelectorCallback(
+                        pitches=pitchtools.PitchSet(
+                            [2]
+                            ),
+                        ),
+                    selectortools.ContiguitySelectorCallback(),
+                    selectortools.PrototypeSelectorCallback(
+                        prototype=scoretools.Leaf,
+                        ),
+                    ),
+                ),
+            ),
         ),
     color='red',
     labels=(),
     pitch_handler=consort.tools.AbsolutePitchHandler(
+        pitch_application_rate='phrase',
         pitch_specifier=consort.tools.PitchSpecifier(
             pitch_segments=(
                 pitchtools.PitchSegment(
                     (
-                        pitchtools.NamedPitch('f,'),
-                        pitchtools.NamedPitch('a,'),
+                        pitchtools.NamedPitch('b'),
+                        pitchtools.NamedPitch("d'"),
                         ),
                     item_class=pitchtools.NamedPitch,
                     ),
@@ -105,7 +207,20 @@ percussion_low_rolls_music_specifier = consort.tools.MusicSpecifier(
             ),
         pitches_are_nonsemantic=True,
         ),
-    rhythm_maker=rhythmmakertools.NoteRhythmMaker(
+    rhythm_maker=rhythmmakertools.EvenDivisionRhythmMaker(
+        denominators=(8,),
+        output_masks=rhythmmakertools.BooleanPatternInventory(
+            (
+                rhythmmakertools.SustainMask(
+                    indices=(0, 1),
+                    period=3,
+                    ),
+                rhythmmakertools.SustainMask(
+                    indices=(0, -1),
+                    ),
+                )
+            ),
+        preferred_denominator='from_counts',
         tie_specifier=rhythmmakertools.TieSpecifier(
             tie_across_divisions=True,
             ),
