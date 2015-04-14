@@ -338,7 +338,7 @@
         \override StaffSymbol.line-positions = #'(0)
         instrumentName = \percussionName
         shortInstrumentName = \shortPercussionName
-        \override Beam.positions = #'(-11 . -11)
+        \override Beam.positions = #'(-7 . -7)
         \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
     }
