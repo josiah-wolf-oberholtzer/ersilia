@@ -1,6 +1,5 @@
 # -*- encoding: utf-8 -*-
 from abjad.tools import datastructuretools
-from abjad.tools import indicatortools
 from abjad.tools import mathtools
 from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
@@ -15,11 +14,7 @@ percussion_marimba_tremolo_music_specifier = consort.tools.MusicSpecifier(
         clef_spanner=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [
-                    consort.tools.ClefSpanner(
-                        clef=indicatortools.Clef(
-                            name='treble',
-                            ),
-                        ),
+                    consort.tools.ClefSpannerExpression(),
                     ]
                 ),
             ),

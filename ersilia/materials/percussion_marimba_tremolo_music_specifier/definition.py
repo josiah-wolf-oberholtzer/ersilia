@@ -4,11 +4,12 @@ from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
 from abjad.tools import selectortools
 from abjad.tools import spannertools
+from ersilia.materials import abbreviations
 
 
 percussion_marimba_tremolo_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
-        clef_spanner=consort.ClefSpanner('treble'),
+        clef_spanner=consort.ClefSpannerExpression(),
         dynamic_expressions=consort.DynamicExpression(
             division_period=2,
             dynamic_tokens='p ppp',
@@ -20,6 +21,7 @@ percussion_marimba_tremolo_music_specifier = consort.MusicSpecifier(
             attachments=spannertools.StemTremoloSpanner(),
             selector=selectortools.select_pitched_runs(),
             ),
+        text_spanner=abbreviations.make_text_spanner('mb.'),
         ),
     color='red',
     labels=[],

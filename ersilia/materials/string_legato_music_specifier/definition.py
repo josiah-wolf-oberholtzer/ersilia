@@ -47,7 +47,7 @@ string_legato_music_specifier = consort.MusicSpecifier(
                     ),
             ),
         ),
-    color=None,
+    color='green',
     labels=[],
     pitch_handler=consort.AbsolutePitchHandler(
         pitch_specifier="d' f' d' fqs' ef' d' ef' f' fqs' d' g' d' d' as'",

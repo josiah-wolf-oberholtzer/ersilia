@@ -115,10 +115,10 @@
                         }
                         % [Violin 1 Voice] Measure 5
                         {
-                            d'8 -\tenuto \! [
+                            d'8 -\tenuto [
                             \set stemLeftBeamCount = 1
                             \pitchedTrill
-                            d'8 ] \startTrillSpan f'
+                            d'8 \! ] \startTrillSpan f'
                             <> \stopTrillSpan
                         }
                     }
@@ -202,12 +202,12 @@
                         }
                         % [Violin 2 Voice] Measure 3
                         {
-                            d'4 -\tenuto \!
+                            d'4 -\tenuto
                         }
                     }
                     {
                         {
-                            r8
+                            r8 \!
                         }
                     }
                     {
@@ -258,13 +258,13 @@
                         % [Violin 2 Voice] Measure 7
                         {
                             \pitchedTrill
-                            fqs'8 \! \startTrillSpan aqf'
+                            fqs'8 \startTrillSpan aqf'
                             <> \stopTrillSpan
                         }
                     }
                     {
                         {
-                            r4
+                            r4 \!
                             \bar "|."
                         }
                     }
@@ -358,10 +358,10 @@
                         % [Viola Voice] Measure 6
                         {
                             \pitchedTrill
-                            d'8 \! [ \startTrillSpan f'
+                            d'8 [ \startTrillSpan f'
                             <> \stopTrillSpan
                             \set stemLeftBeamCount = 1
-                            d'8 -\tenuto ]
+                            d'8 -\tenuto \! ]
                         }
                     }
                     {
@@ -375,8 +375,6 @@
                             \startStaff
                             R1 * 3/8
                             \bar "|."
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 }
@@ -477,8 +475,6 @@
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 3/8
-                            \stopStaff
-                            \startStaff
                         }
                     }
                     {

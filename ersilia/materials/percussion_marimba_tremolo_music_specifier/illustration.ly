@@ -58,11 +58,16 @@
                         % [Violin 1 Voice] Measure 1
                         {
                             \once \override Hairpin.circled-tip = ##t
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             <d' f'>4. :32 \<
                         }
                         % [Violin 1 Voice] Measure 2
                         {
                             <d' f'>4 :32 \p \repeatTie
+                            \stopStaff
+                            \startStaff
                         }
                     }
                     {
@@ -73,7 +78,14 @@
                     {
                         % [Violin 1 Voice] Measure 3
                         {
+                            \clef "bass"
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             <f bf>8 :64 \p
+                            \stopStaff
+                            \startStaff
+                            \clef "treble"
                         }
                     }
                     {
@@ -84,7 +96,11 @@
                     {
                         % [Violin 1 Voice] Measure 4
                         {
+                            \clef "bass"
                             \once \override Hairpin.circled-tip = ##t
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             <d f>4. :32 \<
                             <d f>8 :64 \repeatTie
                         }
@@ -108,6 +124,9 @@
                         % [Violin 1 Voice] Measure 5
                         {
                             <cs ds>4 :32 \p \repeatTie
+                            \stopStaff
+                            \startStaff
+                            \clef "treble"
                         }
                     }
                     {
@@ -121,11 +140,18 @@
                     }
                     {
                         {
+                            \clef "bass"
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             <ds fs>8 :64 \p
                         }
                         % [Violin 1 Voice] Measure 7
                         {
                             <ds fs>4 :32 \repeatTie
+                            \stopStaff
+                            \startStaff
+                            \clef "treble"
                         }
                     }
                     {
@@ -161,7 +187,11 @@
                     }
                     {
                         {
+                            \clef "bass"
                             \once \override Hairpin.circled-tip = ##t
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             <d' f'>16 :128 \< [
                             \set stemLeftBeamCount = 2
                             <g c'>16 :128 ]
@@ -184,18 +214,28 @@
                             \set stemRightBeamCount = 2
                             <f g>16 :128
                             \set stemLeftBeamCount = 2
-                            <g bf>16 :128 \! ]
+                            <g bf>16 :128 ]
+                            \stopStaff
+                            \startStaff
+                            \clef "treble"
                         }
                     }
                     {
                         {
-                            r8
+                            r8 \!
                         }
                     }
                     {
                         % [Violin 2 Voice] Measure 4
                         {
+                            \clef "bass"
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             <d g>4 :32 \p
+                            \stopStaff
+                            \startStaff
+                            \clef "treble"
                         }
                     }
                     {
@@ -206,7 +246,11 @@
                     }
                     {
                         {
+                            \clef "bass"
                             \once \override Hairpin.circled-tip = ##t
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             <ds fs>8 :64 \<
                         }
                         {
@@ -236,12 +280,15 @@
                         {
                             <fs b>16 :128 \repeatTie [
                             \set stemLeftBeamCount = 2
-                            <fs a>16 :128 \! ]
+                            <fs a>16 :128 ]
+                            \stopStaff
+                            \startStaff
+                            \clef "treble"
                         }
                     }
                     {
                         {
-                            r4
+                            r4 \!
                             \bar "|."
                         }
                     }
@@ -272,8 +319,11 @@
                     }
                     {
                         {
-                            \clef "treble"
+                            \clef "bass"
                             \once \override Hairpin.circled-tip = ##t
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             <f af>16 :128 \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
@@ -299,13 +349,15 @@
                         }
                         % [Viola Voice] Measure 3
                         {
-                            <d f>8 :64 \repeatTie \!
+                            <d f>8 :64 \repeatTie
+                            \stopStaff
+                            \startStaff
                             \clef "alto"
                         }
                     }
                     {
                         {
-                            r4
+                            r4 \!
                         }
                         % [Viola Voice] Measure 4
                         {
@@ -314,8 +366,11 @@
                     }
                     {
                         {
-                            \clef "treble"
+                            \clef "bass"
                             \once \override Hairpin.circled-tip = ##t
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             <f bf>8 :64 \<
                             <f bf>4 :32 \repeatTie
                         }
@@ -348,13 +403,15 @@
                             \set stemRightBeamCount = 2
                             <b d'>16 :128
                             \set stemLeftBeamCount = 2
-                            <cs' ds'>16 :128 \! ]
+                            <cs' ds'>16 :128 ]
+                            \stopStaff
+                            \startStaff
                             \clef "alto"
                         }
                     }
                     {
                         {
-                            r8
+                            r8 \!
                         }
                         % [Viola Voice] Measure 7
                         {
@@ -363,8 +420,6 @@
                             \startStaff
                             R1 * 3/8
                             \bar "|."
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 }
@@ -391,11 +446,16 @@
                         {
                             \clef "treble"
                             \once \override Hairpin.circled-tip = ##t
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             <d' f'>4. :32 \<
                         }
                         % [Cello Voice] Measure 2
                         {
                             <d' f'>4 :32 \ppp \repeatTie
+                            \stopStaff
+                            \startStaff
                             \clef "bass"
                         }
                     }
@@ -409,11 +469,16 @@
                         {
                             \clef "treble"
                             \once \override Hairpin.circled-tip = ##t
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             <d' g'>4. :32 \<
                         }
                         % [Cello Voice] Measure 4
                         {
                             <d' g'>8 :64 \p \repeatTie
+                            \stopStaff
+                            \startStaff
                             \clef "bass"
                         }
                     }
@@ -426,6 +491,9 @@
                         {
                             \clef "treble"
                             \once \override Hairpin.circled-tip = ##t
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             <d' f'>4 :32 \<
                         }
                         {
@@ -445,6 +513,8 @@
                         }
                         {
                             <cs' fs'>4 :32 \repeatTie
+                            \stopStaff
+                            \startStaff
                             \clef "bass"
                         }
                     }
@@ -455,16 +525,17 @@
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 3/8
-                            \stopStaff
-                            \startStaff
                         }
                     }
                     {
                         % [Cello Voice] Measure 7
                         {
-                            \clef "treble"
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             <fs a>8 :64 \ppp
-                            \clef "bass"
+                            \stopStaff
+                            \startStaff
                         }
                     }
                     {

@@ -113,6 +113,7 @@ string_legato_music_specifier = consort.tools.MusicSpecifier(
                 ),
             ),
         ),
+    color='green',
     labels=(),
     pitch_handler=consort.tools.AbsolutePitchHandler(
         pitch_application_rate='division',

@@ -43,6 +43,7 @@ percussion_marimba_agitato_music_specifier = consort.MusicSpecifier(
                 [0]
             ),
         staff_lines_spanner=spannertools.StaffLinesSpanner([-4, -2, 0, 2, 4]),
+        text_spanner=abbreviations.make_text_spanner('mb.'),
         tremolo_chords=consort.AttachmentExpression(
             attachments=[
                 [
@@ -55,7 +56,6 @@ percussion_marimba_agitato_music_specifier = consort.MusicSpecifier(
                 .by_logical_tie(pitched=True)
                 .by_duration('>', (1, 16), preprolated=True)
             ),
-
         ),
     color='magenta',
     labels=[],

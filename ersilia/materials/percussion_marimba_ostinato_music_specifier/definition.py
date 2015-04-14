@@ -4,11 +4,12 @@ from abjad.tools import indicatortools
 from abjad.tools import rhythmmakertools
 from abjad.tools import selectortools
 from abjad.tools import spannertools
+from ersilia.materials import abbreviations
 
 
 percussion_marimba_ostinato_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
-        clef_spanner=consort.ClefSpanner('treble'),
+        clef_spanner=consort.ClefSpannerExpression(),
         deadstroke=consort.AttachmentExpression(
             attachments=indicatortools.Articulation('stopped'),
             selector=selectortools.Selector()
@@ -42,6 +43,7 @@ percussion_marimba_ostinato_music_specifier = consort.MusicSpecifier(
                 [-1]
             ),
         staff_lines_spanner=spannertools.StaffLinesSpanner([-4, -2, 0, 2, 4]),
+        text_spanner=abbreviations.make_text_spanner('mb.'),
         ),
     color='darkyellow',
     pitch_handler=consort.AbsolutePitchHandler(
