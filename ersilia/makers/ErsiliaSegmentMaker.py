@@ -14,6 +14,7 @@ class ErsiliaSegmentMaker(consort.SegmentMaker):
 
     def __init__(
         self,
+        annotate_colors=None,
         annotate_phrasing=None,
         annotate_timespans=None,
         desired_duration_in_seconds=None,
@@ -29,6 +30,7 @@ class ErsiliaSegmentMaker(consort.SegmentMaker):
         score_template = score_template or ersilia.ErsiliaScoreTemplate()
         consort.SegmentMaker.__init__(
             self,
+            annotate_colors=annotate_colors,
             annotate_phrasing=annotate_phrasing,
             annotate_timespans=annotate_timespans,
             desired_duration_in_seconds=desired_duration_in_seconds,
