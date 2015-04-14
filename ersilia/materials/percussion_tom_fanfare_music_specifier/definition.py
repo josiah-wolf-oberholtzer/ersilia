@@ -39,6 +39,7 @@ percussion_tom_fanfare_music_specifier = consort.MusicSpecifier(
                 .by_duration('>', (1, 16), preprolated=True)
             ),
         ),
+    color='magenta',
     pitch_handler=consort.AbsolutePitchHandler(
         #logical_tie_expressions=[
         #    ],

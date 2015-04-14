@@ -2,6 +2,7 @@
 from abjad.tools import datastructuretools
 from abjad.tools import durationtools
 from abjad.tools import indicatortools
+from abjad.tools import markuptools
 from abjad.tools import mathtools
 from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
@@ -128,6 +129,40 @@ percussion_snare_interruption_music_specifier = consort.tools.MusicSpecifier(
                     ),
                 ),
             ),
+        text_spanner=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    consort.tools.ComplexTextSpanner(
+                        markup=markuptools.Markup(
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'box',
+                                    markuptools.MarkupCommand(
+                                        'pad-around',
+                                        0.5,
+                                        markuptools.MarkupCommand(
+                                            'italic',
+                                            markuptools.MarkupCommand(
+                                                'smaller',
+                                                markuptools.MarkupCommand(
+                                                    'concat',
+                                                    [
+                                                        markuptools.MarkupCommand(
+                                                            'vstrut'
+                                                            ),
+                                                        'snare',
+                                                        ]
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                ),
+                            ),
+                        ),
+                    ]
+                ),
+            ),
         tremolo=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [
@@ -154,13 +189,14 @@ percussion_snare_interruption_music_specifier = consort.tools.MusicSpecifier(
                 ),
             ),
         ),
+    color='yellow',
     labels=(),
     pitch_handler=consort.tools.AbsolutePitchHandler(
         pitch_specifier=consort.tools.PitchSpecifier(
             pitch_segments=(
                 pitchtools.PitchSegment(
                     (
-                        pitchtools.NamedPitch('c'),
+                        pitchtools.NamedPitch("c'"),
                         ),
                     item_class=pitchtools.NamedPitch,
                     ),

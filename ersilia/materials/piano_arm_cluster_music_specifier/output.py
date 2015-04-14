@@ -45,6 +45,7 @@ piano_arm_cluster_music_specifier = consort.tools.MusicSpecifier(
                 ),
             ),
         ),
+    color='yellow',
     labels=(),
     pitch_handler=consort.tools.AbsolutePitchHandler(
         logical_tie_expressions=datastructuretools.CyclicTuple(

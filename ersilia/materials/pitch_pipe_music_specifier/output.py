@@ -155,7 +155,7 @@ pitch_pipe_music_specifier = consort.tools.MusicSpecifier(
                 ),
             ),
         ),
-    color='cyan',
+    color='blue',
     labels=('pitch pipes',),
     pitch_handler=consort.tools.AbsolutePitchHandler(
         pitches_are_nonsemantic=True,

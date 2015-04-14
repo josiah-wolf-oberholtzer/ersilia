@@ -138,6 +138,7 @@ percussion_bamboo_windchimes_music_specifier = consort.tools.MusicSpecifier(
                 ),
             ),
         ),
+    color='yellow',
     labels=(),
     pitch_handler=consort.tools.AbsolutePitchHandler(
         pitch_specifier=consort.tools.PitchSpecifier(

@@ -92,6 +92,15 @@ percussion_tom_fanfare_music_specifier = consort.tools.MusicSpecifier(
                     ),
                 ),
             ),
+        staff_lines_spanner=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    spannertools.StaffLinesSpanner(
+                        lines=[-4, -2, 0, 2, 4],
+                        ),
+                    ]
+                ),
+            ),
         text_spanner=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [
@@ -152,6 +161,7 @@ percussion_tom_fanfare_music_specifier = consort.tools.MusicSpecifier(
                 ),
             ),
         ),
+    color='magenta',
     pitch_handler=consort.tools.AbsolutePitchHandler(
         pitch_specifier=consort.tools.PitchSpecifier(
             pitch_segments=(

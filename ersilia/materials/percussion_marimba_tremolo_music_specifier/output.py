@@ -44,6 +44,15 @@ percussion_marimba_tremolo_music_specifier = consort.tools.MusicSpecifier(
                     ]
                 ),
             ),
+        staff_lines_spanner=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    spannertools.StaffLinesSpanner(
+                        lines=[-4, -2, 0, 2, 4],
+                        ),
+                    ]
+                ),
+            ),
         stem_tremolo_spanner=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [

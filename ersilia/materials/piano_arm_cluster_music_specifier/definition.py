@@ -14,7 +14,7 @@ piano_arm_cluster_music_specifier = consort.MusicSpecifier(
             ),
         dynamic_expressions=consort.DynamicExpression('fff'),
         ),
-    color=None,
+    color='yellow',
     labels=[],
     pitch_handler=consort.AbsolutePitchHandler(
         logical_tie_expressions=[

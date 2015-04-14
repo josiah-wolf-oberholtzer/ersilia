@@ -34,7 +34,7 @@ pitch_pipe_music_specifier = consort.MusicSpecifier(
             ),
         percussion_staff=abbreviations.percussion_staff
         ),
-    color='cyan',
+    color='blue',
     labels=['pitch pipes'],
     pitch_handler=consort.AbsolutePitchHandler(
         pitches_are_nonsemantic=True,

@@ -52,7 +52,7 @@ percussion_snare_interruption_music_specifier = consort.MusicSpecifier(
                 .by_duration('>', (1, 16), preprolated=True)
             ),
         ),
-    color=None,
+    color='yellow',
     labels=[],
     pitch_handler=consort.AbsolutePitchHandler(
         pitch_specifier=ersilia.Percussion.SNARE_DRUM,

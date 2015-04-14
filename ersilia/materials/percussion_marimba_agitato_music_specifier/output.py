@@ -145,6 +145,15 @@ percussion_marimba_agitato_music_specifier = consort.tools.MusicSpecifier(
                     ),
                 ),
             ),
+        staff_lines_spanner=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    spannertools.StaffLinesSpanner(
+                        lines=[-4, -2, 0, 2, 4],
+                        ),
+                    ]
+                ),
+            ),
         tremolo_chords=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [

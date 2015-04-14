@@ -5,6 +5,7 @@ from abjad.tools import markuptools
 from abjad.tools import mathtools
 from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
+from abjad.tools import spannertools
 import consort
 
 
@@ -35,6 +36,15 @@ percussion_crotales_flash_music_specifier = consort.tools.MusicSpecifier(
                         transitions=datastructuretools.CyclicTuple(
                             [None]
                             ),
+                        ),
+                    ]
+                ),
+            ),
+        staff_lines_spanner=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    spannertools.StaffLinesSpanner(
+                        lines=[-4, -2, 0, 2, 4],
                         ),
                     ]
                 ),
