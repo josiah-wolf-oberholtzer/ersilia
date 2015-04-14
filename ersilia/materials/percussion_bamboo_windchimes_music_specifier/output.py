@@ -2,6 +2,7 @@
 from abjad.tools import datastructuretools
 from abjad.tools import durationtools
 from abjad.tools import indicatortools
+from abjad.tools import markuptools
 from abjad.tools import mathtools
 from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
@@ -77,6 +78,40 @@ percussion_bamboo_windchimes_music_specifier = consort.tools.MusicSpecifier(
                     ),
                 ),
             ),
+        text_spanner=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    consort.tools.ComplexTextSpanner(
+                        markup=markuptools.Markup(
+                            contents=(
+                                markuptools.MarkupCommand(
+                                    'box',
+                                    markuptools.MarkupCommand(
+                                        'pad-around',
+                                        0.5,
+                                        markuptools.MarkupCommand(
+                                            'italic',
+                                            markuptools.MarkupCommand(
+                                                'smaller',
+                                                markuptools.MarkupCommand(
+                                                    'concat',
+                                                    [
+                                                        markuptools.MarkupCommand(
+                                                            'vstrut'
+                                                            ),
+                                                        'w.c.',
+                                                        ]
+                                                    )
+                                                )
+                                            )
+                                        )
+                                    ),
+                                ),
+                            ),
+                        ),
+                    ]
+                ),
+            ),
         tremolo=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [
@@ -109,7 +144,7 @@ percussion_bamboo_windchimes_music_specifier = consort.tools.MusicSpecifier(
             pitch_segments=(
                 pitchtools.PitchSegment(
                     (
-                        pitchtools.NamedPitch("e''"),
+                        pitchtools.NamedPitch("c'"),
                         ),
                     item_class=pitchtools.NamedPitch,
                     ),

@@ -14,8 +14,9 @@ wind_low_pedal_music_specifier = consort.MusicSpecifier(
         ),
     color=None,
     labels=[],
+    minimum_phrase_duration=(3, 2),
     pitch_handler=consort.AbsolutePitchHandler(
-        pitch_specifier='D2 F2',
+        pitch_specifier='D2 F2 D2 G2 F2 D2 F2',
         ),
     rhythm_maker=rhythmmakertools.NoteRhythmMaker(
         tie_specifier=rhythmmakertools.TieSpecifier(

@@ -1,5 +1,6 @@
 # -*- encoding: utf-8 -*-
 from abjad.tools import datastructuretools
+from abjad.tools import durationtools
 from abjad.tools import mathtools
 from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
@@ -31,11 +32,17 @@ wind_low_pedal_music_specifier = consort.tools.MusicSpecifier(
             ),
         ),
     labels=(),
+    minimum_phrase_duration=durationtools.Duration(3, 2),
     pitch_handler=consort.tools.AbsolutePitchHandler(
         pitch_specifier=consort.tools.PitchSpecifier(
             pitch_segments=(
                 pitchtools.PitchSegment(
                     (
+                        pitchtools.NamedPitch('d,'),
+                        pitchtools.NamedPitch('f,'),
+                        pitchtools.NamedPitch('d,'),
+                        pitchtools.NamedPitch('g,'),
+                        pitchtools.NamedPitch('f,'),
                         pitchtools.NamedPitch('d,'),
                         pitchtools.NamedPitch('f,'),
                         ),

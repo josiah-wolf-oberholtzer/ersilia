@@ -57,7 +57,18 @@
                     {
                         % [Violin 1 Voice] Measure 1
                         {
-                            e''16 -\accent \f
+                            c'16 -\accent \f ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        w.c.
+                                                    }
+                                }
                         }
                     }
                     {
@@ -69,7 +80,18 @@
                     {
                         % [Violin 1 Voice] Measure 2
                         {
-                            e''4 :32 \pp
+                            c'4 :32 \pp ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        w.c.
+                                                    }
+                                }
                         }
                     }
                     {
@@ -80,7 +102,18 @@
                     {
                         % [Violin 1 Voice] Measure 3
                         {
-                            e''16 -\accent \f
+                            c'16 -\accent \f ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        w.c.
+                                                    }
+                                }
                         }
                     }
                     {
@@ -92,7 +125,18 @@
                     {
                         % [Violin 1 Voice] Measure 4
                         {
-                            e''16 -\accent \f
+                            c'16 -\accent \f ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        w.c.
+                                                    }
+                                }
                         }
                     }
                     {
@@ -104,12 +148,32 @@
                     }
                     {
                         {
-                            e''8 :64 \pp
-                            e''4 :32 \repeatTie
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        w.c.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            c'8 :64 \pp \startTextSpan
+                            c'4 :32 \repeatTie
                         }
                         % [Violin 1 Voice] Measure 5
                         {
-                            e''4 :32 \repeatTie
+                            c'4 :32 \repeatTie
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -123,7 +187,18 @@
                     }
                     {
                         {
-                            e''16 -\accent \f
+                            c'16 -\accent \f ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        w.c.
+                                                    }
+                                }
                         }
                     }
                     {
@@ -134,7 +209,18 @@
                     {
                         % [Violin 1 Voice] Measure 7
                         {
-                            e''4 :32 \pp
+                            c'4 :32 \pp ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        w.c.
+                                                    }
+                                }
                         }
                     }
                     {
@@ -170,7 +256,18 @@
                     }
                     {
                         {
-                            e''16 -\accent \f
+                            c'16 -\accent \f ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        w.c.
+                                                    }
+                                }
                         }
                     }
                     {
@@ -181,14 +278,34 @@
                     {
                         % [Violin 2 Voice] Measure 2
                         {
-                            e''4 :32 \pp
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        w.c.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            c'4 :32 \pp \startTextSpan
                         }
                         {
-                            e''8 :64 \repeatTie
+                            c'8 :64 \repeatTie
                         }
                         % [Violin 2 Voice] Measure 3
                         {
-                            e''4 :32 \repeatTie
+                            c'4 :32 \repeatTie
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -199,7 +316,18 @@
                     {
                         % [Violin 2 Voice] Measure 4
                         {
-                            e''16 -\accent \f
+                            c'16 -\accent \f ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        w.c.
+                                                    }
+                                }
                         }
                     }
                     {
@@ -211,7 +339,18 @@
                     }
                     {
                         {
-                            e''16 -\accent \f
+                            c'16 -\accent \f ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        w.c.
+                                                    }
+                                }
                         }
                     }
                     {
@@ -221,22 +360,42 @@
                     }
                     {
                         {
-                            e''4 :32 \pp
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        w.c.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            c'4 :32 \pp \startTextSpan
                         }
                         % [Violin 2 Voice] Measure 5
                         {
-                            e''4 :32 \repeatTie
+                            c'4 :32 \repeatTie
                         }
                         {
-                            e''8 :64 \repeatTie
+                            c'8 :64 \repeatTie
                         }
                         % [Violin 2 Voice] Measure 6
                         {
-                            e''4. :32 \repeatTie
+                            c'4. :32 \repeatTie
                         }
                         % [Violin 2 Voice] Measure 7
                         {
-                            e''8 :64 \repeatTie
+                            c'8 :64 \repeatTie
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -272,7 +431,18 @@
                     }
                     {
                         {
-                            e''16 -\accent \f
+                            c'16 -\accent \f ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        w.c.
+                                                    }
+                                }
                         }
                     }
                     {
@@ -283,17 +453,37 @@
                     {
                         % [Viola Voice] Measure 2
                         {
-                            e''8 :64 \pp
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        w.c.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            c'8 :64 \pp \startTextSpan
                         }
                         {
-                            e''8 :64 \repeatTie
+                            c'8 :64 \repeatTie
                         }
                         {
-                            e''8 :64 \repeatTie
+                            c'8 :64 \repeatTie
                         }
                         % [Viola Voice] Measure 3
                         {
-                            e''8 :64 \repeatTie
+                            c'8 :64 \repeatTie
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -307,7 +497,18 @@
                     }
                     {
                         {
-                            e''16 -\accent \f
+                            c'16 -\accent \f ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        w.c.
+                                                    }
+                                }
                         }
                     }
                     {
@@ -318,18 +519,38 @@
                     }
                     {
                         {
-                            e''4 :32 \pp
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        w.c.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            c'4 :32 \pp \startTextSpan
                         }
                         % [Viola Voice] Measure 5
                         {
-                            e''8 :64 \repeatTie
+                            c'8 :64 \repeatTie
                         }
                         {
-                            e''4 :32 \repeatTie
+                            c'4 :32 \repeatTie
                         }
                         % [Viola Voice] Measure 6
                         {
-                            e''4 :32 \repeatTie
+                            c'4 :32 \repeatTie
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -343,8 +564,6 @@
                             \startStaff
                             R1 * 3/8
                             \bar "|."
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 }
@@ -369,7 +588,18 @@
                     {
                         % [Cello Voice] Measure 1
                         {
-                            e''16 -\accent \f
+                            c'16 -\accent \f ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        w.c.
+                                                    }
+                                }
                         }
                     }
                     {
@@ -381,7 +611,18 @@
                     {
                         % [Cello Voice] Measure 2
                         {
-                            e''4 :32 \pp
+                            c'4 :32 \pp ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        w.c.
+                                                    }
+                                }
                         }
                     }
                     {
@@ -392,7 +633,18 @@
                     {
                         % [Cello Voice] Measure 3
                         {
-                            e''16 -\accent \f
+                            c'16 -\accent \f ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        w.c.
+                                                    }
+                                }
                         }
                     }
                     {
@@ -404,7 +656,18 @@
                     {
                         % [Cello Voice] Measure 4
                         {
-                            e''8 :64 \pp
+                            c'8 :64 \pp ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        w.c.
+                                                    }
+                                }
                         }
                     }
                     {
@@ -414,7 +677,18 @@
                     }
                     {
                         {
-                            e''16 -\accent \f
+                            c'16 -\accent \f ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        w.c.
+                                                    }
+                                }
                         }
                     }
                     {
@@ -424,14 +698,34 @@
                     }
                     {
                         {
-                            e''4 :32 \pp
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        w.c.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            c'4 :32 \pp \startTextSpan
                         }
                         % [Cello Voice] Measure 5
                         {
-                            e''8 :64 \repeatTie
+                            c'8 :64 \repeatTie
                         }
                         {
-                            e''4 :32 \repeatTie
+                            c'4 :32 \repeatTie
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -441,14 +735,23 @@
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 3/8
-                            \stopStaff
-                            \startStaff
                         }
                     }
                     {
                         % [Cello Voice] Measure 7
                         {
-                            e''16 -\accent \f
+                            c'16 -\accent \f ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        w.c.
+                                                    }
+                                }
                         }
                     }
                     {

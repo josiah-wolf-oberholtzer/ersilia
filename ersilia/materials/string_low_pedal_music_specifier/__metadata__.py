@@ -4,6 +4,6 @@ from abjad import *
 
 metadata = datastructuretools.TypedOrderedDict(
     [
-        ('view_name', 'pedal'),
+        ('output_material_class_name', 'MusicSpecifier'),
         ]
     )

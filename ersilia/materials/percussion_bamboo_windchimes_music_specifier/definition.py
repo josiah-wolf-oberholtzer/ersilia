@@ -5,6 +5,7 @@ from abjad.tools import indicatortools
 from abjad.tools import rhythmmakertools
 from abjad.tools import selectortools
 from abjad.tools import spannertools
+from ersilia.materials import abbreviations
 
 
 percussion_bamboo_windchimes_music_specifier = consort.MusicSpecifier(
@@ -28,6 +29,7 @@ percussion_bamboo_windchimes_music_specifier = consort.MusicSpecifier(
                 .by_duration('>', (1, 16), preprolated=True)
                 [0]
             ),
+        text_spanner=abbreviations.make_text_spanner('w.c.'),
         tremolo=consort.AttachmentExpression(
             attachments=spannertools.StemTremoloSpanner(),
             selector=selectortools.Selector()

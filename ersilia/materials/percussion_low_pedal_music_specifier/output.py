@@ -1,5 +1,6 @@
 # -*- encoding: utf-8 -*-
 from abjad.tools import datastructuretools
+from abjad.tools import durationtools
 from abjad.tools import indicatortools
 from abjad.tools import markuptools
 from abjad.tools import mathtools
@@ -11,7 +12,7 @@ from abjad.tools import spannertools
 import consort
 
 
-percussion_low_rolls_music_specifier = consort.tools.MusicSpecifier(
+percussion_low_pedal_music_specifier = consort.tools.MusicSpecifier(
     attachment_handler=consort.tools.AttachmentHandler(
         accents=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
@@ -191,6 +192,7 @@ percussion_low_rolls_music_specifier = consort.tools.MusicSpecifier(
         ),
     color='red',
     labels=(),
+    minimum_phrase_duration=durationtools.Duration(3, 2),
     pitch_handler=consort.tools.AbsolutePitchHandler(
         pitch_application_rate='phrase',
         pitch_specifier=consort.tools.PitchSpecifier(

@@ -30,6 +30,12 @@ view_inventory=idetools.ViewInventory(
                 ),
             ),
         (
+            'pedal',
+            idetools.View(
+                ["'pedal' in :ds:"]
+                ),
+            ),
+        (
             'percussion',
             idetools.View(
                 ["'percussion' in :ds:"]

@@ -9,7 +9,7 @@ from abjad.tools import spannertools
 from ersilia.materials import abbreviations
 
 
-percussion_low_rolls_music_specifier = consort.MusicSpecifier(
+percussion_low_pedal_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
         accents=consort.AttachmentExpression(
             attachments=indicatortools.Articulation('accent'),
@@ -47,6 +47,7 @@ percussion_low_rolls_music_specifier = consort.MusicSpecifier(
         ),
     color='red',
     labels=[],
+    minimum_phrase_duration=(3, 2),
     pitch_handler=consort.AbsolutePitchHandler(
         pitch_application_rate='phrase',
         pitch_specifier=pitchtools.PitchSegment([
