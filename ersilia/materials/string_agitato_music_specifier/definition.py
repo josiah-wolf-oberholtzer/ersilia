@@ -10,6 +10,7 @@ from ersilia.materials import abbreviations
 string_agitato_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
         dynamic_expressions=consort.DynamicExpression(
+            division_period=2,
             dynamic_tokens='mp fff',
             start_dynamic_tokens='f',
             stop_dynamic_tokens='mf',

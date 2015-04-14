@@ -35,6 +35,7 @@ wind_agitato_music_specifier = consort.MusicSpecifier(
                 [0]
             ),
         dynamic_expressions=consort.DynamicExpression(
+            division_period=2,
             dynamic_tokens='mf mp fff',
             start_dynamic_tokens='f',
             stop_dynamic_tokens='mf',
