@@ -33,15 +33,25 @@ piano_arm_cluster_music_specifier = consort.tools.MusicSpecifier(
         dynamic_expressions=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [
-                    consort.tools.DynamicExpression(
-                        dynamic_tokens=datastructuretools.CyclicTuple(
-                            ['fff']
-                            ),
-                        transitions=datastructuretools.CyclicTuple(
-                            [None]
-                            ),
+                    indicatortools.Dynamic(
+                        name='fff',
                         ),
                     ]
+                ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.LogicalTieSelectorCallback(
+                        flatten=True,
+                        pitched=True,
+                        trivial=True,
+                        only_with_head=False,
+                        only_with_tail=False,
+                        ),
+                    selectortools.ItemSelectorCallback(
+                        item=0,
+                        apply_to_each=True,
+                        ),
+                    ),
                 ),
             ),
         ),

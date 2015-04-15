@@ -12,7 +12,12 @@ piano_arm_cluster_music_specifier = consort.MusicSpecifier(
             selector=selectortools.Selector()
                 .by_logical_tie(pitched=True)[0],
             ),
-        dynamic_expressions=consort.DynamicExpression('fff'),
+        dynamic_expressions=consort.AttachmentExpression(
+            attachments=indicatortools.Dynamic('fff'),
+            selector=selectortools.Selector()
+                .by_logical_tie(pitched=True)
+                [0]
+            ),
         ),
     color='yellow',
     labels=[],
