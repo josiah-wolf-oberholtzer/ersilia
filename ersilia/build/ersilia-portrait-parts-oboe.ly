@@ -5,7 +5,7 @@
 
 #(ly:set-option 'relative-includes #t)
 \include "../stylesheets/stylesheet.ily"
-\include "../../stylesheets/parts-portrait.ily"
+\include "../stylesheets/parts-portrait.ily"
 
 \score {
     \keepWithTag #'(time oboe)
