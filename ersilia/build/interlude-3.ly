@@ -1,12 +1,12 @@
     \context Score = "Ersilia Score" \with {
-        currentBarNumber = #123
+        currentBarNumber = #145
     } <<
         \tag #'time
         \repeat volta 2
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 5/4
-                \tempo 4=32
+                \time 6/4
+                \tempo 4=48
                 \mark \markup {
                     \concat
                         {
@@ -21,7 +21,7 @@
                                 "Interlude ii"
                         }
                     }
-                s1 * 5/4
+                s1 * 3/2
                     ^ \markup {
                         \box
                             \pad-around
@@ -33,8 +33,27 @@
                                             1
                                         " : "
                                         \fraction
-                                            5
-                                            4
+                                            3
+                                            2
+                                    }
+                        }
+            }
+            {
+                \time 2/4
+                s1 * 1/2
+                    ^ \markup {
+                        \box
+                            \pad-around
+                                #0.5
+                                \concat
+                                    {
+                                        \fraction
+                                            3
+                                            2
+                                        " : "
+                                        \fraction
+                                            2
+                                            1
                                     }
                         }
             }
@@ -48,12 +67,16 @@
                 \set Staff.shortInstrumentName = \markup { Fl. }
                 \context Voice = "Flute Voice" {
                     {
-                        % [Flute Voice] Measure 123
+                        % [Flute Voice] Measure 145
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/4
+                            R1 * 3/2
+                        }
+                        % [Flute Voice] Measure 146
+                        {
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -68,12 +91,16 @@
                 \set Staff.shortInstrumentName = \markup { Ob. }
                 \context Voice = "Oboe Voice" {
                     {
-                        % [Oboe Voice] Measure 123
+                        % [Oboe Voice] Measure 145
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/4
+                            R1 * 3/2
+                        }
+                        % [Oboe Voice] Measure 146
+                        {
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -88,12 +115,16 @@
                 \set Staff.shortInstrumentName = \markup { Bass cl. }
                 \context Voice = "Clarinet Voice" {
                     {
-                        % [Clarinet Voice] Measure 123
+                        % [Clarinet Voice] Measure 145
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/4
+                            R1 * 3/2
+                        }
+                        % [Clarinet Voice] Measure 146
+                        {
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -108,12 +139,16 @@
                 \set Staff.shortInstrumentName = \markup { Bar. sax. }
                 \context Voice = "Saxophone Voice" {
                     {
-                        % [Saxophone Voice] Measure 123
+                        % [Saxophone Voice] Measure 145
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/4
+                            R1 * 3/2
+                        }
+                        % [Saxophone Voice] Measure 146
+                        {
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -131,12 +166,16 @@
                     \set Staff.shortInstrumentName = \markup { Pp. }
                     \context Voice = "Guitar Pitch Pipe Voice" {
                         {
-                            % [Guitar Pitch Pipe Voice] Measure 123
+                            % [Guitar Pitch Pipe Voice] Measure 145
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 5/4
+                                R1 * 3/2
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 146
+                            {
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -150,12 +189,16 @@
                     \set Staff.shortInstrumentName = \markup { Gt. }
                     \context Voice = "Guitar Voice" {
                         {
-                            % [Guitar Voice] Measure 123
+                            % [Guitar Voice] Measure 145
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 5/4
+                                R1 * 3/2
+                            }
+                            % [Guitar Voice] Measure 146
+                            {
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -172,12 +215,16 @@
                     \set Staff.shortInstrumentName = \markup { Pp. }
                     \context Voice = "Piano Pitch Pipe Voice" {
                         {
-                            % [Piano Pitch Pipe Voice] Measure 123
+                            % [Piano Pitch Pipe Voice] Measure 145
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 5/4
+                                R1 * 3/2
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 146
+                            {
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -192,12 +239,16 @@
                         \clef "treble"
                         \context Voice = "Piano Upper Voice" {
                             {
-                                % [Piano Upper Voice] Measure 123
+                                % [Piano Upper Voice] Measure 145
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 5/4
+                                    R1 * 3/2
+                                }
+                                % [Piano Upper Voice] Measure 146
+                                {
+                                    R1 * 1/2
                                     \stopStaff
                                     \startStaff
                                 }
@@ -209,12 +260,16 @@
                         \clef "bass"
                         \context Voice = "Piano Lower Voice" {
                             {
-                                % [Piano Lower Voice] Measure 123
+                                % [Piano Lower Voice] Measure 145
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 5/4
+                                    R1 * 3/2
+                                }
+                                % [Piano Lower Voice] Measure 146
+                                {
+                                    R1 * 1/2
                                     \stopStaff
                                     \startStaff
                                 }
@@ -223,9 +278,13 @@
                     }
                     \context Dynamics = "Piano Pedals Voice" {
                         {
-                            % [Piano Pedals Voice] Measure 123
+                            % [Piano Pedals Voice] Measure 145
                             {
-                                R1 * 5/4
+                                R1 * 3/2
+                            }
+                            % [Piano Pedals Voice] Measure 146
+                            {
+                                R1 * 1/2
                             }
                         }
                     }
@@ -240,12 +299,16 @@
                     \set Staff.shortInstrumentName = \markup { Pp. }
                     \context Voice = "Percussion Pitch Pipe Voice" {
                         {
-                            % [Percussion Pitch Pipe Voice] Measure 123
+                            % [Percussion Pitch Pipe Voice] Measure 145
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 5/4
+                                R1 * 3/2
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 146
+                            {
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -257,12 +320,16 @@
                     \clef "percussion"
                     \context Voice = "Percussion Voice" {
                         {
-                            % [Percussion Voice] Measure 123
+                            % [Percussion Voice] Measure 145
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 5/4
+                                R1 * 3/2
+                            }
+                            % [Percussion Voice] Measure 146
+                            {
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -280,12 +347,16 @@
                 \set Staff.shortInstrumentName = \markup { Vn. }
                 \context Voice = "Violin Voice" {
                     {
-                        % [Violin Voice] Measure 123
+                        % [Violin Voice] Measure 145
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/4
+                            R1 * 3/2
+                        }
+                        % [Violin Voice] Measure 146
+                        {
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -300,12 +371,16 @@
                 \set Staff.shortInstrumentName = \markup { Vn. }
                 \context Voice = "Viola Voice" {
                     {
-                        % [Viola Voice] Measure 123
+                        % [Viola Voice] Measure 145
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/4
+                            R1 * 3/2
+                        }
+                        % [Viola Voice] Measure 146
+                        {
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -320,12 +395,16 @@
                 \set Staff.shortInstrumentName = \markup { Vc. }
                 \context Voice = "Cello Voice" {
                     {
-                        % [Cello Voice] Measure 123
+                        % [Cello Voice] Measure 145
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/4
+                            R1 * 3/2
+                        }
+                        % [Cello Voice] Measure 146
+                        {
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
@@ -341,12 +420,16 @@
                     \set Staff.shortInstrumentName = \markup { Pp. }
                     \context Voice = "Contrabass Pitch Pipe Voice" {
                         {
-                            % [Contrabass Pitch Pipe Voice] Measure 123
+                            % [Contrabass Pitch Pipe Voice] Measure 145
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 5/4
+                                R1 * 3/2
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 146
+                            {
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -360,12 +443,16 @@
                     \set Staff.shortInstrumentName = \markup { Cb. }
                     \context Voice = "Contrabass Voice" {
                         {
-                            % [Contrabass Voice] Measure 123
+                            % [Contrabass Voice] Measure 145
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 5/4
+                                R1 * 3/2
+                            }
+                            % [Contrabass Voice] Measure 146
+                            {
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }

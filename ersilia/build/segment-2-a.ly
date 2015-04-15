@@ -2271,17 +2271,17 @@
                         {
                             {
                                 \once \override Hairpin.circled-tip = ##t
-                                d'8 \<
-                                d'4 \repeatTie
+                                d8 \<
+                                d4 \repeatTie
                             }
                             % [Contrabass Voice] Measure 29
                             {
-                                d'2. \repeatTie
-                                d'2 \repeatTie
+                                d2. \repeatTie
+                                d2 \repeatTie
                             }
                             % [Contrabass Voice] Measure 30
                             {
-                                d'2 \p \repeatTie
+                                d2 \p \repeatTie
                             }
                         }
                         {
@@ -2292,15 +2292,15 @@
                         {
                             {
                                 \once \override Hairpin.circled-tip = ##t
-                                f'2 \<
+                                f2 \<
                             }
                             % [Contrabass Voice] Measure 31
                             {
-                                f'1. \repeatTie
+                                f1. \repeatTie
                             }
                             % [Contrabass Voice] Measure 32
                             {
-                                f'4. \ppp \repeatTie
+                                f4. \ppp \repeatTie
                             }
                         }
                         {
@@ -2337,24 +2337,24 @@
                         {
                             {
                                 \once \override Hairpin.circled-tip = ##t
-                                d'4. \<
+                                d4. \<
                             }
                             % [Contrabass Voice] Measure 38
                             {
-                                d'8 \repeatTie [ \glissando
+                                d8 \repeatTie [ \glissando
                                 \set stemLeftBeamCount = 1
                                 \set stemRightBeamCount = 1
-                                dqs'8 -\accent \glissando
+                                dqs8 -\accent \glissando
                                 \set stemLeftBeamCount = 1
                                 \set stemRightBeamCount = 1
-                                d'8 -\accent
+                                d8 -\accent
                                 \set stemLeftBeamCount = 1
-                                d'8 -\accent ]
+                                d8 -\accent ]
                             }
                             % [Contrabass Voice] Measure 39
                             {
-                                d'2. \repeatTie
-                                d'4. \p \repeatTie
+                                d2. \repeatTie
+                                d4. \p \repeatTie
                             }
                         }
                         {

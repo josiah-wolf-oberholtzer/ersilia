@@ -257,11 +257,11 @@
         }
         \context WindSectionStaffGroup = "Wind Section Staff Group" <<
             \tag #'flute
-            \bar "||"
             \context FluteStaff = "Flute Staff" {
                 \clef "treble"
                 \set Staff.instrumentName = \markup { Flute }
                 \set Staff.shortInstrumentName = \markup { Fl. }
+                \bar "||"
                 \context Voice = "Flute Voice" {
                     {
                         % [Flute Voice] Measure 42
@@ -321,11 +321,11 @@
                 }
             }
             \tag #'oboe
-            \bar "||"
             \context OboeStaff = "Oboe Staff" {
                 \clef "treble"
                 \set Staff.instrumentName = \markup { Oboe }
                 \set Staff.shortInstrumentName = \markup { Ob. }
+                \bar "||"
                 \context Voice = "Oboe Voice" {
                     {
                         % [Oboe Voice] Measure 42
@@ -385,11 +385,11 @@
                 }
             }
             \tag #'clarinet
-            \bar "||"
             \context ClarinetStaff = "Clarinet Staff" {
                 \clef "treble"
                 \set Staff.instrumentName = \markup { Bass clarinet }
                 \set Staff.shortInstrumentName = \markup { Bass cl. }
+                \bar "||"
                 \context Voice = "Clarinet Voice" {
                     {
                         % [Clarinet Voice] Measure 42
@@ -483,11 +483,11 @@
                 }
             }
             \tag #'saxophone
-            \bar "||"
             \context SaxophoneStaff = "Saxophone Staff" {
                 \clef "treble"
                 \set Staff.instrumentName = \markup { Baritone saxophone }
                 \set Staff.shortInstrumentName = \markup { Bar. sax. }
+                \bar "||"
                 \context Voice = "Saxophone Voice" {
                     {
                         % [Saxophone Voice] Measure 42
@@ -798,11 +798,11 @@
         \context PercussionSectionStaffGroup = "Percussion Section Staff Group" <<
             \tag #'guitar
             \context GuitarStaffGroup = "Guitar Staff Group" <<
-                \bar "||"
                 \context PitchPipes = "Guitar Pitch Pipe Staff" {
                     \clef "percussion"
                     \set Staff.instrumentName = \markup { Pitch pipes }
                     \set Staff.shortInstrumentName = \markup { Pp. }
+                    \bar "||"
                     \context Voice = "Guitar Pitch Pipe Voice" {
                         {
                             % [Guitar Pitch Pipe Voice] Measure 42
@@ -861,11 +861,11 @@
                         }
                     }
                 }
-                \bar "||"
                 \context GuitarStaff = "Guitar Staff" {
                     \clef "treble_8"
                     \set Staff.instrumentName = \markup { Guitar }
                     \set Staff.shortInstrumentName = \markup { Gt. }
+                    \bar "||"
                     \context Voice = "Guitar Voice" {
                         {
                             % [Guitar Voice] Measure 42
@@ -996,11 +996,11 @@
             >>
             \tag #'piano
             \context PianoStaffGroup = "Piano Staff Group" <<
-                \bar "||"
                 \context PitchPipes = "Piano Pitch Pipe Staff" {
                     \clef "percussion"
                     \set Staff.instrumentName = \markup { Pitch pipes }
                     \set Staff.shortInstrumentName = \markup { Pp. }
+                    \bar "||"
                     \context Voice = "Piano Pitch Pipe Voice" {
                         {
                             % [Piano Pitch Pipe Voice] Measure 42
@@ -1062,9 +1062,9 @@
                 \context PianoStaff = "Piano Staff" <<
                     \set PianoStaff.instrumentName = \markup { Piano }
                     \set PianoStaff.shortInstrumentName = \markup { Pf. }
-                    \bar "||"
                     \context PianoUpperStaff = "Piano Upper Staff" {
                         \clef "treble"
+                        \bar "||"
                         \context Voice = "Piano Upper Voice" {
                             {
                                 % [Piano Upper Voice] Measure 42
@@ -1229,9 +1229,9 @@
                             }
                         }
                     }
-                    \bar "||"
                     \context PianoLowerStaff = "Piano Lower Staff" {
                         \clef "bass"
+                        \bar "||"
                         \context Voice = "Piano Lower Voice" {
                             {
                                 % [Piano Lower Voice] Measure 42
@@ -1346,11 +1346,11 @@
             >>
             \tag #'percussion
             \context PercussionStaffGroup = "Percussion Staff Group" <<
-                \bar "||"
                 \context PitchPipes = "Percussion Pitch Pipe Staff" {
                     \clef "percussion"
                     \set Staff.instrumentName = \markup { Pitch pipes }
                     \set Staff.shortInstrumentName = \markup { Pp. }
+                    \bar "||"
                     \context Voice = "Percussion Pitch Pipe Voice" {
                         {
                             % [Percussion Pitch Pipe Voice] Measure 42
@@ -1409,9 +1409,9 @@
                         }
                     }
                 }
-                \bar "||"
                 \context PercussionStaff = "Percussion Staff" {
                     \clef "percussion"
+                    \bar "||"
                     \context Voice = "Percussion Voice" {
                         {
                             % [Percussion Voice] Measure 42
@@ -1763,11 +1763,11 @@
         >>
         \context StringSectionStaffGroup = "String Section Staff Group" <<
             \tag #'violin
-            \bar "||"
             \context ViolinStaff = "Violin Staff" {
                 \clef "treble"
                 \set Staff.instrumentName = \markup { Violin }
                 \set Staff.shortInstrumentName = \markup { Vn. }
+                \bar "||"
                 \context Voice = "Violin Voice" {
                     {
                         \override Beam #'color = #red
@@ -1924,11 +1924,11 @@
                 }
             }
             \tag #'viola
-            \bar "||"
             \context ViolaStaff = "Viola Staff" {
                 \clef "alto"
                 \set Staff.instrumentName = \markup { Violin }
                 \set Staff.shortInstrumentName = \markup { Vn. }
+                \bar "||"
                 \context Voice = "Viola Voice" {
                     {
                         \override Beam #'color = #red
@@ -2108,11 +2108,11 @@
                 }
             }
             \tag #'cello
-            \bar "||"
             \context CelloStaff = "Cello Staff" {
                 \clef "bass"
                 \set Staff.instrumentName = \markup { Cello }
                 \set Staff.shortInstrumentName = \markup { Vc. }
+                \bar "||"
                 \context Voice = "Cello Voice" {
                     {
                         \override Beam #'color = #red
@@ -2273,11 +2273,11 @@
             }
             \tag #'contrabass
             \context ContrabassStaffGroup = "Contrabass Staff Group" <<
-                \bar "||"
                 \context PitchPipes = "Contrabass Pitch Pipe Staff" {
                     \clef "percussion"
                     \set Staff.instrumentName = \markup { Pitch pipes }
                     \set Staff.shortInstrumentName = \markup { Pp. }
+                    \bar "||"
                     \context Voice = "Contrabass Pitch Pipe Voice" {
                         {
                             % [Contrabass Pitch Pipe Voice] Measure 42
@@ -2336,11 +2336,11 @@
                         }
                     }
                 }
-                \bar "||"
                 \context ContrabassStaff = "Contrabass Staff" {
                     \clef "bass"
                     \set Staff.instrumentName = \markup { Contrabass }
                     \set Staff.shortInstrumentName = \markup { Cb. }
+                    \bar "||"
                     \context Voice = "Contrabass Voice" {
                         {
                             % [Contrabass Voice] Measure 42
