@@ -17,7 +17,7 @@ metadata = datastructuretools.TypedOrderedDict(
                     ('Guitar Staff', 'guitar'),
                     ('Oboe Staff', 'oboe'),
                     ('Percussion Pitch Pipe Staff', 'pitch pipes'),
-                    ('Percussion Staff', None),
+                    ('Percussion Staff', 'percussion'),
                     ('Piano Lower Staff', 'piano'),
                     ('Piano Pitch Pipe Staff', 'pitch pipes'),
                     ('Piano Upper Staff', 'piano'),
@@ -40,7 +40,7 @@ metadata = datastructuretools.TypedOrderedDict(
             ),
         ('first_bar_number', 1),
         ('is_repeated', None),
-        ('measure_count', 29),
+        ('measure_count', 27),
         ('segment_count', 11),
         ('segment_number', 1),
         ]

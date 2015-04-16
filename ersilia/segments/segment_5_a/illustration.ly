@@ -8,12 +8,12 @@
 
 \score {
     \context Score = "Ersilia Score" \with {
-        currentBarNumber = #113
+        currentBarNumber = #140
     } <<
         \tag #'time
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 6/4
+                \time 4/4
                 \tempo 4=48
                 \mark \markup {
                     \concat
@@ -29,306 +29,84 @@
                                 "Scene V/a"
                         }
                     }
-                s1 * 3/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            0
-                                            1
-                                        " : "
-                                        \fraction
-                                            3
-                                            2
-                                    }
-                        }
+                s1 * 1
             }
             {
-                \time 2/4
+                \time 4/8
                 s1 * 1/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            3
-                                            2
-                                        " : "
-                                        \fraction
-                                            2
-                                            1
-                                    }
-                        }
             }
             {
-                \time 9/8
-                s1 * 9/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            2
-                                            1
-                                        " : "
-                                        \fraction
-                                            25
-                                            8
-                                    }
-                        }
-            }
-            {
-                \time 2/4
                 s1 * 1/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            25
-                                            8
-                                        " : "
-                                        \fraction
-                                            29
-                                            8
-                                    }
-                        }
             }
             {
-                \time 6/4
-                s1 * 3/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            29
-                                            8
-                                        " : "
-                                        \fraction
-                                            41
-                                            8
-                                    }
-                        }
-            }
-            {
-                \time 3/4
-                s1 * 3/4
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            41
-                                            8
-                                        " : "
-                                        \fraction
-                                            47
-                                            8
-                                    }
-                        }
-            }
-            {
-                \time 9/8
-                s1 * 9/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            47
-                                            8
-                                        " : "
-                                        \fraction
-                                            7
-                                            1
-                                    }
-                        }
-            }
-            {
-                \time 2/4
                 s1 * 1/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            7
-                                            1
-                                        " : "
-                                        \fraction
-                                            15
-                                            2
-                                    }
-                        }
             }
             {
-                \time 6/4
-                s1 * 3/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            15
-                                            2
-                                        " : "
-                                        \fraction
-                                            9
-                                            1
-                                    }
-                        }
+                \time 5/8
+                s1 * 5/8
             }
             {
-                \time 2/4
+                \time 4/8
                 s1 * 1/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            9
-                                            1
-                                        " : "
-                                        \fraction
-                                            19
-                                            2
-                                    }
-                        }
-            }
-            {
-                \time 6/4
-                s1 * 3/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            19
-                                            2
-                                        " : "
-                                        \fraction
-                                            11
-                                            1
-                                    }
-                        }
             }
             {
                 \time 6/8
                 s1 * 3/4
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            11
-                                            1
-                                        " : "
-                                        \fraction
-                                            47
-                                            4
-                                    }
-                        }
             }
             {
-                \time 2/4
+                \time 7/8
+                s1 * 7/8
+            }
+            {
+                \time 5/8
+                s1 * 5/8
+            }
+            {
+                \time 6/8
+                s1 * 3/4
+            }
+            {
+                \time 4/8
                 s1 * 1/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            47
-                                            4
-                                        " : "
-                                        \fraction
-                                            49
-                                            4
-                                    }
-                        }
             }
             {
-                \time 9/8
-                s1 * 9/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            49
-                                            4
-                                        " : "
-                                        \fraction
-                                            107
-                                            8
-                                    }
-                        }
+                \time 7/8
+                s1 * 7/8
             }
             {
-                \time 2/4
+                \time 4/4
+                s1 * 1
+            }
+            {
+                \time 4/8
                 s1 * 1/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            107
-                                            8
-                                        " : "
-                                        \fraction
-                                            111
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 1/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            111
-                                            8
-                                        " : "
-                                        \fraction
-                                            115
-                                            8
-                                    }
-                        }
+            }
+            {
+                \time 4/4
+                s1 * 1
+            }
+            {
+                \time 6/8
+                s1 * 3/4
+            }
+            {
+                \time 4/8
+                s1 * 1/2
+            }
+            {
+                \time 4/4
+                s1 * 1
+            }
+            {
+                \time 5/8
+                s1 * 5/8
+            }
+            {
+                \time 4/8
+                s1 * 1/2
             }
         }
         \context WindSectionStaffGroup = "Wind Section Staff Group" <<
@@ -340,70 +118,90 @@
                 \bar "||"
                 \context Voice = "Flute Voice" {
                     {
-                        % [Flute Voice] Measure 113
+                        % [Flute Voice] Measure 140
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/2
+                            R1 * 1
                         }
-                        % [Flute Voice] Measure 114
+                        % [Flute Voice] Measure 141
                         {
                             R1 * 1/2
                         }
-                        % [Flute Voice] Measure 115
-                        {
-                            R1 * 9/8
-                        }
-                        % [Flute Voice] Measure 116
+                        % [Flute Voice] Measure 142
                         {
                             R1 * 1/2
                         }
-                        % [Flute Voice] Measure 117
+                        % [Flute Voice] Measure 143
                         {
-                            R1 * 3/2
+                            R1 * 1/2
                         }
-                        % [Flute Voice] Measure 118
+                        % [Flute Voice] Measure 144
+                        {
+                            R1 * 5/8
+                        }
+                        % [Flute Voice] Measure 145
+                        {
+                            R1 * 1/2
+                        }
+                        % [Flute Voice] Measure 146
                         {
                             R1 * 3/4
                         }
-                        % [Flute Voice] Measure 119
+                        % [Flute Voice] Measure 147
                         {
-                            R1 * 9/8
+                            R1 * 7/8
                         }
-                        % [Flute Voice] Measure 120
+                        % [Flute Voice] Measure 148
                         {
-                            R1 * 1/2
+                            R1 * 5/8
                         }
-                        % [Flute Voice] Measure 121
-                        {
-                            R1 * 3/2
-                        }
-                        % [Flute Voice] Measure 122
-                        {
-                            R1 * 1/2
-                        }
-                        % [Flute Voice] Measure 123
-                        {
-                            R1 * 3/2
-                        }
-                        % [Flute Voice] Measure 124
+                        % [Flute Voice] Measure 149
                         {
                             R1 * 3/4
                         }
-                        % [Flute Voice] Measure 125
+                        % [Flute Voice] Measure 150
                         {
                             R1 * 1/2
                         }
-                        % [Flute Voice] Measure 126
+                        % [Flute Voice] Measure 151
                         {
-                            R1 * 9/8
+                            R1 * 7/8
                         }
-                        % [Flute Voice] Measure 127
+                        % [Flute Voice] Measure 152
+                        {
+                            R1 * 1
+                        }
+                        % [Flute Voice] Measure 153
                         {
                             R1 * 1/2
                         }
-                        % [Flute Voice] Measure 128
+                        % [Flute Voice] Measure 154
+                        {
+                            R1 * 1/2
+                        }
+                        % [Flute Voice] Measure 155
+                        {
+                            R1 * 1
+                        }
+                        % [Flute Voice] Measure 156
+                        {
+                            R1 * 3/4
+                        }
+                        % [Flute Voice] Measure 157
+                        {
+                            R1 * 1/2
+                        }
+                        % [Flute Voice] Measure 158
+                        {
+                            R1 * 1
+                        }
+                        % [Flute Voice] Measure 159
+                        {
+                            R1 * 5/8
+                        }
+                        % [Flute Voice] Measure 160
                         {
                             R1 * 1/2
                             \stopStaff
@@ -420,70 +218,90 @@
                 \bar "||"
                 \context Voice = "Oboe Voice" {
                     {
-                        % [Oboe Voice] Measure 113
+                        % [Oboe Voice] Measure 140
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/2
+                            R1 * 1
                         }
-                        % [Oboe Voice] Measure 114
+                        % [Oboe Voice] Measure 141
                         {
                             R1 * 1/2
                         }
-                        % [Oboe Voice] Measure 115
-                        {
-                            R1 * 9/8
-                        }
-                        % [Oboe Voice] Measure 116
+                        % [Oboe Voice] Measure 142
                         {
                             R1 * 1/2
                         }
-                        % [Oboe Voice] Measure 117
+                        % [Oboe Voice] Measure 143
                         {
-                            R1 * 3/2
+                            R1 * 1/2
                         }
-                        % [Oboe Voice] Measure 118
+                        % [Oboe Voice] Measure 144
+                        {
+                            R1 * 5/8
+                        }
+                        % [Oboe Voice] Measure 145
+                        {
+                            R1 * 1/2
+                        }
+                        % [Oboe Voice] Measure 146
                         {
                             R1 * 3/4
                         }
-                        % [Oboe Voice] Measure 119
+                        % [Oboe Voice] Measure 147
                         {
-                            R1 * 9/8
+                            R1 * 7/8
                         }
-                        % [Oboe Voice] Measure 120
+                        % [Oboe Voice] Measure 148
                         {
-                            R1 * 1/2
+                            R1 * 5/8
                         }
-                        % [Oboe Voice] Measure 121
-                        {
-                            R1 * 3/2
-                        }
-                        % [Oboe Voice] Measure 122
-                        {
-                            R1 * 1/2
-                        }
-                        % [Oboe Voice] Measure 123
-                        {
-                            R1 * 3/2
-                        }
-                        % [Oboe Voice] Measure 124
+                        % [Oboe Voice] Measure 149
                         {
                             R1 * 3/4
                         }
-                        % [Oboe Voice] Measure 125
+                        % [Oboe Voice] Measure 150
                         {
                             R1 * 1/2
                         }
-                        % [Oboe Voice] Measure 126
+                        % [Oboe Voice] Measure 151
                         {
-                            R1 * 9/8
+                            R1 * 7/8
                         }
-                        % [Oboe Voice] Measure 127
+                        % [Oboe Voice] Measure 152
+                        {
+                            R1 * 1
+                        }
+                        % [Oboe Voice] Measure 153
                         {
                             R1 * 1/2
                         }
-                        % [Oboe Voice] Measure 128
+                        % [Oboe Voice] Measure 154
+                        {
+                            R1 * 1/2
+                        }
+                        % [Oboe Voice] Measure 155
+                        {
+                            R1 * 1
+                        }
+                        % [Oboe Voice] Measure 156
+                        {
+                            R1 * 3/4
+                        }
+                        % [Oboe Voice] Measure 157
+                        {
+                            R1 * 1/2
+                        }
+                        % [Oboe Voice] Measure 158
+                        {
+                            R1 * 1
+                        }
+                        % [Oboe Voice] Measure 159
+                        {
+                            R1 * 5/8
+                        }
+                        % [Oboe Voice] Measure 160
                         {
                             R1 * 1/2
                             \stopStaff
@@ -500,31 +318,39 @@
                 \bar "||"
                 \context Voice = "Clarinet Voice" {
                     {
-                        % [Clarinet Voice] Measure 113
+                        % [Clarinet Voice] Measure 140
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/2
+                            R1 * 1
+                        }
+                        % [Clarinet Voice] Measure 141
+                        {
+                            R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
                     }
                     \transpose bf, c'
                     {
-                        % [Clarinet Voice] Measure 114
+                        % [Clarinet Voice] Measure 142
                         {
                             \once \override Hairpin.circled-tip = ##t
                             d,2 \<
                         }
-                        % [Clarinet Voice] Measure 115
+                        % [Clarinet Voice] Measure 143
                         {
-                            d,2. \repeatTie
-                            d,4. \p \repeatTie
+                            d,2 \repeatTie
+                        }
+                        % [Clarinet Voice] Measure 144
+                        {
+                            d,4. \repeatTie
+                            d,4 \p \repeatTie
                         }
                     }
                     {
-                        % [Clarinet Voice] Measure 116
+                        % [Clarinet Voice] Measure 145
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -536,37 +362,47 @@
                     }
                     \transpose bf, c'
                     {
-                        % [Clarinet Voice] Measure 117
+                        % [Clarinet Voice] Measure 146
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            d,1. \<
+                            d,2. \<
                         }
-                        % [Clarinet Voice] Measure 118
+                        % [Clarinet Voice] Measure 147
                         {
-                            d,2. \repeatTie
+                            d,2.. \repeatTie
                         }
-                        % [Clarinet Voice] Measure 119
+                        % [Clarinet Voice] Measure 148
                         {
-                            d,4 \ppp \repeatTie
+                            \once \override Hairpin.circled-tip = ##t
+                            d,4. \ppp \repeatTie \>
+                            d,4 \repeatTie
+                        }
+                        % [Clarinet Voice] Measure 149
+                        {
+                            d,4 \repeatTie
                         }
                     }
                     {
                         {
-                            r8
-                            r2.
+                            r8 \!
+                            r4.
                         }
-                        % [Clarinet Voice] Measure 120
+                        % [Clarinet Voice] Measure 150
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 1/2
                         }
-                        % [Clarinet Voice] Measure 121
+                        % [Clarinet Voice] Measure 151
                         {
-                            R1 * 3/2
+                            R1 * 7/8
                         }
-                        % [Clarinet Voice] Measure 122
+                        % [Clarinet Voice] Measure 152
+                        {
+                            R1 * 1
+                        }
+                        % [Clarinet Voice] Measure 153
                         {
                             R1 * 1/2
                             \stopStaff
@@ -575,12 +411,16 @@
                     }
                     \transpose bf, c'
                     {
-                        % [Clarinet Voice] Measure 123
+                        % [Clarinet Voice] Measure 154
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            d,1. \<
+                            d,2 \<
                         }
-                        % [Clarinet Voice] Measure 124
+                        % [Clarinet Voice] Measure 155
+                        {
+                            d,1 \repeatTie
+                        }
+                        % [Clarinet Voice] Measure 156
                         {
                             d,4. \p \repeatTie
                         }
@@ -589,10 +429,9 @@
                         {
                             r4.
                         }
-                        % [Clarinet Voice] Measure 125
+                        % [Clarinet Voice] Measure 157
                         {
-                            r4
-                            r8
+                            r4.
                         }
                     }
                     \transpose bf, c'
@@ -601,18 +440,18 @@
                             \once \override Hairpin.circled-tip = ##t
                             f,8 \<
                         }
-                        % [Clarinet Voice] Measure 126
+                        % [Clarinet Voice] Measure 158
                         {
-                            f,2. \repeatTie
-                            f,4. \repeatTie
+                            f,1 \repeatTie
                         }
-                        % [Clarinet Voice] Measure 127
+                        % [Clarinet Voice] Measure 159
                         {
-                            f,2 \ppp \repeatTie
+                            f,4. \repeatTie
+                            f,4 \ppp \repeatTie
                         }
                     }
                     {
-                        % [Clarinet Voice] Measure 128
+                        % [Clarinet Voice] Measure 160
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -632,81 +471,92 @@
                 \bar "||"
                 \context Voice = "Saxophone Voice" {
                     {
-                        % [Saxophone Voice] Measure 113
+                        % [Saxophone Voice] Measure 140
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/2
+                            R1 * 1
                         }
-                        % [Saxophone Voice] Measure 114
+                        % [Saxophone Voice] Measure 141
+                        {
+                            R1 * 1/2
+                        }
+                        % [Saxophone Voice] Measure 142
+                        {
+                            R1 * 1/2
+                        }
+                        % [Saxophone Voice] Measure 143
                         {
                             R1 * 1/2
                             \stopStaff
                             \startStaff
                         }
-                        % [Saxophone Voice] Measure 115
-                        {
-                            r4.
-                            r8
-                        }
                     }
                     \transpose ef, c'
                     {
+                        % [Saxophone Voice] Measure 144
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            f,4 \<
-                            f,4. \repeatTie
+                            f,4. \<
+                            f,4 \repeatTie
                         }
-                        % [Saxophone Voice] Measure 116
+                        % [Saxophone Voice] Measure 145
                         {
                             f,2 \repeatTie
                         }
-                        % [Saxophone Voice] Measure 117
+                        % [Saxophone Voice] Measure 146
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            f,1. \p \repeatTie \>
+                            f,2. \p \repeatTie \>
                         }
-                        % [Saxophone Voice] Measure 118
+                        % [Saxophone Voice] Measure 147
                         {
-                            f,8 \repeatTie
+                            f,2.. \repeatTie
                         }
                     }
                     {
-                        {
-                            r8 \!
-                            r2
-                        }
-                        % [Saxophone Voice] Measure 119
+                        % [Saxophone Voice] Measure 148
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 9/8
+                            R1 * 5/8 \!
+                        }
+                        % [Saxophone Voice] Measure 149
+                        {
+                            R1 * 3/4
                             \stopStaff
                             \startStaff
+                        }
+                        % [Saxophone Voice] Measure 150
+                        {
+                            r4.
                         }
                     }
                     \transpose ef, c'
                     {
-                        % [Saxophone Voice] Measure 120
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            g,2 \<
+                            g,8 \<
                         }
-                        % [Saxophone Voice] Measure 121
+                        % [Saxophone Voice] Measure 151
                         {
-                            g,1. \repeatTie
+                            g,2.. \repeatTie
                         }
-                        % [Saxophone Voice] Measure 122
+                        % [Saxophone Voice] Measure 152
                         {
-                            g,8 \ppp \repeatTie
+                            \once \override Hairpin.circled-tip = ##t
+                            g,1 \ppp \repeatTie \>
+                        }
+                        % [Saxophone Voice] Measure 153
+                        {
+                            g,8 \repeatTie
                         }
                     }
                     {
                         {
-                            r8
-                            r8
+                            r4 \!
                         }
                     }
                     \transpose ef, c'
@@ -715,32 +565,37 @@
                             \once \override Hairpin.circled-tip = ##t
                             f,8 \<
                         }
-                        % [Saxophone Voice] Measure 123
+                        % [Saxophone Voice] Measure 154
                         {
-                            f,1. \repeatTie
+                            f,2 \repeatTie
                         }
-                        % [Saxophone Voice] Measure 124
+                        % [Saxophone Voice] Measure 155
                         {
-                            f,2. \p \repeatTie
+                            \once \override Hairpin.circled-tip = ##t
+                            f,1 \p \repeatTie \>
+                        }
+                        % [Saxophone Voice] Measure 156
+                        {
+                            f,2. \repeatTie
                         }
                     }
                     {
-                        % [Saxophone Voice] Measure 125
+                        % [Saxophone Voice] Measure 157
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1/2
+                            R1 * 1/2 \!
                         }
-                        % [Saxophone Voice] Measure 126
+                        % [Saxophone Voice] Measure 158
                         {
-                            R1 * 9/8
+                            R1 * 1
                         }
-                        % [Saxophone Voice] Measure 127
+                        % [Saxophone Voice] Measure 159
                         {
-                            R1 * 1/2
+                            R1 * 5/8
                         }
-                        % [Saxophone Voice] Measure 128
+                        % [Saxophone Voice] Measure 160
                         {
                             R1 * 1/2
                             \stopStaff
@@ -760,70 +615,90 @@
                     \bar "||"
                     \context Voice = "Guitar Pitch Pipe Voice" {
                         {
-                            % [Guitar Pitch Pipe Voice] Measure 113
+                            % [Guitar Pitch Pipe Voice] Measure 140
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/2
+                                R1 * 1
                             }
-                            % [Guitar Pitch Pipe Voice] Measure 114
+                            % [Guitar Pitch Pipe Voice] Measure 141
                             {
                                 R1 * 1/2
                             }
-                            % [Guitar Pitch Pipe Voice] Measure 115
-                            {
-                                R1 * 9/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 116
+                            % [Guitar Pitch Pipe Voice] Measure 142
                             {
                                 R1 * 1/2
                             }
-                            % [Guitar Pitch Pipe Voice] Measure 117
+                            % [Guitar Pitch Pipe Voice] Measure 143
                             {
-                                R1 * 3/2
+                                R1 * 1/2
                             }
-                            % [Guitar Pitch Pipe Voice] Measure 118
+                            % [Guitar Pitch Pipe Voice] Measure 144
+                            {
+                                R1 * 5/8
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 145
+                            {
+                                R1 * 1/2
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 146
                             {
                                 R1 * 3/4
                             }
-                            % [Guitar Pitch Pipe Voice] Measure 119
+                            % [Guitar Pitch Pipe Voice] Measure 147
                             {
-                                R1 * 9/8
+                                R1 * 7/8
                             }
-                            % [Guitar Pitch Pipe Voice] Measure 120
+                            % [Guitar Pitch Pipe Voice] Measure 148
                             {
-                                R1 * 1/2
+                                R1 * 5/8
                             }
-                            % [Guitar Pitch Pipe Voice] Measure 121
-                            {
-                                R1 * 3/2
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 122
-                            {
-                                R1 * 1/2
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 123
-                            {
-                                R1 * 3/2
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 124
+                            % [Guitar Pitch Pipe Voice] Measure 149
                             {
                                 R1 * 3/4
                             }
-                            % [Guitar Pitch Pipe Voice] Measure 125
+                            % [Guitar Pitch Pipe Voice] Measure 150
                             {
                                 R1 * 1/2
                             }
-                            % [Guitar Pitch Pipe Voice] Measure 126
+                            % [Guitar Pitch Pipe Voice] Measure 151
                             {
-                                R1 * 9/8
+                                R1 * 7/8
                             }
-                            % [Guitar Pitch Pipe Voice] Measure 127
+                            % [Guitar Pitch Pipe Voice] Measure 152
+                            {
+                                R1 * 1
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 153
                             {
                                 R1 * 1/2
                             }
-                            % [Guitar Pitch Pipe Voice] Measure 128
+                            % [Guitar Pitch Pipe Voice] Measure 154
+                            {
+                                R1 * 1/2
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 155
+                            {
+                                R1 * 1
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 156
+                            {
+                                R1 * 3/4
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 157
+                            {
+                                R1 * 1/2
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 158
+                            {
+                                R1 * 1
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 159
+                            {
+                                R1 * 5/8
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 160
                             {
                                 R1 * 1/2
                                 \stopStaff
@@ -839,70 +714,90 @@
                     \bar "||"
                     \context Voice = "Guitar Voice" {
                         {
-                            % [Guitar Voice] Measure 113
+                            % [Guitar Voice] Measure 140
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/2
+                                R1 * 1
                             }
-                            % [Guitar Voice] Measure 114
+                            % [Guitar Voice] Measure 141
                             {
                                 R1 * 1/2
                             }
-                            % [Guitar Voice] Measure 115
-                            {
-                                R1 * 9/8
-                            }
-                            % [Guitar Voice] Measure 116
+                            % [Guitar Voice] Measure 142
                             {
                                 R1 * 1/2
                             }
-                            % [Guitar Voice] Measure 117
+                            % [Guitar Voice] Measure 143
                             {
-                                R1 * 3/2
+                                R1 * 1/2
                             }
-                            % [Guitar Voice] Measure 118
+                            % [Guitar Voice] Measure 144
+                            {
+                                R1 * 5/8
+                            }
+                            % [Guitar Voice] Measure 145
+                            {
+                                R1 * 1/2
+                            }
+                            % [Guitar Voice] Measure 146
                             {
                                 R1 * 3/4
                             }
-                            % [Guitar Voice] Measure 119
+                            % [Guitar Voice] Measure 147
                             {
-                                R1 * 9/8
+                                R1 * 7/8
                             }
-                            % [Guitar Voice] Measure 120
+                            % [Guitar Voice] Measure 148
                             {
-                                R1 * 1/2
+                                R1 * 5/8
                             }
-                            % [Guitar Voice] Measure 121
-                            {
-                                R1 * 3/2
-                            }
-                            % [Guitar Voice] Measure 122
-                            {
-                                R1 * 1/2
-                            }
-                            % [Guitar Voice] Measure 123
-                            {
-                                R1 * 3/2
-                            }
-                            % [Guitar Voice] Measure 124
+                            % [Guitar Voice] Measure 149
                             {
                                 R1 * 3/4
                             }
-                            % [Guitar Voice] Measure 125
+                            % [Guitar Voice] Measure 150
                             {
                                 R1 * 1/2
                             }
-                            % [Guitar Voice] Measure 126
+                            % [Guitar Voice] Measure 151
                             {
-                                R1 * 9/8
+                                R1 * 7/8
                             }
-                            % [Guitar Voice] Measure 127
+                            % [Guitar Voice] Measure 152
+                            {
+                                R1 * 1
+                            }
+                            % [Guitar Voice] Measure 153
                             {
                                 R1 * 1/2
                             }
-                            % [Guitar Voice] Measure 128
+                            % [Guitar Voice] Measure 154
+                            {
+                                R1 * 1/2
+                            }
+                            % [Guitar Voice] Measure 155
+                            {
+                                R1 * 1
+                            }
+                            % [Guitar Voice] Measure 156
+                            {
+                                R1 * 3/4
+                            }
+                            % [Guitar Voice] Measure 157
+                            {
+                                R1 * 1/2
+                            }
+                            % [Guitar Voice] Measure 158
+                            {
+                                R1 * 1
+                            }
+                            % [Guitar Voice] Measure 159
+                            {
+                                R1 * 5/8
+                            }
+                            % [Guitar Voice] Measure 160
                             {
                                 R1 * 1/2
                                 \stopStaff
@@ -921,70 +816,90 @@
                     \bar "||"
                     \context Voice = "Piano Pitch Pipe Voice" {
                         {
-                            % [Piano Pitch Pipe Voice] Measure 113
+                            % [Piano Pitch Pipe Voice] Measure 140
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/2
+                                R1 * 1
                             }
-                            % [Piano Pitch Pipe Voice] Measure 114
+                            % [Piano Pitch Pipe Voice] Measure 141
                             {
                                 R1 * 1/2
                             }
-                            % [Piano Pitch Pipe Voice] Measure 115
-                            {
-                                R1 * 9/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 116
+                            % [Piano Pitch Pipe Voice] Measure 142
                             {
                                 R1 * 1/2
                             }
-                            % [Piano Pitch Pipe Voice] Measure 117
+                            % [Piano Pitch Pipe Voice] Measure 143
                             {
-                                R1 * 3/2
+                                R1 * 1/2
                             }
-                            % [Piano Pitch Pipe Voice] Measure 118
+                            % [Piano Pitch Pipe Voice] Measure 144
+                            {
+                                R1 * 5/8
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 145
+                            {
+                                R1 * 1/2
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 146
                             {
                                 R1 * 3/4
                             }
-                            % [Piano Pitch Pipe Voice] Measure 119
+                            % [Piano Pitch Pipe Voice] Measure 147
                             {
-                                R1 * 9/8
+                                R1 * 7/8
                             }
-                            % [Piano Pitch Pipe Voice] Measure 120
+                            % [Piano Pitch Pipe Voice] Measure 148
                             {
-                                R1 * 1/2
+                                R1 * 5/8
                             }
-                            % [Piano Pitch Pipe Voice] Measure 121
-                            {
-                                R1 * 3/2
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 122
-                            {
-                                R1 * 1/2
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 123
-                            {
-                                R1 * 3/2
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 124
+                            % [Piano Pitch Pipe Voice] Measure 149
                             {
                                 R1 * 3/4
                             }
-                            % [Piano Pitch Pipe Voice] Measure 125
+                            % [Piano Pitch Pipe Voice] Measure 150
                             {
                                 R1 * 1/2
                             }
-                            % [Piano Pitch Pipe Voice] Measure 126
+                            % [Piano Pitch Pipe Voice] Measure 151
                             {
-                                R1 * 9/8
+                                R1 * 7/8
                             }
-                            % [Piano Pitch Pipe Voice] Measure 127
+                            % [Piano Pitch Pipe Voice] Measure 152
+                            {
+                                R1 * 1
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 153
                             {
                                 R1 * 1/2
                             }
-                            % [Piano Pitch Pipe Voice] Measure 128
+                            % [Piano Pitch Pipe Voice] Measure 154
+                            {
+                                R1 * 1/2
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 155
+                            {
+                                R1 * 1
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 156
+                            {
+                                R1 * 3/4
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 157
+                            {
+                                R1 * 1/2
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 158
+                            {
+                                R1 * 1
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 159
+                            {
+                                R1 * 5/8
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 160
                             {
                                 R1 * 1/2
                                 \stopStaff
@@ -1001,70 +916,90 @@
                         \bar "||"
                         \context Voice = "Piano Upper Voice" {
                             {
-                                % [Piano Upper Voice] Measure 113
+                                % [Piano Upper Voice] Measure 140
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 3/2
+                                    R1 * 1
                                 }
-                                % [Piano Upper Voice] Measure 114
+                                % [Piano Upper Voice] Measure 141
                                 {
                                     R1 * 1/2
                                 }
-                                % [Piano Upper Voice] Measure 115
-                                {
-                                    R1 * 9/8
-                                }
-                                % [Piano Upper Voice] Measure 116
+                                % [Piano Upper Voice] Measure 142
                                 {
                                     R1 * 1/2
                                 }
-                                % [Piano Upper Voice] Measure 117
+                                % [Piano Upper Voice] Measure 143
                                 {
-                                    R1 * 3/2
+                                    R1 * 1/2
                                 }
-                                % [Piano Upper Voice] Measure 118
+                                % [Piano Upper Voice] Measure 144
+                                {
+                                    R1 * 5/8
+                                }
+                                % [Piano Upper Voice] Measure 145
+                                {
+                                    R1 * 1/2
+                                }
+                                % [Piano Upper Voice] Measure 146
                                 {
                                     R1 * 3/4
                                 }
-                                % [Piano Upper Voice] Measure 119
+                                % [Piano Upper Voice] Measure 147
                                 {
-                                    R1 * 9/8
+                                    R1 * 7/8
                                 }
-                                % [Piano Upper Voice] Measure 120
+                                % [Piano Upper Voice] Measure 148
                                 {
-                                    R1 * 1/2
+                                    R1 * 5/8
                                 }
-                                % [Piano Upper Voice] Measure 121
-                                {
-                                    R1 * 3/2
-                                }
-                                % [Piano Upper Voice] Measure 122
-                                {
-                                    R1 * 1/2
-                                }
-                                % [Piano Upper Voice] Measure 123
-                                {
-                                    R1 * 3/2
-                                }
-                                % [Piano Upper Voice] Measure 124
+                                % [Piano Upper Voice] Measure 149
                                 {
                                     R1 * 3/4
                                 }
-                                % [Piano Upper Voice] Measure 125
+                                % [Piano Upper Voice] Measure 150
                                 {
                                     R1 * 1/2
                                 }
-                                % [Piano Upper Voice] Measure 126
+                                % [Piano Upper Voice] Measure 151
                                 {
-                                    R1 * 9/8
+                                    R1 * 7/8
                                 }
-                                % [Piano Upper Voice] Measure 127
+                                % [Piano Upper Voice] Measure 152
+                                {
+                                    R1 * 1
+                                }
+                                % [Piano Upper Voice] Measure 153
                                 {
                                     R1 * 1/2
                                 }
-                                % [Piano Upper Voice] Measure 128
+                                % [Piano Upper Voice] Measure 154
+                                {
+                                    R1 * 1/2
+                                }
+                                % [Piano Upper Voice] Measure 155
+                                {
+                                    R1 * 1
+                                }
+                                % [Piano Upper Voice] Measure 156
+                                {
+                                    R1 * 3/4
+                                }
+                                % [Piano Upper Voice] Measure 157
+                                {
+                                    R1 * 1/2
+                                }
+                                % [Piano Upper Voice] Measure 158
+                                {
+                                    R1 * 1
+                                }
+                                % [Piano Upper Voice] Measure 159
+                                {
+                                    R1 * 5/8
+                                }
+                                % [Piano Upper Voice] Measure 160
                                 {
                                     R1 * 1/2
                                     \stopStaff
@@ -1078,83 +1013,18 @@
                         \bar "||"
                         \context Voice = "Piano Lower Voice" {
                             {
-                                \override Beam #'color = #red
-                                \override Dots #'color = #red
-                                \override Flag #'color = #red
-                                \override NoteHead #'color = #red
-                                \override Stem #'color = #red
-                                % [Piano Lower Voice] Measure 113
+                                % [Piano Lower Voice] Measure 140
                                 {
-                                    <g,, b,, d, g, af, d>1. :32 \p \<
+                                    <g,, b,, d, g, af, d>1 :32 \fp
                                 }
-                                % [Piano Lower Voice] Measure 114
+                                % [Piano Lower Voice] Measure 141
                                 {
-                                    <g,, b,, d, g, af, d>8 :64 \mf \repeatTie
-                                }
-                                \revert Beam #'color
-                                \revert Dots #'color
-                                \revert Flag #'color
-                                \revert NoteHead #'color
-                                \revert Stem #'color
-                            }
-                            {
-                                {
-                                    r8
-                                    r8
-                                }
-                            }
-                            {
-                                \override Beam #'color = #red
-                                \override Dots #'color = #red
-                                \override Flag #'color = #red
-                                \override NoteHead #'color = #red
-                                \override Stem #'color = #red
-                                {
-                                    <f,, a,, c, df, f, c>8 :64 \pp \<
-                                }
-                                % [Piano Lower Voice] Measure 115
-                                {
-                                    <f,, a,, c, df, f, c>2. :32 \repeatTie
-                                    <f,, a,, c, df, f, c>4. :32 \repeatTie
-                                }
-                                % [Piano Lower Voice] Measure 116
-                                {
-                                    <f,, a,, c, df, f, c>2 :32 \p \repeatTie \<
-                                }
-                                % [Piano Lower Voice] Measure 117
-                                {
-                                    <f,, a,, c, df, f, c>2. :32 \mf \repeatTie
-                                }
-                                \revert Beam #'color
-                                \revert Dots #'color
-                                \revert Flag #'color
-                                \revert NoteHead #'color
-                                \revert Stem #'color
-                            }
-                            {
-                                {
-                                    r8
-                                }
-                            }
-                            {
-                                \override Beam #'color = #red
-                                \override Dots #'color = #red
-                                \override Flag #'color = #red
-                                \override NoteHead #'color = #red
-                                \override Stem #'color = #red
-                                {
-                                    <g,, b,, d, g, af, d>8 :64 \mf \>
                                     <g,, b,, d, g, af, d>2 :32 \repeatTie
                                 }
-                                % [Piano Lower Voice] Measure 118
+                                % [Piano Lower Voice] Measure 142
                                 {
-                                    <g,, b,, d, g, af, d>2 :32 \pp \repeatTie
+                                    <g,, b,, d, g, af, d>8 :64 \p \repeatTie
                                 }
-                                \revert Beam #'color
-                                \revert Dots #'color
-                                \revert Flag #'color
-                                \revert NoteHead #'color
-                                \revert Stem #'color
                             }
                             {
                                 {
@@ -1162,185 +1032,214 @@
                                 }
                             }
                             {
-                                \override Beam #'color = #red
-                                \override Dots #'color = #red
-                                \override Flag #'color = #red
-                                \override NoteHead #'color = #red
-                                \override Stem #'color = #red
-                                % [Piano Lower Voice] Measure 119
                                 {
-                                    <bf,, d, f, gf, bf, f>2. :32 \p \<
-                                    <bf,, d, f, gf, bf, f>4. :32 \repeatTie
+                                    <f,, a,, c, df, f, c>8 :64 \fp \>
                                 }
-                                % [Piano Lower Voice] Measure 120
+                                % [Piano Lower Voice] Measure 143
                                 {
-                                    <bf,, d, f, gf, bf, f>8 :64 \mf \repeatTie
+                                    <f,, a,, c, df, f, c>2 :32 \repeatTie
                                 }
-                                \revert Beam #'color
-                                \revert Dots #'color
-                                \revert Flag #'color
-                                \revert NoteHead #'color
-                                \revert Stem #'color
+                                % [Piano Lower Voice] Measure 144
+                                {
+                                    <f,, a,, c, df, f, c>4. :32 \pp \repeatTie \<
+                                    <f,, a,, c, df, f, c>4 :32 \repeatTie
+                                }
+                                % [Piano Lower Voice] Measure 145
+                                {
+                                    <f,, a,, c, df, f, c>2 :32 \repeatTie
+                                }
+                                % [Piano Lower Voice] Measure 146
+                                {
+                                    <f,, a,, c, df, f, c>2. :32 \p \repeatTie
+                                }
                             }
                             {
+                                % [Piano Lower Voice] Measure 147
                                 {
                                     r8
                                 }
                             }
                             {
-                                \override Beam #'color = #red
-                                \override Dots #'color = #red
-                                \override Flag #'color = #red
-                                \override NoteHead #'color = #red
-                                \override Stem #'color = #red
                                 {
-                                    <c, e, g, c df g>4 :32 \p
+                                    <g,, b,, d, g, af, d>4 :32 \fp \<
+                                    <g,, b,, d, g, af, d>2 :32 \repeatTie
                                 }
-                                % [Piano Lower Voice] Measure 121
+                                % [Piano Lower Voice] Measure 148
                                 {
-                                    <c, e, g, c df g>1. :32 \repeatTie
+                                    <g,, b,, d, g, af, d>4. :32 \mf \repeatTie
                                 }
-                                % [Piano Lower Voice] Measure 122
-                                {
-                                    <c, e, g, c df g>8 :64 \repeatTie
-                                }
-                                \revert Beam #'color
-                                \revert Dots #'color
-                                \revert Flag #'color
-                                \revert NoteHead #'color
-                                \revert Stem #'color
                             }
                             {
                                 {
-                                    r8
                                     r4
                                 }
                             }
                             {
-                                \override Beam #'color = #red
-                                \override Dots #'color = #red
-                                \override Flag #'color = #red
-                                \override NoteHead #'color = #red
-                                \override Stem #'color = #red
-                                % [Piano Lower Voice] Measure 123
+                                % [Piano Lower Voice] Measure 149
                                 {
-                                    <bf,, d, f, gf, bf, f>1. :32 \mf \>
+                                    <bf,, d, f, gf, bf, f>2. :32 \fp
                                 }
-                                % [Piano Lower Voice] Measure 124
-                                {
-                                    <bf,, d, f, gf, bf, f>2. :32 \repeatTie
-                                }
-                                % [Piano Lower Voice] Measure 125
+                                % [Piano Lower Voice] Measure 150
                                 {
                                     <bf,, d, f, gf, bf, f>2 :32 \p \repeatTie
                                 }
-                                % [Piano Lower Voice] Measure 126
+                            }
+                            {
+                                % [Piano Lower Voice] Measure 151
                                 {
-                                    <bf,, d, f, gf, bf, f>4 :32 \repeatTie
+                                    r8
                                 }
-                                \revert Beam #'color
-                                \revert Dots #'color
-                                \revert Flag #'color
-                                \revert NoteHead #'color
-                                \revert Stem #'color
                             }
                             {
                                 {
-                                    r8
+                                    <c, e, g, c df g>4 :32 \fp
+                                    <c, e, g, c df g>2 :32 \repeatTie
+                                }
+                                % [Piano Lower Voice] Measure 152
+                                {
+                                    <c, e, g, c df g>1 :32 \repeatTie
+                                }
+                                % [Piano Lower Voice] Measure 153
+                                {
+                                    <c, e, g, c df g>8 :64 \p \repeatTie
+                                }
+                            }
+                            {
+                                {
+                                    r4.
+                                }
+                            }
+                            {
+                                % [Piano Lower Voice] Measure 154
+                                {
+                                    <bf,, d, f, gf, bf, f>2 :32 \fp \<
+                                }
+                                % [Piano Lower Voice] Measure 155
+                                {
+                                    <bf,, d, f, gf, bf, f>1 :32 \repeatTie
+                                }
+                                % [Piano Lower Voice] Measure 156
+                                {
+                                    <bf,, d, f, gf, bf, f>2. :32 \mf \repeatTie \>
+                                }
+                                % [Piano Lower Voice] Measure 157
+                                {
+                                    <bf,, d, f, gf, bf, f>2 :32 \repeatTie
+                                }
+                                % [Piano Lower Voice] Measure 158
+                                {
+                                    <bf,, d, f, gf, bf, f>4 :32 \p \repeatTie
+                                }
+                            }
+                            {
+                                {
                                     r2.
                                 }
-                            }
-                            {
-                                \override Beam #'color = #red
-                                \override Dots #'color = #red
-                                \override Flag #'color = #red
-                                \override NoteHead #'color = #red
-                                \override Stem #'color = #red
-                                % [Piano Lower Voice] Measure 127
-                                {
-                                    <gs,, c, ds, gs, a, ds>2 :32 \p \<
-                                }
-                                % [Piano Lower Voice] Measure 128
-                                {
-                                    <gs,, c, ds, gs, a, ds>8 :64 \mf \repeatTie
-                                }
-                                \revert Beam #'color
-                                \revert Dots #'color
-                                \revert Flag #'color
-                                \revert NoteHead #'color
-                                \revert Stem #'color
-                            }
-                            {
+                                % [Piano Lower Voice] Measure 159
                                 {
                                     r8
-                                    r4
+                                }
+                            }
+                            {
+                                {
+                                    <gs,, c, ds, gs, a, ds>4 :32 \fp
+                                    <gs,, c, ds, gs, a, ds>4 :32 \repeatTie
+                                }
+                                % [Piano Lower Voice] Measure 160
+                                {
+                                    <gs,, c, ds, gs, a, ds>8 :64 \p \repeatTie
+                                }
+                            }
+                            {
+                                {
+                                    r4.
                                 }
                             }
                         }
                     }
                     \context Dynamics = "Piano Pedals Voice" {
                         {
-                            % [Piano Pedals Voice] Measure 113
+                            % [Piano Pedals Voice] Measure 140
                             {
-                                R1 * 3/2
+                                R1 * 1
                             }
-                            % [Piano Pedals Voice] Measure 114
-                            {
-                                R1 * 1/2
-                            }
-                            % [Piano Pedals Voice] Measure 115
-                            {
-                                R1 * 9/8
-                            }
-                            % [Piano Pedals Voice] Measure 116
+                            % [Piano Pedals Voice] Measure 141
                             {
                                 R1 * 1/2
                             }
-                            % [Piano Pedals Voice] Measure 117
+                            % [Piano Pedals Voice] Measure 142
                             {
-                                R1 * 3/2
+                                R1 * 1/2
                             }
-                            % [Piano Pedals Voice] Measure 118
+                            % [Piano Pedals Voice] Measure 143
+                            {
+                                R1 * 1/2
+                            }
+                            % [Piano Pedals Voice] Measure 144
+                            {
+                                R1 * 5/8
+                            }
+                            % [Piano Pedals Voice] Measure 145
+                            {
+                                R1 * 1/2
+                            }
+                            % [Piano Pedals Voice] Measure 146
                             {
                                 R1 * 3/4
                             }
-                            % [Piano Pedals Voice] Measure 119
+                            % [Piano Pedals Voice] Measure 147
                             {
-                                R1 * 9/8
+                                R1 * 7/8
                             }
-                            % [Piano Pedals Voice] Measure 120
+                            % [Piano Pedals Voice] Measure 148
                             {
-                                R1 * 1/2
+                                R1 * 5/8
                             }
-                            % [Piano Pedals Voice] Measure 121
-                            {
-                                R1 * 3/2
-                            }
-                            % [Piano Pedals Voice] Measure 122
-                            {
-                                R1 * 1/2
-                            }
-                            % [Piano Pedals Voice] Measure 123
-                            {
-                                R1 * 3/2
-                            }
-                            % [Piano Pedals Voice] Measure 124
+                            % [Piano Pedals Voice] Measure 149
                             {
                                 R1 * 3/4
                             }
-                            % [Piano Pedals Voice] Measure 125
+                            % [Piano Pedals Voice] Measure 150
                             {
                                 R1 * 1/2
                             }
-                            % [Piano Pedals Voice] Measure 126
+                            % [Piano Pedals Voice] Measure 151
                             {
-                                R1 * 9/8
+                                R1 * 7/8
                             }
-                            % [Piano Pedals Voice] Measure 127
+                            % [Piano Pedals Voice] Measure 152
+                            {
+                                R1 * 1
+                            }
+                            % [Piano Pedals Voice] Measure 153
                             {
                                 R1 * 1/2
                             }
-                            % [Piano Pedals Voice] Measure 128
+                            % [Piano Pedals Voice] Measure 154
+                            {
+                                R1 * 1/2
+                            }
+                            % [Piano Pedals Voice] Measure 155
+                            {
+                                R1 * 1
+                            }
+                            % [Piano Pedals Voice] Measure 156
+                            {
+                                R1 * 3/4
+                            }
+                            % [Piano Pedals Voice] Measure 157
+                            {
+                                R1 * 1/2
+                            }
+                            % [Piano Pedals Voice] Measure 158
+                            {
+                                R1 * 1
+                            }
+                            % [Piano Pedals Voice] Measure 159
+                            {
+                                R1 * 5/8
+                            }
+                            % [Piano Pedals Voice] Measure 160
                             {
                                 R1 * 1/2
                             }
@@ -1357,70 +1256,90 @@
                     \bar "||"
                     \context Voice = "Percussion Pitch Pipe Voice" {
                         {
-                            % [Percussion Pitch Pipe Voice] Measure 113
+                            % [Percussion Pitch Pipe Voice] Measure 140
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/2
+                                R1 * 1
                             }
-                            % [Percussion Pitch Pipe Voice] Measure 114
+                            % [Percussion Pitch Pipe Voice] Measure 141
                             {
                                 R1 * 1/2
                             }
-                            % [Percussion Pitch Pipe Voice] Measure 115
-                            {
-                                R1 * 9/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 116
+                            % [Percussion Pitch Pipe Voice] Measure 142
                             {
                                 R1 * 1/2
                             }
-                            % [Percussion Pitch Pipe Voice] Measure 117
+                            % [Percussion Pitch Pipe Voice] Measure 143
                             {
-                                R1 * 3/2
+                                R1 * 1/2
                             }
-                            % [Percussion Pitch Pipe Voice] Measure 118
+                            % [Percussion Pitch Pipe Voice] Measure 144
+                            {
+                                R1 * 5/8
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 145
+                            {
+                                R1 * 1/2
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 146
                             {
                                 R1 * 3/4
                             }
-                            % [Percussion Pitch Pipe Voice] Measure 119
+                            % [Percussion Pitch Pipe Voice] Measure 147
                             {
-                                R1 * 9/8
+                                R1 * 7/8
                             }
-                            % [Percussion Pitch Pipe Voice] Measure 120
+                            % [Percussion Pitch Pipe Voice] Measure 148
                             {
-                                R1 * 1/2
+                                R1 * 5/8
                             }
-                            % [Percussion Pitch Pipe Voice] Measure 121
-                            {
-                                R1 * 3/2
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 122
-                            {
-                                R1 * 1/2
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 123
-                            {
-                                R1 * 3/2
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 124
+                            % [Percussion Pitch Pipe Voice] Measure 149
                             {
                                 R1 * 3/4
                             }
-                            % [Percussion Pitch Pipe Voice] Measure 125
+                            % [Percussion Pitch Pipe Voice] Measure 150
                             {
                                 R1 * 1/2
                             }
-                            % [Percussion Pitch Pipe Voice] Measure 126
+                            % [Percussion Pitch Pipe Voice] Measure 151
                             {
-                                R1 * 9/8
+                                R1 * 7/8
                             }
-                            % [Percussion Pitch Pipe Voice] Measure 127
+                            % [Percussion Pitch Pipe Voice] Measure 152
+                            {
+                                R1 * 1
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 153
                             {
                                 R1 * 1/2
                             }
-                            % [Percussion Pitch Pipe Voice] Measure 128
+                            % [Percussion Pitch Pipe Voice] Measure 154
+                            {
+                                R1 * 1/2
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 155
+                            {
+                                R1 * 1
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 156
+                            {
+                                R1 * 3/4
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 157
+                            {
+                                R1 * 1/2
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 158
+                            {
+                                R1 * 1
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 159
+                            {
+                                R1 * 5/8
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 160
                             {
                                 R1 * 1/2
                                 \stopStaff
@@ -1434,50 +1353,58 @@
                     \bar "||"
                     \context Voice = "Percussion Voice" {
                         {
-                            % [Percussion Voice] Measure 113
+                            % [Percussion Voice] Measure 140
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/2
+                                R1 * 1
                             }
-                            % [Percussion Voice] Measure 114
+                            % [Percussion Voice] Measure 141
                             {
                                 R1 * 1/2
                             }
-                            % [Percussion Voice] Measure 115
-                            {
-                                R1 * 9/8
-                            }
-                            % [Percussion Voice] Measure 116
+                            % [Percussion Voice] Measure 142
                             {
                                 R1 * 1/2
                             }
-                            % [Percussion Voice] Measure 117
+                            % [Percussion Voice] Measure 143
                             {
-                                R1 * 3/2
+                                R1 * 1/2
                             }
-                            % [Percussion Voice] Measure 118
+                            % [Percussion Voice] Measure 144
+                            {
+                                R1 * 5/8
+                            }
+                            % [Percussion Voice] Measure 145
+                            {
+                                R1 * 1/2
+                            }
+                            % [Percussion Voice] Measure 146
                             {
                                 R1 * 3/4
                             }
-                            % [Percussion Voice] Measure 119
+                            % [Percussion Voice] Measure 147
                             {
-                                R1 * 9/8
+                                R1 * 7/8
+                            }
+                            % [Percussion Voice] Measure 148
+                            {
+                                R1 * 5/8
+                            }
+                            % [Percussion Voice] Measure 149
+                            {
+                                R1 * 3/4
+                            }
+                            % [Percussion Voice] Measure 150
+                            {
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
-                            % [Percussion Voice] Measure 120
-                            {
-                                r8
-                            }
                         }
                         {
-                            \override Beam #'color = #red
-                            \override Dots #'color = #red
-                            \override Flag #'color = #red
-                            \override NoteHead #'color = #red
-                            \override Stem #'color = #red
+                            % [Percussion Voice] Measure 151
                             {
                                 \once \override Hairpin.circled-tip = ##t
                                 \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -1499,32 +1426,21 @@
                                         #'(0 . -1)
                                     }
                                 \once \override TextSpanner.dash-fraction = 1
-                                b8 :64 \startTextSpan \<
-                                b4 :32 \repeatTie
+                                b2.. :32 \startTextSpan \<
                             }
-                            % [Percussion Voice] Measure 121
+                            % [Percussion Voice] Measure 152
                             {
-                                b1. :32 \p \repeatTie
+                                b1 :32 \p \repeatTie
                                 <> \stopTextSpan
                             }
-                            \revert Beam #'color
-                            \revert Dots #'color
-                            \revert Flag #'color
-                            \revert NoteHead #'color
-                            \revert Stem #'color
                         }
                         {
-                            % [Percussion Voice] Measure 122
+                            % [Percussion Voice] Measure 153
                             {
                                 r4
                             }
                         }
                         {
-                            \override Beam #'color = #red
-                            \override Dots #'color = #red
-                            \override Flag #'color = #red
-                            \override NoteHead #'color = #red
-                            \override Stem #'color = #red
                             {
                                 \once \override Hairpin.circled-tip = ##t
                                 \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -1548,39 +1464,46 @@
                                 \once \override TextSpanner.dash-fraction = 1
                                 d'4 :32 \startTextSpan \<
                             }
-                            % [Percussion Voice] Measure 123
+                            % [Percussion Voice] Measure 154
                             {
-                                d'1. :32 \repeatTie
+                                d'2 :32 \repeatTie
                             }
-                            % [Percussion Voice] Measure 124
+                            % [Percussion Voice] Measure 155
                             {
                                 \once \override Hairpin.circled-tip = ##t
-                                d'2. :32 \mf \repeatTie \>
+                                d'1 :32 \mf \repeatTie \>
                             }
-                            % [Percussion Voice] Measure 125
+                            % [Percussion Voice] Measure 156
+                            {
+                                d'8 :64 \repeatTie [
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
+                                d'8 :64 -\accent
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
+                                d'8 :64 -\accent
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
+                                d'8 :64 -\accent
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
+                                d'8 :64 -\accent
+                                \set stemLeftBeamCount = 1
+                                d'8 :64 -\accent ]
+                            }
+                            % [Percussion Voice] Measure 157
                             {
                                 d'2 :32 \repeatTie
                                 <> \stopTextSpan
                             }
-                            \revert Beam #'color
-                            \revert Dots #'color
-                            \revert Flag #'color
-                            \revert NoteHead #'color
-                            \revert Stem #'color
                         }
                         {
-                            % [Percussion Voice] Measure 126
+                            % [Percussion Voice] Measure 158
                             {
-                                r4. \!
-                                r8
+                                r2 \!
                             }
                         }
                         {
-                            \override Beam #'color = #red
-                            \override Dots #'color = #red
-                            \override Flag #'color = #red
-                            \override NoteHead #'color = #red
-                            \override Stem #'color = #red
                             {
                                 \once \override Hairpin.circled-tip = ##t
                                 \once \override TextSpanner.bound-details.left-broken.text = ##f
@@ -1602,10 +1525,9 @@
                                         #'(0 . -1)
                                     }
                                 \once \override TextSpanner.dash-fraction = 1
-                                b4 :32 \startTextSpan \<
-                                b4. :32 \repeatTie
+                                b2 :32 \startTextSpan \<
                             }
-                            % [Percussion Voice] Measure 127
+                            % [Percussion Voice] Measure 159
                             {
                                 b8 :64 \repeatTie [
                                 \set stemLeftBeamCount = 1
@@ -1615,19 +1537,16 @@
                                 \set stemRightBeamCount = 1
                                 b8 :64 -\accent
                                 \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
+                                b8 :64 -\accent
+                                \set stemLeftBeamCount = 1
                                 b8 :64 -\accent ]
                             }
-                            % [Percussion Voice] Measure 128
+                            % [Percussion Voice] Measure 160
                             {
-                                b4 :32 \repeatTie
-                                b8 :64 \ppp \repeatTie
+                                b4. :32 \ppp \repeatTie
                                 <> \stopTextSpan
                             }
-                            \revert Beam #'color
-                            \revert Dots #'color
-                            \revert Flag #'color
-                            \revert NoteHead #'color
-                            \revert Stem #'color
                         }
                         {
                             {
@@ -1647,70 +1566,90 @@
                 \bar "||"
                 \context Voice = "Violin Voice" {
                     {
-                        % [Violin Voice] Measure 113
+                        % [Violin Voice] Measure 140
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/2
+                            R1 * 1
                         }
-                        % [Violin Voice] Measure 114
+                        % [Violin Voice] Measure 141
                         {
                             R1 * 1/2
                         }
-                        % [Violin Voice] Measure 115
-                        {
-                            R1 * 9/8
-                        }
-                        % [Violin Voice] Measure 116
+                        % [Violin Voice] Measure 142
                         {
                             R1 * 1/2
                         }
-                        % [Violin Voice] Measure 117
+                        % [Violin Voice] Measure 143
                         {
-                            R1 * 3/2
+                            R1 * 1/2
                         }
-                        % [Violin Voice] Measure 118
+                        % [Violin Voice] Measure 144
+                        {
+                            R1 * 5/8
+                        }
+                        % [Violin Voice] Measure 145
+                        {
+                            R1 * 1/2
+                        }
+                        % [Violin Voice] Measure 146
                         {
                             R1 * 3/4
                         }
-                        % [Violin Voice] Measure 119
+                        % [Violin Voice] Measure 147
                         {
-                            R1 * 9/8
+                            R1 * 7/8
                         }
-                        % [Violin Voice] Measure 120
+                        % [Violin Voice] Measure 148
                         {
-                            R1 * 1/2
+                            R1 * 5/8
                         }
-                        % [Violin Voice] Measure 121
-                        {
-                            R1 * 3/2
-                        }
-                        % [Violin Voice] Measure 122
-                        {
-                            R1 * 1/2
-                        }
-                        % [Violin Voice] Measure 123
-                        {
-                            R1 * 3/2
-                        }
-                        % [Violin Voice] Measure 124
+                        % [Violin Voice] Measure 149
                         {
                             R1 * 3/4
                         }
-                        % [Violin Voice] Measure 125
+                        % [Violin Voice] Measure 150
                         {
                             R1 * 1/2
                         }
-                        % [Violin Voice] Measure 126
+                        % [Violin Voice] Measure 151
                         {
-                            R1 * 9/8
+                            R1 * 7/8
                         }
-                        % [Violin Voice] Measure 127
+                        % [Violin Voice] Measure 152
+                        {
+                            R1 * 1
+                        }
+                        % [Violin Voice] Measure 153
                         {
                             R1 * 1/2
                         }
-                        % [Violin Voice] Measure 128
+                        % [Violin Voice] Measure 154
+                        {
+                            R1 * 1/2
+                        }
+                        % [Violin Voice] Measure 155
+                        {
+                            R1 * 1
+                        }
+                        % [Violin Voice] Measure 156
+                        {
+                            R1 * 3/4
+                        }
+                        % [Violin Voice] Measure 157
+                        {
+                            R1 * 1/2
+                        }
+                        % [Violin Voice] Measure 158
+                        {
+                            R1 * 1
+                        }
+                        % [Violin Voice] Measure 159
+                        {
+                            R1 * 5/8
+                        }
+                        % [Violin Voice] Measure 160
                         {
                             R1 * 1/2
                             \stopStaff
@@ -1727,70 +1666,90 @@
                 \bar "||"
                 \context Voice = "Viola Voice" {
                     {
-                        % [Viola Voice] Measure 113
+                        % [Viola Voice] Measure 140
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/2
+                            R1 * 1
                         }
-                        % [Viola Voice] Measure 114
+                        % [Viola Voice] Measure 141
                         {
                             R1 * 1/2
                         }
-                        % [Viola Voice] Measure 115
-                        {
-                            R1 * 9/8
-                        }
-                        % [Viola Voice] Measure 116
+                        % [Viola Voice] Measure 142
                         {
                             R1 * 1/2
                         }
-                        % [Viola Voice] Measure 117
+                        % [Viola Voice] Measure 143
                         {
-                            R1 * 3/2
+                            R1 * 1/2
                         }
-                        % [Viola Voice] Measure 118
+                        % [Viola Voice] Measure 144
+                        {
+                            R1 * 5/8
+                        }
+                        % [Viola Voice] Measure 145
+                        {
+                            R1 * 1/2
+                        }
+                        % [Viola Voice] Measure 146
                         {
                             R1 * 3/4
                         }
-                        % [Viola Voice] Measure 119
+                        % [Viola Voice] Measure 147
                         {
-                            R1 * 9/8
+                            R1 * 7/8
                         }
-                        % [Viola Voice] Measure 120
+                        % [Viola Voice] Measure 148
                         {
-                            R1 * 1/2
+                            R1 * 5/8
                         }
-                        % [Viola Voice] Measure 121
-                        {
-                            R1 * 3/2
-                        }
-                        % [Viola Voice] Measure 122
-                        {
-                            R1 * 1/2
-                        }
-                        % [Viola Voice] Measure 123
-                        {
-                            R1 * 3/2
-                        }
-                        % [Viola Voice] Measure 124
+                        % [Viola Voice] Measure 149
                         {
                             R1 * 3/4
                         }
-                        % [Viola Voice] Measure 125
+                        % [Viola Voice] Measure 150
                         {
                             R1 * 1/2
                         }
-                        % [Viola Voice] Measure 126
+                        % [Viola Voice] Measure 151
                         {
-                            R1 * 9/8
+                            R1 * 7/8
                         }
-                        % [Viola Voice] Measure 127
+                        % [Viola Voice] Measure 152
+                        {
+                            R1 * 1
+                        }
+                        % [Viola Voice] Measure 153
                         {
                             R1 * 1/2
                         }
-                        % [Viola Voice] Measure 128
+                        % [Viola Voice] Measure 154
+                        {
+                            R1 * 1/2
+                        }
+                        % [Viola Voice] Measure 155
+                        {
+                            R1 * 1
+                        }
+                        % [Viola Voice] Measure 156
+                        {
+                            R1 * 3/4
+                        }
+                        % [Viola Voice] Measure 157
+                        {
+                            R1 * 1/2
+                        }
+                        % [Viola Voice] Measure 158
+                        {
+                            R1 * 1
+                        }
+                        % [Viola Voice] Measure 159
+                        {
+                            R1 * 5/8
+                        }
+                        % [Viola Voice] Measure 160
                         {
                             R1 * 1/2
                             \stopStaff
@@ -1807,70 +1766,90 @@
                 \bar "||"
                 \context Voice = "Cello Voice" {
                     {
-                        % [Cello Voice] Measure 113
+                        % [Cello Voice] Measure 140
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 3/2
+                            R1 * 1
                         }
-                        % [Cello Voice] Measure 114
+                        % [Cello Voice] Measure 141
                         {
                             R1 * 1/2
                         }
-                        % [Cello Voice] Measure 115
-                        {
-                            R1 * 9/8
-                        }
-                        % [Cello Voice] Measure 116
+                        % [Cello Voice] Measure 142
                         {
                             R1 * 1/2
                         }
-                        % [Cello Voice] Measure 117
+                        % [Cello Voice] Measure 143
                         {
-                            R1 * 3/2
+                            R1 * 1/2
                         }
-                        % [Cello Voice] Measure 118
+                        % [Cello Voice] Measure 144
+                        {
+                            R1 * 5/8
+                        }
+                        % [Cello Voice] Measure 145
+                        {
+                            R1 * 1/2
+                        }
+                        % [Cello Voice] Measure 146
                         {
                             R1 * 3/4
                         }
-                        % [Cello Voice] Measure 119
+                        % [Cello Voice] Measure 147
                         {
-                            R1 * 9/8
+                            R1 * 7/8
                         }
-                        % [Cello Voice] Measure 120
+                        % [Cello Voice] Measure 148
                         {
-                            R1 * 1/2
+                            R1 * 5/8
                         }
-                        % [Cello Voice] Measure 121
-                        {
-                            R1 * 3/2
-                        }
-                        % [Cello Voice] Measure 122
-                        {
-                            R1 * 1/2
-                        }
-                        % [Cello Voice] Measure 123
-                        {
-                            R1 * 3/2
-                        }
-                        % [Cello Voice] Measure 124
+                        % [Cello Voice] Measure 149
                         {
                             R1 * 3/4
                         }
-                        % [Cello Voice] Measure 125
+                        % [Cello Voice] Measure 150
                         {
                             R1 * 1/2
                         }
-                        % [Cello Voice] Measure 126
+                        % [Cello Voice] Measure 151
                         {
-                            R1 * 9/8
+                            R1 * 7/8
                         }
-                        % [Cello Voice] Measure 127
+                        % [Cello Voice] Measure 152
+                        {
+                            R1 * 1
+                        }
+                        % [Cello Voice] Measure 153
                         {
                             R1 * 1/2
                         }
-                        % [Cello Voice] Measure 128
+                        % [Cello Voice] Measure 154
+                        {
+                            R1 * 1/2
+                        }
+                        % [Cello Voice] Measure 155
+                        {
+                            R1 * 1
+                        }
+                        % [Cello Voice] Measure 156
+                        {
+                            R1 * 3/4
+                        }
+                        % [Cello Voice] Measure 157
+                        {
+                            R1 * 1/2
+                        }
+                        % [Cello Voice] Measure 158
+                        {
+                            R1 * 1
+                        }
+                        % [Cello Voice] Measure 159
+                        {
+                            R1 * 5/8
+                        }
+                        % [Cello Voice] Measure 160
                         {
                             R1 * 1/2
                             \stopStaff
@@ -1888,70 +1867,90 @@
                     \bar "||"
                     \context Voice = "Contrabass Pitch Pipe Voice" {
                         {
-                            % [Contrabass Pitch Pipe Voice] Measure 113
+                            % [Contrabass Pitch Pipe Voice] Measure 140
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/2
+                                R1 * 1
                             }
-                            % [Contrabass Pitch Pipe Voice] Measure 114
+                            % [Contrabass Pitch Pipe Voice] Measure 141
                             {
                                 R1 * 1/2
                             }
-                            % [Contrabass Pitch Pipe Voice] Measure 115
-                            {
-                                R1 * 9/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 116
+                            % [Contrabass Pitch Pipe Voice] Measure 142
                             {
                                 R1 * 1/2
                             }
-                            % [Contrabass Pitch Pipe Voice] Measure 117
+                            % [Contrabass Pitch Pipe Voice] Measure 143
                             {
-                                R1 * 3/2
+                                R1 * 1/2
                             }
-                            % [Contrabass Pitch Pipe Voice] Measure 118
+                            % [Contrabass Pitch Pipe Voice] Measure 144
+                            {
+                                R1 * 5/8
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 145
+                            {
+                                R1 * 1/2
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 146
                             {
                                 R1 * 3/4
                             }
-                            % [Contrabass Pitch Pipe Voice] Measure 119
+                            % [Contrabass Pitch Pipe Voice] Measure 147
                             {
-                                R1 * 9/8
+                                R1 * 7/8
                             }
-                            % [Contrabass Pitch Pipe Voice] Measure 120
+                            % [Contrabass Pitch Pipe Voice] Measure 148
                             {
-                                R1 * 1/2
+                                R1 * 5/8
                             }
-                            % [Contrabass Pitch Pipe Voice] Measure 121
-                            {
-                                R1 * 3/2
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 122
-                            {
-                                R1 * 1/2
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 123
-                            {
-                                R1 * 3/2
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 124
+                            % [Contrabass Pitch Pipe Voice] Measure 149
                             {
                                 R1 * 3/4
                             }
-                            % [Contrabass Pitch Pipe Voice] Measure 125
+                            % [Contrabass Pitch Pipe Voice] Measure 150
                             {
                                 R1 * 1/2
                             }
-                            % [Contrabass Pitch Pipe Voice] Measure 126
+                            % [Contrabass Pitch Pipe Voice] Measure 151
                             {
-                                R1 * 9/8
+                                R1 * 7/8
                             }
-                            % [Contrabass Pitch Pipe Voice] Measure 127
+                            % [Contrabass Pitch Pipe Voice] Measure 152
+                            {
+                                R1 * 1
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 153
                             {
                                 R1 * 1/2
                             }
-                            % [Contrabass Pitch Pipe Voice] Measure 128
+                            % [Contrabass Pitch Pipe Voice] Measure 154
+                            {
+                                R1 * 1/2
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 155
+                            {
+                                R1 * 1
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 156
+                            {
+                                R1 * 3/4
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 157
+                            {
+                                R1 * 1/2
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 158
+                            {
+                                R1 * 1
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 159
+                            {
+                                R1 * 5/8
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 160
                             {
                                 R1 * 1/2
                                 \stopStaff
@@ -1967,79 +1966,112 @@
                     \bar "||"
                     \context Voice = "Contrabass Voice" {
                         {
-                            % [Contrabass Voice] Measure 113
+                            % [Contrabass Voice] Measure 140
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/2
+                                R1 * 1
+                            }
+                            % [Contrabass Voice] Measure 141
+                            {
+                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
                         }
                         {
-                            % [Contrabass Voice] Measure 114
+                            % [Contrabass Voice] Measure 142
                             {
                                 \once \override Hairpin.circled-tip = ##t
                                 d2 \<
                             }
-                            % [Contrabass Voice] Measure 115
+                            % [Contrabass Voice] Measure 143
                             {
-                                d2. \repeatTie
-                                d4. \repeatTie
+                                d2 \repeatTie
                             }
-                            % [Contrabass Voice] Measure 116
+                            % [Contrabass Voice] Measure 144
                             {
-                                d2 \p \repeatTie
+                                \once \override Hairpin.circled-tip = ##t
+                                d8 \p \repeatTie \> [
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
+                                d8 -\accent
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
+                                d8 -\accent \glissando
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 1
+                                dqs8 -\accent \glissando
+                                \set stemLeftBeamCount = 1
+                                d8 -\accent ]
+                            }
+                            % [Contrabass Voice] Measure 145
+                            {
+                                d2 \repeatTie
                             }
                         }
                         {
-                            % [Contrabass Voice] Measure 117
+                            % [Contrabass Voice] Measure 146
                             {
-                                r4
+                                r4 \!
                             }
                         }
                         {
                             {
                                 \once \override Hairpin.circled-tip = ##t
-                                f2 \<
-                                f2. \repeatTie
+                                f8 \<
+                                f4. \repeatTie
                             }
-                            % [Contrabass Voice] Measure 118
+                            % [Contrabass Voice] Measure 147
                             {
-                                f2. \repeatTie
+                                f2.. \repeatTie
                             }
-                            % [Contrabass Voice] Measure 119
+                            % [Contrabass Voice] Measure 148
                             {
-                                f4. \ppp \repeatTie
+                                \once \override Hairpin.circled-tip = ##t
+                                f4. \ppp \repeatTie \>
+                                f4 \repeatTie
+                            }
+                            % [Contrabass Voice] Measure 149
+                            {
+                                f4. \repeatTie
                             }
                         }
                         {
                             {
-                                r2.
+                                r4. \!
                             }
-                            % [Contrabass Voice] Measure 120
+                            % [Contrabass Voice] Measure 150
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
                                 R1 * 1/2
                             }
-                            % [Contrabass Voice] Measure 121
+                            % [Contrabass Voice] Measure 151
                             {
-                                R1 * 3/2
+                                R1 * 7/8
                             }
-                            % [Contrabass Voice] Measure 122
+                            % [Contrabass Voice] Measure 152
+                            {
+                                R1 * 1
+                            }
+                            % [Contrabass Voice] Measure 153
                             {
                                 R1 * 1/2
                             }
-                            % [Contrabass Voice] Measure 123
+                            % [Contrabass Voice] Measure 154
                             {
-                                R1 * 3/2
+                                R1 * 1/2
+                            }
+                            % [Contrabass Voice] Measure 155
+                            {
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
-                            % [Contrabass Voice] Measure 124
+                            % [Contrabass Voice] Measure 156
                             {
                                 r4.
                             }
@@ -2049,7 +2081,7 @@
                                 \once \override Hairpin.circled-tip = ##t
                                 d4. \<
                             }
-                            % [Contrabass Voice] Measure 125
+                            % [Contrabass Voice] Measure 157
                             {
                                 d8 \repeatTie [ \glissando
                                 \set stemLeftBeamCount = 1
@@ -2061,22 +2093,26 @@
                                 \set stemLeftBeamCount = 1
                                 d8 -\accent ]
                             }
-                            % [Contrabass Voice] Measure 126
+                            % [Contrabass Voice] Measure 158
                             {
-                                d2. \repeatTie
-                                d4. \p \repeatTie
+                                \once \override Hairpin.circled-tip = ##t
+                                d1 \p \repeatTie \>
+                            }
+                            % [Contrabass Voice] Measure 159
+                            {
+                                d8 \repeatTie
                             }
                         }
                         {
-                            % [Contrabass Voice] Measure 127
+                            {
+                                r4 \!
+                                r4
+                            }
+                            % [Contrabass Voice] Measure 160
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1/2
-                            }
-                            % [Contrabass Voice] Measure 128
-                            {
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
