@@ -200,8 +200,8 @@
         instrumentName = \pitchPipesName
         shortInstrumentName = \shortPitchPipesName
         %\override Beam.positions = #'(-5 . -5)
-        \override DynamicLineSpanner.staff-padding = 8
-        \override TupletBracket.staff-padding = 4
+        %\override DynamicLineSpanner.staff-padding = 8
+        %\override TupletBracket.staff-padding = 4
     }
 
     \context {
@@ -224,8 +224,8 @@
         instrumentName = \clarinetName
         shortInstrumentName = \shortClarinetName
         %\override Beam.positions = #'(-7 . -7)
-        \override DynamicLineSpanner.staff-padding = 10
-        \override TupletBracket.staff-padding = 6
+        %\override DynamicLineSpanner.staff-padding = 10
+        %\override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -236,8 +236,8 @@
         instrumentName = \oboeName
         shortInstrumentName = \shortOboeName
         %\override Beam.positions = #'(-7 . -7)
-        \override DynamicLineSpanner.staff-padding = 10
-        \override TupletBracket.staff-padding = 6
+        %\override DynamicLineSpanner.staff-padding = 10
+        %\override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -248,8 +248,8 @@
         instrumentName = \saxophoneName
         shortInstrumentName = \shortSaxophoneName
         %\override Beam.positions = #'(-7 . -7)
-        \override DynamicLineSpanner.staff-padding = 10
-        \override TupletBracket.staff-padding = 6
+        %\override DynamicLineSpanner.staff-padding = 10
+        %\override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -277,8 +277,8 @@
         instrumentName = \guitarName
         shortInstrumentName = \shortGuitarName
         %\override Beam.positions = #'(-7 . -7)
-        \override DynamicLineSpanner.staff-padding = 10
-        \override TupletBracket.staff-padding = 6
+        %\override DynamicLineSpanner.staff-padding = 10
+        %\override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -298,8 +298,8 @@
         \alias Staff
         \RemoveEmptyStaves
         %\override Beam.positions = #'(-9 . -9)
-        \override DynamicLineSpanner.staff-padding = 11
-        \override TupletBracket.staff-padding = 6
+        %\override DynamicLineSpanner.staff-padding = 11
+        %\override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -309,8 +309,8 @@
         \alias Staff
         \RemoveEmptyStaves
         %\override Beam.positions = #'(-9 . -9)
-        \override DynamicLineSpanner.staff-padding = 11
-        \override TupletBracket.staff-padding = 6
+        %\override DynamicLineSpanner.staff-padding = 11
+        %\override TupletBracket.staff-padding = 6
     }
     
     \context{
@@ -342,8 +342,8 @@
         instrumentName = \percussionName
         shortInstrumentName = \shortPercussionName
         %\override Beam.positions = #'(-7 . -7)
-        \override DynamicLineSpanner.staff-padding = 10
-        \override TupletBracket.staff-padding = 6
+        %\override DynamicLineSpanner.staff-padding = 10
+        %\override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -380,8 +380,8 @@
         instrumentName = \violinName
         shortInstrumentName = \shortViolinName
         %\override Beam.positions = #'(-7 . -7)
-        \override DynamicLineSpanner.staff-padding = 10
-        \override TupletBracket.staff-padding = 6
+        %\override DynamicLineSpanner.staff-padding = 10
+        %\override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -392,8 +392,8 @@
         instrumentName = \violaName
         shortInstrumentName = \shortViolaName
         %\override Beam.positions = #'(-7 . -7)
-        \override DynamicLineSpanner.staff-padding = 10
-        \override TupletBracket.staff-padding = 6
+        %\override DynamicLineSpanner.staff-padding = 10
+        %\override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -404,8 +404,8 @@
         instrumentName = \celloName
         shortInstrumentName = \shortCelloName
         %\override Beam.positions = #'(-7 . -7)
-        \override DynamicLineSpanner.staff-padding = 10
-        \override TupletBracket.staff-padding = 6
+        %\override DynamicLineSpanner.staff-padding = 10
+        %\override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -416,8 +416,8 @@
         instrumentName = \contrabassName
         shortInstrumentName = \shortContrabassName
         %\override Beam.positions = #'(-7 . -7)
-        \override DynamicLineSpanner.staff-padding = 10
-        \override TupletBracket.staff-padding = 6
+        %\override DynamicLineSpanner.staff-padding = 10
+        %\override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -466,6 +466,7 @@
         \override Beam.beam-thickness = 0.75
         %\override Beam.direction = #down
         \override Beam.breakable = ##t
+        \override Beam.damping = 5
         \override Beam.length-fraction = 1.5
         \override Glissando.breakable = ##t
         \override Glissando.thickness = 3
@@ -497,6 +498,7 @@
         \override TextSpanner.bound-details.right.padding = 2
         \override TupletBracket.breakable = ##t
         %\override TupletBracket.direction = #down
+        \override TupletBracket.full-length-padding = 1.5
         \override TupletBracket.full-length-to-extent = ##f
         \override TupletBracket.padding = 1.5
         \override TupletBracket.outside-staff-padding = 0.75
