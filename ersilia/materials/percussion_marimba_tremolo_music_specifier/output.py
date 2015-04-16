@@ -102,6 +102,13 @@ percussion_marimba_tremolo_music_specifier = consort.tools.MusicSpecifier(
                         ),
                     ]
                 ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.PrototypeSelectorCallback(
+                        prototype=scoretools.Leaf,
+                        ),
+                    ),
+                ),
             ),
         ),
     color='red',

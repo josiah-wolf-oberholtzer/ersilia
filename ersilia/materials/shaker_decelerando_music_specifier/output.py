@@ -4,6 +4,8 @@ from abjad.tools import durationtools
 from abjad.tools import indicatortools
 from abjad.tools import markuptools
 from abjad.tools import rhythmmakertools
+from abjad.tools import scoretools
+from abjad.tools import selectortools
 from abjad.tools import spannertools
 import consort
 
@@ -88,6 +90,13 @@ shaker_decelerando_music_specifier = consort.tools.MusicSpecifier(
                             ),
                         ),
                     ]
+                ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.PrototypeSelectorCallback(
+                        prototype=scoretools.Leaf,
+                        ),
+                    ),
                 ),
             ),
         ),

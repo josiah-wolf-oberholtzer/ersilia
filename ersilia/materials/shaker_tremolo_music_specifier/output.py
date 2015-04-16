@@ -98,6 +98,13 @@ shaker_tremolo_music_specifier = consort.tools.MusicSpecifier(
                         ),
                     ]
                 ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.PrototypeSelectorCallback(
+                        prototype=scoretools.Leaf,
+                        ),
+                    ),
+                ),
             ),
         tremolo_spanner=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(

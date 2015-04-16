@@ -185,6 +185,13 @@ percussion_marimba_agitato_music_specifier = consort.tools.MusicSpecifier(
                         ),
                     ]
                 ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.PrototypeSelectorCallback(
+                        prototype=scoretools.Leaf,
+                        ),
+                    ),
+                ),
             ),
         tremolo_chords=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(

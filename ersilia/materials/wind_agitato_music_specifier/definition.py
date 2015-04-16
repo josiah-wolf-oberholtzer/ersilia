@@ -38,7 +38,7 @@ wind_agitato_music_specifier = consort.MusicSpecifier(
             division_period=2,
             dynamic_tokens='mf mp fff',
             start_dynamic_tokens='f',
-            stop_dynamic_tokens='mf',
+            stop_dynamic_tokens='p mp mf',
             ),
         flutter_tongue=consort.AttachmentExpression(
             attachments=abbreviations.make_text_spanner('Flz.'),

@@ -6,6 +6,7 @@ from abjad.tools import markuptools
 from abjad.tools import mathtools
 from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
+from abjad.tools import scoretools
 from abjad.tools import selectortools
 import consort
 
@@ -55,35 +56,55 @@ string_pointillist_music_specifier = consort.tools.MusicSpecifier(
         text_spanner=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [
-                    consort.tools.ComplexTextSpanner(
-                        markup=markuptools.Markup(
-                            contents=(
-                                markuptools.MarkupCommand(
-                                    'box',
-                                    markuptools.MarkupCommand(
-                                        'pad-around',
-                                        0.5,
-                                        markuptools.MarkupCommand(
-                                            'italic',
+                    consort.tools.AttachmentExpression(
+                        attachments=datastructuretools.TypedList(
+                            [
+                                consort.tools.ComplexTextSpanner(
+                                    markup=markuptools.Markup(
+                                        contents=(
                                             markuptools.MarkupCommand(
-                                                'smaller',
+                                                'box',
                                                 markuptools.MarkupCommand(
-                                                    'concat',
-                                                    [
+                                                    'pad-around',
+                                                    0.5,
+                                                    markuptools.MarkupCommand(
+                                                        'italic',
                                                         markuptools.MarkupCommand(
-                                                            'vstrut'
-                                                            ),
-                                                        'pizz.',
-                                                        ]
+                                                            'smaller',
+                                                            markuptools.MarkupCommand(
+                                                                'concat',
+                                                                [
+                                                                    markuptools.MarkupCommand(
+                                                                        'vstrut'
+                                                                        ),
+                                                                    'pizz.',
+                                                                    ]
+                                                                )
+                                                            )
+                                                        )
                                                     )
-                                                )
-                                            )
-                                        )
+                                                ),
+                                            ),
+                                        ),
+                                    ),
+                                ]
+                            ),
+                        selector=selectortools.Selector(
+                            callbacks=(
+                                selectortools.PrototypeSelectorCallback(
+                                    prototype=scoretools.Leaf,
                                     ),
                                 ),
                             ),
                         ),
                     ]
+                ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.PrototypeSelectorCallback(
+                        prototype=scoretools.Leaf,
+                        ),
+                    ),
                 ),
             ),
         ),
@@ -178,7 +199,7 @@ string_pointillist_music_specifier = consort.tools.MusicSpecifier(
         default=rhythmmakertools.TaleaRhythmMaker(
             talea=rhythmmakertools.Talea(
                 counts=(1, -1, 1, -2, 1, -3),
-                denominator=8,
+                denominator=16,
                 ),
             extra_counts_per_division=(0, 0, 1),
             ),
@@ -186,7 +207,7 @@ string_pointillist_music_specifier = consort.tools.MusicSpecifier(
             incise_specifier=rhythmmakertools.InciseSpecifier(
                 prefix_talea=(1,),
                 prefix_counts=(1,),
-                talea_denominator=8,
+                talea_denominator=16,
                 fill_with_notes=False,
                 ),
             ),

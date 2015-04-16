@@ -95,69 +95,10 @@ guitar_tremolo_music_specifier = consort.tools.MusicSpecifier(
                 consort.tools.ChordExpression(
                     chord_expr=pitchtools.PitchSegment(
                         (
-                            pitchtools.NamedPitch("d'"),
-                            pitchtools.NamedPitch("c''"),
-                            pitchtools.NamedPitch("f''"),
-                            pitchtools.NamedPitch("a''"),
-                            ),
-                        item_class=pitchtools.NamedPitch,
-                        ),
-                    ),
-                consort.tools.ChordExpression(
-                    chord_expr=pitchtools.PitchSegment(
-                        (
-                            pitchtools.NamedPitch("df'"),
-                            pitchtools.NamedPitch("bf'"),
-                            pitchtools.NamedPitch("e''"),
-                            pitchtools.NamedPitch("a''"),
-                            ),
-                        item_class=pitchtools.NamedPitch,
-                        ),
-                    ),
-                consort.tools.ChordExpression(
-                    chord_expr=pitchtools.PitchSegment(
-                        (
+                            pitchtools.NamedPitch('d'),
                             pitchtools.NamedPitch("c'"),
-                            pitchtools.NamedPitch("g'"),
-                            pitchtools.NamedPitch("bf'"),
-                            pitchtools.NamedPitch("ef''"),
-                            pitchtools.NamedPitch("a''"),
-                            ),
-                        item_class=pitchtools.NamedPitch,
-                        ),
-                    ),
-                consort.tools.ChordExpression(
-                    chord_expr=pitchtools.PitchSegment(
-                        (
-                            pitchtools.NamedPitch('b'),
-                            pitchtools.NamedPitch("gf'"),
-                            pitchtools.NamedPitch("a'"),
-                            pitchtools.NamedPitch("d''"),
-                            pitchtools.NamedPitch("af''"),
-                            ),
-                        item_class=pitchtools.NamedPitch,
-                        ),
-                    ),
-                consort.tools.ChordExpression(
-                    chord_expr=pitchtools.PitchSegment(
-                        (
-                            pitchtools.NamedPitch("c'"),
-                            pitchtools.NamedPitch("g'"),
-                            pitchtools.NamedPitch("b'"),
-                            pitchtools.NamedPitch("e''"),
-                            pitchtools.NamedPitch("a''"),
-                            ),
-                        item_class=pitchtools.NamedPitch,
-                        ),
-                    ),
-                consort.tools.ChordExpression(
-                    chord_expr=pitchtools.PitchSegment(
-                        (
                             pitchtools.NamedPitch("f'"),
-                            pitchtools.NamedPitch("bf'"),
-                            pitchtools.NamedPitch("ef''"),
-                            pitchtools.NamedPitch("g''"),
-                            pitchtools.NamedPitch("c'''"),
+                            pitchtools.NamedPitch("a'"),
                             ),
                         item_class=pitchtools.NamedPitch,
                         ),
@@ -165,11 +106,10 @@ guitar_tremolo_music_specifier = consort.tools.MusicSpecifier(
                 consort.tools.ChordExpression(
                     chord_expr=pitchtools.PitchSegment(
                         (
+                            pitchtools.NamedPitch('df'),
+                            pitchtools.NamedPitch('bf'),
                             pitchtools.NamedPitch("e'"),
                             pitchtools.NamedPitch("a'"),
-                            pitchtools.NamedPitch("d''"),
-                            pitchtools.NamedPitch("fs''"),
-                            pitchtools.NamedPitch("b''"),
                             ),
                         item_class=pitchtools.NamedPitch,
                         ),
@@ -177,11 +117,11 @@ guitar_tremolo_music_specifier = consort.tools.MusicSpecifier(
                 consort.tools.ChordExpression(
                     chord_expr=pitchtools.PitchSegment(
                         (
+                            pitchtools.NamedPitch('c'),
+                            pitchtools.NamedPitch('g'),
+                            pitchtools.NamedPitch('bf'),
                             pitchtools.NamedPitch("ef'"),
-                            pitchtools.NamedPitch("af'"),
-                            pitchtools.NamedPitch("df''"),
-                            pitchtools.NamedPitch("f''"),
-                            pitchtools.NamedPitch("bf''"),
+                            pitchtools.NamedPitch("a'"),
                             ),
                         item_class=pitchtools.NamedPitch,
                         ),
@@ -189,11 +129,35 @@ guitar_tremolo_music_specifier = consort.tools.MusicSpecifier(
                 consort.tools.ChordExpression(
                     chord_expr=pitchtools.PitchSegment(
                         (
+                            pitchtools.NamedPitch('b,'),
+                            pitchtools.NamedPitch('gf'),
+                            pitchtools.NamedPitch('a'),
                             pitchtools.NamedPitch("d'"),
+                            pitchtools.NamedPitch("af'"),
+                            ),
+                        item_class=pitchtools.NamedPitch,
+                        ),
+                    ),
+                consort.tools.ChordExpression(
+                    chord_expr=pitchtools.PitchSegment(
+                        (
+                            pitchtools.NamedPitch('c'),
+                            pitchtools.NamedPitch('g'),
+                            pitchtools.NamedPitch('b'),
+                            pitchtools.NamedPitch("e'"),
+                            pitchtools.NamedPitch("a'"),
+                            ),
+                        item_class=pitchtools.NamedPitch,
+                        ),
+                    ),
+                consort.tools.ChordExpression(
+                    chord_expr=pitchtools.PitchSegment(
+                        (
+                            pitchtools.NamedPitch('f'),
+                            pitchtools.NamedPitch('bf'),
+                            pitchtools.NamedPitch("ef'"),
                             pitchtools.NamedPitch("g'"),
                             pitchtools.NamedPitch("c''"),
-                            pitchtools.NamedPitch("e''"),
-                            pitchtools.NamedPitch("a''"),
                             ),
                         item_class=pitchtools.NamedPitch,
                         ),
@@ -201,11 +165,11 @@ guitar_tremolo_music_specifier = consort.tools.MusicSpecifier(
                 consort.tools.ChordExpression(
                     chord_expr=pitchtools.PitchSegment(
                         (
+                            pitchtools.NamedPitch('e'),
+                            pitchtools.NamedPitch('a'),
                             pitchtools.NamedPitch("d'"),
+                            pitchtools.NamedPitch("fs'"),
                             pitchtools.NamedPitch("b'"),
-                            pitchtools.NamedPitch("d''"),
-                            pitchtools.NamedPitch("f''"),
-                            pitchtools.NamedPitch("a''"),
                             ),
                         item_class=pitchtools.NamedPitch,
                         ),
@@ -213,11 +177,35 @@ guitar_tremolo_music_specifier = consort.tools.MusicSpecifier(
                 consort.tools.ChordExpression(
                     chord_expr=pitchtools.PitchSegment(
                         (
+                            pitchtools.NamedPitch('ef'),
+                            pitchtools.NamedPitch('af'),
+                            pitchtools.NamedPitch("df'"),
+                            pitchtools.NamedPitch("f'"),
+                            pitchtools.NamedPitch("bf'"),
+                            ),
+                        item_class=pitchtools.NamedPitch,
+                        ),
+                    ),
+                consort.tools.ChordExpression(
+                    chord_expr=pitchtools.PitchSegment(
+                        (
+                            pitchtools.NamedPitch('d'),
+                            pitchtools.NamedPitch('g'),
+                            pitchtools.NamedPitch("c'"),
+                            pitchtools.NamedPitch("e'"),
+                            pitchtools.NamedPitch("a'"),
+                            ),
+                        item_class=pitchtools.NamedPitch,
+                        ),
+                    ),
+                consort.tools.ChordExpression(
+                    chord_expr=pitchtools.PitchSegment(
+                        (
+                            pitchtools.NamedPitch('d'),
+                            pitchtools.NamedPitch('b'),
                             pitchtools.NamedPitch("d'"),
                             pitchtools.NamedPitch("f'"),
-                            pitchtools.NamedPitch("c''"),
-                            pitchtools.NamedPitch("d''"),
-                            pitchtools.NamedPitch("g''"),
+                            pitchtools.NamedPitch("a'"),
                             ),
                         item_class=pitchtools.NamedPitch,
                         ),
@@ -225,11 +213,23 @@ guitar_tremolo_music_specifier = consort.tools.MusicSpecifier(
                 consort.tools.ChordExpression(
                     chord_expr=pitchtools.PitchSegment(
                         (
+                            pitchtools.NamedPitch('d'),
+                            pitchtools.NamedPitch('f'),
+                            pitchtools.NamedPitch("c'"),
                             pitchtools.NamedPitch("d'"),
-                            pitchtools.NamedPitch("f'"),
-                            pitchtools.NamedPitch("b'"),
-                            pitchtools.NamedPitch("d''"),
-                            pitchtools.NamedPitch("g''"),
+                            pitchtools.NamedPitch("g'"),
+                            ),
+                        item_class=pitchtools.NamedPitch,
+                        ),
+                    ),
+                consort.tools.ChordExpression(
+                    chord_expr=pitchtools.PitchSegment(
+                        (
+                            pitchtools.NamedPitch('d'),
+                            pitchtools.NamedPitch('f'),
+                            pitchtools.NamedPitch('b'),
+                            pitchtools.NamedPitch("d'"),
+                            pitchtools.NamedPitch("g'"),
                             ),
                         item_class=pitchtools.NamedPitch,
                         ),

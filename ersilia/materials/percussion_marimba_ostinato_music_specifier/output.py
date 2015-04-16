@@ -190,6 +190,13 @@ percussion_marimba_ostinato_music_specifier = consort.tools.MusicSpecifier(
                         ),
                     ]
                 ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.PrototypeSelectorCallback(
+                        prototype=scoretools.Leaf,
+                        ),
+                    ),
+                ),
             ),
         ),
     color='darkyellow',

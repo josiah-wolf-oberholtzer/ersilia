@@ -29,6 +29,13 @@ piano_tremolo_music_specifier = consort.tools.MusicSpecifier(
                     ]
                 ),
             ),
+        octavation=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    consort.tools.OctavationExpression(),
+                    ]
+                ),
+            ),
         stem_tremolo_spanner=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [

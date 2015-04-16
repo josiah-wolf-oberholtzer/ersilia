@@ -43,30 +43,43 @@ percussion_low_pedal_music_specifier = consort.tools.MusicSpecifier(
         bass_drum_indication=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [
-                    consort.tools.ComplexTextSpanner(
-                        markup=markuptools.Markup(
-                            contents=(
-                                markuptools.MarkupCommand(
-                                    'box',
-                                    markuptools.MarkupCommand(
-                                        'pad-around',
-                                        0.5,
-                                        markuptools.MarkupCommand(
-                                            'italic',
+                    consort.tools.AttachmentExpression(
+                        attachments=datastructuretools.TypedList(
+                            [
+                                consort.tools.ComplexTextSpanner(
+                                    markup=markuptools.Markup(
+                                        contents=(
                                             markuptools.MarkupCommand(
-                                                'smaller',
+                                                'box',
                                                 markuptools.MarkupCommand(
-                                                    'concat',
-                                                    [
+                                                    'pad-around',
+                                                    0.5,
+                                                    markuptools.MarkupCommand(
+                                                        'italic',
                                                         markuptools.MarkupCommand(
-                                                            'vstrut'
-                                                            ),
-                                                        'b.d.',
-                                                        ]
+                                                            'smaller',
+                                                            markuptools.MarkupCommand(
+                                                                'concat',
+                                                                [
+                                                                    markuptools.MarkupCommand(
+                                                                        'vstrut'
+                                                                        ),
+                                                                    'b.d.',
+                                                                    ]
+                                                                )
+                                                            )
+                                                        )
                                                     )
-                                                )
-                                            )
-                                        )
+                                                ),
+                                            ),
+                                        ),
+                                    ),
+                                ]
+                            ),
+                        selector=selectortools.Selector(
+                            callbacks=(
+                                selectortools.PrototypeSelectorCallback(
+                                    prototype=scoretools.Leaf,
                                     ),
                                 ),
                             ),
@@ -138,30 +151,43 @@ percussion_low_pedal_music_specifier = consort.tools.MusicSpecifier(
         tam_tam_indication=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [
-                    consort.tools.ComplexTextSpanner(
-                        markup=markuptools.Markup(
-                            contents=(
-                                markuptools.MarkupCommand(
-                                    'box',
-                                    markuptools.MarkupCommand(
-                                        'pad-around',
-                                        0.5,
-                                        markuptools.MarkupCommand(
-                                            'italic',
+                    consort.tools.AttachmentExpression(
+                        attachments=datastructuretools.TypedList(
+                            [
+                                consort.tools.ComplexTextSpanner(
+                                    markup=markuptools.Markup(
+                                        contents=(
                                             markuptools.MarkupCommand(
-                                                'smaller',
+                                                'box',
                                                 markuptools.MarkupCommand(
-                                                    'concat',
-                                                    [
+                                                    'pad-around',
+                                                    0.5,
+                                                    markuptools.MarkupCommand(
+                                                        'italic',
                                                         markuptools.MarkupCommand(
-                                                            'vstrut'
-                                                            ),
-                                                        'tam',
-                                                        ]
+                                                            'smaller',
+                                                            markuptools.MarkupCommand(
+                                                                'concat',
+                                                                [
+                                                                    markuptools.MarkupCommand(
+                                                                        'vstrut'
+                                                                        ),
+                                                                    'tam',
+                                                                    ]
+                                                                )
+                                                            )
+                                                        )
                                                     )
-                                                )
-                                            )
-                                        )
+                                                ),
+                                            ),
+                                        ),
+                                    ),
+                                ]
+                            ),
+                        selector=selectortools.Selector(
+                            callbacks=(
+                                selectortools.PrototypeSelectorCallback(
+                                    prototype=scoretools.Leaf,
                                     ),
                                 ),
                             ),

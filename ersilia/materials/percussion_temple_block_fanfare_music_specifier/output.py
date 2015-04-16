@@ -6,6 +6,7 @@ from abjad.tools import markuptools
 from abjad.tools import mathtools
 from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
+from abjad.tools import scoretools
 from abjad.tools import selectortools
 from abjad.tools import spannertools
 import consort
@@ -112,6 +113,7 @@ percussion_temple_block_fanfare_music_specifier = consort.tools.MusicSpecifier(
                         dynamic_tokens=datastructuretools.CyclicTuple(
                             ['ppp']
                             ),
+                        division_period=2,
                         start_dynamic_tokens=datastructuretools.CyclicTuple(
                             ['p', 'fp']
                             ),
@@ -196,6 +198,13 @@ percussion_temple_block_fanfare_music_specifier = consort.tools.MusicSpecifier(
                             ),
                         ),
                     ]
+                ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.PrototypeSelectorCallback(
+                        prototype=scoretools.Leaf,
+                        ),
+                    ),
                 ),
             ),
         tremolo=consort.tools.AttachmentExpression(

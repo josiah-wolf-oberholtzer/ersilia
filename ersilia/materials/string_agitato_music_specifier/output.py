@@ -2,7 +2,6 @@
 from abjad.tools import datastructuretools
 from abjad.tools import durationtools
 from abjad.tools import indicatortools
-from abjad.tools import markuptools
 from abjad.tools import mathtools
 from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
@@ -56,72 +55,16 @@ string_agitato_music_specifier = consort.tools.MusicSpecifier(
                             ),
                         division_period=2,
                         start_dynamic_tokens=datastructuretools.CyclicTuple(
-                            ['f']
+                            ['f', 'p']
                             ),
                         stop_dynamic_tokens=datastructuretools.CyclicTuple(
-                            ['mf']
+                            ['p', 'f']
                             ),
                         transitions=datastructuretools.CyclicTuple(
                             [None]
                             ),
                         ),
                     ]
-                ),
-            ),
-        flautando=consort.tools.AttachmentExpression(
-            attachments=datastructuretools.TypedList(
-                [
-                    consort.tools.ComplexTextSpanner(
-                        markup=markuptools.Markup(
-                            contents=(
-                                markuptools.MarkupCommand(
-                                    'box',
-                                    markuptools.MarkupCommand(
-                                        'pad-around',
-                                        0.5,
-                                        markuptools.MarkupCommand(
-                                            'italic',
-                                            markuptools.MarkupCommand(
-                                                'smaller',
-                                                markuptools.MarkupCommand(
-                                                    'concat',
-                                                    [
-                                                        markuptools.MarkupCommand(
-                                                            'vstrut'
-                                                            ),
-                                                        'flautando',
-                                                        ]
-                                                    )
-                                                )
-                                            )
-                                        )
-                                    ),
-                                ),
-                            ),
-                        ),
-                    ]
-                ),
-            selector=selectortools.Selector(
-                callbacks=(
-                    selectortools.LogicalTieSelectorCallback(
-                        flatten=True,
-                        pitched=True,
-                        trivial=True,
-                        only_with_head=False,
-                        only_with_tail=False,
-                        ),
-                    selectortools.DurationSelectorCallback(
-                        duration=selectortools.DurationInequality(
-                            operator_string='>',
-                            duration=durationtools.Duration(1, 16),
-                            ),
-                        preprolated=True,
-                        ),
-                    selectortools.ContiguitySelectorCallback(),
-                    selectortools.PrototypeSelectorCallback(
-                        prototype=scoretools.Leaf,
-                        ),
-                    ),
                 ),
             ),
         harmonics=consort.tools.AttachmentExpression(

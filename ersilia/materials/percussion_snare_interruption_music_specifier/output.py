@@ -161,6 +161,13 @@ percussion_snare_interruption_music_specifier = consort.tools.MusicSpecifier(
                         ),
                     ]
                 ),
+            selector=selectortools.Selector(
+                callbacks=(
+                    selectortools.PrototypeSelectorCallback(
+                        prototype=scoretools.Leaf,
+                        ),
+                    ),
+                ),
             ),
         tremolo=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(

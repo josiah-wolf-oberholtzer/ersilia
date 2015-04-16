@@ -12,8 +12,8 @@ string_agitato_music_specifier = consort.MusicSpecifier(
         dynamic_expressions=consort.DynamicExpression(
             division_period=2,
             dynamic_tokens='mp fff',
-            start_dynamic_tokens='f',
-            stop_dynamic_tokens='mf',
+            start_dynamic_tokens='f p',
+            stop_dynamic_tokens='p f',
             ),
         harmonics=consort.AttachmentExpression(
             attachments=consort.HarmonicExpression('P4'),

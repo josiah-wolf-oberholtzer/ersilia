@@ -107,7 +107,7 @@ wind_agitato_music_specifier = consort.tools.MusicSpecifier(
                             ['f']
                             ),
                         stop_dynamic_tokens=datastructuretools.CyclicTuple(
-                            ['mf']
+                            ['p', 'mp', 'mf']
                             ),
                         transitions=datastructuretools.CyclicTuple(
                             [None]
