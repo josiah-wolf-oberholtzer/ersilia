@@ -60,7 +60,7 @@
 }
 
 \layout {
-    \accidentalStyle forget
+    \accidentalStyle modern-cautionary
     indent = 5
     ragged-bottom = ##f
     ragged-last = ##f
@@ -520,5 +520,6 @@
         pedalSustainStyle = #'mixed
         proportionalNotationDuration = #(ly:make-moment 1 24)
         tupletFullLength = ##t
+        barNumberFormatter = #format-oval-barnumbers
     }
 }
