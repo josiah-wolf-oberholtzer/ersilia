@@ -12,7 +12,7 @@ segment_maker = ersilia.ErsiliaSegmentMaker(
     #annotate_colors=True,
     #annotate_phrasing=False,
     #annotate_timespans=True,
-    name='Scene V/a',
+    name='[V/a]',
     permitted_time_signatures=ersilia.permitted_time_signatures,
     tempo=abjad.Tempo((1, 4), 48),
     )

@@ -41,7 +41,7 @@ percussion_bamboo_windchimes_music_specifier = consort.MusicSpecifier(
             ),
         ),
     color='yellow',
-    labels=[],
+    labels=['bamboo windchimes'],
     pitch_handler=consort.AbsolutePitchHandler(
         pitch_specifier=ersilia.Percussion.BAMBOO_WIND_CHIMES,
         pitches_are_nonsemantic=True,

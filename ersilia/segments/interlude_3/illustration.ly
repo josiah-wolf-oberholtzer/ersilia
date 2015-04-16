@@ -1146,7 +1146,7 @@
                         {
                             % [Percussion Voice] Measure 160
                             {
-                                c'16 -\accent \fff ^ \markup {
+                                d'16 -\accent \fff ^ \markup {
                                     \box
                                         \pad-around
                                             #0.5

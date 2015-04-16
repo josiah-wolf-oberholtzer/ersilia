@@ -12,7 +12,7 @@ segment_maker = ersilia.ErsiliaSegmentMaker(
     desired_duration_in_seconds=abjad.Multiplier(2, 20) * 480,
     discard_final_silence=True,
     maximum_meter_run_length=2,
-    name='Scene II/b',
+    name='[II/b]',
     permitted_time_signatures=ersilia.permitted_time_signatures,
     tempo=abjad.Tempo((1, 4), 48),
     )

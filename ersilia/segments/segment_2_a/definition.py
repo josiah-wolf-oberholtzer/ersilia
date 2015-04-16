@@ -10,7 +10,7 @@ from abjad.tools import timespantools
 
 segment_maker = ersilia.ErsiliaSegmentMaker(
     desired_duration_in_seconds=abjad.Multiplier(3, 20) * 480,
-    name='Scene II/a',
+    name='[II/a]',
     permitted_time_signatures=[
         (3, 8),
         (4, 8),

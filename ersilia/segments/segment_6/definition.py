@@ -5,7 +5,6 @@ from abjad import new
 from abjad.tools import durationtools
 from abjad.tools import indicatortools
 from abjad.tools import rhythmmakertools
-from abjad.tools import timespantools
 
 
 ### SEGMENT ###
@@ -15,7 +14,7 @@ segment_maker = ersilia.ErsiliaSegmentMaker(
     #annotate_colors=True,
     #annotate_phrasing=False,
     annotate_timespans=True,
-    name='Scene VI',
+    name='[VI]',
     permitted_time_signatures=ersilia.permitted_time_signatures,
     tempo=indicatortools.Tempo((1, 4), 72),
     )
@@ -37,12 +36,7 @@ segment_maker.add_setting(
 ### AGITATO ###
 
 segment_maker.add_setting(
-    timespan_identifier=timespantools.Timespan(0, 2),
-    timespan_maker=consort.FloodedTimespanMaker(),
-    percussion=ersilia.percussion_tom_fanfare_music_specifier,
-    )
-
-segment_maker.add_setting(
+    timespan_identifier=[-1, 6],
     timespan_maker=ersilia.dense_timespan_maker,
     saxophone=new(
         ersilia.saxophone_agitato_music_specifier,

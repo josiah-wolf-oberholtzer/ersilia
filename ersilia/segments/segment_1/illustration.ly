@@ -163,15 +163,17 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'16 -\staccato \ppp \startTextSpan [
                             \set stemLeftBeamCount = 2
                             c'16 -\staccato ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -194,13 +196,15 @@
                         % [Flute Voice] Measure 4
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'4. :32 -\accent \fp
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
@@ -255,9 +259,10 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'16 -\staccato \ppp \startTextSpan [
                             \set stemLeftBeamCount = 2
@@ -270,6 +275,7 @@
                             c'16 -\staccato ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -295,15 +301,17 @@
                     {
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'8 :64 -\accent \fp [
                             \set stemLeftBeamCount = 1
                             c'8 :64 \repeatTie ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -321,9 +329,10 @@
                     {
                         \times 4/5 {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             r8 [
                             \set stemLeftBeamCount = 1
@@ -333,6 +342,7 @@
                             r8 ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
@@ -426,13 +436,15 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'16 -\staccato \ppp \startTextSpan
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -449,13 +461,15 @@
                     {
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'16 -\staccato \ppp
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -472,15 +486,17 @@
                     {
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'8 :64 -\accent \fp [
                             \set stemLeftBeamCount = 1
                             c'8 :64 \repeatTie ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
@@ -561,15 +577,17 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'16 -\staccato \ppp \startTextSpan [
                             \set stemLeftBeamCount = 2
                             c'16 -\staccato ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -595,9 +613,10 @@
                     {
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'8 :64 -\accent \fp
                         }
@@ -606,6 +625,7 @@
                             c'8 :64 \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
@@ -692,9 +712,10 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'16 -\staccato \ppp \startTextSpan [
                             \set stemLeftBeamCount = 2
@@ -704,6 +725,7 @@
                             c'16 -\staccato ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -717,13 +739,15 @@
                     {
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'16 -\staccato \ppp
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -738,13 +762,15 @@
                         % [Oboe Voice] Measure 11
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'4 :32 -\accent \fp
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -761,15 +787,17 @@
                     {
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'16 -\staccato \ppp [
                             \set stemLeftBeamCount = 2
                             c'16 -\staccato ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -786,13 +814,15 @@
                     {
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'16 -\staccato \ppp
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
@@ -888,13 +918,15 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'16 -\staccato \ppp \startTextSpan
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -908,9 +940,10 @@
                         % [Oboe Voice] Measure 21
                         \times 2/3 {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'16 -\staccato \ppp [
                             \set stemLeftBeamCount = 2
@@ -920,6 +953,7 @@
                             r16 ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -936,15 +970,17 @@
                     {
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'8 :64 -\accent \fp [
                             \set stemLeftBeamCount = 1
                             c'8 :64 \repeatTie ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
@@ -1028,9 +1064,10 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             r8. \startTextSpan [
                             \set stemLeftBeamCount = 1
@@ -1043,6 +1080,7 @@
                             r8 ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
@@ -1104,15 +1142,17 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'16 -\staccato \ppp \startTextSpan [
                             \set stemLeftBeamCount = 2
                             c'16 -\staccato ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -1135,13 +1175,15 @@
                         % [Clarinet Voice] Measure 11
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'4 :32 -\accent \fp
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -1154,9 +1196,10 @@
                     {
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'16 -\staccato \ppp [
                             \set stemLeftBeamCount = 2
@@ -1178,6 +1221,7 @@
                             c'16 -\staccato ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
@@ -1296,9 +1340,10 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             r8 \startTextSpan [
                             \set stemLeftBeamCount = 1
@@ -1317,6 +1362,7 @@
                             c'16 -\staccato ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
@@ -3929,7 +3975,7 @@
                                         #'(0 . -1)
                                     }
                                 \once \override TextSpanner.dash-fraction = 1
-                                c'16 -\accent \fff \startTextSpan
+                                d'16 -\accent \fff \startTextSpan
                             }
                         }
                         {
@@ -3942,8 +3988,8 @@
                             % [Percussion Voice] Measure 2
                             {
                                 \once \override Hairpin #'circled-tip = ##t
-                                c'2 :32 \<
-                                c'8 :64 \repeatTie \f
+                                d'2 :32 \<
+                                d'8 :64 \repeatTie \f
                                 <> \stopTextSpan
                             }
                         }
@@ -4039,7 +4085,7 @@
                                         #'(0 . -1)
                                     }
                                 \once \override TextSpanner.dash-fraction = 1
-                                c'16 -\accent \fff \startTextSpan
+                                d'16 -\accent \fff \startTextSpan
                             }
                         }
                         {
@@ -4051,11 +4097,11 @@
                             % [Percussion Voice] Measure 5
                             {
                                 \once \override Hairpin #'circled-tip = ##t
-                                c'2.. :32 \<
+                                d'2.. :32 \<
                             }
                             % [Percussion Voice] Measure 6
                             {
-                                c'1 :32 \repeatTie \f
+                                d'1 :32 \repeatTie \f
                             }
                         }
                         {
@@ -4072,7 +4118,7 @@
                         {
                             % [Percussion Voice] Measure 8
                             {
-                                c'16 -\accent \fff
+                                d'16 -\accent \fff
                             }
                         }
                         {
@@ -4083,7 +4129,7 @@
                         {
                             % [Percussion Voice] Measure 9
                             {
-                                c'2 :32 -\accent \fp
+                                d'2 :32 -\accent \fp
                                 <> \stopTextSpan
                             }
                         }
@@ -4242,7 +4288,7 @@
                                         #'(0 . -1)
                                     }
                                 \once \override TextSpanner.dash-fraction = 1
-                                c'16 -\accent \fff \startTextSpan
+                                d'16 -\accent \fff \startTextSpan
                             }
                         }
                         {
@@ -4254,16 +4300,16 @@
                             % [Percussion Voice] Measure 14
                             {
                                 \once \override Hairpin #'circled-tip = ##t
-                                c'4. :32 \<
-                                c'4 :32 \repeatTie
+                                d'4. :32 \<
+                                d'4 :32 \repeatTie
                             }
                             % [Percussion Voice] Measure 15
                             {
-                                c'2 :32 \repeatTie
+                                d'2 :32 \repeatTie
                             }
                             % [Percussion Voice] Measure 16
                             {
-                                c'2. :32 \repeatTie \f
+                                d'2. :32 \repeatTie \f
                             }
                         }
                         {
@@ -4284,7 +4330,7 @@
                         }
                         {
                             {
-                                c'16 -\accent \fff
+                                d'16 -\accent \fff
                             }
                         }
                         {
@@ -4296,7 +4342,7 @@
                         {
                             % [Percussion Voice] Measure 19
                             {
-                                c'2.. :32 -\accent \fp
+                                d'2.. :32 -\accent \fp
                                 <> \stopTextSpan
                             }
                         }
@@ -4347,7 +4393,7 @@
                                         #'(0 . -1)
                                     }
                                 \once \override TextSpanner.dash-fraction = 1
-                                c'16 -\accent \fff \startTextSpan
+                                d'16 -\accent \fff \startTextSpan
                             }
                         }
                         {
@@ -4358,7 +4404,7 @@
                         {
                             % [Percussion Voice] Measure 24
                             {
-                                c'4 :32 -\accent \fp
+                                d'4 :32 -\accent \fp
                                 <> \stopTextSpan
                             }
                         }
@@ -4428,7 +4474,7 @@
                                         #'(0 . -1)
                                     }
                                 \once \override TextSpanner.dash-fraction = 1
-                                c'16 -\accent \fff \startTextSpan
+                                d'16 -\accent \fff \startTextSpan
                             }
                         }
                         {
@@ -4441,11 +4487,11 @@
                             % [Percussion Voice] Measure 26
                             {
                                 \once \override Hairpin #'circled-tip = ##t
-                                c'2 :32 \<
+                                d'2 :32 \<
                             }
                             % [Percussion Voice] Measure 27
                             {
-                                c'2. :32 \repeatTie \f
+                                d'2. :32 \repeatTie \f
                                 <> \stopTextSpan
                             }
                         }
@@ -4509,9 +4555,10 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'16 -\staccato \ppp \startTextSpan [
                             \set stemLeftBeamCount = 2
@@ -4524,6 +4571,7 @@
                             c'16 -\staccato ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -4537,13 +4585,15 @@
                         % [Violin Voice] Measure 6
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'4. :32 -\accent \fp
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
@@ -4687,9 +4737,10 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'16 -\staccato \ppp \startTextSpan [
                             \set stemLeftBeamCount = 2
@@ -4708,6 +4759,7 @@
                             c'16 -\staccato ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
@@ -4761,9 +4813,10 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             r16 \startTextSpan [
                             \set stemLeftBeamCount = 2
@@ -4776,6 +4829,7 @@
                             r8 ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
@@ -4874,15 +4928,17 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'16 -\staccato \ppp \startTextSpan [
                             \set stemLeftBeamCount = 2
                             c'16 -\staccato ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -4896,9 +4952,10 @@
                     {
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'4 :32 -\accent \fp
                         }
@@ -4907,6 +4964,7 @@
                             c'8 :64 \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
@@ -4989,9 +5047,10 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'16 -\staccato \ppp \startTextSpan [
                             \set stemLeftBeamCount = 2
@@ -5004,6 +5063,7 @@
                             c'16 -\staccato ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "alto"
@@ -5123,9 +5183,10 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             r8 \startTextSpan [
                             \set stemLeftBeamCount = 1
@@ -5135,6 +5196,7 @@
                             r8 ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "alto"
@@ -5219,9 +5281,10 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'16 -\staccato \ppp \startTextSpan [
                             \set stemLeftBeamCount = 2
@@ -5234,6 +5297,7 @@
                             c'16 -\staccato ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "alto"
@@ -5350,15 +5414,17 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'16 -\staccato \ppp \startTextSpan [
                             \set stemLeftBeamCount = 2
                             c'16 -\staccato ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "alto"
@@ -5447,9 +5513,10 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'16 -\staccato \ppp \startTextSpan [
                             \set stemLeftBeamCount = 2
@@ -5462,6 +5529,7 @@
                             r8 ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "bass"
@@ -5602,15 +5670,17 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'16 -\staccato \ppp \startTextSpan [
                             \set stemLeftBeamCount = 2
                             c'16 -\staccato ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "bass"
@@ -5720,13 +5790,15 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'16 -\staccato \ppp \startTextSpan
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "bass"
                         }
@@ -5740,9 +5812,10 @@
                         % [Cello Voice] Measure 18
                         \times 2/3 {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'16 -\staccato \ppp [
                             \set stemLeftBeamCount = 2
@@ -5752,6 +5825,7 @@
                             r16 ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "bass"
@@ -5811,9 +5885,10 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             r8. \startTextSpan [
                             \set stemLeftBeamCount = 1
@@ -5826,6 +5901,7 @@
                             r8 ]
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "bass"

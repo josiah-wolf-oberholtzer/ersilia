@@ -7,7 +7,7 @@ from abjad.tools import timespantools
 
 segment_maker = ersilia.ErsiliaSegmentMaker(
     desired_duration_in_seconds=6,
-    name='cut [iii]',
+    name='[iii]',
     permitted_time_signatures=ersilia.permitted_time_signatures,
     repeat=True,
     )

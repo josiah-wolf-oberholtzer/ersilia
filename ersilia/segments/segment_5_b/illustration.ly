@@ -1428,11 +1428,11 @@
                                         #'(0 . -1)
                                     }
                                 \once \override TextSpanner.dash-fraction = 1
-                                b2.. :32 \startTextSpan \<
+                                g2.. :32 \startTextSpan \<
                             }
                             % [Percussion Voice] Measure 194
                             {
-                                b1 :32 \p \repeatTie
+                                g1 :32 \p \repeatTie
                                 <> \stopTextSpan
                             }
                         }
@@ -1464,38 +1464,38 @@
                                         #'(0 . -1)
                                     }
                                 \once \override TextSpanner.dash-fraction = 1
-                                d'4 :32 \startTextSpan \<
+                                b4 :32 \startTextSpan \<
                             }
                             % [Percussion Voice] Measure 196
                             {
-                                d'2 :32 \repeatTie
+                                b2 :32 \repeatTie
                             }
                             % [Percussion Voice] Measure 197
                             {
                                 \once \override Hairpin.circled-tip = ##t
-                                d'1 :32 \mf \repeatTie \>
+                                b1 :32 \mf \repeatTie \>
                             }
                             % [Percussion Voice] Measure 198
                             {
-                                d'8 :64 \repeatTie [
+                                b8 :64 \repeatTie [
                                 \set stemLeftBeamCount = 1
                                 \set stemRightBeamCount = 1
-                                d'8 :64 -\accent
+                                b8 :64 -\accent
                                 \set stemLeftBeamCount = 1
                                 \set stemRightBeamCount = 1
-                                d'8 :64 -\accent
+                                b8 :64 -\accent
                                 \set stemLeftBeamCount = 1
                                 \set stemRightBeamCount = 1
-                                d'8 :64 -\accent
+                                b8 :64 -\accent
                                 \set stemLeftBeamCount = 1
                                 \set stemRightBeamCount = 1
-                                d'8 :64 -\accent
+                                b8 :64 -\accent
                                 \set stemLeftBeamCount = 1
-                                d'8 :64 -\accent ]
+                                b8 :64 -\accent ]
                             }
                             % [Percussion Voice] Measure 199
                             {
-                                d'2 :32 \repeatTie
+                                b2 :32 \repeatTie
                                 <> \stopTextSpan
                             }
                         }
@@ -1527,26 +1527,26 @@
                                         #'(0 . -1)
                                     }
                                 \once \override TextSpanner.dash-fraction = 1
-                                b2 :32 \startTextSpan \<
+                                g2 :32 \startTextSpan \<
                             }
                             % [Percussion Voice] Measure 201
                             {
-                                b8 :64 \repeatTie [
+                                g8 :64 \repeatTie [
                                 \set stemLeftBeamCount = 1
                                 \set stemRightBeamCount = 1
-                                b8 :64 -\accent
+                                g8 :64 -\accent
                                 \set stemLeftBeamCount = 1
                                 \set stemRightBeamCount = 1
-                                b8 :64 -\accent
+                                g8 :64 -\accent
                                 \set stemLeftBeamCount = 1
                                 \set stemRightBeamCount = 1
-                                b8 :64 -\accent
+                                g8 :64 -\accent
                                 \set stemLeftBeamCount = 1
-                                b8 :64 -\accent ]
+                                g8 :64 -\accent ]
                             }
                             % [Percussion Voice] Measure 202
                             {
-                                b4. :32 \ppp \repeatTie
+                                g4. :32 \ppp \repeatTie
                                 <> \stopTextSpan
                             }
                         }

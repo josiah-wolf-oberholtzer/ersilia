@@ -123,7 +123,9 @@ string_overpressure_music_specifier = consort.tools.MusicSpecifier(
                 pitchtools.PitchSegment(
                     (
                         pitchtools.NamedPitch('a'),
-                        pitchtools.NamedPitch('e'),
+                        pitchtools.NamedPitch('b'),
+                        pitchtools.NamedPitch('bf'),
+                        pitchtools.NamedPitch("c'"),
                         ),
                     item_class=pitchtools.NamedPitch,
                     ),

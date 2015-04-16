@@ -114,9 +114,10 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'2.. :32 -\accent \fp \startTextSpan
                         }
@@ -130,6 +131,7 @@
                             c'8 :64 \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -142,9 +144,10 @@
                     {
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'4 :32 -\accent \fp
                         }
@@ -153,6 +156,7 @@
                             c'8 :64 \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
@@ -199,9 +203,10 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'4 :32 -\accent \fp \startTextSpan
                             c'4 :32 \repeatTie
@@ -215,6 +220,7 @@
                             c'4 :32 \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
@@ -261,9 +267,10 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'4 :32 -\accent \fp \startTextSpan
                             c'4. :32 \repeatTie
@@ -273,6 +280,7 @@
                             c'4 :32 \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -286,9 +294,10 @@
                     {
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'8 :64 -\accent \fp
                         }
@@ -302,6 +311,7 @@
                             c'8 :64 \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
@@ -362,9 +372,10 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'8 :64 -\accent \fp \startTextSpan
                             c'2 :32 \repeatTie
@@ -384,6 +395,7 @@
                             c'4 :32 \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -407,9 +419,10 @@
                         % [Oboe Voice] Measure 76
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'4. :32 -\accent \fp
                             c'4 :32 \repeatTie
@@ -423,6 +436,7 @@
                             c'4 :32 \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -446,9 +460,10 @@
                         % [Oboe Voice] Measure 80
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'2. :32 -\accent \fp
                         }
@@ -458,6 +473,7 @@
                             c'8 :64 \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -471,9 +487,10 @@
                         % [Oboe Voice] Measure 82
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'4. :32 -\accent \fp
                             c'4 :32 \repeatTie
@@ -483,6 +500,7 @@
                             c'2 :32 \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             <> \stopTextSpan
                             \clef "treble"
@@ -946,9 +964,10 @@
                             % [Guitar Pitch Pipe Voice] Measure 77
                             {
                                 \once \override Hairpin.circled-tip = ##t
+                                \override NoteHead #'no-ledgers = ##t
                                 \override NoteHead #'style = #'cross
                                 \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                                 \startStaff
                                 c'2. \<
                                     ^ \markup {
@@ -965,6 +984,7 @@
                                 c'4. \p \repeatTie
                                 \stopStaff
                                 \startStaff
+                                \revert NoteHead #'no-ledgers
                                 \revert NoteHead #'style
                             }
                         }
@@ -1216,9 +1236,10 @@
                         }
                         {
                             {
+                                \override NoteHead #'no-ledgers = ##t
                                 \override NoteHead #'style = #'cross
                                 \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                                 \startStaff
                                 c'8 \fp \<
                                     ^ \markup {
@@ -1236,6 +1257,7 @@
                                 c'4. \mf \repeatTie
                                 \stopStaff
                                 \startStaff
+                                \revert NoteHead #'no-ledgers
                                 \revert NoteHead #'style
                             }
                         }
@@ -1261,9 +1283,10 @@
                             % [Piano Pitch Pipe Voice] Measure 81
                             {
                                 \once \override Hairpin.circled-tip = ##t
+                                \override NoteHead #'no-ledgers = ##t
                                 \override NoteHead #'style = #'cross
                                 \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                                 \startStaff
                                 c'4. \<
                                     ^ \markup {
@@ -1277,6 +1300,7 @@
                                 c'4 \ppp \repeatTie
                                 \stopStaff
                                 \startStaff
+                                \revert NoteHead #'no-ledgers
                                 \revert NoteHead #'style
                             }
                         }
@@ -1904,9 +1928,10 @@
                         }
                         {
                             {
+                                \override NoteHead #'no-ledgers = ##t
                                 \override NoteHead #'style = #'cross
                                 \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                                 \startStaff
                                 c'4 \fp
                                     ^ \markup {
@@ -1924,6 +1949,7 @@
                                 c'4 \p \repeatTie
                                 \stopStaff
                                 \startStaff
+                                \revert NoteHead #'no-ledgers
                                 \revert NoteHead #'style
                             }
                         }
@@ -1949,9 +1975,10 @@
                         }
                         {
                             {
+                                \override NoteHead #'no-ledgers = ##t
                                 \override NoteHead #'style = #'cross
                                 \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                                 \startStaff
                                 c'8 \ppp
                                     ^ \markup {
@@ -1968,6 +1995,7 @@
                                 c'4. \repeatTie
                                 \stopStaff
                                 \startStaff
+                                \revert NoteHead #'no-ledgers
                                 \revert NoteHead #'style
                             }
                         }
@@ -3287,9 +3315,10 @@
                         {
                             % [Contrabass Pitch Pipe Voice] Measure 77
                             {
+                                \override NoteHead #'no-ledgers = ##t
                                 \override NoteHead #'style = #'cross
                                 \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                                 \startStaff
                                 c'2. \fp \>
                                     ^ \markup {
@@ -3307,6 +3336,7 @@
                                 c'8 \ppp \repeatTie
                                 \stopStaff
                                 \startStaff
+                                \revert NoteHead #'no-ledgers
                                 \revert NoteHead #'style
                             }
                         }
@@ -3335,9 +3365,10 @@
                         {
                             {
                                 \once \override Hairpin.circled-tip = ##t
+                                \override NoteHead #'no-ledgers = ##t
                                 \override NoteHead #'style = #'cross
                                 \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                                 \startStaff
                                 c'4 \<
                                     ^ \markup {
@@ -3351,6 +3382,7 @@
                                 c'8 \p \repeatTie
                                 \stopStaff
                                 \startStaff
+                                \revert NoteHead #'no-ledgers
                                 \revert NoteHead #'style
                             }
                         }

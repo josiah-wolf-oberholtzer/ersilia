@@ -23,5 +23,15 @@ view_inventory=idetools.ViewInventory(
                     ]
                 ),
             ),
+        (
+            'rebuilt',
+            idetools.View(
+                [
+                    'rebuilt 1',
+                    'rebuilt 2',
+                    'rebuilt 3',
+                    ]
+                ),
+            ),
         ]
     )
