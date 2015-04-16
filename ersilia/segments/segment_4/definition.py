@@ -3,6 +3,7 @@ import abjad
 import consort
 import ersilia
 from abjad import new
+from abjad.tools import rhythmmakertools
 from abjad.tools import timespantools
 
 
@@ -10,9 +11,9 @@ from abjad.tools import timespantools
 
 segment_maker = ersilia.ErsiliaSegmentMaker(
     desired_duration_in_seconds=abjad.Multiplier(2, 20) * 480,
-    annotate_colors=True,
-    annotate_phrasing=False,
-    annotate_timespans=True,
+    #annotate_colors=True,
+    #annotate_phrasing=False,
+    #annotate_timespans=True,
     name='Scene IV',
     permitted_time_signatures=ersilia.permitted_time_signatures,
     tempo=abjad.Tempo((1, 4), 96),
@@ -28,6 +29,11 @@ segment_maker = ersilia.ErsiliaSegmentMaker(
 
 ### AGITATO ###
 
+segment_maker.add_setting(
+    timespan_identifier=timespantools.Timespan(0, 2),
+    percussion=ersilia.percussion_tom_fanfare_music_specifier,
+    )
+
 ### POINTILLIST ###
 
 ### INTERRUPT ###
@@ -37,6 +43,7 @@ segment_maker.add_setting(
     timespan_maker=ersilia.sparse_timespan_maker,
     percussion=ersilia.percussion_crotales_flash_music_specifier,
     )
+
 segment_maker.add_setting(
     timespan_identifier=timespantools.Timespan(0, (1, 4)),
     timespan_maker=consort.FloodedTimespanMaker(),
@@ -44,6 +51,19 @@ segment_maker.add_setting(
         ersilia.percussion_crotales_flash_music_specifier,
         seed=-1,
         ),
+    )
+
+segment_maker.add_setting(
+    timespan_maker=consort.BoundaryTimespanMaker(
+        stop_talea=rhythmmakertools.Talea(
+            counts=[2, 3, 4],
+            denominator=4,
+            ),
+        voice_names=['Percussion Voice'],
+        ),
+    piano_rh=ersilia.piano_arm_cluster_music_specifier,
+    percussion=ersilia.percussion_snare_interruption_music_specifier,
+    #silenced_contexts=segment_maker.score_template.all_voice_names,
     )
 
 ### AUXILIARY ###

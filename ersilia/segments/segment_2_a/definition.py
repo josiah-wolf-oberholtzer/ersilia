@@ -10,9 +10,9 @@ from abjad.tools import timespantools
 
 segment_maker = ersilia.ErsiliaSegmentMaker(
     desired_duration_in_seconds=abjad.Multiplier(3, 20) * 480,
-    annotate_colors=True,
-    annotate_phrasing=False,
-    annotate_timespans=True,
+    #annotate_colors=True,
+    #annotate_phrasing=False,
+    #annotate_timespans=True,
     name='Scene II/a',
     permitted_time_signatures=ersilia.permitted_time_signatures,
     tempo=abjad.Tempo((1, 4), 48),
@@ -82,11 +82,11 @@ segment_maker.add_setting(
 
 ### CONTINUO ###
 
-#segment_maker.add_setting(
-#    timespan_identifier=[-5, 1, -1, 1, -4, 1, -1, 4, -3, 1, -2],
-#    timespan_maker=ersilia.dense_timespan_maker,
-#    piano_rh=ersilia.piano_palm_cluster_music_specifier,
-#    )
+segment_maker.add_setting(
+    timespan_identifier=[-5, 1, -1, 1, -4, 1, -1, 4, -3, 1, -2],
+    timespan_maker=ersilia.dense_timespan_maker,
+    piano_rh=ersilia.piano_palm_cluster_music_specifier,
+    )
 
 ### OSTINATO ###
 
@@ -96,21 +96,21 @@ segment_maker.add_setting(
 
 ### INTERRUPT ###
 
-#segment_maker.add_setting(
-#    timespan_identifier=[-1, 1, -3, 1, -5, 1],
-#    timespan_maker=ersilia.dense_timespan_maker,
-#    piano_lh=ersilia.piano_arm_cluster_music_specifier
-#        .transpose(-12),
-#    )
+segment_maker.add_setting(
+    timespan_identifier=[-1, 1, -3, 1, -5, 1],
+    timespan_maker=ersilia.dense_timespan_maker,
+    piano_lh=ersilia.piano_arm_cluster_music_specifier
+        .transpose(-12),
+    )
 
-#segment_maker.add_setting(
-#    timespan_identifier=timespantools.Timespan(0, (1, 4)),
-#    timespan_maker=consort.FloodedTimespanMaker(),
-#    percussion=new(
-#        ersilia.percussion_crotales_flash_music_specifier,
-#        seed=1,
-#        ),
-#    )
+segment_maker.add_setting(
+    timespan_identifier=timespantools.Timespan(0, (1, 4)),
+    timespan_maker=consort.FloodedTimespanMaker(),
+    percussion=new(
+        ersilia.percussion_crotales_flash_music_specifier,
+        seed=1,
+        ),
+    )
 
 ### AUXILIARY ###
 
@@ -138,16 +138,4 @@ segment_maker.add_setting(
 #    violin=music_specifier,
 #    viola=music_specifier,
 #    cello=music_specifier,
-#    )
-
-#segment_maker.add_setting(
-#    timespan_identifier=[-6, 2, -2, 1, -3],
-#    timespan_maker=new(
-#        ersilia.sustained_timespan_maker,
-#        fuse_groups=True,
-#        ),
-#    guitar_pp=ersilia.pitch_pipe_music_specifier,
-#    piano_pp=ersilia.pitch_pipe_music_specifier,
-#    percussion_pp=ersilia.pitch_pipe_music_specifier,
-#    bass_pp=ersilia.pitch_pipe_music_specifier,
 #    )

@@ -3,16 +3,15 @@ import abjad
 import consort
 import ersilia
 from abjad import new
-from abjad.tools import timespantools
 
 
 ### SEGMENT ###
 
 segment_maker = ersilia.ErsiliaSegmentMaker(
     desired_duration_in_seconds=abjad.Multiplier(2, 20) * 480,
-    annotate_colors=True,
-    annotate_phrasing=False,
-    annotate_timespans=True,
+    #annotate_colors=True,
+    #annotate_phrasing=False,
+    #annotate_timespans=True,
     name='Scene II/b',
     permitted_time_signatures=ersilia.permitted_time_signatures,
     tempo=abjad.Tempo((1, 4), 48),
@@ -93,6 +92,12 @@ segment_maker.add_setting(
         playing_talea__denominator=4,
         ),
     bass=ersilia.string_legato_music_specifier.transpose('C3'),
+    )
+
+segment_maker.add_setting(
+    timespan_identifier=[-5, 1, -1, 1, -4, 1, -1, 4, -3, 1, -2],
+    timespan_maker=ersilia.sparse_timespan_maker,
+    piano_rh=ersilia.piano_palm_cluster_music_specifier.transpose(12),
     )
 
 ### OSTINATO ###

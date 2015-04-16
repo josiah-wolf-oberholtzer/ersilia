@@ -1,16 +1,18 @@
 # -*- encoding: utf-8 -*-
 import abjad
+import consort
 import ersilia
 from abjad import new
+from abjad.tools import rhythmmakertools
 
 
 ### SEGMENT ###
 
 segment_maker = ersilia.ErsiliaSegmentMaker(
     desired_duration_in_seconds=abjad.Multiplier(2, 20) * 480,
-    annotate_colors=True,
-    annotate_phrasing=False,
-    annotate_timespans=True,
+    #annotate_colors=True,
+    #annotate_phrasing=False,
+    #annotate_timespans=True,
     name='Scene I',
     permitted_time_signatures=ersilia.permitted_time_signatures,
     #settings=[ersilia.piano_pedals_music_setting],
@@ -30,7 +32,7 @@ segment_maker.add_setting(
     )
 
 segment_maker.add_setting(
-    timespan_identifier=[-2, 1, -2, 1, -1, 1],
+    timespan_identifier=[-2, 1, -3, 1, -1, 1],
     timespan_maker=new(
         ersilia.sparse_timespan_maker,
         fuse_groups=True,
@@ -42,12 +44,6 @@ segment_maker.add_setting(
 ### CONTINUO ###
 
 ### OSTINATO ###
-
-#segment_maker.add_setting(
-#    timespan_identifier=[-3, 1, -2, 1, -1, 1, -2],
-#    timespan_maker=ersilia.dense_timespan_maker,
-#    piano_rh=ersilia.piano_palm_cluster_music_specifier,
-#    )
 
 ### AGITATO ###
 
@@ -70,30 +66,60 @@ segment_maker.add_setting(
 #    bass=ersilia.string_agitato_music_specifier.transpose('E1'),
 #    )
 
-#segment_maker.add_setting(
-#    timespan_identifier=[-1, 1, -2, 1, -3, 1, -4, 1],
-#    timespan_maker=ersilia.dense_timespan_maker,
-#    percussion=consort.MusicSpecifierSequence(
-#        application_rate='division',
-#        music_specifiers=[
-#            ersilia.percussion_temple_block_fanfare_music_specifier,
-#            ersilia.percussion_tom_fanfare_music_specifier,
-#            ersilia.percussion_tom_fanfare_music_specifier,
-#            ],
-#        )
-#    )
+segment_maker.add_setting(
+    timespan_identifier=[-1, 1, -2, 1, -3, 1, -4, 1],
+    timespan_maker=ersilia.dense_timespan_maker,
+    percussion=ersilia.percussion_temple_block_fanfare_music_specifier,
+    piano_rh=ersilia.piano_agitato_music_specifier.rotate(1),
+    piano_lh=ersilia.piano_agitato_music_specifier.transpose(-24),
+    )
 
 ### POINTILLIST ###
 
+segment_maker.add_setting(
+    timespan_identifier=[-2, 1, -2, 2, -1],
+    timespan_maker=ersilia.sparse_timespan_maker.rotate(1),
+    piano_rh=ersilia.piano_pointillist_music_specifier,
+    piano_lh=ersilia.piano_pointillist_music_specifier.transpose(-12)
+    )
+
+segment_maker.add_setting(
+    timespan_identifier=[-3, 1, -2, 1, -1, 1, -2],
+    timespan_maker=ersilia.dense_timespan_maker,
+    piano_rh=ersilia.piano_palm_cluster_music_specifier,
+    )
+
 ### INTERRUPT ###
 
-#segment_maker.add_setting(
-#    timespan_identifier=[3, -1, 2, -1, 1],
-#    timespan_maker=ersilia.tutti_timespan_maker,
-#    piano_lh=ersilia.piano_arm_cluster_music_specifier
-#        .transpose(-12),
-#    percussion=ersilia.percussion_snare_interruption_music_specifier,
-#    )
+segment_maker.add_setting(
+    timespan_identifier=[3, -1, 2, -1, 1],
+    timespan_maker=ersilia.tutti_timespan_maker,
+    piano_lh=ersilia.piano_arm_cluster_music_specifier
+        .transpose(-12),
+    percussion=ersilia.percussion_snare_interruption_music_specifier,
+    )
+
+segment_maker.add_setting(
+    timespan_maker=consort.BoundaryTimespanMaker(
+        labels='piano arm cluster',
+        output_masks=[
+            rhythmmakertools.SilenceMask(
+                indices=[0, 1, 3],
+                period=5,
+                ),
+            ],
+        start_talea=(3, 8),
+        ),
+    guitar=new(
+        ersilia.guitar_strummed_music_specifier,
+        attachment_handler__dynamic_expressions=consort.DynamicExpression(
+            dynamic_tokens='f',
+            only_first=True,
+            ),
+        rhythm_maker__incise_specifier__prefix_counts=[3, 2],
+        rhythm_maker__incise_specifier__prefix_talea=[1],
+        ),
+    )
 
 ### AUXILIARY ###
 

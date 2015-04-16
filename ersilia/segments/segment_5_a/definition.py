@@ -9,9 +9,9 @@ from abjad.tools import timespantools
 
 segment_maker = ersilia.ErsiliaSegmentMaker(
     desired_duration_in_seconds=abjad.Multiplier(3, 20) * 480,
-    annotate_colors=True,
-    annotate_phrasing=False,
-    annotate_timespans=True,
+    #annotate_colors=True,
+    #annotate_phrasing=False,
+    #annotate_timespans=True,
     name='Scene V/a',
     permitted_time_signatures=ersilia.permitted_time_signatures,
     tempo=abjad.Tempo((1, 4), 48),
@@ -46,12 +46,6 @@ segment_maker.add_setting(
     )
 
 ### CONTINUO ###
-
-#segment_maker.add_setting(
-#    timespan_identifier=[-1, 1, -2, 1, -3, 1, -2],
-#    timespan_maker=ersilia.sparse_timespan_maker,
-#    piano_rh=ersilia.piano_string_glissando_music_specifier,
-#    )
 
 ### OSTINATO ###
 
