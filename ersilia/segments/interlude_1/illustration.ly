@@ -1091,8 +1091,8 @@
             \repeat volta 2
             \context ViolaStaff = "Viola Staff" {
                 \clef "alto"
-                \set Staff.instrumentName = \markup { Violin }
-                \set Staff.shortInstrumentName = \markup { Vn. }
+                \set Staff.instrumentName = \markup { Viola }
+                \set Staff.shortInstrumentName = \markup { Va. }
                 \context Voice = "Viola Voice" {
                     {
                         % [Viola Voice] Measure 28

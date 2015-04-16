@@ -10,11 +10,12 @@ from abjad.tools import timespantools
 
 segment_maker = ersilia.ErsiliaSegmentMaker(
     desired_duration_in_seconds=abjad.Multiplier(3, 20) * 480,
-    #annotate_colors=True,
-    #annotate_phrasing=False,
-    #annotate_timespans=True,
     name='Scene II/a',
-    permitted_time_signatures=ersilia.permitted_time_signatures,
+    permitted_time_signatures=[
+        (3, 8),
+        (4, 8),
+        (5, 8),
+        ],
     tempo=abjad.Tempo((1, 4), 48),
     )
 
@@ -34,6 +35,34 @@ segment_maker.add_setting(
     saxophone=ersilia.wind_low_pedal_music_specifier,
     percussion=ersilia.percussion_low_pedal_music_specifier,
     bass=ersilia.string_low_pedal_music_specifier.transpose('C2'),
+    )
+
+### OSTINATO ###
+
+segment_maker.add_setting(
+    timespan_maker=new(
+        ersilia.dense_timespan_maker,
+        silence_talea__denominator=4,
+        ),
+    violin=ersilia.string_ostinato_music_specifier,
+    viola=ersilia.string_ostinato_music_specifier
+        .rotate(1)
+        .transpose('C3'),
+    cello=ersilia.string_ostinato_music_specifier
+        .rotate(2)
+        .transpose('C2'),
+    )
+
+segment_maker.add_setting(
+    timespan_maker=ersilia.sparse_timespan_maker,
+    flute=ersilia.wind_ostinato_music_specifier,
+    oboe=ersilia.wind_ostinato_music_specifier,
+    clarinet=ersilia.wind_ostinato_music_specifier
+        .transpose('C3'),
+    saxophone=ersilia.wind_ostinato_music_specifier
+        .transpose('C2'),
+    percussion=ersilia.percussion_marimba_ostinato_music_specifier
+        .transpose('C2'),
     )
 
 ### TREMOLO ###
@@ -88,8 +117,6 @@ segment_maker.add_setting(
     piano_rh=ersilia.piano_palm_cluster_music_specifier,
     )
 
-### OSTINATO ###
-
 ### AGITATO ###
 
 ### POINTILLIST ###
@@ -99,8 +126,7 @@ segment_maker.add_setting(
 segment_maker.add_setting(
     timespan_identifier=[-1, 1, -3, 1, -5, 1],
     timespan_maker=ersilia.dense_timespan_maker,
-    piano_lh=ersilia.piano_arm_cluster_music_specifier
-        .transpose(-12),
+    piano_rh=ersilia.piano_arm_cluster_music_specifier,
     )
 
 segment_maker.add_setting(

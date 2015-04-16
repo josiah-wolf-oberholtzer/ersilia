@@ -17,12 +17,12 @@ metadata = datastructuretools.TypedOrderedDict(
                     ('Guitar Staff', 'guitar'),
                     ('Oboe Staff', 'oboe'),
                     ('Percussion Pitch Pipe Staff', 'pitch pipes'),
-                    ('Percussion Staff', None),
+                    ('Percussion Staff', 'percussion'),
                     ('Piano Lower Staff', 'piano'),
                     ('Piano Pitch Pipe Staff', 'pitch pipes'),
                     ('Piano Upper Staff', 'piano'),
                     ('Saxophone Staff', 'baritone saxophone'),
-                    ('Viola Staff', 'violin'),
+                    ('Viola Staff', 'viola'),
                     ('Violin Staff', 'violin'),
                     ]
                 ),
@@ -36,11 +36,11 @@ metadata = datastructuretools.TypedOrderedDict(
             ),
         (
             'end_time_signature',
-            (4, 8),
+            (3, 8),
             ),
         ('first_bar_number', 32),
         ('is_repeated', None),
-        ('measure_count', 21),
+        ('measure_count', 39),
         ('segment_count', 11),
         ('segment_number', 3),
         ]

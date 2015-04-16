@@ -2403,23 +2403,11 @@
                             }
                             {
                                 {
-                                    r8
-                                    r8
-                                }
-                            }
-                            {
-                                {
-                                    b''8 -\mordent -\tenuto \ppp
+                                    r4.
                                 }
                                 % [Piano Upper Voice] Measure 7
                                 {
-                                    <g' c''>8 -\tenuto
-                                }
-                            }
-                            {
-                                {
-                                    r8
-                                    r4
+                                    r2
                                     r16
                                 }
                             }
@@ -2773,7 +2761,9 @@
                             {
                                 % [Piano Upper Voice] Measure 18
                                 {
-                                    <f'' af''>8 -\tenuto \ppp
+                                    c'''16 -\mordent -\tenuto \ppp [
+                                    \set stemLeftBeamCount = 2
+                                    <cs' fs'>16 -\tenuto ]
                                 }
                             }
                             {
@@ -2792,12 +2782,7 @@
                             {
                                 % [Piano Upper Voice] Measure 19
                                 {
-                                    c''8 -\mordent -\tenuto \ppp
-                                }
-                            }
-                            {
-                                {
-                                    r4.
+                                    r2
                                 }
                             }
                             {
@@ -2855,16 +2840,14 @@
                                 {
                                     r8
                                 }
-                            }
-                            {
                                 % [Piano Upper Voice] Measure 20
                                 {
-                                    <b'' gs'''>8 -\tenuto \ppp
-                                }
-                            }
-                            {
-                                {
-                                    r4.
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
+                                    R1 * 1/2
+                                    \stopStaff
+                                    \startStaff
                                 }
                                 % [Piano Upper Voice] Measure 21
                                 {
@@ -2977,7 +2960,9 @@
                             }
                             {
                                 {
-                                    f''8 -\mordent -\tenuto \ppp
+                                    <f'' af''>16 -\tenuto \ppp [
+                                    \set stemLeftBeamCount = 2
+                                    c'16 -\mordent -\tenuto ]
                                 }
                             }
                             {
@@ -3215,17 +3200,7 @@
                                 }
                                 % [Piano Lower Voice] Measure 7
                                 {
-                                    r4
-                                }
-                            }
-                            {
-                                {
-                                    b'8 -\mordent -\tenuto \ppp
-                                }
-                            }
-                            {
-                                {
-                                    r4.
+                                    r2.
                                 }
                             }
                             {
@@ -3427,16 +3402,15 @@
                             }
                             {
                                 {
-                                    r4
+                                    r4.
                                 }
                             }
                             {
-                                {
-                                    <cs' fs'>8 -\tenuto \ppp
-                                }
                                 % [Piano Lower Voice] Measure 18
                                 {
-                                    <f af>8 -\tenuto
+                                    c''16 -\mordent -\tenuto \ppp [
+                                    \set stemLeftBeamCount = 2
+                                    <cs fs>16 -\tenuto ]
                                 }
                             }
                             {
@@ -3493,17 +3467,8 @@
                             }
                             {
                                 {
-                                    r8
-                                    r2
-                                    r8
+                                    r2..
                                 }
-                            }
-                            {
-                                {
-                                    c'8 -\mordent -\tenuto \ppp
-                                }
-                            }
-                            {
                                 % [Piano Lower Voice] Measure 20
                                 {
                                     \stopStaff
@@ -3514,19 +3479,12 @@
                                 % [Piano Lower Voice] Measure 21
                                 {
                                     R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
                                 }
-                            }
-                            {
                                 % [Piano Lower Voice] Measure 22
                                 {
-                                    <b gs'>8 -\tenuto \ppp
-                                }
-                            }
-                            {
-                                {
-                                    r2..
+                                    R1 * 1
+                                    \stopStaff
+                                    \startStaff
                                 }
                                 % [Piano Lower Voice] Measure 23
                                 {
@@ -3535,7 +3493,9 @@
                             }
                             {
                                 {
-                                    f'8 -\mordent -\tenuto \ppp
+                                    <f' af'>16 -\tenuto \ppp [
+                                    \set stemLeftBeamCount = 2
+                                    c16 -\mordent -\tenuto ]
                                 }
                             }
                             {
@@ -4980,8 +4940,8 @@
             \tag #'viola
             \context ViolaStaff = "Viola Staff" {
                 \clef "alto"
-                \set Staff.instrumentName = \markup { Violin }
-                \set Staff.shortInstrumentName = \markup { Vn. }
+                \set Staff.instrumentName = \markup { Viola }
+                \set Staff.shortInstrumentName = \markup { Va. }
                 \context Voice = "Viola Voice" {
                     {
                         % [Viola Voice] Measure 1
@@ -5337,7 +5297,7 @@
                             r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            ef'16 -\mordent \ppp
+                            ef16 -\mordent \ppp
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 1
                             r16
@@ -5346,7 +5306,7 @@
                         }
                         % [Viola Voice] Measure 21
                         {
-                            f'16 -\mordent
+                            f16 -\mordent
                             <> \stopTextSpan
                         }
                     }
