@@ -7,7 +7,7 @@
     \include "interlude-2.ly"
     \include "segment-4.ly"
     \include "segment-5-a.ly"
-    \include "segment-5-b.ly"
     \include "interlude-3.ly"
+    \include "segment-5-b.ly"
     \include "segment-6.ly"
 }
