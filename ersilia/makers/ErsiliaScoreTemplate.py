@@ -262,7 +262,10 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
             )
         self._attach_tag('piano', piano_staff_group)
 
-        percussion_staff = self._make_staff('Percussion', 'percussion')
+        percussion_staff = self._make_staff(
+            'Percussion', 'percussion',
+            instrument=instrumenttools.Percussion(),
+            )
         percussion_aux_staff = self._make_staff(
             'Percussion Pitch Pipe', 'percussion',
             abbreviation='percussion_pp',
