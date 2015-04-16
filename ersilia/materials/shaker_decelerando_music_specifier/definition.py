@@ -3,6 +3,7 @@ import consort
 from abjad.tools import durationtools
 from abjad.tools import indicatortools
 from abjad.tools import rhythmmakertools
+from abjad.tools import selectortools
 from ersilia.materials import abbreviations
 
 
@@ -14,7 +15,10 @@ shaker_decelerando_music_specifier = consort.MusicSpecifier(
             stop_dynamic_tokens='p',
             ),
         percussion_staff=abbreviations.percussion_staff,
-        text_spanner=abbreviations.make_text_spanner('shaker'),
+        text_spanner=consort.AttachmentExpression(
+            attachments=abbreviations.make_text_spanner('shaker'),
+            selector=selectortools.Selector().by_leaves(),
+            ),
         ),
     color='blue',
     labels=['shakers'],

@@ -18,7 +18,10 @@ string_overpressure_music_specifier = consort.MusicSpecifier(
             start_dynamic_tokens='fff',
             only_first=True,
             ),
-        text_spanner=abbreviations.make_text_spanner('overpressure'),
+        text_spanner=consort.AttachmentExpression(
+            attachments=abbreviations.make_text_spanner('overpressure'),
+            selector=selectortools.Selector().by_leaves(),
+            ),
         ),
     color=None,
     labels=[],

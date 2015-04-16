@@ -57,7 +57,29 @@
                     {
                         % [Violin 1 Voice] Measure 1
                         {
-                            <ds'' fs''>16 -\accent -\staccato -\staccato \f \> [
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        mb.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            <ds'' fs''>16 -\accent -\accent -\staccato -\staccato \f \f \startTextSpan \> [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
@@ -71,11 +93,14 @@
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
-                            <b' e''>16 -\accent -\staccato -\staccato ]
+                            <b' e''>16 -\accent -\accent -\staccato -\staccato ]
                         }
                         % [Violin 1 Voice] Measure 2
                         {
                             <ds' fs'>4 :32 \mf \mf
+                            \stopStaff
+                            \startStaff
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -89,7 +114,25 @@
                     }
                     {
                         {
-                            a16 -\accent -\staccato \f
+                            \clef "bass"
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            a16 -\accent -\staccato \f ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        mb.
+                                                    }
+                                }
+                            \stopStaff
+                            \startStaff
+                            \clef "treble"
                         }
                     }
                     {
@@ -100,7 +143,30 @@
                     {
                         % [Violin 1 Voice] Measure 4
                         {
-                            <b d'>4. :32 -\accent \f \f \>
+                            \clef "bass"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        mb.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            <b d'>4. :32 -\accent -\accent \f \f \startTextSpan \>
                             <b d'>8 :64 \repeatTie
                         }
                         \tweak #'text #tuplet-number::calc-fraction-text
@@ -135,6 +201,10 @@
                             r16
                             \set stemLeftBeamCount = 2
                             f16 -\accent -\staccato \mf ]
+                            \stopStaff
+                            \startStaff
+                            <> \stopTextSpan
+                            \clef "treble"
                         }
                     }
                     {
@@ -148,7 +218,23 @@
                     }
                     {
                         {
-                            c'16 -\accent -\staccato \f
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            c'16 -\accent -\staccato \f ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        mb.
+                                                    }
+                                }
+                            \stopStaff
+                            \startStaff
                         }
                     }
                     {
@@ -159,7 +245,23 @@
                     {
                         % [Violin 1 Voice] Measure 7
                         {
-                            <e' g'>4 :32 -\accent \f \f
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            <e' g'>4 :32 -\accent -\accent \f \f ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        mb.
+                                                    }
+                                }
+                            \stopStaff
+                            \startStaff
                         }
                     }
                     {
@@ -196,11 +298,34 @@
                     }
                     {
                         {
-                            cs'16 -\accent -\staccato \f \>
+                            \clef "bass"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        mb.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            cs'16 -\accent -\staccato \f \startTextSpan \>
                         }
                         % [Violin 2 Voice] Measure 2
                         \times 4/5 {
-                            <d' g'>16 -\staccato -\staccato \mp \< [
+                            <d' g'>16 -\staccato -\staccato \mp \mp \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             cs'16 -\staccato
@@ -221,6 +346,10 @@
                             <a c'>16 -\staccato -\staccato [
                             \set stemLeftBeamCount = 2
                             b16 -\staccato \mf ]
+                            \stopStaff
+                            \startStaff
+                            <> \stopTextSpan
+                            \clef "treble"
                         }
                     }
                     {
@@ -231,7 +360,30 @@
                     {
                         % [Violin 2 Voice] Measure 4
                         \times 4/5 {
-                            a16 -\accent -\staccato \f \> [
+                            \clef "bass"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        mb.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            a16 -\accent -\staccato \f \startTextSpan \> [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             b16 -\staccato
@@ -243,6 +395,10 @@
                             r16
                             \set stemLeftBeamCount = 2
                             b16 -\accent -\staccato \mf ]
+                            \stopStaff
+                            \startStaff
+                            <> \stopTextSpan
+                            \clef "treble"
                         }
                     }
                     {
@@ -253,7 +409,30 @@
                     }
                     {
                         {
-                            <e a>16 -\accent -\staccato -\staccato \f \< [
+                            \clef "bass"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        mb.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            <e a>16 -\accent -\accent -\staccato -\staccato \f \f \startTextSpan \< [
                             \set stemLeftBeamCount = 2
                             af16 -\staccato ]
                         }
@@ -274,6 +453,10 @@
                         }
                         {
                             ef16 -\accent -\staccato
+                            \stopStaff
+                            \startStaff
+                            <> \stopTextSpan
+                            \clef "treble"
                         }
                     }
                     {
@@ -284,7 +467,30 @@
                     {
                         % [Violin 2 Voice] Measure 6
                         {
-                            <f af>4. :32 -\accent \f \f \>
+                            \clef "bass"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        mb.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            <f af>4. :32 -\accent -\accent \f \f \startTextSpan \>
                         }
                         % [Violin 2 Voice] Measure 7
                         \times 2/3 {
@@ -294,6 +500,10 @@
                             af,16 -\accent -\staccato \mf
                             \set stemLeftBeamCount = 2
                             <e g>16 -\staccato -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            <> \stopTextSpan
+                            \clef "treble"
                         }
                     }
                     {
@@ -330,7 +540,29 @@
                     {
                         {
                             \clef "treble"
-                            b'16 -\accent -\staccato \f \> [
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        mb.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            b'16 -\accent -\staccato \f \startTextSpan \> [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
@@ -351,6 +583,9 @@
                         }
                         {
                             <b d'>8 :64
+                            \stopStaff
+                            \startStaff
+                            <> \stopTextSpan
                             \clef "alto"
                         }
                     }
@@ -361,8 +596,30 @@
                     }
                     {
                         {
-                            \clef "treble"
-                            a16 -\accent -\staccato \f \>
+                            \clef "bass"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        mb.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            a16 -\accent -\staccato \f \startTextSpan \>
                         }
                         % [Viola Voice] Measure 3
                         \times 2/3 {
@@ -372,6 +629,9 @@
                             b16 -\accent -\staccato \mf
                             \set stemLeftBeamCount = 2
                             a16 -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            <> \stopTextSpan
                             \clef "alto"
                         }
                     }
@@ -386,8 +646,30 @@
                     }
                     {
                         {
-                            \clef "treble"
-                            <gs b>8 :64 -\accent \f \f \>
+                            \clef "bass"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        mb.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            <gs b>8 :64 -\accent -\accent \f \f \startTextSpan \>
                             <gs b>4 :32 \repeatTie
                         }
                         \times 2/3 {
@@ -403,6 +685,9 @@
                             f16 -\accent -\staccato
                             \set stemLeftBeamCount = 2
                             ef16 -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            <> \stopTextSpan
                             \clef "alto"
                         }
                     }
@@ -414,11 +699,36 @@
                     }
                     {
                         {
-                            \clef "treble"
-                            f16 -\accent -\staccato \f \>
+                            \clef "bass"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        mb.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            f16 -\accent -\staccato \f \startTextSpan \>
                         }
                         {
                             <c' ef'>4 :32 \mf \mf
+                            \stopStaff
+                            \startStaff
+                            <> \stopTextSpan
                             \clef "alto"
                         }
                     }
@@ -430,13 +740,38 @@
                     }
                     {
                         {
-                            \clef "treble"
-                            f16 -\accent -\staccato \f [
+                            \clef "bass"
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        mb.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            f16 -\accent -\staccato \f \startTextSpan [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             c16 -\staccato
                             \set stemLeftBeamCount = 2
                             ef16 -\staccato ]
+                            \stopStaff
+                            \startStaff
+                            <> \stopTextSpan
                             \clef "alto"
                         }
                     }
@@ -451,8 +786,6 @@
                             \startStaff
                             R1 * 3/8
                             \bar "|."
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 }
@@ -479,7 +812,29 @@
                         \tweak #'text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             \clef "treble"
-                            <ds' fs'>16 -\accent -\staccato -\staccato \f \> [
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        mb.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            <ds' fs'>16 -\accent -\accent -\staccato -\staccato \f \f \startTextSpan \> [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             d'16 -\staccato
@@ -500,7 +855,10 @@
                         }
                         % [Cello Voice] Measure 2
                         {
-                            <f' af'>4 :32 -\accent \mf \mf
+                            <f' af'>4 :32 -\accent -\accent \mf \mf
+                            \stopStaff
+                            \startStaff
+                            <> \stopTextSpan
                             \clef "bass"
                         }
                     }
@@ -512,20 +870,43 @@
                     {
                         % [Cello Voice] Measure 3
                         {
-                            \clef "treble"
-                            a16 -\accent -\staccato \f \> [
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        mb.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            a16 -\accent -\staccato \f \startTextSpan \> [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <b e'>16 -\accent -\staccato -\staccato
+                            <b e'>16 -\accent -\accent -\staccato -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             a16 -\staccato
                             \set stemLeftBeamCount = 2
                             b16 -\staccato \mf ]
-                            \clef "bass"
+                            \stopStaff
+                            \startStaff
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -536,14 +917,37 @@
                     {
                         % [Cello Voice] Measure 4
                         \times 2/3 {
-                            \clef "treble"
-                            r16 [
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        mb.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            r16 \startTextSpan [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             a16 -\accent -\staccato \f
                             \set stemLeftBeamCount = 2
                             r16 ]
-                            \clef "bass"
+                            \stopStaff
+                            \startStaff
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -554,7 +958,23 @@
                     {
                         {
                             \clef "treble"
-                            <d' f'>4 :32 -\accent \f \f
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            <d' f'>4 :32 -\accent -\accent \f \f ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        mb.
+                                                    }
+                                }
+                            \stopStaff
+                            \startStaff
                             \clef "bass"
                         }
                     }
@@ -565,8 +985,29 @@
                     }
                     {
                         {
-                            \clef "treble"
-                            f'16 -\accent -\staccato \f \> [
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        mb.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            f'16 -\accent -\staccato \f \startTextSpan \> [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
@@ -576,7 +1017,9 @@
                         % [Cello Voice] Measure 5
                         {
                             ef16 -\staccato \mf
-                            \clef "bass"
+                            \stopStaff
+                            \startStaff
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -586,9 +1029,23 @@
                     }
                     {
                         {
-                            \clef "treble"
-                            <f af>4 :32 -\accent \f \f
-                            \clef "bass"
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            <f af>4 :32 -\accent -\accent \f \f ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        mb.
+                                                    }
+                                }
+                            \stopStaff
+                            \startStaff
                         }
                     }
                     {
@@ -598,18 +1055,39 @@
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 3/8
-                            \stopStaff
-                            \startStaff
                         }
                     }
                     {
                         % [Cello Voice] Measure 7
                         {
-                            \clef "treble"
-                            af16 -\accent -\staccato \f [
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        mb.
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            af16 -\accent -\staccato \f \startTextSpan [
                             \set stemLeftBeamCount = 2
                             d16 -\staccato ]
-                            \clef "bass"
+                            \stopStaff
+                            \startStaff
+                            <> \stopTextSpan
                         }
                     }
                     {

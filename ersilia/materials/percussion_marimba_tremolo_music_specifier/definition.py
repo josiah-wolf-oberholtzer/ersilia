@@ -21,7 +21,10 @@ percussion_marimba_tremolo_music_specifier = consort.MusicSpecifier(
             attachments=spannertools.StemTremoloSpanner(),
             selector=selectortools.select_pitched_runs(),
             ),
-        text_spanner=abbreviations.make_text_spanner('mb.'),
+        text_spanner=consort.AttachmentExpression(
+            attachments=abbreviations.make_text_spanner('mb.'),
+            selector=selectortools.Selector().by_leaves(),
+            ),
         ),
     color='red',
     labels=[],

@@ -19,7 +19,10 @@ percussion_low_pedal_music_specifier = consort.MusicSpecifier(
                 [0]
             ),
         bass_drum_indication=consort.AttachmentExpression(
-            attachments=abbreviations.make_text_spanner('b.d.'),
+            attachments=consort.AttachmentExpression(
+                attachments=abbreviations.make_text_spanner('b.d.'),
+                selector=selectortools.Selector().by_leaves(),
+                ),
             selector=selectortools.Selector()
                 .by_logical_tie()
                 .by_pitch(pitches=ersilia.Percussion.BASS_DRUM)
@@ -27,7 +30,10 @@ percussion_low_pedal_music_specifier = consort.MusicSpecifier(
                 .by_leaves()
             ),
         tam_tam_indication=consort.AttachmentExpression(
-            attachments=abbreviations.make_text_spanner('tam'),
+            attachments=consort.AttachmentExpression(
+                attachments=abbreviations.make_text_spanner('tam'),
+                selector=selectortools.Selector().by_leaves(),
+                ),
             selector=selectortools.Selector()
                 .by_logical_tie()
                 .by_pitch(pitches=ersilia.Percussion.TAM_TAM)

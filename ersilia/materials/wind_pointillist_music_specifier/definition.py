@@ -40,7 +40,7 @@ wind_pointillist_music_specifier = consort.MusicSpecifier(
             extra_counts_per_division=[0, 0, 1],
             talea=rhythmmakertools.Talea(
                 counts=[1, -1, 1, -2, 1, -3],
-                denominator=8,
+                denominator=16,
                 ),
             ),
         last=rhythmmakertools.IncisedRhythmMaker(
@@ -48,7 +48,7 @@ wind_pointillist_music_specifier = consort.MusicSpecifier(
                 fill_with_notes=False,
                 prefix_counts=[1],
                 prefix_talea=[1],
-                talea_denominator=8,
+                talea_denominator=16,
                 ),
             ),
         ),

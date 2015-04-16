@@ -81,7 +81,7 @@ piano_agitato_music_specifier = consort.MusicSpecifier(
     rhythm_maker=rhythmmakertools.TaleaRhythmMaker(
         burnish_specifier=rhythmmakertools.BurnishSpecifier(
             left_classes=[scoretools.Rest],
-            left_counts=[1, 0],
+            left_counts=[1, 1, 0],
             right_classes=[scoretools.Rest],
             right_counts=[1],
             ),

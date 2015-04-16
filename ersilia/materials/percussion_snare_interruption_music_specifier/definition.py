@@ -37,14 +37,17 @@ percussion_snare_interruption_music_specifier = consort.MusicSpecifier(
                 [0]
             ),
         swell=consort.AttachmentExpression(
-            attachments=consort.SimpleDynamicExpression('o', 'f'),
+            attachments=spannertools.Hairpin('niente < f'),
             selector=selectortools.Selector()
                 .by_logical_tie(pitched=True)
                 .by_duration('>', (1, 16), preprolated=True)
                 .by_leaves()
                 .by_length('>', 1)
             ),
-        text_spanner=abbreviations.make_text_spanner('snare'),
+        text_spanner=consort.AttachmentExpression(
+            attachments=abbreviations.make_text_spanner('snare'),
+            selector=selectortools.Selector().by_leaves(),
+            ),
         tremolo=consort.AttachmentExpression(
             attachments=spannertools.StemTremoloSpanner(),
             selector=selectortools.Selector()

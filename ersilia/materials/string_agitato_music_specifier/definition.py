@@ -54,14 +54,6 @@ string_agitato_music_specifier = consort.MusicSpecifier(
                 .by_leaves()
                 [0]
             ),
-        flautando=consort.AttachmentExpression(
-            attachments=abbreviations.make_text_spanner('flautando'),
-            selector=selectortools.Selector()
-                .by_logical_tie(pitched=True)
-                .by_duration('>', (1, 16), preprolated=True)
-                .by_contiguity()
-                .by_leaves()
-            ),
         trill_spanner=consort.AttachmentExpression(
             attachments=[
                 spannertools.ComplexTrillSpanner('+m3'),

@@ -18,7 +18,13 @@ string_pointillist_music_specifier = consort.MusicSpecifier(
             start_dynamic_tokens='ppp',
             only_first=True,
             ),
-        text_spanner=abbreviations.make_text_spanner('pizz.'),
+        text_spanner=consort.AttachmentExpression(
+            attachments=consort.AttachmentExpression(
+                attachments=abbreviations.make_text_spanner('pizz.'),
+                selector=selectortools.Selector().by_leaves(),
+                ),
+            selector=selectortools.Selector().by_leaves(),
+            ),
         ),
     color='darkyellow',
     labels=[],
@@ -41,7 +47,7 @@ string_pointillist_music_specifier = consort.MusicSpecifier(
             extra_counts_per_division=[0, 0, 1],
             talea=rhythmmakertools.Talea(
                 counts=[1, -1, 1, -2, 1, -3],
-                denominator=8,
+                denominator=16,
                 ),
             ),
         last=rhythmmakertools.IncisedRhythmMaker(
@@ -49,7 +55,7 @@ string_pointillist_music_specifier = consort.MusicSpecifier(
                 fill_with_notes=False,
                 prefix_counts=[1],
                 prefix_talea=[1],
-                talea_denominator=8,
+                talea_denominator=16,
                 ),
             ),
         ),

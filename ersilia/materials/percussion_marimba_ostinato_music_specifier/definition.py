@@ -43,7 +43,10 @@ percussion_marimba_ostinato_music_specifier = consort.MusicSpecifier(
                 [-1]
             ),
         staff_lines_spanner=spannertools.StaffLinesSpanner([-4, -2, 0, 2, 4]),
-        text_spanner=abbreviations.make_text_spanner('mb.'),
+        text_spanner=consort.AttachmentExpression(
+            attachments=abbreviations.make_text_spanner('mb.'),
+            selector=selectortools.Selector().by_leaves(),
+            ),
         ),
     color='darkyellow',
     pitch_handler=consort.AbsolutePitchHandler(

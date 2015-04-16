@@ -94,10 +94,9 @@ percussion_snare_interruption_music_specifier = consort.tools.MusicSpecifier(
         swell=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [
-                    consort.tools.SimpleDynamicExpression(
-                        hairpin_start_token='o',
-                        hairpin_stop_token='f',
-                        minimum_duration=durationtools.Duration(1, 4),
+                    spannertools.Hairpin(
+                        descriptor='niente < f',
+                        include_rests=False,
                         ),
                     ]
                 ),

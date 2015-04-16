@@ -321,7 +321,7 @@ piano_agitato_music_specifier = consort.tools.MusicSpecifier(
             right_classes=(
                 scoretools.Rest,
                 ),
-            left_counts=(1, 0),
+            left_counts=(1, 1, 0),
             right_counts=(1,),
             ),
         output_masks=rhythmmakertools.BooleanPatternInventory(

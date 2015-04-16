@@ -21,7 +21,10 @@ shaker_tremolo_music_specifier = consort.MusicSpecifier(
             dynamic_tokens='fp',
             ),
         percussion_staff=abbreviations.percussion_staff,
-        text_spanner=abbreviations.make_text_spanner('shaker'),
+        text_spanner=consort.AttachmentExpression(
+            attachments=abbreviations.make_text_spanner('shaker'),
+            selector=selectortools.Selector().by_leaves(),
+            ),
         tremolo_spanner=spannertools.StemTremoloSpanner(),
         ),
     color='blue',

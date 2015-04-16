@@ -57,7 +57,18 @@
                     {
                         % [Violin 1 Voice] Measure 1
                         {
-                            c16 -\accent \fff
+                            c'16 -\accent \fff ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        snare
+                                                    }
+                                }
                         }
                     }
                     {
@@ -69,7 +80,18 @@
                     {
                         % [Violin 1 Voice] Measure 2
                         {
-                            c4 :32 -\accent \fp
+                            c'4 :32 -\accent \fp ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        snare
+                                                    }
+                                }
                         }
                     }
                     {
@@ -83,7 +105,18 @@
                     }
                     {
                         {
-                            c16 -\accent \fff
+                            c'16 -\accent \fff ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        snare
+                                                    }
+                                }
                         }
                     }
                     {
@@ -94,7 +127,18 @@
                     {
                         % [Violin 1 Voice] Measure 4
                         {
-                            c16 -\accent \fff
+                            c'16 -\accent \fff ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        snare
+                                                    }
+                                }
                         }
                     }
                     {
@@ -106,14 +150,33 @@
                     }
                     {
                         {
-                            \override Hairpin #'circled-tip = ##t
-                            c8 :64 \<
-                            c4 :32 \repeatTie
+                            \once \override Hairpin #'circled-tip = ##t
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        snare
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            c'8 :64 \startTextSpan \<
+                            c'4 :32 \repeatTie
                         }
                         % [Violin 1 Voice] Measure 5
                         {
-                            c4 :32 \repeatTie \f
-                            \revert Hairpin #'circled-tip
+                            c'4 :32 \repeatTie \f
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -128,11 +191,31 @@
                     }
                     {
                         {
-                            c16 -\accent \fff
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        snare
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            c'16 -\accent \fff \startTextSpan
                         }
                         % [Violin 1 Voice] Measure 7
                         {
-                            c4 :32 -\accent \fp
+                            c'4 :32 -\accent \fp
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -168,7 +251,18 @@
                     }
                     {
                         {
-                            c16 -\accent \fff
+                            c'16 -\accent \fff ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        snare
+                                                    }
+                                }
                         }
                     }
                     {
@@ -179,16 +273,35 @@
                     {
                         % [Violin 2 Voice] Measure 2
                         {
-                            \override Hairpin #'circled-tip = ##t
-                            c4 :32 \<
+                            \once \override Hairpin #'circled-tip = ##t
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        snare
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            c'4 :32 \startTextSpan \<
                         }
                         {
-                            c8 :64 \repeatTie
+                            c'8 :64 \repeatTie
                         }
                         % [Violin 2 Voice] Measure 3
                         {
-                            c4 :32 \repeatTie \f
-                            \revert Hairpin #'circled-tip
+                            c'4 :32 \repeatTie \f
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -202,7 +315,18 @@
                     }
                     {
                         {
-                            c16 -\accent \fff
+                            c'16 -\accent \fff ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        snare
+                                                    }
+                                }
                         }
                     }
                     {
@@ -213,7 +337,18 @@
                     }
                     {
                         {
-                            c16 -\accent \fff
+                            c'16 -\accent \fff ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        snare
+                                                    }
+                                }
                         }
                     }
                     {
@@ -223,24 +358,43 @@
                     }
                     {
                         {
-                            \override Hairpin #'circled-tip = ##t
-                            c4 :32 \<
+                            \once \override Hairpin #'circled-tip = ##t
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        snare
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            c'4 :32 \startTextSpan \<
                         }
                         % [Violin 2 Voice] Measure 5
                         {
-                            c4 :32 \repeatTie
+                            c'4 :32 \repeatTie
                         }
                         {
-                            c8 :64 \repeatTie
+                            c'8 :64 \repeatTie
                         }
                         % [Violin 2 Voice] Measure 6
                         {
-                            c4. :32 \repeatTie
+                            c'4. :32 \repeatTie
                         }
                         % [Violin 2 Voice] Measure 7
                         {
-                            c8 :64 \repeatTie \f
-                            \revert Hairpin #'circled-tip
+                            c'8 :64 \repeatTie \f
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -276,7 +430,18 @@
                     }
                     {
                         {
-                            c16 -\accent \fff
+                            c'16 -\accent \fff ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        snare
+                                                    }
+                                }
                         }
                     }
                     {
@@ -287,19 +452,38 @@
                     {
                         % [Viola Voice] Measure 2
                         {
-                            \override Hairpin #'circled-tip = ##t
-                            c8 :64 \<
+                            \once \override Hairpin #'circled-tip = ##t
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        snare
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            c'8 :64 \startTextSpan \<
                         }
                         {
-                            c8 :64 \repeatTie
+                            c'8 :64 \repeatTie
                         }
                         {
-                            c8 :64 \repeatTie
+                            c'8 :64 \repeatTie
                         }
                         % [Viola Voice] Measure 3
                         {
-                            c8 :64 \repeatTie \f
-                            \revert Hairpin #'circled-tip
+                            c'8 :64 \repeatTie \f
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -313,7 +497,18 @@
                     }
                     {
                         {
-                            c16 -\accent \fff
+                            c'16 -\accent \fff ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        snare
+                                                    }
+                                }
                         }
                     }
                     {
@@ -324,20 +519,39 @@
                     }
                     {
                         {
-                            \override Hairpin #'circled-tip = ##t
-                            c4 :32 \<
+                            \once \override Hairpin #'circled-tip = ##t
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        snare
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            c'4 :32 \startTextSpan \<
                         }
                         % [Viola Voice] Measure 5
                         {
-                            c8 :64 \repeatTie
+                            c'8 :64 \repeatTie
                         }
                         {
-                            c4 :32 \repeatTie
+                            c'4 :32 \repeatTie
                         }
                         % [Viola Voice] Measure 6
                         {
-                            c4 :32 \repeatTie \f
-                            \revert Hairpin #'circled-tip
+                            c'4 :32 \repeatTie \f
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -351,8 +565,6 @@
                             \startStaff
                             R1 * 3/8
                             \bar "|."
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 }
@@ -382,7 +594,18 @@
                     }
                     {
                         {
-                            c16 -\accent \fff
+                            c'16 -\accent \fff ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        snare
+                                                    }
+                                }
                         }
                     }
                     {
@@ -393,7 +616,18 @@
                     {
                         % [Cello Voice] Measure 2
                         {
-                            c4 :32 -\accent \fp
+                            c'4 :32 -\accent \fp ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        snare
+                                                    }
+                                }
                         }
                     }
                     {
@@ -404,7 +638,18 @@
                     {
                         % [Cello Voice] Measure 3
                         {
-                            c16 -\accent \fff
+                            c'16 -\accent \fff ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        snare
+                                                    }
+                                }
                         }
                     }
                     {
@@ -416,7 +661,18 @@
                     {
                         % [Cello Voice] Measure 4
                         {
-                            c8 :64 -\accent \fp
+                            c'8 :64 -\accent \fp ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        snare
+                                                    }
+                                }
                         }
                     }
                     {
@@ -427,7 +683,18 @@
                     }
                     {
                         {
-                            c16 -\accent \fff
+                            c'16 -\accent \fff ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        snare
+                                                    }
+                                }
                         }
                     }
                     {
@@ -437,16 +704,35 @@
                     }
                     {
                         {
-                            \override Hairpin #'circled-tip = ##t
-                            c4 :32 \<
+                            \once \override Hairpin #'circled-tip = ##t
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        snare
+                                                    }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
+                            c'4 :32 \startTextSpan \<
                         }
                         % [Cello Voice] Measure 5
                         {
-                            c8 :64 \repeatTie
+                            c'8 :64 \repeatTie
                         }
                         {
-                            c4 :32 \repeatTie \f
-                            \revert Hairpin #'circled-tip
+                            c'4 :32 \repeatTie \f
+                            <> \stopTextSpan
                         }
                     }
                     {
@@ -456,14 +742,23 @@
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 3/8
-                            \stopStaff
-                            \startStaff
                         }
                     }
                     {
                         % [Cello Voice] Measure 7
                         {
-                            c16 -\accent \fff
+                            c'16 -\accent \fff ^ \markup {
+                                \box
+                                    \pad-around
+                                        #0.5
+                                        \italic
+                                            \smaller
+                                                \concat
+                                                    {
+                                                        \vstrut
+                                                        snare
+                                                    }
+                                }
                         }
                     }
                     {
