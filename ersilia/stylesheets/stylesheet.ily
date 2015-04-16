@@ -199,7 +199,7 @@
         \override StaffSymbol.line-count = 1
         instrumentName = \pitchPipesName
         shortInstrumentName = \shortPitchPipesName
-        \override Beam.positions = #'(-5 . -5)
+        %\override Beam.positions = #'(-5 . -5)
         \override DynamicLineSpanner.staff-padding = 8
         \override TupletBracket.staff-padding = 4
     }
@@ -211,7 +211,7 @@
         \alias Staff
         instrumentName = \fluteName
         shortInstrumentName = \shortFluteName
-        \override Beam.positions = #'(-7 . -7)
+        %\override Beam.positions = #'(-7 . -7)
         %\override DynamicLineSpanner.staff-padding = 10
         %\override TupletBracket.staff-padding = 6
     }
@@ -223,7 +223,7 @@
         \alias Staff
         instrumentName = \clarinetName
         shortInstrumentName = \shortClarinetName
-        \override Beam.positions = #'(-7 . -7)
+        %\override Beam.positions = #'(-7 . -7)
         \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
     }
@@ -235,7 +235,7 @@
         \alias Staff
         instrumentName = \oboeName
         shortInstrumentName = \shortOboeName
-        \override Beam.positions = #'(-7 . -7)
+        %\override Beam.positions = #'(-7 . -7)
         \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
     }
@@ -247,7 +247,7 @@
         \alias Staff
         instrumentName = \saxophoneName
         shortInstrumentName = \shortSaxophoneName
-        \override Beam.positions = #'(-7 . -7)
+        %\override Beam.positions = #'(-7 . -7)
         \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
     }
@@ -276,7 +276,7 @@
         \alias Staff
         instrumentName = \guitarName
         shortInstrumentName = \shortGuitarName
-        \override Beam.positions = #'(-7 . -7)
+        %\override Beam.positions = #'(-7 . -7)
         \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
     }
@@ -296,7 +296,8 @@
         \name PianoUpperStaff
         \type Engraver_group
         \alias Staff
-        \override Beam.positions = #'(-9 . -9)
+        \RemoveEmptyStaves
+        %\override Beam.positions = #'(-9 . -9)
         \override DynamicLineSpanner.staff-padding = 11
         \override TupletBracket.staff-padding = 6
     }
@@ -306,13 +307,15 @@
         \name PianoLowerStaff
         \type Engraver_group
         \alias Staff
-        \override Beam.positions = #'(-9 . -9)
+        \RemoveEmptyStaves
+        %\override Beam.positions = #'(-9 . -9)
         \override DynamicLineSpanner.staff-padding = 11
         \override TupletBracket.staff-padding = 6
     }
     
     \context{
         \PianoStaff
+        \remove "Keep_alive_together_engraver"
         \accepts PianoLowerStaff
         \accepts PianoUpperStaff
         \accepts PitchPipes
@@ -338,7 +341,7 @@
         \override StaffSymbol.line-positions = #'(0)
         instrumentName = \percussionName
         shortInstrumentName = \shortPercussionName
-        \override Beam.positions = #'(-7 . -7)
+        %\override Beam.positions = #'(-7 . -7)
         \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
     }
@@ -376,7 +379,7 @@
         \alias Staff
         instrumentName = \violinName
         shortInstrumentName = \shortViolinName
-        \override Beam.positions = #'(-7 . -7)
+        %\override Beam.positions = #'(-7 . -7)
         \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
     }
@@ -388,7 +391,7 @@
         \alias Staff
         instrumentName = \violaName
         shortInstrumentName = \shortViolaName
-        \override Beam.positions = #'(-7 . -7)
+        %\override Beam.positions = #'(-7 . -7)
         \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
     }
@@ -400,7 +403,7 @@
         \alias Staff
         instrumentName = \celloName
         shortInstrumentName = \shortCelloName
-        \override Beam.positions = #'(-7 . -7)
+        %\override Beam.positions = #'(-7 . -7)
         \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
     }
@@ -412,7 +415,7 @@
         \alias Staff
         instrumentName = \contrabassName
         shortInstrumentName = \shortContrabassName
-        \override Beam.positions = #'(-7 . -7)
+        %\override Beam.positions = #'(-7 . -7)
         \override DynamicLineSpanner.staff-padding = 10
         \override TupletBracket.staff-padding = 6
     }
@@ -469,10 +472,12 @@
         \override Hairpin.bound-padding = 1.5
         \override NoteCollision.merge-differently-dotted = ##t
         \override NoteColumn.ignore-collision = ##t
+        \override OttavaBracket.outside-staff-priority = 500
+        \override OttavaBracket.padding = 2
         \shape #'((-1.5 . 0) (-1 . 0) (-0.5 . 0) (0 . 0)) RepeatTie                 
         \override RepeatTie.X-extent = ##f
         \override SpacingSpanner.strict-grace-spacing = ##t
-        \override SpacingSpanner.strict-note-spacing = ##f
+        \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
         \override StaffSymbol.color = #(x11-color 'grey50)
         \override Stem.details.beamed-lengths = #'(6)
