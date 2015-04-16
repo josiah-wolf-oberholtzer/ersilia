@@ -297,7 +297,7 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
 
         viola_staff = self._make_staff(
             'Viola', 'alto',
-            instrument=instrumenttools.Violin(),
+            instrument=instrumenttools.Viola(),
             tag='viola',
             )
 
