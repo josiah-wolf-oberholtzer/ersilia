@@ -33,7 +33,7 @@ guitar_undulation_tremolo_music_specifier = consort.MusicSpecifier(
     pitch_handler=consort.AbsolutePitchHandler(
         forbid_repetitions=True,
         logical_tie_expressions=(
-            consort.ChordExpression(chord_expr=[0, 3, 7, 14]),
+            consort.ChordExpression(chord_expr=[0, 7, 14, 15]),
             ),
         pitch_specifier=abbreviations.agitato_pitch_specifier,
         pitch_operation_specifier=abbreviations.pitch_operation_specifier,

@@ -20,7 +20,10 @@ piano_tremolo_music_specifier = consort.MusicSpecifier(
             ),
         ),
     color='red',
-    labels=['pedaled'],
+    labels=[
+        'pedaled',
+        'piano tremolo',
+        ],
     pitch_handler=consort.AbsolutePitchHandler(
         deviations=[0, -2, 0, 0, 2, 0, 3],
         logical_tie_expressions=(

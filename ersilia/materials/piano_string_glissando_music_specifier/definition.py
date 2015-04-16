@@ -19,11 +19,7 @@ piano_string_glissando_music_specifier = consort.MusicSpecifier(
                 'note_head__style': 'cross',
                 }
             ),
-        text_spanner=(
-            abbreviations.make_text_spanner('inside/low'),
-            abbreviations.make_text_spanner('inside/high'),
-            abbreviations.make_text_spanner('inside/medium'),
-            ),
+        text_spanner=abbreviations.make_text_spanner('inside'),
         ),
     color=None,
     labels=['pedaled'],

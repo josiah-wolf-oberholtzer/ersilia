@@ -17,7 +17,7 @@ wind_tremolo_music_specifier = consort.MusicSpecifier(
             attachments=indicatortools.Articulation('accent'),
             selector=selectortools.Selector()
                 .by_logical_tie()
-                .by_duration('==', (1, 16), preprolated=True)
+                .by_duration('==', (1, 8), preprolated=True)
                 .with_next_leaf()
             ),
         dynamic_expressions=consort.DynamicExpression(
@@ -43,8 +43,8 @@ wind_tremolo_music_specifier = consort.MusicSpecifier(
             ),
         ),
     rhythm_maker=rhythmmakertools.EvenDivisionRhythmMaker(
-        denominators=[16],
-        extra_counts_per_division=[0, 1],
+        denominators=[8],
+        extra_counts_per_division=[0, 1, 2],
         output_masks=[
             rhythmmakertools.SustainMask(
                 indices=[2],

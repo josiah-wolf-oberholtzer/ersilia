@@ -82,63 +82,7 @@ piano_string_glissando_music_specifier = consort.tools.MusicSpecifier(
                                                         markuptools.MarkupCommand(
                                                             'vstrut'
                                                             ),
-                                                        'inside/low',
-                                                        ]
-                                                    )
-                                                )
-                                            )
-                                        )
-                                    ),
-                                ),
-                            ),
-                        ),
-                    consort.tools.ComplexTextSpanner(
-                        markup=markuptools.Markup(
-                            contents=(
-                                markuptools.MarkupCommand(
-                                    'box',
-                                    markuptools.MarkupCommand(
-                                        'pad-around',
-                                        0.5,
-                                        markuptools.MarkupCommand(
-                                            'italic',
-                                            markuptools.MarkupCommand(
-                                                'smaller',
-                                                markuptools.MarkupCommand(
-                                                    'concat',
-                                                    [
-                                                        markuptools.MarkupCommand(
-                                                            'vstrut'
-                                                            ),
-                                                        'inside/high',
-                                                        ]
-                                                    )
-                                                )
-                                            )
-                                        )
-                                    ),
-                                ),
-                            ),
-                        ),
-                    consort.tools.ComplexTextSpanner(
-                        markup=markuptools.Markup(
-                            contents=(
-                                markuptools.MarkupCommand(
-                                    'box',
-                                    markuptools.MarkupCommand(
-                                        'pad-around',
-                                        0.5,
-                                        markuptools.MarkupCommand(
-                                            'italic',
-                                            markuptools.MarkupCommand(
-                                                'smaller',
-                                                markuptools.MarkupCommand(
-                                                    'concat',
-                                                    [
-                                                        markuptools.MarkupCommand(
-                                                            'vstrut'
-                                                            ),
-                                                        'inside/medium',
+                                                        'inside',
                                                         ]
                                                     )
                                                 )
