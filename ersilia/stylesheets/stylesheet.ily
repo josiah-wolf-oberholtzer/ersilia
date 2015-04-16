@@ -464,7 +464,7 @@
             (right-edge extra-space . 0.0)
             )
         \override Beam.beam-thickness = 0.75
-        \override Beam.direction = #down
+        %\override Beam.direction = #down
         \override Beam.breakable = ##t
         \override Beam.length-fraction = 1.5
         \override Glissando.breakable = ##t
@@ -476,13 +476,14 @@
         \override OttavaBracket.padding = 2
         \shape #'((-1.5 . 0) (-1 . 0) (-0.5 . 0) (0 . 0)) RepeatTie                 
         \override RepeatTie.X-extent = ##f
-        \override SpacingSpanner.strict-grace-spacing = ##t
-        \override SpacingSpanner.strict-note-spacing = ##t
+        \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1 24)
+        \override SpacingSpanner.strict-grace-spacing = ##f
+        \override SpacingSpanner.strict-note-spacing = ##f
         \override SpacingSpanner.uniform-stretching = ##t
         \override StaffSymbol.color = #(x11-color 'grey50)
         \override Stem.details.beamed-lengths = #'(6)
         \override Stem.details.lengths = #'(6)
-        \override Stem.direction = #down
+        %\override Stem.direction = #down
         \override Stem.stemlet-length = 1.5
         \override StemTremolo.beam-width = 1.5
         \override StemTremolo.flag-count = 4
@@ -493,8 +494,9 @@
         \override SustainPedalLineSpanner.to-barline = ##t
         \override SystemStartSquare.thickness = 2
         \override TextSpanner.padding = 1
+        \override TextSpanner.bound-details.right.padding = 2
         \override TupletBracket.breakable = ##t
-        \override TupletBracket.direction = #down
+        %\override TupletBracket.direction = #down
         \override TupletBracket.full-length-to-extent = ##f
         \override TupletBracket.padding = 1.5
         \override TupletBracket.outside-staff-padding = 0.75
