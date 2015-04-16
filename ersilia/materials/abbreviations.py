@@ -93,3 +93,21 @@ def make_text_spanner(text):
     markup = markuptools.Markup(markup_contents)
     text_spanner = consort.ComplexTextSpanner(markup=markup)
     return text_spanner
+
+
+guitar_chords = tuple(
+    pitchtools.PitchSegment(_) for _ in (
+        "d  c' f'  a'",
+        "df bf e'  a'",
+        "c  g  bf  ef' a'",
+        "b, gf a   d'  af'",
+        "c  g  b   e'  a'",
+        "f  bf ef' g'  c''",
+        "e  a  d'  fs' b'",
+        "ef af df' f'  bf'",
+        "d  g  c'  e'  a'",
+        "d  b  d'  f'  a'",
+        "d  f  c'  d'  g'",
+        "d  f  b   d'  g'",
+        )
+    )

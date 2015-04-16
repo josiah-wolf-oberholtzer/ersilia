@@ -69,6 +69,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
+                            \ottava #1
                             <c'''' e'''' g''''>16 \p \< [
                                 ^ \markup {
                                     \center-align
@@ -119,6 +120,7 @@
                                     \center-align
                                         \natural
                                     }
+                            \ottava #0
                         }
                     }
                     {
@@ -139,6 +141,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
+                            \ottava #1
                             <c''' e''' g'''>16 \f [
                                 ^ \markup {
                                     \center-align
@@ -170,11 +173,12 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <c''' e''' g'''>16 ]
+                            <a'' c''' e'''>16 ]
                                 ^ \markup {
                                     \center-align
                                         \natural
                                     }
+                            \ottava #0
                         }
                     }
                     {
@@ -190,9 +194,12 @@
                             \stopStaff
                             \startStaff
                         }
+                        % [Violin 1 Voice] Measure 4
+                        {
+                            r16
+                        }
                     }
                     {
-                        % [Violin 1 Voice] Measure 4
                         {
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -215,53 +222,7 @@
                             }
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <a'' c''' e''' g''' b'''>16
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <e'' g'' b''>16
-                                ^ \markup {
-                                    \center-align
-                                        \natural
-                                    }
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <a'' c''' e'''>16
-                                ^ \markup {
-                                    \center-align
-                                        \natural
-                                    }
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <c'' e'' g'' b'' d'''>16
+                            <f'' a'' c''' e''' g'''>16
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -292,19 +253,58 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <a' c'' e''>16 \f ]
+                            \set stemRightBeamCount = 2
+                            <a'' c''' e'''>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <a' c'' e'' g'' b''>16
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <a'' c''' e'''>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            <e'' g'' b''>16 ]
                                 ^ \markup {
                                     \center-align
                                         \natural
                                     }
                         }
-                    }
-                    {
-                        {
-                            r16
-                        }
-                    }
-                    {
                         \tweak #'text #tuplet-number::calc-fraction-text
                         \times 3/4 {
                             r8 [
@@ -317,7 +317,7 @@
                             }
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
-                            <c'' e'' g'' b'' d'''>8 \mp \>
+                            <f'' a'' c''' e''' g'''>8
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -335,24 +335,13 @@
                             }
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
-                            <a'' c''' e'''>8
+                            <c'' e'' g''>8 \f
                                 ^ \markup {
                                     \center-align
                                         \natural
                                     }
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
                             \set stemLeftBeamCount = 1
-                            <e'' g'' b''>8 \pp ]
-                                ^ \markup {
-                                    \center-align
-                                        \natural
-                                    }
+                            r8 ]
                         }
                     }
                     {
@@ -370,7 +359,21 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <f'' a'' c''' e''' g'''>16 \mf [
+                            <e'' g'' b''>16 \mp [
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <f' a' c'' e'' g''>16
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -396,31 +399,15 @@
                     }
                     {
                         {
-                            r8.
+                            r8
                         }
                         % [Violin 1 Voice] Measure 6
                         {
-                            r4
-                            r16
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
                         }
-                    }
-                    {
-                        {
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            <e'' g'' b''>16 \p
-                                ^ \markup {
-                                    \center-align
-                                        \natural
-                                    }
-                        }
-                    }
-                    {
                         % [Violin 1 Voice] Measure 7
                         {
                             r16
@@ -435,7 +422,21 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <a' c'' e'' g'' b''>16 \f [
+                            <e' g' b'>16 \mf [
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <f' a' c'' e'' g''>16
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -452,7 +453,7 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <e' g' b'>16 ]
+                            <c'' e'' g''>16 ]
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -461,7 +462,7 @@
                     }
                     {
                         {
-                            r8.
+                            r8
                             \bar "|."
                         }
                     }
@@ -494,9 +495,12 @@
                             \stopStaff
                             \startStaff
                         }
+                        % [Violin 2 Voice] Measure 2
+                        {
+                            r16
+                        }
                     }
                     {
-                        % [Violin 2 Voice] Measure 2
                         {
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -505,7 +509,8 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <e''' g''' b'''>16 \pp \< [
+                            \ottava #1
+                            <e''' g''' b'''>16 \p [
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -532,8 +537,7 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <c'' e'' g'' b'' d'''>16
+                            <a'' c''' e''' g''' b'''>16 ]
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -542,19 +546,7 @@
                                                 \flat
                                             }
                                     }
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            \set stemLeftBeamCount = 2
-                            <a''' c'''' e''''>16 \f ]
-                                ^ \markup {
-                                    \center-align
-                                        \natural
-                                    }
+                            \ottava #0
                         }
                     }
                     {
@@ -565,6 +557,7 @@
                     {
                         % [Violin 2 Voice] Measure 3
                         \times 2/3 {
+                            \ottava #1
                             r8 [
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -575,7 +568,7 @@
                             }
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
-                            <c''' e''' g'''>8 \mp
+                            <a'' c''' e'''>8 \f
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -588,24 +581,24 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 1
-                            <c''' e''' g''' b''' d''''>8 ]
+                            <e''' g''' b'''>8 ]
                                 ^ \markup {
                                     \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
+                                        \natural
                                     }
+                            \ottava #0
                         }
                     }
                     {
                         {
                             r8
                         }
+                        % [Violin 2 Voice] Measure 4
+                        {
+                            r16
+                        }
                     }
                     {
-                        % [Violin 2 Voice] Measure 4
                         {
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -614,35 +607,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <a'' c''' e'''>16 \mf \> [
-                                ^ \markup {
-                                    \center-align
-                                        \natural
-                                    }
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <e''' g''' b'''>16
-                                ^ \markup {
-                                    \center-align
-                                        \natural
-                                    }
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <f' a' c'' e'' g''>16
+                            <f'' a'' c''' e''' g'''>16 \pp [
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -659,7 +624,21 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <c''' e''' g'''>16 \mp ]
+                            \set stemRightBeamCount = 2
+                            <c''' e''' g'''>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            <e'' g'' b''>16 ]
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -682,7 +661,98 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <e'' g'' b''>16 \p \< [
+                            <f'' a'' c''' e''' g'''>16 \mp \> [
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <e'' g'' b''>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            <a' c'' e''>16 ]
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                        }
+                        % [Violin 2 Voice] Measure 5
+                        \times 2/3 {
+                            r8 [
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            <a' c'' e'' g'' b''>8
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 1
+                            <a' c'' e''>8 \pp ]
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                        }
+                    }
+                    {
+                        {
+                            r8
+                        }
+                        % [Violin 2 Voice] Measure 6
+                        {
+                            r16
+                        }
+                    }
+                    {
+                        {
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            <e' g' b'>16 \mf \> [
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -713,85 +783,8 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <e'' g'' b''>16 ]
-                                ^ \markup {
-                                    \center-align
-                                        \natural
-                                    }
-                        }
-                        % [Violin 2 Voice] Measure 5
-                        \times 2/3 {
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            <a'' c''' e'''>8 [
-                                ^ \markup {
-                                    \center-align
-                                        \natural
-                                    }
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            <c'' e'' g'' b'' d'''>8 \mf
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
-                            \set stemLeftBeamCount = 1
-                            r8 ]
-                        }
-                    }
-                    {
-                        {
-                            r16
-                        }
-                    }
-                    {
-                        {
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            <c'' e'' g''>16 \f
-                                ^ \markup {
-                                    \center-align
-                                        \natural
-                                    }
-                        }
-                    }
-                    {
-                        % [Violin 2 Voice] Measure 6
-                        {
-                            r16
-                        }
-                    }
-                    {
-                        {
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            <a' c'' e''>16 \pp \< [
+                            \set stemRightBeamCount = 2
+                            <e'' g'' b''>16
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -805,7 +798,20 @@
                             }
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <c'' e'' g'' b'' d'''>16
+                            <a' c'' e''>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            <a' c'' e'' g'' b''>16 \mp ]
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -814,64 +820,15 @@
                                                 \flat
                                             }
                                     }
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <a c' e'>16
-                                ^ \markup {
-                                    \center-align
-                                        \natural
-                                    }
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            \set stemLeftBeamCount = 2
-                            <c'' e'' g''>16 \f ]
-                                ^ \markup {
-                                    \center-align
-                                        \natural
-                                    }
-                        }
-                    }
-                    {
-                        {
-                            r16
                         }
                     }
                     {
                         % [Violin 2 Voice] Measure 7
                         {
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            <f' a' c'' e'' g''>8 \mp
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
-                        }
-                    }
-                    {
-                        {
-                            r4
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 3/8
                             \bar "|."
                         }
                     }
@@ -912,7 +869,7 @@
                             }
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
-                            <c''' e''' g'''>8 \mf \>
+                            <c''' e''' g'''>8 \p
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -925,14 +882,21 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 1
-                            <a'' c''' e'''>8 ]
+                            <a''' c'''' e''''>8 ]
                                 ^ \markup {
                                     \center-align
                                         \natural
                                     }
                         }
+                    }
+                    {
                         % [Viola Voice] Measure 2
                         {
+                            r16
+                        }
+                    }
+                    {
+                        {
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -940,7 +904,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <a''' c'''' e'''' g'''' b''''>16 \mp
+                            <a'' c''' e''' g''' b'''>16 \f
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -953,34 +917,15 @@
                     }
                     {
                         {
-                            r16
-                            r16
+                            r4
                         }
-                    }
-                    {
-                        {
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            <a'' c''' e'''>16 \p
-                                ^ \markup {
-                                    \center-align
-                                        \natural
-                                    }
-                        }
-                    }
-                    {
-                        {
-                            r8
-                        }
-                    }
-                    {
                         % [Viola Voice] Measure 3
                         {
+                            r16
+                        }
+                    }
+                    {
+                        {
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
                             \once \override Arpeggio.X-offset = #-2
@@ -988,27 +933,10 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <c''' e''' g'''>16 \f [
+                            <e''' g''' b'''>16 \pp
                                 ^ \markup {
                                     \center-align
                                         \natural
-                                    }
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            \set stemLeftBeamCount = 2
-                            <c''' e''' g''' b''' d''''>16 ]
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
                                     }
                         }
                     }
@@ -1019,6 +947,7 @@
                         % [Viola Voice] Measure 4
                         {
                             r4
+                            r16
                         }
                     }
                     {
@@ -1030,7 +959,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <a'' c''' e'''>16 \pp \< [
+                            <a' c'' e''>16 \mp \> [
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -1044,21 +973,7 @@
                             }
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            <e'' g'' b''>16
-                                ^ \markup {
-                                    \center-align
-                                        \natural
-                                    }
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <a' c'' e'' g'' b''>16
+                            <a'' c''' e''' g''' b'''>16
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -1089,100 +1004,6 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <e'' g'' b''>16 \f ]
-                                ^ \markup {
-                                    \center-align
-                                        \natural
-                                    }
-                        }
-                    }
-                    {
-                        {
-                            r16
-                        }
-                    }
-                    {
-                        \times 2/3 {
-                            r8 [
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            <f'' a'' c''' e''' g'''>8 \mp
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            \set stemLeftBeamCount = 1
-                            <c'' e'' g''>8 ]
-                                ^ \markup {
-                                    \center-align
-                                        \natural
-                                    }
-                        }
-                    }
-                    {
-                        % [Viola Voice] Measure 5
-                        {
-                            r8
-                        }
-                    }
-                    {
-                        {
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            <e'' g'' b''>16 \mf \> [
-                                ^ \markup {
-                                    \center-align
-                                        \natural
-                                    }
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <f' a' c'' e'' g''>16
-                                ^ \markup {
-                                    \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
-                                    }
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             <e'' g'' b''>16
                                 ^ \markup {
@@ -1197,7 +1018,104 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <a c' e'>16 ]
+                            <a c' e' g' b'>16 ]
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                        }
+                        \times 2/3 {
+                            r8 [
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            <a'' c''' e'''>8 \pp
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \set stemLeftBeamCount = 1
+                            r8 ]
+                        }
+                    }
+                    {
+                        % [Viola Voice] Measure 5
+                        {
+                            r16
+                        }
+                    }
+                    {
+                        {
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            <e'' g'' b''>16 \mf
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                        }
+                    }
+                    {
+                        {
+                            r16
+                        }
+                    }
+                    {
+                        {
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            <f'' a'' c''' e''' g'''>16 \p \< [
+                                ^ \markup {
+                                    \center-align
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <c'' e'' g''>16
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            <a' c'' e''>16 ]
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -1215,7 +1133,7 @@
                             }
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
-                            <a'' c''' e''' g''' b'''>8 \mp
+                            <a'' c''' e''' g''' b'''>8 \mf
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -1239,8 +1157,6 @@
                             \startStaff
                             R1 * 3/8
                             \bar "|."
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 }
@@ -1277,7 +1193,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <c''' e''' g'''>16 \p \< [
+                            <c''' e''' g'''>16 \f \> [
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -1322,21 +1238,7 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <a'' c''' e'''>16
-                                ^ \markup {
-                                    \center-align
-                                        \natural
-                                    }
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            \set stemLeftBeamCount = 2
-                            <c''' e''' g'''>16 \mf ]
+                            <a'' c''' e'''>16 \p ]
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -1344,6 +1246,9 @@
                         }
                     }
                     {
+                        {
+                            r16
+                        }
                         % [Cello Voice] Measure 2
                         {
                             r16
@@ -1358,7 +1263,21 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <f''' a''' c'''' e'''' g''''>16 \f [
+                            <c''' e''' g'''>16 \pp [
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <c''' e''' g''' b''' d''''>16
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -1384,7 +1303,7 @@
                     }
                     {
                         {
-                            r8.
+                            r8
                         }
                     }
                     {
@@ -1401,7 +1320,7 @@
                             }
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
-                            <e'' g'' b''>8 \pp \<
+                            <e''' g''' b'''>8 \mp \>
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -1415,7 +1334,7 @@
                             }
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
-                            <f' a' c'' e'' g''>8
+                            <f'' a'' c''' e''' g'''>8
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -1424,10 +1343,28 @@
                                                 \flat
                                             }
                                     }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
                             \set stemLeftBeamCount = 1
-                            r8 ]
+                            <c'' e'' g''>8 \pp ]
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
                         }
+                    }
+                    {
                         % [Cello Voice] Measure 4
+                        {
+                            r16
+                        }
+                    }
+                    {
                         {
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1436,20 +1373,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <c''' e''' g'''>16 [
-                                ^ \markup {
-                                    \center-align
-                                        \natural
-                                    }
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            \set stemLeftBeamCount = 2
-                            <a'' c''' e'''>16 \f ]
+                            <e''' g''' b'''>16 \mf
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -1459,6 +1383,7 @@
                     {
                         {
                             r4
+                            r16
                         }
                     }
                     {
@@ -1470,7 +1395,7 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <c'' e'' g'' b'' d'''>16 \mp \> [
+                            <a'' c''' e''' g''' b'''>16 \p \< [
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -1478,20 +1403,6 @@
                                                 \natural
                                                 \flat
                                             }
-                                    }
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <c'' e'' g''>16
-                                ^ \markup {
-                                    \center-align
-                                        \natural
                                     }
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1515,14 +1426,10 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            <a c' e' g' b'>16 ]
+                            <e'' g'' b''>16 ]
                                 ^ \markup {
                                     \center-align
-                                        \concat
-                                            {
-                                                \natural
-                                                \flat
-                                            }
+                                        \natural
                                     }
                         }
                         \times 2/3 {
@@ -1536,10 +1443,14 @@
                             }
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
-                            <a''' c'''' e''''>8 \pp
+                            <a'' c''' e''' g''' b'''>8 \mf
                                 ^ \markup {
                                     \center-align
-                                        \natural
+                                        \concat
+                                            {
+                                                \natural
+                                                \flat
+                                            }
                                     }
                             \set stemLeftBeamCount = 1
                             r8 ]
@@ -1560,12 +1471,19 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <c'' e'' g''>16 \mf \>
+                            <a'' c''' e'''>16 \f
                                 ^ \markup {
                                     \center-align
                                         \natural
                                     }
                         }
+                    }
+                    {
+                        {
+                            r16
+                        }
+                    }
+                    {
                         {
                             \once \override Accidental.stencil = ##f
                             \once \override AccidentalCautionary.stencil = ##f
@@ -1574,7 +1492,21 @@
                             \once \override NoteHead.text = \markup {
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
-                            <c'' e'' g'' b'' d'''>16 [
+                            <c'' e'' g''>16 \pp [
+                                ^ \markup {
+                                    \center-align
+                                        \natural
+                                    }
+                            \once \override Accidental.stencil = ##f
+                            \once \override AccidentalCautionary.stencil = ##f
+                            \once \override Arpeggio.X-offset = #-2
+                            \once \override NoteHead.stencil = #ly:text-interface::print
+                            \once \override NoteHead.text = \markup {
+                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                            }
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            <c' e' g' b' d''>16
                                 ^ \markup {
                                     \center-align
                                         \concat
@@ -1591,21 +1523,7 @@
                             	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                             }
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <c' e' g'>16
-                                ^ \markup {
-                                    \center-align
-                                        \natural
-                                    }
-                            \once \override Accidental.stencil = ##f
-                            \once \override AccidentalCautionary.stencil = ##f
-                            \once \override Arpeggio.X-offset = #-2
-                            \once \override NoteHead.stencil = #ly:text-interface::print
-                            \once \override NoteHead.text = \markup {
-                            	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-                            }
-                            \set stemLeftBeamCount = 2
-                            <a' c'' e''>16 \mp ]
+                            <c'' e'' g''>16 ]
                                 ^ \markup {
                                     \center-align
                                         \natural
@@ -1613,23 +1531,15 @@
                         }
                     }
                     {
-                        {
-                            r16
-                        }
                         % [Cello Voice] Measure 6
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 3/8
-                            \stopStaff
-                            \startStaff
                         }
                         % [Cello Voice] Measure 7
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
                             R1 * 3/8
                                 _ \markup {
                                     \italic
@@ -1643,8 +1553,6 @@
                                             }
                                     }
                             \bar "|."
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 }

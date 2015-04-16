@@ -6,13 +6,14 @@ from abjad.tools import markuptools
 from abjad.tools import rhythmmakertools
 from abjad.tools import scoretools
 from abjad.tools import selectortools
+from ersilia.materials import abbreviations
 
 
 guitar_strummed_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
         damped=consort.AttachmentExpression(
             attachments=consort.LeafExpression(
-                leaf=scoretools.Note("f''4"),
+                leaf=scoretools.Note("f'4"),
                 attachments=[
                     lilypondnametools.LilyPondGrobOverride(
                         grob_name='NoteHead',
@@ -58,12 +59,12 @@ guitar_strummed_music_specifier = consort.MusicSpecifier(
             ),
         ),
     pitch_handler=consort.AbsolutePitchHandler(
-        logical_tie_expressions=(
+        logical_tie_expressions=[
             consort.ChordExpression(
-                chord_expr=(0, 3, 7, 10, 24),
+                chord_expr=_,
                 arpeggio_direction=Center,
-                ),
-            ),
+                ) for _ in abbreviations.guitar_chords
+            ],
         ),
     rhythm_maker=rhythmmakertools.IncisedRhythmMaker(
         incise_specifier=rhythmmakertools.InciseSpecifier(

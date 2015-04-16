@@ -20,7 +20,7 @@ piano_arm_cluster_music_specifier = consort.MusicSpecifier(
             ),
         ),
     color='yellow',
-    labels=[],
+    labels=['piano arm cluster'],
     pitch_handler=consort.AbsolutePitchHandler(
         logical_tie_expressions=[
             consort.KeyClusterExpression(

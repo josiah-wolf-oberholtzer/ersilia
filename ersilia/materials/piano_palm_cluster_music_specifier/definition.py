@@ -10,6 +10,7 @@ piano_palm_cluster_music_specifier = consort.MusicSpecifier(
             dynamic_tokens='p mf mp pp f',
             division_period=2,
             ),
+        octavation=consort.OctavationExpression(),
         ),
     labels='pedaled',
     pitch_handler=consort.PitchClassPitchHandler(

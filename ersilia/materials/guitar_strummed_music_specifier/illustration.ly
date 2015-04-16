@@ -57,7 +57,7 @@
                     {
                         % [Violin 1 Voice] Measure 1
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \p
+                            <d' c'' f'' a''>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -79,7 +79,7 @@
                     {
                         % [Violin 1 Voice] Measure 2
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \p
+                            <df' bf' e'' a''>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -101,7 +101,7 @@
                     {
                         % [Violin 1 Voice] Measure 3
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \mf
+                            <c' g' bf' ef'' a''>16 \arpeggio \laissezVibrer \mf
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -123,7 +123,7 @@
                     {
                         % [Violin 1 Voice] Measure 4
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \ppp
+                            <b gf' a' d'' af''>16 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -145,10 +145,10 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \p [
+                            <c' g' b' e'' a''>16 \arpeggio \p [
                             \once \override NoteHead.transparent = ##t
                             \set stemLeftBeamCount = 2
-                            f''16 -\accent \sfz ]
+                            f'16 -\accent \sfz ]
                                 ^ \markup {
                                     \musicglyph
                                         #"scripts.coda"
@@ -163,7 +163,7 @@
                     {
                         % [Violin 1 Voice] Measure 5
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \ppp
+                            <e' a' d'' fs'' b''>16 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -188,14 +188,14 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \p [
+                            <ef' af' df'' f'' bf''>16 \arpeggio \p [
                             \set stemLeftBeamCount = 2
-                            <c' ef' g' bf' c'''>16 \arpeggio ]
+                            <d' g' c'' e'' a''>16 \arpeggio ]
                         }
                         % [Violin 1 Voice] Measure 7
                         {
                             \once \override NoteHead.transparent = ##t
-                            f''16 -\accent \sfz
+                            f'16 -\accent \sfz
                                 ^ \markup {
                                     \musicglyph
                                         #"scripts.coda"
@@ -236,7 +236,7 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \p
+                            <d' c'' f'' a''>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -257,10 +257,10 @@
                     {
                         % [Violin 2 Voice] Measure 2
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \mf [
+                            <df' bf' e'' a''>16 \arpeggio \mf [
                             \once \override NoteHead.transparent = ##t
                             \set stemLeftBeamCount = 2
-                            f''16 -\accent \sfz ]
+                            f'16 -\accent \sfz ]
                                 ^ \markup {
                                     \musicglyph
                                         #"scripts.coda"
@@ -274,14 +274,14 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \ppp [
+                            <b gf' a' d'' af''>16 \arpeggio \ppp [
                             \set stemLeftBeamCount = 2
-                            <c' ef' g' bf' c'''>16 \arpeggio ]
+                            <c' g' b' e'' a''>16 \arpeggio ]
                         }
                         % [Violin 2 Voice] Measure 3
                         {
                             \once \override NoteHead.transparent = ##t
-                            f''16 -\accent \sfz
+                            f'16 -\accent \sfz
                                 ^ \markup {
                                     \musicglyph
                                         #"scripts.coda"
@@ -297,10 +297,10 @@
                     {
                         % [Violin 2 Voice] Measure 4
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \p [
+                            <e' a' d'' fs'' b''>16 \arpeggio \p [
                             \once \override NoteHead.transparent = ##t
                             \set stemLeftBeamCount = 2
-                            f''16 -\accent \sfz ]
+                            f'16 -\accent \sfz ]
                                 ^ \markup {
                                     \musicglyph
                                         #"scripts.coda"
@@ -315,13 +315,13 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \ppp [
+                            <d' g' c'' e'' a''>16 \arpeggio \ppp [
                             \set stemLeftBeamCount = 2
-                            <c' ef' g' bf' c'''>16 \arpeggio ]
+                            <d' b' d'' f'' a''>16 \arpeggio ]
                         }
                         {
                             \once \override NoteHead.transparent = ##t
-                            f''16 -\accent \sfz
+                            f'16 -\accent \sfz
                                 ^ \markup {
                                     \musicglyph
                                         #"scripts.coda"
@@ -336,7 +336,7 @@
                     {
                         % [Violin 2 Voice] Measure 5
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \p
+                            <d' f' b' d'' g''>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -356,7 +356,7 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \p
+                            <d' c'' f'' a''>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -377,10 +377,10 @@
                     {
                         % [Violin 2 Voice] Measure 6
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \mf [
+                            <df' bf' e'' a''>16 \arpeggio \mf [
                             \once \override NoteHead.transparent = ##t
                             \set stemLeftBeamCount = 2
-                            f''16 -\accent \sfz ]
+                            f'16 -\accent \sfz ]
                                 ^ \markup {
                                     \musicglyph
                                         #"scripts.coda"
@@ -395,7 +395,7 @@
                     {
                         % [Violin 2 Voice] Measure 7
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \ppp
+                            <b gf' a' d'' af''>16 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -442,7 +442,7 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \p
+                            <d' c'' f'' a''>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -463,7 +463,7 @@
                     {
                         % [Viola Voice] Measure 2
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \ppp
+                            <df' bf' e'' a''>16 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -483,7 +483,7 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \p
+                            <c' g' bf' ef'' a''>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -503,14 +503,14 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \p [
+                            <b gf' a' d'' af''>16 \arpeggio \p [
                             \set stemLeftBeamCount = 2
-                            <c' ef' g' bf' c'''>16 \arpeggio ]
+                            <c' g' b' e'' a''>16 \arpeggio ]
                         }
                         % [Viola Voice] Measure 3
                         {
                             \once \override NoteHead.transparent = ##t
-                            f''16 -\accent \sfz
+                            f'16 -\accent \sfz
                                 ^ \markup {
                                     \musicglyph
                                         #"scripts.coda"
@@ -529,7 +529,7 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \mf
+                            <e' a' d'' fs'' b''>16 \arpeggio \laissezVibrer \mf
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -550,7 +550,7 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \ppp
+                            <ef' af' df'' f'' bf''>16 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -571,13 +571,13 @@
                     {
                         % [Viola Voice] Measure 5
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \p [
+                            <d' g' c'' e'' a''>16 \arpeggio \p [
                             \set stemLeftBeamCount = 2
-                            <c' ef' g' bf' c'''>16 \arpeggio ]
+                            <d' b' d'' f'' a''>16 \arpeggio ]
                         }
                         {
                             \once \override NoteHead.transparent = ##t
-                            f''16 -\accent \sfz
+                            f'16 -\accent \sfz
                                 ^ \markup {
                                     \musicglyph
                                         #"scripts.coda"
@@ -592,10 +592,10 @@
                     {
                         % [Viola Voice] Measure 6
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \ppp [
+                            <d' f' b' d'' g''>16 \arpeggio \ppp [
                             \once \override NoteHead.transparent = ##t
                             \set stemLeftBeamCount = 2
-                            f''16 -\accent \sfz ]
+                            f'16 -\accent \sfz ]
                                 ^ \markup {
                                     \musicglyph
                                         #"scripts.coda"
@@ -613,8 +613,6 @@
                             \startStaff
                             R1 * 3/8
                             \bar "|."
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 }
@@ -639,7 +637,7 @@
                     {
                         % [Cello Voice] Measure 1
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \p
+                            <d' c'' f'' a''>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -661,10 +659,10 @@
                     {
                         % [Cello Voice] Measure 2
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \p [
+                            <df' bf' e'' a''>16 \arpeggio \p [
                             \once \override NoteHead.transparent = ##t
                             \set stemLeftBeamCount = 2
-                            f''16 -\accent \sfz ]
+                            f'16 -\accent \sfz ]
                                 ^ \markup {
                                     \musicglyph
                                         #"scripts.coda"
@@ -679,10 +677,10 @@
                     {
                         % [Cello Voice] Measure 3
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \mf [
+                            <b gf' a' d'' af''>16 \arpeggio \mf [
                             \once \override NoteHead.transparent = ##t
                             \set stemLeftBeamCount = 2
-                            f''16 -\accent \sfz ]
+                            f'16 -\accent \sfz ]
                                 ^ \markup {
                                     \musicglyph
                                         #"scripts.coda"
@@ -697,7 +695,7 @@
                     {
                         % [Cello Voice] Measure 4
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \ppp
+                            <f' bf' ef'' g'' c'''>16 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -718,7 +716,7 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \laissezVibrer \p
+                            <e' a' d'' fs'' b''>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -738,10 +736,10 @@
                     }
                     {
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \ppp [
+                            <ef' af' df'' f'' bf''>16 \arpeggio \ppp [
                             \once \override NoteHead.transparent = ##t
                             \set stemLeftBeamCount = 2
-                            f''16 -\accent \sfz ]
+                            f'16 -\accent \sfz ]
                                 ^ \markup {
                                     \musicglyph
                                         #"scripts.coda"
@@ -756,13 +754,13 @@
                     {
                         % [Cello Voice] Measure 5
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \p [
+                            <d' b' d'' f'' a''>16 \arpeggio \p [
                             \set stemLeftBeamCount = 2
-                            <c' ef' g' bf' c'''>16 \arpeggio ]
+                            <d' f' c'' d'' g''>16 \arpeggio ]
                         }
                         {
                             \once \override NoteHead.transparent = ##t
-                            f''16 -\accent \sfz
+                            f'16 -\accent \sfz
                                 ^ \markup {
                                     \musicglyph
                                         #"scripts.coda"
@@ -779,17 +777,15 @@
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 3/8
-                            \stopStaff
-                            \startStaff
                         }
                     }
                     {
                         % [Cello Voice] Measure 7
                         {
-                            <c' ef' g' bf' c'''>16 \arpeggio \p [
+                            <d' c'' f'' a''>16 \arpeggio \p [
                             \once \override NoteHead.transparent = ##t
                             \set stemLeftBeamCount = 2
-                            f''16 -\accent \sfz ]
+                            f'16 -\accent \sfz ]
                                 ^ \markup {
                                     \musicglyph
                                         #"scripts.coda"

@@ -53,6 +53,7 @@ percussion_temple_block_fanfare_music_specifier = consort.MusicSpecifier(
                 .by_duration('>', (1, 16), preprolated=True)
             ),
         dynamic_expression=consort.DynamicExpression(
+            division_period=2,
             start_dynamic_tokens='p fp',
             stop_dynamic_tokens='f',
             unsustained=True,

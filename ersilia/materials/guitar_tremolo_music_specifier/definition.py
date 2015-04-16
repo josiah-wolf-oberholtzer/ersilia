@@ -4,6 +4,7 @@ from abjad.tools import indicatortools
 from abjad.tools import rhythmmakertools
 from abjad.tools import selectortools
 from abjad.tools import spannertools
+from ersilia.materials import abbreviations
 
 
 guitar_tremolo_music_specifier = consort.MusicSpecifier(
@@ -27,13 +28,11 @@ guitar_tremolo_music_specifier = consort.MusicSpecifier(
         ),
     color='red',
     pitch_handler=consort.AbsolutePitchHandler(
-        logical_tie_expressions=(
-            consort.ChordExpression(chord_expr=(0, 3)),
-            consort.ChordExpression(chord_expr=(0, 5)),
-            consort.ChordExpression(chord_expr=(0, 3, 14)),
-            consort.ChordExpression(chord_expr=(0, 5)),
-            consort.ChordExpression(chord_expr=(0, 3, 7, 14)),
-            ),
+        logical_tie_expressions=[
+            consort.ChordExpression(
+                chord_expr=_,
+                ) for _ in abbreviations.guitar_chords
+            ],
         pitch_specifier=consort.PitchSpecifier(
             pitch_segments=(
                 'D3',

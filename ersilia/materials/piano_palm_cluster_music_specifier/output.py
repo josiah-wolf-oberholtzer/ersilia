@@ -24,6 +24,13 @@ piano_palm_cluster_music_specifier = consort.tools.MusicSpecifier(
                     ]
                 ),
             ),
+        octavation=consort.tools.AttachmentExpression(
+            attachments=datastructuretools.TypedList(
+                [
+                    consort.tools.OctavationExpression(),
+                    ]
+                ),
+            ),
         ),
     labels=('pedaled',),
     pitch_handler=consort.tools.PitchClassPitchHandler(

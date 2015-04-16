@@ -19,6 +19,9 @@ piano_tremolo_music_specifier = consort.tools.MusicSpecifier(
                             ['p', 'mf', 'p', 'p', 'mf', 'pp']
                             ),
                         division_period=2,
+                        start_dynamic_tokens=datastructuretools.CyclicTuple(
+                            ['fp']
+                            ),
                         transitions=datastructuretools.CyclicTuple(
                             [None]
                             ),
