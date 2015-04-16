@@ -5,32 +5,31 @@
 #(set-global-staff-size 12)
 
 \paper {
+
+    %annotate-spacing = ##t
     bottom-margin = 10\mm
     left-margin = 30\mm
     right-margin = 10\mm
     top-margin = 10\mm
-    evenFooterMarkup = \markup \fill-line {
-        " "
-        \concat {
-            \bold \fontsize #3
-            \on-the-fly #print-page-number-check-first
-            \fromproperty #'page:page-number-string
-        }
-    }
-    evenHeaderMarkup = \markup \fill-line { " " }
-    oddFooterMarkup = \markup \fill-line {
-        " "
-        \concat {
-            \bold \fontsize #3
-            \on-the-fly #print-page-number-check-first
-            \fromproperty #'page:page-number-string
-        }
-    }
     oddHeaderMarkup = \markup \fill-line { " " }
+    evenHeaderMarkup = \markup \fill-line { " " }
+    oddFooterMarkup = \markup \on-the-fly \not-first-page
+        \fill-line {
+            \override #'(font-name . "Didot")
+                \bold \fontsize #3 "Invisible Cities (iii): Ersilia"
+            " "
+            \concat {
+                \override #'(font-name . "Didot")
+                    \bold \fontsize #3
+                        \on-the-fly #print-page-number-check-first
+                        \fromproperty #'page:page-number-string
+            }
+        }
+    evenFooterMarkup = \oddFooterMarkup
     print-first-page-number = ##f
     print-page-number = ##t
     max-systems-per-page = 1
-    page-breaking = #ly:minimal-breaking
+    page-breaking = #ly:optimal-breaking
     ragged-bottom = ##f
     ragged-last-bottom = ##t
     markup-system-spacing = #'(
@@ -452,6 +451,7 @@
         \remove Bar_number_engraver
         \remove Mark_engraver
         \remove Metronome_mark_engraver
+        \override BarLine.bar-extent = #'(-2 . 2)
         \override BarLine.hair-thickness = 0.5
         \override BarLine.space-alist = #'(
             (time-signature extra-space . 0.0)
@@ -477,11 +477,12 @@
         \override OttavaBracket.padding = 2
         \shape #'((-1.5 . 0) (-1 . 0) (-0.5 . 0) (0 . 0)) RepeatTie                 
         \override RepeatTie.X-extent = ##f
-        \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1 24)
+        \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1 32)
         \override SpacingSpanner.strict-grace-spacing = ##f
         \override SpacingSpanner.strict-note-spacing = ##f
         \override SpacingSpanner.uniform-stretching = ##t
         \override StaffSymbol.color = #(x11-color 'grey50)
+        \override StaffSymbol.layer = -1
         \override Stem.details.beamed-lengths = #'(6)
         \override Stem.details.lengths = #'(6)
         %\override Stem.direction = #down
@@ -494,8 +495,12 @@
         \override SustainPedalLineSpanner.outside-staff-padding = 2
         \override SustainPedalLineSpanner.to-barline = ##t
         \override SystemStartSquare.thickness = 2
+
         \override TextSpanner.padding = 1
         \override TextSpanner.bound-details.right.padding = 2
+
+        \override TrillSpanner.bound-details.right.padding = 1
+
         \override TupletBracket.breakable = ##t
         %\override TupletBracket.direction = #down
         \override TupletBracket.full-length-padding = 1.5
@@ -518,7 +523,7 @@
             )
         autoBeaming = ##f
         pedalSustainStyle = #'mixed
-        proportionalNotationDuration = #(ly:make-moment 1 24)
+        proportionalNotationDuration = #(ly:make-moment 1 32)
         tupletFullLength = ##t
         barNumberFormatter = #format-oval-barnumbers
     }

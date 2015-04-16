@@ -39,6 +39,18 @@
         \Score
         proportionalNotationDuration = #(ly:make-moment 1 16)
     }
+    \context {
+        \WindSectionStaffGroup
+        systemStartDelimiter = #'SystemStartBar
+    }
+    \context {
+        \PercussionSectionStaffGroup
+        systemStartDelimiter = #'SystemStartBar
+    }
+    \context {
+        \StringSectionStaffGroup
+        systemStartDelimiter = #'SystemStartBar
+    }
 }
 
 \paper {
@@ -47,6 +59,12 @@
         (basic-distance . 8)
         (minimum-distance . 12)
         (padding . 8)
+        (stretchability . 0)
+    )
+    last-bottom-spacing = #'(
+        (basic-distance . 20)
+        (minimum-distance . 20)
+        (padding . 0)
         (stretchability . 0)
     )
     page-breaking = #ly:optimal-breaking

@@ -39,6 +39,18 @@
         \Score
         proportionalNotationDuration = #(ly:make-moment 1 16)
     }
+    \context {
+        \WindSectionStaffGroup
+        systemStartDelimiter = #'SystemStartBar
+    }
+    \context {
+        \PercussionSectionStaffGroup
+        systemStartDelimiter = #'SystemStartBar
+    }
+    \context {
+        \StringSectionStaffGroup
+        systemStartDelimiter = #'SystemStartBar
+    }
 }
 
 \paper {
