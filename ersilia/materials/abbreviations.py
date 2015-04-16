@@ -29,9 +29,10 @@ percussion_staff = consort.AttachmentExpression(
     attachments=[
         [
             spannertools.StaffLinesSpanner(
-                lines=[0],
+                lines=[-4, 4],
                 overrides={
                     'note_head__style': 'cross',
+                    'note_head__no_ledgers': True,
                     },
                 ),
             consort.ClefSpanner('percussion'),

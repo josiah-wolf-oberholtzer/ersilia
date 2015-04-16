@@ -5,8 +5,6 @@ from abjad.tools import pitchtools
 
 class Percussion(abctools.AbjadObject):
 
-    BAMBOO_WIND_CHIMES = pitchtools.NamedPitch('C4')
-
     WOOD_BLOCK_5 = pitchtools.NamedPitch('G4')
     WOOD_BLOCK_4 = pitchtools.NamedPitch('E4')
     WOOD_BLOCK_3 = pitchtools.NamedPitch('C4')
@@ -18,6 +16,7 @@ class Percussion(abctools.AbjadObject):
     TOM_2 = pitchtools.NamedPitch('B3')
     TOM_1 = pitchtools.NamedPitch('G3')
 
-    SNARE_DRUM = pitchtools.NamedPitch('C4')
-    TAM_TAM = pitchtools.NamedPitch('D4')
-    BASS_DRUM = pitchtools.NamedPitch('B3')
+    BAMBOO_WIND_CHIMES = pitchtools.NamedPitch('F4')
+    SNARE_DRUM = pitchtools.NamedPitch('D4')
+    TAM_TAM = pitchtools.NamedPitch('B3')
+    BASS_DRUM = pitchtools.NamedPitch('G3')

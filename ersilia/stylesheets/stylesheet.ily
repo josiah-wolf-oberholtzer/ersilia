@@ -337,7 +337,6 @@
         \name PercussionStaff
         \type Engraver_group
         \alias Staff
-        \override StaffSymbol.line-positions = #'(0)
         instrumentName = \percussionName
         shortInstrumentName = \shortPercussionName
         %\override Beam.positions = #'(-7 . -7)
