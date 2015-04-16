@@ -57,31 +57,32 @@
                     {
                         % [Violin 1 Voice] Measure 1
                         {
-                            d'16 \p [ (
+                            d''16 \p [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 1
-                            f'16 -\staccato )
+                            f''16 )
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             r8.
                             \set stemLeftBeamCount = 2
-                            d'16 ] (
+                            bf''16 ] (
                         }
                         % [Violin 1 Voice] Measure 2
                         {
-                            f'16 -\staccato )
+                            bf''16 \repeatTie [
+                            \set stemLeftBeamCount = 2
+                            dqs'''16 ] )
                         }
                     }
                     {
                         {
-                            r16
                             r4
                         }
                     }
                     {
                         % [Violin 1 Voice] Measure 3
                         {
-                            d'16 -\snappizzicato \p
+                            d''16 -\snappizzicato \p
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -107,52 +108,62 @@
                         \times 8/9 {
                             r8. [
                             \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            eqs''8 \p (
+                            \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
-                            f'16 \p (
+                            f''16 )
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            r8
                             \set stemLeftBeamCount = 2
+                            d''16 ] (
+                        }
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            d''8 \repeatTie [
+                            \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
-                            d'16 -\staccato )
+                            f''16 )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 1
                             r16
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             r8
-                            \set stemLeftBeamCount = 2
-                            f'16 ] (
-                        }
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 3/4 {
-                            d'16 -\staccato ) [
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            r8.
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
-                            f'16 (
+                            dqs''16 (
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 1
-                            d'16 -\staccato )
-                            \set stemLeftBeamCount = 1
-                            r8 ]
+                            d''16 ] )
                         }
                     }
                     {
                         % [Violin 1 Voice] Measure 5
                         {
-                            r16
-                        }
-                    }
-                    {
-                        {
-                            f'16 \p [ (
-                            \set stemLeftBeamCount = 2
-                            d'16 -\staccato ] )
-                        }
-                    }
-                    {
-                        {
                             r8.
+                        }
+                    }
+                    {
+                        {
+                            aqs'16 -\snappizzicato \p
+                                ^ \markup {
+                                    \box
+                                        \pad-around
+                                            #0.5
+                                            \italic
+                                                \smaller
+                                                    \concat
+                                                        {
+                                                            \vstrut
+                                                            pizz.
+                                                        }
+                                    }
+                        }
+                    }
+                    {
+                        {
+                            r8
                         }
                         % [Violin 1 Voice] Measure 6
                         {
@@ -161,20 +172,19 @@
                     }
                     {
                         {
-                            f'16 \p [ (
-                            \set stemLeftBeamCount = 2
-                            d'16 -\staccato ] )
+                            d''8 \p (
                         }
-                    }
-                    {
                         % [Violin 1 Voice] Measure 7
                         {
-                            r8.
-                        }
-                    }
-                    {
-                        {
-                            f'16 -\snappizzicato \p
+                            f''16 ) [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            bf'16 -\snappizzicato ]
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -222,7 +232,7 @@
                     }
                     {
                         {
-                            d'16 -\snappizzicato \p
+                            f'16 -\snappizzicato \p
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -245,57 +255,31 @@
                     {
                         % [Violin 2 Voice] Measure 2
                         \times 4/5 {
-                            r8 [
+                            r16 [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            cs'8 \p (
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
-                            f'16 \p (
+                            cs'16 \repeatTie
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            d'16 -\staccato )
-                            \set stemLeftBeamCount = 2
-                            r16 ]
+                            d'16 ] )
                         }
                     }
                     {
                         {
                             r8
                         }
-                    }
-                    {
                         % [Violin 2 Voice] Measure 3
                         {
-                            f'16 \p [ (
-                            \set stemLeftBeamCount = 2
-                            d'16 -\staccato ] )
+                            r16
                         }
                     }
                     {
                         {
-                            r4
-                        }
-                    }
-                    {
-                        % [Violin 2 Voice] Measure 4
-                        \times 4/5 {
-                            r8. [
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 2
-                            f'16 \p (
+                            fqs'16 \p [ (
                             \set stemLeftBeamCount = 2
-                            d'16 -\staccato ] )
-                        }
-                    }
-                    {
-                        {
-                            r8
-                            r8
-                        }
-                    }
-                    {
-                        {
-                            f'16 \p [ (
-                            \set stemLeftBeamCount = 2
-                            d'16 -\staccato ] )
+                            bf'16 ] )
                         }
                     }
                     {
@@ -304,55 +288,80 @@
                         }
                     }
                     {
-                        {
-                            f'16 \p (
+                        % [Violin 2 Voice] Measure 4
+                        \times 4/5 {
+                            r8 [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            cqs''16 -\tenuto \p
+                            \set stemLeftBeamCount = 1
+                            cqs''8 \repeatTie ]
                         }
+                    }
+                    {
+                        {
+                            r8
+                            r8
+                        }
+                    }
+                    {
+                        {
+                            f''8 \p (
+                        }
+                        {
+                            f''16 \repeatTie [
+                            \set stemLeftBeamCount = 2
+                            cs''16 ] )
+                        }
+                    }
+                    {
+                        {
+                            r8
+                        }
+                    }
+                    {
                         % [Violin 2 Voice] Measure 5
                         \times 4/5 {
-                            d'16 -\staccato ) [
+                            r16 [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            d''16 \p (
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
+                            fqs''16 )
+                            \set stemLeftBeamCount = 1
+                            r8 ]
+                        }
+                    }
+                    {
+                        {
+                            r16
+                        }
+                    }
+                    {
+                        {
+                            d''16 \p (
+                        }
+                        % [Violin 2 Voice] Measure 6
+                        {
+                            d''16 \repeatTie [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
+                            eqs''16 )
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             r8
                             \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            f'16 ] (
+                            f''8 ] (
                         }
-                        {
-                            d'16 -\staccato )
-                        }
-                    }
-                    {
-                        {
-                            r16
-                        }
-                        % [Violin 2 Voice] Measure 6
-                        {
-                            r8
-                        }
-                    }
-                    {
-                        {
-                            f'16 \p [ (
-                            \set stemLeftBeamCount = 2
-                            d'16 -\staccato ] )
-                        }
-                    }
-                    {
-                        {
-                            r8
-                        }
-                    }
-                    {
                         % [Violin 2 Voice] Measure 7
                         \times 2/3 {
-                            r16 [
+                            f''16 \repeatTie [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            f'16 \p (
+                            c''16 )
                             \set stemLeftBeamCount = 2
-                            d'16 -\staccato ] )
+                            r16 ]
                         }
                     }
                     {
@@ -388,7 +397,7 @@
                     }
                     {
                         {
-                            d'16 -\snappizzicato \p
+                            d''16 -\snappizzicato \p
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -411,10 +420,10 @@
                     {
                         % [Viola Voice] Measure 2
                         \times 2/3 {
-                            f'16 \p [ (
+                            f''16 \p [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            d'16 -\staccato )
+                            cs''16 )
                             \set stemLeftBeamCount = 2
                             r16 ]
                         }
@@ -426,20 +435,18 @@
                     }
                     {
                         {
-                            f'16 \p [ (
-                            \set stemLeftBeamCount = 2
-                            d'16 -\staccato ] )
+                            fqs''8 \p (
+                        }
+                        % [Viola Voice] Measure 3
+                        \times 2/3 {
+                            f''16 ) [
+                            \set stemLeftBeamCount = 1
+                            r8 ]
                         }
                     }
                     {
-                        % [Viola Voice] Measure 3
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 3/8
-                            \stopStaff
-                            \startStaff
+                            r4
                         }
                         % [Viola Voice] Measure 4
                         {
@@ -452,65 +459,49 @@
                             r8. [
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
-                            f'16 \p (
+                            dqf''16 \p (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 1
-                            d'16 -\staccato )
+                            d''16 )
                             \set stemLeftBeamCount = 1
                             r8 ]
                         }
                         \times 2/3 {
                             r16 [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16 (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 1
-                            d'16 -\staccato )
                             \set stemLeftBeamCount = 1
-                            r8. ]
+                            \set stemRightBeamCount = 1
+                            f''8 (
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            cs''16 )
+                            \set stemLeftBeamCount = 1
+                            r8 ]
                         }
                         % [Viola Voice] Measure 5
                         {
-                            f'16 [ (
-                            \set stemLeftBeamCount = 2
-                            d'16 -\staccato ] )
+                            fqs''8 (
                         }
                         \times 4/5 {
-                            r8. [
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 2
-                            f'16 (
+                            fqs''16 \repeatTie [
                             \set stemLeftBeamCount = 2
-                            d'16 -\staccato ] )
+                            \set stemRightBeamCount = 2
+                            f''16 )
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
+                            r16
+                            \set stemLeftBeamCount = 1
+                            r8 ]
                         }
-                    }
-                    {
                         % [Viola Voice] Measure 6
                         {
-                            r8.
+                            cqs''16 [ (
+                            \set stemLeftBeamCount = 2
+                            f''16 ] )
                         }
                     }
                     {
                         {
-                            f'16 -\snappizzicato \p
-                                ^ \markup {
-                                    \box
-                                        \pad-around
-                                            #0.5
-                                            \italic
-                                                \smaller
-                                                    \concat
-                                                        {
-                                                            \vstrut
-                                                            pizz.
-                                                        }
-                                    }
-                        }
-                    }
-                    {
-                        {
-                            r8
+                            r4
                         }
                         % [Viola Voice] Measure 7
                         {
@@ -519,8 +510,6 @@
                             \startStaff
                             R1 * 3/8
                             \bar "|."
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 }
@@ -549,21 +538,18 @@
                             f'16 \p [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 1
-                            d'16 -\staccato )
+                            d'16 )
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             r8
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
                             r16
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            f'8 (
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16 (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            d'16 -\staccato )
-                            \set stemLeftBeamCount = 2
-                            r16 ]
+                            bqf'16 ] )
                         }
                     }
                     {
@@ -574,9 +560,7 @@
                     }
                     {
                         {
-                            f'16 \p [ (
-                            \set stemLeftBeamCount = 2
-                            d'16 -\staccato ] )
+                            f'8 -\tenuto \p
                         }
                     }
                     {
@@ -587,7 +571,7 @@
                     {
                         % [Cello Voice] Measure 3
                         {
-                            f'16 -\snappizzicato \p [
+                            bqs16 -\snappizzicato \p [
                                 ^ \markup {
                                     \box
                                         \pad-around
@@ -604,58 +588,63 @@
                             \set stemRightBeamCount = 1
                             r8.
                             \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 2
-                            d'16 (
-                            \set stemLeftBeamCount = 2
-                            f'16 -\staccato ] )
+                            d'8 ] (
+                        }
+                        % [Cello Voice] Measure 4
+                        \times 2/3 {
+                            f'16 ) [
+                            \set stemLeftBeamCount = 1
+                            r8 ]
                         }
                     }
                     {
-                        % [Cello Voice] Measure 4
                         {
-                            r4.
+                            r4
                         }
                     }
                     {
                         \times 4/5 {
                             r8. [
                             \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 2
-                            d'16 \p (
+                            c'8 \p ] (
+                        }
+                        {
+                            bqf16 ) [
                             \set stemLeftBeamCount = 2
-                            f'16 -\staccato ] )
-                        }
-                    }
-                    {
-                        {
-                            r8.
-                        }
-                    }
-                    {
-                        {
-                            d'16 \p (
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            f16 ] (
                         }
                         % [Cello Voice] Measure 5
                         {
-                            f'16 -\staccato )
+                            f8 \repeatTie
                         }
-                    }
-                    {
-                        {
-                            r16
-                        }
-                    }
-                    {
                         \times 4/5 {
-                            r8 [
+                            bqs,16 ) [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            r8
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
-                            d'16 \p (
+                            r16
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16 -\staccato )
-                            \set stemLeftBeamCount = 2
-                            r16 ]
+                            f16 -\snappizzicato ]
+                                ^ \markup {
+                                    \box
+                                        \pad-around
+                                            #0.5
+                                            \italic
+                                                \smaller
+                                                    \concat
+                                                        {
+                                                            \vstrut
+                                                            pizz.
+                                                        }
+                                    }
                         }
                     }
                     {
@@ -665,16 +654,12 @@
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 3/8
-                            \stopStaff
-                            \startStaff
                         }
                     }
                     {
                         % [Cello Voice] Measure 7
                         {
-                            d'16 \p [ (
-                            \set stemLeftBeamCount = 2
-                            f'16 -\staccato ] )
+                            c'8 -\tenuto \p
                         }
                     }
                     {

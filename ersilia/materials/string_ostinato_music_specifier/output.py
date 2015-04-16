@@ -28,7 +28,7 @@ string_ostinato_music_specifier = consort.tools.MusicSpecifier(
                     ]
                 ),
             ),
-        pizzicato=consort.tools.AttachmentExpression(
+        pizzicati=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [
                     [
@@ -72,19 +72,19 @@ string_ostinato_music_specifier = consort.tools.MusicSpecifier(
                         only_with_head=False,
                         only_with_tail=False,
                         ),
-                    selectortools.DurationSelectorCallback(
-                        duration=selectortools.DurationInequality(
-                            operator_string='==',
-                            duration=durationtools.Duration(1, 16),
-                            ),
-                        preprolated=True,
-                        ),
                     selectortools.ContiguitySelectorCallback(),
                     selectortools.LengthSelectorCallback(
                         length=selectortools.LengthInequality(
                             operator_string='==',
                             length=1,
                             ),
+                        ),
+                    selectortools.DurationSelectorCallback(
+                        duration=selectortools.DurationInequality(
+                            operator_string='==',
+                            duration=durationtools.Duration(1, 16),
+                            ),
+                        preprolated=True,
                         ),
                     selectortools.PrototypeSelectorCallback(
                         prototype=scoretools.Leaf,
@@ -111,13 +111,6 @@ string_ostinato_music_specifier = consort.tools.MusicSpecifier(
                         only_with_head=False,
                         only_with_tail=False,
                         ),
-                    selectortools.DurationSelectorCallback(
-                        duration=selectortools.DurationInequality(
-                            operator_string='==',
-                            duration=durationtools.Duration(1, 16),
-                            ),
-                        preprolated=True,
-                        ),
                     selectortools.ContiguitySelectorCallback(),
                     selectortools.LengthSelectorCallback(
                         length=selectortools.LengthInequality(
@@ -131,10 +124,10 @@ string_ostinato_music_specifier = consort.tools.MusicSpecifier(
                     ),
                 ),
             ),
-        staccati=consort.tools.AttachmentExpression(
+        tenuti=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [
-                    indicatortools.Articulation('staccato'),
+                    indicatortools.Articulation('tenuto'),
                     ]
                 ),
             selector=selectortools.Selector(
@@ -146,25 +139,25 @@ string_ostinato_music_specifier = consort.tools.MusicSpecifier(
                         only_with_head=False,
                         only_with_tail=False,
                         ),
-                    selectortools.DurationSelectorCallback(
-                        duration=selectortools.DurationInequality(
-                            operator_string='==',
-                            duration=durationtools.Duration(1, 16),
-                            ),
-                        preprolated=True,
-                        ),
                     selectortools.ContiguitySelectorCallback(),
                     selectortools.LengthSelectorCallback(
                         length=selectortools.LengthInequality(
-                            operator_string='>',
+                            operator_string='==',
                             length=1,
                             ),
+                        ),
+                    selectortools.DurationSelectorCallback(
+                        duration=selectortools.DurationInequality(
+                            operator_string='>',
+                            duration=durationtools.Duration(1, 16),
+                            ),
+                        preprolated=True,
                         ),
                     selectortools.PrototypeSelectorCallback(
                         prototype=scoretools.Leaf,
                         ),
                     selectortools.ItemSelectorCallback(
-                        item=-1,
+                        item=0,
                         apply_to_each=True,
                         ),
                     ),
@@ -172,14 +165,55 @@ string_ostinato_music_specifier = consort.tools.MusicSpecifier(
             ),
         ),
     color='darkyellow',
-    pitch_handler=consort.tools.AbsolutePitchHandler(
+    pitch_handler=consort.tools.PitchClassPitchHandler(
+        deviations=datastructuretools.CyclicTuple(
+            [
+                pitchtools.NumberedInterval(0),
+                pitchtools.NumberedInterval(0),
+                pitchtools.NumberedInterval(0),
+                pitchtools.NumberedInterval(0.5),
+                pitchtools.NumberedInterval(0),
+                pitchtools.NumberedInterval(-0.5),
+                ]
+            ),
         forbid_repetitions=True,
+        leap_constraint=pitchtools.NumberedInterval(6),
+        register_specifier=consort.tools.RegisterSpecifier(
+            base_pitch=pitchtools.NumberedPitch(0),
+            segment_inflections=consort.tools.RegisterInflectionInventory(
+                [
+                    consort.tools.RegisterInflection(
+                        inflections=pitchtools.IntervalSegment(
+                            (
+                                pitchtools.NumberedInterval(3),
+                                pitchtools.NumberedInterval(-1),
+                                pitchtools.NumberedInterval(1),
+                                pitchtools.NumberedInterval(-3),
+                                ),
+                            item_class=pitchtools.NumberedInterval,
+                            ),
+                        ratio=mathtools.Ratio((1, 1, 1)),
+                        ),
+                    ]
+                ),
+            ),
+        register_spread=3,
         pitch_specifier=consort.tools.PitchSpecifier(
             pitch_segments=(
                 pitchtools.PitchSegment(
                     (
-                        pitchtools.NamedPitch("d'"),
-                        pitchtools.NamedPitch("f'"),
+                        pitchtools.NamedPitch('d'),
+                        pitchtools.NamedPitch('f'),
+                        pitchtools.NamedPitch('d'),
+                        pitchtools.NamedPitch('f'),
+                        pitchtools.NamedPitch('d'),
+                        pitchtools.NamedPitch('f'),
+                        pitchtools.NamedPitch('c'),
+                        pitchtools.NamedPitch('f'),
+                        pitchtools.NamedPitch('bf'),
+                        pitchtools.NamedPitch('d'),
+                        pitchtools.NamedPitch('f'),
+                        pitchtools.NamedPitch('df'),
                         ),
                     item_class=pitchtools.NamedPitch,
                     ),
@@ -189,7 +223,7 @@ string_ostinato_music_specifier = consort.tools.MusicSpecifier(
         ),
     rhythm_maker=rhythmmakertools.TaleaRhythmMaker(
         talea=rhythmmakertools.Talea(
-            counts=(1, 1, -3),
+            counts=(1, 1, -3, 2, 1, -2, 3, 1, -3),
             denominator=16,
             ),
         extra_counts_per_division=(0, 0, 1, 2, 0, 1),
