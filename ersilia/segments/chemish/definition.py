@@ -34,8 +34,10 @@ segment_maker.add_setting(
         ersilia.sustained_timespan_maker,
         fuse_groups=True,
         ),
-    bass=ersilia.string_low_pedal_music_specifier
-        .transpose('E1'),
+    bass=new(
+        ersilia.string_low_pedal_music_specifier,
+        pitch_handler__register_spread=0,
+        ).transpose('E1'),
     )
 
 ### TREMOLO ###
@@ -123,8 +125,10 @@ segment_maker.add_setting(
 segment_maker.add_setting(
     timespan_identifier=[-1, 1, -1, 1, -1],
     timespan_maker=ersilia.sparse_timespan_maker,
-    piano_rh=ersilia.piano_pointillist_music_specifier
-        .transpose(-12),
+    piano_rh=new(
+        ersilia.piano_pointillist_music_specifier,
+        pitch_handler__leap_constraint=8,
+        ),
     )
 
 ### AUXILIARY ###
@@ -178,7 +182,7 @@ segment_maker.add_setting(
         -4, 1,
         -4, 1,
         -4, 1,
-        -4,
+        -2, 2,
         ],
     timespan_maker=new(
         ersilia.dense_timespan_maker,

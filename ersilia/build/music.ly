@@ -27,6 +27,11 @@
                     \fontsize #18 {
                         \line { ERSILIA }
                     }
+                \vspace #0.5
+                \override #'(font-name . "Didot Italic")
+                    \fontsize #2 {
+                        \line { ( a botanical survey of the uninhabited northeastern isles ) }
+                    }
                 \vspace #1
                 \override #'(font-name . "Didot Italic")
                     \fontsize #4 {

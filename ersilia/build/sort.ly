@@ -2019,15 +2019,34 @@
                         {
                             r16
                         }
+                    }
+                    {
                         % [Flute Voice] Measure 136
+                        \times 4/5 {
+                            \once \override Hairpin.circled-tip = ##t
+                            cs'16 -\staccato \< [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            e'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            cs'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            fs'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            cs'16 -\staccato \p ]
+                        }
+                    }
+                    {
+                        {
+                            r4
+                        }
+                        % [Flute Voice] Measure 137
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1/2
-                        }
-                        % [Flute Voice] Measure 137
-                        {
                             R1 * 1/2
                             \stopStaff
                             \startStaff
@@ -2158,7 +2177,7 @@
                     }
                     {
                         \times 2/3 {
-                            d''16 -\staccato \mf [
+                            d''16 -\staccato \mp [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             e''16 -\staccato
@@ -2224,7 +2243,7 @@
                             cs'16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            fs'16 -\staccato \mf
+                            fs'16 -\staccato \mp
                             \set stemLeftBeamCount = 2
                             r16 ]
                         }
@@ -2270,7 +2289,7 @@
                         }
                         % [Oboe Voice] Measure 97
                         {
-                            cs'16 -\staccato \mp
+                            cs'16 -\staccato \p
                         }
                     }
                     {
@@ -2344,7 +2363,7 @@
                     }
                     {
                         {
-                            bf''16 -\staccato \mf [
+                            bf''16 -\staccato \mp [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             a''16 -\staccato
@@ -2395,7 +2414,7 @@
                             \set stemRightBeamCount = 2
                             d'16 -\staccato
                             \set stemLeftBeamCount = 2
-                            f'16 -\staccato \mf ]
+                            f'16 -\staccato \mp ]
                         }
                     }
                     {
@@ -2409,7 +2428,7 @@
                             r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            cs''16 -\staccato \p
+                            cs''16 -\staccato \mf
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             ef''16 -\staccato
@@ -2450,7 +2469,7 @@
                             \set stemRightBeamCount = 2
                             e''16 -\staccato
                             \set stemLeftBeamCount = 2
-                            cs''16 -\staccato \p ]
+                            cs''16 -\staccato \mf ]
                         }
                     }
                     {
@@ -2466,7 +2485,7 @@
                     }
                     {
                         {
-                            fs''16 -\staccato \mp [
+                            fs''16 -\staccato \p [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             cs''16 -\staccato
@@ -2497,7 +2516,7 @@
                             \set stemRightBeamCount = 2
                             cs''16 -\staccato
                             \set stemLeftBeamCount = 2
-                            e''16 -\staccato \mp ]
+                            e''16 -\staccato \p ]
                         }
                     }
                     {
@@ -2624,7 +2643,7 @@
                             \set stemRightBeamCount = 2
                             fs'16 -\staccato
                             \set stemLeftBeamCount = 2
-                            cs'16 -\staccato \p ]
+                            cs'16 -\staccato \mf ]
                         }
                     }
                     {
@@ -2662,7 +2681,7 @@
                     }
                     {
                         {
-                            af''16 -\staccato \mp [
+                            af''16 -\staccato \p [
                             \set stemLeftBeamCount = 2
                             f''16 -\staccato ]
                         }
@@ -2687,7 +2706,7 @@
                             \set stemRightBeamCount = 2
                             bf'16 -\staccato
                             \set stemLeftBeamCount = 2
-                            a'16 -\staccato \mp ]
+                            a'16 -\staccato \p ]
                         }
                     }
                     {
@@ -2701,7 +2720,7 @@
                             r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            f'16 -\staccato \mf
+                            f'16 -\staccato \mp
                             \set stemLeftBeamCount = 2
                             r16 ]
                         }
@@ -2818,7 +2837,7 @@
                             \set stemRightBeamCount = 2
                             f'16 -\staccato
                             \set stemLeftBeamCount = 2
-                            af'16 -\staccato \mf ]
+                            af'16 -\staccato \mp ]
                         }
                     }
                     {
@@ -2841,7 +2860,7 @@
                             \set stemRightBeamCount = 2
                             a''16 -\staccato
                             \set stemLeftBeamCount = 2
-                            af''16 -\staccato \mp ]
+                            af''16 -\staccato \p ]
                         }
                     }
                     {
@@ -2885,19 +2904,38 @@
                             \set stemRightBeamCount = 2
                             e''16 -\staccato
                             \set stemLeftBeamCount = 2
-                            cs''16 -\staccato \p ]
+                            cs''16 -\staccato ]
+                        }
+                        % [Oboe Voice] Measure 136
+                        {
+                            f'16 -\staccato \mf
                         }
                     }
                     {
-                        % [Oboe Voice] Measure 136
+                        {
+                            r16
+                            r16
+                        }
+                    }
+                    {
+                        {
+                            cs''16 -\staccato \p [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            ef''16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            cs''16 -\staccato ]
+                        }
+                    }
+                    {
+                        {
+                            r8
+                        }
+                        % [Oboe Voice] Measure 137
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1/2
-                        }
-                        % [Oboe Voice] Measure 137
-                        {
                             R1 * 1/2
                             \stopStaff
                             \startStaff
@@ -3106,7 +3144,7 @@
                             \set stemRightBeamCount = 2
                             d''16 -\staccato
                             \set stemLeftBeamCount = 2
-                            g''16 -\staccato \mf ]
+                            g''16 -\staccato \p ]
                         }
                     }
                     {
@@ -3121,7 +3159,7 @@
                             r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            d''16 -\staccato \p
+                            d''16 -\staccato \mp
                             \set stemLeftBeamCount = 2
                             f''16 -\staccato ]
                         }
@@ -3144,7 +3182,7 @@
                             f'16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            cs''16 -\staccato \p
+                            cs''16 -\staccato \mp
                             \set stemLeftBeamCount = 2
                             r16 ]
                         }
@@ -3186,7 +3224,7 @@
                     \transpose bf, c'
                     {
                         {
-                            c''16 -\staccato \mp
+                            c''16 -\staccato \mf
                         }
                         % [Clarinet Voice] Measure 97
                         \times 2/3 {
@@ -3268,7 +3306,7 @@
                     \transpose bf, c'
                     {
                         {
-                            g'16 -\staccato \p [
+                            g'16 -\staccato \mp [
                             \set stemLeftBeamCount = 2
                             f'16 -\staccato ]
                         }
@@ -3297,7 +3335,7 @@
                             \set stemRightBeamCount = 2
                             ef''16 -\staccato
                             \set stemLeftBeamCount = 2
-                            cs''16 -\staccato \p ]
+                            cs''16 -\staccato \mp ]
                         }
                     }
                     {
@@ -3348,7 +3386,7 @@
                         }
                         % [Clarinet Voice] Measure 107
                         {
-                            a'16 -\staccato \mf
+                            a'16 -\staccato \p
                         }
                     }
                     {
@@ -3372,7 +3410,7 @@
                     {
                         % [Clarinet Voice] Measure 108
                         {
-                            f'16 -\staccato \p [
+                            f'16 -\staccato \mp [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             g'16 -\staccato
@@ -3425,7 +3463,7 @@
                     \transpose bf, c'
                     {
                         {
-                            f'16 -\staccato \mf [
+                            f'16 -\staccato \p [
                             \set stemLeftBeamCount = 2
                             d'16 -\staccato ]
                         }
@@ -3530,7 +3568,7 @@
                             r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            f''16 -\staccato \mp
+                            f''16 -\staccato \mf
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             d''16 -\staccato
@@ -3601,7 +3639,7 @@
                             e''16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            cs''16 -\staccato \mp
+                            cs''16 -\staccato \mf
                             \set stemLeftBeamCount = 2
                             r16 ]
                         }
@@ -3717,7 +3755,7 @@
                     \transpose bf, c'
                     {
                         {
-                            fs''16 -\staccato \mf [
+                            fs''16 -\staccato \p [
                             \set stemLeftBeamCount = 2
                             cs''16 -\staccato ]
                         }
@@ -3731,7 +3769,7 @@
                     \transpose bf, c'
                     {
                         {
-                            cs''16 -\staccato \mp [
+                            cs''16 -\staccato \mf [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             c''16 -\staccato
@@ -3791,23 +3829,33 @@
                     {
                         \times 2/3 {
                             r16 [
+                            \once \override Hairpin.circled-tip = ##t
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            g'16 -\staccato \p
+                            g'16 -\staccato \<
                             \set stemLeftBeamCount = 2
                             f'16 -\staccato ]
                         }
+                        % [Clarinet Voice] Measure 136
+                        {
+                            af'16 -\staccato [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            f''16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            af'16 -\staccato \mf ]
+                        }
                     }
                     {
-                        % [Clarinet Voice] Measure 136
+                        {
+                            r16
+                            r4
+                        }
+                        % [Clarinet Voice] Measure 137
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1/2
-                        }
-                        % [Clarinet Voice] Measure 137
-                        {
                             R1 * 1/2
                             \stopStaff
                             \startStaff
@@ -4874,13 +4922,10 @@
                     }
                     \transpose ef, c'
                     {
-                        \times 2/3 {
-                            r16 [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f,16 -\stopped \f (
-                            \set stemLeftBeamCount = 2
-                            af,16 ] )
+                        {
+                            \pitchedTrill
+                            f,8 -\stopped \f \startTrillSpan af,
+                            <> \stopTrillSpan
                         }
                     }
                     {
@@ -8735,14 +8780,27 @@
                             }
                             {
                                 % [Piano Upper Voice] Measure 136
+                                \times 4/5 {
+                                    d''16 -\staccato \f [
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 1
+                                    <e' g'>16 -\staccato
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
+                                    <e' g'>8 :64 -\accent
+                                    \set stemLeftBeamCount = 2
+                                    r16 ]
+                                }
+                            }
+                            {
+                                {
+                                    r4
+                                }
+                                % [Piano Upper Voice] Measure 137
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 1/2
-                                }
-                                % [Piano Upper Voice] Measure 137
-                                {
                                     R1 * 1/2
                                     \stopStaff
                                     \startStaff
@@ -9518,13 +9576,40 @@
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
                                     R1 * 1/2
+                                    \stopStaff
+                                    \startStaff
                                 }
+                            }
+                            {
                                 % [Piano Lower Voice] Measure 136
+                                \tweak #'text #tuplet-number::calc-fraction-text
+                                \times 6/7 {
+                                    e,16 -\staccato \f \> [
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 1
+                                    <f, af,>16 -\staccato
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
+                                    af,8 -\accent -\mordent
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 2
+                                    d16 -\staccato
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
+                                    <e, g,>16 -\staccato \mf
+                                    \set stemLeftBeamCount = 2
+                                    r16 ]
+                                }
+                            }
+                            {
                                 {
-                                    R1 * 1/2
+                                    r8
                                 }
                                 % [Piano Lower Voice] Measure 137
                                 {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
                                     R1 * 1/2
                                     \stopStaff
                                     \startStaff
@@ -11559,30 +11644,18 @@
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
                                 R1 * 5/8
-                            }
-                            % [Percussion Voice] Measure 125
-                            {
-                                R1 * 5/8
-                            }
-                            % [Percussion Voice] Measure 126
-                            {
-                                R1 * 5/8
-                            }
-                            % [Percussion Voice] Measure 127
-                            {
-                                R1 * 1/2
                                 \stopStaff
                                 \startStaff
                             }
-                            % [Percussion Voice] Measure 128
+                            % [Percussion Voice] Measure 125
                             {
                                 r4
                             }
                         }
                         {
-                            \tweak #'text #tuplet-number::calc-fraction-text
-                            \times 6/7 {
+                            {
                                 \clef "bass"
+                                \once \override Hairpin.circled-tip = ##t
                                 \once \override TextSpanner.bound-details.left-broken.text = ##f
                                 \once \override TextSpanner.bound-details.left.text = \markup {
                                     \box
@@ -11606,7 +11679,60 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
                                 \startStaff
-                                ef16 -\accent -\staccato \f \startTextSpan \> [
+                                <ds fs>8 :64 \startTextSpan \<
+                                <ds fs>4 :32 \repeatTie
+                            }
+                            % [Percussion Voice] Measure 126
+                            {
+                                <ds fs>4. :32 \repeatTie
+                                <ds fs>4 :32 \repeatTie
+                            }
+                            % [Percussion Voice] Measure 127
+                            {
+                                \once \override Hairpin.circled-tip = ##t
+                                <ds fs>16 :128 \p \repeatTie \> [
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                <fs b>16 :128
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                <fs a>16 :128
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                <cs ds>16 :128
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                <b, d>16 :128
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                <cs fs>16 :128
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                <ds fs>16 :128
+                                \set stemLeftBeamCount = 2
+                                <fs gs>16 :128 ]
+                            }
+                            % [Percussion Voice] Measure 128
+                            {
+                                <fs gs>8 :64 \repeatTie
+                                \stopStaff
+                                \startStaff
+                                \clef "percussion"
+                            }
+                        }
+                        {
+                            {
+                                r8 \!
+                            }
+                        }
+                        {
+                            \tweak #'text #tuplet-number::calc-fraction-text
+                            \times 6/7 {
+                                \clef "bass"
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                                \startStaff
+                                ef16 -\accent -\staccato \f \> [
                                 \set stemLeftBeamCount = 1
                                 \set stemRightBeamCount = 1
                                 r8
@@ -11628,11 +11754,32 @@
                         }
                         {
                             {
-                                r4
+                                \clef "bass"
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                                \startStaff
+                                <fs a>4 :32 \p
+                                \stopStaff
+                                \startStaff
+                                \clef "percussion"
                             }
+                        }
+                        {
                             % [Percussion Voice] Measure 129
                             {
-                                r4.
+                                r4
+                            }
+                        }
+                        {
+                            {
+                                \clef "bass"
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                                \startStaff
+                                <cs fs>8 :64 \ppp
+                                \stopStaff
+                                \startStaff
+                                \clef "percussion"
                             }
                         }
                         {
@@ -11659,7 +11806,6 @@
                                 <gs b>4. :32 \mf \mf
                                 \stopStaff
                                 \startStaff
-                                <> \stopTextSpan
                                 \clef "percussion"
                             }
                         }
@@ -11667,14 +11813,26 @@
                             {
                                 r4
                             }
+                        }
+                        {
                             % [Percussion Voice] Measure 131
                             {
+                                \clef "bass"
+                                \once \override Hairpin.circled-tip = ##t
                                 \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
                                 \startStaff
-                                R1 * 5/8
+                                <b, d>4. :32 \<
+                                <b, d>8 :64 \ppp \repeatTie
                                 \stopStaff
                                 \startStaff
+                                <> \stopTextSpan
+                                \clef "percussion"
+                            }
+                        }
+                        {
+                            {
+                                r8
                             }
                         }
                         {
@@ -11721,6 +11879,29 @@
                         {
                             % [Percussion Voice] Measure 136
                             {
+                                f'4 :32 \pp ^ \markup {
+                                    \box
+                                        \whiteout
+                                            \pad-around
+                                                #0.5
+                                                \italic
+                                                    \smaller
+                                                        \concat
+                                                            {
+                                                                \vstrut
+                                                                windchimes
+                                                            }
+                                    }
+                            }
+                        }
+                        {
+                            {
+                                r4
+                            }
+                        }
+                        {
+                            % [Percussion Voice] Measure 137
+                            {
                                 \clef "treble^15"
                                 \once \override TextSpanner.bound-details.left-broken.text = ##f
                                 \once \override TextSpanner.bound-details.left.text = \markup {
@@ -11758,15 +11939,6 @@
                         {
                             {
                                 r4
-                            }
-                            % [Percussion Voice] Measure 137
-                            {
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                \startStaff
-                                R1 * 1/2
-                                \stopStaff
-                                \startStaff
                             }
                         }
                     }
@@ -12657,26 +12829,21 @@
                             \once \override TextSpanner.dash-fraction = 1
                             <c' g'>8 -\accent \fff \startTextSpan
                         }
-                    }
-                    {
                         % [Violin Voice] Measure 136
                         {
-                            r4.
-                        }
-                    }
-                    {
-                        {
-                            <bf f'>8 -\accent \fff
-                        }
-                        % [Violin Voice] Measure 137
-                        {
-                            <bf f'>4 \repeatTie
+                            <c' g'>2 \repeatTie
                             <> \stopTextSpan
                         }
                     }
                     {
+                        % [Violin Voice] Measure 137
                         {
-                            r4
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
                         }
                     }
                 }
@@ -13566,28 +13733,31 @@
                         }
                         % [Viola Voice] Measure 135
                         {
-                            <g' d''>2 \repeatTie
+                            <g' d''>8 \repeatTie [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            <af' ef''>8 -\accent
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            <g' d''>8 -\accent
+                            \set stemLeftBeamCount = 1
+                            <gqs' dqs''>8 -\accent ]
                         }
-                    }
-                    {
                         % [Viola Voice] Measure 136
                         {
-                            r4.
-                        }
-                    }
-                    {
-                        {
-                            <f' c''>8 -\accent \fff
-                        }
-                        % [Viola Voice] Measure 137
-                        {
-                            <f' c''>4 \repeatTie
+                            <gqs' dqs''>2 \repeatTie
                             <> \stopTextSpan
                         }
                     }
                     {
+                        % [Viola Voice] Measure 137
                         {
-                            r4
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
                         }
                     }
                 }
@@ -14508,16 +14678,9 @@
                         {
                             <ef bf>8 -\accent \fff
                         }
-                    }
-                    {
                         % [Cello Voice] Measure 136
                         {
-                            r4.
-                        }
-                    }
-                    {
-                        {
-                            <e b>8 -\accent \fff
+                            <ef bf>2 \repeatTie
                             <> \stopTextSpan
                         }
                     }
@@ -15535,13 +15698,25 @@
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
                                 R1 * 1/2
+                                \stopStaff
+                                \startStaff
                             }
+                        }
+                        {
                             % [Contrabass Voice] Measure 136
                             {
-                                R1 * 1/2
+                                aqs,,4. \fp
+                            }
+                        }
+                        {
+                            {
+                                r8
                             }
                             % [Contrabass Voice] Measure 137
                             {
+                                \stopStaff
+                                \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                \startStaff
                                 R1 * 1/2
                                 \stopStaff
                                 \startStaff
