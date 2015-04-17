@@ -8,7 +8,6 @@ from abjad.tools import timespantools
 
 
 segment_maker = ersilia.ErsiliaSegmentMaker(
-    annotate_timespans=True,
     desired_duration_in_seconds=150,
     name='Sort',
     permitted_time_signatures=ersilia.permitted_time_signatures,

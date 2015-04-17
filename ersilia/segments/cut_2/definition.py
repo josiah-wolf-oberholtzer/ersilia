@@ -65,12 +65,6 @@ segment_maker.add_setting(
         .transpose(-24),
     )
 
-segment_maker.add_setting(
-    timespan_identifier=timespantools.Timespan((18, 8), (22, 8)),
-    percussion=ersilia.percussion_snare_interruption_music_specifier,
-    silenced_contexts=segment_maker.score_template.all_voice_names,
-    )
-
 ### POINTILLIST ###
 
 ### INTERRUPT ###

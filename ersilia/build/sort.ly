@@ -21,1151 +21,206 @@
                         }
                     }
                 s1 * 7/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            0
-                                            1
-                                        " : "
-                                        \fraction
-                                            7
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 7/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            7
-                                            8
-                                        " : "
-                                        \fraction
-                                            7
-                                            4
-                                    }
-                        }
             }
             {
                 \time 5/8
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            7
-                                            4
-                                        " : "
-                                        \fraction
-                                            19
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            19
-                                            8
-                                        " : "
-                                        \fraction
-                                            3
-                                            1
-                                    }
-                        }
             }
             {
                 \time 4/8
                 s1 * 1/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            3
-                                            1
-                                        " : "
-                                        \fraction
-                                            7
-                                            2
-                                    }
-                        }
             }
             {
                 \time 4/4
                 s1 * 1
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            7
-                                            2
-                                        " : "
-                                        \fraction
-                                            9
-                                            2
-                                    }
-                        }
             }
             {
                 s1 * 1
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            9
-                                            2
-                                        " : "
-                                        \fraction
-                                            11
-                                            2
-                                    }
-                        }
             }
             {
                 \time 5/8
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            11
-                                            2
-                                        " : "
-                                        \fraction
-                                            49
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            49
-                                            8
-                                        " : "
-                                        \fraction
-                                            27
-                                            4
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            27
-                                            4
-                                        " : "
-                                        \fraction
-                                            59
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            59
-                                            8
-                                        " : "
-                                        \fraction
-                                            8
-                                            1
-                                    }
-                        }
             }
             {
                 \time 4/8
                 s1 * 1/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            8
-                                            1
-                                        " : "
-                                        \fraction
-                                            17
-                                            2
-                                    }
-                        }
             }
             {
                 \time 7/8
                 s1 * 7/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            17
-                                            2
-                                        " : "
-                                        \fraction
-                                            75
-                                            8
-                                    }
-                        }
             }
             {
                 \time 5/8
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            75
-                                            8
-                                        " : "
-                                        \fraction
-                                            10
-                                            1
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            10
-                                            1
-                                        " : "
-                                        \fraction
-                                            85
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            85
-                                            8
-                                        " : "
-                                        \fraction
-                                            45
-                                            4
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            45
-                                            4
-                                        " : "
-                                        \fraction
-                                            95
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            95
-                                            8
-                                        " : "
-                                        \fraction
-                                            25
-                                            2
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            25
-                                            2
-                                        " : "
-                                        \fraction
-                                            105
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            105
-                                            8
-                                        " : "
-                                        \fraction
-                                            55
-                                            4
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            55
-                                            4
-                                        " : "
-                                        \fraction
-                                            115
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            115
-                                            8
-                                        " : "
-                                        \fraction
-                                            15
-                                            1
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            15
-                                            1
-                                        " : "
-                                        \fraction
-                                            125
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            125
-                                            8
-                                        " : "
-                                        \fraction
-                                            65
-                                            4
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            65
-                                            4
-                                        " : "
-                                        \fraction
-                                            135
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            135
-                                            8
-                                        " : "
-                                        \fraction
-                                            35
-                                            2
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            35
-                                            2
-                                        " : "
-                                        \fraction
-                                            145
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            145
-                                            8
-                                        " : "
-                                        \fraction
-                                            75
-                                            4
-                                    }
-                        }
             }
             {
                 \time 4/8
                 s1 * 1/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            75
-                                            4
-                                        " : "
-                                        \fraction
-                                            77
-                                            4
-                                    }
-                        }
             }
             {
                 \time 4/4
                 s1 * 1
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            77
-                                            4
-                                        " : "
-                                        \fraction
-                                            81
-                                            4
-                                    }
-                        }
             }
             {
                 \time 5/8
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            81
-                                            4
-                                        " : "
-                                        \fraction
-                                            167
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            167
-                                            8
-                                        " : "
-                                        \fraction
-                                            43
-                                            2
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            43
-                                            2
-                                        " : "
-                                        \fraction
-                                            177
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            177
-                                            8
-                                        " : "
-                                        \fraction
-                                            91
-                                            4
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            91
-                                            4
-                                        " : "
-                                        \fraction
-                                            187
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            187
-                                            8
-                                        " : "
-                                        \fraction
-                                            24
-                                            1
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            24
-                                            1
-                                        " : "
-                                        \fraction
-                                            197
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            197
-                                            8
-                                        " : "
-                                        \fraction
-                                            101
-                                            4
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            101
-                                            4
-                                        " : "
-                                        \fraction
-                                            207
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            207
-                                            8
-                                        " : "
-                                        \fraction
-                                            53
-                                            2
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            53
-                                            2
-                                        " : "
-                                        \fraction
-                                            217
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            217
-                                            8
-                                        " : "
-                                        \fraction
-                                            111
-                                            4
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            111
-                                            4
-                                        " : "
-                                        \fraction
-                                            227
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            227
-                                            8
-                                        " : "
-                                        \fraction
-                                            29
-                                            1
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            29
-                                            1
-                                        " : "
-                                        \fraction
-                                            237
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            237
-                                            8
-                                        " : "
-                                        \fraction
-                                            121
-                                            4
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            121
-                                            4
-                                        " : "
-                                        \fraction
-                                            247
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            247
-                                            8
-                                        " : "
-                                        \fraction
-                                            63
-                                            2
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            63
-                                            2
-                                        " : "
-                                        \fraction
-                                            257
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            257
-                                            8
-                                        " : "
-                                        \fraction
-                                            131
-                                            4
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            131
-                                            4
-                                        " : "
-                                        \fraction
-                                            267
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            267
-                                            8
-                                        " : "
-                                        \fraction
-                                            34
-                                            1
-                                    }
-                        }
             }
             {
                 \time 4/8
                 s1 * 1/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            34
-                                            1
-                                        " : "
-                                        \fraction
-                                            69
-                                            2
-                                    }
-                        }
             }
             {
                 \time 7/8
                 s1 * 7/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            69
-                                            2
-                                        " : "
-                                        \fraction
-                                            283
-                                            8
-                                    }
-                        }
             }
             {
                 \time 5/8
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            283
-                                            8
-                                        " : "
-                                        \fraction
-                                            36
-                                            1
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            36
-                                            1
-                                        " : "
-                                        \fraction
-                                            293
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            293
-                                            8
-                                        " : "
-                                        \fraction
-                                            149
-                                            4
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            149
-                                            4
-                                        " : "
-                                        \fraction
-                                            303
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            303
-                                            8
-                                        " : "
-                                        \fraction
-                                            77
-                                            2
-                                    }
-                        }
             }
             {
                 s1 * 5/8
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            77
-                                            2
-                                        " : "
-                                        \fraction
-                                            313
-                                            8
-                                    }
-                        }
             }
             {
                 \time 4/8
                 s1 * 1/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            313
-                                            8
-                                        " : "
-                                        \fraction
-                                            317
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 1/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            317
-                                            8
-                                        " : "
-                                        \fraction
-                                            321
-                                            8
-                                    }
-                        }
             }
             {
                 s1 * 1/2
-                    ^ \markup {
-                        \box
-                            \pad-around
-                                #0.5
-                                \concat
-                                    {
-                                        \fraction
-                                            321
-                                            8
-                                        " : "
-                                        \fraction
-                                            325
-                                            8
-                                    }
-                        }
             }
         }
         \context WindSectionStaffGroup = "Wind Section Staff Group" <<

@@ -869,29 +869,27 @@
                     }
                     {
                         {
-                            r16
+                            r8.
+                            r8
                         }
                     }
                     {
-                        \times 4/5 {
+                        \times 2/3 {
                             b''16 -\mordent \ppp [
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            r8
-                            \set stemLeftBeamCount = 1
+                            \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             a'16 -\mordent
                             \set stemLeftBeamCount = 2
                             r16 ]
                         }
+                        % [Flute Voice] Measure 27
+                        {
+                            b'16 -\mordent
+                        }
                     }
                     {
                         {
-                            r8
-                        }
-                        % [Flute Voice] Measure 27
-                        {
-                            r8
+                            r16
                         }
                     }
                     {
@@ -903,32 +901,41 @@
                         }
                     }
                     {
-                        {
-                            r8
+                        \times 2/3 {
+                            a'16 -\mordent \ppp [
+                            \set stemLeftBeamCount = 1
+                            r8 ]
                         }
                         % [Flute Voice] Measure 28
                         {
-                            r4
+                            b''16 -\mordent [
+                            \set stemLeftBeamCount = 2
+                            a'16 -\mordent ]
+                        }
+                    }
+                    {
+                        {
+                            r8
                         }
                     }
                     {
                         \tweak #'text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            b'16 -\mordent \ppp [
+                            r16 [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            b''16 -\mordent \ppp
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            a'16 -\mordent
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 1
-                            a'16 -\mordent
+                            b'16 -\mordent
                             \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            r8
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 2
-                            b''16 -\mordent
-                            \set stemLeftBeamCount = 2
-                            r16 ]
+                            r8 ]
                         }
                         % [Flute Voice] Measure 29
                         {
@@ -1154,27 +1161,29 @@
                     }
                     {
                         {
-                            c'''16 -\mordent \ppp [
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            r8.
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 2
-                            ef''16 -\mordent
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            f'16 -\mordent ]
+                            r8
                         }
                     }
                     {
                         {
-                            r16
+                            ef''16 -\mordent \ppp [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
+                            f''16 -\mordent
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            r8.
+                            \set stemLeftBeamCount = 2
+                            c''16 -\mordent ]
                         }
                         % [Flute Voice] Measure 41
                         {
-                            r4
+                            ef''16 -\mordent
+                        }
+                    }
+                    {
+                        {
+                            r8.
                         }
                     }
                     {
@@ -1186,12 +1195,15 @@
                     }
                     {
                         \times 4/5 {
-                            r8. -\accent [
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 2
-                            c'''16 -\mordent \ppp
+                            f''16 -\accent -\mordent \ppp [
                             \set stemLeftBeamCount = 2
-                            r16 ]
+                            \set stemRightBeamCount = 2
+                            c''16 -\mordent
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
+                            r16
+                            \set stemLeftBeamCount = 1
+                            r8 ]
                         }
                         % [Flute Voice] Measure 42
                         {
@@ -1215,23 +1227,17 @@
                         % [Flute Voice] Measure 43
                         {
                             f''16 -\mordent \ppp [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            r8.
+                            \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
                             c''16 -\mordent
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
                             \set stemLeftBeamCount = 2
                             ef''16 -\mordent ]
                         }
                         {
-                            f'16 -\mordent
+                            f''16 -\mordent
                         }
                     }
                     {
@@ -1250,11 +1256,25 @@
                     {
                         {
                             r8
-                            r4
+                        }
+                    }
+                    {
+                        \times 4/5 {
+                            r8. [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            c''16 -\mordent \ppp
+                            \set stemLeftBeamCount = 2
+                            ef''16 -\mordent ]
                         }
                         % [Flute Voice] Measure 45
                         {
-                            r8
+                            f''16 -\mordent
+                        }
+                    }
+                    {
+                        {
+                            r16
                         }
                     }
                     {
@@ -1265,27 +1285,37 @@
                         }
                     }
                     {
+                        {
+                            c''16 -\accent -\mordent \ppp [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            ef''16 -\mordent
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            f''16 -\mordent ]
+                        }
+                        % [Flute Voice] Measure 46
                         \times 4/5 {
-                            c'''16 -\accent -\mordent \ppp [
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            r8
+                            r8 [
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
-                            ef'16 -\mordent
+                            c''16 -\mordent
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            ef''16 -\mordent
                             \set stemLeftBeamCount = 2
                             r16 ]
                         }
+                        {
+                            f''16 -\mordent
+                        }
                     }
                     {
-                        % [Flute Voice] Measure 46
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 1
-                            \stopStaff
-                            \startStaff
+                            r8.
+                            r2
                         }
                         % [Flute Voice] Measure 47
                         {
@@ -2193,21 +2223,57 @@
                     }
                     {
                         {
-                            r4
+                            a'16 -\mordent \ppp [
+                            \set stemLeftBeamCount = 2
+                            b'16 -\mordent ]
+                        }
+                        \times 2/3 {
+                            r16 [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            a'16 -\mordent
+                            \set stemLeftBeamCount = 2
+                            r16 ]
                         }
                         % [Oboe Voice] Measure 27
+                        {
+                            b'16 -\mordent
+                        }
+                    }
+                    {
+                        {
+                            r16
+                            r4
+                        }
+                    }
+                    {
+                        \times 4/5 {
+                            a''16 -\mordent \ppp [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
+                            b'16 -\mordent
+                            \set stemLeftBeamCount = 1
+                            r8 ]
+                        }
+                        % [Oboe Voice] Measure 28
+                        {
+                            a'16 -\mordent
+                        }
+                    }
+                    {
+                        {
+                            r16
+                            r4
+                            r4
+                        }
+                        % [Oboe Voice] Measure 29
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/8
-                        }
-                        % [Oboe Voice] Measure 28
-                        {
-                            R1 * 5/8
-                        }
-                        % [Oboe Voice] Measure 29
-                        {
                             R1 * 5/8
                             \stopStaff
                             \startStaff
@@ -2407,16 +2473,35 @@
                         }
                         % [Oboe Voice] Measure 40
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
+                            r4
+                        }
+                    }
+                    {
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 6/7 {
+                            f''16 -\mordent \ppp [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            r8
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            c''16 -\mordent
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
+                            ef''16 -\mordent
+                            \set stemLeftBeamCount = 1
+                            r8 ]
                         }
                         % [Oboe Voice] Measure 41
                         {
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
+                            f'16 -\mordent
+                        }
+                    }
+                    {
+                        {
+                            r16
+                            r4
+                            r4
                         }
                         % [Oboe Voice] Measure 42
                         {
@@ -2425,27 +2510,30 @@
                     }
                     {
                         \times 4/5 {
-                            r8. [
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 2
-                            ef''16 -\mordent \ppp
+                            c'''16 -\mordent \ppp [
                             \set stemLeftBeamCount = 2
-                            r16 ]
+                            \set stemRightBeamCount = 2
+                            ef''16 -\mordent
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
+                            r16
+                            \set stemLeftBeamCount = 1
+                            r8 ]
                         }
                         {
                             f'16 -\mordent [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            r16
+                            c''16 -\mordent
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
-                            c''16 -\mordent ]
+                            ef'16 -\mordent ]
                         }
                         % [Oboe Voice] Measure 43
                         {
-                            ef''16 -\mordent
+                            f'16 -\mordent
                         }
                     }
                     {
@@ -2457,19 +2545,19 @@
                     }
                     {
                         % [Oboe Voice] Measure 44
-                        {
-                            f''16 -\mordent \ppp [
+                        \times 4/5 {
+                            r8 [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            c'''16 -\mordent \ppp
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            r16
+                            ef''16 -\mordent
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            c''16 -\mordent ]
+                            r16 ]
                         }
                         {
-                            ef'16 -\mordent
+                            f''16 -\mordent
                         }
                     }
                     {
@@ -2477,41 +2565,37 @@
                             r16
                             r4
                         }
+                    }
+                    {
                         % [Oboe Voice] Measure 45
-                        {
-                            r16
-                        }
-                    }
-                    {
-                        {
-                            f''16 -\mordent \ppp [
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 6/7 {
+                            r8. [
                             \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            r8
+                            \set stemRightBeamCount = 2
+                            c''16 -\mordent \ppp
                             \set stemLeftBeamCount = 2
-                            c''16 -\mordent ]
+                            \set stemRightBeamCount = 2
+                            ef''16 -\mordent
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            f''16 -\mordent ]
                         }
                     }
                     {
                         {
-                            r16
-                        }
-                    }
-                    {
-                        \times 2/3 {
-                            r8 [
-                            \set stemLeftBeamCount = 2
-                            ef''16 -\mordent \ppp ]
+                            r8
                         }
                         % [Oboe Voice] Measure 46
                         {
-                            f'16 -\mordent
-                        }
-                    }
-                    {
-                        {
-                            r8.
-                            r2.
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1
+                            \stopStaff
+                            \startStaff
                         }
                         % [Oboe Voice] Measure 47
                         {
@@ -2627,41 +2711,58 @@
                         }
                     }
                     {
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 6/7 {
-                            c'''16 -\mordent \ppp [
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            r8
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 2
-                            ef''16 -\mordent
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 1
-                            r16
-                            \set stemLeftBeamCount = 1
-                            r8 ]
-                        }
-                        % [Oboe Voice] Measure 54
                         {
-                            f'16 -\mordent
+                            c''16 -\mordent \ppp [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            ef'16 -\mordent
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            f''16 -\mordent ]
                         }
                     }
                     {
                         {
-                            r16
-                            r4
-                            r4
+                            r8
                         }
-                        % [Oboe Voice] Measure 55
+                        % [Oboe Voice] Measure 54
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1/2
+                            R1 * 5/8
+                            \stopStaff
+                            \startStaff
+                        }
+                    }
+                    {
+                        % [Oboe Voice] Measure 55
+                        \times 4/5 {
+                            c''16 -\mordent \ppp [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
+                            ef''16 -\mordent
+                            \set stemLeftBeamCount = 1
+                            r8 ]
+                        }
+                        {
+                            f''16 -\mordent
+                        }
+                    }
+                    {
+                        {
+                            r8.
                         }
                         % [Oboe Voice] Measure 56
                         {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
                             R1 * 1/2
                             \stopStaff
                             \startStaff
@@ -2803,16 +2904,24 @@
                         }
                         % [Oboe Voice] Measure 63
                         {
-                            \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
-                            \startStaff
-                            R1 * 5/8
+                            r4.
+                            r8
+                        }
+                    }
+                    {
+                        \times 2/3 {
+                            af''16 -\mordent \ppp [
+                            \set stemLeftBeamCount = 1
+                            r8 ]
                         }
                         % [Oboe Voice] Measure 64
                         {
-                            R1 * 1/2
-                            \stopStaff
-                            \startStaff
+                            d'16 -\mordent
+                        }
+                    }
+                    {
+                        {
+                            r4..
                         }
                         % [Oboe Voice] Measure 65
                         {
@@ -3528,33 +3637,28 @@
                             b16 -\mordent \ppp [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
+                            a16 -\mordent
+                            \set stemLeftBeamCount = 2
+                            r16 ]
+                        }
+                        {
+                            b16 -\mordent [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
-                            a16 -\mordent ]
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            a'16 -\mordent
+                            \set stemLeftBeamCount = 2
+                            b16 -\mordent ]
                         }
                     }
                     {
                         {
-                            r8
-                        }
-                    }
-                    \transpose bf, c'
-                    {
-                        {
-                            b'16 -\mordent \ppp [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 1
-                            r16
-                            \set stemLeftBeamCount = 1
-                            \set stemRightBeamCount = 1
-                            r8
-                            \set stemLeftBeamCount = 2
-                            a16 -\mordent ]
-                        }
-                    }
-                    {
-                        {
-                            r16
+                            r8.
                         }
                         % [Clarinet Voice] Measure 28
                         {
@@ -3749,27 +3853,12 @@
                             r8. [
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
-                            c''16 -\mordent \ppp
-                            \set stemLeftBeamCount = 2
-                            r16 ]
-                        }
-                        {
-                            ef'16 -\mordent [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
+                            ef'16 -\mordent \ppp
                             \set stemLeftBeamCount = 2
                             f16 -\mordent ]
                         }
                     }
                     {
-                        {
-                            r8
-                        }
-                        % [Clarinet Voice] Measure 41
                         {
                             r16
                         }
@@ -3777,22 +3866,27 @@
                     \transpose bf, c'
                     {
                         {
-                            c''16 -\mordent \ppp
-                        }
-                        {
-                            ef16 -\mordent
+                            c''16 -\mordent \ppp [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            r8
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            ef'16 -\mordent
+                            \set stemLeftBeamCount = 2
+                            f16 -\mordent ]
                         }
                     }
                     {
-                        {
-                            r8.
-                            r4
-                        }
-                        % [Clarinet Voice] Measure 42
+                        % [Clarinet Voice] Measure 41
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
+                            R1 * 5/8
+                        }
+                        % [Clarinet Voice] Measure 42
+                        {
                             R1 * 5/8
                             \stopStaff
                             \startStaff
@@ -3800,17 +3894,26 @@
                         % [Clarinet Voice] Measure 43
                         {
                             r4.
-                            r8
+                            r8.
                         }
                     }
                     \transpose bf, c'
                     {
-                        \times 2/3 {
-                            f'16 -\mordent \ppp [
-                            \set stemLeftBeamCount = 1
-                            r8 ]
+                        {
+                            c''16 -\mordent \ppp
                         }
                         % [Clarinet Voice] Measure 44
+                        \times 4/5 {
+                            r8 [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            ef'16 -\mordent
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            f16 -\mordent
+                            \set stemLeftBeamCount = 2
+                            r16 ]
+                        }
                         {
                             c'16 -\mordent
                         }
@@ -3818,7 +3921,6 @@
                     {
                         {
                             r16
-                            r4
                             r4
                         }
                         % [Clarinet Voice] Measure 45
@@ -3924,39 +4026,33 @@
                         % [Clarinet Voice] Measure 52
                         {
                             R1 * 5/8
+                            \stopStaff
+                            \startStaff
                         }
                         % [Clarinet Voice] Measure 53
                         {
-                            R1 * 5/8
-                            \stopStaff
-                            \startStaff
+                            r4.
+                            r8
                         }
                     }
                     \transpose bf, c'
                     {
-                        % [Clarinet Voice] Measure 54
-                        \times 2/3 {
+                        {
                             ef'16 -\mordent \ppp [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
                             \set stemLeftBeamCount = 2
                             f16 -\mordent ]
                         }
-                        {
-                            c'16 -\mordent
-                        }
                     }
                     {
-                        {
-                            r8.
-                            r4
-                        }
-                        % [Clarinet Voice] Measure 55
+                        % [Clarinet Voice] Measure 54
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
+                            R1 * 5/8
+                        }
+                        % [Clarinet Voice] Measure 55
+                        {
                             R1 * 1/2
                             \stopStaff
                             \startStaff
@@ -3969,25 +4065,19 @@
                     \transpose bf, c'
                     {
                         {
-                            ef'16 -\mordent \ppp [
-                            \set stemLeftBeamCount = 2
+                            c''16 -\mordent \ppp [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            r8.
+                            \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
-                            r16
+                            ef'16 -\mordent
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f16 -\mordent
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            c'16 -\mordent ]
+                            f'16 -\mordent ]
                         }
                         % [Clarinet Voice] Measure 57
                         {
-                            ef16 -\mordent
+                            c'16 -\mordent
                         }
                     }
                     {
@@ -12654,9 +12744,6 @@
                                         #'(0 . -1)
                                     }
                                 \once \override TextSpanner.dash-fraction = 1
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
-                                \startStaff
                                 b'''16 \f \startTextSpan [
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -12666,8 +12753,6 @@
                                 b'''16
                                 \set stemLeftBeamCount = 2
                                 a'''16 ]
-                                \stopStaff
-                                \startStaff
                                 <> \stopTextSpan
                                 \clef "percussion"
                             }
@@ -13068,17 +13153,12 @@
                                         #'(0 . -1)
                                     }
                                 \once \override TextSpanner.dash-fraction = 1
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
-                                \startStaff
                                 d''''16 \mp \startTextSpan [
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
                                 e''''16
                                 \set stemLeftBeamCount = 2
                                 f''''16 ]
-                                \stopStaff
-                                \startStaff
                                 <> \stopTextSpan
                                 \clef "percussion"
                             }
@@ -13564,9 +13644,6 @@
                                         #'(0 . -1)
                                     }
                                 \once \override TextSpanner.dash-fraction = 1
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
-                                \startStaff
                                 ef'''16 \p \startTextSpan [
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
@@ -13576,8 +13653,6 @@
                                 c''''16
                                 \set stemLeftBeamCount = 2
                                 ef'''16 ]
-                                \stopStaff
-                                \startStaff
                                 <> \stopTextSpan
                                 \clef "percussion"
                             }
@@ -13747,17 +13822,12 @@
                                         #'(0 . -1)
                                     }
                                 \once \override TextSpanner.dash-fraction = 1
-                                \stopStaff
-                                \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
-                                \startStaff
                                 af'''16 \f \startTextSpan [
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
                                 d''''16
                                 \set stemLeftBeamCount = 2
                                 e''''16 ]
-                                \stopStaff
-                                \startStaff
                                 <> \stopTextSpan
                                 \clef "percussion"
                             }
