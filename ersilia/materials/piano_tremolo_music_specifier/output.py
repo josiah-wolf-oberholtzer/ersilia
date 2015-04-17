@@ -58,7 +58,7 @@ piano_tremolo_music_specifier = consort.tools.MusicSpecifier(
             ),
         ),
     color='red',
-    labels=('pedaled',),
+    labels=('pedaled', 'piano tremolo'),
     pitch_handler=consort.tools.AbsolutePitchHandler(
         deviations=datastructuretools.CyclicTuple(
             [

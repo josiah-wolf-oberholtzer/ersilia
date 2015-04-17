@@ -6,6 +6,26 @@ from abjad.tools import pitchtools
 from abjad.tools import spannertools
 
 
+laissez_vibrer = consort.AttachmentExpression(
+    attachments=[
+        [
+            indicatortools.LaissezVibrer(),
+            markuptools.Markup('L.V', Up)
+                .caps()
+                .tiny()
+                .pad_around(0.5)
+                .box()
+                .pad_around(0.5)
+            ],
+        ],
+    selector=selectortools.Selector()
+        .by_logical_tie(pitched=True)
+        .by_contiguity()
+        .by_length('==', 1)
+        .by_leaves()
+        [0]
+    )
+
 black_keys_spanner = spannertools.make_solid_text_spanner_with_nib(
     markuptools.Markup.flat().vcenter(),
     )

@@ -38,25 +38,7 @@ guitar_strummed_music_specifier = consort.MusicSpecifier(
             dynamic_tokens='p ppp p ppp mf p',
             only_first=True,
             ),
-        laissez_vibrer=consort.AttachmentExpression(
-            attachments=[
-                [
-                    indicatortools.LaissezVibrer(),
-                    markuptools.Markup('L.V', Up)
-                        .caps()
-                        .tiny()
-                        .pad_around(0.5)
-                        .box()
-                        .pad_around(0.5)
-                    ],
-                ],
-            selector=selectortools.Selector()
-                .by_logical_tie(pitched=True)
-                .by_contiguity()
-                .by_length('==', 1)
-                .by_leaves()
-                [0]
-            ),
+        laissez_vibrer=abbreviations.laissez_vibrer,
         ),
     pitch_handler=consort.AbsolutePitchHandler(
         logical_tie_expressions=[

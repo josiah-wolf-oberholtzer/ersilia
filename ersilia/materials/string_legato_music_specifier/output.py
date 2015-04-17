@@ -144,6 +144,7 @@ string_legato_music_specifier = consort.tools.MusicSpecifier(
         ),
     rhythm_maker=rhythmmakertools.EvenDivisionRhythmMaker(
         denominators=(8, 4, 8, 1),
+        extra_counts_per_division=(0, 1, 0, 2, 1),
         duration_spelling_specifier=rhythmmakertools.DurationSpellingSpecifier(
             decrease_durations_monotonically=True,
             forbidden_written_duration=durationtools.Duration(1, 2),

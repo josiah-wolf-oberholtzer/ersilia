@@ -34,7 +34,7 @@ string_overpressure_music_specifier = consort.MusicSpecifier(
         pitch_specifier='A3 B3 Bb3 C4',
         ),
     rhythm_maker=rhythmmakertools.EvenDivisionRhythmMaker(
-        denominators=[16],
+        denominators=[8],
         extra_counts_per_division=[0, 1],
         output_masks=[
             rhythmmakertools.SustainMask(
