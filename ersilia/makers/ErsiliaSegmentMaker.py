@@ -1,6 +1,10 @@
 # -*- encoding: utf-8 -*-
+import collections
+from abjad import iterate
 from abjad.tools import durationtools
 from abjad.tools import markuptools
+from abjad.tools import scoretools
+from abjad.tools import systemtools
 import consort
 
 
@@ -45,6 +49,48 @@ class ErsiliaSegmentMaker(consort.SegmentMaker):
             tempo=tempo,
             timespan_quantization=durationtools.Duration(1, 8),
             )
+
+    ### PUBLIC METHODS ###
+
+    @staticmethod
+    def validate_score(score, verbose=True):
+        consort.SegmentMaker.validate_score(score, verbose=verbose)
+        component = score['Piano Staff']
+        message = '    coloring piano conflicts'
+        with systemtools.ProgressIndicator(message) as progress_indicator:
+            for vertical_moment in iterate(component).by_vertical_moment():
+                pitch_numbers = collections.Counter()
+                notes_and_chords = vertical_moment.notes_and_chords
+                for note_or_chord in notes_and_chords:
+                    if isinstance(note_or_chord, scoretools.Note):
+                        pitch_number = note_or_chord.written_pitch.pitch_number
+                        pitch_number = float(pitch_number)
+                        pitch_numbers[pitch_number] += 1
+                    else:
+                        for pitch in note_or_chord.written_pitches:
+                            pitch_number = pitch.pitch_number
+                            pitch_number = float(pitch_number)
+                            pitch_numbers[pitch_number] += 1
+                conflict_pitch_numbers = set()
+                for pitch_number, count in pitch_numbers.iteritems():
+                    if 1 < count:
+                        conflict_pitch_numbers.add(pitch_number)
+                if not conflict_pitch_numbers:
+                    continue
+                for note_or_chord in notes_and_chords:
+                    if isinstance(note_or_chord, scoretools.Note):
+                        pitch_number = note_or_chord.written_pitch.pitch_number
+                        pitch_number = float(pitch_number)
+                        if pitch_number in conflict_pitch_numbers:
+                            note_or_chord.note_head.tweak.color = 'red'
+                            progress_indicator.advance()
+                    else:
+                        for note_head in note_or_chord.note_heads:
+                            pitch_number = note_head.written_pitch.pitch_number
+                            pitch_number = float(pitch_number)
+                            if pitch_number in conflict_pitch_numbers:
+                                note_head.tweak.color = 'red'
+                                progress_indicator.advance()
 
     ### PUBLIC PROPERTIES ###
 
