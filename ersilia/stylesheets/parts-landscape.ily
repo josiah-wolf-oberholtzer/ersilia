@@ -56,8 +56,8 @@
 \paper {
     max-systems-per-page = ##f
     system-system-spacing = #'(
-        (basic-distance . 8)
-        (minimum-distance . 12)
+        (basic-distance . 0)
+        (minimum-distance . 0)
         (padding . 8)
         (stretchability . 0)
     )

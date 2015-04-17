@@ -13,7 +13,7 @@
     top-margin = 10\mm
     oddHeaderMarkup = \markup \fill-line { " " }
     evenHeaderMarkup = \markup \fill-line { " " }
-    oddFooterMarkup = \markup \on-the-fly \not-first-page
+    oddFooterMarkup = \markup
         \fill-line {
             \override #'(font-name . "Didot")
                 \bold \fontsize #3 "Invisible Cities (iii): Ersilia"
@@ -24,8 +24,8 @@
                     \bold \fontsize #3
                         \on-the-fly #print-page-number-check-first
                         \fromproperty #'page:page-number-string
+                }
             }
-        }
     evenFooterMarkup = \oddFooterMarkup
     print-first-page-number = ##t
     print-page-number = ##t
@@ -43,7 +43,7 @@
         (basic-distance . 12)
         (minimum-distance . 18)
         (padding . 12)
-        (stretchability . 0)
+        (stretchability . 20)
     )
     top-markup-spacing = #'(
         (basic-distance . 0)
@@ -150,11 +150,16 @@
         \override BarNumber.padding = 4
 
         \override MetronomeMark.outside-staff-horizontal-padding = 0
-        \override MetronomeMark.X-extent = #'(0.1 . 0.1)
-        \override MetronomeMark.Y-extent = #'(0.1 . 0.1)
+        \override MetronomeMark.X-extent = #'(0 . 0)
+        \override MetronomeMark.Y-extent = #'(0 . 0)
         \override MetronomeMark.break-align-symbols = #'(left-edge)
-        \override MetronomeMark.extra-offset = #'(0 . 4)
+        \override MetronomeMark.extra-offset = #'(0 . 2)
         \override MetronomeMark.font-size = 3
+        \override MetronomeMark.use-skylines = ##f
+        \override MetronomeMark.padding = 0
+        \override MetronomeMark.staff-padding = 0
+        \override MetronomeMark.outside-staff-padding = 0
+        \override MetronomeMark.minimum-space = 0
 
         \override RehearsalMark.X-extent = #'(0 . 0)
         \override RehearsalMark.X-offset = 6
@@ -184,8 +189,8 @@
         \override TimeSignature.style = #'numbered
         \override VerticalAxisGroup.default-staff-staff-spacing = #'(
             (basic-distance . 0)
-            (minimum-distance . 14)
-            (padding . 0)
+            (minimum-distance . 15)
+            (padding . 8)
             (stretchability . 0)
         )
         \override VerticalAxisGroup.minimum-Y-extent = #'(-20 . 20)
@@ -268,7 +273,7 @@
             (basic-distance . 0)
             (minimum-distance . 32)
             (padding . 5)
-            (stretchability . 20)
+            (stretchability . 0)
             )
     }
 
@@ -359,7 +364,7 @@
             (basic-distance . 0)
             (minimum-distance . 32)
             (padding . 5)
-            (stretchability . 20)
+            (stretchability . 0)
             )
         systemStartDelimiter = #'SystemStartSquare
     }
@@ -517,13 +522,13 @@
             (basic-distance . 10)
             (minimum-distance . 10)
             (padding . 5)
-            (stretchability . 20)
+            (stretchability . 0)
             )
         \override StaffGrouper.staff-staff-spacing = #'(
             (basic-distance . 10)
             (minimum-distance . 10)
             (padding . 5)
-            (stretchability . 20)
+            (stretchability . 0)
             )
         autoBeaming = ##f
         pedalSustainStyle = #'mixed
