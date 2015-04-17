@@ -16,7 +16,7 @@ percussion_crotales_flash_music_specifier = consort.MusicSpecifier(
         staff_lines_spanner=spannertools.StaffLinesSpanner([-4, -2, 0, 2, 4]),
         text_spanner=consort.AttachmentExpression(
             attachments=abbreviations.make_text_spanner('crotales'),
-            selector=selectortools.Selector().by_leaves(),
+            selector=selectortools.select_pitched_runs(),
             ),
         ),
     color=None,

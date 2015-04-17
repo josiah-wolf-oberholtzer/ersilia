@@ -84,7 +84,7 @@ def make_text_markup(text):
         markuptools.Markup(r'\vstrut'),
         markuptools.Markup(text),
         ])
-    markup = markup.smaller().italic().pad_around(0.5).box()
+    markup = markup.smaller().italic().pad_around(0.5).whiteout().box()
     markup = markuptools.Markup(markup, Up)
     return markup
 

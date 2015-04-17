@@ -101,6 +101,7 @@ percussion_marimba_agitato_music_specifier = consort.tools.MusicSpecifier(
                         dynamic_tokens=datastructuretools.CyclicTuple(
                             ['mf', 'mp', 'fff']
                             ),
+                        division_period=2,
                         start_dynamic_tokens=datastructuretools.CyclicTuple(
                             ['f']
                             ),
@@ -173,7 +174,7 @@ percussion_marimba_agitato_music_specifier = consort.tools.MusicSpecifier(
                                                         markuptools.MarkupCommand(
                                                             'vstrut'
                                                             ),
-                                                        'mb.',
+                                                        'marimba',
                                                         ]
                                                     )
                                                 )

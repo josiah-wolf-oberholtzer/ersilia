@@ -31,6 +31,7 @@ percussion_marimba_agitato_music_specifier = consort.MusicSpecifier(
             ),
         clef_spanner=consort.ClefSpannerExpression(),
         dynamic_expressions=consort.DynamicExpression(
+            division_period=2,
             dynamic_tokens='mf mp fff',
             start_dynamic_tokens='f',
             stop_dynamic_tokens='mf',
@@ -44,8 +45,8 @@ percussion_marimba_agitato_music_specifier = consort.MusicSpecifier(
             ),
         staff_lines_spanner=spannertools.StaffLinesSpanner([-4, -2, 0, 2, 4]),
         text_spanner=consort.AttachmentExpression(
-            attachments=abbreviations.make_text_spanner('mb.'),
-            selector=selectortools.Selector().by_leaves(),
+            attachments=abbreviations.make_text_spanner('marimba'),
+            selector=selectortools.select_pitched_runs(),
             ),
         tremolo_chords=consort.AttachmentExpression(
             attachments=[

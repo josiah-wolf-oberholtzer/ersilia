@@ -20,8 +20,8 @@ percussion_low_pedal_music_specifier = consort.MusicSpecifier(
             ),
         bass_drum_indication=consort.AttachmentExpression(
             attachments=consort.AttachmentExpression(
-                attachments=abbreviations.make_text_spanner('b.d.'),
-                selector=selectortools.Selector().by_leaves(),
+                attachments=abbreviations.make_text_spanner('bass drum'),
+                selector=selectortools.select_pitched_runs(),
                 ),
             selector=selectortools.Selector()
                 .by_logical_tie()
@@ -32,7 +32,7 @@ percussion_low_pedal_music_specifier = consort.MusicSpecifier(
         tam_tam_indication=consort.AttachmentExpression(
             attachments=consort.AttachmentExpression(
                 attachments=abbreviations.make_text_spanner('tam'),
-                selector=selectortools.Selector().by_leaves(),
+                selector=selectortools.select_pitched_runs(),
                 ),
             selector=selectortools.Selector()
                 .by_logical_tie()

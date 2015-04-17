@@ -58,5 +58,6 @@ string_legato_music_specifier = consort.MusicSpecifier(
         duration_spelling_specifier=rhythmmakertools.DurationSpellingSpecifier(
             forbidden_written_duration=durationtools.Duration(1, 2),
             ),
+        extra_counts_per_division=[0, 1, 0, 2, 1],
         )
     )

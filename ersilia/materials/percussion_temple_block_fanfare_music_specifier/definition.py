@@ -68,7 +68,7 @@ percussion_temple_block_fanfare_music_specifier = consort.MusicSpecifier(
         staff_lines_spanner=spannertools.StaffLinesSpanner([-4, -2, 0, 2, 4]),
         text_spanner=consort.AttachmentExpression(
             attachments=abbreviations.make_text_spanner('blocks'),
-            selector=selectortools.Selector().by_leaves(),
+            selector=selectortools.select_pitched_runs(),
             ),
         tremolo=consort.AttachmentExpression(
             attachments=spannertools.StemTremoloSpanner(),

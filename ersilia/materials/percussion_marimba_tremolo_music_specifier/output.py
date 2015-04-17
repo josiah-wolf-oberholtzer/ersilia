@@ -90,7 +90,7 @@ percussion_marimba_tremolo_music_specifier = consort.tools.MusicSpecifier(
                                                         markuptools.MarkupCommand(
                                                             'vstrut'
                                                             ),
-                                                        'mb.',
+                                                        'marimba',
                                                         ]
                                                     )
                                                 )

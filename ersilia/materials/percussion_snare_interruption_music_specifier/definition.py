@@ -46,7 +46,7 @@ percussion_snare_interruption_music_specifier = consort.MusicSpecifier(
             ),
         text_spanner=consort.AttachmentExpression(
             attachments=abbreviations.make_text_spanner('snare'),
-            selector=selectortools.Selector().by_leaves(),
+            selector=selectortools.select_pitched_runs(),
             ),
         tremolo=consort.AttachmentExpression(
             attachments=spannertools.StemTremoloSpanner(),

@@ -78,10 +78,10 @@ string_agitato_music_specifier = consort.MusicSpecifier(
                 .reverse()
                 .align(),
             segment_inflections=consort.RegisterInflection
-                .descending(width=12)
+                .descending(width=6)
                 .align()
             ),
-        register_spread=6,
+        register_spread=3,
         ),
     rhythm_maker=rhythmmakertools.TaleaRhythmMaker(
         extra_counts_per_division=[0, 0, 1, 2, 0, 1],
