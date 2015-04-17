@@ -40,7 +40,7 @@ metadata = datastructuretools.TypedOrderedDict(
             ),
         ('first_bar_number', 141),
         ('is_repeated', None),
-        ('measure_count', 45),
+        ('measure_count', 43),
         ('segment_count', 5),
         ('segment_number', 5),
         ]
