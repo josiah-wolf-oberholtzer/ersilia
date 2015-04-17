@@ -8,8 +8,8 @@
 
     %annotate-spacing = ##t
     bottom-margin = 10\mm
-    left-margin = 30\mm
-    right-margin = 10\mm
+    left-margin = 20\mm
+    right-margin = 20\mm
     top-margin = 10\mm
     oddHeaderMarkup = \markup \fill-line { " " }
     evenHeaderMarkup = \markup \fill-line { " " }
@@ -295,7 +295,7 @@
         \name PianoUpperStaff
         \type Engraver_group
         \alias Staff
-        \RemoveEmptyStaves
+        %\RemoveEmptyStaves
         %\override Beam.positions = #'(-9 . -9)
         %\override DynamicLineSpanner.staff-padding = 11
         %\override TupletBracket.staff-padding = 6
@@ -306,7 +306,7 @@
         \name PianoLowerStaff
         \type Engraver_group
         \alias Staff
-        \RemoveEmptyStaves
+        %\RemoveEmptyStaves
         %\override Beam.positions = #'(-9 . -9)
         %\override DynamicLineSpanner.staff-padding = 11
         %\override TupletBracket.staff-padding = 6
