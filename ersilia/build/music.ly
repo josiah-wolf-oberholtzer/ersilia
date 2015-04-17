@@ -44,12 +44,31 @@
     }
 }
 
+\layout {
+    \context {
+        \Score 
+        \override StaffGrouper.staffgroup-staff-spacing = #'(
+            (basic-distance . 10)
+            (minimum-distance . 10)
+            (padding . 5)
+            (stretchability . 20)
+            )
+        \override StaffGrouper.staff-staff-spacing = #'(
+            (basic-distance . 10)
+            (minimum-distance . 10)
+            (padding . 5)
+            (stretchability . 20)
+            )
+    }
+}
+
+\paper {
+    two-sided = ##f
+    ragged-last-bottom = ##f
+}
+
 \score {
     {
-        \include "komokome.ly"
-        \include "cut-1.ly"
-        \include "sort.ly"
-        \include "cut-2.ly"
-        \include "chemish.ly"
+        \include "segments.ly"
     }
 }

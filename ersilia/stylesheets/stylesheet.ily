@@ -7,10 +7,19 @@
 \paper {
 
     %annotate-spacing = ##t
+
+    two-sided = ##f
+    inner-margin = 30\mm
+    outer-margin = 10\mm
+
+    indent = 20\mm
+    short-indent = 15\mm
+
     bottom-margin = 10\mm
-    left-margin = 20\mm
-    right-margin = 20\mm
+    left-margin = 10\mm
+    right-margin = 10\mm
     top-margin = 10\mm
+
     oddHeaderMarkup = \markup \fill-line { " " }
     evenHeaderMarkup = \markup \fill-line { " " }
     oddFooterMarkup = \markup
@@ -26,7 +35,19 @@
                         \fromproperty #'page:page-number-string
                 }
             }
-    evenFooterMarkup = \oddFooterMarkup
+    evenFooterMarkup = \markup
+        \fill-line {
+            \concat {
+                \override #'(font-name . "Didot")
+                    \bold \fontsize #3
+                        \on-the-fly #print-page-number-check-first
+                        \fromproperty #'page:page-number-string
+                }
+            \override #'(font-name . "Didot")
+                \bold \fontsize #3 \date
+            \override #'(font-name . "Didot")
+                \bold \fontsize #3 "Invisible Cities (iii): Ersilia"
+            }
     print-first-page-number = ##t
     print-page-number = ##t
     max-systems-per-page = 1
@@ -61,7 +82,6 @@
 
 \layout {
     \accidentalStyle modern-cautionary
-    indent = 5
     ragged-bottom = ##f
     ragged-last = ##f
     ragged-right = ##t
@@ -271,9 +291,9 @@
         \accepts SaxophoneStaff
         \override StaffGrouper.staffgroup-staff-spacing = #'(
             (basic-distance . 0)
-            (minimum-distance . 32)
-            (padding . 5)
-            (stretchability . 0)
+            (minimum-distance . 20)
+            (padding . 15)
+            (stretchability . 10)
             )
     }
 
@@ -362,9 +382,9 @@
         \accepts PitchPipes
         \override StaffGrouper.staffgroup-staff-spacing = #'(
             (basic-distance . 0)
-            (minimum-distance . 32)
-            (padding . 5)
-            (stretchability . 0)
+            (minimum-distance . 20)
+            (padding . 15)
+            (stretchability . 10)
             )
         systemStartDelimiter = #'SystemStartSquare
     }
@@ -479,6 +499,9 @@
         \override Glissando.breakable = ##t
         \override Glissando.thickness = 3
         \override Hairpin.bound-padding = 1.5
+
+        \override InstrumentName.self-alignment-X = #RIGHT
+
         \override NoteCollision.merge-differently-dotted = ##t
         \override NoteColumn.ignore-collision = ##t
         \override OttavaBracket.outside-staff-priority = 500
