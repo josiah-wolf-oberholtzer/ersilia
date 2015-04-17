@@ -173,7 +173,7 @@ segment_maker.add_setting(
     timespan_maker=ersilia.dense_timespan_maker
         .rotate(1),
     flute=music_specifier,
-    oboe=music_specifier,
+    oboe=music_specifier.transpose(12),
     clarinet=music_specifier,  # .transpose(-12),
     )
 
@@ -191,8 +191,10 @@ segment_maker.add_setting(
         ],
     timespan_maker=ersilia.sparse_timespan_maker,
     flute=ersilia.wind_pointillist_music_specifier,
-    oboe=ersilia.wind_pointillist_music_specifier
-        .rotate(1),
+    oboe=new(
+        ersilia.wind_pointillist_music_specifier,
+        pitch_handler__register_specifier__base_pitch='G4',
+        ),
     clarinet=ersilia.wind_pointillist_music_specifier
         .transpose(-12)
         .rotate(2),

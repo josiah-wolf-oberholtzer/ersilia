@@ -91,8 +91,9 @@ music_specifier = new(
         stop_dynamic_tokens='mp mf p f o',
         dynamic_tokens='pp p',
         ),
+    pitch_handler__register_specifier__base_pitch='C4',
     pitch_handler__register_specifier__segment_inflections=consort.RegisterInflection
-        .ascending(width=24)
+        .ascending(width=12)
         .align()
     )
 
@@ -111,7 +112,7 @@ segment_maker.add_setting(
     timespan_maker=ersilia.sparse_timespan_maker,
     flute=music_specifier,
     oboe=music_specifier,
-    clarinet=music_specifier,
+    clarinet=music_specifier.transpose(-12),
     )
 
 segment_maker.add_setting(

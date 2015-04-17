@@ -574,22 +574,22 @@
                     {
                         \tweak #'text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            e'16 -\stopped \fp \< [ (
+                            d''16 -\stopped \fp \< [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            f'16 )
+                            e''16 )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            d'16 -\stopped
+                            f''16 -\stopped
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            f'16 -\staccato
+                            af'16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            d'16 -\staccato \f
+                            e''16 -\staccato \f
                             \set stemLeftBeamCount = 2
                             r16 ]
                         }
@@ -677,7 +677,7 @@
                         % [Flute Voice] Measure 167
                         {
                             \pitchedTrill
-                            f'8 -\stopped \pp \startTrillSpan af'
+                            f''8 -\stopped \pp \startTrillSpan af''
                             <> \stopTrillSpan
                         }
                     }
@@ -700,12 +700,12 @@
                     }
                     {
                         {
-                            c''16 -\stopped \fp [ (
+                            c'''16 -\stopped \fp [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            f'16
+                            f''16
                             \set stemLeftBeamCount = 2
-                            ef'16 ] )
+                            ef''16 ] )
                         }
                     }
                     {
@@ -840,7 +840,7 @@
                     {
                         {
                             \pitchedTrill
-                            af'8 -\stopped \pp \startTrillSpan cf''
+                            e''8 -\stopped \pp \startTrillSpan g''
                             <> \stopTrillSpan
                         }
                     }
@@ -852,12 +852,12 @@
                     }
                     {
                         {
-                            d''16 -\stopped \fp [ (
+                            f''16 -\stopped \fp [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            e'16
+                            af''16
                             \set stemLeftBeamCount = 2
-                            f'16 ] )
+                            d''16 ] )
                         }
                     }
                     {
@@ -1054,16 +1054,16 @@
                             a'16 -\stopped \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            b16 -\staccato
+                            b'16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            a'16 -\stopped (
+                            a''16 -\stopped (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            b16
+                            b'16
                             \set stemLeftBeamCount = 2
                             a'16 \f ] )
                         }
@@ -1079,7 +1079,7 @@
                     }
                     {
                         {
-                            b16 -\stopped \fp [
+                            b'16 -\stopped \fp [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
@@ -1087,7 +1087,7 @@
                             \set stemRightBeamCount = 2
                             a'16 -\stopped (
                             \set stemLeftBeamCount = 2
-                            b16 \p ] )
+                            b'16 \p ] )
                         }
                     }
                     {
@@ -1105,12 +1105,12 @@
                             a'16 -\stopped \<
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            b16
+                            b'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            a'16
+                            a''16
                             \set stemLeftBeamCount = 2
-                            b16 \mf ]
+                            b'16 \mf ]
                         }
                     }
                     {
@@ -1253,9 +1253,9 @@
                     {
                         % [Oboe Voice] Measure 161
                         {
-                            f'16 -\stopped \fp [ (
+                            f''16 -\stopped \fp [ (
                             \set stemLeftBeamCount = 2
-                            d'16 ] )
+                            af'16 ] )
                         }
                     }
                     {
@@ -1270,15 +1270,15 @@
                     {
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            af'16 -\stopped \< [
+                            d''16 -\stopped \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            e'16
+                            f''16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            af'16
+                            af''16
                             \set stemLeftBeamCount = 2
-                            d'16 \p ]
+                            d''16 \p ]
                         }
                     }
                     {
@@ -1350,22 +1350,22 @@
                         % [Oboe Voice] Measure 167
                         \tweak #'text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            c'16 -\stopped \fp \< [ (
+                            c'''16 -\stopped \fp \< [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            ef'16
+                            ef''16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            f'16
+                            f''16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 )
+                            c''16 )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            ef'16 -\stopped \f
+                            ef''16 -\stopped \f
                             \set stemLeftBeamCount = 2
                             r16 ]
                         }
@@ -1378,12 +1378,12 @@
                     {
                         % [Oboe Voice] Measure 168
                         {
-                            f'16 -\stopped \pp [
+                            f''16 -\stopped \pp [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            ef'16
+                            ef'''16
                             \set stemLeftBeamCount = 2
-                            c'16 ]
+                            c'''16 ]
                         }
                     }
                     {
@@ -1448,9 +1448,9 @@
                     }
                     {
                         {
-                            f'16 -\stopped \fp [ (
+                            f'''16 -\stopped \fp [ (
                             \set stemLeftBeamCount = 2
-                            c'16 ] )
+                            c'''16 ] )
                         }
                     }
                     {
@@ -1465,7 +1465,7 @@
                     {
                         {
                             \pitchedTrill
-                            ef'8 -\stopped \pp \startTrillSpan gf'
+                            ef'''8 -\stopped \pp \startTrillSpan gf'''
                             <> \stopTrillSpan
                         }
                     }
@@ -1491,24 +1491,24 @@
                             \once \override Hairpin.circled-tip = ##t
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            f'16 -\stopped \fp \>
+                            f''16 -\stopped \fp \>
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            ef'16 -\stopped (
+                            c''16 -\stopped (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            f'16 )
+                            ef''16 )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c''16 -\stopped
+                            f''16 -\stopped
                             \set stemLeftBeamCount = 2
-                            f'16 -\staccato ]
+                            ef''16 -\staccato ]
                         }
                     }
                     {
@@ -1630,21 +1630,21 @@
                     {
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            af'16 -\stopped \< [
+                            e''16 -\stopped \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            d''16 -\stopped
+                            f''16 -\stopped
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            f'16
+                            d'''16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
-                            e'16 -\stopped \f ]
+                            af''16 -\stopped \f ]
                         }
                     }
                     {
@@ -1804,19 +1804,16 @@
                     \transpose bf, c'
                     {
                         % [Clarinet Voice] Measure 148
-                        \times 4/5 {
-                            r16 [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            a16 -\stopped \fp (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            b,16 )
+                        {
+                            b'16 -\stopped \fp \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
-                            a,16 -\stopped \p ]
+                            \set stemRightBeamCount = 2
+                            a'16 -\stopped (
+                            \set stemLeftBeamCount = 2
+                            b16 \mp ] )
                         }
                     }
                     {
@@ -1876,27 +1873,27 @@
                             r8
                             r4
                         }
+                        % [Clarinet Voice] Measure 151
+                        {
+                            r16
+                        }
                     }
                     \transpose bf, c'
                     {
-                        % [Clarinet Voice] Measure 151
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            b,16 -\stopped \< [
+                            a16 -\stopped \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            a,16 -\staccato
+                            b16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            b,16 -\stopped (
+                            a'16 -\stopped (
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            a16
-                            \set stemLeftBeamCount = 2
-                            b,16 \mf ] )
+                            b16 \p ] )
                         }
                     }
                     {
@@ -1910,16 +1907,19 @@
                     }
                     \transpose bf, c'
                     {
-                        {
-                            a16 -\stopped \fp \< [
+                        \times 4/5 {
+                            a16 -\stopped \fp \< [ (
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            b16 )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            b16 -\stopped (
+                            a'16 -\stopped
                             \set stemLeftBeamCount = 2
-                            a16 \mp ] )
+                            b16 -\staccato \f ]
                         }
                     }
                     {
@@ -1931,15 +1931,18 @@
                     {
                         % [Clarinet Voice] Measure 153
                         \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 6/7 {
-                            r16 [
+                        \times 3/4 {
                             \once \override Hairpin.circled-tip = ##t
+                            a16 -\stopped \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            b16 -\stopped \<
+                            r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            a16 -\staccato
+                            b16 -\stopped
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            a'16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             b16 -\staccato
@@ -1948,7 +1951,7 @@
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            a16 -\stopped (
+                            a'16 -\stopped (
                             \set stemLeftBeamCount = 2
                             b16 \p ] )
                         }
@@ -2059,29 +2062,33 @@
                         % [Clarinet Voice] Measure 160
                         {
                             r4.
-                            r8
+                            r8.
                         }
                     }
                     \transpose bf, c'
                     {
                         {
-                            d'16 -\stopped \fp \< [ (
-                            \set stemLeftBeamCount = 2
-                            e'16 ] )
+                            e'16 -\stopped \fp \> (
                         }
                         % [Clarinet Voice] Measure 161
-                        {
-                            \pitchedTrill
-                            af4 \f \startTrillSpan cf'
-                            <> \stopTrillSpan
+                        \times 4/5 {
+                            f'16 \pp \< [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            af16 )
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            d'16 -\stopped
+                            \set stemLeftBeamCount = 2
+                            e'16 -\staccato \mf ]
                         }
                     }
                     \transpose bf, c'
                     {
                         {
-                            \once \override TrillSpanner.bound-details.left.text = \markup {
-                                \null
-                                }
                             \pitchedTrill
                             g'4 -\accent \fp \< \startTrillSpan a'
                         }
@@ -2093,17 +2100,20 @@
                     }
                     \transpose bf, c'
                     {
-                        {
+                        \times 4/5 {
                             \once \override Hairpin.circled-tip = ##t
-                            d'16 -\stopped \< [
+                            f'16 -\stopped \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            e'16
+                            af'16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            d'16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
-                            f16 -\stopped \p ]
+                            e'16 -\stopped \mp ]
                         }
                     }
                     \transpose bf, c'
@@ -2196,26 +2206,23 @@
                     }
                     \transpose bf, c'
                     {
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 6/7 {
-                            c'16 -\stopped \fp \< [
+                        {
+                            \once \override Hairpin.circled-tip = ##t
+                            f'16 -\stopped \fp \> [ (
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            ef'16 -\stopped (
+                            ef'16 -\stopped
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            f'16
+                            f'16 -\staccato
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c''16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            ef'16
-                            \set stemLeftBeamCount = 2
-                            f16 \mf ] )
+                            c''16 -\staccato ]
                         }
                     }
                     \transpose bf, c'
@@ -2318,17 +2325,20 @@
                     }
                     \transpose bf, c'
                     {
-                        {
+                        \times 4/5 {
+                            r16 [
                             \once \override Hairpin.circled-tip = ##t
-                            c'16 -\stopped \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            ef'16
+                            ef'16 -\stopped \<
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             f'16
                             \set stemLeftBeamCount = 2
-                            ef'16 \mp ]
+                            \set stemRightBeamCount = 2
+                            c''16
+                            \set stemLeftBeamCount = 2
+                            ef'16 \f ]
                         }
                     }
                     {
@@ -2343,33 +2353,20 @@
                     \transpose bf, c'
                     {
                         {
-                            \pitchedTrill
-                            f'8 -\stopped \fp \> \startTrillSpan af'
-                            <> \stopTrillSpan
+                            f'16 -\stopped \fp [ (
+                            \set stemLeftBeamCount = 2
+                            c''16 ] )
                         }
                         % [Clarinet Voice] Measure 176
-                        \times 2/3 {
-                            \once \override Hairpin.circled-tip = ##t
-                            c'16 \pp \> [ (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            ef'16 )
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            c''16 -\stopped ]
+                        {
+                            \pitchedTrill
+                            ef'4 \p \startTrillSpan gf'
+                            <> \stopTrillSpan
                         }
                     }
                     {
                         {
-                            r8 \!
+                            r8
                             r4.
                         }
                         % [Clarinet Voice] Measure 177
@@ -2493,59 +2490,62 @@
                     }
                     \transpose ef, c'
                     {
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 3/4 {
-                            \once \override Hairpin.circled-tip = ##t
-                            ef16 -\stopped \< [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            d16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f,16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            b,16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            cs16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            c16 -\stopped ]
-                        }
-                        % [Saxophone Voice] Measure 144
                         {
                             \pitchedTrill
-                            ef4. \p \< \startTrillSpan gf
-                            ef8 \f \repeatTie
+                            ef'8 -\stopped \fp \startTrillSpan gf'
+                            ef'4 \repeatTie
                             <> \stopTrillSpan
                         }
                     }
                     {
+                        % [Saxophone Voice] Measure 144
                         {
-                            r8
+                            r16
+                        }
+                    }
+                    \transpose ef, c'
+                    {
+                        {
+                            \once \override Hairpin.circled-tip = ##t
+                            d'16 -\stopped \< [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            f'16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            b16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            cs'16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16
+                            \set stemLeftBeamCount = 2
+                            ef'16 \mf ]
+                        }
+                    }
+                    {
+                        {
+                            r8.
                         }
                     }
                     \transpose ef, c'
                     {
                         % [Saxophone Voice] Measure 145
                         {
-                            d16 -\stopped \fp [ (
+                            d'16 -\stopped \fp \< [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            f,16
+                            f'16 )
                             \set stemLeftBeamCount = 2
-                            b,16 ] )
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            b16 -\stopped \mp ]
                         }
                     }
                     {
                         {
-                            r16
                             r4
                         }
                     }
@@ -2554,114 +2554,85 @@
                         % [Saxophone Voice] Measure 146
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            \pitchedTrill
-                            cs4 -\stopped \< \startTrillSpan e
-                            <> \stopTrillSpan
-                        }
-                        {
-                            c16 \p \< [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            ef16 -\staccato
+                            cs'16 -\stopped \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
-                            d16 -\stopped ] (
+                            \set stemRightBeamCount = 2
+                            c'16 -\stopped
+                            \set stemLeftBeamCount = 2
+                            ef'16 -\staccato ]
+                        }
+                        \times 4/5 {
+                            \once \override Hairpin.circled-tip = ##t
+                            d'16 -\staccato \p \> [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            f'16 -\stopped (
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            b16
+                            \set stemLeftBeamCount = 2
+                            cs'16 ] )
                         }
                         % [Saxophone Voice] Measure 147
                         {
-                            f,16 [
-                            \set stemLeftBeamCount = 2
-                            b,16 \mf ] )
+                            \pitchedTrill
+                            c'8 \startTrillSpan ef'
+                            <> \stopTrillSpan
                         }
                     }
                     {
                         {
-                            r4.
+                            r4. \!
                         }
                     }
                     \transpose ef, c'
                     {
                         {
-                            cs16 -\stopped \fp \> [
+                            \pitchedTrill
+                            ef'4. -\stopped \fp \> \startTrillSpan gf'
+                            <> \stopTrillSpan
+                        }
+                        {
+                            a16 \pp \< [ (
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
+                            b16 ]
+                        }
+                        % [Saxophone Voice] Measure 148
+                        {
+                            a16 \p \> [
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            b,16 -\stopped (
-                            \set stemLeftBeamCount = 2
-                            a,16 ] )
+                            b16 ] )
                         }
                         {
                             \pitchedTrill
-                            b,8 \pp \< \startTrillSpan d
+                            a4 \pp \< \startTrillSpan c'
+                            a8 \f \repeatTie
                             <> \stopTrillSpan
-                        }
-                        % [Saxophone Voice] Measure 148
-                        \times 2/3 {
-                            a,16 \p \> [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            b,16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            r16 ]
-                        }
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 3/4 {
-                            a,16 -\stopped \pp \< [ (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            b,16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            a16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            b,16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            a16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            b,16 )
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            a,16 -\stopped \mp ]
                         }
                     }
                     {
                         {
                             r8
                         }
-                        % [Saxophone Voice] Measure 149
-                        {
-                            r16
-                        }
                     }
                     \transpose ef, c'
                     {
-                        {
+                        % [Saxophone Voice] Measure 149
+                        \times 4/5 {
                             \once \override Hairpin.circled-tip = ##t
-                            b,16 -\stopped \< [
+                            b16 -\stopped \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            r16
+                            a16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            a,16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            b,16 -\staccato
+                            b16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
@@ -2669,7 +2640,19 @@
                             \set stemRightBeamCount = 2
                             a16 -\stopped (
                             \set stemLeftBeamCount = 2
-                            b,16 \p ] )
+                            \set stemRightBeamCount = 2
+                            b16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            a16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            b16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            a16
+                            \set stemLeftBeamCount = 2
+                            b16 \p ] )
                         }
                     }
                     {
@@ -2680,19 +2663,16 @@
                     }
                     \transpose ef, c'
                     {
-                        \times 4/5 {
-                            a16 -\stopped \fp \< [
+                        {
+                            a16 -\stopped \fp \< [ (
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            b16 )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            b,16 -\stopped (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            a16 \f )
-                            \set stemLeftBeamCount = 2
-                            r16 ]
+                            a16 -\stopped \mf ]
                         }
                     }
                     {
@@ -2707,74 +2687,64 @@
                     }
                     \transpose ef, c'
                     {
-                        \times 2/3 {
-                            r16 [
-                            \once \override Hairpin.circled-tip = ##t
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            b16 -\stopped \<
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            a16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            b,16 -\stopped (
-                            \set stemLeftBeamCount = 2
-                            a,16 ] )
-                        }
                         {
+                            \once \override Hairpin.circled-tip = ##t
                             \pitchedTrill
-                            b,8 \p \startTrillSpan d
-                            b,4 \repeatTie
+                            b8 -\stopped \< [ \startTrillSpan d'
+                            \set stemLeftBeamCount = 1
+                            b8 \repeatTie ]
                             <> \stopTrillSpan
                         }
-                    }
-                    {
-                        % [Saxophone Voice] Measure 152
                         {
-                            r8
-                        }
-                    }
-                    \transpose ef, c'
-                    {
-                        {
-                            a16 -\stopped \fp \> [ (
+                            a16 \p \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            b16 )
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            a16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            b16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            a16 -\staccato ]
-                        }
-                        \times 4/5 {
-                            r16 [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            b16 -\stopped \pp \< (
+                            b16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             a16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            b,16
+                            r16
                             \set stemLeftBeamCount = 2
-                            a,16 \mf ] )
+                            b16 -\stopped \mp ]
                         }
                     }
                     {
                         {
-                            r4
+                            r16
+                        }
+                        % [Saxophone Voice] Measure 152
+                        {
+                            r8.
+                        }
+                    }
+                    \transpose ef, c'
+                    {
+                        {
+                            \once \override Hairpin.circled-tip = ##t
+                            a16 -\stopped \fp \> [ (
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            b16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            a16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            b16
+                            \set stemLeftBeamCount = 2
+                            a16 ] )
+                        }
+                        {
+                            \pitchedTrill
+                            b4 \startTrillSpan d'
+                            <> \stopTrillSpan
+                        }
+                    }
+                    {
+                        {
+                            r4 \!
                         }
                     }
                     \transpose ef, c'
@@ -2782,47 +2752,57 @@
                         % [Saxophone Voice] Measure 153
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            \pitchedTrill
-                            b,4. -\stopped \< \startTrillSpan d
-                            <> \stopTrillSpan
-                        }
-                        {
-                            a16 \p \> [
-                            \set stemLeftBeamCount = 2
-                            b,16 ]
-                        }
-                        % [Saxophone Voice] Measure 154
-                        {
-                            a16 \pp \< [
+                            a16 -\stopped \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            b,16
+                            b16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             a16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            r16
+                            b16
                             \set stemLeftBeamCount = 2
-                            b,16 -\stopped \mp ]
+                            \set stemRightBeamCount = 2
+                            a16
+                            \set stemLeftBeamCount = 2
+                            b16 ]
+                        }
+                        \times 2/3 {
+                            r16 [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            a16 -\stopped \p \<
+                            \set stemLeftBeamCount = 2
+                            r16 ]
+                        }
+                        % [Saxophone Voice] Measure 154
+                        {
+                            \pitchedTrill
+                            b4. -\stopped \f \startTrillSpan d'
+                            <> \stopTrillSpan
                         }
                     }
                     {
                         {
-                            r8.
-                            r4
-                            r16
+                            r4.
                         }
                     }
                     \transpose ef, c'
                     {
-                        {
+                        \times 4/5 {
                             a16 -\stopped \fp [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             b16
                             \set stemLeftBeamCount = 2
-                            a16 ] )
+                            \set stemRightBeamCount = 2
+                            a16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            b16
+                            \set stemLeftBeamCount = 2
+                            a16 \p ] )
                         }
                     }
                     {
@@ -2833,28 +2813,9 @@
                     }
                     \transpose ef, c'
                     {
-                        {
-                            b16 -\stopped \pp [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            a16
-                            \set stemLeftBeamCount = 2
-                            b,16 ]
-                        }
-                    }
-                    {
-                        {
-                            r16
-                        }
-                    }
-                    \transpose ef, c'
-                    {
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 6/7 {
-                            a16 -\stopped \fp [ (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            b,16
+                        \times 2/3 {
+                            \once \override Hairpin.circled-tip = ##t
+                            b16 -\stopped \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             a16
@@ -2866,9 +2827,15 @@
                             a16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            b,16 \p )
+                            r16
                             \set stemLeftBeamCount = 2
-                            r16 ]
+                            b16 -\stopped ]
+                        }
+                        {
+                            \pitchedTrill
+                            a4 \p \< \startTrillSpan c'
+                            a8 \mf \repeatTie
+                            <> \stopTrillSpan
                         }
                     }
                     {
@@ -2883,28 +2850,41 @@
                     \transpose ef, c'
                     {
                         {
-                            \once \override Hairpin.circled-tip = ##t
-                            \pitchedTrill
-                            a4 -\stopped \< \startTrillSpan c'
-                            a8 \repeatTie
-                            <> \stopTrillSpan
-                        }
-                        {
-                            b,16 \mf [
+                            b16 -\stopped \fp \< [ (
                             \set stemLeftBeamCount = 2
-                            a,16 ]
+                            \set stemRightBeamCount = 2
+                            a16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            b16 )
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            a16 -\stopped \mp ]
                         }
                     }
                     {
-                        % [Saxophone Voice] Measure 157
                         {
                             r16
                         }
                     }
                     \transpose ef, c'
                     {
+                        \times 2/3 {
+                            \once \override Hairpin.circled-tip = ##t
+                            b16 -\stopped \< [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            a16
+                            \set stemLeftBeamCount = 2
+                            r16 ]
+                        }
+                        % [Saxophone Voice] Measure 157
                         {
-                            b,16 -\stopped \fp
+                            \pitchedTrill
+                            b8 -\stopped \p \startTrillSpan d'
+                            <> \stopTrillSpan
                         }
                     }
                     {
@@ -2968,59 +2948,8 @@
                     \transpose ef, c'
                     {
                         % [Saxophone Voice] Measure 170
-                        \times 4/5 {
-                            \once \override Hairpin.circled-tip = ##t
-                            f16 -\stopped \< [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16 -\stopped
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            ef'16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            c'16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            ef'16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            c'16 -\stopped \p ]
-                        }
-                    }
-                    {
-                        {
-                            r4
-                            r16
-                        }
-                    }
-                    \transpose ef, c'
-                    {
-                        {
-                            ef'16 -\stopped \fp \> [ (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16
-                            \set stemLeftBeamCount = 2
-                            c'16 ]
-                        }
-                        % [Saxophone Voice] Measure 171
-                        \times 4/5 {
-                            ef'16 \pp \< [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16
+                        \times 8/9 {
+                            f'16 -\stopped \fp \< [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             c'16 )
@@ -3028,7 +2957,52 @@
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            ef'16 -\stopped
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            f'16 -\stopped
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
                             ef'16 -\stopped \f ]
+                        }
+                    }
+                    {
+                        {
+                            r4
+                        }
+                    }
+                    \transpose ef, c'
+                    {
+                        {
+                            f'16 -\stopped \pp [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            c'16 -\stopped ]
+                        }
+                    }
+                    {
+                        {
+                            r16
+                        }
+                    }
+                    \transpose ef, c'
+                    {
+                        % [Saxophone Voice] Measure 171
+                        {
+                            \pitchedTrill
+                            ef'4 -\stopped \fp \startTrillSpan gf'
+                            <> \stopTrillSpan
                         }
                     }
                     {
@@ -3052,29 +3026,38 @@
                         % [Saxophone Voice] Measure 174
                         {
                             r4.
+                            r16
                         }
                     }
                     \transpose ef, c'
                     {
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            \pitchedTrill
-                            f'4 -\stopped \< \startTrillSpan af'
-                            <> \stopTrillSpan
-                        }
-                        % [Saxophone Voice] Measure 175
-                        {
-                            c'16 \p [
+                            c'16 -\stopped \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
-                            ef'16 -\stopped ]
+                            f'16 -\stopped ]
+                        }
+                        % [Saxophone Voice] Measure 175
+                        \times 4/5 {
+                            c'16 -\staccato \p \< [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            ef'16 -\stopped (
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            f'16
+                            \set stemLeftBeamCount = 2
+                            c'16 \mp ] )
                         }
                     }
                     {
                         {
-                            r16
                             r4
                         }
                         % [Saxophone Voice] Measure 176
@@ -3084,25 +3067,32 @@
                     }
                     \transpose ef, c'
                     {
-                        {
-                            c'16 -\stopped \fp \< [ (
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 6/7 {
+                            \once \override Hairpin.circled-tip = ##t
+                            ef'16 -\stopped \fp \> [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            ef'16
+                            r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16
+                            f'16 -\stopped (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            ef'16
+                            c'16 )
                             \set stemLeftBeamCount = 2
-                            f'16 \mf ] )
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            ef'16 -\stopped
+                            \set stemLeftBeamCount = 2
+                            f'16 -\staccato ]
                         }
                     }
                     {
                         {
-                            r16
-                            r4
+                            r4 \!
                         }
                         % [Saxophone Voice] Measure 177
                         {
@@ -3132,54 +3122,54 @@
                     }
                     \transpose ef, c'
                     {
-                        {
+                        \times 2/3 {
+                            r16 [
                             \once \override Hairpin.circled-tip = ##t
-                            e'16 -\stopped \< [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            af'16 -\stopped \<
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            e'16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            f'16 -\stopped (
+                            \set stemLeftBeamCount = 2
+                            d'16 ] )
+                        }
+                        {
+                            \pitchedTrill
+                            e'4 \p \> \startTrillSpan g'
+                            <> \stopTrillSpan
+                        }
+                        % [Saxophone Voice] Measure 182
+                        \times 2/3 {
+                            f'16 \pp \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             af'16 -\staccato
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            d'16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            f'16 -\staccato ]
+                            d'16 -\staccato ]
                         }
-                        \times 4/5 {
-                            r16 [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            af'16 -\stopped \p \>
+                        {
+                            e'16 -\staccato \p \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            d'16 -\stopped (
-                            \set stemLeftBeamCount = 2
-                            e'16 ] )
-                        }
-                        % [Saxophone Voice] Measure 182
-                        {
-                            \pitchedTrill
-                            f'8 \pp \< \startTrillSpan af'
-                            <> \stopTrillSpan
-                        }
-                        {
-                            af'16 \p \< [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            d'16 -\staccato
+                            f'16 -\stopped
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            e'16 -\stopped (
+                            af'16 -\stopped (
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16
-                            \set stemLeftBeamCount = 2
-                            af'16 \mp ] )
+                            d'16 \f ] )
                         }
                     }
                     {
@@ -3190,12 +3180,8 @@
                     }
                     \transpose ef, c'
                     {
-                        \times 4/5 {
-                            \once \override Hairpin.circled-tip = ##t
-                            d'16 -\stopped \fp \> [ (
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            e'16
+                        {
+                            e'16 -\stopped \fp [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             f'16 )
@@ -3203,12 +3189,12 @@
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
-                            af'16 -\stopped ]
+                            af'16 -\stopped \p ]
                         }
                     }
                     {
                         {
-                            r8 \!
+                            r8
                         }
                         % [Saxophone Voice] Measure 184
                         {
