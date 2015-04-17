@@ -24,3 +24,5 @@ Create a box of the same height as the current font."
 #(define (format-oval-barnumbers barnum measure-pos alt-number context)
  (make-oval-markup
   (robust-bar-number-function barnum measure-pos alt-number context)))
+
+date = #(strftime "(%Y-%m-%d)" (localtime (current-time)))

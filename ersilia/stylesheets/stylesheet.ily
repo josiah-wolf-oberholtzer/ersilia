@@ -17,7 +17,8 @@
         \fill-line {
             \override #'(font-name . "Didot")
                 \bold \fontsize #3 "Invisible Cities (iii): Ersilia"
-            " "
+            \override #'(font-name . "Didot")
+                \bold \fontsize #3 \date
             \concat {
                 \override #'(font-name . "Didot")
                     \bold \fontsize #3
@@ -26,7 +27,7 @@
             }
         }
     evenFooterMarkup = \oddFooterMarkup
-    print-first-page-number = ##f
+    print-first-page-number = ##t
     print-page-number = ##t
     max-systems-per-page = 1
     page-breaking = #ly:optimal-breaking
@@ -147,11 +148,14 @@
         \override BarNumber.font-name = "Didot Italic"
         \override BarNumber.font-size = 1
         \override BarNumber.padding = 4
-        \override MetronomeMark.X-extent = #'(0 . 0)
-        \override MetronomeMark.Y-extent = #'(0 . 0)
+
+        \override MetronomeMark.outside-staff-horizontal-padding = 0
+        \override MetronomeMark.X-extent = #'(0.1 . 0.1)
+        \override MetronomeMark.Y-extent = #'(0.1 . 0.1)
         \override MetronomeMark.break-align-symbols = #'(left-edge)
         \override MetronomeMark.extra-offset = #'(0 . 4)
         \override MetronomeMark.font-size = 3
+
         \override RehearsalMark.X-extent = #'(0 . 0)
         \override RehearsalMark.X-offset = 6
         \override RehearsalMark.Y-offset = -2.25
