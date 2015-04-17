@@ -7,7 +7,7 @@ from abjad.tools import timespantools
 
 segment_maker = ersilia.ErsiliaSegmentMaker(
     desired_duration_in_seconds=6,
-    name='[iii]',
+    name='[ii]',
     permitted_time_signatures=ersilia.permitted_time_signatures,
     repeat=True,
     )
@@ -27,7 +27,8 @@ segment_maker.add_setting(
     )
 
 segment_maker.add_setting(
-    timespan_maker=ersilia.sparse_timespan_maker,
+    timespan_identifier=[1, -1],
+    timespan_maker=ersilia.dense_timespan_maker,
     flute=[
         ersilia.wind_pointillist_music_specifier.rotate(7),
         ersilia.wind_agitato_music_specifier.rotate(7),

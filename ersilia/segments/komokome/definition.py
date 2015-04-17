@@ -8,7 +8,7 @@ from abjad.tools import rhythmmakertools
 
 segment_maker = ersilia.ErsiliaSegmentMaker(
     desired_duration_in_seconds=120,
-    name='R1',
+    name='Komokome',
     permitted_time_signatures=ersilia.permitted_time_signatures,
     tempo=abjad.Tempo((1, 4), 96),
     )
@@ -24,10 +24,24 @@ segment_maker.add_setting(
     clarinet=ersilia.wind_low_pedal_music_specifier,
     saxophone=ersilia.wind_low_pedal_music_specifier,
     percussion=ersilia.percussion_low_pedal_music_specifier,
-    bass=ersilia.string_low_pedal_music_specifier,
+    bass=ersilia.string_low_pedal_music_specifier
+        .transpose('E1'),
     )
 
 ### TREMOLO ###
+
+segment_maker.add_setting(
+    timespan_identifier=[
+        -1, 2,
+        -3, 10,
+        -4,
+        ],
+    timespan_maker=new(
+        ersilia.sustained_timespan_maker,
+        fuse_groups=True,
+        ),
+    flute=ersilia.wind_tremolo_music_specifier,
+    )
 
 segment_maker.add_setting(
     timespan_maker=new(
@@ -69,8 +83,21 @@ segment_maker.add_setting(
         -3, 1,
         -2,
         ],
-    timespan_maker=ersilia.dense_timespan_maker,
-    percussion=ersilia.percussion_tom_fanfare_music_specifier,
+    timespan_maker=new(
+        ersilia.dense_timespan_maker,
+        padding=(1, 4),
+        ),
+    percussion=consort.MusicSpecifierSequence(
+        application_rate='division',
+        music_specifiers=[
+            ersilia.percussion_tom_fanfare_music_specifier,
+            ersilia.percussion_temple_block_fanfare_music_specifier,
+            ersilia.percussion_tom_fanfare_music_specifier,
+            ersilia.percussion_tom_fanfare_music_specifier,
+            ersilia.percussion_temple_block_fanfare_music_specifier,
+            ersilia.percussion_temple_block_fanfare_music_specifier,
+            ]
+        ),
     )
 
 segment_maker.add_setting(
@@ -83,7 +110,6 @@ segment_maker.add_setting(
         -4, 1,
         ],
     timespan_maker=ersilia.dense_timespan_maker,
-    percussion=ersilia.percussion_temple_block_fanfare_music_specifier,
     piano_rh=ersilia.piano_agitato_music_specifier
         .rotate(1),
     piano_lh=ersilia.piano_agitato_music_specifier
@@ -105,6 +131,7 @@ segment_maker.add_setting(
     oboe=ersilia.wind_continuo_music_specifier,
     clarinet=ersilia.wind_continuo_music_specifier,
     )
+
 
 ### POINTILLIST ###
 
@@ -165,6 +192,104 @@ segment_maker.add_setting(
         .transpose('E1'),
     )
 
+### AUXILIARY ###
+
+music_specifier = consort.MusicSpecifierSequence(
+    application_rate='division',
+    music_specifiers=[
+        ersilia.shaker_sporadic_music_specifier,
+        ersilia.shaker_tremolo_music_specifier,
+        ersilia.shaker_sporadic_music_specifier,
+        ersilia.shaker_decelerando_music_specifier,
+        ],
+    )
+timespan_maker = new(
+    ersilia.sparse_timespan_maker,
+    padding=(3, 4),
+    )
+segment_maker.add_setting(
+    timespan_identifier=[
+        -1, 1,
+        -2, 2,
+        -3, 1,
+        -1, 1,
+        -2, 1,
+        -3, 1,
+        -2,
+        ],
+    timespan_maker=timespan_maker,
+    flute=music_specifier,
+    clarinet=music_specifier,
+    oboe=music_specifier,
+    )
+segment_maker.add_setting(
+    timespan_identifier=[
+        -2, 1,
+        -3, 1,
+        -1, 1,
+        -2, 1,
+        -3, 2,
+        -1, 1,
+        -2, 1,
+        -1,
+        ],
+    timespan_maker=timespan_maker,
+    violin=music_specifier,
+    viola=music_specifier,
+    cello=music_specifier,
+    )
+
+### CUT THROUGH ###
+
+segment_maker.add_setting(
+    timespan_identifier=[
+        -8, 1,
+        -13, 1
+        ],
+    timespan_maker=new(
+        ersilia.dense_timespan_maker,
+        ),
+    flute=ersilia.wind_agitato_music_specifier
+        .rotate(1),
+    clarinet=ersilia.wind_agitato_music_specifier.transpose('C2')
+        .rotate(2),
+    oboe=ersilia.wind_agitato_music_specifier
+        .rotate(3),
+    saxophone=ersilia.saxophone_agitato_music_specifier.transpose('C2'),
+    guitar=ersilia.guitar_agitato_music_specifier,
+    piano_rh=ersilia.piano_agitato_music_specifier
+        .rotate(1),
+    piano_lh=ersilia.piano_agitato_music_specifier
+        .transpose(-24)
+        .rotate(2),
+    violin=ersilia.string_agitato_music_specifier
+        .rotate(1),
+    viola=ersilia.string_agitato_music_specifier
+        .transpose('C3')
+        .rotate(2),
+    cello=ersilia.string_agitato_music_specifier
+        .transpose('C2')
+        .rotate(3),
+    bass=ersilia.string_agitato_music_specifier
+        .transpose('E1')
+        .rotate(4),
+    )
+
+segment_maker.add_setting(
+    timespan_identifier=[
+        -4, 1,
+        -5, 1,
+        -6, 1,
+        -2, 1,
+        ],
+    timespan_maker=new(
+        ersilia.sparse_timespan_maker,
+        padding=(1, 2),
+        repeat=False,
+        ),
+    percussion=ersilia.percussion_crotales_flash_music_specifier,
+    )
+
 ### INTERRUPT ###
 
 segment_maker.add_setting(
@@ -220,51 +345,4 @@ segment_maker.add_setting(
     cello=ersilia.string_overpressure_music_specifier
         .transpose(-17)
         .rotate(1),
-    )
-
-### AUXILIARY ###
-
-music_specifier = consort.MusicSpecifierSequence(
-    application_rate='division',
-    music_specifiers=[
-        ersilia.shaker_sporadic_music_specifier,
-        ersilia.shaker_tremolo_music_specifier,
-        ersilia.shaker_sporadic_music_specifier,
-        ersilia.shaker_decelerando_music_specifier,
-        ],
-    )
-timespan_maker = new(
-    ersilia.sparse_timespan_maker,
-    padding=(3, 4),
-    )
-segment_maker.add_setting(
-    timespan_identifier=[
-        -1, 1,
-        -2, 2,
-        -3, 1,
-        -1, 1,
-        -2, 1,
-        -3, 1,
-        -2,
-        ],
-    timespan_maker=timespan_maker,
-    flute=music_specifier,
-    clarinet=music_specifier,
-    oboe=music_specifier,
-    )
-segment_maker.add_setting(
-    timespan_identifier=[
-        -2, 1,
-        -3, 1,
-        -1, 1,
-        -2, 1,
-        -3, 2,
-        -1, 1,
-        -2, 1,
-        -1,
-        ],
-    timespan_maker=timespan_maker,
-    violin=music_specifier,
-    viola=music_specifier,
-    cello=music_specifier,
     )
