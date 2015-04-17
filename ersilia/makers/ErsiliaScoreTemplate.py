@@ -1,8 +1,9 @@
 # -*- encoding: utf-8 -*-
 import consort
 from abjad import attach
-from abjad.tools import scoretools
 from abjad.tools import instrumenttools
+from abjad.tools import markuptools
+from abjad.tools import scoretools
 
 
 class ErsiliaScoreTemplate(consort.ScoreTemplate):
@@ -170,6 +171,10 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
 
         pitch_pipes = instrumenttools.Percussion(
             instrument_name='pitch pipes',
+            instrument_name_markup=markuptools.Markup.right_column(
+                ['Pitch', 'Pipes'],
+                direction=None,
+                ),
             short_instrument_name='pp.',
             )
 
@@ -193,13 +198,23 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
 
         clarinet_staff = self._make_staff(
             'Clarinet', 'treble',
-            instrument=instrumenttools.BassClarinet(),
+            instrument=instrumenttools.BassClarinet(
+                instrument_name_markup=markuptools.Markup.right_column(
+                    ['Bass', 'Clarinet'],
+                    direction=None,
+                    ),
+                ),
             tag='clarinet',
             )
 
         saxophone_staff = self._make_staff(
             'Saxophone', 'treble',
-            instrument=instrumenttools.BaritoneSaxophone(),
+            instrument=instrumenttools.BaritoneSaxophone(
+                instrument_name_markup=markuptools.Markup.right_column(
+                    ['Baritone', 'Saxophone'],
+                    direction=None,
+                    ),
+                ),
             tag='saxophone',
             )
 
@@ -315,9 +330,11 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
             instrument=pitch_pipes,
             )
         contrabass_staff = self._make_staff(
-            'Contrabass', 'bass',
+            'Contrabass', 'bass_8',
             abbreviation='bass',
-            instrument=instrumenttools.Contrabass(),
+            instrument=instrumenttools.Contrabass(
+                pitch_range='[E1, G4]',
+                ),
             )
         contrabass_staff_group = scoretools.StaffGroup(
             [contrabass_aux_staff, contrabass_staff],
