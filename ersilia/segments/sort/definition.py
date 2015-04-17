@@ -49,6 +49,15 @@ segment_maker.add_setting(
     )
 
 segment_maker.add_setting(
+    timespan_identifier=[-14, 3],
+    timespan_maker=new(
+        ersilia.sustained_timespan_maker,
+        fuse_groups=True,
+        ),
+    percussion=ersilia.percussion_marimba_tremolo_music_specifier,
+    )
+
+segment_maker.add_setting(
     timespan_identifier=[
         -1, 1,
         -1, 1,
@@ -319,8 +328,9 @@ segment_maker.add_setting(
 segment_maker.add_setting(
     timespan_identifier=[
         -5, 1,
-        -6, 1,
-        -2,
+        -4, 1,
+        -13, 1,
+        -5,
         ],
     timespan_maker=new(
         ersilia.dense_timespan_maker,
@@ -332,7 +342,8 @@ segment_maker.add_setting(
     )
 
 segment_maker.add_setting(
-    timespan_identifier=timespantools.Timespan((321, 8), (325, 8)),
-    percussion=ersilia.percussion_crotales_flash_music_specifier,
+    timespan_identifier=timespantools.Timespan((317, 8), (325, 8)),
+    timespan_maker=ersilia.dense_timespan_maker,
+    percussion=ersilia.percussion_crotales_interruption_music_specifier,
     silenced_contexts=segment_maker.score_template.all_voice_names,
     )

@@ -5,12 +5,13 @@ import ersilia
 from abjad import new
 from abjad.tools import rhythmmakertools
 from abjad.tools import timespantools
+from ersilia.materials import abbreviations
 
 
 ### SEGMENT ###
 
 segment_maker = ersilia.ErsiliaSegmentMaker(
-    desired_duration_in_seconds=180,
+    desired_duration_in_seconds=90,
     name='Chemish',
     permitted_time_signatures=ersilia.permitted_time_signatures,
     tempo=abjad.Tempo((1, 4), 80),
@@ -25,6 +26,16 @@ segment_maker.add_setting(
         fuse_groups=True,
         ),
     percussion=ersilia.percussion_low_pedal_music_specifier,
+    )
+
+segment_maker.add_setting(
+    timespan_identifier=[-1, 1],
+    timespan_maker=new(
+        ersilia.sustained_timespan_maker,
+        fuse_groups=True,
+        ),
+    bass=ersilia.string_low_pedal_music_specifier
+        .transpose('E1'),
     )
 
 ### TREMOLO ###
@@ -64,7 +75,7 @@ segment_maker.add_setting(
 segment_maker.add_setting(
     timespan_identifier=[-1, 1, -2, 1, -3, 1, -2],
     timespan_maker=ersilia.sparse_timespan_maker,
-    piano_rh=ersilia.piano_string_glissando_music_specifier,
+    piano_lh=ersilia.piano_string_glissando_music_specifier,
     )
 
 ### OSTINATO ###
@@ -82,6 +93,7 @@ music_specifier = new(
         .ascending(width=24)
         .align()
     )
+
 segment_maker.add_setting(
     timespan_identifier=[
         -1, 6,
@@ -92,6 +104,7 @@ segment_maker.add_setting(
     timespan_maker=ersilia.dense_timespan_maker,
     saxophone=music_specifier,
     )
+
 segment_maker.add_setting(
     timespan_maker=ersilia.sparse_timespan_maker,
     flute=music_specifier,
@@ -99,7 +112,20 @@ segment_maker.add_setting(
     clarinet=music_specifier,
     )
 
+segment_maker.add_setting(
+    timespan_identifier=[-1, 5],
+    timespan_maker=ersilia.sparse_timespan_maker,
+    guitar=ersilia.guitar_strummed_music_specifier,
+    )
+
 ### POINTILLIST ###
+
+segment_maker.add_setting(
+    timespan_identifier=[-1, 1, -1, 1, -1],
+    timespan_maker=ersilia.sparse_timespan_maker,
+    piano_rh=ersilia.piano_pointillist_music_specifier
+        .transpose(-12),
+    )
 
 ### AUXILIARY ###
 
@@ -129,22 +155,22 @@ segment_maker.add_setting(
     cello=ersilia.shaker_tremolo_music_specifier,
     )
 
-segment_maker.add_setting(
-    timespan_identifier=[-2, 1, -3, 1, -5, 1, -3],
-    timespan_maker=new(
-        ersilia.sparse_timespan_maker,
-        padding=(1, 4),
-        timespan_specifier=consort.TimespanSpecifier(
-            minimum_duration=0,
-            ),
-        ),
-    flute=ersilia.shaker_decelerando_music_specifier,
-    clarinet=ersilia.shaker_decelerando_music_specifier,
-    oboe=ersilia.shaker_decelerando_music_specifier,
-    violin=ersilia.shaker_decelerando_music_specifier,
-    viola=ersilia.shaker_decelerando_music_specifier,
-    cello=ersilia.shaker_decelerando_music_specifier,
-    )
+#segment_maker.add_setting(
+#    timespan_identifier=[-2, 1, -3, 1, -5, 1, -3],
+#    timespan_maker=new(
+#        ersilia.sparse_timespan_maker,
+#        padding=(1, 4),
+#        timespan_specifier=consort.TimespanSpecifier(
+#            minimum_duration=0,
+#            ),
+#        ),
+#    flute=ersilia.shaker_decelerando_music_specifier,
+#    clarinet=ersilia.shaker_decelerando_music_specifier,
+#    oboe=ersilia.shaker_decelerando_music_specifier,
+#    violin=ersilia.shaker_decelerando_music_specifier,
+#    viola=ersilia.shaker_decelerando_music_specifier,
+#    cello=ersilia.shaker_decelerando_music_specifier,
+#    )
 
 segment_maker.add_setting(
     timespan_identifier=[
@@ -185,4 +211,12 @@ segment_maker.add_setting(
         rhythm_maker__first__incise_specifier__prefix_counts=[1],
         ),
     silenced_contexts=segment_maker.score_template.all_voice_names,
+    )
+
+segment_maker.add_setting(
+    timespan_identifier=timespantools.Timespan(0, (1, 4)),
+    piano_rh=new(
+        ersilia.piano_arm_cluster_music_specifier,
+        attachment_handler__laissez_vibrer=abbreviations.laissez_vibrer,
+        ).transpose(12),
     )

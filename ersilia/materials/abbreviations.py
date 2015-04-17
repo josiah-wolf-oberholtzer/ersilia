@@ -1,8 +1,9 @@
 # -*- encoding: utf-8 -*-
-
 import consort
+from abjad.tools import indicatortools
 from abjad.tools import markuptools
 from abjad.tools import pitchtools
+from abjad.tools import selectortools
 from abjad.tools import spannertools
 
 

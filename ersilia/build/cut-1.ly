@@ -503,13 +503,33 @@
                             {
                                 % [Piano Lower Voice] Measure 72
                                 {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1/2
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    r4.
                                 }
                                 % [Piano Lower Voice] Measure 73
                                 {
+                                    \stopStaff
+                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
+                                    \startStaff
                                     R1 * 1
                                 }
                                 % [Piano Lower Voice] Measure 74
