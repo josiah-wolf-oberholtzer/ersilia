@@ -1,4 +1,5 @@
 \documentclass[10pt]{article}
+\usepackage{import}
 \usepackage{enumitem}
 \usepackage[utf8]{inputenc}
 \usepackage[papersize={11in, 17in}]{geometry}
@@ -16,13 +17,13 @@
 \end{textblock}
 
 \begin{textblock}{11}(0, 3)
-    \include{preface/calvino}
-    \include{preface/leguin}
+    \subimport{../preface/calvino}{}
+    \subimport{../preface/leguin}{}
 \end{textblock}
 
 \begin{textblock}{11}(12,3)
-    \include{preface/instrumentation}
-    \include{preface/performance-notes}
+    \subimport{../preface/instrumentation}{}
+    \subimport{../preface/performance-notes}{}
 \end{textblock}
 
 \end{document}
