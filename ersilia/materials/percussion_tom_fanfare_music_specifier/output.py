@@ -111,20 +111,23 @@ percussion_tom_fanfare_music_specifier = consort.tools.MusicSpecifier(
                                 markuptools.MarkupCommand(
                                     'box',
                                     markuptools.MarkupCommand(
-                                        'pad-around',
-                                        0.5,
+                                        'whiteout',
                                         markuptools.MarkupCommand(
-                                            'italic',
+                                            'pad-around',
+                                            0.5,
                                             markuptools.MarkupCommand(
-                                                'smaller',
+                                                'italic',
                                                 markuptools.MarkupCommand(
-                                                    'concat',
-                                                    [
-                                                        markuptools.MarkupCommand(
-                                                            'vstrut'
-                                                            ),
-                                                        'toms',
-                                                        ]
+                                                    'smaller',
+                                                    markuptools.MarkupCommand(
+                                                        'concat',
+                                                        [
+                                                            markuptools.MarkupCommand(
+                                                                'vstrut'
+                                                                ),
+                                                            'toms',
+                                                            ]
+                                                        )
                                                     )
                                                 )
                                             )
@@ -139,6 +142,12 @@ percussion_tom_fanfare_music_specifier = consort.tools.MusicSpecifier(
                 callbacks=(
                     selectortools.PrototypeSelectorCallback(
                         prototype=scoretools.Leaf,
+                        ),
+                    selectortools.RunSelectorCallback(
+                        prototype=(
+                            scoretools.Note,
+                            scoretools.Chord,
+                            ),
                         ),
                     ),
                 ),

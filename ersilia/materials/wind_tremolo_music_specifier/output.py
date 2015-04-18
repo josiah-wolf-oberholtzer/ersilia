@@ -52,7 +52,7 @@ wind_tremolo_music_specifier = consort.tools.MusicSpecifier(
                     selectortools.DurationSelectorCallback(
                         duration=selectortools.DurationInequality(
                             operator_string='==',
-                            duration=durationtools.Duration(1, 16),
+                            duration=durationtools.Duration(1, 8),
                             ),
                         preprolated=True,
                         ),
@@ -210,8 +210,8 @@ wind_tremolo_music_specifier = consort.tools.MusicSpecifier(
             ),
         ),
     rhythm_maker=rhythmmakertools.EvenDivisionRhythmMaker(
-        denominators=(16,),
-        extra_counts_per_division=(0, 1),
+        denominators=(8,),
+        extra_counts_per_division=(0, 1, 2),
         output_masks=rhythmmakertools.BooleanPatternInventory(
             (
                 rhythmmakertools.SustainMask(

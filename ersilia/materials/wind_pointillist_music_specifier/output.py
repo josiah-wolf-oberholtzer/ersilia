@@ -142,15 +142,15 @@ wind_pointillist_music_specifier = consort.tools.MusicSpecifier(
     rhythm_maker=consort.tools.CompositeRhythmMaker(
         default=rhythmmakertools.TaleaRhythmMaker(
             talea=rhythmmakertools.Talea(
-                counts=(1, -1, 1, -2, 1, -3),
+                counts=(1, 1, -1, 1, -2, 1, 1, -3),
                 denominator=16,
                 ),
-            extra_counts_per_division=(0, 0, 1),
+            extra_counts_per_division=(0, 1),
             ),
         last=rhythmmakertools.IncisedRhythmMaker(
             incise_specifier=rhythmmakertools.InciseSpecifier(
-                prefix_talea=(1,),
-                prefix_counts=(1,),
+                prefix_talea=(1, 0),
+                prefix_counts=(2,),
                 talea_denominator=16,
                 fill_with_notes=False,
                 ),

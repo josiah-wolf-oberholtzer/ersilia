@@ -88,20 +88,23 @@ percussion_bamboo_windchimes_music_specifier = consort.tools.MusicSpecifier(
                                 markuptools.MarkupCommand(
                                     'box',
                                     markuptools.MarkupCommand(
-                                        'pad-around',
-                                        0.5,
+                                        'whiteout',
                                         markuptools.MarkupCommand(
-                                            'italic',
+                                            'pad-around',
+                                            0.5,
                                             markuptools.MarkupCommand(
-                                                'smaller',
+                                                'italic',
                                                 markuptools.MarkupCommand(
-                                                    'concat',
-                                                    [
-                                                        markuptools.MarkupCommand(
-                                                            'vstrut'
-                                                            ),
-                                                        'w.c.',
-                                                        ]
+                                                    'smaller',
+                                                    markuptools.MarkupCommand(
+                                                        'concat',
+                                                        [
+                                                            markuptools.MarkupCommand(
+                                                                'vstrut'
+                                                                ),
+                                                            'windchimes',
+                                                            ]
+                                                        )
                                                     )
                                                 )
                                             )
@@ -116,6 +119,12 @@ percussion_bamboo_windchimes_music_specifier = consort.tools.MusicSpecifier(
                 callbacks=(
                     selectortools.PrototypeSelectorCallback(
                         prototype=scoretools.Leaf,
+                        ),
+                    selectortools.RunSelectorCallback(
+                        prototype=(
+                            scoretools.Note,
+                            scoretools.Chord,
+                            ),
                         ),
                     ),
                 ),
@@ -147,13 +156,13 @@ percussion_bamboo_windchimes_music_specifier = consort.tools.MusicSpecifier(
             ),
         ),
     color='yellow',
-    labels=(),
+    labels=('bamboo windchimes',),
     pitch_handler=consort.tools.AbsolutePitchHandler(
         pitch_specifier=consort.tools.PitchSpecifier(
             pitch_segments=(
                 pitchtools.PitchSegment(
                     (
-                        pitchtools.NamedPitch("c'"),
+                        pitchtools.NamedPitch("f'"),
                         ),
                     item_class=pitchtools.NamedPitch,
                     ),

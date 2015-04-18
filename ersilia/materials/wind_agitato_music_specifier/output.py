@@ -125,20 +125,23 @@ wind_agitato_music_specifier = consort.tools.MusicSpecifier(
                                 markuptools.MarkupCommand(
                                     'box',
                                     markuptools.MarkupCommand(
-                                        'pad-around',
-                                        0.5,
+                                        'whiteout',
                                         markuptools.MarkupCommand(
-                                            'italic',
+                                            'pad-around',
+                                            0.5,
                                             markuptools.MarkupCommand(
-                                                'smaller',
+                                                'italic',
                                                 markuptools.MarkupCommand(
-                                                    'concat',
-                                                    [
-                                                        markuptools.MarkupCommand(
-                                                            'vstrut'
-                                                            ),
-                                                        'Flz.',
-                                                        ]
+                                                    'smaller',
+                                                    markuptools.MarkupCommand(
+                                                        'concat',
+                                                        [
+                                                            markuptools.MarkupCommand(
+                                                                'vstrut'
+                                                                ),
+                                                            'Flz.',
+                                                            ]
+                                                        )
                                                     )
                                                 )
                                             )

@@ -228,7 +228,7 @@ string_agitato_music_specifier = consort.tools.MusicSpecifier(
                     consort.tools.RegisterInflection(
                         inflections=pitchtools.IntervalSegment(
                             (
-                                pitchtools.NumberedInterval(12),
+                                pitchtools.NumberedInterval(6),
                                 pitchtools.NumberedInterval(0),
                                 ),
                             item_class=pitchtools.NumberedInterval,
@@ -238,7 +238,7 @@ string_agitato_music_specifier = consort.tools.MusicSpecifier(
                     ]
                 ),
             ),
-        register_spread=6,
+        register_spread=3,
         pitch_specifier=consort.tools.PitchSpecifier(
             pitch_segments=(
                 pitchtools.PitchSegment(

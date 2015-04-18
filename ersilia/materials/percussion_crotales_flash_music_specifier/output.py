@@ -7,7 +7,6 @@ from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
 from abjad.tools import scoretools
 from abjad.tools import selectortools
-from abjad.tools import spannertools
 import consort
 
 
@@ -42,15 +41,6 @@ percussion_crotales_flash_music_specifier = consort.tools.MusicSpecifier(
                     ]
                 ),
             ),
-        staff_lines_spanner=consort.tools.AttachmentExpression(
-            attachments=datastructuretools.TypedList(
-                [
-                    spannertools.StaffLinesSpanner(
-                        lines=[-4, -2, 0, 2, 4],
-                        ),
-                    ]
-                ),
-            ),
         text_spanner=consort.tools.AttachmentExpression(
             attachments=datastructuretools.TypedList(
                 [
@@ -60,20 +50,23 @@ percussion_crotales_flash_music_specifier = consort.tools.MusicSpecifier(
                                 markuptools.MarkupCommand(
                                     'box',
                                     markuptools.MarkupCommand(
-                                        'pad-around',
-                                        0.5,
+                                        'whiteout',
                                         markuptools.MarkupCommand(
-                                            'italic',
+                                            'pad-around',
+                                            0.5,
                                             markuptools.MarkupCommand(
-                                                'smaller',
+                                                'italic',
                                                 markuptools.MarkupCommand(
-                                                    'concat',
-                                                    [
-                                                        markuptools.MarkupCommand(
-                                                            'vstrut'
-                                                            ),
-                                                        'crotales',
-                                                        ]
+                                                    'smaller',
+                                                    markuptools.MarkupCommand(
+                                                        'concat',
+                                                        [
+                                                            markuptools.MarkupCommand(
+                                                                'vstrut'
+                                                                ),
+                                                            'crotales',
+                                                            ]
+                                                        )
                                                     )
                                                 )
                                             )
@@ -88,6 +81,12 @@ percussion_crotales_flash_music_specifier = consort.tools.MusicSpecifier(
                 callbacks=(
                     selectortools.PrototypeSelectorCallback(
                         prototype=scoretools.Leaf,
+                        ),
+                    selectortools.RunSelectorCallback(
+                        prototype=(
+                            scoretools.Note,
+                            scoretools.Chord,
+                            ),
                         ),
                     ),
                 ),

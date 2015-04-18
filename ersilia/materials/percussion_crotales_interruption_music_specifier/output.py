@@ -296,8 +296,8 @@ percussion_crotales_interruption_music_specifier = consort.tools.MusicSpecifier(
             ),
         first=rhythmmakertools.IncisedRhythmMaker(
             incise_specifier=rhythmmakertools.InciseSpecifier(
-                prefix_talea=(1, -1),
-                prefix_counts=(1, 2),
+                prefix_talea=(1,),
+                prefix_counts=(1,),
                 talea_denominator=16,
                 fill_with_notes=False,
                 ),

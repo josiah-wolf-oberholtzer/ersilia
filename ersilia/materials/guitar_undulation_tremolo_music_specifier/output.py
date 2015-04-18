@@ -98,9 +98,9 @@ guitar_undulation_tremolo_music_specifier = consort.tools.MusicSpecifier(
                     chord_expr=pitchtools.IntervalSegment(
                         (
                             pitchtools.NumberedInterval(0),
-                            pitchtools.NumberedInterval(3),
                             pitchtools.NumberedInterval(7),
                             pitchtools.NumberedInterval(14),
+                            pitchtools.NumberedInterval(15),
                             ),
                         item_class=pitchtools.NumberedInterval,
                         ),

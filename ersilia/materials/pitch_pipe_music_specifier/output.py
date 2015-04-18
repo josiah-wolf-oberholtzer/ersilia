@@ -140,8 +140,9 @@ pitch_pipe_music_specifier = consort.tools.MusicSpecifier(
                 [
                     [
                         spannertools.StaffLinesSpanner(
-                            lines=[0],
+                            lines=[-4, 4],
                             overrides={
+                                'note_head__no_ledgers': True,
                                 'note_head__style': 'cross',
                                 },
                             ),
