@@ -1,0 +1,29 @@
+\documentclass[10pt]{article}
+\usepackage{import}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage[papersize={8.5in, 14in}]{geometry}
+\usepackage[absolute]{textpos}
+\TPGrid[0.5in, 0.25in]{23}{24}
+\usepackage{palatino}
+\parindent=0pt
+\parskip=12pt
+\usepackage{nopageno}
+
+\begin{document}
+
+\begin{textblock}{23}(0, 0)
+\center\huge PREFACE
+\end{textblock}
+
+\begin{textblock}{9}(0, 2)
+    \subimport{../preface/calvino}{}
+    \subimport{../preface/leguin}{}
+\end{textblock}
+
+\begin{textblock}{13}(10, 2)
+    \subimport{../preface/instrumentation}{}
+    \subimport{../preface/performance-notes}{}
+\end{textblock}
+
+\end{document}

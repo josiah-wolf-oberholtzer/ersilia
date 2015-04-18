@@ -1,0 +1,47 @@
+\documentclass[11pt]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage[papersize={14in, 8.5in}]{geometry}
+\usepackage{tikz}
+\usepackage{xltxtra,fontspec,xunicode}
+\usetikzlibrary{calc}
+
+\defaultfontfeatures{Scale=MatchLowercase}
+\setromanfont[Numbers=Uppercase]{Didot}
+
+\begin{document}
+    \begin{titlepage}
+
+
+        \begin{tikzpicture}[remember picture, overlay]
+            \draw[line width = 1.6pt]
+                ($(current page.north west) + (0.75in,-0.75in)$)
+                rectangle
+                ($(current page.south east) + (-0.75in,0.75in)$);
+            \draw[line width = 0.4pt]
+                ($(current page.north west) + (0.75in,-0.75in) + (2.8pt,-2.8pt)$)
+                rectangle
+                ($(current page.south east) + (-0.75in,0.75in) + (-2.8pt,2.8pt)$);
+        \end{tikzpicture}
+
+        \vfill
+
+        \begin{center}
+
+        2014-05-15\\
+        \vspace{1em}
+        {
+            \itshape
+            Scores available from the composer at\\
+        }
+        {
+            www.josiahwolfoberholtzer.com\\
+        }
+        \vspace{1em}
+        \euro 80 / \$90
+
+        \end{center}
+
+    \end{titlepage}
+\end{document}

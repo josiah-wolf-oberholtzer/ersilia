@@ -69,6 +69,6 @@
 
 \score {
     {
-        \include "segments.ly"
+        \include "segments.ily"
     }
 }
