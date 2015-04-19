@@ -6,7 +6,7 @@
 \usepackage{import}
 \usepackage{xltxtra,fontspec,xunicode}
 \usepackage[absolute]{textpos}
-\usepackage[papersize={8.5in, 14in}]{geometry}
+\usepackage[papersize={8.5in, 11in}]{geometry}
 \usepackage{nopageno}
 
 \TPGrid[0.5in, 0.25in]{23}{24}
@@ -15,22 +15,36 @@
 \setromanfont[Numbers=Uppercase]{Didot}
 \defaultfontfeatures{Scale=MatchLowercase}
 
+\usepackage{multicol}
+
 \begin{document}
 
-\begin{textblock}{23}(0,1)
+\begin{textblock}{23}(0, 0)
     \center\huge\textbf{PREFACE}
 \end{textblock}
 
-\begin{textblock}{11}(0, 3)
-
-\section{About}
-
+\begin{textblock}{11}(0, 1)
+    {
+    \small
+    \subimport{../preface/calvino}{}
+    }
 \end{textblock}
 
-\begin{textblock}{11}(12,3)
+\begin{textblock}{11}(12, 1)
+    {
+    \small
+    \subimport{../preface/leguin}{}
+    }
+\end{textblock}
 
-\section{Performance Notes}
+\begin{textblock}{6}(0, 11)
+    \small
+    \subimport{../preface/instrumentation}{}
+\end{textblock}
 
+\begin{textblock}{16}(7, 11)
+    \small
+    \subimport{../preface/performance-notes}{}
 \end{textblock}
 
 \end{document}

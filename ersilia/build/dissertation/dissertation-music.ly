@@ -4,7 +4,9 @@
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
-\include "../stylesheets/stylesheet.ily"
+\include "../../stylesheets/stylesheet.ily"
+#(set-default-paper-size "letter" 'portrait)
+#(set-global-staff-size 8)
 
 \header {
     composer = \markup {
@@ -24,8 +26,13 @@
                     }
                 \vspace #0.5
                 \override #'(font-name . "Didot")
-                    \fontsize #18 {
+                    \fontsize #16 {
                         \line { ERSILIA }
+                    }
+                \vspace #0.5
+                \override #'(font-name . "Didot Italic")
+                    \fontsize #2 {
+                        \line { ( a botanical survey of the uninhabited northeastern isles ) }
                     }
                 \vspace #1
                 \override #'(font-name . "Didot Italic")
@@ -39,8 +46,37 @@
     }
 }
 
+\layout {
+    \context {
+        \Score 
+        \override StaffGrouper.staffgroup-staff-spacing = #'(
+            (basic-distance . 10)
+            (minimum-distance . 10)
+            (padding . 5)
+            (stretchability . 20)
+            )
+        \override StaffGrouper.staff-staff-spacing = #'(
+            (basic-distance . 10)
+            (minimum-distance . 10)
+            (padding . 5)
+            (stretchability . 20)
+            )
+        \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1 28)
+        proportionalNotationDuration = #(ly:make-moment 1 28)
+    }
+}
+
+\paper {
+    oddFooterMarkup = \markup \fill-line { " " }
+    evenFooterMarkup = \markup \fill-line { " " }
+    ragged-last-bottom = ##f
+    two-sided = ##f
+    indent = 18\mm
+    short-indent = 12\mm
+}
+
 \score {
     {
-   \include "segment-test.ly"
+   \include "../segments.ily"
     }
 }
