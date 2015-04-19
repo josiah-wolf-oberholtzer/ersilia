@@ -23,24 +23,44 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                 \tag #'flute
                 \context FluteStaff = "Flute Staff" {
                     \clef "treble"
+                    \set Staff.instrumentName = \markup { Flute }
+                    \set Staff.shortInstrumentName = \markup { Fl. }
                     \context Voice = "Flute Voice" {
                     }
                 }
                 \tag #'oboe
                 \context OboeStaff = "Oboe Staff" {
                     \clef "treble"
+                    \set Staff.instrumentName = \markup { Oboe }
+                    \set Staff.shortInstrumentName = \markup { Ob. }
                     \context Voice = "Oboe Voice" {
                     }
                 }
                 \tag #'clarinet
                 \context ClarinetStaff = "Clarinet Staff" {
                     \clef "treble"
+                    \set Staff.instrumentName = \markup {
+                    \right-column
+                        {
+                            Bass
+                            Clarinet
+                        }
+                    }
+                    \set Staff.shortInstrumentName = \markup { Bass cl. }
                     \context Voice = "Clarinet Voice" {
                     }
                 }
                 \tag #'saxophone
                 \context SaxophoneStaff = "Saxophone Staff" {
                     \clef "treble"
+                    \set Staff.instrumentName = \markup {
+                    \right-column
+                        {
+                            Baritone
+                            Saxophone
+                        }
+                    }
+                    \set Staff.shortInstrumentName = \markup { Bar. sax. }
                     \context Voice = "Saxophone Voice" {
                     }
                 }
@@ -50,11 +70,21 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                 \context GuitarStaffGroup = "Guitar Staff Group" <<
                     \context PitchPipes = "Guitar Pitch Pipe Staff" {
                         \clef "percussion"
+                        \set Staff.instrumentName = \markup {
+                        \right-column
+                            {
+                                Pitch
+                                Pipes
+                            }
+                        }
+                        \set Staff.shortInstrumentName = \markup { Pp. }
                         \context Voice = "Guitar Pitch Pipe Voice" {
                         }
                     }
                     \context GuitarStaff = "Guitar Staff" {
-                        \clef "treble"
+                        \clef "treble_8"
+                        \set Staff.instrumentName = \markup { Guitar }
+                        \set Staff.shortInstrumentName = \markup { Gt. }
                         \context Voice = "Guitar Voice" {
                         }
                     }
@@ -63,10 +93,20 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                 \context PianoStaffGroup = "Piano Staff Group" <<
                     \context PitchPipes = "Piano Pitch Pipe Staff" {
                         \clef "percussion"
+                        \set Staff.instrumentName = \markup {
+                        \right-column
+                            {
+                                Pitch
+                                Pipes
+                            }
+                        }
+                        \set Staff.shortInstrumentName = \markup { Pp. }
                         \context Voice = "Piano Pitch Pipe Voice" {
                         }
                     }
                     \context PianoStaff = "Piano Staff" <<
+                        \set PianoStaff.instrumentName = \markup { Piano }
+                        \set PianoStaff.shortInstrumentName = \markup { Pf. }
                         \context PianoUpperStaff = "Piano Upper Staff" {
                             \clef "treble"
                             \context Voice = "Piano Upper Voice" {
@@ -85,11 +125,21 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                 \context PercussionStaffGroup = "Percussion Staff Group" <<
                     \context PitchPipes = "Percussion Pitch Pipe Staff" {
                         \clef "percussion"
+                        \set Staff.instrumentName = \markup {
+                        \right-column
+                            {
+                                Pitch
+                                Pipes
+                            }
+                        }
+                        \set Staff.shortInstrumentName = \markup { Pp. }
                         \context Voice = "Percussion Pitch Pipe Voice" {
                         }
                     }
                     \context PercussionStaff = "Percussion Staff" {
                         \clef "percussion"
+                        \set Staff.instrumentName = \markup { Percussion }
+                        \set Staff.shortInstrumentName = \markup { Perc. }
                         \context Voice = "Percussion Voice" {
                         }
                     }
@@ -99,18 +149,24 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                 \tag #'violin
                 \context ViolinStaff = "Violin Staff" {
                     \clef "treble"
+                    \set Staff.instrumentName = \markup { Violin }
+                    \set Staff.shortInstrumentName = \markup { Vn. }
                     \context Voice = "Violin Voice" {
                     }
                 }
                 \tag #'viola
                 \context ViolaStaff = "Viola Staff" {
                     \clef "alto"
+                    \set Staff.instrumentName = \markup { Viola }
+                    \set Staff.shortInstrumentName = \markup { Va. }
                     \context Voice = "Viola Voice" {
                     }
                 }
                 \tag #'cello
                 \context CelloStaff = "Cello Staff" {
                     \clef "bass"
+                    \set Staff.instrumentName = \markup { Cello }
+                    \set Staff.shortInstrumentName = \markup { Vc. }
                     \context Voice = "Cello Voice" {
                     }
                 }
@@ -118,11 +174,21 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                 \context ContrabassStaffGroup = "Contrabass Staff Group" <<
                     \context PitchPipes = "Contrabass Pitch Pipe Staff" {
                         \clef "percussion"
+                        \set Staff.instrumentName = \markup {
+                        \right-column
+                            {
+                                Pitch
+                                Pipes
+                            }
+                        }
+                        \set Staff.shortInstrumentName = \markup { Pp. }
                         \context Voice = "Contrabass Pitch Pipe Voice" {
                         }
                     }
                     \context ContrabassStaff = "Contrabass Staff" {
                         \clef "bass_8"
+                        \set Staff.instrumentName = \markup { Contrabass }
+                        \set Staff.shortInstrumentName = \markup { Cb. }
                         \context Voice = "Contrabass Voice" {
                         }
                     }
