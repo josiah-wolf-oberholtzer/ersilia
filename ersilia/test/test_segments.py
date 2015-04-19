@@ -49,6 +49,10 @@ def test_segments_01(segment_path):
         )
     if os.path.exists(local_boilerplate_path):
         os.remove(local_boilerplate_path)
+    if os.path.exists(illustration_candidate_ly_path):
+        os.remove(illustration_candidate_ly_path)
+    if os.path.exists(illustration_candidate_pdf_path):
+        os.remove(illustration_candidate_pdf_path)
     with systemtools.FilesystemState(
         keep=[
             illustration_ly_path,
