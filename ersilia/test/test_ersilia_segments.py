@@ -33,6 +33,10 @@ def test_ersilia_segments_01(segment_path):
         segment_path,
         'illustration.pdf',
         )
+    metadata_path = os.path.join(
+        segment_path,
+        '__metadata__.py',
+        )
     illustration_candidate_ly_path = os.path.join(
         segment_path,
         'illustration.candidate.ly',
@@ -44,7 +48,11 @@ def test_ersilia_segments_01(segment_path):
     if os.path.exists(local_boilerplate_path):
         os.remove(local_boilerplate_path)
     with systemtools.FilesystemState(
-        keep=[illustration_ly_path, illustration_pdf_path],
+        keep=[
+            illustration_ly_path,
+            illustration_pdf_path,
+            metadata_path,
+            ],
         remove=[local_boilerplate_path],
         ):
         shutil.copyfile(boilerplate_path, local_boilerplate_path)
