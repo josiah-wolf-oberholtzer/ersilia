@@ -20,7 +20,7 @@ segment_paths = [_ for _ in segment_paths if os.path.isdir(_)]
 
 
 @pytest.mark.parametrize('segment_path', segment_paths)
-def test_ersilia_segments_01(segment_path):
+def test_segments_01(segment_path):
     local_boilerplate_path = os.path.join(
         segment_path,
         '__illustrate_segment__.py',

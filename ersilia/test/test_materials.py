@@ -20,7 +20,7 @@ material_paths = [_ for _ in material_paths if os.path.isdir(_)]
 
 
 @pytest.mark.parametrize('material_path', material_paths)
-def test_ersilia_materials_01(material_path):
+def test_materials_01(material_path):
     local_boilerplate_path = os.path.join(
         material_path,
         '__output_material__.py',
