@@ -43,6 +43,7 @@ nosetests.xml
 .DS_Store
 
 # Abjad IDE
+*backup
 __illustrate_segment__.py
 __output_material__.py
 __illustrate_material__.py
