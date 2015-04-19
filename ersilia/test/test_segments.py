@@ -3,14 +3,16 @@ import ide
 import os
 import pytest
 import shutil
-import ersilia
 from abjad.tools import systemtools
 
+
+test_directory, _ = os.path.split(os.path.abspath(__file__))
+score_directory = os.path.abspath(os.path.join(test_directory, '..'))
 
 boilerplate_path = ide.idetools.Configuration().boilerplate_directory
 boilerplate_path = os.path.join(boilerplate_path, '__illustrate_segment__.py')
 
-segments_path = os.path.join(ersilia.__path__[0], 'segments')
+segments_path = os.path.join(score_directory, 'segments')
 
 directory_names = os.listdir(segments_path)
 directory_names = [_ for _ in directory_names if not _.startswith(('.', '_'))]
