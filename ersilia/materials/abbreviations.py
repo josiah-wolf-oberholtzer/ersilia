@@ -74,16 +74,6 @@ agitato_pitch_specifier = consort.PitchSpecifier(
     )
 
 
-tranquilo_pitch_specifier = consort.PitchSpecifier(
-    pitch_segments=[
-        pitchtools.PitchClassSegment([2, 5, 7]),
-        pitchtools.PitchClassSegment([3, 6]),
-        pitchtools.PitchClassSegment([1, 3, 7, 9]),
-        ],
-    ratio=[1, 2, 1],
-    )
-
-
 pitch_operation_specifier = consort.PitchOperationSpecifier(
     pitch_operations=[
         pitchtools.Rotation(1),
