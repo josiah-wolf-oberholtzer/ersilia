@@ -17,5 +17,8 @@ latex:
 music:
 	lilypond ersilia-legal-landscape-music.ly
 
+open:
+	open ersilia-legal-landscape-score.pdf
+
 parts:
 	lilypond ersilia-legal-landscape-parts.ly

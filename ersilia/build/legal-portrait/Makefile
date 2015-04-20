@@ -17,5 +17,8 @@ latex:
 music:
 	lilypond ersilia-legal-portrait-music.ly
 
+open:
+	open ersilia-legal-portrait-score.pdf
+
 parts:
 	lilypond ersilia-legal-portrait-parts.ly
