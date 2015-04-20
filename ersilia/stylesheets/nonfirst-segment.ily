@@ -1,5 +1,3 @@
-\include "default-instrument-names.ily"
-
 \paper {
     print-page-number = ##f
 }

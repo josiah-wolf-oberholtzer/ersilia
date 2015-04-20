@@ -1,8 +1,45 @@
 \include "scheme.ily"
-\include "default-instrument-names.ily"
 
 #(set-default-paper-size "11x17" 'portrait)
 #(set-global-staff-size 12)
+
+\header {
+    composer = \markup {
+        \column {
+            \override #'(font-name . "Didot")
+                \fontsize #3 "Josiah Wolf Oberholtzer (1984)"
+            " "
+        }
+    }
+    tagline = \markup { "" }
+    title = \markup {
+        \column {
+            \center-align {
+                \override #'(font-name . "Didot Italic")
+                    \fontsize #4 {
+                        \line { Invisible Cities (iii): }
+                    }
+                \vspace #0.5
+                \override #'(font-name . "Didot")
+                    \fontsize #16 {
+                        \line { ERSILIA }
+                    }
+                \vspace #0.5
+                \override #'(font-name . "Didot Italic")
+                    \fontsize #2 {
+                        \line { ( a botanical survey of the uninhabited northeastern isles ) }
+                    }
+                \vspace #1
+                \override #'(font-name . "Didot Italic")
+                    \fontsize #4 {
+                        \line { for Ensemble Dal Niente }
+                        \null
+                        \null
+                    }
+            }
+        }
+    }
+}
 
 \paper {
 
@@ -225,11 +262,6 @@
         \alias Staff
         \RemoveEmptyStaves
         \override StaffSymbol.line-count = 1
-        instrumentName = \pitchPipesName
-        shortInstrumentName = \shortPitchPipesName
-        %\override Beam.positions = #'(-5 . -5)
-        %\override DynamicLineSpanner.staff-padding = 8
-        %\override TupletBracket.staff-padding = 4
     }
 
     \context {
@@ -237,11 +269,6 @@
         \name FluteStaff
         \type Engraver_group
         \alias Staff
-        instrumentName = \fluteName
-        shortInstrumentName = \shortFluteName
-        %\override Beam.positions = #'(-7 . -7)
-        %\override DynamicLineSpanner.staff-padding = 10
-        %\override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -249,11 +276,6 @@
         \name ClarinetStaff
         \type Engraver_group
         \alias Staff
-        instrumentName = \clarinetName
-        shortInstrumentName = \shortClarinetName
-        %\override Beam.positions = #'(-7 . -7)
-        %\override DynamicLineSpanner.staff-padding = 10
-        %\override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -261,11 +283,6 @@
         \name OboeStaff
         \type Engraver_group
         \alias Staff
-        instrumentName = \oboeName
-        shortInstrumentName = \shortOboeName
-        %\override Beam.positions = #'(-7 . -7)
-        %\override DynamicLineSpanner.staff-padding = 10
-        %\override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -273,11 +290,6 @@
         \name SaxophoneStaff
         \type Engraver_group
         \alias Staff
-        instrumentName = \saxophoneName
-        shortInstrumentName = \shortSaxophoneName
-        %\override Beam.positions = #'(-7 . -7)
-        %\override DynamicLineSpanner.staff-padding = 10
-        %\override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -302,11 +314,6 @@
         \name GuitarStaff
         \type Engraver_group
         \alias Staff
-        instrumentName = \guitarName
-        shortInstrumentName = \shortGuitarName
-        %\override Beam.positions = #'(-7 . -7)
-        %\override DynamicLineSpanner.staff-padding = 10
-        %\override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -324,10 +331,6 @@
         \name PianoUpperStaff
         \type Engraver_group
         \alias Staff
-        %\RemoveEmptyStaves
-        %\override Beam.positions = #'(-9 . -9)
-        %\override DynamicLineSpanner.staff-padding = 11
-        %\override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -335,10 +338,6 @@
         \name PianoLowerStaff
         \type Engraver_group
         \alias Staff
-        %\RemoveEmptyStaves
-        %\override Beam.positions = #'(-9 . -9)
-        %\override DynamicLineSpanner.staff-padding = 11
-        %\override TupletBracket.staff-padding = 6
     }
     
     \context{
@@ -347,8 +346,6 @@
         \accepts PianoLowerStaff
         \accepts PianoUpperStaff
         \accepts PitchPipes
-        instrumentName = \pianoName
-        shortInstrumentName = \shortPianoName
     }
 
     \context {
@@ -366,11 +363,6 @@
         \name PercussionStaff
         \type Engraver_group
         \alias Staff
-        instrumentName = \percussionName
-        shortInstrumentName = \shortPercussionName
-        %\override Beam.positions = #'(-7 . -7)
-        %\override DynamicLineSpanner.staff-padding = 10
-        %\override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -404,11 +396,6 @@
         \name ViolinStaff
         \type Engraver_group
         \alias Staff
-        instrumentName = \violinName
-        shortInstrumentName = \shortViolinName
-        %\override Beam.positions = #'(-7 . -7)
-        %\override DynamicLineSpanner.staff-padding = 10
-        %\override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -416,11 +403,6 @@
         \name ViolaStaff
         \type Engraver_group
         \alias Staff
-        instrumentName = \violaName
-        shortInstrumentName = \shortViolaName
-        %\override Beam.positions = #'(-7 . -7)
-        %\override DynamicLineSpanner.staff-padding = 10
-        %\override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -428,11 +410,6 @@
         \name CelloStaff
         \type Engraver_group
         \alias Staff
-        instrumentName = \celloName
-        shortInstrumentName = \shortCelloName
-        %\override Beam.positions = #'(-7 . -7)
-        %\override DynamicLineSpanner.staff-padding = 10
-        %\override TupletBracket.staff-padding = 6
     }
 
     \context {
@@ -440,11 +417,6 @@
         \name ContrabassStaff
         \type Engraver_group
         \alias Staff
-        instrumentName = \contrabassName
-        shortInstrumentName = \shortContrabassName
-        %\override Beam.positions = #'(-7 . -7)
-        %\override DynamicLineSpanner.staff-padding = 10
-        %\override TupletBracket.staff-padding = 6
     }
 
     \context {

@@ -8,44 +8,6 @@
 #(set-default-paper-size "11x17" 'landscape)
 #(set-global-staff-size 10)
 
-\header {
-    composer = \markup {
-        \column {
-            \override #'(font-name . "Didot")
-                \fontsize #3 "Josiah Wolf Oberholtzer (1984)"
-            " "
-        }
-    }
-    tagline = \markup { "" }
-    title = \markup {
-        \column {
-            \center-align {
-                \override #'(font-name . "Didot Italic")
-                    \fontsize #4 {
-                        \line { Invisible Cities (iii): }
-                    }
-                \vspace #0.5
-                \override #'(font-name . "Didot")
-                    \fontsize #16 {
-                        \line { ERSILIA }
-                    }
-                \vspace #0.5
-                \override #'(font-name . "Didot Italic")
-                    \fontsize #2 {
-                        \line { ( a botanical survey of the uninhabited northeastern isles ) }
-                    }
-                \vspace #1
-                \override #'(font-name . "Didot Italic")
-                    \fontsize #4 {
-                        \line { for Ensemble Dal Niente }
-                        \null
-                        \null
-                    }
-            }
-        }
-    }
-}
-
 \layout {
     \context {
         \WindSectionStaffGroup
