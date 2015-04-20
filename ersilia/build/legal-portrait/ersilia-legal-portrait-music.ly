@@ -4,51 +4,14 @@
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
-\include "../stylesheets/stylesheet.ily"
+\include "../../stylesheets/stylesheet.ily"
 #(set-default-paper-size "legal" 'portrait)
 #(set-global-staff-size 11)
-
-\header {
-    composer = \markup {
-        \column {
-            \override #'(font-name . "Didot")
-                \fontsize #3 "Josiah Wolf Oberholtzer (1984)"
-            " "
-        }
-    }
-    tagline = \markup { "" }
-    title = \markup {
-        \column {
-            \center-align {
-                \override #'(font-name . "Didot Italic")
-                    \fontsize #4 {
-                        \line { Invisible Cities (iii): }
-                    }
-                \vspace #0.5
-                \override #'(font-name . "Didot")
-                    \fontsize #16 {
-                        \line { ERSILIA }
-                    }
-                \vspace #0.5
-                \override #'(font-name . "Didot Italic")
-                    \fontsize #2 {
-                        \line { ( a botanical survey of the uninhabited northeastern isles ) }
-                    }
-                \vspace #1
-                \override #'(font-name . "Didot Italic")
-                    \fontsize #4 {
-                        \line { for Ensemble Dal Niente }
-                        \null
-                        \null
-                    }
-            }
-        }
-    }
-}
 
 \layout {
     \context {
         \Score 
+        \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1 28)
         \override StaffGrouper.staffgroup-staff-spacing = #'(
             (basic-distance . 10)
             (minimum-distance . 10)
@@ -61,20 +24,22 @@
             (padding . 5)
             (stretchability . 20)
             )
-        \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1 28)
         proportionalNotationDuration = #(ly:make-moment 1 28)
     }
 }
 
 \paper {
-    ragged-last-bottom = ##f
-    two-sided = ##f
     indent = 18\mm
+    last-bottom-spacing = #'(
+        (basic-distance . 10)
+        (minimum-distance . 10)
+        (padding . 5)
+        (stretchability . 0)
+        )
+    ragged-last-bottom = ##f
     short-indent = 12\mm
 }
 
 \score {
-    {
-        \include "segments.ily"
-    }
+    \include "../segments.ily"
 }
