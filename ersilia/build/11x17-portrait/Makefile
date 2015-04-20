@@ -25,4 +25,5 @@ parts:
 
 stage:
 	cp *-score.pdf ../../distribution
-	cp *-parts-*.pdf ../../distribution
+	cp *-preface.pdf ../../distribution
+	find . -name "*-parts-*.pdf" -exec cp {} ../../distribution \;
