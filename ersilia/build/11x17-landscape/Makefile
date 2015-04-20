@@ -22,3 +22,7 @@ open:
 
 parts:
 	lilypond ersilia-11x17-landscape-parts.ly
+
+stage:
+	cp *-score.pdf ../../distribution
+	cp *-parts-*.pdf ../../distributions

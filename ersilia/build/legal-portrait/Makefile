@@ -22,3 +22,7 @@ open:
 
 parts:
 	lilypond ersilia-legal-portrait-parts.ly
+
+stage:
+	cp *-score.pdf ../../distribution
+	cp *-parts-*.pdf ../../distributions
