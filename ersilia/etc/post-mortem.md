@@ -41,6 +41,8 @@ Mainline
 - pitch inequalities, pitch-center inequalities
 - division specifier? be able to split divisions larger than x duration
 - smart dynamics spanners, a la bow-contact-point spanner
+- spanner cache / lilypond format session
+- convert remaining indicators to use `_lilypond_format_bundle`
 
 IDE
 ---
