@@ -6,8 +6,8 @@
         \context TimeSignatureContext = "Time Signature Context" {
             \break
             {
-                \time 4/8
                 \tempo 4=64
+                \time 4/8
                 \mark \markup {
                     \concat
                         {
@@ -22,13 +22,7 @@
                                 [ii]
                         }
                     }
-                s1 * 1/2
-            }
-            {
-                s1 * 1/2
-            }
-            {
-                s1 * 1/2
+                s1 * 3/2
             }
         }
         \context WindSectionStaffGroup = "Wind Section Staff Group" <<
@@ -54,11 +48,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1/2
-                        }
-                        % [Flute Voice] Measure 140
-                        {
-                            R1 * 1/2
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -289,15 +279,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1/2
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 139
-                            {
-                                R1 * 1/2
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 140
-                            {
-                                R1 * 1/2
+                                R1 * 3/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -397,15 +379,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1/2
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 139
-                            {
-                                R1 * 1/2
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 140
-                            {
-                                R1 * 1/2
+                                R1 * 3/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -615,15 +589,7 @@
                         {
                             % [Piano Pedals Voice] Measure 138
                             {
-                                R1 * 1/2
-                            }
-                            % [Piano Pedals Voice] Measure 139
-                            {
-                                R1 * 1/2
-                            }
-                            % [Piano Pedals Voice] Measure 140
-                            {
-                                R1 * 1/2
+                                R1 * 3/2
                             }
                         }
                     }
@@ -649,15 +615,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1/2
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 139
-                            {
-                                R1 * 1/2
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 140
-                            {
-                                R1 * 1/2
+                                R1 * 3/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -807,11 +765,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1/2
-                        }
-                        % [Violin Voice] Measure 140
-                        {
-                            R1 * 1/2
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -933,15 +887,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1/2
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 139
-                            {
-                                R1 * 1/2
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 140
-                            {
-                                R1 * 1/2
+                                R1 * 3/2
                                 \stopStaff
                                 \startStaff
                             }

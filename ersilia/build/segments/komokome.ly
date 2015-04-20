@@ -4,24 +4,18 @@
         \tag #'time
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 4/4
                 \tempo 4=96
+                \time 4/4
                 \mark \markup {
                     \fontsize
                         #-3
                         Komokome
                     }
-                s1 * 1
-            }
-            {
-                s1 * 1
+                s1 * 2
             }
             {
                 \time 5/8
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
+                s1 * 5/4
             }
             {
                 \time 4/8
@@ -33,10 +27,7 @@
             }
             {
                 \time 5/8
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
+                s1 * 5/4
             }
             {
                 \time 4/8
@@ -52,10 +43,7 @@
             }
             {
                 \time 7/8
-                s1 * 7/8
-            }
-            {
-                s1 * 7/8
+                s1 * 7/4
             }
             {
                 \time 4/8
@@ -71,10 +59,7 @@
             }
             {
                 \time 4/8
-                s1 * 1/2
-            }
-            {
-                s1 * 1/2
+                s1 * 1
             }
             {
                 \time 5/8
@@ -94,35 +79,11 @@
             }
             {
                 \time 5/8
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
+                s1 * 5
             }
             {
                 \time 4/8
-                s1 * 1/2
-            }
-            {
-                s1 * 1/2
+                s1 * 1
             }
             {
                 \time 4/4
@@ -134,35 +95,11 @@
             }
             {
                 \time 4/4
-                s1 * 1
-            }
-            {
-                s1 * 1
+                s1 * 2
             }
             {
                 \time 5/8
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
+                s1 * 5
             }
             {
                 \time 4/8
@@ -174,13 +111,7 @@
             }
             {
                 \time 5/8
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
+                s1 * 15/8
             }
             {
                 \time 4/8
@@ -192,20 +123,11 @@
             }
             {
                 \time 5/8
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
+                s1 * 15/8
             }
             {
                 \time 4/8
-                s1 * 1/2
-            }
-            {
-                s1 * 1/2
+                s1 * 1
             }
             {
                 \time 7/8
@@ -213,22 +135,7 @@
             }
             {
                 \time 5/8
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
+                s1 * 15/4
             }
             {
                 \time 4/8
@@ -240,23 +147,11 @@
             }
             {
                 \time 5/8
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
-            }
-            {
-                s1 * 5/8
+                s1 * 15/8
             }
             {
                 \time 4/8
-                s1 * 1/2
-            }
-            {
-                s1 * 1/2
-            }
-            {
-                s1 * 1/2
+                s1 * 3/2
             }
         }
         \context WindSectionStaffGroup = "Wind Section Staff Group" <<
@@ -272,11 +167,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
-                        }
-                        % [Flute Voice] Measure 2
-                        {
-                            R1 * 1
+                            R1 * 2
                             \stopStaff
                             \startStaff
                         }
@@ -1839,19 +1730,11 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
-                        }
-                        % [Oboe Voice] Measure 2
-                        {
-                            R1 * 1
+                            R1 * 2
                         }
                         % [Oboe Voice] Measure 3
                         {
-                            R1 * 5/8
-                        }
-                        % [Oboe Voice] Measure 4
-                        {
-                            R1 * 5/8
+                            R1 * 5/4
                             \stopStaff
                             \startStaff
                         }
@@ -1898,11 +1781,7 @@
                         }
                         % [Oboe Voice] Measure 7
                         {
-                            R1 * 5/8
-                        }
-                        % [Oboe Voice] Measure 8
-                        {
-                            R1 * 5/8
+                            R1 * 5/4
                         }
                         % [Oboe Voice] Measure 9
                         {
@@ -2822,11 +2701,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/8
-                        }
-                        % [Oboe Voice] Measure 60
-                        {
-                            R1 * 5/8
+                            R1 * 5/4
                             \stopStaff
                             \startStaff
                         }
@@ -3665,11 +3540,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/8
-                        }
-                        % [Clarinet Voice] Measure 29
-                        {
-                            R1 * 5/8
+                            R1 * 5/4
                             \stopStaff
                             \startStaff
                         }
@@ -3776,11 +3647,7 @@
                         }
                         % [Clarinet Voice] Measure 35
                         {
-                            R1 * 1
-                        }
-                        % [Clarinet Voice] Measure 36
-                        {
-                            R1 * 1
+                            R1 * 2
                         }
                         % [Clarinet Voice] Measure 37
                         {
@@ -3883,11 +3750,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/8
-                        }
-                        % [Clarinet Voice] Measure 42
-                        {
-                            R1 * 5/8
+                            R1 * 5/4
                             \stopStaff
                             \startStaff
                         }
@@ -4131,11 +3994,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/8
-                        }
-                        % [Clarinet Voice] Measure 60
-                        {
-                            R1 * 5/8
+                            R1 * 5/4
                             \stopStaff
                             \startStaff
                         }
@@ -4732,11 +4591,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1/2
-                        }
-                        % [Saxophone Voice] Measure 18
-                        {
-                            R1 * 1/2
+                            R1 * 1
                         }
                         % [Saxophone Voice] Measure 19
                         {
@@ -5111,27 +4966,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/8
-                        }
-                        % [Saxophone Voice] Measure 40
-                        {
-                            R1 * 5/8
-                        }
-                        % [Saxophone Voice] Measure 41
-                        {
-                            R1 * 5/8
-                        }
-                        % [Saxophone Voice] Measure 42
-                        {
-                            R1 * 5/8
-                        }
-                        % [Saxophone Voice] Measure 43
-                        {
-                            R1 * 5/8
-                        }
-                        % [Saxophone Voice] Measure 44
-                        {
-                            R1 * 5/8
+                            R1 * 15/4
                             \stopStaff
                             \startStaff
                         }
@@ -5465,11 +5300,7 @@
                         }
                         % [Saxophone Voice] Measure 58
                         {
-                            R1 * 5/8
-                        }
-                        % [Saxophone Voice] Measure 59
-                        {
-                            R1 * 5/8
+                            R1 * 5/4
                             \stopStaff
                             \startStaff
                         }
@@ -5673,19 +5504,11 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 2
-                            {
-                                R1 * 1
+                                R1 * 2
                             }
                             % [Guitar Pitch Pipe Voice] Measure 3
                             {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 4
-                            {
-                                R1 * 5/8
+                                R1 * 5/4
                             }
                             % [Guitar Pitch Pipe Voice] Measure 5
                             {
@@ -5697,11 +5520,7 @@
                             }
                             % [Guitar Pitch Pipe Voice] Measure 7
                             {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 8
-                            {
-                                R1 * 5/8
+                                R1 * 5/4
                             }
                             % [Guitar Pitch Pipe Voice] Measure 9
                             {
@@ -5717,11 +5536,7 @@
                             }
                             % [Guitar Pitch Pipe Voice] Measure 12
                             {
-                                R1 * 7/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 13
-                            {
-                                R1 * 7/8
+                                R1 * 7/4
                             }
                             % [Guitar Pitch Pipe Voice] Measure 14
                             {
@@ -5737,11 +5552,7 @@
                             }
                             % [Guitar Pitch Pipe Voice] Measure 17
                             {
-                                R1 * 1/2
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 18
-                            {
-                                R1 * 1/2
+                                R1 * 1
                             }
                             % [Guitar Pitch Pipe Voice] Measure 19
                             {
@@ -5761,43 +5572,11 @@
                             }
                             % [Guitar Pitch Pipe Voice] Measure 23
                             {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 24
-                            {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 25
-                            {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 26
-                            {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 27
-                            {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 28
-                            {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 29
-                            {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 30
-                            {
-                                R1 * 5/8
+                                R1 * 5
                             }
                             % [Guitar Pitch Pipe Voice] Measure 31
                             {
-                                R1 * 1/2
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 32
-                            {
-                                R1 * 1/2
+                                R1 * 1
                             }
                             % [Guitar Pitch Pipe Voice] Measure 33
                             {
@@ -5809,43 +5588,11 @@
                             }
                             % [Guitar Pitch Pipe Voice] Measure 35
                             {
-                                R1 * 1
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 36
-                            {
-                                R1 * 1
+                                R1 * 2
                             }
                             % [Guitar Pitch Pipe Voice] Measure 37
                             {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 38
-                            {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 39
-                            {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 40
-                            {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 41
-                            {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 42
-                            {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 43
-                            {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 44
-                            {
-                                R1 * 5/8
+                                R1 * 5
                             }
                             % [Guitar Pitch Pipe Voice] Measure 45
                             {
@@ -5857,15 +5604,7 @@
                             }
                             % [Guitar Pitch Pipe Voice] Measure 47
                             {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 48
-                            {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 49
-                            {
-                                R1 * 5/8
+                                R1 * 15/8
                             }
                             % [Guitar Pitch Pipe Voice] Measure 50
                             {
@@ -5877,23 +5616,11 @@
                             }
                             % [Guitar Pitch Pipe Voice] Measure 52
                             {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 53
-                            {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 54
-                            {
-                                R1 * 5/8
+                                R1 * 15/8
                             }
                             % [Guitar Pitch Pipe Voice] Measure 55
                             {
-                                R1 * 1/2
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 56
-                            {
-                                R1 * 1/2
+                                R1 * 1
                             }
                             % [Guitar Pitch Pipe Voice] Measure 57
                             {
@@ -5901,27 +5628,7 @@
                             }
                             % [Guitar Pitch Pipe Voice] Measure 58
                             {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 59
-                            {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 60
-                            {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 61
-                            {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 62
-                            {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 63
-                            {
-                                R1 * 5/8
+                                R1 * 15/4
                             }
                             % [Guitar Pitch Pipe Voice] Measure 64
                             {
@@ -5933,27 +5640,11 @@
                             }
                             % [Guitar Pitch Pipe Voice] Measure 66
                             {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 67
-                            {
-                                R1 * 5/8
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 68
-                            {
-                                R1 * 5/8
+                                R1 * 15/8
                             }
                             % [Guitar Pitch Pipe Voice] Measure 69
                             {
-                                R1 * 1/2
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 70
-                            {
-                                R1 * 1/2
-                            }
-                            % [Guitar Pitch Pipe Voice] Measure 71
-                            {
-                                R1 * 1/2
+                                R1 * 3/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -6868,19 +6559,11 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 2
-                            {
-                                R1 * 1
+                                R1 * 2
                             }
                             % [Piano Pitch Pipe Voice] Measure 3
                             {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 4
-                            {
-                                R1 * 5/8
+                                R1 * 5/4
                             }
                             % [Piano Pitch Pipe Voice] Measure 5
                             {
@@ -6892,11 +6575,7 @@
                             }
                             % [Piano Pitch Pipe Voice] Measure 7
                             {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 8
-                            {
-                                R1 * 5/8
+                                R1 * 5/4
                             }
                             % [Piano Pitch Pipe Voice] Measure 9
                             {
@@ -6912,11 +6591,7 @@
                             }
                             % [Piano Pitch Pipe Voice] Measure 12
                             {
-                                R1 * 7/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 13
-                            {
-                                R1 * 7/8
+                                R1 * 7/4
                             }
                             % [Piano Pitch Pipe Voice] Measure 14
                             {
@@ -6932,11 +6607,7 @@
                             }
                             % [Piano Pitch Pipe Voice] Measure 17
                             {
-                                R1 * 1/2
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 18
-                            {
-                                R1 * 1/2
+                                R1 * 1
                             }
                             % [Piano Pitch Pipe Voice] Measure 19
                             {
@@ -6956,43 +6627,11 @@
                             }
                             % [Piano Pitch Pipe Voice] Measure 23
                             {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 24
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 25
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 26
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 27
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 28
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 29
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 30
-                            {
-                                R1 * 5/8
+                                R1 * 5
                             }
                             % [Piano Pitch Pipe Voice] Measure 31
                             {
-                                R1 * 1/2
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 32
-                            {
-                                R1 * 1/2
+                                R1 * 1
                             }
                             % [Piano Pitch Pipe Voice] Measure 33
                             {
@@ -7004,43 +6643,11 @@
                             }
                             % [Piano Pitch Pipe Voice] Measure 35
                             {
-                                R1 * 1
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 36
-                            {
-                                R1 * 1
+                                R1 * 2
                             }
                             % [Piano Pitch Pipe Voice] Measure 37
                             {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 38
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 39
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 40
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 41
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 42
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 43
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 44
-                            {
-                                R1 * 5/8
+                                R1 * 5
                             }
                             % [Piano Pitch Pipe Voice] Measure 45
                             {
@@ -7052,15 +6659,7 @@
                             }
                             % [Piano Pitch Pipe Voice] Measure 47
                             {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 48
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 49
-                            {
-                                R1 * 5/8
+                                R1 * 15/8
                             }
                             % [Piano Pitch Pipe Voice] Measure 50
                             {
@@ -7072,23 +6671,11 @@
                             }
                             % [Piano Pitch Pipe Voice] Measure 52
                             {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 53
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 54
-                            {
-                                R1 * 5/8
+                                R1 * 15/8
                             }
                             % [Piano Pitch Pipe Voice] Measure 55
                             {
-                                R1 * 1/2
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 56
-                            {
-                                R1 * 1/2
+                                R1 * 1
                             }
                             % [Piano Pitch Pipe Voice] Measure 57
                             {
@@ -7096,27 +6683,7 @@
                             }
                             % [Piano Pitch Pipe Voice] Measure 58
                             {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 59
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 60
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 61
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 62
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 63
-                            {
-                                R1 * 5/8
+                                R1 * 15/4
                             }
                             % [Piano Pitch Pipe Voice] Measure 64
                             {
@@ -7128,27 +6695,11 @@
                             }
                             % [Piano Pitch Pipe Voice] Measure 66
                             {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 67
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 68
-                            {
-                                R1 * 5/8
+                                R1 * 15/8
                             }
                             % [Piano Pitch Pipe Voice] Measure 69
                             {
-                                R1 * 1/2
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 70
-                            {
-                                R1 * 1/2
-                            }
-                            % [Piano Pitch Pipe Voice] Measure 71
-                            {
-                                R1 * 1/2
+                                R1 * 3/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -7167,11 +6718,7 @@
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 1
-                                }
-                                % [Piano Upper Voice] Measure 2
-                                {
-                                    R1 * 1
+                                    R1 * 2
                                     \stopStaff
                                     \startStaff
                                 }
@@ -9673,7 +9220,12 @@
                                     }
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 1
-                                    <e' g' b'>8 \f \>
+                                    <
+                                        \tweak #'color #red
+                                        e'
+                                        g'
+                                        b'
+                                    >8 \f \>
                                         ^ \markup {
                                             \center-align
                                                 \natural
@@ -10690,11 +10242,7 @@
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 1/2
-                                }
-                                % [Piano Lower Voice] Measure 18
-                                {
-                                    R1 * 1/2
+                                    R1 * 1
                                     \stopStaff
                                     \startStaff
                                 }
@@ -10915,19 +10463,7 @@
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 5/8
-                                }
-                                % [Piano Lower Voice] Measure 28
-                                {
-                                    R1 * 5/8
-                                }
-                                % [Piano Lower Voice] Measure 29
-                                {
-                                    R1 * 5/8
-                                }
-                                % [Piano Lower Voice] Measure 30
-                                {
-                                    R1 * 5/8
+                                    R1 * 5/2
                                 }
                                 % [Piano Lower Voice] Measure 31
                                 {
@@ -11533,7 +11069,19 @@
                                     \once \override NoteHead.text = \markup {
                                     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                                     }
-                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
+                                    <
+                                        a,,
+                                        c,
+                                        e,
+                                        g,
+                                        b,
+                                        d
+                                        f
+                                        a
+                                        c'
+                                        \tweak #'color #red
+                                        e'
+                                    >8 -\accent \fff
                                         ^ \markup {
                                             \center-align
                                                 \concat
@@ -11595,15 +11143,7 @@
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
                                     \startStaff
-                                    R1 * 5/8
-                                }
-                                % [Piano Lower Voice] Measure 60
-                                {
-                                    R1 * 5/8
-                                }
-                                % [Piano Lower Voice] Measure 61
-                                {
-                                    R1 * 5/8
+                                    R1 * 15/8
                                     \stopStaff
                                     \startStaff
                                 }
@@ -11876,19 +11416,11 @@
                         {
                             % [Piano Pedals Voice] Measure 1
                             {
-                                R1 * 1
-                            }
-                            % [Piano Pedals Voice] Measure 2
-                            {
-                                R1 * 1
+                                R1 * 2
                             }
                             % [Piano Pedals Voice] Measure 3
                             {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 4
-                            {
-                                R1 * 5/8
+                                R1 * 5/4
                             }
                             % [Piano Pedals Voice] Measure 5
                             {
@@ -11900,11 +11432,7 @@
                             }
                             % [Piano Pedals Voice] Measure 7
                             {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 8
-                            {
-                                R1 * 5/8
+                                R1 * 5/4
                             }
                             % [Piano Pedals Voice] Measure 9
                             {
@@ -11920,11 +11448,7 @@
                             }
                             % [Piano Pedals Voice] Measure 12
                             {
-                                R1 * 7/8
-                            }
-                            % [Piano Pedals Voice] Measure 13
-                            {
-                                R1 * 7/8
+                                R1 * 7/4
                             }
                             % [Piano Pedals Voice] Measure 14
                             {
@@ -11940,11 +11464,7 @@
                             }
                             % [Piano Pedals Voice] Measure 17
                             {
-                                R1 * 1/2
-                            }
-                            % [Piano Pedals Voice] Measure 18
-                            {
-                                R1 * 1/2
+                                R1 * 1
                             }
                             % [Piano Pedals Voice] Measure 19
                             {
@@ -11964,43 +11484,11 @@
                             }
                             % [Piano Pedals Voice] Measure 23
                             {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 24
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 25
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 26
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 27
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 28
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 29
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 30
-                            {
-                                R1 * 5/8
+                                R1 * 5
                             }
                             % [Piano Pedals Voice] Measure 31
                             {
-                                R1 * 1/2
-                            }
-                            % [Piano Pedals Voice] Measure 32
-                            {
-                                R1 * 1/2
+                                R1 * 1
                             }
                             % [Piano Pedals Voice] Measure 33
                             {
@@ -12012,43 +11500,11 @@
                             }
                             % [Piano Pedals Voice] Measure 35
                             {
-                                R1 * 1
-                            }
-                            % [Piano Pedals Voice] Measure 36
-                            {
-                                R1 * 1
+                                R1 * 2
                             }
                             % [Piano Pedals Voice] Measure 37
                             {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 38
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 39
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 40
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 41
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 42
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 43
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 44
-                            {
-                                R1 * 5/8
+                                R1 * 5
                             }
                             % [Piano Pedals Voice] Measure 45
                             {
@@ -12060,15 +11516,7 @@
                             }
                             % [Piano Pedals Voice] Measure 47
                             {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 48
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 49
-                            {
-                                R1 * 5/8
+                                R1 * 15/8
                             }
                             % [Piano Pedals Voice] Measure 50
                             {
@@ -12080,23 +11528,11 @@
                             }
                             % [Piano Pedals Voice] Measure 52
                             {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 53
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 54
-                            {
-                                R1 * 5/8
+                                R1 * 15/8
                             }
                             % [Piano Pedals Voice] Measure 55
                             {
-                                R1 * 1/2
-                            }
-                            % [Piano Pedals Voice] Measure 56
-                            {
-                                R1 * 1/2
+                                R1 * 1
                             }
                             % [Piano Pedals Voice] Measure 57
                             {
@@ -12104,27 +11540,7 @@
                             }
                             % [Piano Pedals Voice] Measure 58
                             {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 59
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 60
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 61
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 62
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 63
-                            {
-                                R1 * 5/8
+                                R1 * 15/4
                             }
                             % [Piano Pedals Voice] Measure 64
                             {
@@ -12136,27 +11552,11 @@
                             }
                             % [Piano Pedals Voice] Measure 66
                             {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 67
-                            {
-                                R1 * 5/8
-                            }
-                            % [Piano Pedals Voice] Measure 68
-                            {
-                                R1 * 5/8
+                                R1 * 15/8
                             }
                             % [Piano Pedals Voice] Measure 69
                             {
-                                R1 * 1/2
-                            }
-                            % [Piano Pedals Voice] Measure 70
-                            {
-                                R1 * 1/2
-                            }
-                            % [Piano Pedals Voice] Measure 71
-                            {
-                                R1 * 1/2
+                                R1 * 3/2
                             }
                         }
                     }
@@ -12181,19 +11581,11 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 2
-                            {
-                                R1 * 1
+                                R1 * 2
                             }
                             % [Percussion Pitch Pipe Voice] Measure 3
                             {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 4
-                            {
-                                R1 * 5/8
+                                R1 * 5/4
                             }
                             % [Percussion Pitch Pipe Voice] Measure 5
                             {
@@ -12205,11 +11597,7 @@
                             }
                             % [Percussion Pitch Pipe Voice] Measure 7
                             {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 8
-                            {
-                                R1 * 5/8
+                                R1 * 5/4
                             }
                             % [Percussion Pitch Pipe Voice] Measure 9
                             {
@@ -12225,11 +11613,7 @@
                             }
                             % [Percussion Pitch Pipe Voice] Measure 12
                             {
-                                R1 * 7/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 13
-                            {
-                                R1 * 7/8
+                                R1 * 7/4
                             }
                             % [Percussion Pitch Pipe Voice] Measure 14
                             {
@@ -12245,11 +11629,7 @@
                             }
                             % [Percussion Pitch Pipe Voice] Measure 17
                             {
-                                R1 * 1/2
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 18
-                            {
-                                R1 * 1/2
+                                R1 * 1
                             }
                             % [Percussion Pitch Pipe Voice] Measure 19
                             {
@@ -12269,43 +11649,11 @@
                             }
                             % [Percussion Pitch Pipe Voice] Measure 23
                             {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 24
-                            {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 25
-                            {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 26
-                            {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 27
-                            {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 28
-                            {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 29
-                            {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 30
-                            {
-                                R1 * 5/8
+                                R1 * 5
                             }
                             % [Percussion Pitch Pipe Voice] Measure 31
                             {
-                                R1 * 1/2
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 32
-                            {
-                                R1 * 1/2
+                                R1 * 1
                             }
                             % [Percussion Pitch Pipe Voice] Measure 33
                             {
@@ -12317,43 +11665,11 @@
                             }
                             % [Percussion Pitch Pipe Voice] Measure 35
                             {
-                                R1 * 1
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 36
-                            {
-                                R1 * 1
+                                R1 * 2
                             }
                             % [Percussion Pitch Pipe Voice] Measure 37
                             {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 38
-                            {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 39
-                            {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 40
-                            {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 41
-                            {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 42
-                            {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 43
-                            {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 44
-                            {
-                                R1 * 5/8
+                                R1 * 5
                             }
                             % [Percussion Pitch Pipe Voice] Measure 45
                             {
@@ -12365,15 +11681,7 @@
                             }
                             % [Percussion Pitch Pipe Voice] Measure 47
                             {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 48
-                            {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 49
-                            {
-                                R1 * 5/8
+                                R1 * 15/8
                             }
                             % [Percussion Pitch Pipe Voice] Measure 50
                             {
@@ -12385,23 +11693,11 @@
                             }
                             % [Percussion Pitch Pipe Voice] Measure 52
                             {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 53
-                            {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 54
-                            {
-                                R1 * 5/8
+                                R1 * 15/8
                             }
                             % [Percussion Pitch Pipe Voice] Measure 55
                             {
-                                R1 * 1/2
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 56
-                            {
-                                R1 * 1/2
+                                R1 * 1
                             }
                             % [Percussion Pitch Pipe Voice] Measure 57
                             {
@@ -12409,27 +11705,7 @@
                             }
                             % [Percussion Pitch Pipe Voice] Measure 58
                             {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 59
-                            {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 60
-                            {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 61
-                            {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 62
-                            {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 63
-                            {
-                                R1 * 5/8
+                                R1 * 15/4
                             }
                             % [Percussion Pitch Pipe Voice] Measure 64
                             {
@@ -12441,27 +11717,11 @@
                             }
                             % [Percussion Pitch Pipe Voice] Measure 66
                             {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 67
-                            {
-                                R1 * 5/8
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 68
-                            {
-                                R1 * 5/8
+                                R1 * 15/8
                             }
                             % [Percussion Pitch Pipe Voice] Measure 69
                             {
-                                R1 * 1/2
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 70
-                            {
-                                R1 * 1/2
-                            }
-                            % [Percussion Pitch Pipe Voice] Measure 71
-                            {
-                                R1 * 1/2
+                                R1 * 3/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -12817,11 +12077,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1/2
-                            }
-                            % [Percussion Voice] Measure 18
-                            {
-                                R1 * 1/2
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -13906,19 +13162,11 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
-                        }
-                        % [Violin Voice] Measure 2
-                        {
-                            R1 * 1
+                            R1 * 2
                         }
                         % [Violin Voice] Measure 3
                         {
-                            R1 * 5/8
-                        }
-                        % [Violin Voice] Measure 4
-                        {
-                            R1 * 5/8
+                            R1 * 5/4
                         }
                         % [Violin Voice] Measure 5
                         {
@@ -14069,11 +13317,7 @@
                         }
                         % [Violin Voice] Measure 12
                         {
-                            R1 * 7/8
-                        }
-                        % [Violin Voice] Measure 13
-                        {
-                            R1 * 7/8
+                            R1 * 7/4
                         }
                         % [Violin Voice] Measure 14
                         {
@@ -14291,11 +13535,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/8
-                        }
-                        % [Violin Voice] Measure 28
-                        {
-                            R1 * 5/8
+                            R1 * 5/4
                             \stopStaff
                             \startStaff
                         }
@@ -14495,11 +13735,7 @@
                         }
                         % [Violin Voice] Measure 37
                         {
-                            R1 * 5/8
-                        }
-                        % [Violin Voice] Measure 38
-                        {
-                            R1 * 5/8
+                            R1 * 5/4
                             \stopStaff
                             \startStaff
                         }
@@ -14540,11 +13776,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/8
-                        }
-                        % [Violin Voice] Measure 41
-                        {
-                            R1 * 5/8
+                            R1 * 5/4
                             \stopStaff
                             \startStaff
                         }
@@ -14569,11 +13801,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/8
-                        }
-                        % [Violin Voice] Measure 44
-                        {
-                            R1 * 5/8
+                            R1 * 5/4
                         }
                         % [Violin Voice] Measure 45
                         {
@@ -14771,15 +13999,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/8
-                        }
-                        % [Violin Voice] Measure 53
-                        {
-                            R1 * 5/8
-                        }
-                        % [Violin Voice] Measure 54
-                        {
-                            R1 * 5/8
+                            R1 * 15/8
                         }
                         % [Violin Voice] Measure 55
                         {
@@ -14877,11 +14097,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/8
-                        }
-                        % [Violin Voice] Measure 60
-                        {
-                            R1 * 5/8
+                            R1 * 5/4
                             \stopStaff
                             \startStaff
                         }
@@ -14934,11 +14150,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/8
-                        }
-                        % [Violin Voice] Measure 63
-                        {
-                            R1 * 5/8
+                            R1 * 5/4
                             \stopStaff
                             \startStaff
                         }
@@ -15207,19 +14419,11 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
-                        }
-                        % [Viola Voice] Measure 2
-                        {
-                            R1 * 1
+                            R1 * 2
                         }
                         % [Viola Voice] Measure 3
                         {
-                            R1 * 5/8
-                        }
-                        % [Viola Voice] Measure 4
-                        {
-                            R1 * 5/8
+                            R1 * 5/4
                         }
                         % [Viola Voice] Measure 5
                         {
@@ -15374,11 +14578,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 7/8
-                        }
-                        % [Viola Voice] Measure 13
-                        {
-                            R1 * 7/8
+                            R1 * 7/4
                         }
                         % [Viola Voice] Measure 14
                         {
@@ -15723,11 +14923,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1/2
-                        }
-                        % [Viola Voice] Measure 32
-                        {
-                            R1 * 1/2
+                            R1 * 1
                         }
                         % [Viola Voice] Measure 33
                         {
@@ -15788,19 +14984,11 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
-                        }
-                        % [Viola Voice] Measure 36
-                        {
-                            R1 * 1
+                            R1 * 2
                         }
                         % [Viola Voice] Measure 37
                         {
-                            R1 * 5/8
-                        }
-                        % [Viola Voice] Measure 38
-                        {
-                            R1 * 5/8
+                            R1 * 5/4
                             \stopStaff
                             \startStaff
                         }
@@ -15930,11 +15118,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/8
-                        }
-                        % [Viola Voice] Measure 44
-                        {
-                            R1 * 5/8
+                            R1 * 5/4
                         }
                         % [Viola Voice] Measure 45
                         {
@@ -16133,15 +15317,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/8
-                        }
-                        % [Viola Voice] Measure 53
-                        {
-                            R1 * 5/8
-                        }
-                        % [Viola Voice] Measure 54
-                        {
-                            R1 * 5/8
+                            R1 * 15/8
                             \stopStaff
                             \startStaff
                         }
@@ -16316,11 +15492,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/8
-                        }
-                        % [Viola Voice] Measure 63
-                        {
-                            R1 * 5/8
+                            R1 * 5/4
                             \stopStaff
                             \startStaff
                         }
@@ -16547,19 +15719,11 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
-                        }
-                        % [Cello Voice] Measure 2
-                        {
-                            R1 * 1
+                            R1 * 2
                         }
                         % [Cello Voice] Measure 3
                         {
-                            R1 * 5/8
-                        }
-                        % [Cello Voice] Measure 4
-                        {
-                            R1 * 5/8
+                            R1 * 5/4
                         }
                         % [Cello Voice] Measure 5
                         {
@@ -16671,11 +15835,7 @@
                         }
                         % [Cello Voice] Measure 12
                         {
-                            R1 * 7/8
-                        }
-                        % [Cello Voice] Measure 13
-                        {
-                            R1 * 7/8
+                            R1 * 7/4
                         }
                         % [Cello Voice] Measure 14
                         {
@@ -17065,19 +16225,11 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1
-                        }
-                        % [Cello Voice] Measure 36
-                        {
-                            R1 * 1
+                            R1 * 2
                         }
                         % [Cello Voice] Measure 37
                         {
-                            R1 * 5/8
-                        }
-                        % [Cello Voice] Measure 38
-                        {
-                            R1 * 5/8
+                            R1 * 5/4
                             \stopStaff
                             \startStaff
                         }
@@ -17205,11 +16357,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/8
-                        }
-                        % [Cello Voice] Measure 44
-                        {
-                            R1 * 5/8
+                            R1 * 5/4
                         }
                         % [Cello Voice] Measure 45
                         {
@@ -17628,11 +16776,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/8
-                        }
-                        % [Cello Voice] Measure 59
-                        {
-                            R1 * 5/8
+                            R1 * 5/4
                             \stopStaff
                             \startStaff
                         }
@@ -17685,15 +16829,7 @@
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 5/8
-                        }
-                        % [Cello Voice] Measure 62
-                        {
-                            R1 * 5/8
-                        }
-                        % [Cello Voice] Measure 63
-                        {
-                            R1 * 5/8
+                            R1 * 15/8
                             \stopStaff
                             \startStaff
                         }
@@ -17927,19 +17063,11 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 2
-                            {
-                                R1 * 1
+                                R1 * 2
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 3
                             {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 4
-                            {
-                                R1 * 5/8
+                                R1 * 5/4
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 5
                             {
@@ -17951,11 +17079,7 @@
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 7
                             {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 8
-                            {
-                                R1 * 5/8
+                                R1 * 5/4
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 9
                             {
@@ -17971,11 +17095,7 @@
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 12
                             {
-                                R1 * 7/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 13
-                            {
-                                R1 * 7/8
+                                R1 * 7/4
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 14
                             {
@@ -17991,11 +17111,7 @@
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 17
                             {
-                                R1 * 1/2
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 18
-                            {
-                                R1 * 1/2
+                                R1 * 1
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 19
                             {
@@ -18015,43 +17131,11 @@
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 23
                             {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 24
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 25
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 26
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 27
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 28
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 29
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 30
-                            {
-                                R1 * 5/8
+                                R1 * 5
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 31
                             {
-                                R1 * 1/2
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 32
-                            {
-                                R1 * 1/2
+                                R1 * 1
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 33
                             {
@@ -18063,43 +17147,11 @@
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 35
                             {
-                                R1 * 1
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 36
-                            {
-                                R1 * 1
+                                R1 * 2
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 37
                             {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 38
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 39
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 40
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 41
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 42
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 43
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 44
-                            {
-                                R1 * 5/8
+                                R1 * 5
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 45
                             {
@@ -18111,15 +17163,7 @@
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 47
                             {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 48
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 49
-                            {
-                                R1 * 5/8
+                                R1 * 15/8
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 50
                             {
@@ -18131,23 +17175,11 @@
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 52
                             {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 53
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 54
-                            {
-                                R1 * 5/8
+                                R1 * 15/8
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 55
                             {
-                                R1 * 1/2
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 56
-                            {
-                                R1 * 1/2
+                                R1 * 1
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 57
                             {
@@ -18155,27 +17187,7 @@
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 58
                             {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 59
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 60
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 61
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 62
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 63
-                            {
-                                R1 * 5/8
+                                R1 * 15/4
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 64
                             {
@@ -18187,27 +17199,11 @@
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 66
                             {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 67
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 68
-                            {
-                                R1 * 5/8
+                                R1 * 15/8
                             }
                             % [Contrabass Pitch Pipe Voice] Measure 69
                             {
-                                R1 * 1/2
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 70
-                            {
-                                R1 * 1/2
-                            }
-                            % [Contrabass Pitch Pipe Voice] Measure 71
-                            {
-                                R1 * 1/2
+                                R1 * 3/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -18310,11 +17306,7 @@
                             }
                             % [Contrabass Voice] Measure 12
                             {
-                                R1 * 7/8
-                            }
-                            % [Contrabass Voice] Measure 13
-                            {
-                                R1 * 7/8
+                                R1 * 7/4
                             }
                             % [Contrabass Voice] Measure 14
                             {
@@ -18371,11 +17363,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1/2
-                            }
-                            % [Contrabass Voice] Measure 18
-                            {
-                                R1 * 1/2
+                                R1 * 1
                             }
                             % [Contrabass Voice] Measure 19
                             {
@@ -18586,19 +17574,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 5/8
-                            }
-                            % [Contrabass Voice] Measure 28
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Voice] Measure 29
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Voice] Measure 30
-                            {
-                                R1 * 5/8
+                                R1 * 5/2
                                 \stopStaff
                                 \startStaff
                             }
@@ -18780,19 +17756,7 @@
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 5/8
-                            }
-                            % [Contrabass Voice] Measure 42
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Voice] Measure 43
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Voice] Measure 44
-                            {
-                                R1 * 5/8
+                                R1 * 5/2
                             }
                             % [Contrabass Voice] Measure 45
                             {
@@ -18804,15 +17768,7 @@
                             }
                             % [Contrabass Voice] Measure 47
                             {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Voice] Measure 48
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Voice] Measure 49
-                            {
-                                R1 * 5/8
+                                R1 * 15/8
                             }
                             % [Contrabass Voice] Measure 50
                             {
@@ -18824,23 +17780,11 @@
                             }
                             % [Contrabass Voice] Measure 52
                             {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Voice] Measure 53
-                            {
-                                R1 * 5/8
-                            }
-                            % [Contrabass Voice] Measure 54
-                            {
-                                R1 * 5/8
+                                R1 * 15/8
                             }
                             % [Contrabass Voice] Measure 55
                             {
-                                R1 * 1/2
-                            }
-                            % [Contrabass Voice] Measure 56
-                            {
-                                R1 * 1/2
+                                R1 * 1
                             }
                             % [Contrabass Voice] Measure 57
                             {

@@ -6,8 +6,8 @@
         \context TimeSignatureContext = "Time Signature Context" {
             \break
             {
-                \time 4/8
                 \tempo 4=96
+                \time 4/8
                 \mark \markup {
                     \concat
                         {
