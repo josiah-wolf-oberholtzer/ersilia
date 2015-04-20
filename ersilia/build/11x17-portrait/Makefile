@@ -25,4 +25,4 @@ parts:
 
 stage:
 	cp *-score.pdf ../../distribution
-	cp *-parts-*.pdf ../../distributions
+	cp *-parts-*.pdf ../../distribution
