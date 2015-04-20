@@ -2,11 +2,11 @@ all:
 	make clean
 	make music
 	make parts
-	makr latex
+	make latex
 
 clean:
-	rm *.aux
-	rm *.log
+	rm -Rif *.aux
+	rm -Rif *.log
 
 latex:
 	xelatex ersilia-11x17-landscape-preface.tex
@@ -16,6 +16,9 @@ latex:
 
 music:
 	lilypond ersilia-11x17-landscape-music.ly
+
+open:
+	open ersilia-11x17-landscape-score.pdf
 
 parts:
 	lilypond ersilia-11x17-landscape-parts.ly

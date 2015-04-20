@@ -2,11 +2,11 @@ all:
 	make clean
 	make music
 	make parts
-	makr latex
+	make latex
 
 clean:
-	rm *.aux
-	rm *.log
+	rm -Rif *.aux
+	rm -Rif *.log
 
 latex:
 	xelatex ersilia-legal-portrait-preface.tex

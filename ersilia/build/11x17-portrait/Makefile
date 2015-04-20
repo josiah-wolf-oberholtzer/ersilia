@@ -2,11 +2,11 @@ all:
 	make clean
 	make music
 	make parts
-	makr latex
+	make latex
 
 clean:
-	rm *.aux
-	rm *.log
+	rm -Rif *.aux
+	rm -Rif *.log
 
 latex:
 	xelatex ersilia-11x17-portrait-preface.tex
@@ -16,6 +16,9 @@ latex:
 
 music:
 	lilypond ersilia-11x17-portrait-music.ly
+
+open:
+	open ersilia-11x17-portrait-score.pdf
 
 parts:
 	lilypond ersilia-11x17-portrait-parts.ly
