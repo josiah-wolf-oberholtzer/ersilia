@@ -5738,15 +5738,7 @@
                             }
                             {
                                 {
-                                    <
-                                        \tweak #'color #red
-                                        a
-                                        cs'
-                                        e'
-                                        a'
-                                        bf'
-                                        e''
-                                    >8 :64 \fp
+                                    <a cs' e' a' bf' e''>8 :64 \fp
                                 }
                             }
                             {
@@ -6282,15 +6274,7 @@
                             {
                                 % [Piano Upper Voice] Measure 106
                                 {
-                                    <
-                                        \tweak #'color #red
-                                        as
-                                        d'
-                                        f'
-                                        as'
-                                        b'
-                                        f''
-                                    >8 :64 \fp
+                                    <as d' f' as' b' f''>8 :64 \fp
                                 }
                             }
                             {
@@ -6737,15 +6721,7 @@
                             {
                                 % [Piano Upper Voice] Measure 119
                                 {
-                                    <
-                                        \tweak #'color #red
-                                        ds
-                                        g
-                                        as
-                                        ds'
-                                        e'
-                                        as'
-                                    >8 :64 \fp
+                                    <ds g as ds' e' as'>8 :64 \fp
                                 }
                             }
                             {
@@ -7646,13 +7622,7 @@
                                     af,16 -\staccato \f \> [
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 1
-                                    <
-                                        af,
-                                        b,
-                                        f
-                                        \tweak #'color #red
-                                        bf
-                                    >8 :64 -\accent
+                                    <af, b, f bf>8 :64 -\accent
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 2
                                     e16 -\staccato
