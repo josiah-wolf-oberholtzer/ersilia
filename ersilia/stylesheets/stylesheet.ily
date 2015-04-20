@@ -206,7 +206,6 @@
         \override BarNumber.font-size = 1
         \override BarNumber.padding = 4
 
-        \override MetronomeMark.outside-staff-horizontal-padding = 0
         \override MetronomeMark.X-extent = #'(0 . 0)
         \override MetronomeMark.Y-extent = #'(0 . 0)
         \override MetronomeMark.break-align-symbols = #'(left-edge)
@@ -216,6 +215,7 @@
         \override MetronomeMark.padding = 0
         \override MetronomeMark.staff-padding = 0
         \override MetronomeMark.outside-staff-padding = 0
+        \override MetronomeMark.outside-staff-horizontal-padding = 0
         \override MetronomeMark.minimum-space = 0
 
         \override RehearsalMark.X-extent = #'(0 . 0)
