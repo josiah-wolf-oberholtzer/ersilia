@@ -473,6 +473,7 @@
         \override Hairpin.bound-padding = 1.5
 
         \override InstrumentName.self-alignment-X = #RIGHT
+        \override MultiMeasureRest.expand-limit = #1
 
         \override NoteCollision.merge-differently-dotted = ##t
         \override NoteColumn.ignore-collision = ##t

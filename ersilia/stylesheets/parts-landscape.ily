@@ -28,6 +28,7 @@
             (stretchability . 0)
             )
         proportionalNotationDuration = #(ly:make-moment 1 16)
+        skipBars = ##t
     }
 }
 

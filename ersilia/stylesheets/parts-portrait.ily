@@ -3,7 +3,6 @@
 \layout {
     \context {
         \Score
-        proportionalNotationDuration = #(ly:make-moment 1 16)
         \override StaffGrouper.staffgroup-staff-spacing = #'(
             (basic-distance . 0)
             (minimum-distance . 0)
@@ -16,6 +15,8 @@
             (padding . 6)
             (stretchability . 0)
             )
+        proportionalNotationDuration = #(ly:make-moment 1 16)
+        skipBars = ##t
     }
     \context {
         \WindSectionStaffGroup
