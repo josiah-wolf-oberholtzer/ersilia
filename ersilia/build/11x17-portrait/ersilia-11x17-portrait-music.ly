@@ -4,7 +4,7 @@
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
-\include "../stylesheets/stylesheet.ily"
+\include "../../stylesheets/stylesheet.ily"
 #(set-default-paper-size "11x17" 'portrait)
 #(set-global-staff-size 10)
 
@@ -41,5 +41,5 @@
 }
 
 \score {
-    \include "segments.ily"
+    \include "../segments.ily"
 }
