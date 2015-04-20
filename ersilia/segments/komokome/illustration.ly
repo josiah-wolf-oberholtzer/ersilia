@@ -9228,12 +9228,7 @@
                                     }
                                     \set stemLeftBeamCount = 1
                                     \set stemRightBeamCount = 1
-                                    <
-                                        \tweak #'color #red
-                                        e'
-                                        g'
-                                        b'
-                                    >8 \f \>
+                                    <e' g' b'>8 \f \>
                                         ^ \markup {
                                             \center-align
                                                 \natural
@@ -11077,19 +11072,7 @@
                                     \once \override NoteHead.text = \markup {
                                     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                                     }
-                                    <
-                                        a,,
-                                        c,
-                                        e,
-                                        g,
-                                        b,
-                                        d
-                                        f
-                                        a
-                                        c'
-                                        \tweak #'color #red
-                                        e'
-                                    >8 -\accent \fff
+                                    <a,, c, e, g, b, d f a c' e'>8 -\accent \fff
                                         ^ \markup {
                                             \center-align
                                                 \concat

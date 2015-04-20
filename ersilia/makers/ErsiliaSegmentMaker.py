@@ -56,8 +56,12 @@ class ErsiliaSegmentMaker(consort.SegmentMaker):
     def validate_score(score, verbose=True):
         consort.SegmentMaker.validate_score(score, verbose=verbose)
         component = score['Piano Staff']
-        message = '    coloring piano conflicts'
-        with systemtools.ProgressIndicator(message) as progress_indicator:
+        progress_indicator = systemtools.ProgressIndicator(
+            is_warning=True,
+            message='    coloring piano conflicts',
+            verbose=verbose,
+            )
+        with progress_indicator:
             for vertical_moment in iterate(component).by_vertical_moment():
                 pitch_numbers = collections.Counter()
                 notes_and_chords = vertical_moment.notes_and_chords
@@ -82,14 +86,14 @@ class ErsiliaSegmentMaker(consort.SegmentMaker):
                         pitch_number = note_or_chord.written_pitch.pitch_number
                         pitch_number = float(pitch_number)
                         if pitch_number in conflict_pitch_numbers:
-                            note_or_chord.note_head.tweak.color = 'red'
+                            #note_or_chord.note_head.tweak.color = 'red'
                             progress_indicator.advance()
                     else:
                         for note_head in note_or_chord.note_heads:
                             pitch_number = note_head.written_pitch.pitch_number
                             pitch_number = float(pitch_number)
                             if pitch_number in conflict_pitch_numbers:
-                                note_head.tweak.color = 'red'
+                                #note_head.tweak.color = 'red'
                                 progress_indicator.advance()
 
     ### PUBLIC PROPERTIES ###
