@@ -30,6 +30,7 @@ Building
         \override MetronomeMark.minimum-space = 0
 - multi-measure rest compression:
     - must compress skips in time signature context as well
+- date information
 
 Mainline
 --------
