@@ -14,6 +14,7 @@ Building
 - build/preface/: chunks for use with TPGrid
 - build/parts.ily: all of the parts to export
 - use \bookpart and \bookOutputSuffix for parts
+
 - use indent and short-indent, not left-margin
     - but, changing the paper size messes these up,
       so make sure to redefine after any paper-size change

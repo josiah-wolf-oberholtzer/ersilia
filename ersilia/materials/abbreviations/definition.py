@@ -61,7 +61,6 @@ percussion_staff = consort.AttachmentExpression(
         ],
     )
 
-
 agitato_pitch_specifier = consort.PitchSpecifier(
     pitch_segments=[
         pitchtools.PitchClassSegment([0, 3, 2, 5, 11, 1]),
@@ -123,3 +122,16 @@ guitar_chords = tuple(
         "d  f  b   d'  g'",
         )
     )
+
+__all__ = [
+    'agitato_pitch_specifier',
+    'black_keys_spanner',
+    'chromatic_keys_spanner',
+    'guitar_chords',
+    'laissez_vibrer',
+    'make_text_markup',
+    'make_text_spanner',
+    'percussion_staff',
+    'pitch_operation_specifier',
+    'white_keys_spanner',
+    ]
