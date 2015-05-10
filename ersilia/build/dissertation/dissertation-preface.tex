@@ -6,10 +6,10 @@
 \usepackage{import}
 \usepackage{xltxtra,fontspec,xunicode}
 \usepackage[absolute]{textpos}
-\usepackage[papersize={8.5in, 11in}]{geometry}
+\usepackage[papersize={8.5in, 11in}, margin=1in]{geometry}
 \usepackage{nopageno}
 
-\TPGrid[0.5in, 0.25in]{23}{24}
+\TPGrid[1in, 0.5in]{23}{24}
 \parindent=0pt
 \parskip=12pt
 \setromanfont[Numbers=Uppercase]{Didot}
@@ -17,20 +17,18 @@
 
 \begin{document}
 
-\begin{textblock}{23}(0, 0)
-    \center\huge\textbf{PREFACE}
-\end{textblock}
+\begin{textblock}{23}(0, 0)\center\huge\textbf{PREFACE}\end{textblock}
 
-\begin{textblock}{11}(0, 1)
+\begin{textblock}{11}(0, 1.5)
     {
-    \small
+    \footnotesize
     \subimport{../assets/calvino}{}
     }
 \end{textblock}
 
-\begin{textblock}{11}(12, 1)
+\begin{textblock}{11}(12, 1.5)
     {
-    \small
+    \footnotesize
     \subimport{../assets/leguin}{}
     }
 \end{textblock}
@@ -40,8 +38,8 @@
     \subimport{../assets/instrumentation}{}
 \end{textblock}
 
-\begin{textblock}{16}(7, 11)
-    \small
+\begin{textblock}{15}(8, 11)
+    \footnotesize
     \subimport{../assets/performance-notes}{}
 \end{textblock}
 

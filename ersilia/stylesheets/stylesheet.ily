@@ -43,12 +43,6 @@
 
 \paper {
 
-    %annotate-spacing = ##t
-
-    two-sided = ##f
-    inner-margin = 30\mm
-    outer-margin = 10\mm
-
     indent = 20\mm
     short-indent = 15\mm
 
@@ -57,8 +51,8 @@
     right-margin = 10\mm
     top-margin = 10\mm
 
-    oddHeaderMarkup = \markup \fill-line { " " }
-    evenHeaderMarkup = \markup \fill-line { " " }
+    oddHeaderMarkup = \markup {}
+    evenHeaderMarkup = \markup {}
     oddFooterMarkup = \markup
         \fill-line {
             \override #'(font-name . "Didot")
@@ -490,7 +484,6 @@
         \override StaffSymbol.layer = -1
         \override Stem.details.beamed-lengths = #'(6)
         \override Stem.details.lengths = #'(6)
-        %\override Stem.direction = #down
         \override Stem.stemlet-length = 1.5
         \override StemTremolo.beam-width = 1.5
         \override StemTremolo.flag-count = 4
@@ -507,7 +500,6 @@
         \override TrillSpanner.bound-details.right.padding = 1
 
         \override TupletBracket.breakable = ##t
-        %\override TupletBracket.direction = #down
         \override TupletBracket.full-length-padding = 1.5
         \override TupletBracket.full-length-to-extent = ##f
         \override TupletBracket.padding = 1.5
