@@ -78,13 +78,11 @@
 }
 
 \paper {
-    %annotate-spacing = ##t
-
     indent = 20\mm
     short-indent = 15\mm
 
     bottom-margin = 1\in
-    left-margin = 0.5\in
+    left-margin = 1\in
     right-margin = 1\in
     top-margin = 1\in
 

@@ -17,7 +17,10 @@ materials_path = os.path.join(score_directory, 'materials')
 directory_names = os.listdir(materials_path)
 directory_names = [_ for _ in directory_names if not _.startswith(('.', '_'))]
 
-material_paths = [os.path.join(materials_path, _) for _ in directory_names]
+material_paths = [
+    os.path.join(materials_path, _) for _ in directory_names
+    if _ != 'abbreviations'
+    ]
 material_paths = [_ for _ in material_paths if os.path.isdir(_)]
 
 

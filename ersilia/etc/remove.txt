@@ -1,0 +1,143 @@
+abbreviations
+       2       6     191
+
+dense_timespan_maker
+      15      30    1218
+
+guitar_agitato_music_specifier
+       3       6     260
+
+guitar_continuo_music_specifier
+       0       0       0
+
+guitar_pointillist_harmonics_music_specifier
+       0       0       0
+
+guitar_strummed_music_specifier
+       3       6     265
+
+guitar_tremolo_music_specifier
+       1       2      89
+
+guitar_undulation_tremolo_music_specifier
+       1       2      96
+
+percussion_bamboo_windchimes_music_specifier
+       1       2     104
+
+percussion_crotales_flash_music_specifier
+       3       6     300
+
+percussion_crotales_interruption_music_specifier
+       1       2     108
+
+percussion_low_pedal_music_specifier
+       3       6     292
+
+percussion_marimba_agitato_music_specifier
+       1       2     102
+
+percussion_marimba_ostinato_music_specifier
+       0       0       0
+
+percussion_marimba_tremolo_music_specifier
+       1       2     101
+
+percussion_snare_interruption_music_specifier
+       2       4     210
+
+percussion_temple_block_fanfare_music_specifier
+       4       8     428
+
+percussion_tom_fanfare_music_specifier
+       5      10     490
+
+permitted_time_signatures
+       5      10     504
+
+piano_agitato_music_specifier
+       9      18     802
+
+piano_arm_cluster_music_specifier
+       4       8     363
+
+piano_glissando_music_specifier
+       0       0       0
+
+piano_palm_cluster_music_specifier
+       3       6     280
+
+piano_pedals_music_setting
+       0       0       0
+
+piano_pointillist_music_specifier
+       3       6     278
+
+piano_string_glissando_music_specifier
+       1       2      98
+
+piano_tremolo_music_specifier
+       3       6     260
+
+pitch_pipe_music_specifier
+       5      10     428
+
+saxophone_agitato_music_specifier
+       9      18     864
+
+shaker_decelerando_music_specifier
+       7      14     652
+
+shaker_sporadic_music_specifier
+       2       4     176
+
+shaker_tremolo_music_specifier
+       7      14     618
+
+sparse_timespan_maker
+      18      36    1459
+
+string_agitato_music_specifier
+      11      22     941
+
+string_legato_music_specifier
+       4       8     333
+
+string_low_pedal_music_specifier
+       3       6     259
+
+string_ostinato_music_specifier
+       0       0       0
+
+string_overpressure_music_specifier
+       6      12     550
+
+string_pointillist_music_specifier
+       5      10     456
+
+string_tremolo_music_specifier
+       6      12     507
+
+sustained_timespan_maker
+       9      18     705
+
+tutti_timespan_maker
+       2       4     161
+
+wind_agitato_music_specifier
+       9      18     814
+
+wind_continuo_music_specifier
+       6      12     512
+
+wind_low_pedal_music_specifier
+       4       8     356
+
+wind_ostinato_music_specifier
+       0       0       0
+
+wind_pointillist_music_specifier
+      10      20     925
+
+wind_tremolo_music_specifier
+       5      10     433

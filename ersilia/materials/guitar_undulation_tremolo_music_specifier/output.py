@@ -25,8 +25,6 @@ guitar_undulation_tremolo_music_specifier = consort.tools.MusicSpecifier(
                         flatten=True,
                         pitched=True,
                         trivial=True,
-                        only_with_head=False,
-                        only_with_tail=False,
                         ),
                     selectortools.DurationSelectorCallback(
                         duration=selectortools.DurationInequality(
