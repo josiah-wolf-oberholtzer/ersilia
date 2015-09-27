@@ -1,51 +1,41 @@
 # -*- encoding: utf-8 -*-
-import ide
 import os
 import pytest
-import shutil
-from abjad.tools import systemtools
+import sys
+import traceback
+import ide
 
 
-test_directory, _ = os.path.split(os.path.abspath(__file__))
-score_directory = os.path.abspath(os.path.join(test_directory, '..'))
-
-boilerplate_path = ide.idetools.Configuration().boilerplate_directory
-boilerplate_path = os.path.join(boilerplate_path, '__output_material__.py')
-
-materials_path = os.path.join(score_directory, 'materials')
-
-directory_names = os.listdir(materials_path)
-directory_names = [_ for _ in directory_names if not _.startswith(('.', '_'))]
-
-material_paths = [
-    os.path.join(materials_path, _) for _ in directory_names
-    if _ != 'abbreviations'
-    ]
-material_paths = [_ for _ in material_paths if os.path.isdir(_)]
+abjad_ide = ide.tools.idetools.AbjadIDE()
+this_file = os.path.abspath(__file__)
+test_directory = os.path.dirname(this_file)
+inner_score_directory = os.path.dirname(test_directory)
+outer_score_directory = os.path.dirname(inner_score_directory)
+composer_scores_directory = os.path.dirname(outer_score_directory)
+# Travis monkey patch
+abjad_ide._configuration._composer_scores_directory_override = \
+    composer_scores_directory
+materials_directory = abjad_ide._to_score_directory(this_file, 'materials')
+material_directories = abjad_ide._list_visible_paths(materials_directory)
 
 
-@pytest.mark.parametrize('material_path', material_paths)
-def test_materials_01(material_path):
-    local_boilerplate_path = os.path.join(
-        material_path,
-        '__output_material__.py',
-        )
-    local_output_path = os.path.join(
-        material_path,
-        'output.py',
-        )
-    if os.path.exists(local_boilerplate_path):
-        os.remove(local_boilerplate_path)
-    with systemtools.FilesystemState(
-        #keep=[local_output_path],
-        remove=[local_boilerplate_path],
-        ):
-        shutil.copyfile(boilerplate_path, local_boilerplate_path)
-        if os.path.exists(local_output_path):
-            os.remove(local_output_path)
-        assert os.path.exists(local_boilerplate_path)
-        assert not os.path.exists(local_output_path)
-        command = 'python {}'.format(local_boilerplate_path)
-        exit_status = systemtools.IOManager.spawn_subprocess(command)
-        assert exit_status == 0
-        assert os.path.exists(local_output_path)
+@pytest.mark.parametrize('material_directory', material_directories)
+def test_materials_01(material_directory):
+    r'''Checks material definition files.
+    '''
+    try:
+        abjad_ide.check_definition_file(material_directory)
+    except:
+        traceback.print_exc()
+        sys.exit(1)
+
+
+@pytest.mark.parametrize('material_directory', material_directories)
+def test_materials_02(material_directory):
+    r'''Makes material PDFs.
+    '''
+    try:
+        abjad_ide.make_pdf(material_directory)
+    except:
+        traceback.print_exc()
+        sys.exit(1)

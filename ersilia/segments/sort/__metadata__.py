@@ -1,4 +1,4 @@
-# -*- encoding: utf-8 -*-
+# -*- coding: utf-8 -*-
 from abjad import *
 
 
@@ -38,10 +38,10 @@ metadata = datastructuretools.TypedOrderedDict(
             'end_time_signature',
             (4, 8),
             ),
-        ('first_bar_number', 75),
+        ('first_bar_number', 122),
         ('is_repeated', None),
         ('measure_count', 63),
         ('segment_count', 5),
-        ('segment_number', 3),
+        ('segment_number', 5),
         ]
     )
