@@ -12,7 +12,7 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
     ::
 
         >>> import ersilia
-        >>> template = ersilia.makers.ErsiliaScoreTemplate()
+        >>> template = ersilia.tools.ErsiliaScoreTemplate()
         >>> score = template()
         >>> print(format(score))
         \context Score = "Ersilia Score" <<

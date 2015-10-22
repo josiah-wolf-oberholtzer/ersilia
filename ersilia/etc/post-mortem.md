@@ -39,7 +39,7 @@ Mainline
 - need a universal "logical context" system
     - please, no more `%%% \time 3/4 %%%`
 - audit *all* named intervals: cf - cs is a big problem
-- more modular rhythm-makers
+- more modular rhythm-tools
 - pitch inequalities, pitch-center inequalities
 - division specifier? be able to split divisions larger than x duration
 - smart dynamics spanners, a la bow-contact-point spanner
