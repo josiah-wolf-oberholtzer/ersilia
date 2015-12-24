@@ -41,6 +41,7 @@ nosetests.xml
 
 # Etc.
 .DS_Store
+.cache
 
 # Abjad IDE
 *backup
