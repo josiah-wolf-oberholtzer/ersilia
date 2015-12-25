@@ -23,7 +23,7 @@ percussion_marimba_agitato_music_specifier = consort.MusicSpecifier(
                 .by_logical_tie(pitched=True)
                 .by_duration('==', (1, 16), preprolated=True)
                 .by_pattern(
-                    rhythmmakertools.BooleanPattern(
+                    rhythmmakertools.Pattern(
                         indices=[0, 3],
                         period=7,
                         ),
@@ -82,8 +82,10 @@ percussion_marimba_agitato_music_specifier = consort.MusicSpecifier(
         extra_counts_per_division=[0, 0, 1, 2, 0, 1],
         division_masks=[
             rhythmmakertools.SustainMask(
-                indices=[1],
-                period=3,
+                pattern=rhythmmakertools.Pattern(
+                    indices=[1],
+                    period=3,
+                    ),
                 ),
             ],
         talea=rhythmmakertools.Talea(

@@ -66,11 +66,15 @@ percussion_low_pedal_music_specifier = consort.MusicSpecifier(
         denominators=[8],
         division_masks=[
             rhythmmakertools.SustainMask(
-                indices=[0, 1],
-                period=3,
+                pattern=rhythmmakertools.Pattern(
+                    indices=[0, 1],
+                    period=3,
+                    ),
                 ),
             rhythmmakertools.SustainMask(
-                indices=[0, -1],
+                pattern=rhythmmakertools.Pattern(
+                    indices=[0, -1],
+                    ),
                 ),
             ],
         tie_specifier=rhythmmakertools.TieSpecifier(

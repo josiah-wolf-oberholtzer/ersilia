@@ -56,7 +56,7 @@ wind_agitato_music_specifier = consort.MusicSpecifier(
                 .by_contiguity()
                 .by_length('>', 1)
                 .by_pattern(
-                    pattern=rhythmmakertools.BooleanPattern(
+                    pattern=rhythmmakertools.Pattern(
                         indices=[0],
                         period=2,
                         ),
@@ -71,7 +71,7 @@ wind_agitato_music_specifier = consort.MusicSpecifier(
                 .by_contiguity()
                 .by_length('>', 1)
                 .by_pattern(
-                    pattern=rhythmmakertools.BooleanPattern(
+                    pattern=rhythmmakertools.Pattern(
                         indices=[0, 2],
                         period=3,
                         ),
@@ -107,8 +107,10 @@ wind_agitato_music_specifier = consort.MusicSpecifier(
         extra_counts_per_division=[0, 0, 1, 2, 0, 1],
         division_masks=[
             rhythmmakertools.SustainMask(
-                indices=[1],
-                period=3,
+                pattern=rhythmmakertools.Pattern(
+                    indices=[1],
+                    period=3,
+                    ),
                 ),
             ],
         talea=rhythmmakertools.Talea(

@@ -88,8 +88,10 @@ piano_agitato_music_specifier = consort.MusicSpecifier(
         extra_counts_per_division=[0, 0, 1],
         division_masks=[
             rhythmmakertools.SustainMask(
-                indices=[0],
-                period=3,
+                pattern=rhythmmakertools.Pattern(
+                    indices=[0],
+                    period=3,
+                    ),
                 ),
             ],
         talea=rhythmmakertools.Talea(

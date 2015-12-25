@@ -63,9 +63,11 @@ percussion_marimba_tremolo_music_specifier = consort.MusicSpecifier(
         denominators=[16],
         division_masks=[
             rhythmmakertools.SustainMask(
-                indices=[2],
-                invert=True,
-                period=3,
+                pattern=rhythmmakertools.Pattern(
+                    indices=[2],
+                    invert=True,
+                    period=3,
+                    ),
                 ),
             ],
         tie_specifier=rhythmmakertools.TieSpecifier(

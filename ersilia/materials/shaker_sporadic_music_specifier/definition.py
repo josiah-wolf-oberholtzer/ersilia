@@ -41,8 +41,10 @@ shaker_sporadic_music_specifier = consort.MusicSpecifier(
         extra_counts_per_division=[0, 0, 1],
         division_masks=[
             rhythmmakertools.SustainMask(
-                indices=[2],
-                period=3,
+                pattern=rhythmmakertools.Pattern(
+                    indices=[2],
+                    period=3,
+                    ),
                 ),
             ],
         talea=rhythmmakertools.Talea(

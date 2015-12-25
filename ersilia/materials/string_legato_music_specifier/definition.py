@@ -21,7 +21,7 @@ string_legato_music_specifier = consort.MusicSpecifier(
                 .by_leaves()
                 .by_logical_tie(pitched=True)
                 .by_pattern(
-                    rhythmmakertools.BooleanPattern(
+                    rhythmmakertools.Pattern(
                         indices=[3],
                         period=4,
                         ),
@@ -40,7 +40,7 @@ string_legato_music_specifier = consort.MusicSpecifier(
                 .by_leaves()
                 .by_logical_tie(pitched=True)
                 .by_pattern(
-                    rhythmmakertools.BooleanPattern(
+                    rhythmmakertools.Pattern(
                         indices=[0, 1, 2],
                         period=4,
                         ),

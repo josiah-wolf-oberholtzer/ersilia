@@ -20,3 +20,4 @@ class Percussion(abctools.AbjadObject):
     SNARE_DRUM = pitchtools.NamedPitch('D4')
     TAM_TAM = pitchtools.NamedPitch('B3')
     BASS_DRUM = pitchtools.NamedPitch('G3')
+
