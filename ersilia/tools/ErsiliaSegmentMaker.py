@@ -76,7 +76,7 @@ class ErsiliaSegmentMaker(consort.SegmentMaker):
                             pitch_number = float(pitch_number)
                             pitch_numbers[pitch_number] += 1
                 conflict_pitch_numbers = set()
-                for pitch_number, count in pitch_numbers.iteritems():
+                for pitch_number, count in pitch_numbers.items():
                     if 1 < count:
                         conflict_pitch_numbers.add(pitch_number)
                 if not conflict_pitch_numbers:

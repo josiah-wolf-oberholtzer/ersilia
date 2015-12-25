@@ -307,10 +307,12 @@ segment_maker.add_setting(
 segment_maker.add_setting(
     timespan_maker=consort.BoundaryTimespanMaker(
         labels='piano arm cluster',
-        output_masks=[
+        division_masks=[
             rhythmmakertools.SilenceMask(
-                indices=[0, 1, 3],
-                period=5,
+                pattern=rhythmmakertools.Pattern(
+                    indices=[0, 1, 3],
+                    period=5,
+                    ),
                 ),
             ],
         start_talea=(3, 8),
@@ -330,10 +332,12 @@ segment_maker.add_setting(
     timespan_identifier=[-1, 1],
     timespan_maker=consort.BoundaryTimespanMaker(
         labels='piano arm cluster',
-        output_masks=[
+        division_masks=[
             rhythmmakertools.SilenceMask(
-                indices=[0, 1, 3],
-                period=5,
+                pattern=rhythmmakertools.Pattern(
+                    indices=[0, 1, 3],
+                    period=5,
+                    ),
                 ),
             ],
         start_talea=(3, 8),
