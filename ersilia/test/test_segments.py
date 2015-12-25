@@ -26,5 +26,5 @@ def test_segments_01(segment_directory):
 @pytest.mark.parametrize('segment_directory', segment_directories)
 def test_segments_02(segment_directory):
     r'''Makes segments PDFs.'''
-    success = abjad_ide.make_pdf(segment_directory)
+    success = abjad_ide.make_pdf(segment_directory, subroutine=True)
     assert success
