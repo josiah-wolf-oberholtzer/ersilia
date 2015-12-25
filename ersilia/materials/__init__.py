@@ -6,5 +6,4 @@ from ersilia.materials import abbreviations
 systemtools.ImportManager.import_material_packages(
     __path__[0],
     globals(),
-    definitions_only=True,
     )
