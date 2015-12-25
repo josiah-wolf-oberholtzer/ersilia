@@ -41,13 +41,17 @@ guitar_undulation_tremolo_music_specifier = consort.MusicSpecifier(
     rhythm_maker=rhythmmakertools.EvenDivisionRhythmMaker(
         denominators=[8],
         extra_counts_per_division=[0, 1],
-        output_masks=[
+        division_masks=[
             rhythmmakertools.SustainMask(
-                indices=[2],
-                period=3,
+                pattern=rhythmmakertools.Pattern(
+                    indices=[2],
+                    period=3,
+                    ),
                 ),
             rhythmmakertools.SustainMask(
-                indices=[0, -1],
+                pattern=rhythmmakertools.Pattern(
+                    indices=[0, -1],
+                    ),
                 ),
             ],
         tie_specifier=rhythmmakertools.TieSpecifier(

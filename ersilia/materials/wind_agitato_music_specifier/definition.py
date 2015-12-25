@@ -105,7 +105,7 @@ wind_agitato_music_specifier = consort.MusicSpecifier(
         ),
     rhythm_maker=rhythmmakertools.TaleaRhythmMaker(
         extra_counts_per_division=[0, 0, 1, 2, 0, 1],
-        output_masks=[
+        division_masks=[
             rhythmmakertools.SustainMask(
                 indices=[1],
                 period=3,

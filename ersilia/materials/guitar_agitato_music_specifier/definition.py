@@ -88,10 +88,12 @@ guitar_agitato_music_specifier = consort.MusicSpecifier(
             right_counts=[1],
             ),
         extra_counts_per_division=[0, 0, 1],
-        output_masks=[
+        division_masks=[
             rhythmmakertools.SustainMask(
-                indices=[0],
-                period=3,
+                pattern=rhythmmakertools.Pattern(
+                    indices=[0],
+                    period=3,
+                    ),
                 ),
             ],
         talea=rhythmmakertools.Talea(
