@@ -1,8 +1,6 @@
 # -*- encoding: utf-8 -*-
 import os
 import pytest
-import sys
-import traceback
 import ide
 
 
@@ -23,19 +21,12 @@ material_directories = abjad_ide._list_visible_paths(materials_directory)
 def test_materials_01(material_directory):
     r'''Checks material definition files.
     '''
-    try:
-        abjad_ide.check_definition_file(material_directory)
-    except:
-        traceback.print_exc()
-        sys.exit(1)
+    abjad_ide.check_definition_file(material_directory)
 
 
 @pytest.mark.parametrize('material_directory', material_directories)
 def test_materials_02(material_directory):
     r'''Makes material PDFs.
     '''
-    try:
-        abjad_ide.make_pdf(material_directory)
-    except:
-        traceback.print_exc()
-        sys.exit(1)
+    success = abjad_ide.make_pdf(material_directory)
+    assert success
