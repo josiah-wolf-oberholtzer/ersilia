@@ -1,27 +1,16 @@
-\version "2.19.17"
+\version "2.19.32"
 \language "english"
 
-\include "/Users/josiah/Documents/Development/consort/consort/stylesheets/stylesheet.ily"
-
-\header {
-    tagline = \markup {}
-    title = #"Wind Tremolo Music Specifier"
-}
+\include "/Users/joberholtzer/Development/consort/consort/stylesheets/stylesheet.ily"
 
 \score {
     \context Score = "String Quartet Score" <<
         \tag #'time
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 3/8
                 \tempo 4=72
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
+                \time 3/8
+                s1 * 9/8
             }
             {
                 \time 7/8
@@ -29,13 +18,7 @@
             }
             {
                 \time 3/8
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
+                s1 * 9/8
             }
         }
         \tag #'violin-1
@@ -75,13 +58,13 @@
                         % [Violin 1 Voice] Measure 3
                         {
                             \pitchedTrill
-                            c''8 -\accent \fp \startTrillSpan d''
+                            c''8 -\accent -\accent \fp \startTrillSpan d''
                             <> \stopTrillSpan
                         }
                     }
                     {
                         {
-                            r4
+                            r4 -\accent
                         }
                     }
                     {
@@ -158,49 +141,18 @@
                             cs'8 -\accent \fp \< \startTrillSpan ds'
                         }
                         % [Violin 2 Voice] Measure 2
-                        \times 4/5 {
-                            cs'16 \repeatTie [
+                        {
+                            cs'8 \repeatTie [
                             <> \stopTrillSpan
                             \once \override TrillSpanner.bound-details.left.text = \markup {
                                 \null
                                 }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
+                            \set stemLeftBeamCount = 1
                             \pitchedTrill
-                            fs'16 -\accent \startTrillSpan gs'
-                            <> \stopTrillSpan
-                            \once \override TrillSpanner.bound-details.left.text = \markup {
-                                \null
-                                }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            \pitchedTrill
-                            a'16 -\accent \startTrillSpan b'
-                            <> \stopTrillSpan
-                            \once \override TrillSpanner.bound-details.left.text = \markup {
-                                \null
-                                }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            \pitchedTrill
-                            bf'16 -\accent \startTrillSpan c''
-                            <> \stopTrillSpan
-                            \once \override TrillSpanner.bound-details.left.text = \markup {
-                                \null
-                                }
-                            \set stemLeftBeamCount = 2
-                            \pitchedTrill
-                            a'16 -\accent ] \startTrillSpan b'
+                            bf'8 ] \startTrillSpan c''
                         }
                         {
-                            a'16 \mf \repeatTie [
-                            <> \stopTrillSpan
-                            \once \override TrillSpanner.bound-details.left.text = \markup {
-                                \null
-                                }
-                            \set stemLeftBeamCount = 2
-                            \pitchedTrill
-                            bf'16 ] \startTrillSpan c''
+                            bf'8 \mf \repeatTie
                         }
                         % [Violin 2 Voice] Measure 3
                         {
@@ -232,108 +184,62 @@
                             \pitchedTrill
                             g'8 -\accent \fp \startTrillSpan a'
                         }
-                        \times 4/5 {
-                            g'16 \repeatTie [
+                        \times 2/3 {
+                            g'8 \repeatTie [
                             <> \stopTrillSpan
                             \once \override TrillSpanner.bound-details.left.text = \markup {
                                 \null
                                 }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
                             \pitchedTrill
-                            ef'16 -\accent \startTrillSpan f'
+                            ef'8 -\accent \startTrillSpan f'
                             <> \stopTrillSpan
                             \once \override TrillSpanner.bound-details.left.text = \markup {
                                 \null
                                 }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
+                            \set stemLeftBeamCount = 1
                             \pitchedTrill
-                            e'16 -\accent \startTrillSpan fs'
-                            <> \stopTrillSpan
-                            \once \override TrillSpanner.bound-details.left.text = \markup {
-                                \null
-                                }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            \pitchedTrill
-                            ef'16 -\accent \startTrillSpan f'
-                            <> \stopTrillSpan
-                            \once \override TrillSpanner.bound-details.left.text = \markup {
-                                \null
-                                }
-                            \set stemLeftBeamCount = 2
-                            \pitchedTrill
-                            e'16 -\accent ] \startTrillSpan fs'
+                            e'8 -\accent ] \startTrillSpan fs'
                         }
                         % [Violin 2 Voice] Measure 5
                         {
                             e'4 \p \repeatTie \>
                         }
-                        \times 2/3 {
-                            e'16 \repeatTie [
-                            <> \stopTrillSpan
-                            \once \override TrillSpanner.bound-details.left.text = \markup {
-                                \null
-                                }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            \pitchedTrill
-                            d'16 -\accent \startTrillSpan e'
-                            <> \stopTrillSpan
-                            \once \override TrillSpanner.bound-details.left.text = \markup {
-                                \null
-                                }
-                            \set stemLeftBeamCount = 2
-                            \pitchedTrill
-                            ef'16 -\accent ] \startTrillSpan f'
+                        {
+                            e'8 \repeatTie
                         }
                         % [Violin 2 Voice] Measure 6
-                        {
-                            ef'16 \ppp \repeatTie \< [
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 3/4 {
+                            e'8 \ppp \repeatTie \< [
                             <> \stopTrillSpan
                             \once \override TrillSpanner.bound-details.left.text = \markup {
                                 \null
                                 }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
                             \pitchedTrill
-                            d'16 -\accent \startTrillSpan e'
+                            d'8 -\accent \startTrillSpan e'
                             <> \stopTrillSpan
                             \once \override TrillSpanner.bound-details.left.text = \markup {
                                 \null
                                 }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
                             \pitchedTrill
-                            ef'16 -\accent \startTrillSpan f'
+                            ef'8 -\accent \startTrillSpan f'
                             <> \stopTrillSpan
                             \once \override TrillSpanner.bound-details.left.text = \markup {
                                 \null
                                 }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
+                            \set stemLeftBeamCount = 1
                             \pitchedTrill
-                            d'16 -\accent \startTrillSpan e'
-                            <> \stopTrillSpan
-                            \once \override TrillSpanner.bound-details.left.text = \markup {
-                                \null
-                                }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            \pitchedTrill
-                            ef'16 -\accent \startTrillSpan f'
-                            <> \stopTrillSpan
-                            \once \override TrillSpanner.bound-details.left.text = \markup {
-                                \null
-                                }
-                            \set stemLeftBeamCount = 2
-                            \pitchedTrill
-                            fs'16 -\accent ] \startTrillSpan gs'
+                            d'8 -\accent ] \startTrillSpan e'
                         }
                         % [Violin 2 Voice] Measure 7
                         {
-                            fs'8 \mf \repeatTie
+                            d'8 \mf \repeatTie
                             <> \stopTrillSpan
                         }
                     }
@@ -375,39 +281,17 @@
                         }
                         % [Viola Voice] Measure 2
                         {
-                            d'16 \repeatTie [
-                            <> \stopTrillSpan
-                            \once \override TrillSpanner.bound-details.left.text = \markup {
-                                \null
-                                }
-                            \set stemLeftBeamCount = 2
-                            \pitchedTrill
-                            ef'16 ] \startTrillSpan f'
-                        }
-                        \times 2/3 {
-                            ef'16 \mp \repeatTie \> [
-                            <> \stopTrillSpan
-                            \once \override TrillSpanner.bound-details.left.text = \markup {
-                                \null
-                                }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            \pitchedTrill
-                            b'16 -\accent \startTrillSpan cs''
-                            <> \stopTrillSpan
-                            \once \override TrillSpanner.bound-details.left.text = \markup {
-                                \null
-                                }
-                            \set stemLeftBeamCount = 2
-                            \pitchedTrill
-                            c''16 -\accent ] \startTrillSpan d''
+                            d'8 \repeatTie
                         }
                         {
-                            c''8 \repeatTie
+                            d'8 \mp \repeatTie \>
+                        }
+                        {
+                            d'8 \repeatTie
                         }
                         % [Viola Voice] Measure 3
                         {
-                            c''8 \ppp \repeatTie
+                            d'8 \ppp \repeatTie
                             <> \stopTrillSpan
                         }
                     }
@@ -423,56 +307,33 @@
                     {
                         {
                             \pitchedTrill
-                            d'8 -\accent \fp \> \startTrillSpan e'
-                            d'4 \repeatTie
+                            ef'8 -\accent \fp \> \startTrillSpan f'
+                            ef'4 \repeatTie
                         }
                         {
-                            d'4 \repeatTie
+                            ef'4 \repeatTie
                         }
                         % [Viola Voice] Measure 5
                         {
-                            d'16 \ppp \repeatTie \< [
-                            <> \stopTrillSpan
-                            \once \override TrillSpanner.bound-details.left.text = \markup {
-                                \null
-                                }
-                            \set stemLeftBeamCount = 2
-                            \pitchedTrill
-                            fs'16 ] \startTrillSpan gs'
+                            ef'8 \ppp \repeatTie \<
                         }
-                        \times 4/5 {
-                            fs'16 \repeatTie [
+                        \times 2/3 {
+                            ef'8 \repeatTie [
                             <> \stopTrillSpan
                             \once \override TrillSpanner.bound-details.left.text = \markup {
                                 \null
                                 }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
                             \pitchedTrill
-                            a'16 -\accent \startTrillSpan b'
+                            a'8 -\accent \startTrillSpan b'
                             <> \stopTrillSpan
                             \once \override TrillSpanner.bound-details.left.text = \markup {
                                 \null
                                 }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
+                            \set stemLeftBeamCount = 1
                             \pitchedTrill
-                            bf'16 -\accent \startTrillSpan c''
-                            <> \stopTrillSpan
-                            \once \override TrillSpanner.bound-details.left.text = \markup {
-                                \null
-                                }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            \pitchedTrill
-                            a'16 -\accent \startTrillSpan b'
-                            <> \stopTrillSpan
-                            \once \override TrillSpanner.bound-details.left.text = \markup {
-                                \null
-                                }
-                            \set stemLeftBeamCount = 2
-                            \pitchedTrill
-                            bf'16 -\accent ] \startTrillSpan c''
+                            bf'8 -\accent ] \startTrillSpan c''
                         }
                         % [Viola Voice] Measure 6
                         {
@@ -491,8 +352,6 @@
                             \startStaff
                             R1 * 3/8
                             \bar "|."
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 }
@@ -557,26 +416,11 @@
                             g'4 \repeatTie
                         }
                         % [Cello Voice] Measure 5
-                        \times 2/3 {
-                            g'16 \ppp \repeatTie [
-                            <> \stopTrillSpan
-                            \once \override TrillSpanner.bound-details.left.text = \markup {
-                                \null
-                                }
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            \pitchedTrill
-                            cs''16 -\accent \startTrillSpan ds''
-                            <> \stopTrillSpan
-                            \once \override TrillSpanner.bound-details.left.text = \markup {
-                                \null
-                                }
-                            \set stemLeftBeamCount = 2
-                            \pitchedTrill
-                            c''16 -\accent ] \startTrillSpan d''
+                        {
+                            g'8 \ppp \repeatTie
                         }
                         {
-                            c''4 \repeatTie
+                            g'4 \repeatTie
                             <> \stopTrillSpan
                         }
                     }
@@ -595,24 +439,13 @@
                         % [Cello Voice] Measure 7
                         {
                             \pitchedTrill
-                            ef''8 -\accent \fp \startTrillSpan f''
+                            ef''8 -\accent -\accent \fp \startTrillSpan f''
                             <> \stopTrillSpan
                         }
                     }
                     {
                         {
-                            r4
-                                _ \markup {
-                                    \italic
-                                        \center-column
-                                            {
-                                                " "
-                                                " "
-                                                " "
-                                                Nowhere
-                                                "2001 - 3001"
-                                            }
-                                    }
+                            r4 -\accent
                             \bar "|."
                         }
                     }
