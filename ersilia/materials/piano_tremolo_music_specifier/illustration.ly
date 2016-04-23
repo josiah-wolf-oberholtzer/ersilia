@@ -1,7 +1,9 @@
-\version "2.19.17"
+% 2016-04-22 21:24
+
+\version "2.19.15"
 \language "english"
 
-\include "/Users/josiah/Documents/Development/consort/consort/stylesheets/stylesheet.ily"
+\include "/Users/joberholtzer/Development/consort/consort/stylesheets/stylesheet.ily"
 
 \header {
     tagline = \markup {}
@@ -13,15 +15,9 @@
         \tag #'time
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 3/8
                 \tempo 4=72
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
+                \time 3/8
+                s1 * 9/8
             }
             {
                 \time 7/8
@@ -29,13 +25,7 @@
             }
             {
                 \time 3/8
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
+                s1 * 9/8
             }
         }
         \tag #'violin-1
@@ -57,11 +47,11 @@
                     {
                         % [Violin 1 Voice] Measure 1
                         {
-                            <g b d' g' af' d''>4. :32 \p \<
+                            <g b d' g' af' d''>4. :32 \fp
                         }
                         % [Violin 1 Voice] Measure 2
                         {
-                            <g b d' g' af' d''>4 :32 \mf \repeatTie
+                            <g b d' g' af' d''>4 :32 \p \repeatTie
                         }
                     }
                     {
@@ -72,7 +62,7 @@
                     {
                         % [Violin 1 Voice] Measure 3
                         {
-                            <f a c' df' f' c''>8 :64 \pp
+                            <f a c' df' f' c''>8 :64 \fp
                         }
                     }
                     {
@@ -83,7 +73,7 @@
                     {
                         % [Violin 1 Voice] Measure 4
                         {
-                            <as d' f' as' b' f''>4. :32 \mf \>
+                            <as d' f' as' b' f''>4. :32 \fp \<
                             <as d' f' as' b' f''>8 :64 \repeatTie
                         }
                         {
@@ -92,7 +82,7 @@
                         }
                         % [Violin 1 Voice] Measure 5
                         {
-                            <as d' f' as' b' f''>4 :32 \pp \repeatTie
+                            <as d' f' as' b' f''>4 :32 \mf \repeatTie
                         }
                     }
                     {
@@ -106,7 +96,7 @@
                     }
                     {
                         {
-                            <f a c' df' f' c''>8 :64 \p
+                            <f a c' df' f' c''>8 :64 \fp
                         }
                         % [Violin 1 Voice] Measure 7
                         {
@@ -146,14 +136,14 @@
                     }
                     {
                         {
-                            <g b d' g' af' d''>8 :64 \p
+                            <g b d' g' af' d''>8 :64 \fp
                         }
                         % [Violin 2 Voice] Measure 2
                         {
                             <g b d' g' af' d''>4 :32 \repeatTie
                         }
                         {
-                            <g b d' g' af' d''>8 :64 \repeatTie
+                            <g b d' g' af' d''>8 :64 \p \repeatTie
                         }
                         % [Violin 2 Voice] Measure 3
                         {
@@ -168,7 +158,7 @@
                     {
                         % [Violin 2 Voice] Measure 4
                         {
-                            <gs c' ds' e' gs' ds''>4 :32 \mf
+                            <gs c' ds' e' gs' ds''>4 :32 \fp
                         }
                     }
                     {
@@ -179,25 +169,25 @@
                     }
                     {
                         {
-                            <as d' f' as' b' f''>8 :64 \p \<
+                            <as d' f' as' b' f''>8 :64 \fp
                         }
                         {
                             <as d' f' as' b' f''>4 :32 \repeatTie
                         }
                         % [Violin 2 Voice] Measure 5
                         {
-                            <as d' f' as' b' f''>4 :32 \mf \repeatTie \>
+                            <as d' f' as' b' f''>4 :32 \p \repeatTie \<
                         }
                         {
                             <as d' f' as' b' f''>8 :64 \repeatTie
                         }
                         % [Violin 2 Voice] Measure 6
                         {
-                            <as d' f' as' b' f''>4. :32 \p \repeatTie
+                            <as d' f' as' b' f''>4. :32 \mf \repeatTie \>
                         }
                         % [Violin 2 Voice] Measure 7
                         {
-                            <as d' f' as' b' f''>8 :64 \repeatTie
+                            <as d' f' as' b' f''>8 :64 \p \repeatTie
                         }
                     }
                     {
@@ -233,21 +223,21 @@
                     }
                     {
                         {
-                            <g b d' g' af' d''>4 :32 \pp \<
+                            <g b d' g' af' d''>4 :32 \fp \>
                         }
                         % [Viola Voice] Measure 2
                         {
                             <g b d' g' af' d''>8 :64 \repeatTie
                         }
                         {
-                            <g b d' g' af' d''>8 :64 \p \repeatTie \<
+                            <g b d' g' af' d''>8 :64 \pp \repeatTie \<
                         }
                         {
                             <g b d' g' af' d''>8 :64 \repeatTie
                         }
                         % [Viola Voice] Measure 3
                         {
-                            <g b d' g' af' d''>8 :64 \mf \repeatTie
+                            <g b d' g' af' d''>8 :64 \p \repeatTie
                         }
                     }
                     {
@@ -261,7 +251,7 @@
                     }
                     {
                         {
-                            <gs c' ds' e' gs' ds''>8 :64 \mf \>
+                            <gs c' ds' e' gs' ds''>8 :64 \fp \<
                             <gs c' ds' e' gs' ds''>4 :32 \repeatTie
                         }
                         {
@@ -269,14 +259,14 @@
                         }
                         % [Viola Voice] Measure 5
                         {
-                            <gs c' ds' e' gs' ds''>8 :64 \pp \repeatTie \<
+                            <gs c' ds' e' gs' ds''>8 :64 \mf \repeatTie \>
                         }
                         {
                             <gs c' ds' e' gs' ds''>4 :32 \repeatTie
                         }
                         % [Viola Voice] Measure 6
                         {
-                            <gs c' ds' e' gs' ds''>4 :32 \p \repeatTie
+                            <gs c' ds' e' gs' ds''>4 :32 \pp \repeatTie
                         }
                     }
                     {
@@ -290,8 +280,6 @@
                             \startStaff
                             R1 * 3/8
                             \bar "|."
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 }
@@ -316,11 +304,11 @@
                     {
                         % [Cello Voice] Measure 1
                         {
-                            <g b d' g' af' d''>4. :32 \p \<
+                            <g b d' g' af' d''>4. :32 \fp
                         }
                         % [Cello Voice] Measure 2
                         {
-                            <g b d' g' af' d''>4 :32 \mf \repeatTie
+                            <g b d' g' af' d''>4 :32 \p \repeatTie
                         }
                     }
                     {
@@ -331,11 +319,11 @@
                     {
                         % [Cello Voice] Measure 3
                         {
-                            <f a c' df' f' c''>4. :32 \p
+                            <f a c' df' f' c''>4. :32 \fp
                         }
                         % [Cello Voice] Measure 4
                         {
-                            <f a c' df' f' c''>8 :64 \repeatTie
+                            <f a c' df' f' c''>8 :64 \p \repeatTie
                         }
                     }
                     {
@@ -345,14 +333,14 @@
                     }
                     {
                         {
-                            <as d' f' as' b' f''>4 :32 \mf \>
+                            <as d' f' as' b' f''>4 :32 \fp \<
                         }
                         {
                             <as d' f' as' b' f''>4 :32 \repeatTie
                         }
                         % [Cello Voice] Measure 5
                         {
-                            <as d' f' as' b' f''>8 :64 \p \repeatTie
+                            <as d' f' as' b' f''>8 :64 \mf \repeatTie
                         }
                         {
                             <as d' f' as' b' f''>4 :32 \repeatTie
@@ -372,23 +360,12 @@
                     {
                         % [Cello Voice] Measure 7
                         {
-                            <f a c' df' f' c''>8 :64 \p
+                            <f a c' df' f' c''>8 :64 \fp
                         }
                     }
                     {
                         {
                             r4
-                                _ \markup {
-                                    \italic
-                                        \center-column
-                                            {
-                                                " "
-                                                " "
-                                                " "
-                                                Nowhere
-                                                "2001 - 3001"
-                                            }
-                                    }
                             \bar "|."
                         }
                     }

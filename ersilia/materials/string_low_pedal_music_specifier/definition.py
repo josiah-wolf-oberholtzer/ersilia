@@ -1,6 +1,7 @@
 # -*- encoding: utf-8 -*-
 import consort
 from abjad.tools import indicatortools
+from abjad.tools import patterntools
 from abjad.tools import rhythmmakertools
 from abjad.tools import selectortools
 from abjad.tools import spannertools
@@ -18,8 +19,8 @@ string_low_pedal_music_specifier = consort.MusicSpecifier(
         dynamic_expressions=consort.DynamicExpression(
             division_period=2,
             dynamic_tokens='p ppp',
-            start_dynamic_tokens='o',
-            stop_dynamic_tokens='o',
+            start_dynamic_tokens='niente',
+            stop_dynamic_tokens='niente',
             ),
         glissando=spannertools.Glissando(),
         ),
@@ -39,13 +40,13 @@ string_low_pedal_music_specifier = consort.MusicSpecifier(
         denominators=[8],
         division_masks=[
             rhythmmakertools.SustainMask(
-                pattern=rhythmmakertools.Pattern(
+                pattern=patterntools.Pattern(
                     indices=[0, 1],
                     period=3,
                     ),
                 ),
             rhythmmakertools.SustainMask(
-                pattern=rhythmmakertools.Pattern(
+                pattern=patterntools.Pattern(
                     indices=[0, -1],
                     ),
                 ),

@@ -1,7 +1,9 @@
-\version "2.19.17"
+% 2016-04-22 21:24
+
+\version "2.19.15"
 \language "english"
 
-\include "/Users/josiah/Documents/Development/consort/consort/stylesheets/stylesheet.ily"
+\include "/Users/joberholtzer/Development/consort/consort/stylesheets/stylesheet.ily"
 
 \header {
     tagline = \markup {}
@@ -13,15 +15,9 @@
         \tag #'time
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 3/8
                 \tempo 4=72
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
+                \time 3/8
+                s1 * 9/8
             }
             {
                 \time 7/8
@@ -29,13 +25,7 @@
             }
             {
                 \time 3/8
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
+                s1 * 9/8
             }
         }
         \tag #'violin-1
@@ -54,15 +44,15 @@
             \context StringStaff = "Violin 1 Staff" {
                 \context Voice = "Violin 1 Voice" {
                     \clef "treble"
-                    \tag #'transposition \transposition c'
                     {
                         % [Violin 1 Voice] Measure 1
                         {
                             \clef "percussion"
                             \once \override Hairpin.circled-tip = ##t
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'4. \<
                                 ^ \markup {
@@ -79,6 +69,7 @@
                             c'4 \p \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -88,14 +79,14 @@
                             r8
                         }
                     }
-                    \tag #'transposition \transposition c'
                     {
                         % [Violin 1 Voice] Measure 3
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'8 \fp
                                 ^ \markup {
@@ -108,6 +99,7 @@
                                     }
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -117,15 +109,15 @@
                             r4
                         }
                     }
-                    \tag #'transposition \transposition c'
                     {
                         % [Violin 1 Voice] Measure 4
                         {
                             \clef "percussion"
                             \once \override Hairpin.circled-tip = ##t
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'4. \<
                                 ^ \markup {
@@ -147,6 +139,7 @@
                             c'4 \ppp \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -160,13 +153,13 @@
                             r4
                         }
                     }
-                    \tag #'transposition \transposition c'
                     {
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'8 \fp
                                 ^ \markup {
@@ -183,6 +176,7 @@
                             c'4 \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -218,14 +212,14 @@
                             r4
                         }
                     }
-                    \tag #'transposition \transposition c'
                     {
                         {
                             \clef "percussion"
                             \once \override Hairpin.circled-tip = ##t
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'8 \<
                                 ^ \markup {
@@ -249,6 +243,7 @@
                             c'4 \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -258,14 +253,14 @@
                             r8
                         }
                     }
-                    \tag #'transposition \transposition c'
                     {
                         % [Violin 2 Voice] Measure 4
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'4 \fp
                                 ^ \markup {
@@ -278,6 +273,7 @@
                                     }
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -288,14 +284,14 @@
                             r8
                         }
                     }
-                    \tag #'transposition \transposition c'
                     {
                         {
                             \clef "percussion"
                             \once \override Hairpin.circled-tip = ##t
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'8 \<
                                 ^ \markup {
@@ -333,6 +329,7 @@
                             c'8 \mf \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "treble"
                         }
@@ -368,13 +365,13 @@
                             r8
                         }
                     }
-                    \tag #'transposition \transposition c'
                     {
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'4 \fp \<
                                 ^ \markup {
@@ -401,6 +398,7 @@
                             c'8 \p \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "alto"
                         }
@@ -414,14 +412,14 @@
                             r4
                         }
                     }
-                    \tag #'transposition \transposition c'
                     {
                         {
                             \clef "percussion"
                             \once \override Hairpin.circled-tip = ##t
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'8 \<
                                 ^ \markup {
@@ -451,6 +449,7 @@
                             c'4 \mf \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "alto"
                         }
@@ -487,14 +486,14 @@
             \context StringStaff = "Cello Staff" {
                 \context Voice = "Cello Voice" {
                     \clef "bass"
-                    \tag #'transposition \transposition c'
                     {
                         % [Cello Voice] Measure 1
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'4. \fp
                                 ^ \markup {
@@ -511,6 +510,7 @@
                             c'4 \p \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "bass"
                         }
@@ -520,15 +520,15 @@
                             r8
                         }
                     }
-                    \tag #'transposition \transposition c'
                     {
                         % [Cello Voice] Measure 3
                         {
                             \clef "percussion"
                             \once \override Hairpin.circled-tip = ##t
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'4. \<
                                 ^ \markup {
@@ -545,6 +545,7 @@
                             c'8 \mf \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "bass"
                         }
@@ -554,13 +555,13 @@
                             r4
                         }
                     }
-                    \tag #'transposition \transposition c'
                     {
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'4 \fp \>
                                 ^ \markup {
@@ -583,6 +584,7 @@
                             c'4 \repeatTie
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "bass"
                         }
@@ -594,16 +596,18 @@
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 3/8
+                            \stopStaff
+                            \startStaff
                         }
                     }
-                    \tag #'transposition \transposition c'
                     {
                         % [Cello Voice] Measure 7
                         {
                             \clef "percussion"
+                            \override NoteHead #'no-ledgers = ##t
                             \override NoteHead #'style = #'cross
                             \stopStaff
-                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 4)
                             \startStaff
                             c'8 \mf
                                 ^ \markup {
@@ -616,6 +620,7 @@
                                     }
                             \stopStaff
                             \startStaff
+                            \revert NoteHead #'no-ledgers
                             \revert NoteHead #'style
                             \clef "bass"
                         }
@@ -623,17 +628,6 @@
                     {
                         {
                             r4
-                                _ \markup {
-                                    \italic
-                                        \center-column
-                                            {
-                                                " "
-                                                " "
-                                                " "
-                                                Nowhere
-                                                "2001 - 3001"
-                                            }
-                                    }
                             \bar "|."
                         }
                     }

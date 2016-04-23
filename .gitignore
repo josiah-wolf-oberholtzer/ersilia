@@ -51,3 +51,4 @@ __illustrate_material__.py
 *.candidate.ly
 *.candidate.ps
 *.candidate.pdf
+__make_material_pdf__.py

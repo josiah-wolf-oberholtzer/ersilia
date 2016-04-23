@@ -3,6 +3,7 @@ import abjad
 import consort
 import ersilia
 from abjad import new
+from abjad.tools import patterntools
 from abjad.tools import rhythmmakertools
 from abjad.tools import timespantools
 
@@ -233,14 +234,14 @@ music_specifier = new(
     ersilia.pitch_pipe_music_specifier,
     rhythm_maker__division_masks=[
         rhythmmakertools.SustainMask(
-            pattern=rhythmmakertools.Pattern(
+            pattern=patterntools.Pattern(
                 indices=[0, -1],
                 ),
             ),
         ],
     attachment_handler__dynamic_expressions=consort.DynamicExpression(
         start_dynamic_tokens='fp',
-        stop_dynamic_tokens='o',
+        stop_dynamic_tokens='niente',
         ),
     )
 segment_maker.add_setting(
@@ -313,7 +314,7 @@ segment_maker.add_setting(
         labels='bamboo windchimes',
         division_masks=[
             rhythmmakertools.SilenceMask(
-                pattern=rhythmmakertools.Pattern(
+                pattern=patterntools.Pattern(
                     indices=[0, 1, 3],
                     period=5,
                     ),

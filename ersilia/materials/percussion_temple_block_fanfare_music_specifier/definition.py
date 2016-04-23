@@ -1,6 +1,7 @@
 # -*- encoding: utf-8 -*-
 import consort
 import ersilia
+from abjad.tools import patterntools
 from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
 from abjad.tools import selectortools
@@ -122,7 +123,7 @@ percussion_temple_block_fanfare_music_specifier = consort.MusicSpecifier(
             ),
         division_masks=[
             rhythmmakertools.SustainMask(
-                pattern=rhythmmakertools.Pattern(
+                pattern=patterntools.Pattern(
                     indices=[1],
                     period=2,
                     ),

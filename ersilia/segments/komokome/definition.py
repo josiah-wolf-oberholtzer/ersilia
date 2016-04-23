@@ -3,6 +3,7 @@ import abjad
 import consort
 import ersilia
 from abjad import new
+from abjad.tools import patterntools
 from abjad.tools import rhythmmakertools
 
 
@@ -309,7 +310,7 @@ segment_maker.add_setting(
         labels='piano arm cluster',
         division_masks=[
             rhythmmakertools.SilenceMask(
-                pattern=rhythmmakertools.Pattern(
+                pattern=patterntools.Pattern(
                     indices=[0, 1, 3],
                     period=5,
                     ),
@@ -334,7 +335,7 @@ segment_maker.add_setting(
         labels='piano arm cluster',
         division_masks=[
             rhythmmakertools.SilenceMask(
-                pattern=rhythmmakertools.Pattern(
+                pattern=patterntools.Pattern(
                     indices=[0, 1, 3],
                     period=5,
                     ),

@@ -1,7 +1,9 @@
-\version "2.19.17"
+% 2016-04-22 21:24
+
+\version "2.19.15"
 \language "english"
 
-\include "/Users/josiah/Documents/Development/consort/consort/stylesheets/stylesheet.ily"
+\include "/Users/joberholtzer/Development/consort/consort/stylesheets/stylesheet.ily"
 
 \header {
     tagline = \markup {}
@@ -13,15 +15,9 @@
         \tag #'time
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 3/8
                 \tempo 4=72
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
+                \time 3/8
+                s1 * 9/8
             }
             {
                 \time 7/8
@@ -29,13 +25,7 @@
             }
             {
                 \time 3/8
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
+                s1 * 9/8
             }
         }
         \tag #'violin-1
@@ -92,7 +82,7 @@
                     }
                     {
                         % [Violin 1 Voice] Measure 4
-                        {
+                        \times 4/6 {
                             \once \override Hairpin.circled-tip = ##t
                             \pitchedTrill
                             f'8 \< [ \startTrillSpan g'
@@ -104,22 +94,33 @@
                             \set stemRightBeamCount = 1
                             f'8 :64
                             \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
                             \pitchedTrill
-                            f'8 ] \glissando \startTrillSpan af'
+                            f'8 \startTrillSpan af'
                             <> \stopTrillSpan
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            f'8 :64
+                            \set stemLeftBeamCount = 1
+                            f'8 -\tenuto ] \glissando
                         }
                         {
                             \once \override Hairpin.circled-tip = ##t
-                            ef'8 :64 \p \>
-                            ef'4 :32 \repeatTie \glissando
+                            \pitchedTrill
+                            ef'8 \p \> \startTrillSpan gf'
+                            ef'4 \repeatTie \glissando
+                            <> \stopTrillSpan
                         }
                         % [Violin 1 Voice] Measure 5
                         {
-                            d'8 -\tenuto [
-                            \set stemLeftBeamCount = 1
+                            \once \override TrillSpanner.bound-details.left.text = \markup {
+                                \null
+                                }
                             \pitchedTrill
-                            d'8 \! ] \startTrillSpan f'
+                            d'8 [ \startTrillSpan e'
                             <> \stopTrillSpan
+                            \set stemLeftBeamCount = 1
+                            d'8 :64 \! ]
                         }
                     }
                     {
@@ -231,27 +232,39 @@
                             fqs'4 -\tenuto \p \< \glissando
                         }
                         % [Violin 2 Voice] Measure 5
-                        {
+                        \times 2/3 {
                             \pitchedTrill
                             d'8 \mf \> [ \startTrillSpan f'
                             <> \stopTrillSpan
                             \set stemLeftBeamCount = 1
-                            d'8 :64 ] \glissando
-                        }
-                        {
+                            \set stemRightBeamCount = 1
+                            d'8 :64
+                            \set stemLeftBeamCount = 1
                             \pitchedTrill
-                            fqs'8 \p \< \glissando \startTrillSpan aqf'
+                            d'8 ] \glissando \startTrillSpan f'
                             <> \stopTrillSpan
                         }
-                        % [Violin 2 Voice] Measure 6
                         {
+                            fqs'8 -\tenuto \p \< \glissando
+                        }
+                        % [Violin 2 Voice] Measure 6
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 3/5 {
                             \once \override Hairpin.circled-tip = ##t
-                            ef'8 -\tenuto \mf \> [
+                            \pitchedTrill
+                            ef'8 \mf \> [ \startTrillSpan f'
+                            <> \stopTrillSpan
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            ef'8 :64
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             \pitchedTrill
-                            ef'8 \startTrillSpan f'
+                            ef'8 \startTrillSpan gf'
                             <> \stopTrillSpan
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            ef'8 -\tenuto
                             \set stemLeftBeamCount = 1
                             ef'8 :64 ] \glissando
                         }
@@ -352,21 +365,26 @@
                             <> \stopTrillSpan
                         }
                         {
-                            \once \override Hairpin.circled-tip = ##t
-                            f'4 :32 \p \> \glissando
+                            f'4 :32 \p \< \glissando
                         }
                         % [Viola Voice] Measure 6
-                        {
+                        \times 2/3 {
+                            \once \override Hairpin.circled-tip = ##t
                             \pitchedTrill
-                            d'8 [ \startTrillSpan f'
+                            d'8 \mf \> [ \startTrillSpan f'
                             <> \stopTrillSpan
                             \set stemLeftBeamCount = 1
-                            d'8 -\tenuto \! ]
+                            \set stemRightBeamCount = 1
+                            d'8 -\tenuto
+                            \set stemLeftBeamCount = 1
+                            \pitchedTrill
+                            d'8 ] \startTrillSpan e'
+                            <> \stopTrillSpan
                         }
                     }
                     {
                         {
-                            r8
+                            r8 \!
                         }
                         % [Viola Voice] Measure 7
                         {
@@ -475,6 +493,8 @@
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 3/8
+                            \stopStaff
+                            \startStaff
                         }
                     }
                     {
@@ -488,17 +508,6 @@
                     {
                         {
                             r4
-                                _ \markup {
-                                    \italic
-                                        \center-column
-                                            {
-                                                " "
-                                                " "
-                                                " "
-                                                Nowhere
-                                                "2001 - 3001"
-                                            }
-                                    }
                             \bar "|."
                         }
                     }

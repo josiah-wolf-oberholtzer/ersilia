@@ -87,8 +87,8 @@ segment_maker.add_setting(
 music_specifier = new(
     ersilia.saxophone_agitato_music_specifier,
     attachment_handler__dynamic_expressions=consort.DynamicExpression(
-        start_dynamic_tokens='fp o',
-        stop_dynamic_tokens='mp mf p f o',
+        start_dynamic_tokens='fp niente',
+        stop_dynamic_tokens='mp mf p f niente',
         dynamic_tokens='pp p',
         ),
     pitch_handler__register_specifier__base_pitch='C4',

@@ -1,7 +1,9 @@
-\version "2.19.17"
+% 2016-04-22 21:25
+
+\version "2.19.15"
 \language "english"
 
-\include "/Users/josiah/Documents/Development/consort/consort/stylesheets/stylesheet.ily"
+\include "/Users/joberholtzer/Development/consort/consort/stylesheets/stylesheet.ily"
 
 \header {
     tagline = \markup {}
@@ -13,15 +15,9 @@
         \tag #'time
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 3/8
                 \tempo 4=72
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
+                \time 3/8
+                s1 * 9/8
             }
             {
                 \time 7/8
@@ -29,13 +25,7 @@
             }
             {
                 \time 3/8
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
+                s1 * 9/8
             }
         }
         \tag #'violin-1
@@ -60,15 +50,16 @@
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        overpressure
-                                                    }
+                                    \whiteout
+                                        \pad-around
+                                            #0.5
+                                            \italic
+                                                \smaller
+                                                    \concat
+                                                        {
+                                                            \vstrut
+                                                            overpressure
+                                                        }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.text = \markup {
@@ -81,7 +72,6 @@
                         % [Violin 1 Voice] Measure 2
                         {
                             <a e'>4 \repeatTie
-                            <> \stopTextSpan
                         }
                     }
                     {
@@ -92,27 +82,7 @@
                     {
                         % [Violin 1 Voice] Measure 3
                         {
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        overpressure
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            <bf f'>8 -\accent \fff \startTextSpan
-                            <> \stopTextSpan
+                            <bf f'>8 -\accent \fff
                         }
                     }
                     {
@@ -123,36 +93,16 @@
                     {
                         % [Violin 1 Voice] Measure 4
                         {
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        overpressure
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            <a e'>4. -\accent \fff \startTextSpan
-                            <a e'>8 \repeatTie
+                            <bf f'>4. -\accent \fff
+                            <bf f'>8 \repeatTie
                         }
                         {
-                            <a e'>8 \repeatTie
-                            <a e'>4 \repeatTie
+                            <bf f'>8 \repeatTie
+                            <bf f'>4 \repeatTie
                         }
                         % [Violin 1 Voice] Measure 5
                         {
-                            <a e'>4 \repeatTie
-                            <> \stopTextSpan
+                            <bf f'>4 \repeatTie
                         }
                     }
                     {
@@ -166,30 +116,11 @@
                     }
                     {
                         {
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        overpressure
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            <eqs bqs>8 -\accent \fff \startTextSpan
+                            <cqs' gqs'>8 -\accent \fff
                         }
                         % [Violin 1 Voice] Measure 7
                         {
-                            <eqs bqs>4 \repeatTie
+                            <cqs' gqs'>4 \repeatTie
                             <> \stopTextSpan
                         }
                     }
@@ -229,15 +160,16 @@
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        overpressure
-                                                    }
+                                    \whiteout
+                                        \pad-around
+                                            #0.5
+                                            \italic
+                                                \smaller
+                                                    \concat
+                                                        {
+                                                            \vstrut
+                                                            overpressure
+                                                        }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.text = \markup {
@@ -245,32 +177,23 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            <e b>8 -\accent \fff \startTextSpan
+                            <c' g'>8 -\accent \fff \startTextSpan
                         }
                         % [Violin 2 Voice] Measure 2
-                        \times 4/5 {
-                            <e b>16 \repeatTie [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <f c'>16 -\accent
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <e b>16 -\accent
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <eqs bqs>16 -\accent
-                            \set stemLeftBeamCount = 2
-                            <e b>16 -\accent ]
+                        \times 2/3 {
+                            <c' g'>8 \repeatTie [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            <cs' gs'>8 -\accent
+                            \set stemLeftBeamCount = 1
+                            <c' g'>8 -\accent ]
                         }
                         {
-                            <e b>16 \repeatTie [
-                            \set stemLeftBeamCount = 2
-                            <f c'>16 -\accent ]
+                            <c' g'>8 \repeatTie
                         }
                         % [Violin 2 Voice] Measure 3
                         {
-                            <f c'>4 \repeatTie
-                            <> \stopTextSpan
+                            <c' g'>4 \repeatTie
                         }
                     }
                     {
@@ -281,27 +204,7 @@
                     {
                         % [Violin 2 Voice] Measure 4
                         {
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        overpressure
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            <e b>4 -\accent \fff \startTextSpan
-                            <> \stopTextSpan
+                            <cqs' gqs'>4 -\accent \fff
                         }
                     }
                     {
@@ -312,74 +215,35 @@
                     }
                     {
                         {
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        overpressure
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            <aqs eqs'>8 -\accent \fff \startTextSpan
+                            <bf f'>8 -\accent \fff
                         }
-                        \times 4/5 {
-                            <aqs eqs'>16 \repeatTie [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <a e'>16 -\accent
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <bf f'>16 -\accent
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <a e'>16 -\accent
-                            \set stemLeftBeamCount = 2
-                            <aqs eqs'>16 -\accent ]
+                        \times 2/3 {
+                            <bf f'>8 \repeatTie [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            <b fs'>8 -\accent
+                            \set stemLeftBeamCount = 1
+                            <bf f'>8 -\accent ]
                         }
                         % [Violin 2 Voice] Measure 5
                         {
-                            <aqs eqs'>4 \repeatTie
+                            <bf f'>4 \repeatTie
                         }
-                        \times 2/3 {
-                            <aqs eqs'>16 \repeatTie [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <a e'>16 -\accent
-                            \set stemLeftBeamCount = 2
-                            <bf f'>16 -\accent ]
+                        {
+                            <bf f'>8 \repeatTie
                         }
                         % [Violin 2 Voice] Measure 6
                         {
-                            <bf f'>16 \repeatTie [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <a e'>16 -\accent
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <aqs eqs'>16 -\accent
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <a e'>16 -\accent
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <bf f'>16 -\accent
-                            \set stemLeftBeamCount = 2
-                            <a e'>16 -\accent ]
+                            <bf f'>8 \repeatTie [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            <bqf fqs'>8 -\accent
+                            \set stemLeftBeamCount = 1
+                            <bf f'>8 -\accent ]
                         }
                         % [Violin 2 Voice] Measure 7
                         {
-                            <a e'>8 \repeatTie
+                            <bf f'>8 \repeatTie
                             <> \stopTextSpan
                         }
                     }
@@ -419,15 +283,16 @@
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        overpressure
-                                                    }
+                                    \whiteout
+                                        \pad-around
+                                            #0.5
+                                            \italic
+                                                \smaller
+                                                    \concat
+                                                        {
+                                                            \vstrut
+                                                            overpressure
+                                                        }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.text = \markup {
@@ -435,29 +300,21 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            <a e'>4 -\accent \fff \startTextSpan
+                            <bf f'>4 -\accent \fff \startTextSpan
                         }
                         % [Viola Voice] Measure 2
                         {
-                            <a e'>16 \repeatTie [
-                            \set stemLeftBeamCount = 2
-                            <bf f'>16 -\accent ]
-                        }
-                        \times 2/3 {
-                            <bf f'>16 \repeatTie [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <a e'>16 -\accent
-                            \set stemLeftBeamCount = 2
-                            <aqs eqs'>16 -\accent ]
+                            <bf f'>8 \repeatTie
                         }
                         {
-                            <aqs eqs'>8 \repeatTie
+                            <bf f'>8 \repeatTie
+                        }
+                        {
+                            <bf f'>8 \repeatTie
                         }
                         % [Viola Voice] Measure 3
                         {
-                            <aqs eqs'>8 \repeatTie
-                            <> \stopTextSpan
+                            <bf f'>8 \repeatTie
                         }
                     }
                     {
@@ -471,54 +328,27 @@
                     }
                     {
                         {
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        overpressure
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            <a e'>8 -\accent \fff \startTextSpan
-                            <a e'>4 \repeatTie
+                            <bf f'>8 -\accent \fff
+                            <bf f'>4 \repeatTie
                         }
                         {
-                            <a e'>4 \repeatTie
+                            <bf f'>4 \repeatTie
                         }
                         % [Viola Voice] Measure 5
                         {
-                            <a e'>16 \repeatTie [
-                            \set stemLeftBeamCount = 2
-                            <bf f'>16 -\accent ]
+                            <bf f'>8 \repeatTie
                         }
-                        \times 4/5 {
-                            <bf f'>16 \repeatTie [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <a e'>16 -\accent
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <aqs eqs'>16 -\accent
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <a e'>16 -\accent
-                            \set stemLeftBeamCount = 2
-                            <bf f'>16 -\accent ]
+                        \times 2/3 {
+                            <bf f'>8 \repeatTie [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            <a e'>8 -\accent
+                            \set stemLeftBeamCount = 1
+                            <aqs eqs'>8 -\accent ]
                         }
                         % [Viola Voice] Measure 6
                         {
-                            <bf f'>4 \repeatTie
+                            <aqs eqs'>4 \repeatTie
                             <> \stopTextSpan
                         }
                     }
@@ -533,8 +363,6 @@
                             \startStaff
                             R1 * 3/8
                             \bar "|."
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 }
@@ -562,15 +390,16 @@
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        overpressure
-                                                    }
+                                    \whiteout
+                                        \pad-around
+                                            #0.5
+                                            \italic
+                                                \smaller
+                                                    \concat
+                                                        {
+                                                            \vstrut
+                                                            overpressure
+                                                        }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.text = \markup {
@@ -578,12 +407,11 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            <e b>4. -\accent \fff \startTextSpan
+                            <b fs'>4. -\accent \fff \startTextSpan
                         }
                         % [Cello Voice] Measure 2
                         {
-                            <e b>4 \repeatTie
-                            <> \stopTextSpan
+                            <b fs'>4 \repeatTie
                         }
                     }
                     {
@@ -594,31 +422,11 @@
                     {
                         % [Cello Voice] Measure 3
                         {
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        overpressure
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            <f c'>4. -\accent \fff \startTextSpan
+                            <c' g'>4. -\accent \fff
                         }
                         % [Cello Voice] Measure 4
                         {
-                            <f c'>8 \repeatTie
-                            <> \stopTextSpan
+                            <c' g'>8 \repeatTie
                         }
                     }
                     {
@@ -628,42 +436,17 @@
                     }
                     {
                         {
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        overpressure
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            <e b>4 -\accent \fff \startTextSpan
+                            <b fs'>4 -\accent \fff
                         }
                         {
-                            <e b>4 \repeatTie
+                            <b fs'>4 \repeatTie
                         }
                         % [Cello Voice] Measure 5
-                        \times 2/3 {
-                            <e b>16 \repeatTie [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            <eqs bqs>16 -\accent
-                            \set stemLeftBeamCount = 2
-                            <e b>16 -\accent ]
+                        {
+                            <b fs'>8 \repeatTie
                         }
                         {
-                            <e b>4 \repeatTie
-                            <> \stopTextSpan
+                            <b fs'>4 \repeatTie
                         }
                     }
                     {
@@ -680,43 +463,13 @@
                     {
                         % [Cello Voice] Measure 7
                         {
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        overpressure
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            <bf f'>8 -\accent \fff \startTextSpan
+                            <aqs eqs'>8 -\accent \fff
                             <> \stopTextSpan
                         }
                     }
                     {
                         {
                             r4
-                                _ \markup {
-                                    \italic
-                                        \center-column
-                                            {
-                                                " "
-                                                " "
-                                                " "
-                                                Nowhere
-                                                "2001 - 3001"
-                                            }
-                                    }
                             \bar "|."
                         }
                     }

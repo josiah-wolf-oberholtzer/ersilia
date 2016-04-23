@@ -1,6 +1,7 @@
 # -*- encoding: utf-8 -*-
 import consort
 from abjad.tools import indicatortools
+from abjad.tools import patterntools
 from abjad.tools import rhythmmakertools
 from abjad.tools import selectortools
 from abjad.tools import spannertools
@@ -56,7 +57,7 @@ wind_agitato_music_specifier = consort.MusicSpecifier(
                 .by_contiguity()
                 .by_length('>', 1)
                 .by_pattern(
-                    pattern=rhythmmakertools.Pattern(
+                    pattern=patterntools.Pattern(
                         indices=[0],
                         period=2,
                         ),
@@ -71,7 +72,7 @@ wind_agitato_music_specifier = consort.MusicSpecifier(
                 .by_contiguity()
                 .by_length('>', 1)
                 .by_pattern(
-                    pattern=rhythmmakertools.Pattern(
+                    pattern=patterntools.Pattern(
                         indices=[0, 2],
                         period=3,
                         ),
@@ -107,7 +108,7 @@ wind_agitato_music_specifier = consort.MusicSpecifier(
         extra_counts_per_division=[0, 0, 1, 2, 0, 1],
         division_masks=[
             rhythmmakertools.SustainMask(
-                pattern=rhythmmakertools.Pattern(
+                pattern=patterntools.Pattern(
                     indices=[1],
                     period=3,
                     ),

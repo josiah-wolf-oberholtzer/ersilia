@@ -1,4 +1,11 @@
-\version "2.19.17"
+% 2016-04-22 21:27
+
+% package "abjad" @ 2cf4351 [master] (2016-04-22 15:27:55)
+% package "ide" @ c37fdc6 [master] (2016-04-18 15:15:28)
+% package "consort" @ c1811ea [master] (2016-04-22 21:08:03)
+% package "ersilia" @ de021e7 [master] (2016-04-22 21:22:43)
+
+\version "2.19.15"
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
@@ -8,14 +15,14 @@
 
 \score {
     \context Score = "Ersilia Score" \with {
-        currentBarNumber = #138
+        currentBarNumber = #48
     } <<
         \tag #'time
         \repeat volta 2
         \context TimeSignatureContext = "Time Signature Context" {
             \break
             {
-                \tempo 4=64
+                \tempo 4=80
                 \time 4/8
                 \mark \markup {
                     \concat
@@ -24,14 +31,22 @@
                                 \pad-around
                                     #0.5
                                     \caps
-                                        C
+                                        B
                             " "
                             \fontsize
                                 #-3
                                 [ii]
                         }
                     }
-                s1 * 3/2
+                s1 * 1/2
+            }
+            {
+                \time 6/8
+                s1 * 3/4
+            }
+            {
+                \time 4/8
+                s1 * 1
             }
         }
         \context WindSectionStaffGroup = "Wind Section Staff Group" <<
@@ -43,16 +58,44 @@
                 \set Staff.shortInstrumentName = \markup { Fl. }
                 \context Voice = "Flute Voice" {
                     {
-                        % [Flute Voice] Measure 138
-                        {
-                            ef''16 -\mordent \ppp
+                        % [Flute Voice] Measure 48
+                        \tweak #'text #tuplet-number::calc-fraction-text
+                        \times 6/7 {
+                            ef''16 -\mordent \ppp [
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 1
+                            d''16 -\mordent
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            r8
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            f''16 -\mordent
+                            \set stemLeftBeamCount = 2
+                            b'16 -\mordent ]
                         }
                     }
                     {
                         {
-                            r4..
+                            r8
                         }
-                        % [Flute Voice] Measure 139
+                    }
+                    {
+                        % [Flute Voice] Measure 49
+                        {
+                            a''16 -\mordent \ppp
+                        }
+                    }
+                    {
+                        {
+                            r16
+                            r4
+                            r4.
+                        }
+                        % [Flute Voice] Measure 50
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -72,42 +115,47 @@
                 \set Staff.shortInstrumentName = \markup { Ob. }
                 \context Voice = "Oboe Voice" {
                     {
-                        % [Oboe Voice] Measure 138
+                        % [Oboe Voice] Measure 48
                         {
                             r8
                         }
                     }
                     {
-                        \tweak #'text #tuplet-number::calc-fraction-text
-                        \times 6/7 {
+                        \times 4/5 {
                             r8. [
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
-                            a''16 -\mordent \ppp
+                            f''16 -\mordent \ppp
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            b'16 -\mordent
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            r16
-                            \set stemLeftBeamCount = 2
-                            a'16 -\mordent ]
+                            b'16 -\mordent ]
                         }
-                        % [Oboe Voice] Measure 139
+                    }
+                    {
+                        {
+                            r16
+                        }
+                    }
+                    {
+                        {
+                            a''16 -\mordent \ppp
+                        }
+                        % [Oboe Voice] Measure 49
                         {
                             b'16 -\mordent
                         }
                     }
                     {
                         {
-                            r4..
+                            r16
+                            r4
+                            r4.
                         }
-                        % [Oboe Voice] Measure 140
+                        % [Oboe Voice] Measure 50
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1/2
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -128,7 +176,7 @@
                 \set Staff.shortInstrumentName = \markup { Bass cl. }
                 \context Voice = "Clarinet Voice" {
                     {
-                        % [Clarinet Voice] Measure 138
+                        % [Clarinet Voice] Measure 48
                         {
                             r4
                         }
@@ -136,9 +184,9 @@
                     \transpose bf, c'
                     {
                         {
-                            b'16 \f [ (
+                            d'16 \f [ (
                             \set stemLeftBeamCount = 2
-                            a'16 ] )
+                            f'16 ] )
                         }
                     }
                     {
@@ -148,32 +196,27 @@
                     }
                     \transpose bf, c'
                     {
-                        % [Clarinet Voice] Measure 139
-                        \times 4/5 {
-                            b16 \f \> [
+                        % [Clarinet Voice] Measure 49
+                        \times 2/3 {
+                            b'16 \f [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             a16
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            b'16
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            e'16 \mp
-                            \set stemLeftBeamCount = 2
-                            r16 ]
+                            b16 ]
                         }
                     }
                     {
                         {
                             r4
+                            r4.
                         }
-                        % [Clarinet Voice] Measure 140
+                        % [Clarinet Voice] Measure 50
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1/2
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -195,7 +238,7 @@
                 \context Voice = "Saxophone Voice" {
                     \transpose ef, c'
                     {
-                        % [Saxophone Voice] Measure 138
+                        % [Saxophone Voice] Measure 48
                         {
                             ef16 -\stopped \f \> [
                             \set stemLeftBeamCount = 2
@@ -211,57 +254,84 @@
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
-                            a,16 -\stopped ]
+                            b,16 -\stopped ]
                         }
                         {
                             \pitchedTrill
-                            b,8 \startTrillSpan d
+                            a,8 \startTrillSpan c
                             <> \stopTrillSpan
                         }
-                        % [Saxophone Voice] Measure 139
+                        % [Saxophone Voice] Measure 49
                         \tweak #'text #tuplet-number::calc-fraction-text
                         \times 6/7 {
                             r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            a,16 -\stopped
+                            b,16 -\stopped
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            a,16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             b,16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            af,16 -\staccato
+                            a,16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            d,16 -\staccato
+                            b,16 -\staccato
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            e,16 -\staccato
-                            \set stemLeftBeamCount = 2
-                            f,16 -\staccato \mf ]
+                            a,16 -\staccato \mf ]
                         }
                     }
                     {
                         {
-                            r8
-                        }
-                        % [Saxophone Voice] Measure 140
-                        {
-                            r16
+                            r8.
                         }
                     }
                     \transpose ef, c'
                     {
                         {
-                            c,16 -\stopped \f [
+                            af,16 -\stopped \f [
                             \set stemLeftBeamCount = 2
-                            ef,16 ]
+                            d,16 ]
                         }
                     }
                     {
                         {
                             r16
+                        }
+                        % [Saxophone Voice] Measure 50
+                        {
                             r4
+                        }
+                    }
+                    \transpose ef, c'
+                    {
+                        \times 4/5 {
+                            ef,16 -\stopped \f \> [ (
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            f,16 )
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            r16
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            c,16 -\stopped
+                            \set stemLeftBeamCount = 2
+                            ef,16 -\staccato \mf ]
+                        }
+                    }
+                    {
+                        % [Saxophone Voice] Measure 51
+                        {
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(0)
+                            \startStaff
+                            R1 * 1/2
+                            \stopStaff
+                            \startStaff
                         }
                     }
                 }
@@ -283,12 +353,20 @@
                     \set Staff.shortInstrumentName = \markup { Pp. }
                     \context Voice = "Guitar Pitch Pipe Voice" {
                         {
-                            % [Guitar Pitch Pipe Voice] Measure 138
+                            % [Guitar Pitch Pipe Voice] Measure 48
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/2
+                                R1 * 1/2
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 49
+                            {
+                                R1 * 3/4
+                            }
+                            % [Guitar Pitch Pipe Voice] Measure 50
+                            {
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -302,67 +380,75 @@
                     \set Staff.shortInstrumentName = \markup { Gt. }
                     \context Voice = "Guitar Voice" {
                         {
-                            % [Guitar Voice] Measure 138
+                            % [Guitar Voice] Measure 48
                             {
                                 r8.
                             }
                         }
                         {
                             {
-                                d'8 -\accent -\mordent \f
-                            }
-                        }
-                        {
-                            {
-                                r8.
-                            }
-                            % [Guitar Voice] Measure 139
-                            {
-                                r8
-                            }
-                        }
-                        {
-                            \tweak #'text #tuplet-number::calc-fraction-text
-                            \times 6/7 {
-                                a'8 -\accent -\mordent \f \> [
+                                d'8 -\accent -\mordent \f \> [
                                 \set stemLeftBeamCount = 1
                                 \set stemRightBeamCount = 2
-                                <d' g'>16 -\snappizzicato -\staccato
+                                f'16 -\snappizzicato -\staccato
+                                \set stemLeftBeamCount = 2
+                                <b' e''>16 -\staccato \mf ]
+                            }
+                        }
+                        {
+                            {
+                                r16
+                            }
+                        }
+                        {
+                            % [Guitar Voice] Measure 49
+                            {
+                                a'4. -\mordent \f
+                            }
+                        }
+                        {
+                            {
+                                r4.
+                            }
+                        }
+                        {
+                            % [Guitar Voice] Measure 50
+                            \times 4/5 {
+                                <f' af'>8 :64 -\accent \f \> [
+                                \set stemLeftBeamCount = 1
+                                \set stemRightBeamCount = 2
+                                ef'16 -\snappizzicato -\staccato
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
-                                e'16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <f' af'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                ef'16 -\staccato \mf
+                                f16 -\staccato \mf
                                 \set stemLeftBeamCount = 2
                                 r16 ]
                             }
                         }
                         {
-                            % [Guitar Voice] Measure 140
                             {
                                 r16
                             }
                         }
                         {
                             {
-                                f'16 -\snappizzicato -\staccato \f \> [
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                <c' f'>16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                ef16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                <f af>16 -\staccato \mf ]
+                                <c' f'>8 :64 -\accent \f
                             }
                         }
                         {
                             {
-                                r8.
+                                r16
+                            }
+                        }
+                        {
+                            % [Guitar Voice] Measure 51
+                            {
+                                ef'8 -\accent -\mordent \f
+                            }
+                        }
+                        {
+                            {
+                                r4.
                             }
                         }
                     }
@@ -383,12 +469,20 @@
                     \set Staff.shortInstrumentName = \markup { Pp. }
                     \context Voice = "Piano Pitch Pipe Voice" {
                         {
-                            % [Piano Pitch Pipe Voice] Measure 138
+                            % [Piano Pitch Pipe Voice] Measure 48
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/2
+                                R1 * 1/2
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 49
+                            {
+                                R1 * 3/4
+                            }
+                            % [Piano Pitch Pipe Voice] Measure 50
+                            {
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -403,7 +497,7 @@
                         \clef "treble"
                         \context Voice = "Piano Upper Voice" {
                             {
-                                % [Piano Upper Voice] Measure 138
+                                % [Piano Upper Voice] Measure 48
                                 {
                                     r4
                                     r16
@@ -418,6 +512,7 @@
                                     \once \override NoteHead.text = \markup {
                                     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                                     }
+                                    \ottava #1
                                     <c''' e''' g'''>16 \p [
                                         ^ \markup {
                                             \center-align
@@ -431,18 +526,19 @@
                                     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                                     }
                                     \set stemLeftBeamCount = 2
-                                    <e'' g'' b''>16 ]
+                                    <e''' g''' b'''>16 ]
                                         ^ \markup {
                                             \center-align
                                                 \natural
                                             }
+                                    \ottava #0
                                 }
                             }
                             {
                                 {
                                     r16
                                 }
-                                % [Piano Upper Voice] Measure 139
+                                % [Piano Upper Voice] Measure 49
                                 {
                                     r16
                                 }
@@ -475,7 +571,7 @@
                                     }
                                     \set stemLeftBeamCount = 2
                                     \set stemRightBeamCount = 2
-                                    <c''' e''' g'''>16
+                                    <c'' e'' g''>16
                                         ^ \markup {
                                             \center-align
                                                 \natural
@@ -488,12 +584,14 @@
                                     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                                     }
                                     \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <e'' g'' b''>16
+                                    <e'' g'' b''>16 ]
                                         ^ \markup {
                                             \center-align
                                                 \natural
                                             }
+                                }
+                                \times 2/3 {
+                                    r8 [
                                     \once \override Accidental.stencil = ##f
                                     \once \override AccidentalCautionary.stencil = ##f
                                     \once \override Arpeggio.X-offset = #-2
@@ -501,9 +599,9 @@
                                     \once \override NoteHead.text = \markup {
                                     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                                     }
-                                    \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 2
-                                    <f'' a'' c''' e''' g'''>16
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
+                                    <f''' a''' c'''' e'''' g''''>8
                                         ^ \markup {
                                             \center-align
                                                 \concat
@@ -519,8 +617,8 @@
                                     \once \override NoteHead.text = \markup {
                                     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
                                     }
-                                    \set stemLeftBeamCount = 2
-                                    <c''' e''' g'''>16 \p ]
+                                    \set stemLeftBeamCount = 1
+                                    <c''' e''' g'''>8 \p ]
                                         ^ \markup {
                                             \center-align
                                                 \natural
@@ -530,9 +628,104 @@
                             }
                             {
                                 {
+                                    r16
+                                }
+                            }
+                            {
+                                {
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    <e'' g'' b''>16 \pp [
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 2
+                                    <f' a' c'' e'' g''>16 ]
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                }
+                            }
+                            {
+                                {
+                                    r16
+                                }
+                                % [Piano Upper Voice] Measure 50
+                                {
                                     r8
                                 }
-                                % [Piano Upper Voice] Measure 140
+                            }
+                            {
+                                \tweak #'text #tuplet-number::calc-fraction-text
+                                \times 3/4 {
+                                    r8 [
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
+                                    <c'' e'' g''>8 \mp \>
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 1
+                                    \set stemRightBeamCount = 1
+                                    <e' g' b'>8
+                                        ^ \markup {
+                                            \center-align
+                                                \natural
+                                            }
+                                    \once \override Accidental.stencil = ##f
+                                    \once \override AccidentalCautionary.stencil = ##f
+                                    \once \override Arpeggio.X-offset = #-2
+                                    \once \override NoteHead.stencil = #ly:text-interface::print
+                                    \once \override NoteHead.text = \markup {
+                                    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+                                    }
+                                    \set stemLeftBeamCount = 1
+                                    <f' a' c'' e'' g''>8 \pp ]
+                                        ^ \markup {
+                                            \center-align
+                                                \concat
+                                                    {
+                                                        \natural
+                                                        \flat
+                                                    }
+                                            }
+                                }
+                            }
+                            {
+                                % [Piano Upper Voice] Measure 51
                                 {
                                     \stopStaff
                                     \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -549,7 +742,7 @@
                         \clef "bass"
                         \context Voice = "Piano Lower Voice" {
                             {
-                                % [Piano Lower Voice] Measure 138
+                                % [Piano Lower Voice] Measure 48
                                 {
                                     r8
                                 }
@@ -560,45 +753,73 @@
                                 }
                             }
                             {
-                                % [Piano Lower Voice] Measure 139
+                                % [Piano Lower Voice] Measure 49
                                 {
-                                    r8
+                                    r4
+                                    r16
                                 }
                             }
                             {
-                                \times 4/5 {
-                                    a16 -\staccato \f \> [
+                                {
+                                    a16 -\staccato \f [
                                     \set stemLeftBeamCount = 2
-                                    \set stemRightBeamCount = 1
-                                    <f af>16 -\staccato
-                                    \set stemLeftBeamCount = 1
-                                    \set stemRightBeamCount = 1
-                                    af,8 -\accent -\mordent
+                                    <b, d>16 -\staccato ]
+                                }
+                            }
+                            {
+                                {
+                                    r16
+                                    r4
+                                }
+                                % [Piano Lower Voice] Measure 50
+                                {
+                                    r4.
+                                }
+                            }
+                            {
+                                \times 2/3 {
+                                    c16 -\staccato \f [
+                                    \set stemLeftBeamCount = 2
+                                    \set stemRightBeamCount = 2
+                                    ef16 -\staccato
                                     \set stemLeftBeamCount = 2
                                     r16 ]
                                 }
+                            }
+                            {
+                                % [Piano Lower Voice] Measure 51
                                 {
-                                    ef8 -\accent -\mordent \mf
+                                    r16
                                 }
                             }
                             {
-                                % [Piano Lower Voice] Measure 140
                                 {
-                                    \stopStaff
-                                    \once \override Staff.StaffSymbol.line-positions = #'(0)
-                                    \startStaff
-                                    R1 * 1/2
-                                    \stopStaff
-                                    \startStaff
+                                    <f af>16 -\staccato \f [
+                                    \set stemLeftBeamCount = 2
+                                    <b, d>16 -\staccato ]
+                                }
+                            }
+                            {
+                                {
+                                    r16
+                                    r4
                                 }
                             }
                         }
                     }
                     \context Dynamics = "Piano Pedals Voice" {
                         {
-                            % [Piano Pedals Voice] Measure 138
+                            % [Piano Pedals Voice] Measure 48
                             {
-                                R1 * 3/2
+                                R1 * 1/2
+                            }
+                            % [Piano Pedals Voice] Measure 49
+                            {
+                                R1 * 3/4
+                            }
+                            % [Piano Pedals Voice] Measure 50
+                            {
+                                R1 * 1
                             }
                         }
                     }
@@ -619,12 +840,20 @@
                     \set Staff.shortInstrumentName = \markup { Pp. }
                     \context Voice = "Percussion Pitch Pipe Voice" {
                         {
-                            % [Percussion Pitch Pipe Voice] Measure 138
+                            % [Percussion Pitch Pipe Voice] Measure 48
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/2
+                                R1 * 1/2
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 49
+                            {
+                                R1 * 3/4
+                            }
+                            % [Percussion Pitch Pipe Voice] Measure 50
+                            {
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -638,7 +867,7 @@
                     \set Staff.shortInstrumentName = \markup { Perc. }
                     \context Voice = "Percussion Voice" {
                         {
-                            % [Percussion Voice] Measure 138
+                            % [Percussion Voice] Measure 48
                             {
                                 \once \override TextSpanner.bound-details.left-broken.text = ##f
                                 \once \override TextSpanner.bound-details.left.text = \markup {
@@ -685,25 +914,31 @@
                                 \set stemLeftBeamCount = 2
                                 d'16 -\staccato ]
                             }
-                            % [Percussion Voice] Measure 139
+                            % [Percussion Voice] Measure 49
                             {
-                                g2 :32 -\accent \ppp
+                                b2. :32 -\accent \ppp
                             }
-                            % [Percussion Voice] Measure 140
+                            % [Percussion Voice] Measure 50
                             \times 4/5 {
-                                d'16 -\staccato \< [
+                                b16 -\staccato \< [
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
-                                b16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                b16 -\staccato
+                                d'16 -\staccato
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
                                 f'16 -\staccato
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
-                                d'16 -\staccato
+                                b16 -\staccato
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                b16 -\staccato
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                r16
+                                \set stemLeftBeamCount = 2
+                                \set stemRightBeamCount = 2
+                                r16
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
                                 b16 -\staccato
@@ -711,16 +946,19 @@
                                 \set stemRightBeamCount = 2
                                 g16 -\staccato
                                 \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                f'16 -\staccato
-                                \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 2
-                                d'16 -\staccato \f
-                                <> \stopTextSpan
-                                \set stemLeftBeamCount = 2
                                 r16 ]
+                            }
+                            % [Percussion Voice] Measure 51
+                            {
+                                f'4 :32 -\accent \f
                                 \stopStaff
                                 \startStaff
+                                <> \stopTextSpan
+                            }
+                        }
+                        {
+                            {
+                                r4
                             }
                         }
                     }
@@ -736,7 +974,7 @@
                 \set Staff.shortInstrumentName = \markup { Vn. }
                 \context Voice = "Violin Voice" {
                     {
-                        % [Violin Voice] Measure 138
+                        % [Violin Voice] Measure 48
                         {
                             r8
                         }
@@ -753,23 +991,43 @@
                             >16 -\staccato -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            b'16 -\staccato
+                            d''16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            b'16 -\staccato )
+                            d'16 -\staccato )
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             <
-                                b
+                                b'
                                 \tweak #'style #'harmonic
-                                e'
-                            >16 -\staccato -\staccato \p \p ]
+                                e''
+                            >16 -\staccato -\staccato ] (
+                        }
+                        % [Violin Voice] Measure 49
+                        \times 4/5 {
+                            a'16 -\staccato ) [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 1
+                            r8
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            <
+                                a'
+                                \tweak #'style #'harmonic
+                                d''
+                            >16 -\staccato -\staccato \p \p
+                            \set stemLeftBeamCount = 2
+                            r16 ]
                         }
                     }
                     {
-                        % [Violin Voice] Measure 139
+                        {
+                            r8
+                            r4.
+                        }
+                        % [Violin Voice] Measure 50
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
@@ -789,7 +1047,7 @@
                 \set Staff.shortInstrumentName = \markup { Va. }
                 \context Voice = "Viola Voice" {
                     {
-                        % [Viola Voice] Measure 138
+                        % [Viola Voice] Measure 48
                         {
                             r4.
                         }
@@ -800,7 +1058,7 @@
                             \set stemLeftBeamCount = 2
                             a16 -\staccato ] )
                         }
-                        % [Viola Voice] Measure 139
+                        % [Viola Voice] Measure 49
                         {
                             \pitchedTrill
                             b4 -\accent \startTrillSpan e'
@@ -809,14 +1067,15 @@
                     }
                     {
                         {
-                            r4
+                            r8
+                            r4.
                         }
-                        % [Viola Voice] Measure 140
+                        % [Viola Voice] Measure 50
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1/2
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -831,45 +1090,57 @@
                 \set Staff.shortInstrumentName = \markup { Vc. }
                 \context Voice = "Cello Voice" {
                     {
-                        % [Cello Voice] Measure 138
+                        % [Cello Voice] Measure 48
                         {
                             \pitchedTrill
-                            b4 -\accent \f \> \startTrillSpan d'
+                            b2 -\accent \f \> \startTrillSpan d'
                             <> \stopTrillSpan
                         }
+                        % [Cello Voice] Measure 49
                         \times 2/3 {
-                            a16 -\staccato [
+                            r8 [
+                            \set stemLeftBeamCount = 1
+                            \set stemRightBeamCount = 2
+                            a16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            a16 -\staccato (
+                            a,16 -\staccato (
                             \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 1
                             <
-                                a
+                                a,
                                 \tweak #'style #'harmonic
-                                d'
-                            >16 -\staccato -\staccato )
-                            \set stemLeftBeamCount = 1
-                            r8 ]
-                        }
-                        % [Cello Voice] Measure 139
-                        {
-                            b,16 -\staccato \p
+                                d
+                            >16 -\staccato -\staccato \p \p ] )
                         }
                     }
                     {
                         {
-                            r4..
+                            r16
                         }
-                        % [Cello Voice] Measure 140
+                    }
+                    {
+                        {
+                            b16 -\staccato \p [ (
+                            \set stemLeftBeamCount = 2
+                            \set stemRightBeamCount = 2
+                            b16 -\staccato
+                            \set stemLeftBeamCount = 2
+                            b,16 -\staccato ] )
+                        }
+                    }
+                    {
+                        {
+                            r4
+                        }
+                        % [Cello Voice] Measure 50
                         {
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
-                            R1 * 1/2
+                            R1 * 1
                             \stopStaff
                             \startStaff
                         }
@@ -891,12 +1162,20 @@
                     \set Staff.shortInstrumentName = \markup { Pp. }
                     \context Voice = "Contrabass Pitch Pipe Voice" {
                         {
-                            % [Contrabass Pitch Pipe Voice] Measure 138
+                            % [Contrabass Pitch Pipe Voice] Measure 48
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 3/2
+                                R1 * 1/2
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 49
+                            {
+                                R1 * 3/4
+                            }
+                            % [Contrabass Pitch Pipe Voice] Measure 50
+                            {
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }
@@ -910,7 +1189,7 @@
                     \set Staff.shortInstrumentName = \markup { Cb. }
                     \context Voice = "Contrabass Voice" {
                         {
-                            % [Contrabass Voice] Measure 138
+                            % [Contrabass Voice] Measure 48
                             {
                                 r8.
                             }
@@ -951,7 +1230,7 @@
                             }
                         }
                         {
-                            % [Contrabass Voice] Measure 139
+                            % [Contrabass Voice] Measure 49
                             {
                                 cs16 -\mordent \ppp
                                 <> \stopTextSpan
@@ -959,14 +1238,16 @@
                         }
                         {
                             {
-                                r4..
+                                r16
+                                r4
+                                r4.
                             }
-                            % [Contrabass Voice] Measure 140
+                            % [Contrabass Voice] Measure 50
                             {
                                 \stopStaff
                                 \once \override Staff.StaffSymbol.line-positions = #'(0)
                                 \startStaff
-                                R1 * 1/2
+                                R1 * 1
                                 \stopStaff
                                 \startStaff
                             }

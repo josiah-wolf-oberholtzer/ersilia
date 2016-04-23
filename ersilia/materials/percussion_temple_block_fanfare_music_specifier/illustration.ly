@@ -1,7 +1,9 @@
-\version "2.19.17"
+% 2016-04-22 21:23
+
+\version "2.19.15"
 \language "english"
 
-\include "/Users/josiah/Documents/Development/consort/consort/stylesheets/stylesheet.ily"
+\include "/Users/joberholtzer/Development/consort/consort/stylesheets/stylesheet.ily"
 
 \header {
     tagline = \markup {}
@@ -13,15 +15,9 @@
         \tag #'time
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 3/8
                 \tempo 4=72
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
+                \time 3/8
+                s1 * 9/8
             }
             {
                 \time 7/8
@@ -29,13 +25,7 @@
             }
             {
                 \time 3/8
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
+                s1 * 9/8
             }
         }
         \tag #'violin-1
@@ -60,15 +50,16 @@
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        blocks
-                                                    }
+                                    \whiteout
+                                        \pad-around
+                                            #0.5
+                                            \italic
+                                                \smaller
+                                                    \concat
+                                                        {
+                                                            \vstrut
+                                                            blocks
+                                                        }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.text = \markup {
@@ -76,6 +67,9 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             g'16 -\staccato \p \startTextSpan \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
@@ -88,7 +82,8 @@
                             f16 -\staccato
                             \set stemLeftBeamCount = 2
                             e'16 -\staccato \f ]
-                            <> \stopTextSpan
+                            \stopStaff
+                            \startStaff
                         }
                     }
                     {
@@ -99,27 +94,12 @@
                     {
                         % [Violin 1 Voice] Measure 2
                         {
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        blocks
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            <f a>4 :32 -\accent \p \startTextSpan
-                            <> \stopTextSpan
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            <f a>4 :32 -\accent -\accent \p \p
+                            \stopStaff
+                            \startStaff
                         }
                     }
                     {
@@ -130,32 +110,17 @@
                     {
                         % [Violin 1 Voice] Measure 3
                         \times 2/3 {
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        blocks
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            c'16 -\staccato \p \startTextSpan [
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            c'16 -\staccato \p [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
                             c'16 -\staccato ]
-                            <> \stopTextSpan
+                            \stopStaff
+                            \startStaff
                         }
                     }
                     {
@@ -166,29 +131,13 @@
                     {
                         % [Violin 1 Voice] Measure 4
                         \times 4/5 {
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        blocks
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            r16 \startTextSpan [
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            e'16 -\staccato \fp \>
+                            e'16 -\staccato \fp \<
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             a16 -\staccato
@@ -211,12 +160,12 @@
                             e'16 -\staccato ]
                         }
                         {
-                            <a c'>8 :64 -\accent \ppp
+                            <a c'>8 :64 -\accent -\accent
                             <a c'>4 :32 \repeatTie
                         }
                         % [Violin 1 Voice] Measure 5
                         \times 4/5 {
-                            e'16 -\staccato \< [
+                            e'16 -\staccato [
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 1
                             r8
@@ -225,7 +174,8 @@
                             c'16 -\staccato
                             \set stemLeftBeamCount = 2
                             a16 -\staccato \f ]
-                            <> \stopTextSpan
+                            \stopStaff
+                            \startStaff
                         }
                     }
                     {
@@ -239,39 +189,25 @@
                     }
                     {
                         {
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        blocks
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            <c' e'>8 :64 -\accent \p \startTextSpan
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            <c' e'>8 :64 -\accent -\accent \p \p \<
                         }
                         % [Violin 1 Voice] Measure 7
                         \times 4/5 {
                             r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            e'16 -\staccato \f
+                            e'16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 1
-                            a16 -\staccato
+                            a16 -\staccato \f
+                            <> \stopTextSpan
                             \set stemLeftBeamCount = 1
                             r8 ]
-                            <> \stopTextSpan
+                            \stopStaff
+                            \startStaff
                         }
                     }
                     {
@@ -310,15 +246,16 @@
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        blocks
-                                                    }
+                                    \whiteout
+                                        \pad-around
+                                            #0.5
+                                            \italic
+                                                \smaller
+                                                    \concat
+                                                        {
+                                                            \vstrut
+                                                            blocks
+                                                        }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.text = \markup {
@@ -326,7 +263,10 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            c'16 -\staccato \fp \startTextSpan \> [
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            c'16 -\staccato \fp \startTextSpan \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
@@ -335,17 +275,18 @@
                         }
                         % [Violin 2 Voice] Measure 2
                         {
-                            a4 :32 -\accent \ppp
+                            a4 :32 -\accent
                         }
                         {
-                            f16 -\staccato \< [
+                            f16 -\staccato \f [
                             \set stemLeftBeamCount = 2
                             c'16 -\staccato ]
                         }
                         % [Violin 2 Voice] Measure 3
                         {
-                            <c' e'>4 :32 -\accent \f
-                            <> \stopTextSpan
+                            <c' e'>4 :32 -\accent -\accent
+                            \stopStaff
+                            \startStaff
                         }
                     }
                     {
@@ -356,26 +297,10 @@
                     {
                         % [Violin 2 Voice] Measure 4
                         \times 2/3 {
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        blocks
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            r16 \startTextSpan [
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             c'16 -\staccato \p \<
@@ -390,7 +315,8 @@
                             r16
                             \set stemLeftBeamCount = 2
                             c'16 -\staccato \f ]
-                            <> \stopTextSpan
+                            \stopStaff
+                            \startStaff
                         }
                     }
                     {
@@ -401,35 +327,19 @@
                     }
                     {
                         {
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        blocks
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            a16 -\staccato \fp \startTextSpan \> [
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            a16 -\staccato \fp \> [
                             \set stemLeftBeamCount = 2
                             a16 -\staccato ]
                         }
                         {
-                            <f a>4 :32 -\accent \ppp
+                            <f a>4 :32 -\accent -\accent
                         }
                         % [Violin 2 Voice] Measure 5
                         \times 2/3 {
-                            g'16 -\staccato [
+                            g'16 -\staccato \ppp [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             a16 -\staccato
@@ -446,7 +356,7 @@
                             a16 -\staccato ]
                         }
                         {
-                            <e' g'>8 :64 -\accent
+                            <e' g'>8 :64 -\accent -\accent
                         }
                         % [Violin 2 Voice] Measure 6
                         \tweak #'text #tuplet-number::calc-fraction-text
@@ -470,6 +380,8 @@
                         % [Violin 2 Voice] Measure 7
                         {
                             a8 :64 -\accent \f
+                            \stopStaff
+                            \startStaff
                             <> \stopTextSpan
                         }
                     }
@@ -509,15 +421,16 @@
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        blocks
-                                                    }
+                                    \whiteout
+                                        \pad-around
+                                            #0.5
+                                            \italic
+                                                \smaller
+                                                    \concat
+                                                        {
+                                                            \vstrut
+                                                            blocks
+                                                        }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.text = \markup {
@@ -525,29 +438,33 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
                             a4 :32 -\accent \p \startTextSpan \>
                         }
                         % [Viola Voice] Measure 2
                         {
-                            a16 -\staccato \ppp [
+                            a16 -\staccato [
                             \set stemLeftBeamCount = 2
                             e'16 -\staccato ]
                         }
                         {
-                            <f a>8 :64 -\accent
+                            <f a>8 :64 -\accent -\accent \ppp \ppp \<
                         }
                         \times 2/3 {
                             r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            e'16 -\staccato \<
+                            e'16 -\staccato
                             \set stemLeftBeamCount = 2
                             a16 -\staccato ]
                         }
                         % [Viola Voice] Measure 3
                         {
-                            <e' g'>8 :64 -\accent \f
-                            <> \stopTextSpan
+                            <e' g'>8 :64 -\accent -\accent \f \f
+                            \stopStaff
+                            \startStaff
                         }
                     }
                     {
@@ -562,26 +479,10 @@
                     {
                         \tweak #'text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        blocks
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            r8 \startTextSpan [
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            r8 [
                             \set stemLeftBeamCount = 1
                             \set stemRightBeamCount = 2
                             c'16 -\staccato \fp \>
@@ -601,14 +502,14 @@
                             c'16 -\staccato ]
                         }
                         {
-                            <a c'>4 :32 -\accent \ppp
+                            <a c'>4 :32 -\accent -\accent
                         }
                         % [Viola Voice] Measure 5
                         \times 2/3 {
                             r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato
+                            c'16 -\staccato \ppp \<
                             \set stemLeftBeamCount = 2
                             f16 -\staccato ]
                         }
@@ -617,7 +518,7 @@
                         }
                         % [Viola Voice] Measure 6
                         {
-                            e'16 -\staccato \< [
+                            e'16 -\staccato [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             a16 -\staccato
@@ -626,6 +527,8 @@
                             a16 -\staccato
                             \set stemLeftBeamCount = 2
                             a16 -\staccato \f ]
+                            \stopStaff
+                            \startStaff
                             <> \stopTextSpan
                         }
                     }
@@ -640,8 +543,6 @@
                             \startStaff
                             R1 * 3/8
                             \bar "|."
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 }
@@ -669,15 +570,16 @@
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
                                 \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        blocks
-                                                    }
+                                    \whiteout
+                                        \pad-around
+                                            #0.5
+                                            \italic
+                                                \smaller
+                                                    \concat
+                                                        {
+                                                            \vstrut
+                                                            blocks
+                                                        }
                                 }
                             \once \override TextSpanner.bound-details.right-broken.text = ##f
                             \once \override TextSpanner.bound-details.right.text = \markup {
@@ -685,20 +587,24 @@
                                     #'(0 . -1)
                                 }
                             \once \override TextSpanner.dash-fraction = 1
-                            <c' e'>4. :32 -\accent \p \startTextSpan
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            <c' e'>4. :32 -\accent -\accent \p \p \startTextSpan \<
                         }
                         % [Cello Voice] Measure 2
                         \times 4/5 {
                             r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            g'16 -\staccato \f
+                            g'16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 1
-                            c'16 -\staccato
+                            c'16 -\staccato \f
                             \set stemLeftBeamCount = 1
                             r8 ]
-                            <> \stopTextSpan
+                            \stopStaff
+                            \startStaff
                         }
                     }
                     {
@@ -710,26 +616,10 @@
                         % [Cello Voice] Measure 3
                         \tweak #'text #tuplet-number::calc-fraction-text
                         \times 6/7 {
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        blocks
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            g'16 -\staccato \fp \startTextSpan \< [
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            g'16 -\staccato \fp \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             e'16 -\staccato
@@ -751,7 +641,8 @@
                         % [Cello Voice] Measure 4
                         {
                             a8 :64 -\accent \f
-                            <> \stopTextSpan
+                            \stopStaff
+                            \startStaff
                         }
                     }
                     {
@@ -761,29 +652,13 @@
                     }
                     {
                         {
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        blocks
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            <e' g'>4 :32 -\accent \p \startTextSpan \>
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            <e' g'>4 :32 -\accent -\accent \p \p \>
                         }
                         {
-                            a16 -\staccato \ppp [
+                            a16 -\staccato [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
@@ -795,13 +670,13 @@
                         }
                         % [Cello Voice] Measure 5
                         {
-                            a8 :64 -\accent
+                            a8 :64 -\accent \ppp \<
                         }
                         \times 2/3 {
                             r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            c'16 -\staccato \<
+                            c'16 -\staccato
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             g'16 -\staccato
@@ -813,7 +688,8 @@
                             c'16 -\staccato
                             \set stemLeftBeamCount = 2
                             a16 -\staccato \f ]
-                            <> \stopTextSpan
+                            \stopStaff
+                            \startStaff
                         }
                     }
                     {
@@ -830,45 +706,20 @@
                     {
                         % [Cello Voice] Measure 7
                         {
-                            \once \override TextSpanner.bound-details.left-broken.text = ##f
-                            \once \override TextSpanner.bound-details.left.text = \markup {
-                                \box
-                                    \pad-around
-                                        #0.5
-                                        \italic
-                                            \smaller
-                                                \concat
-                                                    {
-                                                        \vstrut
-                                                        blocks
-                                                    }
-                                }
-                            \once \override TextSpanner.bound-details.right-broken.text = ##f
-                            \once \override TextSpanner.bound-details.right.text = \markup {
-                                \draw-line
-                                    #'(0 . -1)
-                                }
-                            \once \override TextSpanner.dash-fraction = 1
-                            f16 -\staccato \p \startTextSpan [
+                            \stopStaff
+                            \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
+                            \startStaff
+                            f16 -\staccato \p [
                             \set stemLeftBeamCount = 2
                             c'16 -\staccato ]
+                            \stopStaff
+                            \startStaff
                             <> \stopTextSpan
                         }
                     }
                     {
                         {
                             r4
-                                _ \markup {
-                                    \italic
-                                        \center-column
-                                            {
-                                                " "
-                                                " "
-                                                " "
-                                                Nowhere
-                                                "2001 - 3001"
-                                            }
-                                    }
                             \bar "|."
                         }
                     }

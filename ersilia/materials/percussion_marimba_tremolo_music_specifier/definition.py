@@ -1,5 +1,6 @@
 # -*- encoding: utf-8 -*-
 import consort
+from abjad.tools import patterntools
 from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
 from abjad.tools import selectortools
@@ -13,8 +14,8 @@ percussion_marimba_tremolo_music_specifier = consort.MusicSpecifier(
         dynamic_expressions=consort.DynamicExpression(
             division_period=2,
             dynamic_tokens='p ppp',
-            start_dynamic_tokens='o',
-            stop_dynamic_tokens='o',
+            start_dynamic_tokens='niente',
+            stop_dynamic_tokens='niente',
             ),
         staff_lines_spanner=spannertools.StaffLinesSpanner([-4, -2, 0, 2, 4]),
         stem_tremolo_spanner=consort.AttachmentExpression(
@@ -63,9 +64,9 @@ percussion_marimba_tremolo_music_specifier = consort.MusicSpecifier(
         denominators=[16],
         division_masks=[
             rhythmmakertools.SustainMask(
-                pattern=rhythmmakertools.Pattern(
+                pattern=patterntools.Pattern(
                     indices=[2],
-                    invert=True,
+                    inverted=True,
                     period=3,
                     ),
                 ),

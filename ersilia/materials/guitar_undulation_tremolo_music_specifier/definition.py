@@ -1,6 +1,7 @@
 # -*- encoding: utf-8 -*-
 import consort
 from abjad.tools import indicatortools
+from abjad.tools import patterntools
 from abjad.tools import rhythmmakertools
 from abjad.tools import selectortools
 from abjad.tools import spannertools
@@ -19,8 +20,8 @@ guitar_undulation_tremolo_music_specifier = consort.MusicSpecifier(
             ),
         dynamic_expressions=consort.DynamicExpression(
             dynamic_tokens='p mp pp',
-            start_dynamic_tokens='o',
-            stop_dynamic_tokens='o',
+            start_dynamic_tokens='niente',
+            stop_dynamic_tokens='niente',
             division_period=2,
             ),
         stem_tremolo_spanner=consort.AttachmentExpression(
@@ -43,13 +44,13 @@ guitar_undulation_tremolo_music_specifier = consort.MusicSpecifier(
         extra_counts_per_division=[0, 1],
         division_masks=[
             rhythmmakertools.SustainMask(
-                pattern=rhythmmakertools.Pattern(
+                pattern=patterntools.Pattern(
                     indices=[2],
                     period=3,
                     ),
                 ),
             rhythmmakertools.SustainMask(
-                pattern=rhythmmakertools.Pattern(
+                pattern=patterntools.Pattern(
                     indices=[0, -1],
                     ),
                 ),

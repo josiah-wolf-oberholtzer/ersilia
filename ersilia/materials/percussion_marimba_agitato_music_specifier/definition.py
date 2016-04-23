@@ -1,5 +1,6 @@
 # -*- encoding: utf-8 -*-
 from abjad.tools import indicatortools
+from abjad.tools import patterntools
 from abjad.tools import rhythmmakertools
 from abjad.tools import selectortools
 from abjad.tools import spannertools
@@ -23,7 +24,7 @@ percussion_marimba_agitato_music_specifier = consort.MusicSpecifier(
                 .by_logical_tie(pitched=True)
                 .by_duration('==', (1, 16), preprolated=True)
                 .by_pattern(
-                    rhythmmakertools.Pattern(
+                    patterntools.Pattern(
                         indices=[0, 3],
                         period=7,
                         ),
@@ -82,7 +83,7 @@ percussion_marimba_agitato_music_specifier = consort.MusicSpecifier(
         extra_counts_per_division=[0, 0, 1, 2, 0, 1],
         division_masks=[
             rhythmmakertools.SustainMask(
-                pattern=rhythmmakertools.Pattern(
+                pattern=patterntools.Pattern(
                     indices=[1],
                     period=3,
                     ),

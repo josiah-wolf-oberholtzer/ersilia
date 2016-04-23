@@ -1,7 +1,14 @@
-\version "2.19.32"
+% 2016-04-22 21:26
+
+\version "2.19.15"
 \language "english"
 
 \include "/Users/joberholtzer/Development/consort/consort/stylesheets/stylesheet.ily"
+
+\header {
+    tagline = \markup {}
+    title = #"Wind Tremolo Music Specifier"
+}
 
 \score {
     \context Score = "String Quartet Score" <<

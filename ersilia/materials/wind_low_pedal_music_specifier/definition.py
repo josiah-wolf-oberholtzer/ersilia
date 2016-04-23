@@ -8,8 +8,8 @@ wind_low_pedal_music_specifier = consort.MusicSpecifier(
         dynamic_expressions=consort.DynamicExpression(
             division_period=2,
             dynamic_tokens='p ppp',
-            start_dynamic_tokens='o',
-            stop_dynamic_tokens='o',
+            start_dynamic_tokens='niente',
+            stop_dynamic_tokens='niente',
             )
         ),
     color=None,

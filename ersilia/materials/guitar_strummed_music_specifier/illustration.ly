@@ -1,7 +1,9 @@
-\version "2.19.17"
+% 2016-04-22 21:21
+
+\version "2.19.15"
 \language "english"
 
-\include "/Users/josiah/Documents/Development/consort/consort/stylesheets/stylesheet.ily"
+\include "/Users/joberholtzer/Development/consort/consort/stylesheets/stylesheet.ily"
 
 \header {
     tagline = \markup {}
@@ -13,15 +15,9 @@
         \tag #'time
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 3/8
                 \tempo 4=72
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
+                \time 3/8
+                s1 * 9/8
             }
             {
                 \time 7/8
@@ -29,13 +25,7 @@
             }
             {
                 \time 3/8
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
+                s1 * 9/8
             }
         }
         \tag #'violin-1
@@ -57,7 +47,7 @@
                     {
                         % [Violin 1 Voice] Measure 1
                         {
-                            <d' c'' f'' a''>16 \arpeggio \laissezVibrer \p
+                            <d c' f' a'>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -79,7 +69,7 @@
                     {
                         % [Violin 1 Voice] Measure 2
                         {
-                            <df' bf' e'' a''>16 \arpeggio \laissezVibrer \p
+                            <df bf e' a'>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -101,7 +91,7 @@
                     {
                         % [Violin 1 Voice] Measure 3
                         {
-                            <c' g' bf' ef'' a''>16 \arpeggio \laissezVibrer \mf
+                            <c g bf ef' a'>16 \arpeggio \laissezVibrer \mf
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -123,7 +113,7 @@
                     {
                         % [Violin 1 Voice] Measure 4
                         {
-                            <b gf' a' d'' af''>16 \arpeggio \laissezVibrer \ppp
+                            <b, gf a d' af'>16 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -145,7 +135,7 @@
                     }
                     {
                         {
-                            <c' g' b' e'' a''>16 \arpeggio \p [
+                            <c g b e' a'>16 \arpeggio \p [
                             \once \override NoteHead.transparent = ##t
                             \set stemLeftBeamCount = 2
                             f'16 -\accent \sfz ]
@@ -163,7 +153,7 @@
                     {
                         % [Violin 1 Voice] Measure 5
                         {
-                            <e' a' d'' fs'' b''>16 \arpeggio \laissezVibrer \ppp
+                            <e a d' fs' b'>16 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -188,9 +178,9 @@
                     }
                     {
                         {
-                            <ef' af' df'' f'' bf''>16 \arpeggio \p [
+                            <ef af df' f' bf'>16 \arpeggio \p [
                             \set stemLeftBeamCount = 2
-                            <d' g' c'' e'' a''>16 \arpeggio ]
+                            <d g c' e' a'>16 \arpeggio ]
                         }
                         % [Violin 1 Voice] Measure 7
                         {
@@ -236,7 +226,7 @@
                     }
                     {
                         {
-                            <d' c'' f'' a''>16 \arpeggio \laissezVibrer \p
+                            <d c' f' a'>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -257,7 +247,7 @@
                     {
                         % [Violin 2 Voice] Measure 2
                         {
-                            <df' bf' e'' a''>16 \arpeggio \mf [
+                            <df bf e' a'>16 \arpeggio \mf [
                             \once \override NoteHead.transparent = ##t
                             \set stemLeftBeamCount = 2
                             f'16 -\accent \sfz ]
@@ -274,9 +264,9 @@
                     }
                     {
                         {
-                            <b gf' a' d'' af''>16 \arpeggio \ppp [
+                            <b, gf a d' af'>16 \arpeggio \ppp [
                             \set stemLeftBeamCount = 2
-                            <c' g' b' e'' a''>16 \arpeggio ]
+                            <c g b e' a'>16 \arpeggio ]
                         }
                         % [Violin 2 Voice] Measure 3
                         {
@@ -297,7 +287,7 @@
                     {
                         % [Violin 2 Voice] Measure 4
                         {
-                            <e' a' d'' fs'' b''>16 \arpeggio \p [
+                            <e a d' fs' b'>16 \arpeggio \p [
                             \once \override NoteHead.transparent = ##t
                             \set stemLeftBeamCount = 2
                             f'16 -\accent \sfz ]
@@ -315,9 +305,9 @@
                     }
                     {
                         {
-                            <d' g' c'' e'' a''>16 \arpeggio \ppp [
+                            <d g c' e' a'>16 \arpeggio \ppp [
                             \set stemLeftBeamCount = 2
-                            <d' b' d'' f'' a''>16 \arpeggio ]
+                            <d b d' f' a'>16 \arpeggio ]
                         }
                         {
                             \once \override NoteHead.transparent = ##t
@@ -336,7 +326,7 @@
                     {
                         % [Violin 2 Voice] Measure 5
                         {
-                            <d' f' b' d'' g''>16 \arpeggio \laissezVibrer \p
+                            <d f b d' g'>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -356,7 +346,7 @@
                     }
                     {
                         {
-                            <d' c'' f'' a''>16 \arpeggio \laissezVibrer \p
+                            <d c' f' a'>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -377,7 +367,7 @@
                     {
                         % [Violin 2 Voice] Measure 6
                         {
-                            <df' bf' e'' a''>16 \arpeggio \mf [
+                            <df bf e' a'>16 \arpeggio \mf [
                             \once \override NoteHead.transparent = ##t
                             \set stemLeftBeamCount = 2
                             f'16 -\accent \sfz ]
@@ -395,7 +385,7 @@
                     {
                         % [Violin 2 Voice] Measure 7
                         {
-                            <b gf' a' d'' af''>16 \arpeggio \laissezVibrer \ppp
+                            <b, gf a d' af'>16 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -442,7 +432,7 @@
                     }
                     {
                         {
-                            <d' c'' f'' a''>16 \arpeggio \laissezVibrer \p
+                            <d c' f' a'>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -463,7 +453,7 @@
                     {
                         % [Viola Voice] Measure 2
                         {
-                            <df' bf' e'' a''>16 \arpeggio \laissezVibrer \ppp
+                            <df bf e' a'>16 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -483,7 +473,7 @@
                     }
                     {
                         {
-                            <c' g' bf' ef'' a''>16 \arpeggio \laissezVibrer \p
+                            <c g bf ef' a'>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -503,9 +493,9 @@
                     }
                     {
                         {
-                            <b gf' a' d'' af''>16 \arpeggio \p [
+                            <b, gf a d' af'>16 \arpeggio \p [
                             \set stemLeftBeamCount = 2
-                            <c' g' b' e'' a''>16 \arpeggio ]
+                            <c g b e' a'>16 \arpeggio ]
                         }
                         % [Viola Voice] Measure 3
                         {
@@ -529,7 +519,7 @@
                     }
                     {
                         {
-                            <e' a' d'' fs'' b''>16 \arpeggio \laissezVibrer \mf
+                            <e a d' fs' b'>16 \arpeggio \laissezVibrer \mf
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -550,7 +540,7 @@
                     }
                     {
                         {
-                            <ef' af' df'' f'' bf''>16 \arpeggio \laissezVibrer \ppp
+                            <ef af df' f' bf'>16 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -571,9 +561,9 @@
                     {
                         % [Viola Voice] Measure 5
                         {
-                            <d' g' c'' e'' a''>16 \arpeggio \p [
+                            <d g c' e' a'>16 \arpeggio \p [
                             \set stemLeftBeamCount = 2
-                            <d' b' d'' f'' a''>16 \arpeggio ]
+                            <d b d' f' a'>16 \arpeggio ]
                         }
                         {
                             \once \override NoteHead.transparent = ##t
@@ -592,7 +582,7 @@
                     {
                         % [Viola Voice] Measure 6
                         {
-                            <d' f' b' d'' g''>16 \arpeggio \ppp [
+                            <d f b d' g'>16 \arpeggio \ppp [
                             \once \override NoteHead.transparent = ##t
                             \set stemLeftBeamCount = 2
                             f'16 -\accent \sfz ]
@@ -637,7 +627,7 @@
                     {
                         % [Cello Voice] Measure 1
                         {
-                            <d' c'' f'' a''>16 \arpeggio \laissezVibrer \p
+                            <d c' f' a'>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -659,7 +649,7 @@
                     {
                         % [Cello Voice] Measure 2
                         {
-                            <df' bf' e'' a''>16 \arpeggio \p [
+                            <df bf e' a'>16 \arpeggio \p [
                             \once \override NoteHead.transparent = ##t
                             \set stemLeftBeamCount = 2
                             f'16 -\accent \sfz ]
@@ -677,7 +667,7 @@
                     {
                         % [Cello Voice] Measure 3
                         {
-                            <b gf' a' d'' af''>16 \arpeggio \mf [
+                            <b, gf a d' af'>16 \arpeggio \mf [
                             \once \override NoteHead.transparent = ##t
                             \set stemLeftBeamCount = 2
                             f'16 -\accent \sfz ]
@@ -695,7 +685,7 @@
                     {
                         % [Cello Voice] Measure 4
                         {
-                            <f' bf' ef'' g'' c'''>16 \arpeggio \laissezVibrer \ppp
+                            <f bf ef' g' c''>16 \arpeggio \laissezVibrer \ppp
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -716,7 +706,7 @@
                     }
                     {
                         {
-                            <e' a' d'' fs'' b''>16 \arpeggio \laissezVibrer \p
+                            <e a d' fs' b'>16 \arpeggio \laissezVibrer \p
                                 ^ \markup {
                                     \pad-around
                                         #0.5
@@ -736,7 +726,7 @@
                     }
                     {
                         {
-                            <ef' af' df'' f'' bf''>16 \arpeggio \ppp [
+                            <ef af df' f' bf'>16 \arpeggio \ppp [
                             \once \override NoteHead.transparent = ##t
                             \set stemLeftBeamCount = 2
                             f'16 -\accent \sfz ]
@@ -754,9 +744,9 @@
                     {
                         % [Cello Voice] Measure 5
                         {
-                            <d' b' d'' f'' a''>16 \arpeggio \p [
+                            <d b d' f' a'>16 \arpeggio \p [
                             \set stemLeftBeamCount = 2
-                            <d' f' c'' d'' g''>16 \arpeggio ]
+                            <d f c' d' g'>16 \arpeggio ]
                         }
                         {
                             \once \override NoteHead.transparent = ##t
@@ -777,12 +767,14 @@
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 3/8
+                            \stopStaff
+                            \startStaff
                         }
                     }
                     {
                         % [Cello Voice] Measure 7
                         {
-                            <d' c'' f'' a''>16 \arpeggio \p [
+                            <d c' f' a'>16 \arpeggio \p [
                             \once \override NoteHead.transparent = ##t
                             \set stemLeftBeamCount = 2
                             f'16 -\accent \sfz ]
@@ -795,17 +787,6 @@
                     {
                         {
                             r4
-                                _ \markup {
-                                    \italic
-                                        \center-column
-                                            {
-                                                " "
-                                                " "
-                                                " "
-                                                Nowhere
-                                                "2001 - 3001"
-                                            }
-                                    }
                             \bar "|."
                         }
                     }

@@ -2,6 +2,7 @@
 import consort
 import ersilia
 from abjad.tools import indicatortools
+from abjad.tools import patterntools
 from abjad.tools import pitchtools
 from abjad.tools import rhythmmakertools
 from abjad.tools import selectortools
@@ -43,8 +44,8 @@ percussion_low_pedal_music_specifier = consort.MusicSpecifier(
         dynamic_expressions=consort.DynamicExpression(
             division_period=2,
             dynamic_tokens='p ppp p ppp mf',
-            start_dynamic_tokens='o',
-            stop_dynamic_tokens='o',
+            start_dynamic_tokens='niente',
+            stop_dynamic_tokens='niente',
             ),
         stem_tremolo_spanner=consort.AttachmentExpression(
             attachments=spannertools.StemTremoloSpanner(),
@@ -66,13 +67,13 @@ percussion_low_pedal_music_specifier = consort.MusicSpecifier(
         denominators=[8],
         division_masks=[
             rhythmmakertools.SustainMask(
-                pattern=rhythmmakertools.Pattern(
+                pattern=patterntools.Pattern(
                     indices=[0, 1],
                     period=3,
                     ),
                 ),
             rhythmmakertools.SustainMask(
-                pattern=rhythmmakertools.Pattern(
+                pattern=patterntools.Pattern(
                     indices=[0, -1],
                     ),
                 ),

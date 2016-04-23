@@ -1,7 +1,9 @@
-\version "2.19.17"
+% 2016-04-22 21:22
+
+\version "2.19.15"
 \language "english"
 
-\include "/Users/josiah/Documents/Development/consort/consort/stylesheets/stylesheet.ily"
+\include "/Users/joberholtzer/Development/consort/consort/stylesheets/stylesheet.ily"
 
 \header {
     tagline = \markup {}
@@ -13,15 +15,9 @@
         \tag #'time
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 3/8
                 \tempo 4=72
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
+                \time 3/8
+                s1 * 9/8
             }
             {
                 \time 7/8
@@ -29,13 +25,7 @@
             }
             {
                 \time 3/8
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
+                s1 * 9/8
             }
         }
         \tag #'violin-1
@@ -100,12 +90,9 @@
                         {
                             r8
                         }
-                        % [Violin 1 Voice] Measure 3
-                        {
-                            r16
-                        }
                     }
                     {
+                        % [Violin 1 Voice] Measure 3
                         {
                             \clef "treble^15"
                             a'''16 -\accent \fff
@@ -114,6 +101,7 @@
                     }
                     {
                         {
+                            r16
                             r4
                         }
                     }
@@ -152,16 +140,24 @@
                         % [Violin 1 Voice] Measure 6
                         {
                             r4
-                            r16
                         }
                     }
                     {
                         {
                             \clef "treble^15"
-                            d''''16 -\accent \fff
+                            f''''16 -\accent \fff
+                            \clef "treble"
                         }
+                    }
+                    {
+                        {
+                            r16
+                        }
+                    }
+                    {
                         % [Violin 1 Voice] Measure 7
                         {
+                            \clef "treble^15"
                             e'''4 :32 -\accent \fp
                             <> \stopTextSpan
                             \clef "treble"
@@ -250,20 +246,18 @@
                         {
                             r8
                         }
-                        % [Violin 2 Voice] Measure 4
-                        {
-                            r16
-                        }
                     }
                     {
+                        % [Violin 2 Voice] Measure 4
                         {
                             \clef "treble^15"
-                            b'''16 -\accent \fff
+                            a'''16 -\accent \fff
                             \clef "treble"
                         }
                     }
                     {
                         {
+                            r16
                             r4
                             r8
                         }
@@ -332,7 +326,7 @@
                     {
                         % [Viola Voice] Measure 1
                         {
-                            r8.
+                            r8
                         }
                     }
                     {
@@ -364,7 +358,7 @@
                     }
                     {
                         {
-                            r8
+                            r8.
                         }
                     }
                     {
@@ -463,11 +457,6 @@
                     {
                         % [Cello Voice] Measure 1
                         {
-                            r16
-                        }
-                    }
-                    {
-                        {
                             \clef "treble^15"
                             \once \override TextSpanner.bound-details.left-broken.text = ##f
                             \once \override TextSpanner.bound-details.left.text = \markup {
@@ -495,6 +484,7 @@
                     }
                     {
                         {
+                            r16
                             r4
                         }
                     }
@@ -515,7 +505,7 @@
                         % [Cello Voice] Measure 3
                         {
                             \clef "treble^15"
-                            b'''16 -\accent \fff
+                            a'''16 -\accent \fff
                             \clef "bass"
                         }
                     }
@@ -529,14 +519,13 @@
                         % [Cello Voice] Measure 4
                         {
                             \clef "treble^15"
-                            a'''8 :64 -\accent \fp
+                            b'''8 :64 -\accent \fp
                             \clef "bass"
                         }
                     }
                     {
                         {
                             r4
-                            r16
                         }
                     }
                     {
@@ -548,7 +537,7 @@
                     }
                     {
                         {
-                            r8
+                            r8.
                         }
                     }
                     {
@@ -590,17 +579,6 @@
                         {
                             r16
                             r4
-                                _ \markup {
-                                    \italic
-                                        \center-column
-                                            {
-                                                " "
-                                                " "
-                                                " "
-                                                Nowhere
-                                                "2001 - 3001"
-                                            }
-                                    }
                             \bar "|."
                         }
                     }

@@ -1,7 +1,9 @@
-\version "2.19.17"
+% 2016-04-22 21:24
+
+\version "2.19.15"
 \language "english"
 
-\include "/Users/josiah/Documents/Development/consort/consort/stylesheets/stylesheet.ily"
+\include "/Users/joberholtzer/Development/consort/consort/stylesheets/stylesheet.ily"
 
 \header {
     tagline = \markup {}
@@ -13,15 +15,9 @@
         \tag #'time
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 3/8
                 \tempo 4=72
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
+                \time 3/8
+                s1 * 9/8
             }
             {
                 \time 7/8
@@ -29,13 +25,7 @@
             }
             {
                 \time 3/8
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
+                s1 * 9/8
             }
         }
         \tag #'violin-1
@@ -109,7 +99,7 @@
                         }
                         \tweak #'text #tuplet-number::calc-fraction-text
                         \times 3/4 {
-                            af16 \mp \< [ (
+                            af16 [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             e16
@@ -133,7 +123,7 @@
                         }
                         % [Violin 1 Voice] Measure 5
                         {
-                            f16 -\staccato \fff \> [
+                            f16 -\staccato [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
@@ -209,7 +199,7 @@
                         }
                         % [Violin 2 Voice] Measure 2
                         \times 4/5 {
-                            b16 -\staccato \mp \< [
+                            b16 -\staccato [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             d'16 -\staccato
@@ -224,12 +214,12 @@
                         }
                         {
                             \pitchedTrill
-                            a8 \fff \> \startTrillSpan c'
+                            a8 \mp \< \startTrillSpan c'
                             <> \stopTrillSpan
                         }
                         % [Violin 2 Voice] Measure 3
                         {
-                            b16 \mf [
+                            b16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             a16 -\staccato
@@ -237,7 +227,7 @@
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
-                            b,16 -\stopped ]
+                            b,16 -\stopped \mf ]
                         }
                     }
                     {
@@ -270,18 +260,18 @@
                     }
                     {
                         {
-                            d16 -\stopped \f \< [
+                            d16 -\stopped \f \> [
                             \set stemLeftBeamCount = 2
                             f16 -\staccato ]
                         }
                         {
                             \pitchedTrill
-                            d4 \fff \> \startTrillSpan f
+                            d4 \startTrillSpan f
                             <> \stopTrillSpan
                         }
                         % [Violin 2 Voice] Measure 5
                         \times 4/5 {
-                            c'16 \mf [ (
+                            c'16 [ (
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             f16
@@ -292,7 +282,7 @@
                             \set stemRightBeamCount = 2
                             r16
                             \set stemLeftBeamCount = 2
-                            ef16 -\stopped ]
+                            ef16 -\stopped \mf ]
                         }
                     }
                     {
@@ -307,7 +297,7 @@
                         % [Violin 2 Voice] Measure 6
                         {
                             \pitchedTrill
-                            c4. \mp \< \startTrillSpan ef
+                            c4. \startTrillSpan ef
                             <> \stopTrillSpan
                         }
                         % [Violin 2 Voice] Measure 7
@@ -365,7 +355,7 @@
                         }
                         % [Viola Voice] Measure 2
                         \times 2/3 {
-                            cs'16 \mf \> [
+                            cs'16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             ef16
@@ -374,11 +364,11 @@
                         }
                         {
                             \pitchedTrill
-                            b8 \mp \< \startTrillSpan d'
+                            b8 \mf \startTrillSpan d'
                             <> \stopTrillSpan
                         }
                         {
-                            a16 \mf
+                            a16
                         }
                     }
                     {
@@ -417,7 +407,7 @@
                             r16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            ef'16 -\stopped \mp \<
+                            ef'16 -\stopped
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
@@ -432,13 +422,13 @@
                         }
                         % [Viola Voice] Measure 5
                         {
-                            ef16 -\stopped \fff \> [ (
+                            ef16 -\stopped \mp \< [ (
                             \set stemLeftBeamCount = 2
                             c16 ] )
                         }
                         {
                             \pitchedTrill
-                            ef4 \mf \startTrillSpan gf
+                            ef4 \startTrillSpan gf
                             <> \stopTrillSpan
                         }
                         % [Viola Voice] Measure 6
@@ -448,7 +438,7 @@
                             \set stemRightBeamCount = 2
                             c16 -\staccato
                             \set stemLeftBeamCount = 2
-                            ef,16 -\staccato ]
+                            ef,16 -\staccato \mf ]
                         }
                     }
                     {
@@ -462,8 +452,6 @@
                             \startStaff
                             R1 * 3/8
                             \bar "|."
-                            \stopStaff
-                            \startStaff
                         }
                     }
                 }
@@ -568,7 +556,7 @@
                             <> \stopTrillSpan
                         }
                         {
-                            e16 \mf [
+                            e16 [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             r16
@@ -576,7 +564,7 @@
                             \set stemRightBeamCount = 2
                             ef16 -\stopped
                             \set stemLeftBeamCount = 2
-                            c16 ]
+                            c16 \mf ]
                         }
                     }
                     {
@@ -587,11 +575,11 @@
                     }
                     {
                         {
-                            ef16 -\stopped \f \>
+                            ef16 -\stopped \f
                         }
                         {
                             \pitchedTrill
-                            f,4 \mf \startTrillSpan af,
+                            f,4 \startTrillSpan af,
                             <> \stopTrillSpan
                         }
                     }
@@ -617,17 +605,6 @@
                     {
                         {
                             r4
-                                _ \markup {
-                                    \italic
-                                        \center-column
-                                            {
-                                                " "
-                                                " "
-                                                " "
-                                                Nowhere
-                                                "2001 - 3001"
-                                            }
-                                    }
                             \bar "|."
                         }
                     }

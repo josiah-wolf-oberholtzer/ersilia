@@ -1,7 +1,9 @@
-\version "2.19.17"
+% 2016-04-22 21:22
+
+\version "2.19.15"
 \language "english"
 
-\include "/Users/josiah/Documents/Development/consort/consort/stylesheets/stylesheet.ily"
+\include "/Users/joberholtzer/Development/consort/consort/stylesheets/stylesheet.ily"
 
 \header {
     tagline = \markup {}
@@ -13,15 +15,9 @@
         \tag #'time
         \context TimeSignatureContext = "Time Signature Context" {
             {
-                \time 3/8
                 \tempo 4=72
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
+                \time 3/8
+                s1 * 9/8
             }
             {
                 \time 7/8
@@ -29,13 +25,7 @@
             }
             {
                 \time 3/8
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
-            }
-            {
-                s1 * 3/8
+                s1 * 9/8
             }
         }
         \tag #'violin-1
@@ -58,10 +48,30 @@
                         % [Violin 1 Voice] Measure 1
                         {
                             \once \override Hairpin.circled-tip = ##t
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \whiteout
+                                        \pad-around
+                                            #0.5
+                                            \italic
+                                                \smaller
+                                                    \concat
+                                                        {
+                                                            \vstrut
+                                                            marimba
+                                                        }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
                             \startStaff
-                            <d' f'>4. :32 \<
+                            <d' f'>4. :32 \startTextSpan \<
                         }
                         % [Violin 1 Voice] Measure 2
                         {
@@ -151,6 +161,7 @@
                             <ds fs>4 :32 \repeatTie
                             \stopStaff
                             \startStaff
+                            <> \stopTextSpan
                             \clef "treble"
                         }
                     }
@@ -189,10 +200,30 @@
                         {
                             \clef "bass"
                             \once \override Hairpin.circled-tip = ##t
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \whiteout
+                                        \pad-around
+                                            #0.5
+                                            \italic
+                                                \smaller
+                                                    \concat
+                                                        {
+                                                            \vstrut
+                                                            marimba
+                                                        }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
                             \startStaff
-                            <d' f'>16 :128 \< [
+                            <d' f'>16 :128 \startTextSpan \< [
                             \set stemLeftBeamCount = 2
                             <g c'>16 :128 ]
                         }
@@ -283,6 +314,7 @@
                             <fs a>16 :128 ]
                             \stopStaff
                             \startStaff
+                            <> \stopTextSpan
                             \clef "treble"
                         }
                     }
@@ -321,10 +353,30 @@
                         {
                             \clef "bass"
                             \once \override Hairpin.circled-tip = ##t
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \whiteout
+                                        \pad-around
+                                            #0.5
+                                            \italic
+                                                \smaller
+                                                    \concat
+                                                        {
+                                                            \vstrut
+                                                            marimba
+                                                        }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
                             \startStaff
-                            <f af>16 :128 \< [
+                            <f af>16 :128 \startTextSpan \< [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
                             <d' g'>16 :128
@@ -406,6 +458,7 @@
                             <cs' ds'>16 :128 ]
                             \stopStaff
                             \startStaff
+                            <> \stopTextSpan
                             \clef "alto"
                         }
                     }
@@ -446,10 +499,30 @@
                         {
                             \clef "treble"
                             \once \override Hairpin.circled-tip = ##t
+                            \once \override TextSpanner.bound-details.left-broken.text = ##f
+                            \once \override TextSpanner.bound-details.left.text = \markup {
+                                \box
+                                    \whiteout
+                                        \pad-around
+                                            #0.5
+                                            \italic
+                                                \smaller
+                                                    \concat
+                                                        {
+                                                            \vstrut
+                                                            marimba
+                                                        }
+                                }
+                            \once \override TextSpanner.bound-details.right-broken.text = ##f
+                            \once \override TextSpanner.bound-details.right.text = \markup {
+                                \draw-line
+                                    #'(0 . -1)
+                                }
+                            \once \override TextSpanner.dash-fraction = 1
                             \stopStaff
                             \once \override Staff.StaffSymbol.line-positions = #'(-4 -2 0 2 4)
                             \startStaff
-                            <d' f'>4. :32 \<
+                            <d' f'>4. :32 \startTextSpan \<
                         }
                         % [Cello Voice] Measure 2
                         {
@@ -525,6 +598,8 @@
                             \once \override Staff.StaffSymbol.line-positions = #'(0)
                             \startStaff
                             R1 * 3/8
+                            \stopStaff
+                            \startStaff
                         }
                     }
                     {
@@ -536,22 +611,12 @@
                             <fs a>8 :64 \ppp
                             \stopStaff
                             \startStaff
+                            <> \stopTextSpan
                         }
                     }
                     {
                         {
                             r4
-                                _ \markup {
-                                    \italic
-                                        \center-column
-                                            {
-                                                " "
-                                                " "
-                                                " "
-                                                Nowhere
-                                                "2001 - 3001"
-                                            }
-                                    }
                             \bar "|."
                         }
                     }

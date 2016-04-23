@@ -2,6 +2,7 @@
 import consort
 from abjad.tools import durationtools
 from abjad.tools import indicatortools
+from abjad.tools import patterntools
 from abjad.tools import rhythmmakertools
 from abjad.tools import selectortools
 from abjad.tools import spannertools
@@ -11,8 +12,8 @@ string_legato_music_specifier = consort.MusicSpecifier(
     attachment_handler=consort.AttachmentHandler(
         dynamic_expressions=consort.DynamicExpression(
             dynamic_tokens='p mf',
-            start_dynamic_tokens='o fp',
-            stop_dynamic_tokens='o ff'
+            start_dynamic_tokens='niente fp',
+            stop_dynamic_tokens='niente ff'
             ),
         glissando=spannertools.Glissando(),
         tenuti=consort.AttachmentExpression(
@@ -21,7 +22,7 @@ string_legato_music_specifier = consort.MusicSpecifier(
                 .by_leaves()
                 .by_logical_tie(pitched=True)
                 .by_pattern(
-                    rhythmmakertools.Pattern(
+                    patterntools.Pattern(
                         indices=[3],
                         period=4,
                         ),
@@ -40,7 +41,7 @@ string_legato_music_specifier = consort.MusicSpecifier(
                 .by_leaves()
                 .by_logical_tie(pitched=True)
                 .by_pattern(
-                    rhythmmakertools.Pattern(
+                    patterntools.Pattern(
                         indices=[0, 1, 2],
                         period=4,
                         ),
