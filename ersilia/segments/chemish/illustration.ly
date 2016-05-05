@@ -1,9 +1,9 @@
-% 2016-04-22 21:27
+% 2016-05-04 18:59
 
-% package "abjad" @ 2cf4351 [master] (2016-04-22 15:27:55)
+% package "abjad" @ 78bdd86 [josiah/optimizations] (2016-05-04 18:01:58)
 % package "ide" @ c37fdc6 [master] (2016-04-18 15:15:28)
-% package "consort" @ c1811ea [master] (2016-04-22 21:08:03)
-% package "ersilia" @ de021e7 [master] (2016-04-22 21:22:43)
+% package "consort" @ 6c76a16 [master] (2016-04-30 14:29:26)
+% package "ersilia" @ 83f1332 [master] (2016-04-22 21:59:18)
 
 \version "2.19.15"
 \language "english"
@@ -1700,7 +1700,7 @@
                         Clarinet
                     }
                 }
-                \set Staff.shortInstrumentName = \markup { Bass cl. }
+                \set Staff.shortInstrumentName = \markup { "Bass cl." }
                 \context Voice = "Clarinet Voice" {
                     {
                         % [Clarinet Voice] Measure 1
@@ -2448,7 +2448,7 @@
                         Saxophone
                     }
                 }
-                \set Staff.shortInstrumentName = \markup { Bar. sax. }
+                \set Staff.shortInstrumentName = \markup { "Bar. sax." }
                 \context Voice = "Saxophone Voice" {
                     {
                         % [Saxophone Voice] Measure 1

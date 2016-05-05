@@ -39,11 +39,11 @@ if __name__ == '__main__':
             current_directory = os.path.dirname(__file__)
             dummy_session = idetools.Session()
             abjad_ide = idetools.AbjadIDE(
-                session=dummy_session, 
+                session=dummy_session,
                 )
             abjad_ide._write_metadata_py(
                 current_directory,
-                segment_metadata, 
+                segment_metadata,
                 )
         except:
             traceback.print_exc()

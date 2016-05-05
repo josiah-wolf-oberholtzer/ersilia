@@ -46,7 +46,7 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                             Clarinet
                         }
                     }
-                    \set Staff.shortInstrumentName = \markup { Bass cl. }
+                    \set Staff.shortInstrumentName = \markup { "Bass cl." }
                     \context Voice = "Clarinet Voice" {
                     }
                 }
@@ -60,7 +60,7 @@ class ErsiliaScoreTemplate(consort.ScoreTemplate):
                             Saxophone
                         }
                     }
-                    \set Staff.shortInstrumentName = \markup { Bar. sax. }
+                    \set Staff.shortInstrumentName = \markup { "Bar. sax." }
                     \context Voice = "Saxophone Voice" {
                     }
                 }
