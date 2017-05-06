@@ -98,7 +98,7 @@ percussion_temple_block_fanfare_music_specifier = consort.MusicSpecifier(
         pitch_operation_specifier=consort.PitchOperationSpecifier(
             pitch_operations=[
                 None,
-                pitchtools.Retrogression(),
+                pitchtools.Retrograde(),
                 None,
                 ],
             ),
