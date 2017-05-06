@@ -11,7 +11,7 @@ piano_glissando_music_specifier = consort.MusicSpecifier(
             dynamic_tokens='p',
             only_first=True,
             ),
-        glissando=spannertools.Glissando(),
+        glissando=consort.Glissando(),
         keys_spanner=(
             abbreviations.chromatic_keys_spanner,
             abbreviations.white_keys_spanner,

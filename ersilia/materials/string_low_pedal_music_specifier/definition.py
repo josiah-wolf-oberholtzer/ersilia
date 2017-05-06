@@ -22,7 +22,7 @@ string_low_pedal_music_specifier = consort.MusicSpecifier(
             start_dynamic_tokens='niente',
             stop_dynamic_tokens='niente',
             ),
-        glissando=spannertools.Glissando(),
+        glissando=consort.Glissando(),
         ),
     color=None,
     labels=[],

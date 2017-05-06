@@ -15,7 +15,7 @@ string_legato_music_specifier = consort.MusicSpecifier(
             start_dynamic_tokens='niente fp',
             stop_dynamic_tokens='niente ff'
             ),
-        glissando=spannertools.Glissando(),
+        glissando=consort.Glissando(),
         tenuti=consort.AttachmentExpression(
             attachments=indicatortools.Articulation('tenuto'),
             selector=selectortools.Selector()

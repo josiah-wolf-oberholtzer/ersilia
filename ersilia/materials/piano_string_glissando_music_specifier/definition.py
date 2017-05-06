@@ -12,7 +12,7 @@ piano_string_glissando_music_specifier = consort.MusicSpecifier(
             dynamic_tokens='p',
             only_first=True,
             ),
-        glissando=spannertools.Glissando(),
+        glissando=consort.Glissando(),
         staff_lines_spanner=spannertools.StaffLinesSpanner(
             lines=[-4, 4],
             overrides={
