@@ -17,5 +17,5 @@ material_names = [
 def test_materials(material_name):
     with systemtools.TemporaryDirectoryChange(str(test_path)):
         script = commandlinetools.ManageMaterialScript()
-        command = ['--render', material_name]
+        command = ['--illustrate', material_name]
         script(command)

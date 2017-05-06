@@ -17,5 +17,5 @@ segment_names = [
 def test_segments(segment_name):
     with systemtools.TemporaryDirectoryChange(str(test_path)):
         script = commandlinetools.ManageSegmentScript()
-        command = ['--render', segment_name]
+        command = ['--illustrate', segment_name]
         script(command)
