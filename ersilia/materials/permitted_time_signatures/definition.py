@@ -2,7 +2,7 @@
 from abjad import *
 
 
-permitted_time_signatures = indicatortools.TimeSignatureInventory([
+permitted_time_signatures = indicatortools.TimeSignatureList([
     #(2, 4),
     (4, 8),
     (5, 8),
