@@ -17,7 +17,7 @@ before_install:
     - pip install -U pip
 
 install:
-    - pip install --allow-external consort --allow-unverified consort -e git://github.com/josiah-wolf-oberholtzer/consort.git#egg=consort
+    - pip install -e git://github.com/josiah-wolf-oberholtzer/consort.git#egg=consort
     - pip install -e .
 
 script:
