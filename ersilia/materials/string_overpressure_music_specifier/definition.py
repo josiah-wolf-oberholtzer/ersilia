@@ -21,7 +21,7 @@ string_overpressure_music_specifier = consort.MusicSpecifier(
             ),
         text_spanner=consort.AttachmentExpression(
             attachments=abbreviations.make_text_spanner('overpressure'),
-            selector=selectortools.Selector().by_leaves(),
+            selector=selectortools.Selector().by_leaf(),
             ),
         ),
     color=None,

@@ -32,7 +32,7 @@ percussion_crotales_interruption_music_specifier = consort.MusicSpecifier(
             selector=selectortools.Selector()
                 .by_logical_tie(pitched=True)
                 .by_duration('>', (1, 16), preprolated=True)
-                .by_leaves()
+                .by_leaf()
                 .by_length('==', 1)
                 [0]
             ),
@@ -41,7 +41,7 @@ percussion_crotales_interruption_music_specifier = consort.MusicSpecifier(
             selector=selectortools.Selector()
                 .by_logical_tie(pitched=True)
                 .by_duration('>', (1, 16), preprolated=True)
-                .by_leaves()
+                .by_leaf()
                 .by_length('>', 1)
             ),
         text_spanner=consort.AttachmentExpression(

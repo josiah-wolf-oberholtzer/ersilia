@@ -36,7 +36,7 @@ string_agitato_music_specifier = consort.MusicSpecifier(
                 .by_duration('==', (1, 16), preprolated=True)
                 .by_contiguity()
                 .by_length('>', 1)
-                .by_leaves()
+                .by_leaf()
             ),
         staccati=consort.AttachmentExpression(
             attachments=indicatortools.Articulation('staccato'),
@@ -44,7 +44,7 @@ string_agitato_music_specifier = consort.MusicSpecifier(
                 .by_logical_tie(pitched=True)
                 .by_duration('==', (1, 16), preprolated=True)
                 .by_contiguity()
-                .by_leaves()
+                .by_leaf()
             ),
         accents=consort.AttachmentExpression(
             attachments=indicatortools.Articulation('accent'),
@@ -52,7 +52,7 @@ string_agitato_music_specifier = consort.MusicSpecifier(
                 .by_logical_tie(pitched=True)
                 .by_duration('>', (1, 16), preprolated=True)
                 .by_contiguity()
-                .by_leaves()
+                .by_leaf()
                 [0]
             ),
         trill_spanner=consort.AttachmentExpression(
@@ -64,7 +64,7 @@ string_agitato_music_specifier = consort.MusicSpecifier(
                 .by_logical_tie(pitched=True)
                 .by_duration('>', (1, 16), preprolated=True)
                 .by_contiguity()
-                .by_leaves()
+                .by_leaf()
             ),
         ),
     color='magenta',

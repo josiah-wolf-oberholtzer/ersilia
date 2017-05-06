@@ -37,7 +37,7 @@ guitar_agitato_music_specifier = consort.MusicSpecifier(
                 .by_logical_tie(pitched=True)
                 .by_duration('==', (1, 16), preprolated=True)
                 .by_contiguity()
-                .by_leaves()
+                .by_leaf()
                 [0]
                 .flatten()
             ),

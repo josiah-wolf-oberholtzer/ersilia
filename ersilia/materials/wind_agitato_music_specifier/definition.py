@@ -22,7 +22,7 @@ wind_agitato_music_specifier = consort.MusicSpecifier(
                 .by_duration('==', (1, 16), preprolated=True)
                 .by_contiguity()
                 .by_length('==', 1)
-                .by_leaves()
+                .by_leaf()
                 [0]
             ),
         accents_long=consort.AttachmentExpression(
@@ -32,7 +32,7 @@ wind_agitato_music_specifier = consort.MusicSpecifier(
                 .by_duration('>', (1, 16), preprolated=True)
                 .by_contiguity()
                 .by_length('==', 1)
-                .by_leaves()
+                .by_leaf()
                 [0]
             ),
         dynamic_expressions=consort.DynamicExpression(
@@ -47,7 +47,7 @@ wind_agitato_music_specifier = consort.MusicSpecifier(
                 .by_logical_tie(pitched=True)
                 .by_duration('>', (1, 16), preprolated=True)
                 .by_contiguity()
-                .by_leaves()
+                .by_leaf()
             ),
         slur=consort.AttachmentExpression(
             attachments=spannertools.Slur(),
@@ -62,7 +62,7 @@ wind_agitato_music_specifier = consort.MusicSpecifier(
                         period=2,
                         ),
                     )
-                .by_leaves()
+                .by_leaf()
             ),
         staccati=consort.AttachmentExpression(
             attachments=indicatortools.Articulation('staccato'),
@@ -77,7 +77,7 @@ wind_agitato_music_specifier = consort.MusicSpecifier(
                         period=3,
                         ),
                     )
-                .by_leaves()
+                .by_leaf()
             ),
         stem_tremolo_spanner=consort.AttachmentExpression(
             attachments=spannertools.StemTremoloSpanner(),
@@ -85,7 +85,7 @@ wind_agitato_music_specifier = consort.MusicSpecifier(
                 .by_logical_tie(pitched=True)
                 .by_duration('>', (1, 16), preprolated=True)
                 .by_contiguity()
-                .by_leaves()
+                .by_leaf()
             ),
         ),
     color='magenta',

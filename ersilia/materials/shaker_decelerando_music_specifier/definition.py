@@ -17,7 +17,7 @@ shaker_decelerando_music_specifier = consort.MusicSpecifier(
         percussion_staff=abbreviations.percussion_staff,
         text_spanner=consort.AttachmentExpression(
             attachments=abbreviations.make_text_spanner('shaker'),
-            selector=selectortools.Selector().by_leaves(),
+            selector=selectortools.Selector().by_leaf(),
             ),
         ),
     color='blue',

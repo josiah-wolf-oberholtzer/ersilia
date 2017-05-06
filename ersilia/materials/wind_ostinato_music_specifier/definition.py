@@ -18,7 +18,7 @@ wind_ostinato_music_specifier = consort.MusicSpecifier(
                 .by_duration('==', (1, 16), preprolated=True)
                 .by_contiguity()
                 .by_length('>', 1)
-                .by_leaves()
+                .by_leaf()
             ),
         staccati=consort.AttachmentExpression(
             attachments=indicatortools.Articulation('staccato'),
@@ -26,7 +26,7 @@ wind_ostinato_music_specifier = consort.MusicSpecifier(
                 .by_logical_tie(pitched=True)
                 .by_duration('==', (1, 16), preprolated=True)
                 .by_contiguity()
-                .by_leaves()
+                .by_leaf()
                 [-1]
             ),
         ),

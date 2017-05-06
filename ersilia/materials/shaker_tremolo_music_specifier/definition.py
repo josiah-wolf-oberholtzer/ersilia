@@ -13,7 +13,7 @@ shaker_tremolo_music_specifier = consort.MusicSpecifier(
         accents=consort.AttachmentExpression(
             attachments=indicatortools.Articulation('accent'),
             selector=selectortools.Selector()
-                .by_leaves()
+                .by_leaf()
                 .by_run(scoretools.Note)
                 [0],
             ),
@@ -23,7 +23,7 @@ shaker_tremolo_music_specifier = consort.MusicSpecifier(
         percussion_staff=abbreviations.percussion_staff,
         text_spanner=consort.AttachmentExpression(
             attachments=abbreviations.make_text_spanner('shaker'),
-            selector=selectortools.Selector().by_leaves(),
+            selector=selectortools.Selector().by_leaf(),
             ),
         tremolo_spanner=spannertools.StemTremoloSpanner(),
         ),

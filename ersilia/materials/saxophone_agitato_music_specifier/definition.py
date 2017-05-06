@@ -29,7 +29,7 @@ saxophone_agitato_music_specifier = consort.MusicSpecifier(
                         indices=[0], period=2,
                         ),
                     )
-                .by_leaves()
+                .by_leaf()
             ),
         staccati=consort.AttachmentExpression(
             attachments=indicatortools.Articulation('staccato'),
@@ -43,13 +43,13 @@ saxophone_agitato_music_specifier = consort.MusicSpecifier(
                         indices=[1], period=2,
                         ),
                     )
-                .by_leaves()
+                .by_leaf()
                 [1:]
             ),
         stopped=consort.AttachmentExpression(
             attachments=indicatortools.Articulation('stopped'),
             selector=selectortools.Selector()
-                .by_leaves()
+                .by_leaf()
                 .by_run(scoretools.Note)
                 [0]
             ),
@@ -61,7 +61,7 @@ saxophone_agitato_music_specifier = consort.MusicSpecifier(
                 .by_logical_tie(pitched=True)
                 .by_duration('>', (1, 16), preprolated=True)
                 .by_contiguity()
-                .by_leaves()
+                .by_leaf()
             ),
         ),
     color='magenta',

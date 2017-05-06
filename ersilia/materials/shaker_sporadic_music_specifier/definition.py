@@ -24,7 +24,7 @@ shaker_sporadic_music_specifier = consort.MusicSpecifier(
             ),
         text_spanner=consort.AttachmentExpression(
             attachments=abbreviations.make_text_spanner('shaker'),
-            selector=selectortools.Selector().by_leaves(),
+            selector=selectortools.Selector().by_leaf(),
             ),
         tremolo=consort.AttachmentExpression(
             attachments=spannertools.StemTremoloSpanner(),

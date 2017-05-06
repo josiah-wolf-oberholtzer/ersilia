@@ -23,7 +23,7 @@ laissez_vibrer = consort.AttachmentExpression(
         .by_logical_tie(pitched=True)
         .by_contiguity()
         .by_length('==', 1)
-        .by_leaves()
+        .by_leaf()
         [0]
     )
 

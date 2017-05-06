@@ -31,7 +31,7 @@ guitar_strummed_music_specifier = consort.MusicSpecifier(
                 .by_logical_tie(pitched=True)
                 .by_contiguity()
                 .by_length('>', 1)
-                .by_leaves()
+                .by_leaf()
                 [-1]
             ),
         dynamic_expressions=consort.DynamicExpression(

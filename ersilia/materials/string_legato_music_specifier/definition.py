@@ -19,7 +19,7 @@ string_legato_music_specifier = consort.MusicSpecifier(
         tenuti=consort.AttachmentExpression(
             attachments=indicatortools.Articulation('tenuto'),
             selector=selectortools.Selector()
-                .by_leaves()
+                .by_leaf()
                 .by_logical_tie(pitched=True)
                 .by_pattern(
                     patterntools.Pattern(
@@ -38,7 +38,7 @@ string_legato_music_specifier = consort.MusicSpecifier(
                 spannertools.StemTremoloSpanner(),
                 ),
             selector=selectortools.Selector()
-                .by_leaves()
+                .by_leaf()
                 .by_logical_tie(pitched=True)
                 .by_pattern(
                     patterntools.Pattern(

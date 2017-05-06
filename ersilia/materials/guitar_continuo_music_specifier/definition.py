@@ -12,7 +12,7 @@ guitar_continuo_music_specifier = consort.MusicSpecifier(
         accents=consort.AttachmentExpression(
             attachments=indicatortools.Articulation('accent'),
             selector=selectortools.Selector()
-                .by_leaves()
+                .by_leaf()
                 .by_run(scoretools.Note)
                 .by_counts(
                     [3, 3, 4],
@@ -29,7 +29,7 @@ guitar_continuo_music_specifier = consort.MusicSpecifier(
         slur=consort.AttachmentExpression(
             attachments=spannertools.Slur(),
             selector=selectortools.Selector()
-                .by_leaves()
+                .by_leaf()
                 .by_run(scoretools.Note)
                 .by_counts(
                     [3, 3, 4],

@@ -21,9 +21,9 @@ string_pointillist_music_specifier = consort.MusicSpecifier(
         text_spanner=consort.AttachmentExpression(
             attachments=consort.AttachmentExpression(
                 attachments=abbreviations.make_text_spanner('pizz.'),
-                selector=selectortools.Selector().by_leaves(),
+                selector=selectortools.Selector().by_leaf(),
                 ),
-            selector=selectortools.Selector().by_leaves(),
+            selector=selectortools.Selector().by_leaf(),
             ),
         ),
     color='darkyellow',

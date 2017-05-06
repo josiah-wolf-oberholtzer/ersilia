@@ -17,7 +17,7 @@ percussion_marimba_ostinato_music_specifier = consort.MusicSpecifier(
                 .by_duration('==', (1, 16), preprolated=True)
                 .by_contiguity()
                 .by_length('==', 1)
-                .by_leaves()
+                .by_leaf()
                 [0]
             ),
         dynamic_expressions=consort.DynamicExpression(
@@ -30,7 +30,7 @@ percussion_marimba_ostinato_music_specifier = consort.MusicSpecifier(
                 .by_duration('==', (1, 16), preprolated=True)
                 .by_contiguity()
                 .by_length('>', 1)
-                .by_leaves()
+                .by_leaf()
             ),
         staccati=consort.AttachmentExpression(
             attachments=indicatortools.Articulation('staccato'),
@@ -39,7 +39,7 @@ percussion_marimba_ostinato_music_specifier = consort.MusicSpecifier(
                 .by_duration('==', (1, 16), preprolated=True)
                 .by_contiguity()
                 .by_length('>', 1)
-                .by_leaves()
+                .by_leaf()
                 [-1]
             ),
         staff_lines_spanner=spannertools.StaffLinesSpanner([-4, -2, 0, 2, 4]),

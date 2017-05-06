@@ -28,7 +28,7 @@ percussion_low_pedal_music_specifier = consort.MusicSpecifier(
                 .by_logical_tie()
                 .by_pitch(pitches=ersilia.Percussion.BASS_DRUM)
                 .by_contiguity()
-                .by_leaves()
+                .by_leaf()
             ),
         tam_tam_indication=consort.AttachmentExpression(
             attachments=consort.AttachmentExpression(
@@ -39,7 +39,7 @@ percussion_low_pedal_music_specifier = consort.MusicSpecifier(
                 .by_logical_tie()
                 .by_pitch(pitches=ersilia.Percussion.TAM_TAM)
                 .by_contiguity()
-                .by_leaves()
+                .by_leaf()
             ),
         dynamic_expressions=consort.DynamicExpression(
             division_period=2,

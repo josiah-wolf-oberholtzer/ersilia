@@ -24,7 +24,7 @@ string_ostinato_music_specifier = consort.MusicSpecifier(
                 .by_contiguity()
                 .by_length('==', 1)
                 .by_duration('==', (1, 16), preprolated=True)
-                .by_leaves()
+                .by_leaf()
                 [0]
             ),
         tenuti=consort.AttachmentExpression(
@@ -34,7 +34,7 @@ string_ostinato_music_specifier = consort.MusicSpecifier(
                 .by_contiguity()
                 .by_length('==', 1)
                 .by_duration('>', (1, 16), preprolated=True)
-                .by_leaves()
+                .by_leaf()
                 [0]
             ),
         slur=consort.AttachmentExpression(
@@ -43,7 +43,7 @@ string_ostinato_music_specifier = consort.MusicSpecifier(
                 .by_logical_tie(pitched=True)
                 .by_contiguity()
                 .by_length('>', 1)
-                .by_leaves()
+                .by_leaf()
             ),
         ),
     color='darkyellow',
