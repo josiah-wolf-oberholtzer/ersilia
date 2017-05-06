@@ -21,8 +21,8 @@ install:
     - pip install -e .
 
 script:
-    - ajv doctest ./ersilia -x
-    - py.test -rf -vv ./ersilia -x
+    - ajv doctest ./ersilia --diff
+    - py.test -vv ./ersilia
 
 notifications:
     email: false
