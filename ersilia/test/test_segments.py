@@ -9,7 +9,9 @@ test_path = pathlib.Path(__file__).parent
 segments_path = (test_path / '..' / 'segments').resolve()
 segment_names = [
     path.name for path in segments_path.iterdir()
-    if path.is_dir()
+    if path.is_dir() and
+    (path / '__init__.py').exists() and
+    (path / 'definition.py').exists()
     ]
 
 
