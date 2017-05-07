@@ -26,3 +26,13 @@ Create a box of the same height as the current font."
   (robust-bar-number-function barnum measure-pos alt-number context)))
 
 date = #(strftime "(%Y-%m-%d)" (localtime (current-time)))
+
+parenthesizeDynamic =
+#(define-event-function (parser location dyn) (ly:event?)
+    (make-dynamic-script
+        #{ \markup \concat {
+            \normal-text \italic \fontsize #2 (
+            \pad-x #0.2 #(ly:music-property dyn 'text)
+            \normal-text \italic \fontsize #2 )
+        }
+        #}))
