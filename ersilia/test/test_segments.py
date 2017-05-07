@@ -21,5 +21,5 @@ def test_segments(segment_name):
     with systemtools.TemporaryDirectoryChange(str(test_path)):
         script = commandlinetools.ManageSegmentScript()
         command = ['--illustrate', segment_name]
-        with mock.patch('abjad.tools.systemtools.IOManager.open_file'):
+        with mock.patch('abjad.systemtools.IOManager.open_file'):
             script(command)

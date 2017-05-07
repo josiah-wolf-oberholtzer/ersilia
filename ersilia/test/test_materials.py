@@ -30,5 +30,5 @@ def test_materials(material_name):
     with systemtools.TemporaryDirectoryChange(str(test_path)):
         script = commandlinetools.ManageMaterialScript()
         command = ['--illustrate', material_name]
-        with mock.patch('abjad.tools.systemtools.IOManager.open_file'):
+        with mock.patch('abjad.systemtools.IOManager.open_file'):
             script(command)
