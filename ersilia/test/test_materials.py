@@ -1,5 +1,6 @@
 # -*- encoding: utf-8 -*-
 import importlib
+import mock
 import pytest
 import pathlib
 from abjad.tools import commandlinetools
@@ -29,4 +30,5 @@ def test_materials(material_name):
     with systemtools.TemporaryDirectoryChange(str(test_path)):
         script = commandlinetools.ManageMaterialScript()
         command = ['--illustrate', material_name]
-        script(command)
+        with mock.patch('abjad.tools.systemtools.IOManager.open_file'):
+            script(command)
