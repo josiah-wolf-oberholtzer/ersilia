@@ -7,7 +7,7 @@
     composer = \markup {
         \column {
             \override #'(font-name . "Didot")
-                \fontsize #3 "Josiah Wolf Oberholtzer (1984)"
+                \fontsize #3 "Joséphine Wolf Oberholtzer (1984)"
             " "
         }
     }
